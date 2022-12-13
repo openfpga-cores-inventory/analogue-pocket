@@ -1,0 +1,62 @@
+# This is for cores that we are not yet able to able to the API.
+---
+- username: jotego
+  cores:
+    - repository_url: https://www.patreon.com/jotego
+      release_url: https://www.patreon.com/jotego
+      display_name: "Ghosts 'n Goblins"
+      platform: "Ghosts 'n Goblins"
+      category: Arcade
+      release_date: 2022-10-04
+      version: noversion
+    - repository_url: https://www.patreon.com/jotego
+      release_url: https://www.patreon.com/jotego
+      display_name: Outrun
+      platform: Outrun
+      category: Arcade
+      release_date: 2022-11-04
+      version: noversion
+    - repository_url: https://www.patreon.com/jotego
+      release_url: https://www.patreon.com/jotego
+      display_name: Pang!
+      platform: Pang!
+      category: Arcade
+      release_date: 2022-10-14
+      version: noversion
+    - repository_url: https://www.patreon.com/jotego
+      release_url: https://www.patreon.com/jotego
+      display_name: Vigilante
+      platform: Vigilante
+      category: Arcade
+      release_date: 2022-11-04
+      version: noversion
+- username: psomashekar
+  cores:
+    - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
+      release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.garegga_20221030.zip
+      display_name: Battle Garegga
+      platform: Battle Garegga
+      category: Arcade
+      release_date: 2022-10-30
+      version: 0.0.1
+    - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
+      release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.garegga_20221030.zip
+      display_name: Kingdom Grandprix
+      platform: Kingdom Grandprix
+      category: Arcade
+      release_date: 2022-10-30
+      version: 0.0.1
+    - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
+      release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.snowbros2_20221019.zip
+      display_name: Snow Bros. 2
+      platform: Snow Bros. 2
+      category: Arcade
+      release_date: 2022-10-19
+      version: 0.0.1
+    - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
+      release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.garegga_20221030.zip
+      display_name: Sorcer Striker
+      platform: Sorcer Striker
+      category: Arcade
+      release_date: 2022-10-30
+      version: 0.0.1

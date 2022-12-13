@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "eslint": "^8.29.0",
+    "eslint-plugin-yml": "^1.2.0"
+  }
+}

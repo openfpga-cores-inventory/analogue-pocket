@@ -1,0 +1,36 @@
+---
+layout: none
+---
+{
+  "data": [
+    {%- for developer in site.data.cores %}
+    {%- for core in developer.cores %}
+    {%- if core.prerelease %}
+      {% assign metadata = core.prerelease %}
+    {%- else %}
+      {%- assign metadata = core.release %}
+    {%- endif %}
+    {
+      "identifier": {{ core.identifier | jsonify }},
+      "platform": {{ core.platform | jsonify }},
+      "category": {{ metadata.platform.category | jsonify }},
+      "manufacturer": {{ metadata.platform.manufacturer | jsonify }},
+      "year": {{ metadata.platform.year | jsonify }},
+      "tag_name": {{ metadata.tag_name | jsonify }},
+      "release_date": {{ metadata.release_date | jsonify }},
+      "version": {{ metadata.version | jsonify }}
+      "prerelease": {% if core.prerelease %}true{% else %}false{% endif %},
+      "repository": {
+        "platform": "github",
+        "owner": {{ developer.username | jsonify }},
+        "name": {{ core.repository | jsonify }}
+      },
+      "sponsor": {{ core.sponsor | jsonify }},
+      "assets": {{ metadata.assets | jsonify }}
+    }
+    {%- unless forloop.last %},{% endunless %}
+    {%- endfor %}
+    {%- unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
