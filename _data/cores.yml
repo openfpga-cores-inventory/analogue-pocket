@@ -398,9 +398,9 @@
       identifier: boogermann.congo
       platform: Congo Bongo
       release:
-        tag_name: 0.1.1
-        release_date: "2022-11-16T00:00:53Z"
-        version: 0.1.1
+        tag_name: 0.1.0
+        release_date: "2022-11-15T22:35:24Z"
+        version: 0.1.0
         platform:
           category: Arcade
           name: Congo Bongo
