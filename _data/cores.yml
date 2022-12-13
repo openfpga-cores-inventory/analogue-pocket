@@ -111,9 +111,9 @@
       identifier: agg23.SNES
       platform: SNES
       release:
-        tag_name: 0.4.0
-        release_date: "2022-11-10T18:07:32Z"
-        version: 0.4.0
+        tag_name: 0.4.2
+        release_date: "2022-12-11T01:28:02Z"
+        version: 0.4.2
         platform:
           category: Console
           name: SNES
@@ -283,12 +283,12 @@
   cores:
     - repository: Analogue-Amiga
       display_name: Amiga 500
-      identifier: Mazamars312.amiga
+      identifier: Mazamars312.Amiga
       platform: Amiga 500
       release:
-        tag_name: Mazamars312.Amiga.500.0.0.5-Alpha
-        release_date: "2022-12-05T12:24:29Z"
-        version: 0.0.5
+        tag_name: Mazamars312.Amiga.500.0.0.6-Alpha
+        release_date: "2022-12-10T20:28:54Z"
+        version: 0.0.6
         platform:
           category: Computer
           name: Amiga 500
