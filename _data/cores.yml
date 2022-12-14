@@ -111,9 +111,9 @@
       identifier: agg23.SNES
       platform: SNES
       release:
-        tag_name: 0.4.2
-        release_date: "2022-12-11T01:28:02Z"
-        version: 0.4.2
+        tag_name: 0.4.3
+        release_date: "2022-12-14T20:19:58Z"
+        version: 0.4.3
         platform:
           category: Console
           name: SNES
