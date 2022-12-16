@@ -1,31 +1,33 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ruby
 {
-    "name": "Ruby",
-    "image": "mcr.microsoft.com/devcontainers/ruby:0-3-bullseye",
-    // Features to add to the dev container. More info: https://containers.dev/features.
-    // "features": {},
-    // Add the IDs of extensions you want installed when the container is created.
-    "extensions": [
-      "castwide.solargraph",
-      "editorconfig.editorconfig",
-      "rebornix.Ruby"
-    ],
-    // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [
-        // Jekyll server
-        4000,
-        // Live reload server
-        35729
-    ],
-    // Use 'containerEnv' to set or override environment variables for the container.
-    "containerEnv": {
-      "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}"
-    },
-    // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "sudo git config --system --add safe.directory ${containerWorkspaceFolder} && sh .devcontainer/post-create.sh"
-    // Configure tool-specific properties.
-    // "customizations": {},
-    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-    // "remoteUser": "root"
+  "name": "Ruby",
+  "image": "mcr.microsoft.com/devcontainers/ruby:0-3-bullseye",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "castwide.solargraph",
+    "editorconfig.editorconfig",
+    "rebornix.Ruby"
+  ],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+    // Jekyll server
+    4000,
+    // Live reload server
+    35729
+  ],
+  // Use 'containerEnv' to set or override environment variables for the container.
+  "containerEnv": {
+    "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}"
+  },
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "sudo git config --system --add safe.directory ${containerWorkspaceFolder} && sh .devcontainer/post-create.sh"
+  // Configure tool-specific properties.
+  // "customizations": {},
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }
