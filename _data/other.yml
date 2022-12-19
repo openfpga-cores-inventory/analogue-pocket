@@ -2,42 +2,140 @@
 ---
 - username: jotego
   cores:
-    - repository_url: https://www.patreon.com/jotego
-      release_url: https://www.patreon.com/jotego
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Contra
+      platform: Contra
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Double Dragon
+      platform: Double Dragon
+      category: Arcade
+      release_date: 2022-11-28
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Double Dragon II
+      platform: Double Dragon II
+      category: Arcade
+      release_date: 2022-11-28
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
       display_name: "Ghosts 'n Goblins"
       platform: "Ghosts 'n Goblins"
       category: Arcade
       release_date: 2022-10-04
       version: noversion
-    - repository_url: https://www.patreon.com/jotego
-      release_url: https://www.patreon.com/jotego
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Kicker
+      platform: Kicker
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Mikie
+      platform: Mikie
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Nekketsu Kouha Kunio-kun
+      platform: Nekketsu Kouha Kunio-kun
+      category: Arcade
+      release_date: 2022-11-28
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
       display_name: Outrun
       platform: Outrun
       category: Arcade
       release_date: 2022-11-04
       version: noversion
-    - repository_url: https://www.patreon.com/jotego
-      release_url: https://www.patreon.com/jotego
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
       display_name: Pang!
       platform: Pang!
       category: Arcade
       release_date: 2022-10-14
       version: noversion
-    - repository_url: https://www.patreon.com/jotego
-      release_url: https://www.patreon.com/jotego
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: "Konami's Ping Pong"
+      platform: "Konami's Ping Pong"
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Road Fighter
+      platform: Road Fighter
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: "Roc'n Rope"
+      platform: "Roc'n Rope"
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Super Basketball
+      platform: Super Basketball
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Track & Field
+      platform: Track & Field
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
       display_name: Vigilante
       platform: Vigilante
       category: Arcade
       release_date: 2022-11-04
       version: noversion
+    - repository_url: https://github.com/jotego/jtbin
+      release_url: https://github.com/jotego/jtbin
+      display_name: Yie Ar Kung-Fu
+      platform: Yie Ar Kung-Fu
+      category: Arcade
+      release_date: 2022-12-02
+      version: noversion
 - username: psomashekar
   cores:
+    - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
+      release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.bakraid_20221218.zip
+      display_name: Battle Bakraid
+      platform: Battle Bakraid
+      category: Arcade
+      release_date: 2022-12-18
+      version: 0.0.1
     - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
       release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.garegga_20221030.zip
       display_name: Battle Garegga
       platform: Battle Garegga
       category: Arcade
       release_date: 2022-10-30
+      version: 0.0.1
+    - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
+      release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.batrider_20221218.zip
+      display_name: Batrider
+      platform: Batrider
+      category: Arcade
+      release_date: 2022-12-18
       version: 0.0.1
     - repository_url: https://github.com/psomashekar/pram0d-pocket-dist-public
       release_url: https://github.com/psomashekar/pram0d-pocket-dist-public/blob/develop/releases/pram0d.garegga_20221030.zip
