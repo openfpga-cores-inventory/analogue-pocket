@@ -11,7 +11,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
 ## Cores
 
 <div class="mb-5">
-  <table class="datatable table table-striped">
+  <table class="datatable table table-striped" style="width:100%">
     <thead>
       <tr>
         <th>Name</th>
