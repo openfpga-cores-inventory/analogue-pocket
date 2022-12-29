@@ -51,7 +51,7 @@ bootstrap:
     # - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
     # - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
     # - { platform: telegram,       user_url: "https://t.me/jekyll" }
-    # - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
+    - { platform: twitter,        user_url: "https://twitter.com/joshcampbell191" }
     # - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 # If you want to link only specific pages in your header, uncomment
