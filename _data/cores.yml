@@ -1012,9 +1012,9 @@
       identifier: antongale.slapfight
       platform: Slap Fight
       release:
-        tag_name: 0.1.1
-        release_date: "2023-01-02T00:24:32Z"
-        version: 0.1.1
+        tag_name: 0.1.2
+        release_date: "2023-01-02T22:32:51Z"
+        version: 0.1.2
         platform:
           category: Arcade
           name: Slap Fight
