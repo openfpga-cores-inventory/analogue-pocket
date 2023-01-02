@@ -1005,3 +1005,22 @@
         assets:
           - platform: "2600"
             extensions: []
+- username: antongale
+  cores:
+    - repository: arcade-slapfight
+      display_name: Slap Fight
+      identifier: antongale.slapfight
+      platform: Slap Fight
+      release:
+        tag_name: 0.1.1
+        release_date: "2023-01-02T00:24:32Z"
+        version: 0.1.1
+        platform:
+          category: Arcade
+          name: Slap Fight
+          manufacturer: Toaplan
+          year: 1986
+        assets:
+          - platform: slapfight
+            extensions:
+              - rom
