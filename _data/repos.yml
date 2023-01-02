@@ -115,3 +115,7 @@
       repository: openFPGA-Adventure-Vision
     - display_name: Spiritualized Atari 2600
       repository: openFPGA-2600
+- username: antongale
+  cores:
+    - display_name: Slap Fight
+      repository: arcade-slapfight
