@@ -70,9 +70,9 @@
       identifier: agg23.PC Engine
       platform: PC Engine
       release:
-        tag_name: 0.2.0
-        release_date: "2022-10-27T14:29:26Z"
-        version: 0.2.0
+        tag_name: 0.3.0
+        release_date: "2022-11-08T21:01:55Z"
+        version: 0.3.0
         platform:
           category: Console
           name: PC Engine
@@ -82,6 +82,7 @@
           - platform: pce
             extensions:
               - pce
+              - sgx
       sponsor:
         github:
           - https://github.com/sponsors/agg23
