@@ -349,6 +349,54 @@
             extensions:
               - vbin
               - vroma0
+    - repository: Analogue_Pocket_Neogeo_Overdrive
+      display_name: Neo Geo (Overdrive)
+      identifier: Mazamars312.NeoGeo_Overdrive
+      platform: Neo Geo
+      release:
+        tag_name: Mazamars312.NeogeoOverdrive.0.8.0-14/01/2023
+        release_date: "2023-01-14T02:18:06Z"
+        version: Alpha 0.8.0
+        platform:
+          category: Console
+          name: Neo Geo
+          manufacturer: SNK
+          year: 1990
+        assets:
+          - platform: ng
+            filename: uni-bios_4_0.rom
+            extensions:
+              - rom
+              - sp1
+              - bin
+          - platform: ng
+            filename: 000-lo.lo
+            extensions:
+              - lo
+          - platform: ng
+            filename: sfix.sfix
+            extensions:
+              - sfix
+          - platform: ng
+            extensions:
+              - srom
+          - platform: ng
+            extensions:
+              - bin
+              - pbin
+              - prom
+          - platform: ng
+            extensions:
+              - cbin
+              - crom0
+          - platform: ng
+            extensions:
+              - mbin
+              - m1rom
+          - platform: ng
+            extensions:
+              - vbin
+              - vroma0
 - username: nullobject
   cores:
     - repository: openfpga-tecmo
