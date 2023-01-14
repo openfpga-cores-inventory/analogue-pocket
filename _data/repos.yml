@@ -39,6 +39,8 @@
       repository: Analogue-Amiga
     - display_name: Neo Geo
       repository: Analogue_Pocket_Neogeo
+    - display_name: Neo Geo (Overdrive)
+      repository: Analogue_Pocket_Neogeo_Overdrive
 - username: nullobject
   cores:
     - display_name: Tecmo
