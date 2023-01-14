@@ -307,16 +307,16 @@
       identifier: Mazamars312.NeoGeo
       platform: Neo Geo
       release:
-        tag_name: Alpha_0.7.5_2022-19-09
-        release_date: "2022-09-18T23:23:22Z"
-        version: Alpha 0.7.5
+        tag_name: Mazamars312.Neogeo.0.8.0-14/01/2023
+        release_date: "2023-01-14T01:59:22Z"
+        version: Alpha 0.8.0
         platform:
           name: Neo Geo
           year: 1990
           manufacturer: SNK
         assets:
           - platform: ng
-            filename: uni-bios_1_0.rom
+            filename: uni-bios_4_0.rom
             extensions:
               - rom
               - sp1
