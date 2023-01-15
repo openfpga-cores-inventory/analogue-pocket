@@ -129,6 +129,28 @@
         github:
           - https://github.com/sponsors/agg23
         patreon: https://www.patreon.com/srg320
+    - repository: openfpga-wonderswan
+      display_name: WonderSwan Color for Analogue Pocket
+      identifier: agg23.WonderSwan
+      platform: WonderSwan Color
+      release:
+        tag_name: 1.0.0
+        release_date: "2023-01-15T19:55:22Z"
+        version: 1.0.0
+        platform:
+          category: Handheld
+          name: WonderSwan Color
+          year: 2000
+          manufacturer: Bandai
+        assets:
+          - platform: wonderswan
+            extensions:
+              - ws
+              - wsc
+      sponsor:
+        github:
+          - https://github.com/sponsors/agg23
+        patreon: https://www.patreon.com/FPGAzumSpass
 - username: ericlewis
   cores:
     - repository: openfpga-asteroids
