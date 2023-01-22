@@ -123,3 +123,5 @@
   cores:
     - display_name: Slap Fight
       repository: arcade-slapfight
+    - display_name: Performance
+      repository: arcade-performan
