@@ -1095,3 +1095,20 @@
           - platform: slapfight
             extensions:
               - rom
+    - repository: arcade-performan
+      display_name: Performan
+      identifier: antongale.performan
+      platform: Performan
+      release:
+        tag_name: 0.1.1
+        release_date: "2023-01-22T19:34:54Z"
+        version: 0.1.1
+        platform:
+          category: Arcade
+          name: Performan
+          manufacturer: Toaplan / Data East Corporation
+          year: 1985
+        assets:
+          - platform: performan
+            extensions:
+              - rom
