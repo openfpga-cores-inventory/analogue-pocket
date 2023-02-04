@@ -202,26 +202,6 @@
         assets:
           - platform: donkeykong
             filename: dkong.rom
-    - repository: openfpga-genesis
-      display_name: Genesis for Analogue Pocket
-      identifier: ericlewis.Genesis
-      platform: Genesis
-      prerelease:
-        tag_name: 0.4.2
-        release_date: "2022-10-09T02:42:54Z"
-        version: 0.4.2
-        platform:
-          category: Console
-          name: Genesis
-          year: 1988
-          manufacturer: Sega
-        assets:
-          - platform: genesis
-            extensions:
-              - md
-              - bin
-              - gen
-              - smd
     - repository: openfpga-lunarlander
       display_name: Lunar Lander for Analogue Pocket
       identifier: ericlewis.LunarLander
@@ -524,6 +504,26 @@
       sponsor:
         custom:
           - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
+    - repository: openfpga-genesis
+      display_name: Genesis for Analogue Pocket
+      identifier: ericlewis.Genesis
+      platform: Genesis
+      prerelease:
+        tag_name: 0.4.2
+        release_date: "2022-10-09T02:42:54Z"
+        version: 0.4.2
+        platform:
+          category: Console
+          name: Genesis
+          year: 1988
+          manufacturer: Sega
+        assets:
+          - platform: genesis
+            extensions:
+              - md
+              - bin
+              - gen
+              - smd
     - repository: arcade-gberet
       display_name: Green Beret
       identifier: boogermann.gberet
