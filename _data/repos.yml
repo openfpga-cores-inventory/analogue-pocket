@@ -23,8 +23,6 @@
       repository: openfpga-dominos
     - display_name: Donkey Kong
       repository: openFPGA-DonkeyKong
-    - display_name: Genesis for Analogue Pocket
-      repository: openfpga-genesis
     - display_name: Lunar Lander for Analogue Pocket
       repository: openfpga-lunarlander
     - display_name: Radar Scope
@@ -57,6 +55,8 @@
       repository: arcade-digdug
     - display_name: Galaga
       repository: arcade-galaga
+    - display_name: Genesis for Analogue Pocket
+      repository: openfpga-genesis
     - display_name: Green Beret
       repository: arcade-gberet
     - display_name: Pooyan
