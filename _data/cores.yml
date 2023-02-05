@@ -569,9 +569,9 @@
       identifier: boogermann.supervision
       platform: Supervision
       release:
-        tag_name: 0.1.1
-        release_date: "2022-10-15T14:18:34Z"
-        version: 0.1.1
+        tag_name: 0.1.0
+        release_date: "2022-10-15T12:31:14Z"
+        version: 0.1.0
         platform:
           category: Handheld
           name: Supervision
