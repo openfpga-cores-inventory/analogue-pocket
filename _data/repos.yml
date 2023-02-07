@@ -41,6 +41,8 @@
       repository: Analogue_Pocket_Neogeo
     - display_name: Neo Geo (Overdrive)
       repository: Analogue_Pocket_Neogeo_Overdrive
+    - display_name: PC Engine CD
+      repository: openfpga-pcengine-cd
 - username: nullobject
   cores:
     - display_name: Tecmo
