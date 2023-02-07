@@ -400,6 +400,29 @@
             extensions:
               - vbin
               - vroma0
+    - repository: openfpga-pcengine-cd
+      display_name: PC Engine CD
+      identifier: Mazamars312.PC Engine CD
+      platform: PC Engine CD
+      release:
+        tag_name: Mazamars312.PCECD.0.1.4-07/02/2023
+        release_date: "2023-02-07T01:00:53Z"
+        version: 0.1.5
+        platform:
+          category: Console
+          name: PC Engine CD
+          year: 1988
+          manufacturer: NEC Home Electronics
+        assets:
+          - platform: pcecd
+            filename: "[BIOS] TurboGrafx CD Super System Card (USA) (v3.0).pce"
+            extensions:
+              - pce
+          - platform: pcecd
+            filename: mpu.bin
+            extensions:
+              - bin
+            core_specific: true
 - username: nullobject
   cores:
     - repository: openfpga-tecmo
