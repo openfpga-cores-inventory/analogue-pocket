@@ -33,9 +33,9 @@
       identifier: agg23.Pong
       platform: Pong
       release:
-        tag_name: 1.2.0
-        release_date: "2022-09-09T01:56:30Z"
-        version: 1.2.0
+        tag_name: 1.1.0
+        release_date: "2022-08-23T22:30:55Z"
+        version: 1.1.0
         platform:
           category: Arcade
           name: Pong
