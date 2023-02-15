@@ -1,26 +1,23 @@
-require 'chunky_png'
-
 require_relative 'binary_image'
-require_relative 'platform_metadata'
+require_relative 'platform'
 require_relative 'definition_service'
 
 module Analogue
   class PlatformService < DefinitionService
-    PLATFORMS_DIRECTORY = 'Platforms'
     IMAGES_DIRECTORY = '_images'
 
     IMAGE_WIDTH = 521
     IMAGE_HEIGHT = 165
 
     def initialize(root_path)
-      super(File.join(root_path, PLATFORMS_DIRECTORY))
+      super(root_path)
     end
 
-    def get_metadata(platform_id)
-      metadata_file = "#{platform_id}.json"
+    def get_platform(platform_id)
+      platform_file = "#{platform_id}.json"
 
-      definition = parse_definition(metadata_file)
-      return parse_metadata(definition)
+      definition = parse_definition(platform_file)
+      return parse_platform(definition)
     end
 
     def export_image(platform_id)
@@ -37,15 +34,15 @@ module Analogue
 
     private
 
-    def parse_metadata(definition)
-      metadata = definition.platform
+    def parse_platform(definition)
+      platform = definition.platform
 
-      category = metadata.category
-      name = metadata.name
-      manufacturer = metadata.manufacturer
-      year = metadata.year
+      category = platform.category
+      name = platform.name
+      manufacturer = platform.manufacturer
+      year = platform.year
 
-      return PlatformMetadata.new(category, name, manufacturer, year)
+      return Platform.new(category, name, manufacturer, year)
     end
   end
 end

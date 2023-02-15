@@ -1,3 +1,5 @@
+require 'chunky_png'
+
 class BinaryImage
   def self.render_image(bytes, width, height, invert = true)
     image = ChunkyPNG::Image.new(width, height)

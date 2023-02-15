@@ -8,8 +8,6 @@ require_relative 'definition_service'
 
 module Analogue
   class CoreService < DefinitionService
-    CORES_DIRECTORY = 'Cores'
-
     CORE_FILE = 'core.json'
     DATA_FILE = 'data.json'
 
@@ -19,7 +17,7 @@ module Analogue
     ICON_HEIGHT = 36
 
     def initialize(root_path)
-      super(File.join(root_path, CORES_DIRECTORY))
+      super(root_path)
     end
 
     def get_core(identifier)

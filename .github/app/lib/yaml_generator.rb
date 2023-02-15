@@ -1,7 +1,6 @@
 require_relative 'yaml_generator/repository'
 require_relative 'yaml_generator/resource_filter'
-require_relative 'yaml_generator/analogue/core_service'
-require_relative 'yaml_generator/analogue/platform_service'
+require_relative 'yaml_generator/analogue/pocket_service'
 require_relative 'yaml_generator/github/github_service'
 require_relative 'yaml_generator/repository_service'
 
@@ -26,14 +25,13 @@ class YAMLGenerator
 
     repository_service = RepositoryService.new
     core_path = repository_service.download_core(repository)
-    core_service = Analogue::CoreService.new(core_path)
-    platform_service = Analogue::PlatformService.new(core_path)
+    pocket_service = Analogue::PocketService.new(core_path)
 
-    core = core_service.get_core('agg23.Arduboy')
-    core_service.export_icon('agg23.Arduboy')
+    core = pocket_service.get_core('agg23.Arduboy')
+    pocket_service.export_icon('agg23.Arduboy')
     platform_id = core.description.metadata.platform_ids.first
-    metadata = platform_service.get_metadata(platform_id)
-    platform_service.export_image(platform_id)
+    platform = pocket_service.get_platform(platform_id)
+    pocket_service.export_image(platform_id)
 
     puts core.inspect
   end
