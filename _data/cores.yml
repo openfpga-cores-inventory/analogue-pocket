@@ -405,19 +405,15 @@
       identifier: Mazamars312.PC Engine CD
       platform: PC Engine CD
       release:
-        tag_name: Mazamars312.PCECD.0.1.6-07/02/2023
-        release_date: "2023-02-07T03:22:14Z"
-        version: 0.1.5
+        tag_name: Mazamars312.PCECD.0.1.7-15/02/2023
+        release_date: "2023-02-15T04:25:09Z"
+        version: 0.1.7
         platform:
           category: Console
           name: PC Engine CD
           year: 1988
           manufacturer: NEC Home Electronics
         assets:
-          - platform: pcecd
-            filename: "[BIOS] TurboGrafx CD Super System Card (USA) (v3.0).pce"
-            extensions:
-              - pce
           - platform: pcecd
             filename: mpu.bin
             extensions:
