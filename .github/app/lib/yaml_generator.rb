@@ -30,8 +30,10 @@ class YAMLGenerator
     platform_service = Analogue::PlatformService.new(core_path)
 
     core = core_service.get_core('agg23.Arduboy')
+    core_service.export_icon('agg23.Arduboy')
     platform_id = core.description.metadata.platform_ids.first
     metadata = platform_service.get_metadata(platform_id)
+    platform_service.export_image(platform_id)
 
     puts core.inspect
   end

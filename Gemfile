@@ -33,6 +33,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.8"
 
+gem "chunky_png", "~> 1.4.0"
 gem "netrc", "~> 0.11.0"
 gem "octokit", "~> 4.25.1"
 gem "faraday-retry", "~> 2.0.0"

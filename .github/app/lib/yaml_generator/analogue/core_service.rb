@@ -1,3 +1,4 @@
+require_relative 'binary_image'
 require_relative 'core'
 require_relative 'core_data'
 require_relative 'core_description'
@@ -12,6 +13,11 @@ module Analogue
     CORE_FILE = 'core.json'
     DATA_FILE = 'data.json'
 
+    ICON_FILE = 'icon.bin'
+
+    ICON_WIDTH = 36
+    ICON_HEIGHT = 36
+
     def initialize(root_path)
       super(File.join(root_path, CORES_DIRECTORY))
     end
@@ -21,6 +27,17 @@ module Analogue
       data = parse_data(identifier)
 
       return Core.new(description, data)
+    end
+
+    def export_icon(identifier)
+      image_path = File.join(@root_path, identifier, ICON_FILE)
+
+      bytes = File.open(image_path, 'rb') { |file| file.read }.bytes.to_a
+
+      icon = BinaryImage.render_image(bytes, ICON_WIDTH, ICON_HEIGHT)
+
+      output_file = "#{identifier}.png"
+      icon.save(output_file)
     end
 
     private
