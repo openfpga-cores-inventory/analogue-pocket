@@ -24,12 +24,12 @@ class YAMLGenerator
     funding = github_service.get_funding(repository.github_repository)
 
     repository_service = RepositoryService.new
-    core_path = repository_service.download_core(repository)
-    pocket_service = Analogue::PocketService.new(core_path)
+    root_path = repository_service.download_core(repository)
+    pocket_service = Analogue::PocketService.new(root_path)
 
     core = pocket_service.get_core('agg23.Arduboy')
     pocket_service.export_icon('agg23.Arduboy')
-    platform_id = core.description.metadata.platform_ids.first
+    platform_id = core.platform_id
     platform = pocket_service.get_platform(platform_id)
     pocket_service.export_image(platform_id)
 

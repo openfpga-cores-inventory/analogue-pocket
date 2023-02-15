@@ -6,5 +6,9 @@ module Analogue
       @description = description
       @data = data
     end
+
+    def platform_id
+      return @description.metadata.platform_ids.first
+    end
   end
 end
