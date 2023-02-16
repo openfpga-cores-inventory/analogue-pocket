@@ -21,16 +21,21 @@
       repository: openfpga-asteroids
     - display_name: Dominos for Analogue Pocket
       repository: openfpga-dominos
+      prerelease: true
     - display_name: Donkey Kong
       repository: openFPGA-DonkeyKong
+      prerelease: true
     - display_name: Lunar Lander for Analogue Pocket
       repository: openfpga-lunarlander
+      prerelease: true
     - display_name: Radar Scope
       repository: openFPGA-RadarScope
+      prerelease: true
     - display_name: Space Race for Analogue Pocket
       repository: openfpga-spacerace
     - display_name: Super Breakout for Analogue Pocket
       repository: openfpga-superbreakout
+      prerelease: true
     - display_name: Q*Bert
       repository: openfpga-qbert
 - username: Mazamars312
@@ -59,6 +64,7 @@
       repository: arcade-galaga
     - display_name: Genesis for Analogue Pocket
       repository: openfpga-genesis
+      prerelease: true
     - display_name: Green Beret
       repository: arcade-gberet
     - display_name: Pooyan

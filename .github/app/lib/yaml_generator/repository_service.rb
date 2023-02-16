@@ -9,8 +9,8 @@ require_relative 'github/github_service'
 class RepositoryService
   @@github_service = GitHub::GitHubService.new
 
-  def download_core(repository, prerelease = false)
-    download_url = get_download_url(repository, prerelease)
+  def download_core(repository)
+    download_url = get_download_url(repository)
     name = repository.name
 
     # write the core archive to a temp file
@@ -35,8 +35,9 @@ class RepositoryService
     return temp_dir
   end
 
-  def get_download_url(repository, prerelease = false)
+  def get_download_url(repository)
     github_repository = repository.github_repository
+    prerelease = repository.prerelease
     path = repository.resource_filter.path
     prefix = repository.resource_filter.prefix
 

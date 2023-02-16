@@ -18,6 +18,10 @@ module Analogue
       @platform_service = PlatformService.new(platforms_path)
     end
 
+    def get_identifier
+      return @core_service.get_identifier
+    end
+
     def get_core(identifier)
       return @core_service.get_core(identifier)
     end

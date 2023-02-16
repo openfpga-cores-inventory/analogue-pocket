@@ -20,6 +20,10 @@ module Analogue
       super(root_path)
     end
 
+    def get_identifier
+      return Dir.children(@root_path).first
+    end
+
     def get_core(identifier)
       definition = parse_core_definition(identifier)
       data = parse_data(identifier)
