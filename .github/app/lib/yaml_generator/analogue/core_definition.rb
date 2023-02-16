@@ -1,5 +1,5 @@
 module Analogue
-  class CoreDescription
+  class CoreDefinition
     attr_reader :metadata
 
     def initialize(metadata)

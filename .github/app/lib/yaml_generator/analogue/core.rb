@@ -1,14 +1,14 @@
 module Analogue
   class Core
-    attr_reader :description, :data
+    attr_reader :definition, :data
 
-    def initialize(description, data)
-      @description = description
+    def initialize(definition, data)
+      @definition = definition
       @data = data
     end
 
     def platform_id
-      return @description.metadata.platform_ids.first
+      return @definition.metadata.platform_ids.first
     end
   end
 end

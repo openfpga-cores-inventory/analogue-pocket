@@ -22,16 +22,16 @@ module Analogue
       return @core_service.get_core(identifier)
     end
 
-    def export_icon(identifier)
-      @core_service.export_icon(identifier)
+    def export_icon(identifier, output_path)
+      @core_service.export_icon(identifier, output_path)
     end
 
     def get_platform(platform_id)
       return @platform_service.get_platform(platform_id)
     end
 
-    def export_image(platform_id)
-      @platform_service.export_image(platform_id)
+    def export_image(platform_id, output_path)
+      @platform_service.export_image(platform_id, output_path)
     end
   end
 end

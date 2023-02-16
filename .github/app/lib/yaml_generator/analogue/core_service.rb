@@ -1,7 +1,7 @@
 require_relative 'binary_image'
 require_relative 'core'
 require_relative 'core_data'
-require_relative 'core_description'
+require_relative 'core_definition'
 require_relative 'core_metadata'
 require_relative 'data_slot'
 require_relative 'definition_service'
@@ -21,32 +21,32 @@ module Analogue
     end
 
     def get_core(identifier)
-      description = parse_description(identifier)
+      definition = parse_core_definition(identifier)
       data = parse_data(identifier)
 
-      return Core.new(description, data)
+      return Core.new(definition, data)
     end
 
-    def export_icon(identifier)
-      image_path = File.join(@root_path, identifier, ICON_FILE)
+    def export_icon(identifier, output_path)
+      icon_path = File.join(@root_path, identifier, ICON_FILE)
 
-      bytes = File.open(image_path, 'rb') { |file| file.read }.bytes.to_a
+      unless File.exist?(icon_path)
+        return
+      end
 
-      icon = BinaryImage.render_image(bytes, ICON_WIDTH, ICON_HEIGHT)
-
-      output_file = "#{identifier}.png"
-      icon.save(output_file)
+      icon = BinaryImage.convert_image(icon_path, ICON_WIDTH, ICON_HEIGHT)
+      icon.save(output_path)
     end
 
     private
 
-    def parse_description(identifier)
+    def parse_core_definition(identifier)
       core_path = File.join(identifier, CORE_FILE)
       definition = parse_definition(core_path)
 
       metadata = parse_metadata(definition)
 
-      return CoreDescription.new(metadata)
+      return CoreDefinition.new(metadata)
     end
 
     def parse_metadata(definition)

@@ -1,5 +1,5 @@
 module Analogue
-  class Platform
+  class PlatformMetadata
     attr_reader :category, :name, :manufacturer, :year
 
     def initialize(category, name, manufacturer, year)

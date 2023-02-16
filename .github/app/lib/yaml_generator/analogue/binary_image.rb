@@ -1,7 +1,9 @@
 require 'chunky_png'
 
 class BinaryImage
-  def self.render_image(bytes, width, height, invert = true)
+  def self.convert_image(path, width, height, invert = true)
+    bytes = File.open(path, 'rb') { |file| file.read }.bytes.to_a
+
     image = ChunkyPNG::Image.new(width, height)
 
     index = 0
