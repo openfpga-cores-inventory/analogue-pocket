@@ -740,10 +740,11 @@
       identifier: Spiritualized.GG
       platform: Game Gear
       release:
-        tag_name: v1.0.0
-        release_date: "2022-08-08T21:08:36Z"
-        version: 1.0.0
+        tag_name: v1.3.0
+        release_date: "2022-08-27T02:57:43Z"
+        version: 1.2.0
         platform:
+          category: Handheld
           name: Game Gear
           year: 1990
           manufacturer: Sega
