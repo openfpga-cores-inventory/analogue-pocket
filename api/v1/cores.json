@@ -4,26 +4,33 @@ layout: none
 {
   "data": [
     {%- for developer in site.data.cores %}
-    {%- for core in developer.cores %}
+      {%- assign cores = developer.cores | where_exp: "core", "core.repository.tag_name" %}
+      {%- if cores.size < 1 %}
+        {%- continue %}
+      {%- endif %}
+      {%- for core in cores %}
     {
-      "identifier": {{ core.identifier | jsonify }},
-      "platform": {{ core.platform | jsonify }},
+      "identifier": {{ core.id | jsonify }},
+      "platform": {{ core.platform.name | jsonify }},
       "repository": {
         "platform": "github",
         "owner": {{ developer.username | jsonify }},
-        "name": {{ core.repository | jsonify }}
+        "name": {{ core.repository.name | jsonify }}
       },
-      "sponsor": {{ core.sponsor | jsonify }},
-      {%- if core.prerelease %}
-      "prerelease": {{ core.prerelease | jsonify }}{%- if core.release %},{%- endif %}
-      {%- endif %}
-      {%- if core.release %}
-      "release": {{ core.release | jsonify }}
-      {%- endif %}
+      "sponsor": {{ core.sponsor | jsonify }},      
+      {% if core.repository.prerelease %}"prerelease"{% else %}"release"{% endif %}: {
+        "tag_name": {{ core.repository.tag_name | jsonify }},
+        "release_date": {{ core.date_release | date: "%Y-%m-%d" | jsonify }},
+        "version": {{ core.version | jsonify }},
+        "platform": {{ core.platform | jsonify }},
+        "assets": {{ core.assets | jsonify }}
+      }
     }
-    {%- unless forloop.last %},{% endunless %}
-    {%- endfor %}
-    {%- unless forloop.last %},{% endunless %}
+        {%- unless forloop.last %},{% endunless %}
+      {%- endfor %}
+      {%- unless forloop.last %},{% endunless %}
     {%- endfor %}
   ]
 }
+
+

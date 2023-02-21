@@ -1,0 +1,47 @@
+name: Update Analogue Pocket Cores Inventory
+
+run-name: ${{ github.actor }} is updating the Analogue Pocket Cores Inventory 🎮
+
+on:
+  pull_request:
+    paths:
+      - '_data/repositories.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '_data/repositories.yml'
+  schedule:
+    # Run every 15 minutes
+    - cron:  '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-inventory:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v3
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+
+    - name: Setup .netrc
+      uses: extractions/netrc@v1
+      with:
+        machine: api.github.com
+        username: github-actions[bot]
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Update Analogue Pocket Cores Inventory
+      run: |
+        echo "⚙️ Updating Analogue Pocket Cores Inventory..."
+        ruby .github/workflows/inventory_updater/lib/inventory_updater.rb
+        echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
+
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update Analogue Pocket Cores Inventory
+        file_pattern: '_data/cores.yml assets/images/authors/*.png assets/images/platforms/*.png'
+      if: github.event_name != 'pull_request'
