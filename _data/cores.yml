@@ -1301,28 +1301,6 @@
   - repository:
       name: pram0d-pocket-dist-public
       prerelease: false
-    id: pram0d.garegga
-    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
-    date_release: '2022-09-23'
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221029.zip
-    version: 0.0.1
-    platform:
-      id: garegga
-      category: Arcade
-      name: Battle Garegga
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: garegga
-      extensions:
-      - json
-      core_specific: true
-    - platform: garegga
-      extensions:
-      - rom
-  - repository:
-      name: pram0d-pocket-dist-public
-      prerelease: false
     id: pram0d.sstriker
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     date_release: '2022-09-23'
@@ -1340,6 +1318,28 @@
       - json
       core_specific: true
     - platform: sstriker
+      extensions:
+      - rom
+  - repository:
+      name: pram0d-pocket-dist-public
+      prerelease: false
+    id: pram0d.garegga
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    date_release: '2022-09-23'
+    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221029.zip
+    version: 0.0.1
+    platform:
+      id: garegga
+      category: Arcade
+      name: Battle Garegga
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: garegga
+      extensions:
+      - json
+      core_specific: true
+    - platform: garegga
       extensions:
       - rom
   - repository:
