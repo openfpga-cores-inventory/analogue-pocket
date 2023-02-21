@@ -25,8 +25,9 @@ jobs:
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
+      
+    - name: Install Dependencies
+      run: bundle install
 
     - name: Setup .netrc
       uses: extractions/netrc@v1
