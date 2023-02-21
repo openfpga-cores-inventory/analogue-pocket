@@ -3,7 +3,7 @@ module Analogue
     attr_reader :definition, :data
 
     def id
-      return "#{definition.metadata.author}.#{definition.metadata.shortname}"
+      return "#{@definition.metadata.author}.#{@definition.metadata.shortname}"
     end
 
     def platform_id

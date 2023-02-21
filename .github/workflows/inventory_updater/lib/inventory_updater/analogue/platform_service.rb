@@ -1,5 +1,5 @@
 require_relative 'binary_image'
-require_relative 'platform_metadata'
+require_relative 'platform'
 require_relative 'definition_service'
 
 module Analogue
@@ -15,8 +15,8 @@ module Analogue
 
     def get_platform(id)
       platform_file = "#{id}.json"
-      json = parse_json(platform_file)
-      return parse_platform(json)
+      platform = parse_json(platform_file)
+      return Platform.new(platform)
     end
 
     def export_image(id, output_path)
@@ -24,19 +24,6 @@ module Analogue
       image_path = File.join(@root_path, IMAGES_DIRECTORY, image_file)
       image = BinaryImage.convert_image(image_path, IMAGE_WIDTH, IMAGE_HEIGHT)
       image.save(output_path)
-    end
-
-    private
-
-    def parse_platform(json)
-      platform = json.platform
-
-      category = platform.category
-      name = platform.name
-      manufacturer = platform.manufacturer
-      year = platform.year
-
-      return PlatformMetadata.new(category, name, manufacturer, year)
     end
   end
 end

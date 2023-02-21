@@ -150,10 +150,10 @@ class InventoryUpdater
       "version" => core.version,
       "platform" => {
         "id" => core.platform_id,
-        "category" => platform.category,
-        "name" => platform.name,
-        "manufacturer" => platform.manufacturer,
-        "year" => platform.year
+        "category" => platform.metadata.category,
+        "name" => platform.metadata.name,
+        "manufacturer" => platform.metadata.manufacturer,
+        "year" => platform.metadata.year
       },
       "assets" => assets
     }

@@ -23,42 +23,44 @@ module GitHub
     PATREON_URL = 'https://www.patreon.com'
     TIDELIFT_URL = 'https://tidelift.com/funding/github'
 
-    attr_accessor :github, :patreon, :open_collective, :ko_fi, :tidelift, :community_bridge, :liberapay, :issuehunt, :otechie, :custom
+    attr_accessor :funding, :github, :patreon, :open_collective, :ko_fi, :tidelift, :community_bridge, :liberapay, :issuehunt, :otechie, :custom
 
-    def self.parse_content(content)
-      yml = YAML.load(content)
-      funding = Funding.new
+    def initialize(funding)
+      @funding = funding
 
-      yml.each do |key, value|
+      funding.each do |key, value|
         next if value.nil?
 
         case key
         when COMMUNITY_BRIDGE
-          funding.community_bridge = "#{COMMUNITY_BRIDGE_URL}/#{value}"
+          @community_bridge = "#{COMMUNITY_BRIDGE_URL}/#{value}"
         when GITHUB
           users = value.is_a?(String) ? [value] : value
-          funding.github = users.map { |user| "#{GITHUB_URL}/#{user}" }
+          @github = users.map { |user| "#{GITHUB_URL}/#{user}" }
         when ISSUEHUNT
-          funding.issuehunt = "#{ISSUEHUNT_URL}/#{value}"
+          @issuehunt = "#{ISSUEHUNT_URL}/#{value}"
         when KO_FI
-          funding.ko_fi = "#{KO_FI_URL}/#{value}"
+          @ko_fi = "#{KO_FI_URL}/#{value}"
         when LIBERAPAY
-          funding.liberapay = "#{LIBERAPAY_URL}/#{value}"
+          @liberapay = "#{LIBERAPAY_URL}/#{value}"
         when OPEN_COLLECTIVE
-          funding.open_collective = "#{OPEN_COLLECTIVE_URL}/#{value}"
+          @open_collective = "#{OPEN_COLLECTIVE_URL}/#{value}"
         when OTECHIE
-          funding.otechie = "#{OTECHIE_URL}/#{value}"
+          @otechie = "#{OTECHIE_URL}/#{value}"
         when PATREON
-          funding.patreon = "#{PATREON_URL}/#{value}"
+          @patreon = "#{PATREON_URL}/#{value}"
         when TIDELIFT
-          funding.tidelift = "#{TIDELIFT_URL}/#{value}"
+          @tidelift = "#{TIDELIFT_URL}/#{value}"
         when CUSTOM
           urls = value.is_a?(String) ? [value] : value
-          funding.custom = urls
+          @custom = urls
         end
       end
+    end
 
-      return funding
+    def self.parse_content(content)
+      funding = YAML.load(content)
+      return Funding.new(funding)
     end
   end
 end
