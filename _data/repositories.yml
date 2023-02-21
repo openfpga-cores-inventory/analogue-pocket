@@ -146,15 +146,7 @@
       repository: pram0d-pocket-dist-public
       path: releases
       prefix: pram0d.bakraid_
-    - display_name: Battle Garegga
-      repository: pram0d-pocket-dist-public
-      path: releases
-      prefix: pram0d.garegga_
-    - display_name: Kingdom Grandprix
-      repository: pram0d-pocket-dist-public
-      path: releases
-      prefix: pram0d.garegga_
-    - display_name: Sorcer Striker
+    - display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
       repository: pram0d-pocket-dist-public
       path: releases
       prefix: pram0d.garegga_
