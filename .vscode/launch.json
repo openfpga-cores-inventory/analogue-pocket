@@ -13,10 +13,10 @@
       "webRoot": "${workspaceFolder}/_site"
     },
     {
-      "name": "Debug: Runner",
+      "name": "Debug: Inventory Updater",
       "type": "Ruby",
       "request": "launch",
-      "program": "${workspaceFolder}/.github/workflows/runner.rb",
+      "program": "${workspaceFolder}/.github/workflows/inventory_updater/lib/inventory_updater.rb",
       "cwd": "${workspaceFolder}",
       "args": [
         "${env:GITHUB_TOKEN}"

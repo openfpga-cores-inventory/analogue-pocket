@@ -1,0 +1,222 @@
+---
+- username: agg23
+  cores:
+    - display_name: Arduboy for Analogue Pocket
+      repository: openfpga-arduboy
+    - display_name: Atari's 1972 Pong
+      repository: openfpga-pong
+    - display_name: NES for Analogue Pocket
+      repository: openfpga-NES
+    - display_name: PC Engine for Analogue Pocket
+      repository: openfpga-pcengine
+    - display_name: Pokemon Mini for Analogue Pocket
+      repository: openfpga-pokemonmini
+    - display_name: SNES for Analogue Pocket
+      repository: openfpga-SNES
+    - display_name: WonderSwan Color for Analogue Pocket
+      repository: openfpga-wonderswan
+
+- username: antongale
+  cores:
+    - display_name: Performan
+      repository: arcade-performan
+    - display_name: Slap Fight
+      repository: arcade-slapfight
+
+- username: ericlewis
+  cores:
+    - display_name: Asteroids for Analogue Pocket
+      repository: openfpga-asteroids
+    - display_name: Dominos for Analogue Pocket
+      repository: openfpga-dominos
+      prerelease: true
+    - display_name: Donkey Kong
+      repository: openFPGA-DonkeyKong
+      prerelease: true
+    - display_name: Lunar Lander for Analogue Pocket
+      repository: openfpga-lunarlander
+      prerelease: true
+    - display_name: Q*Bert
+      repository: openfpga-qbert
+    - display_name: Radar Scope
+      repository: openFPGA-RadarScope
+      prerelease: true
+    - display_name: Space Race for Analogue Pocket
+      repository: openfpga-spacerace
+    - display_name: Super Breakout for Analogue Pocket
+      repository: openfpga-superbreakout
+      prerelease: true
+
+- username: jotego
+  cores:
+    - display_name: Contra
+      repository: jtbin
+      path: pocket/zips/jotego.jtcontra.zip
+    - display_name: Double Dragon
+      repository: jtbin
+      path: pocket/zips/jotego.jtdd.zip
+    - display_name: Double Dragon II
+      repository: jtbin
+      path: pocket/zips/jotego.jtdd2.zip
+    - display_name: Ghosts 'n Goblins
+      repository: jtbin
+      path: pocket/zips/jotego.jtgng.zip
+    - display_name: Karnov
+      repository: jtbin
+      path: pocket/zips/jotego.jtkarnov.zip
+    - display_name: Kicker
+      repository: jtbin
+      path: pocket/zips/jotego.jtkicker.zip
+    - display_name: Nekketsu Kouha Kunio-kun
+      repository: jtbin
+      path: pocket/zips/jotego.jtkunio.zip
+    - display_name: Mikie
+      repository: jtbin
+      path: pocket/zips/jotego.jtmikie.zip
+    - display_name: Pang!
+      repository: jtbin
+      path: pocket/zips/jotego.jtpang.zip
+    - display_name: Konami's Ping Pong
+      repository: jtbin
+      path: pocket/zips/jotego.jtpinpon.zip
+    - display_name: Road Fighter
+      repository: jtbin
+      path: pocket/zips/jotego.jtroadf.zip
+    - display_name: Roc'n Rope
+      repository: jtbin
+      path: pocket/zips/jotego.jtroc.zip
+    - display_name: Super Basketball
+      repository: jtbin
+      path: pocket/zips/jotego.jtsbaskt.zip
+    - display_name: Track & Field
+      repository: jtbin
+      path: pocket/zips/jotego.jttrack.zip
+    - display_name: Vigilante
+      repository: jtbin
+      path: pocket/zips/jotego.jtvigil.zip
+    - display_name: Yie Ar Kung-Fu
+      repository: jtbin
+      path: pocket/zips/jotego.jtyiear.zip
+
+- username: Mazamars312
+  cores:
+    - display_name: Amiga 500
+      repository: Analogue-Amiga
+    - display_name: Neo Geo
+      repository: Analogue_Pocket_Neogeo
+    - display_name: Neo Geo (Overdrive)
+      repository: Analogue_Pocket_Neogeo_Overdrive
+    - display_name: PC Engine CD
+      repository: openfpga-pcengine-cd
+
+- username: nullobject
+  cores:
+    - display_name: Tecmo
+      repository: openfpga-tecmo
+
+- username: opengateware
+  cores:
+    - display_name: Bank Panic
+      repository: arcade-bankp
+    - display_name: Congo Bongo
+      repository: arcade-congo
+    - display_name: Dig Dug
+      repository: arcade-digdug
+    - display_name: Galaga
+      repository: arcade-galaga
+    - display_name: Genesis for Analogue Pocket
+      repository: openfpga-genesis
+      prerelease: true
+    - display_name: Green Beret
+      repository: arcade-gberet
+    - display_name: Pooyan
+      repository: arcade-pooyan
+    - display_name: Supervision
+      repository: console-supervision
+    - display_name: Xevious
+      repository: arcade-xevious
+
+- username: psomashekar
+  cores:
+    - display_name: Batrider
+      repository: pram0d-pocket-dist-public
+      path: releases
+      prefix: pram0d.batrider_
+    - display_name: Battle Bakraid
+      repository: pram0d-pocket-dist-public
+      path: releases
+      prefix: pram0d.bakraid_
+    - display_name: Battle Garegga
+      repository: pram0d-pocket-dist-public
+      path: releases
+      prefix: pram0d.garegga_
+    - display_name: Kingdom Grandprix
+      repository: pram0d-pocket-dist-public
+      path: releases
+      prefix: pram0d.garegga_
+    - display_name: Sorcer Striker
+      repository: pram0d-pocket-dist-public
+      path: releases
+      prefix: pram0d.garegga_
+    - display_name: Snow Bros. 2
+      repository: pram0d-pocket-dist-public
+      path: releases
+      prefix: pram0d.snowbros2_
+
+- username: spacemen3
+  cores:
+    - display_name: PDP-1
+      repository: PDP-1
+
+- username: spiritualized1997
+  cores:
+    - display_name: Spiritualized Adventure Vision
+      repository: openFPGA-Adventure-Vision
+    - display_name: Spiritualized Arcadia
+      repository: openFPGA-Arcadia
+    - display_name: Spiritualized Atari 2600
+      repository: openFPGA-2600
+    - display_name: Spiritualized Atari 7800
+      repository: openFPGA-7800
+    - display_name: Spiritualized Channel F
+      repository: openFPGA-Channel-F
+    - display_name: Spiritualized Coleco
+      repository: openFPGA-Coleco
+    - display_name: Spiritualized Creativision
+      repository: openFPGA-Creativision
+    - display_name: Spiritualized Gamate
+      repository: openFPGA-Gamate
+    - display_name: Spiritualized Game King
+      repository: openFPGA-Game-King
+    - display_name: Spiritualized GB
+      repository: openFPGA-GB-GBC
+      prefix: Spiritualized_GB_
+    - display_name: Spiritualized GBA
+      repository: openFPGA-GBA
+    - display_name: Spiritualized GBC
+      repository: openFPGA-GB-GBC
+      prefix: Spiritualized_GBC_
+    - display_name: Spiritualized Genesis
+      repository: openFPGA-Genesis
+    - display_name: Spiritualized Intellivision
+      repository: openFPGA-Intellivision
+    - display_name: Spiritualized Megaduck
+      repository: openFPGA-Megaduck
+    - display_name: Spiritualized NES
+      repository: openFPGA-NES
+    - display_name: Spiritualized Odyssey 2
+      repository: openFPGA-Odyssey-2
+    - display_name: Spiritualized Sega Game Gear
+      repository: openFPGA-GG
+    - display_name: Spiritualized Sega Master System
+      repository: openFPGA-SMS
+    - display_name: Spiritualized Sega SG-1000
+      repository: openFPGA-SG1000
+    - display_name: Spiritualized Studio 2
+      repository: openFPGA-Studio-2
+    - display_name: Spiritualized Supervision
+      repository: openFPGA-Supervision
+    - display_name: Spiritualized Super Gameboy
+      repository: openFPGA-Super-GB
+    - display_name: Spiritualized VideoBrain
+      repository: openFPGA-VideoBrain
