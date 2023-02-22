@@ -1282,7 +1282,7 @@
     id: pram0d.kingdmgp
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     date_release: '2022-09-23'
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221029.zip
+    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
     version: 0.0.1
     platform:
       id: kingdmgp
@@ -1304,7 +1304,7 @@
     id: pram0d.sstriker
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     date_release: '2022-09-23'
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221029.zip
+    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
     version: 0.0.1
     platform:
       id: sstriker
@@ -1326,7 +1326,7 @@
     id: pram0d.garegga
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     date_release: '2022-09-23'
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221029.zip
+    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
     version: 0.0.1
     platform:
       id: garegga
