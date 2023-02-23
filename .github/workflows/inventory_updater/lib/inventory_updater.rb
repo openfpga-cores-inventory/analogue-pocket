@@ -4,6 +4,7 @@ require 'yaml'
 
 require_relative 'inventory_updater/analogue/pocket_service'
 require_relative 'inventory_updater/github/github_service'
+require_relative 'inventory_updater/cache_service'
 require_relative 'inventory_updater/repository_parser'
 require_relative 'inventory_updater/repository_service'
 
@@ -27,11 +28,12 @@ class InventoryUpdater
     # ##############################################################################
   TXT
 
-  attr_reader :github_service, :repository_service
+  attr_reader :github_service, :repository_service, :cache_service
 
   def initialize
     @github_service = GitHub::GitHubService.new
     @repository_service = RepositoryService.new
+    @cache_service = CacheService.new
   end
 
   def update_cores
@@ -78,11 +80,9 @@ class InventoryUpdater
     serialized_cores = []
 
     begin
-      download_url = @repository_service.get_download_url(repository)
-
-      github_repository = repository.github_repository
-      funding = @github_service.get_funding(github_repository)
-      latest_release = @github_service.get_latest_release(github_repository, repository.prerelease)
+      download_url = nil
+      funding = nil
+      latest_release = nil
 
       # Initialize the service responsible for interacting with the core folder
       pocket_service = Analogue::PocketService.new(root_path)
@@ -91,8 +91,21 @@ class InventoryUpdater
       cores = pocket_service.get_cores
       cores.each do |core|
         core_id = core.id
+        version = @cache_service.get_version(core_id)
+
+        if core.version == version
+          serialized_cores << @cache_service.get_core(core_id)
+          next
+        end
+
         platform_id = core.platform_id
         platform = pocket_service.get_platform(platform_id)
+
+        download_url ||= @repository_service.get_download_url(repository)
+
+        github_repository = repository.github_repository
+        funding ||= @github_service.funding(github_repository)
+        latest_release ||= @github_service.latest_release(github_repository, repository.prerelease) if repository.release?
 
         # Update the author icon
         update_icon(pocket_service, core_id)
@@ -125,57 +138,48 @@ class InventoryUpdater
   end
 
   def serialize_core(repository, core, platform, download_url, latest_release, funding)
-    data_slots = core.data.data_slots.select {|data_slot| data_slot.required}
-    assets = data_slots.map do |data_slot|
-      { "platform" => core.platform_id }.tap do |asset|
-        asset["filename"] = data_slot.filename if data_slot.filename
-        asset["extensions"] = data_slot.extensions if data_slot.extensions
-        asset["core_specific"] = data_slot.configuration.core_sepecific_file if data_slot.configuration.core_sepecific_file
-      end
-    end
-
-    core_repository = {
-      "name" => repository.name,
-      "prerelease" => repository.prerelease
-    }.tap do |repo|
-      repo["tag_name"] = latest_release.tag_name if !latest_release.nil?
-    end
-
-    hash = {
-      "repository" => core_repository,
+    return {
       "id" => core.id,
       "display_name" => repository.display_name,
-      "date_release" => core.date_release,
+      "repository" => {
+        "name" => repository.name,
+        "prerelease" => repository.prerelease
+      },
       "download_url" => download_url,
+      "platform_id" => core.platform_id,
       "version" => core.version,
+      "date_release" => core.date_release,
       "platform" => {
-        "id" => core.platform_id,
         "category" => platform.metadata.category,
         "name" => platform.metadata.name,
         "manufacturer" => platform.metadata.manufacturer,
         "year" => platform.metadata.year
-      },
-      "assets" => assets
-    }
+      }
+    }.tap do |hash|
+        hash["repository"]["tag_name"] = latest_release.tag_name unless latest_release.nil?
 
-    if !funding.nil?
-      sponsor = {}.tap do |sponsor|
-        sponsor["community_bridge"] = funding.community_bridge if funding.community_bridge
-        sponsor["github"] = funding.github if funding.github
-        sponsor["issuehunt"] = funding.issuehunt if funding.issuehunt
-        sponsor["ko_fi"] = funding.ko_fi if funding.ko_fi
-        sponsor["liberapay"] = funding.liberapay if funding.liberapay
-        sponsor["open_collective"] = funding.open_collective if funding.open_collective
-        sponsor["otechie"] = funding.otechie if funding.otechie
-        sponsor["patreon"] = funding.patreon if funding.patreon
-        sponsor["tidelift"] = funding.tidelift if funding.tidelift
-        sponsor["custom"] = funding.custom if funding.custom
+        data_slots = core.data.data_slots.select {|data_slot| data_slot.required}
+        hash["assets"] = data_slots.map do |data_slot|
+          { "platform" => core.platform_id }.tap do |asset|
+            asset["filename"] = data_slot.filename if data_slot.filename
+            asset["extensions"] = data_slot.extensions if data_slot.extensions
+            asset["core_specific"] = data_slot.configuration.core_sepecific_file if data_slot.configuration.core_sepecific_file
+          end
+        end
+
+        hash["sponsor"] = {}.tap do |sponsor|
+          sponsor["community_bridge"] = funding.community_bridge if funding.community_bridge
+          sponsor["github"] = funding.github if funding.github
+          sponsor["issuehunt"] = funding.issuehunt if funding.issuehunt
+          sponsor["ko_fi"] = funding.ko_fi if funding.ko_fi
+          sponsor["liberapay"] = funding.liberapay if funding.liberapay
+          sponsor["open_collective"] = funding.open_collective if funding.open_collective
+          sponsor["otechie"] = funding.otechie if funding.otechie
+          sponsor["patreon"] = funding.patreon if funding.patreon
+          sponsor["tidelift"] = funding.tidelift if funding.tidelift
+          sponsor["custom"] = funding.custom if funding.custom
+        end unless funding.nil?
       end
-
-      hash["sponsor"] = sponsor
-    end
-
-    return hash
   end
 end
 

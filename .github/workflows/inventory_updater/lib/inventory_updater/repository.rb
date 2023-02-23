@@ -3,7 +3,7 @@ require 'octokit'
 class Repository
   attr_reader :owner, :display_name, :name, :prerelease, :path, :prefix
 
-  def is_release
+  def release?
     return @path.nil?
   end
 

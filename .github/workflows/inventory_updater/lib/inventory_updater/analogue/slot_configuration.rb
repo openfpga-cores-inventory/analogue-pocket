@@ -3,7 +3,7 @@ module Analogue
     CORE_SPECIFIC_FILE_MASK = 0b000000010
     INSTANCE_JSON_MASK = 0b000010000
 
-    attr_accessor :core_sepecific_file, :instance_json
+    attr_reader :core_sepecific_file, :instance_json
 
     def initialize(parameters)
       # Convert parameters to an int to facilitate bitwise operations

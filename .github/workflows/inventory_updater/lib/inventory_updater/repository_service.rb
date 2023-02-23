@@ -7,7 +7,11 @@ require 'zip'
 require_relative 'github/github_service'
 
 class RepositoryService
-  @@github_service = GitHub::GitHubService.new
+  attr_reader :github_service
+
+  def initialize
+    @github_service = GitHub::GitHubService.new
+  end
 
   def download_core(repository)
     download_url = get_download_url(repository)
@@ -39,17 +43,17 @@ class RepositoryService
     github_repository = repository.github_repository
     prefix = repository.prefix
 
-    if !repository.is_release
+    if !repository.release?
       # get the download url of the core archive from the path
       path = repository.path
-      resources = @@github_service.get_contents(github_repository, path)
+      resources = @github_service.contents(github_repository, path)
       resource = prefix.nil? ? resources : resources.find { |content| content.name.start_with?(prefix) }
       download_url = resource.download_url
     else
       # get the download url of the core archive from the latest release
       prerelease = repository.prerelease
-      release = @@github_service.get_latest_release(github_repository, repository.prerelease)
-      assets = @@github_service.get_release_assets(release)
+      release = @github_service.latest_release(github_repository, prerelease)
+      assets = @github_service.release_assets(release)
       core_asset = prefix.nil? ? assets.first : assets.find { |asset| asset.name.start_with?(prefix) }
       download_url = core_asset.browser_download_url
     end

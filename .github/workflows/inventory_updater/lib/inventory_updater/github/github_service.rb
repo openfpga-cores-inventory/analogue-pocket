@@ -1,5 +1,6 @@
 require 'base64'
 require 'octokit'
+require 'yaml'
 
 require_relative 'funding'
 
@@ -9,44 +10,49 @@ module GitHub
     GITHUB_FOLDER = '.github'
     FUNDING_FILE = 'FUNDING.yml'
 
-    @@client = Octokit::Client.new(:netrc => true)
+    attr_reader :client
 
-    def get_contents(repository, path)
-      return @@client.contents(repository, :path => path)
+    def initialize
+      @client = Octokit::Client.new(:netrc => true)
     end
 
-    def get_funding(repository)
+    def contents(repository, path)
+      return @client.contents(repository, :path => path)
+    end
+
+    def funding(repository)
       begin
-        # Check if the repository has a FUNDING.yml
         path = File.join(GITHUB_FOLDER, FUNDING_FILE)
-        content = get_file_content(repository, path)
+        content = file_content(repository, path)
       rescue Octokit::NotFound
         begin
+          # Fallback to default community health file
           github_repository = Octokit::Repository.new("#{repository.owner}/#{GITHUB_REPOSITORY}")
           path = FUNDING_FILE
-          content = get_file_content(github_repository, FUNDING_FILE)
+          content = file_content(github_repository, FUNDING_FILE)
         rescue Octokit::NotFound
           # Failed to find FUNDING.yml
           return nil
         end
       end
 
-      return GitHub::Funding.parse_content(content)
+      funding = YAML.load(content)
+      return Funding.new(funding)
     end
 
-    def get_latest_release(repository, prerelease = false)
-      releases = @@client.releases(repository)
+    def latest_release(repository, prerelease = false)
+      releases = @client.releases(repository)
       return releases.find { |release| release.prerelease == prerelease }
     end
 
-    def get_release_assets(release)
-      return @@client.release_assets(release.url)
+    def release_assets(release)
+      return @client.release_assets(release.url)
     end
 
     private
 
-    def get_file_content(repository, path)
-      resource = @@client.contents(repository, :path => path)
+    def file_content(repository, path)
+      resource = contents(repository, path)
       return Base64.decode64(resource.content)
     end
   end

@@ -12,10 +12,11 @@ layout: none
         "owner": {{ developer.username | jsonify }},
         "name": {{ core.repository.name | jsonify }}
       },
-      "platform": {{ core.platform | jsonify }},
       "download_url": {{ core.download_url | jsonify }},
-      "release_date": {{ core.date_release | date: "%Y-%m-%d" | jsonify }},
+      "platform_id": {{ core.platform_id | jsonify }},
       "version": {{ core.version | jsonify }},
+      "release_date": {{ core.date_release | date: "%Y-%m-%d" | jsonify }},
+      "platform": {{ core.platform | jsonify }},
       "assets": {{ core.assets | jsonify }},
       "sponsor": {{ core.sponsor | jsonify }}
     }
