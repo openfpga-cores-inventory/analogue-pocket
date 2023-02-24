@@ -368,7 +368,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-25'
     platform:
       category: Arcade compatible
@@ -396,7 +396,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-11-28'
     platform:
       category: Arcade compatible
@@ -424,7 +424,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-11-28'
     platform:
       category: Arcade compatible
@@ -452,7 +452,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-07'
     platform:
       category: Arcade compatible
@@ -480,7 +480,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
-    version: 64d5ae0
+    version: 985595e
     date_release: '2023-02-03'
     platform:
       category: Arcade compatible
@@ -508,7 +508,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -536,7 +536,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-11-28'
     platform:
       category: Arcade compatible
@@ -564,7 +564,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -592,7 +592,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-07'
     platform:
       category: Arcade compatible
@@ -620,7 +620,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -648,7 +648,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -676,7 +676,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -704,7 +704,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -732,7 +732,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
@@ -788,7 +788,7 @@
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
-    version: 64d5ae0
+    version: e62840a
     date_release: '2022-12-23'
     platform:
       category: Arcade compatible
