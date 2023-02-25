@@ -796,8 +796,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
     description: Arcade hardware
-    version: e62840a
-    date_release: '2022-12-23'
+    version: 6a0470b
+    date_release: '2023-02-25'
     platform:
       category: Arcade compatible
       name: jtroc
