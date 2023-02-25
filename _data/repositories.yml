@@ -58,9 +58,15 @@
     - display_name: Double Dragon II
       repository: jtbin
       path: pocket/zips/jotego.jtdd2.zip
+    - display_name: Exed Exes
+      repository: jtbin
+      path: pocket/zips/jotego.jtexed.zip
     - display_name: Ghosts 'n Goblins
       repository: jtbin
       path: pocket/zips/jotego.jtgng.zip
+    - display_name: Gun Smoke
+      repository: jtbin
+      path: pocket/zips/jotego.jtgunsmk.zip
     - display_name: Karnov
       repository: jtbin
       path: pocket/zips/jotego.jtkarnov.zip
@@ -85,15 +91,30 @@
     - display_name: Roc'n Rope
       repository: jtbin
       path: pocket/zips/jotego.jtroc.zip
+    - display_name: Section Z
+      repository: jtbin
+      path: pocket/zips/jotego.jtsectnz.zip
+    - display_name: Side Arms
+      repository: jtbin
+      path: pocket/zips/jotego.jtsarms.zip
+    - display_name: Street Fighter
+      repository: jtbin
+      path: pocket/zips/jotego.jtsf.zip
     - display_name: Super Basketball
       repository: jtbin
       path: pocket/zips/jotego.jtsbaskt.zip
     - display_name: Track & Field
       repository: jtbin
       path: pocket/zips/jotego.jttrack.zip
+    - display_name: Trojan
+      repository: jtbin
+      path: pocket/zips/jotego.jttrojan.zip
     - display_name: Vigilante
       repository: jtbin
       path: pocket/zips/jotego.jtvigil.zip
+    - display_name: Vulgus
+      repository: jtbin
+      path: pocket/zips/jotego.jtvulgus.zip
     - display_name: Yie Ar Kung-Fu
       repository: jtbin
       path: pocket/zips/jotego.jtyiear.zip
