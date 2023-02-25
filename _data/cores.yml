@@ -11,11 +11,13 @@
   - id: agg23.Arduboy
     display_name: Arduboy for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-arduboy
       prerelease: false
       tag_name: 0.9.0
     download_url: https://github.com/agg23/openfpga-arduboy/releases/download/0.9.0/agg23.Arduboy.0.9.0.zip
     platform_id: arduboy
+    description: A small, portable Arduino console.
     version: 0.9.0
     date_release: '2022-09-03'
     platform:
@@ -33,11 +35,13 @@
   - id: agg23.Pong
     display_name: Atari's 1972 Pong
     repository:
+      platform: github
       name: openfpga-pong
       prerelease: false
       tag_name: 1.2.0
     download_url: https://github.com/agg23/openfpga-pong/releases/download/1.2.0/agg23.Pong_1.2.0_2022-09-08.zip
     platform_id: pong
+    description: Atari Pong arcade machine. 1972
     version: 1.2.0
     date_release: '2022-09-08'
     platform:
@@ -52,11 +56,14 @@
   - id: agg23.NES
     display_name: NES for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-NES
       prerelease: false
       tag_name: 0.3.1
     download_url: https://github.com/agg23/openfpga-NES/releases/download/0.3.1/agg23.NES_0.3.1_2022-12-07.zip
     platform_id: nes
+    description: Nintendo Entertainment System and Famicom. Nintendo's first home
+      console
     version: 0.3.1
     date_release: '2022-12-07'
     platform:
@@ -74,11 +81,13 @@
   - id: agg23.PC Engine
     display_name: PC Engine for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-pcengine
       prerelease: false
       tag_name: 0.3.0
     download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.3.0/agg23.PC.Engine_0.3.0_2022-11-08.zip
     platform_id: pce
+    description: PC Engine (known as TurboGrafx-16 in the US) by NEC
     version: 0.3.0
     date_release: '2022-11-08'
     platform:
@@ -97,11 +106,13 @@
   - id: agg23.PokemonMini
     display_name: Pokemon Mini for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-pokemonmini
       prerelease: false
       tag_name: 0.2.0
     download_url: https://github.com/agg23/openfpga-pokemonmini/releases/download/0.2.0/agg23.PokemonMini_0.2.0_2022-11-12.zip
     platform_id: poke_mini
+    description: A small handheld Tamagotchi-like console by Nintendo
     version: 0.2.0
     date_release: '2022-11-12'
     platform:
@@ -119,11 +130,13 @@
   - id: agg23.SNES
     display_name: SNES for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-SNES
       prerelease: false
       tag_name: 0.4.3
     download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.3/agg23.SNES_0.4.3_2022-12-14.zip
     platform_id: snes
+    description: Super Nintendo and Super Famicom. Nintendo's second major home console
     version: 0.4.3
     date_release: '2022-12-14'
     platform:
@@ -144,11 +157,13 @@
   - id: agg23.WonderSwan
     display_name: WonderSwan Color for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-wonderswan
       prerelease: false
       tag_name: 1.0.0
     download_url: https://github.com/agg23/openfpga-wonderswan/releases/download/1.0.0/agg23.WonderSwan_1.0.0_2023-01-15.zip
     platform_id: wonderswan
+    description: WonderSwan and WonderSwan Color by Bandai
     version: 1.0.0
     date_release: '2023-01-15'
     platform:
@@ -170,11 +185,13 @@
   - id: antongale.performan
     display_name: Performan
     repository:
+      platform: github
       name: arcade-performan
       prerelease: false
       tag_name: 0.1.1
     download_url: https://github.com/antongale/arcade-performan/releases/download/0.1.1/antongale.performan_pocket-0.1.1.zip
     platform_id: performan
+    description: Toaplan Performan gateware IP Core
     version: 0.1.1
     date_release: '2023-01-22'
     platform:
@@ -193,11 +210,13 @@
   - id: antongale.slapfight
     display_name: Slap Fight
     repository:
+      platform: github
       name: arcade-slapfight
       prerelease: false
       tag_name: 0.1.3
     download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.1.3/antongale.slapfight_pocket-0.1.3.zip
     platform_id: slapfight
+    description: Toaplan Slap Fight gateware IP Core
     version: 0.1.3
     date_release: '2023-01-05'
     platform:
@@ -218,11 +237,13 @@
   - id: ericlewis.Asteroids
     display_name: Asteroids for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-asteroids
       prerelease: false
       tag_name: 1.0.1
     download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/1.0.1/ericlewis.Asteroids_1.0.1_2022-10-11.zip
     platform_id: asteroids
+    description: Atari's Asteroids released in 1979.
     version: 1.0.1
     date_release: '2022-10-11'
     platform:
@@ -237,11 +258,13 @@
   - id: ericlewis.Dominos
     display_name: Dominos for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-dominos
       prerelease: true
       tag_name: 0.0.1
     download_url: https://github.com/ericlewis/openfpga-dominos/releases/download/0.0.1/ericlewis.Dominos_0.0.1_2022-09-17.zip
     platform_id: dominos
+    description: Atari's 1977 Dominos.
     version: 0.0.1
     date_release: '2022-09-16'
     platform:
@@ -255,11 +278,13 @@
   - id: ericlewis.DonkeyKong
     display_name: Donkey Kong
     repository:
+      platform: github
       name: openFPGA-DonkeyKong
       prerelease: true
       tag_name: 0.0.1
     download_url: https://github.com/ericlewis/openFPGA-DonkeyKong/releases/download/0.0.1/ericlewis.DonkeyKong_0.0.1_2022-10-12.zip
     platform_id: donkeykong
+    description: Nintendo's Donkey Kong released in 1981.
     version: 0.0.1
     date_release: '2022-10-12'
     platform:
@@ -273,11 +298,13 @@
   - id: ericlewis.LunarLander
     display_name: Lunar Lander for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-lunarlander
       prerelease: true
       tag_name: 0.9.1
     download_url: https://github.com/ericlewis/openfpga-lunarlander/releases/download/0.9.1/ericlewis.LunarLander_0.9.1_2022-09-13.zip
     platform_id: lunarlander
+    description: Atari's 1979 Lunar Lander.
     version: 0.9.1
     date_release: '2022-09-12'
     platform:
@@ -292,11 +319,14 @@
   - id: ericlewis.QBert
     display_name: Q*Bert
     repository:
+      platform: github
       name: openfpga-qbert
       prerelease: false
       tag_name: 1.1.0
     download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.1.0/ericlewis.QBert_1.1.0_2022-10-17.zip
     platform_id: qbert
+    description: Q*Bert arcade core for Analogue Pocket ported from MiSTer - originally
+      created by Pierco.
     version: 1.1.0
     date_release: '2022-10-17'
     platform:
@@ -310,11 +340,13 @@
   - id: ericlewis.RadarScope
     display_name: Radar Scope
     repository:
+      platform: github
       name: openFPGA-RadarScope
       prerelease: true
       tag_name: 0.0.1
     download_url: https://github.com/ericlewis/openFPGA-RadarScope/releases/download/0.0.1/ericlewis.RadarScope_0.0.1_2022-11-02.zip
     platform_id: radarscope
+    description: Nintendo's Radar Scope released in 1980.
     version: 0.0.1
     date_release: '2022-11-02'
     platform:
@@ -328,11 +360,13 @@
   - id: ericlewis.SpaceRace
     display_name: Space Race for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-spacerace
       prerelease: false
       tag_name: 1.0.1
     download_url: https://github.com/ericlewis/openfpga-spacerace/releases/download/1.0.1/ericlewis.SpaceRace_1.0.1_2022-10-11.zip
     platform_id: spacerace
+    description: Race in space!
     version: 1.0.1
     date_release: '2022-10-11'
     platform:
@@ -344,11 +378,13 @@
   - id: ericlewis.SuperBreakout
     display_name: Super Breakout for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-superbreakout
       prerelease: true
       tag_name: 0.0.1
     download_url: https://github.com/ericlewis/openfpga-superbreakout/releases/download/0.0.1/ericlewis.SuperBreakout_0.0.1_2022-09-14.zip
     platform_id: superbreakout
+    description: Atari's Super Breakout released in 1978.
     version: 0.0.1
     date_release: '2022-09-14'
     platform:
@@ -364,10 +400,12 @@
   - id: jotego.jtcontra
     display_name: Contra
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-25'
     platform:
@@ -392,10 +430,12 @@
   - id: jotego.jtdd
     display_name: Double Dragon
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-11-28'
     platform:
@@ -420,10 +460,12 @@
   - id: jotego.jtdd2
     display_name: Double Dragon II
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-11-28'
     platform:
@@ -448,10 +490,12 @@
   - id: jotego.jtgng
     display_name: Ghosts 'n Goblins
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-07'
     platform:
@@ -476,10 +520,12 @@
   - id: jotego.jtkarnov
     display_name: Karnov
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
+    description: Arcade hardware
     version: 985595e
     date_release: '2023-02-03'
     platform:
@@ -504,10 +550,12 @@
   - id: jotego.jtkicker
     display_name: Kicker
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -532,10 +580,12 @@
   - id: jotego.jtkunio
     display_name: Nekketsu Kouha Kunio-kun
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-11-28'
     platform:
@@ -560,10 +610,12 @@
   - id: jotego.jtmikie
     display_name: Mikie
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -588,10 +640,12 @@
   - id: jotego.jtpang
     display_name: Pang!
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-07'
     platform:
@@ -616,10 +670,12 @@
   - id: jotego.jtpinpon
     display_name: Konami's Ping Pong
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -644,10 +700,12 @@
   - id: jotego.jtroadf
     display_name: Road Fighter
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -672,10 +730,12 @@
   - id: jotego.jtroc
     display_name: Roc'n Rope
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -700,10 +760,12 @@
   - id: jotego.jtsbaskt
     display_name: Super Basketball
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -728,10 +790,12 @@
   - id: jotego.jttrack
     display_name: Track & Field
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -756,10 +820,12 @@
   - id: jotego.jtvigil
     display_name: Vigilante
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
+    description: Arcade hardware
     version: 64d5ae0
     date_release: '2023-02-04'
     platform:
@@ -784,10 +850,12 @@
   - id: jotego.jtyiear
     display_name: Yie Ar Kung-Fu
     repository:
+      platform: github
       name: jtbin
       prerelease: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
+    description: Arcade hardware
     version: e62840a
     date_release: '2022-12-23'
     platform:
@@ -814,11 +882,13 @@
   - id: Mazamars312.Amiga
     display_name: Amiga 500
     repository:
+      platform: github
       name: Analogue-Amiga
       prerelease: false
       tag_name: Mazamars312.Amiga.500.0.0.6-Alpha
     download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.500.0.0.6-Alpha/Mazamars312.Amiga.500.0.0.6-Alpha.zip
     platform_id: amiga
+    description: Amiga 500 Core
     version: 0.0.6
     date_release: '2022-12-9'
     platform:
@@ -837,11 +907,13 @@
   - id: Mazamars312.NeoGeo
     display_name: Neo Geo
     repository:
+      platform: github
       name: Analogue_Pocket_Neogeo
       prerelease: false
       tag_name: Mazamars312.Neogeo.0.8.1-17/01/2023
     download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Mazamars312.Neogeo.0.8.1-17/01/2023/Mazamars312.Neogeo_0.8.1_2023_1_17.FinalRelease.zip
     platform_id: ng
+    description: Neogeo cart based core
     version: 0.8.1
     date_release: '2023-01-17'
     platform:
@@ -891,11 +963,13 @@
   - id: Mazamars312.NeoGeo_Overdrive
     display_name: Neo Geo (Overdrive)
     repository:
+      platform: github
       name: Analogue_Pocket_Neogeo_Overdrive
       prerelease: false
       tag_name: Mazamars312.NeogeoOverdrive.0.8.0-14/01/2023
     download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo_Overdrive/releases/download/Mazamars312.NeogeoOverdrive.0.8.0-14/01/2023/Mazamars312.Neogeo_Overdrive_0.8.0_2023_1_14.FinalRelease.zip
     platform_id: ng
+    description: Neogeo cart based core
     version: Alpha 0.8.0
     date_release: '2023-01-15'
     platform:
@@ -945,11 +1019,13 @@
   - id: Mazamars312.PC Engine CD
     display_name: PC Engine CD
     repository:
+      platform: github
       name: openfpga-pcengine-cd
       prerelease: false
       tag_name: Mazamars312.PCECD.0.1.7-15/02/2023
     download_url: https://github.com/Mazamars312/openfpga-pcengine-cd/releases/download/Mazamars312.PCECD.0.1.7-15/02/2023/Mazamars312.PCECD.0.1.7-15-02-2023.zip
     platform_id: pcecd
+    description: PC Engine (known as TurboGrafx-16 in the US) by NEC
     version: 0.1.7
     date_release: '2023-02-15'
     platform:
@@ -977,11 +1053,13 @@
   - id: nullobject.tecmo
     display_name: Tecmo
     repository:
+      platform: github
       name: openfpga-tecmo
       prerelease: false
       tag_name: v2.0
     download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v2.0/pocket-tecmo-2.0.zip
     platform_id: tecmo
+    description: Tecmo arcade core.
     version: '2.0'
     date_release: '2022-08-26'
     platform:
@@ -1004,11 +1082,13 @@
   - id: boogermann.bankpanic
     display_name: Bank Panic
     repository:
+      platform: github
       name: arcade-bankp
       prerelease: false
       tag_name: 0.1.0
     download_url: https://github.com/opengateware/arcade-bankp/releases/download/0.1.0/boogermann.bankpanic_pocket-0.1.0.zip
     platform_id: bankpanic
+    description: Bank Panic/Combat Hawk Compatible Gateware IP Core for FPGA
     version: 0.1.0
     date_release: '2022-10-09'
     platform:
@@ -1031,11 +1111,13 @@
   - id: boogermann.congo
     display_name: Congo Bongo
     repository:
+      platform: github
       name: arcade-congo
       prerelease: false
       tag_name: 0.1.1
     download_url: https://github.com/opengateware/arcade-congo/releases/download/0.1.1/boogermann.congo_pocket-0.1.1.zip
     platform_id: congo
+    description: Congo Bongo
     version: 0.1.1
     date_release: '2022-11-16'
     platform:
@@ -1057,11 +1139,13 @@
   - id: boogermann.digdug
     display_name: Dig Dug
     repository:
+      platform: github
       name: arcade-digdug
       prerelease: false
       tag_name: 0.1.0
     download_url: https://github.com/opengateware/arcade-digdug/releases/download/0.1.0/boogermann.digdug_pocket-0.1.0.zip
     platform_id: digdug
+    description: Namco Dig Dug Compatible Gateware IP Core for FPGA
     version: 0.1.0
     date_release: '2022-09-20'
     platform:
@@ -1083,11 +1167,13 @@
   - id: boogermann.galaga
     display_name: Galaga
     repository:
+      platform: github
       name: arcade-galaga
       prerelease: false
       tag_name: v0.1.0
     download_url: https://github.com/opengateware/arcade-galaga/releases/download/v0.1.0/arcade-galaga-pocket-v0.1.0.zip
     platform_id: galaga
+    description: Namco Galaga Compatible Gateware IP Core for FPGA
     version: 0.1.0
     date_release: '2022-09-03'
     platform:
@@ -1109,11 +1195,14 @@
   - id: ericlewis.Genesis
     display_name: Genesis for Analogue Pocket
     repository:
+      platform: github
       name: openfpga-genesis
       prerelease: true
       tag_name: 0.4.2
     download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.4.2/ericlewis.Genesis_0.4.2_2022-10-08.zip
     platform_id: genesis
+    description: Sega Genesis, known as the Mega Drive outside North America, is a
+      16-bit fourth-generation home video game console developed and sold by Sega.
     version: 0.4.2
     date_release: '2022-10-08'
     platform:
@@ -1131,11 +1220,13 @@
   - id: boogermann.gberet
     display_name: Green Beret
     repository:
+      platform: github
       name: arcade-gberet
       prerelease: false
       tag_name: 0.1.1
     download_url: https://github.com/opengateware/arcade-gberet/releases/download/0.1.1/boogermann.gberet_pocket-0.1.1.zip
     platform_id: gberet
+    description: Green Beret/Rush n' Attack Compatible Gateware IP Core for FPGA
     version: 0.1.1
     date_release: '2022-10-03'
     platform:
@@ -1157,11 +1248,14 @@
   - id: boogermann.pooyan
     display_name: Pooyan
     repository:
+      platform: github
       name: arcade-pooyan
       prerelease: false
       tag_name: 0.1.0
     download_url: https://github.com/opengateware/arcade-pooyan/releases/download/0.1.0/boogermann.pooyan_pocket-0.1.0.zip
     platform_id: pooyan
+    description: Pooyan is a fixed shooter arcade game released by Konami in Japan
+      in 1982.
     version: 0.1.0
     date_release: '2022-10-06'
     platform:
@@ -1183,11 +1277,13 @@
   - id: boogermann.supervision
     display_name: Supervision
     repository:
+      platform: github
       name: console-supervision
       prerelease: false
       tag_name: 0.1.1
     download_url: https://github.com/opengateware/console-supervision/releases/download/0.1.1/boogermann.supervision_pocket-0.1.1.zip
     platform_id: supervision
+    description: Watara Supervision Compatible Gateware IP Core
     version: 0.1.1
     date_release: '2022-10-15'
     platform:
@@ -1207,11 +1303,14 @@
   - id: boogermann.xevious
     display_name: Xevious
     repository:
+      platform: github
       name: arcade-xevious
       prerelease: false
       tag_name: 0.1.0
     download_url: https://github.com/opengateware/arcade-xevious/releases/download/0.1.0/boogermann.xevious_pocket-0.1.0.zip
     platform_id: xevious
+    description: Xevious is a shoot 'em up video game franchise published by Bandai
+      Namco Entertainment
     version: 0.1.0
     date_release: '2022-09-10'
     platform:
@@ -1235,10 +1334,12 @@
   - id: pram0d.batrider
     display_name: Batrider
     repository:
+      platform: github
       name: pram0d-pocket-dist-public
       prerelease: false
     download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.batrider_20221218.zip
     platform_id: batrider
+    description: Batrider Analogue Pocket Core
     version: 0.0.1
     date_release: '2022-09-23'
     platform:
@@ -1257,10 +1358,12 @@
   - id: pram0d.bakraid
     display_name: Battle Bakraid
     repository:
+      platform: github
       name: pram0d-pocket-dist-public
       prerelease: false
     download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.bakraid_20221218.zip
     platform_id: bakraid
+    description: Battle Bakraid Analogue Pocket Core
     version: 0.0.1
     date_release: '2022-09-23'
     platform:
@@ -1279,10 +1382,12 @@
   - id: pram0d.kingdmgp
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     repository:
+      platform: github
       name: pram0d-pocket-dist-public
       prerelease: false
     download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
     platform_id: kingdmgp
+    description: Kingdom Grandprix Analogue Pocket Core
     version: 0.0.1
     date_release: '2022-09-23'
     platform:
@@ -1298,35 +1403,15 @@
     - platform: kingdmgp
       extensions:
       - rom
-  - id: pram0d.sstriker
-    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
-    repository:
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
-    platform_id: sstriker
-    version: 0.0.1
-    date_release: '2022-09-23'
-    platform:
-      category: Arcade
-      name: Sorcer Striker
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: sstriker
-      extensions:
-      - json
-      core_specific: true
-    - platform: sstriker
-      extensions:
-      - rom
   - id: pram0d.garegga
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     repository:
+      platform: github
       name: pram0d-pocket-dist-public
       prerelease: false
     download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
     platform_id: garegga
+    description: Battle Garegga Analogue Pocket Core
     version: 0.0.1
     date_release: '2022-09-23'
     platform:
@@ -1342,13 +1427,39 @@
     - platform: garegga
       extensions:
       - rom
+  - id: pram0d.sstriker
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: pram0d-pocket-dist-public
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
+    platform_id: sstriker
+    description: Sorcer Striker Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Sorcer Striker
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: sstriker
+      extensions:
+      - json
+      core_specific: true
+    - platform: sstriker
+      extensions:
+      - rom
   - id: pram0d.snowbros2
     display_name: Snow Bros. 2
     repository:
+      platform: github
       name: pram0d-pocket-dist-public
       prerelease: false
     download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.snowbros2_20221019.zip
     platform_id: snowbros2
+    description: Snow Bros. 2 Analogue Pocket Core
     version: 0.0.1
     date_release: '2022-09-20'
     platform:
@@ -1369,11 +1480,13 @@
   - id: Spacemen3.PDP1
     display_name: PDP-1
     repository:
+      platform: github
       name: PDP-1
       prerelease: false
       tag_name: v1.1.0
     download_url: https://github.com/spacemen3/PDP-1/releases/download/v1.1.0/Spacemen3.PDP1_1.1.0_2022-08-19.zip
     platform_id: pdp1
+    description: Spacewar! v3.1 1962
     version: v3.1 - Sep. 24, 1962
     date_release: '2022-08-19'
     platform:
@@ -1395,11 +1508,13 @@
   - id: Spiritualized.Adventurevision
     display_name: Spiritualized Adventure Vision
     repository:
+      platform: github
       name: openFPGA-Adventure-Vision
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Adventure-Vision/releases/download/1.0.2/Spiritualized_Adventurevision_1.0.2_2022_11_08.zip
     platform_id: avision
+    description: Adventurevision core
     version: 1.0.2
     date_release: '2022-10-22'
     platform:
@@ -1414,11 +1529,13 @@
   - id: Spiritualized.Arcadia
     display_name: Spiritualized Arcadia
     repository:
+      platform: github
       name: openFPGA-Arcadia
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Arcadia/releases/download/1.0.2/Spiritualized_Arcadia_1.0.2_2022_11_08.zip
     platform_id: arcadia
+    description: Arcadia 2001 core
     version: 1.0.2
     date_release: '2022-10-20'
     platform:
@@ -1433,11 +1550,13 @@
   - id: Spiritualized.2600
     display_name: Spiritualized Atari 2600
     repository:
+      platform: github
       name: openFPGA-2600
       prerelease: false
       tag_name: 1.0.0
     download_url: https://github.com/spiritualized1997/openFPGA-2600/releases/download/1.0.0/Spiritualized_2600_1.0.0_2022_11_08.zip
     platform_id: '2600'
+    description: Atari 2600 core
     version: 1.0.0
     date_release: '2022-10-18'
     platform:
@@ -1451,11 +1570,13 @@
   - id: Spiritualized.7800
     display_name: Spiritualized Atari 7800
     repository:
+      platform: github
       name: openFPGA-7800
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-7800/releases/download/1.0.2/Spiritualized_7800_1.0.2_2022_11_08.zip
     platform_id: '7800'
+    description: Atari 7800 core
     version: 1.0.2
     date_release: '2022-10-18'
     platform:
@@ -1474,11 +1595,13 @@
   - id: Spiritualized.ChannelF
     display_name: Spiritualized Channel F
     repository:
+      platform: github
       name: openFPGA-Channel-F
       prerelease: false
       tag_name: 1.0.0
     download_url: https://github.com/spiritualized1997/openFPGA-Channel-F/releases/download/1.0.0/Spiritualized_ChannelF_1.0.0_2022_11_08.zip
     platform_id: channel_f
+    description: Channel F core
     version: 1.0.0
     date_release: '2022-10-20'
     platform:
@@ -1497,11 +1620,13 @@
   - id: Spiritualized.Coleco
     display_name: Spiritualized Coleco
     repository:
+      platform: github
       name: openFPGA-Coleco
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Coleco/releases/download/1.0.2/Spiritualized_Coleco_1.0.2_2022_11_08.zip
     platform_id: coleco
+    description: Coleco Core
     version: 1.0.2
     date_release: '2022-10-27'
     platform:
@@ -1515,11 +1640,13 @@
   - id: Spiritualized.Creativision
     display_name: Spiritualized Creativision
     repository:
+      platform: github
       name: openFPGA-Creativision
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Creativision/releases/download/1.0.2/Spiritualized_Creativision_1.0.2_2022_11_08.zip
     platform_id: creativision
+    description: Creativision core
     version: 1.0.2
     date_release: '2022-10-20'
     platform:
@@ -1535,11 +1662,13 @@
   - id: Spiritualized.Gamate
     display_name: Spiritualized Gamate
     repository:
+      platform: github
       name: openFPGA-Gamate
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Gamate/releases/download/1.0.2/Spiritualized_Gamate_1.0.2_2022_11_08.zip
     platform_id: gamate
+    description: Gamate core
     version: 1.0.2
     date_release: '2022-10-22'
     platform:
@@ -1555,11 +1684,13 @@
   - id: Spiritualized.Gameking
     display_name: Spiritualized Game King
     repository:
+      platform: github
       name: openFPGA-Game-King
       prerelease: false
       tag_name: 1.0.3
     download_url: https://github.com/spiritualized1997/openFPGA-Game-King/releases/download/1.0.3/Spiritualized_GameKing_1.0.3_2022_11_08.zip
     platform_id: game_king
+    description: Game King core
     version: 1.0.3
     date_release: '2022-10-22'
     platform:
@@ -1575,11 +1706,13 @@
   - id: Spiritualized.GB
     display_name: Spiritualized GB
     repository:
+      platform: github
       name: openFPGA-GB-GBC
       prerelease: false
       tag_name: v1.3.0
     download_url: https://github.com/spiritualized1997/openFPGA-GB-GBC/releases/download/v1.3.0/Spiritualized_GB_1.3.0_2022_08_25.zip
     platform_id: gb
+    description: GB Core
     version: 1.3.0
     date_release: '2022-8-25'
     platform:
@@ -1598,11 +1731,13 @@
   - id: Spiritualized.GBA
     display_name: Spiritualized GBA
     repository:
+      platform: github
       name: openFPGA-GBA
       prerelease: false
       tag_name: v1.2.0
     download_url: https://github.com/spiritualized1997/openFPGA-GBA/releases/download/v1.2.0/Spiritualized_GBA_1.2.0_2022_08_25.zip
     platform_id: gba
+    description: GBA Core
     version: 1.2.0
     date_release: '2022-08-25'
     platform:
@@ -1622,11 +1757,13 @@
   - id: Spiritualized.GBC
     display_name: Spiritualized GBC
     repository:
+      platform: github
       name: openFPGA-GB-GBC
       prerelease: false
       tag_name: v1.3.0
     download_url: https://github.com/spiritualized1997/openFPGA-GB-GBC/releases/download/v1.3.0/Spiritualized_GBC_1.3.0_2022_08_25.zip
     platform_id: gbc
+    description: GBC Core
     version: 1.3.0
     date_release: '2022-8-25'
     platform:
@@ -1646,11 +1783,13 @@
   - id: Spiritualized.Genesis
     display_name: Spiritualized Genesis
     repository:
+      platform: github
       name: openFPGA-Genesis
       prerelease: false
       tag_name: 1.0.8
     download_url: https://github.com/spiritualized1997/openFPGA-Genesis/releases/download/1.0.8/Spiritualized_Genesis_1.0.8_2022_11_08.zip
     platform_id: genesis
+    description: Genesis core
     version: 1.0.8
     date_release: '2022-10-18'
     platform:
@@ -1666,11 +1805,13 @@
   - id: Spiritualized.Intv
     display_name: Spiritualized Intellivision
     repository:
+      platform: github
       name: openFPGA-Intellivision
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Intellivision/releases/download/1.0.2/Spiritualized_Intellivision_1.0.2_2022_11_08.zip
     platform_id: intv
+    description: Intellivision core
     version: 1.0.2
     date_release: '2022-10-26'
     platform:
@@ -1685,11 +1826,13 @@
   - id: Spiritualized.Megaduck
     display_name: Spiritualized Megaduck
     repository:
+      platform: github
       name: openFPGA-Megaduck
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Megaduck/releases/download/1.0.2/Spiritualized_Megaduck_1.0.2_2022_11_08.zip
     platform_id: mega_duck
+    description: Megaduck core
     version: 1.0.2
     date_release: '2022-10-20'
     platform:
@@ -1706,11 +1849,13 @@
   - id: Spiritualized.NES
     display_name: Spiritualized NES
     repository:
+      platform: github
       name: openFPGA-NES
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-NES/releases/download/1.0.2/Spiritualized_NES_1.0.2_2022_11_08.zip
     platform_id: nes
+    description: NES core
     version: 1.0.2
     date_release: '2022-10-18'
     platform:
@@ -1727,11 +1872,13 @@
   - id: Spiritualized.Odyssey2
     display_name: Spiritualized Odyssey 2
     repository:
+      platform: github
       name: openFPGA-Odyssey-2
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Odyssey-2/releases/download/1.0.2/Spiritualized_Odyssey2_1.0.2_2022_11_08.zip
     platform_id: odyssey2
+    description: Odyssey^2 core
     version: 1.0.2
     date_release: '2022-10-30'
     platform:
@@ -1746,11 +1893,13 @@
   - id: Spiritualized.GG
     display_name: Spiritualized Sega Game Gear
     repository:
+      platform: github
       name: openFPGA-GG
       prerelease: false
       tag_name: v1.3.0
     download_url: https://github.com/spiritualized1997/openFPGA-GG/releases/download/v1.3.0/Spiritualized_GG_1.3.0_2022_08_25.zip
     platform_id: gg
+    description: GG Core
     version: 1.2.0
     date_release: '2022-08-25'
     platform:
@@ -1765,11 +1914,13 @@
   - id: Spiritualized.SMS
     display_name: Spiritualized Sega Master System
     repository:
+      platform: github
       name: openFPGA-SMS
       prerelease: false
       tag_name: v1.2.0
     download_url: https://github.com/spiritualized1997/openFPGA-SMS/releases/download/v1.2.0/Spiritualized_SMS_1.2.0_2022_08_25.zip
     platform_id: sms
+    description: SMS Core
     version: 1.2.0
     date_release: '2022-08-25'
     platform:
@@ -1784,11 +1935,13 @@
   - id: Spiritualized.SG-1000
     display_name: Spiritualized Sega SG-1000
     repository:
+      platform: github
       name: openFPGA-SG1000
       prerelease: false
       tag_name: v1.2.0
     download_url: https://github.com/spiritualized1997/openFPGA-SG1000/releases/download/v1.2.0/Spiritualized_SG-1000_1.2.0_2022_08_25.zip
     platform_id: sg1000
+    description: SG-1000 Core
     version: 1.2.0
     date_release: '2022-08-25'
     platform:
@@ -1803,11 +1956,13 @@
   - id: Spiritualized.Studio2
     display_name: Spiritualized Studio 2
     repository:
+      platform: github
       name: openFPGA-Studio-2
       prerelease: false
       tag_name: 1.0.2
     download_url: https://github.com/spiritualized1997/openFPGA-Studio-2/releases/download/1.0.2/Spiritualized_Studio2_1.0.2_2022_11_08.zip
     platform_id: studio2
+    description: Studio 2 core
     version: 1.0.2
     date_release: '2022-10-20'
     platform:
@@ -1827,11 +1982,13 @@
   - id: Spiritualized.Supervision
     display_name: Spiritualized Supervision
     repository:
+      platform: github
       name: openFPGA-Supervision
       prerelease: false
       tag_name: 1.0.0
     download_url: https://github.com/spiritualized1997/openFPGA-Supervision/releases/download/1.0.0/Spiritualized_Supervision_1.0.0_2022_11_08.zip
     platform_id: supervision
+    description: Supervision core
     version: 1.0.0
     date_release: '2022-10-22'
     platform:
@@ -1847,11 +2004,13 @@
   - id: Spiritualized.SuperGB
     display_name: Spiritualized Super Gameboy
     repository:
+      platform: github
       name: openFPGA-Super-GB
       prerelease: false
       tag_name: 1.0.3
     download_url: https://github.com/spiritualized1997/openFPGA-Super-GB/releases/download/1.0.3/Spiritualized_SuperGB_1.0.3_2022_11_08.zip
     platform_id: sgb
+    description: Super Gameboy core
     version: 1.0.3
     date_release: '2022-10-28'
     platform:
@@ -1868,11 +2027,13 @@
   - id: Spiritualized.VideoBrain
     display_name: Spiritualized VideoBrain
     repository:
+      platform: github
       name: openFPGA-VideoBrain
       prerelease: false
       tag_name: 1.0.0
     download_url: https://github.com/spiritualized1997/openFPGA-VideoBrain/releases/download/1.0.0/Spiritualized_VideoBrain_1.0.0_2022_11_08.zip
     platform_id: videobrain
+    description: Video Brain core
     version: 1.0.0
     date_release: '2022-10-30'
     platform:

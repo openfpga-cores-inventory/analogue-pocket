@@ -139,45 +139,47 @@ class InventoryUpdater
 
   def serialize_core(repository, core, platform, download_url, latest_release, funding)
     return {
-      "id" => core.id,
-      "display_name" => repository.display_name,
-      "repository" => {
-        "name" => repository.name,
-        "prerelease" => repository.prerelease
+      'id' => core.id,
+      'display_name' => repository.display_name,
+      'repository' => {
+        'platform' => 'github',
+        'name' => repository.name,
+        'prerelease' => repository.prerelease
       },
-      "download_url" => download_url,
-      "platform_id" => core.platform_id,
-      "version" => core.version,
-      "date_release" => core.date_release,
-      "platform" => {
-        "category" => platform.metadata.category,
-        "name" => platform.metadata.name,
-        "manufacturer" => platform.metadata.manufacturer,
-        "year" => platform.metadata.year
+      'download_url' => download_url,
+      'platform_id' => core.platform_id,
+      'description' => core.description,
+      'version' => core.version,
+      'date_release' => core.date_release,
+      'platform' => {
+        'category' => platform.metadata.category,
+        'name' => platform.metadata.name,
+        'manufacturer' => platform.metadata.manufacturer,
+        'year' => platform.metadata.year
       }
     }.tap do |hash|
-        hash["repository"]["tag_name"] = latest_release.tag_name unless latest_release.nil?
+        hash['repository']['tag_name'] = latest_release.tag_name unless latest_release.nil?
 
         data_slots = core.data.data_slots.select {|data_slot| data_slot.required}
-        hash["assets"] = data_slots.map do |data_slot|
-          { "platform" => core.platform_id }.tap do |asset|
-            asset["filename"] = data_slot.filename if data_slot.filename
-            asset["extensions"] = data_slot.extensions if data_slot.extensions
-            asset["core_specific"] = data_slot.configuration.core_sepecific_file if data_slot.configuration.core_sepecific_file
+        hash['assets'] = data_slots.map do |data_slot|
+          { 'platform' => core.platform_id }.tap do |asset|
+            asset['filename'] = data_slot.filename if data_slot.filename
+            asset['extensions'] = data_slot.extensions if data_slot.extensions
+            asset['core_specific'] = data_slot.configuration.core_sepecific_file if data_slot.configuration.core_sepecific_file
           end
         end
 
-        hash["sponsor"] = {}.tap do |sponsor|
-          sponsor["community_bridge"] = funding.community_bridge if funding.community_bridge
-          sponsor["github"] = funding.github if funding.github
-          sponsor["issuehunt"] = funding.issuehunt if funding.issuehunt
-          sponsor["ko_fi"] = funding.ko_fi if funding.ko_fi
-          sponsor["liberapay"] = funding.liberapay if funding.liberapay
-          sponsor["open_collective"] = funding.open_collective if funding.open_collective
-          sponsor["otechie"] = funding.otechie if funding.otechie
-          sponsor["patreon"] = funding.patreon if funding.patreon
-          sponsor["tidelift"] = funding.tidelift if funding.tidelift
-          sponsor["custom"] = funding.custom if funding.custom
+        hash['sponsor'] = {}.tap do |sponsor|
+          sponsor['community_bridge'] = funding.community_bridge if funding.community_bridge
+          sponsor['github'] = funding.github if funding.github
+          sponsor['issuehunt'] = funding.issuehunt if funding.issuehunt
+          sponsor['ko_fi'] = funding.ko_fi if funding.ko_fi
+          sponsor['liberapay'] = funding.liberapay if funding.liberapay
+          sponsor['open_collective'] = funding.open_collective if funding.open_collective
+          sponsor['otechie'] = funding.otechie if funding.otechie
+          sponsor['patreon'] = funding.patreon if funding.patreon
+          sponsor['tidelift'] = funding.tidelift if funding.tidelift
+          sponsor['custom'] = funding.custom if funding.custom
         end unless funding.nil?
       end
   end

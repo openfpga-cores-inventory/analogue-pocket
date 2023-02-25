@@ -10,6 +10,10 @@ module Analogue
       return @definition.metadata.platform_ids.first
     end
 
+    def description
+      return @definition.metadata.description
+    end
+
     def date_release
       return @definition.metadata.date_release
     end
