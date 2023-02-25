@@ -487,6 +487,36 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtexed
+    display_name: Exed Exes
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtexed.zip
+    platform_id: jtexed
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jtexed
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtexed
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtexed
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtgng
     display_name: Ghosts 'n Goblins
     repository:
@@ -509,6 +539,36 @@
       - json
       core_specific: true
     - platform: jtgng
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtgunsmk
+    display_name: Gun Smoke
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
+    platform_id: jtgunsmk
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jtgunsmk
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtgunsmk
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtgunsmk
       extensions:
       - rom
     sponsor:
@@ -757,6 +817,96 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtsectnz
+    display_name: Section Z
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
+    platform_id: jtsectnz
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jtsectnz
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtsectnz
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtsectnz
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtsarms
+    display_name: Side Arms
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
+    platform_id: jtsarms
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jtsarms
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtsarms
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtsarms
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtsf
+    display_name: Street Fighter
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
+    platform_id: jtsf
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jtsf
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtsf
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtsf
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtsbaskt
     display_name: Super Basketball
     repository:
@@ -817,6 +967,36 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jttrojan
+    display_name: Trojan
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
+    platform_id: jttrojan
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jttrojan
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jttrojan
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttrojan
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtvigil
     display_name: Vigilante
     repository:
@@ -839,6 +1019,36 @@
       - json
       core_specific: true
     - platform: jtvigil
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtvulgus
+    display_name: Vulgus
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvulgus.zip
+    platform_id: jtvulgus
+    description: Arcade hardware
+    version: c5ab556
+    date_release: '2023-01-13'
+    platform:
+      category: Arcade compatible
+      name: jtvulgus
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtvulgus
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtvulgus
       extensions:
       - rom
     sponsor:
