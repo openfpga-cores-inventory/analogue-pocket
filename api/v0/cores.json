@@ -20,7 +20,7 @@ layout: none
       "version": {{ core.version | jsonify }},
       "prerelease": {{ core.repository.prerelease | jsonify }},
       "repository": {
-        "platform": "github",
+        "platform": {{ core.repository.platform | jsonify }},
         "owner": {{ developer.username | jsonify }},
         "name": {{ core.repository.name | jsonify }}
       },

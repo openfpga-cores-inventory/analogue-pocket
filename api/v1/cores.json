@@ -13,7 +13,7 @@ layout: none
       "identifier": {{ core.id | jsonify }},
       "platform": {{ core.platform.name | jsonify }},
       "repository": {
-        "platform": "github",
+        "platform": {{ core.repository.platform | jsonify }},
         "owner": {{ developer.username | jsonify }},
         "name": {{ core.repository.name | jsonify }}
       },
