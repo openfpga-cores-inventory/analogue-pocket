@@ -12,6 +12,7 @@ module Analogue
     DATA_FILE = 'data.json'
 
     ICON_FILE = 'icon.bin'
+    INFO_FILE = 'info.txt'
 
     ICON_WIDTH = 36
     ICON_HEIGHT = 36
@@ -24,6 +25,15 @@ module Analogue
       definition = parse_definition(id)
       data = parse_data(id)
       return Core.new(definition, data)
+    end
+
+    def get_info(id)
+      info_path = File.join(id, INFO_FILE)
+      begin
+        return parse_file(info_path)
+      rescue Errno::ENOENT
+        return nil
+      end
     end
 
     def export_icon(id, output_path)
