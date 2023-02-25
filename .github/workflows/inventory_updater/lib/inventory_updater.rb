@@ -4,6 +4,8 @@ require 'yaml'
 
 require_relative 'inventory_updater/analogue/pocket_service'
 require_relative 'inventory_updater/github/github_service'
+require_relative 'inventory_updater/jekyll/jekyll_service'
+require_relative 'inventory_updater/jekyll/post'
 require_relative 'inventory_updater/cache_service'
 require_relative 'inventory_updater/repository_parser'
 require_relative 'inventory_updater/repository_service'
@@ -18,6 +20,9 @@ class InventoryUpdater
   REPOSITORIES_FILE = 'repositories.yml'
   CORES_FILE = 'cores.yml'
 
+  POST_TYPE_NEW = 'new'
+  POST_TYPE_UPDATE = 'update'
+
   HEADER = <<~TXT
     # ##############################################################################
     # #                                                                            #
@@ -28,12 +33,13 @@ class InventoryUpdater
     # ##############################################################################
   TXT
 
-  attr_reader :github_service, :repository_service, :cache_service
+  attr_reader :github_service, :repository_service, :cache_service, :jekyll_service
 
   def initialize
     @github_service = GitHub::GitHubService.new
     @repository_service = RepositoryService.new
     @cache_service = CacheService.new
+    @jekyll_service = Jekyll::JekyllService.new
   end
 
   def update_cores
@@ -91,9 +97,9 @@ class InventoryUpdater
       cores = pocket_service.get_cores
       cores.each do |core|
         core_id = core.id
-        version = @cache_service.get_version(core_id)
+        cached_version = @cache_service.get_version(core_id)
 
-        if core.version == version
+        if core.version == cached_version
           serialized_cores << @cache_service.get_core(core_id)
           next
         end
@@ -108,10 +114,19 @@ class InventoryUpdater
         latest_release ||= @github_service.latest_release(github_repository, repository.prerelease) if repository.release?
 
         # Update the author icon
-        update_icon(pocket_service, core_id)
+        icon_file = "#{core_id}.png"
+        icon_path = File.join(ASSETS_DIRECTORY, IMAGES_DIRECTORY, AUTHORS_DIRECTORY, icon_file)
+        pocket_service.export_icon(core_id, icon_path)
 
         # Update the platform image
-        update_image(pocket_service, platform_id)
+        image_file = "#{platform_id}.png"
+        image_path = File.join(ASSETS_DIRECTORY, IMAGES_DIRECTORY, PLATFORMS_DIRECTORY, image_file)
+        pocket_service.export_image(platform_id, image_path)
+
+        # Create post
+        post_type = cached_version.nil? ? POST_TYPE_NEW : POST_TYPE_UPDATE
+        post_content = pocket_service.get_info(core_id)
+        create_post(core, post_type, post_content)
 
         serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding)
       end
@@ -121,20 +136,6 @@ class InventoryUpdater
     end
 
     return serialized_cores
-  end
-
-  def update_image(pocket_service, platform_id)
-    image_file = "#{platform_id}.png"
-    image_path = File.join(ASSETS_DIRECTORY, IMAGES_DIRECTORY, PLATFORMS_DIRECTORY, image_file)
-
-    pocket_service.export_image(platform_id, image_path)
-  end
-
-  def update_icon(pocket_service, core_id)
-    image_file = "#{core_id}.png"
-    image_path = File.join(ASSETS_DIRECTORY, IMAGES_DIRECTORY, AUTHORS_DIRECTORY, image_file)
-
-    pocket_service.export_icon(core_id, image_path)
   end
 
   def serialize_core(repository, core, platform, download_url, latest_release, funding)
@@ -182,6 +183,27 @@ class InventoryUpdater
           sponsor['custom'] = funding.custom if funding.custom
         end unless funding.nil?
       end
+  end
+
+  def create_post(core, type, content)
+    author = core.author
+    shortname = core.shortname
+
+    case type
+    when POST_TYPE_NEW
+      title = "#{author} has released #{shortname}"
+    when POST_TYPE_UPDATE
+      version = core.version
+      title = "#{shortname} by #{author} has been updated to #{version}"
+    end
+
+    date = Time.now
+    categories = [author, shortname]
+
+    post = Jekyll::Post.new(title, date, categories, content)
+
+    name = "#{author}-#{shortname}"
+    jekyll_service.create_post(name, post)
   end
 end
 
