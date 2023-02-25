@@ -97,6 +97,28 @@
     - display_name: Yie Ar Kung-Fu
       repository: jtbin
       path: pocket/zips/jotego.jtyiear.zip
+    - display_name: Exed Exes
+      repository: jtbin
+      path: pocket/zips/jotego.jtexed.zip
+    - display_name: Gun Smoke
+      repository: jtbin
+      path: pocket/zips/jotego.jtgunsmk.zip
+    - display_name: Side Arms
+      repository: jtbin
+      path: pocket/zips/jotego.jtsarms.zip
+    - display_name: Section Z
+      repository: jtbin
+      path: pocket/zips/jotego.jtsectnz.zip
+    - display_name: Street Fighter
+      repository: jtbin
+      path: pocket/zips/jotego.jtsf.zip
+    - display_name: Trojan
+      repository: jtbin
+      path: pocket/zips/jotego.jttrojan.zip
+    - display_name: Vulgus
+      repository: jtbin
+      path: pocket/zips/jotego.jtvulgus.zip
+
 
 - username: Mazamars312
   cores:
