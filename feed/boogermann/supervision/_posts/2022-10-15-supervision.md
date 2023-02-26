@@ -2,7 +2,8 @@
 layout: post
 title: supervision by boogermann has been updated to 0.1.1
 date: 2022-10-15 00:00:00 +0000
-categories: boogermann supervision
+categories: [boogermann, supervision]
+tags: [update]
 ---
 Supervision © 1992 Watara.
 

@@ -2,7 +2,8 @@
 layout: post
 title: VideoBrain by Spiritualized has been updated to 1.0.0
 date: 2022-10-30 00:00:00 +0000
-categories: Spiritualized VideoBrain
+categories: [Spiritualized, VideoBrain]
+tags: [update]
 ---
 Spiritualized Video Brain
 

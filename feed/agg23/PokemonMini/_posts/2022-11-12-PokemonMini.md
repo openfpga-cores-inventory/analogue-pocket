@@ -2,7 +2,8 @@
 layout: post
 title: PokemonMini by agg23 has been updated to 0.2.0
 date: 2022-11-12 00:00:00 +0000
-categories: agg23 PokemonMini
+categories: [agg23, PokemonMini]
+tags: [update]
 ---
 Port by agg23. Core by Grieverheart.
 

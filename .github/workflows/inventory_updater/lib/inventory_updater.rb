@@ -199,11 +199,11 @@ class InventoryUpdater
 
     date = Time.now
     categories = [author, shortname]
+    tags = [type]
 
-    post = Jekyll::Post.new(title, date, categories, content)
+    post = Jekyll::Post.new(title, date, categories, tags, content)
 
-    name = "#{author}-#{shortname}"
-    jekyll_service.create_post(name, post)
+    jekyll_service.create_post(shortname, post)
   end
 end
 

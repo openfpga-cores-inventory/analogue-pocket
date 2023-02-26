@@ -2,7 +2,8 @@
 layout: post
 title: PC Engine CD by Mazamars312 has been updated to 0.1.7
 date: 2023-02-15 00:00:00 +0000
-categories: Mazamars312 PC Engine CD
+categories: [Mazamars312, PC Engine CD]
+tags: [update]
 ---
 Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue Pocket. Core by Gregory Estrade, srg320, and greyrogue
 

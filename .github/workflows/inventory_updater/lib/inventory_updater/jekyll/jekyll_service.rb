@@ -19,14 +19,16 @@ module Jekyll
 
     def generate_markdown(path, post)
       date = post.date.strftime('%Y-%m-%d %H:%M:%S %z')
-      categories = post.categories.join(' ')
+      categories = post.categories.join(', ')
+      tags = post.tags.join(', ')
 
       File.open(path, 'w') do |file|
         file.puts '---'
         file.puts "layout: #{post.layout}"
         file.puts "title: #{post.title}"
         file.puts "date: #{date}"
-        file.puts "categories: #{categories}"
+        file.puts "categories: [#{categories}]"
+        file.puts "tags: [#{tags}]"
         file.puts '---'
         file.puts post.content
       end

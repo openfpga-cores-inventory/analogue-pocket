@@ -2,7 +2,8 @@
 layout: post
 title: WonderSwan by agg23 has been updated to 1.0.0
 date: 2023-01-15 00:00:00 +0000
-categories: agg23 WonderSwan
+categories: [agg23, WonderSwan]
+tags: [update]
 ---
 Port by agg23. Core by Robert Peip
 

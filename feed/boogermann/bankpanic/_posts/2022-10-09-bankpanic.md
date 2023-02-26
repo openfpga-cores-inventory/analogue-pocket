@@ -2,7 +2,8 @@
 layout: post
 title: bankpanic by boogermann has been updated to 0.1.0
 date: 2022-10-09 00:00:00 +0000
-categories: boogermann bankpanic
+categories: [boogermann, bankpanic]
+tags: [update]
 ---
 Bank Panic © 1984 Sega.
 

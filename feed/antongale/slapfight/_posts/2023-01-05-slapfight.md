@@ -2,7 +2,8 @@
 layout: post
 title: slapfight by antongale has been updated to 0.1.3
 date: 2023-01-05 00:00:00 +0000
-categories: antongale slapfight
+categories: [antongale, slapfight]
+tags: [update]
 ---
 Note: You must provide your own roms to use this core.
 

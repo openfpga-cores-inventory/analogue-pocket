@@ -2,7 +2,8 @@
 layout: post
 title: NeoGeo_Overdrive by Mazamars312 has been updated to Alpha 0.8.0
 date: 2023-01-15 00:00:00 +0000
-categories: Mazamars312 NeoGeo_Overdrive
+categories: [Mazamars312, NeoGeo_Overdrive]
+tags: [update]
 ---
 NeoGeo was introduced in 1990 as both the MVS multi-video system and AES console. This arcade platform was a worldwide success lasting through the mid 2000's spawning several long-running and critically acclaimed game series. 
 Powered with both a Motorola 68000 and Z80, NeoGeo's prowess came from a colorful video system able to scale sprites on the fly in nearly limitless amounts simultaneously on screen.

@@ -2,7 +2,8 @@
 layout: post
 title: performan by antongale has been updated to 0.1.1
 date: 2023-01-22 00:00:00 +0000
-categories: antongale performan
+categories: [antongale, performan]
+tags: [update]
 ---
 Note: You must provide your own roms to use this core.
 

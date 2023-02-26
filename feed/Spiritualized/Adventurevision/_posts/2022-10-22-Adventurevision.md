@@ -2,7 +2,8 @@
 layout: post
 title: Adventurevision by Spiritualized has been updated to 1.0.2
 date: 2022-10-22 00:00:00 +0000
-categories: Spiritualized Adventurevision
+categories: [Spiritualized, Adventurevision]
+tags: [update]
 ---
 Spiritualized Adventure Vision
 

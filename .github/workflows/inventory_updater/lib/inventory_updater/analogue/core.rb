@@ -22,12 +22,12 @@ module Analogue
       return @definition.metadata.author
     end
 
-    def date_release
-      return @definition.metadata.date_release
-    end
-
     def version
       return @definition.metadata.version
+    end
+
+    def date_release
+      return @definition.metadata.date_release
     end
 
     def initialize(definition, data)
