@@ -1036,7 +1036,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvulgus.zip
     platform_id: jtvulgus
     description: Arcade hardware
-    version: c5ab556
+    version: a6fdcf8
     date_release: '2023-01-13'
     platform:
       category: Arcade compatible
