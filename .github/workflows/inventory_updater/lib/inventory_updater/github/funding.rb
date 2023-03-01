@@ -13,7 +13,7 @@ module GitHub
     TIDELIFT = 'tidelift'
     CUSTOM = 'custom'
 
-    COMMUNITY_BRIDGE_URL = 'https://funding.communitybridge.org/projects'
+    COMMUNITY_BRIDGE_URL = 'https://crowdfunding.lfx.linuxfoundation.org/projects'
     GITHUB_URL = 'https://github.com/sponsors'
     ISSUEHUNT_URL = 'https://issuehunt.io/r'
     KO_FI_URL = 'https://ko-fi.com'

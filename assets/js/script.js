@@ -51,11 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const data = table.column(2).data().filter(category => category !== "").unique().sort().toArray();
   const categories = [...new Set(data)];
 
-  const container = $(`<div class="filters"></div>`);
+  const container = $('<div class="filters"></div>');
   categories.forEach(category => {
     const chip = createChip(category);
     chip.click(() => toggleFilter(chip, category));
     container.append(chip);
   });
+
   $(table.table().container()).prepend(container);
+
+  const tabEl = document.querySelector('button#cores-list-tab[data-bs-toggle="pill"]')
+  tabEl.addEventListener('shown.bs.tab', function (event) {
+    table.columns.adjust();
+  });
 });
+
+
