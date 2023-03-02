@@ -27,15 +27,16 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
       {% for developer in site.data.cores -%}
         {% assign cores = developer.cores | where: 'platform.category', category -%}
         {% for core in cores -%}
+          {% capture author_url -%}{{ 'https://github.com/' | append: developer.username }}{% endcapture -%}
+          {% capture repository_url -%}{{ author_url | append: '/' | append: core.repository.name }}{% endcapture -%}
       <div class="col">
         <div class="card bg-light h-100">
-          <img src="{{ core.platform_id | prepend: '/assets/images/platforms/' | append: '.png' | relative_url }}" class="card-img-top" alt="{{ core.platform.name }}" />
+          <a href="{{ repository_url }}"><img src="{{ core.platform_id | prepend: '/assets/images/platforms/' | append: '.png' | relative_url }}" class="card-img-top" alt="{{ core.platform.name }}" /></a>
           <div class="card-body">
             <h5 class="card-title">{{ core.display_name }}</h5>
             {% assign icon_path = core.id | prepend: '/assets/images/authors/' | append: '.png' -%}
             {% assign icon_exists = site.static_files | where: 'path', icon_path | first -%}
-            {% capture author_url -%}{{ 'https://github.com/' | append: developer.username }}{% endcapture -%}
-            <h6 class="card-subtitle mb-2 text-muted">{% if icon_exists -%}<img src="{{ icon_path | relative_url }}" alt="{{ developer.username }}" class="rounded" /> {% endif -%}<a href="{{ author_url }}">{{ developer.username }}</a></h6>
+            <h6 class="card-subtitle mb-2 text-muted">{% if icon_exists -%}<a href="{{ author_url }}"><img src="{{ icon_path | relative_url }}" alt="{{ developer.username }}" class="rounded" /></a> {% endif -%}<a href="{{ author_url }}">{{ developer.username }}</a></h6>
             <p class="card-text">{{ core.description }}</p>
             <a href="#" class="card-link"><span class="badge bg-secondary">{{ core.platform.category }}</span></a>
           </div>
@@ -43,7 +44,6 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-toolbar" role="toolbar">
                 <div class="btn-group me-2">
-                  {% capture repository_url -%}{{ author_url | append: '/' | append: core.repository.name }}{% endcapture -%}
                   <a href="{{ repository_url }}" class="btn btn-sm btn-dark"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a>
                 </div>
                 {% if core.sponsor -%}
