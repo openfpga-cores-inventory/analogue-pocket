@@ -35,7 +35,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    faraday-retry (2.0.0)
+    faraday-retry (2.1.0)
       faraday (~> 2.0)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
@@ -308,7 +308,7 @@ PLATFORMS
 
 DEPENDENCIES
   chunky_png (~> 1.4.0)
-  faraday-retry (~> 2.0.0)
+  faraday-retry (~> 2.1.0)
   github-pages (~> 228)
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.15.1)
