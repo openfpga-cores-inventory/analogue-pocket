@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PC Engine CD by Mazamars312 has been updated to 0.1.6
-date: 2023-03-08 14:30:14 +0000
+title: PC Engine CD by Mazamars312 has been updated to 0.1.7
+date: 2023-03-08 14:40:50 +0000
 categories: [Mazamars312, PC Engine CD]
 tags: [update]
 ---
