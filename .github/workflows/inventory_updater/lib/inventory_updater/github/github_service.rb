@@ -41,8 +41,12 @@ module GitHub
     end
 
     def latest_release(repository, prerelease = false)
-      releases = @client.releases(repository)
-      return releases.find { |release| release.prerelease == prerelease }
+      if !prerelease
+        return @client.latest_release(repository)
+      else
+        releases = @client.releases(repository)
+        return releases.find { |release| release.prerelease == prerelease }
+      end      
     end
 
     def release_assets(release)
