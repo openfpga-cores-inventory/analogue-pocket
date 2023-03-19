@@ -182,6 +182,31 @@
       patreon: https://www.patreon.com/FPGAzumSpass
 - username: antongale
   cores:
+  - id: antongale.exerion
+    display_name: Exerion
+    repository:
+      platform: github
+      name: arcade-exerion
+      prerelease: false
+      tag_name: 0.1.5
+    download_url: https://github.com/antongale/arcade-exerion/releases/download/0.1.5/antongale.exerion_pocket-0.1.5.zip
+    platform_id: exerion
+    description: Exerion Compatible Gateware IP Core
+    version: 0.1.0
+    date_release: '2022-11-17'
+    platform:
+      category: Arcade
+      name: Exerion
+      manufacturer: Jaleco
+      year: 1983
+    assets:
+    - platform: exerion
+      extensions:
+      - json
+      core_specific: true
+    - platform: exerion
+      extensions:
+      - rom
   - id: antongale.performan
     display_name: Performan
     repository:
