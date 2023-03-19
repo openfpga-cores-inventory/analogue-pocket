@@ -18,8 +18,8 @@
 
 - username: antongale
   cores:
-#    - display_name: Exerion
-#      repository: arcade-exerion
+    - display_name: Exerion
+      repository: arcade-exerion
     - display_name: Performan
       repository: arcade-performan
     - display_name: Slap Fight
