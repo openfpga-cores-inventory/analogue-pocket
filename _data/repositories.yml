@@ -81,6 +81,9 @@
     - display_name: Mikie
       repository: jtbin
       path: pocket/zips/jotego.jtmikie.zip
+    - display_name: Out Run
+      repository: jtbin
+      path: pocket/zips/jotego.jtoutrun.zip
     - display_name: Pang!
       repository: jtbin
       path: pocket/zips/jotego.jtpang.zip
