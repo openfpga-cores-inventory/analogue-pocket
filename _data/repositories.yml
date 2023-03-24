@@ -93,6 +93,9 @@
     - display_name: Road Fighter
       repository: jtbin
       path: pocket/zips/jotego.jtroadf.zip
+    - display_name: RoboCop
+      repository: jtbin
+      path: pocket/zips/jotego.jtcop.zip
     - display_name: Roc'n Rope
       repository: jtbin
       path: pocket/zips/jotego.jtroc.zip
