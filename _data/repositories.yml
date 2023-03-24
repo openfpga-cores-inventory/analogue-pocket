@@ -81,6 +81,9 @@
     - display_name: Mikie
       repository: jtbin
       path: pocket/zips/jotego.jtmikie.zip
+    - display_name: Out Run
+      repository: jtbin
+      path: pocket/zips/jotego.jtoutrun.zip
     - display_name: Pang!
       repository: jtbin
       path: pocket/zips/jotego.jtpang.zip
@@ -90,6 +93,9 @@
     - display_name: Road Fighter
       repository: jtbin
       path: pocket/zips/jotego.jtroadf.zip
+    - display_name: RoboCop
+      repository: jtbin
+      path: pocket/zips/jotego.jtcop.zip
     - display_name: Roc'n Rope
       repository: jtbin
       path: pocket/zips/jotego.jtroc.zip
