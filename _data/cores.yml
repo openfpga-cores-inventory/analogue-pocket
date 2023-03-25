@@ -731,8 +731,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
     description: Arcade hardware
-    version: bbde92a
-    date_release: '2023-03-24'
+    version: '8170610'
+    date_release: '2023-03-25'
     platform:
       category: Arcade compatible
       name: jtoutrun
