@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Asteroids by ericlewis has been updated to 1.0.0
-date: 2023-04-08 02:39:13 +0000
+title: Asteroids by ericlewis has been updated to 1.0.1
+date: 2023-04-08 02:50:01 +0000
 categories: [ericlewis, Asteroids]
 tags: [update]
 ---
