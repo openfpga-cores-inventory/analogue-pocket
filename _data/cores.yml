@@ -431,8 +431,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
     description: Arcade hardware
-    version: e62840a
-    date_release: '2022-12-25'
+    version: a5b2e86
+    date_release: '2023-04-14'
     platform:
       category: Arcade compatible
       name: jtcontra
