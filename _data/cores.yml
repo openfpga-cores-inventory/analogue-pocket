@@ -761,8 +761,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
     description: Arcade hardware
-    version: e62840a
-    date_release: '2022-12-07'
+    version: 8d9ef5f
+    date_release: '2023-04-23'
     platform:
       category: Arcade compatible
       name: jtpang
@@ -941,8 +941,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
     platform_id: jtsarms
     description: Arcade hardware
-    version: c5ab556
-    date_release: '2023-01-13'
+    version: 7a10a1d
+    date_release: '2023-04-23'
     platform:
       category: Arcade compatible
       name: jtsarms
