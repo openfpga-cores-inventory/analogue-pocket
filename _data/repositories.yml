@@ -57,6 +57,9 @@
     - display_name: Contra
       repository: jtbin
       path: pocket/zips/jotego.jtcontra.zip
+    - display_name: CPS1
+      repository: jtbin
+      path: pocket/zips/jotego.jtcps1.zip
     - display_name: Double Dragon
       repository: jtbin
       path: pocket/zips/jotego.jtdd.zip
