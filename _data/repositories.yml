@@ -13,6 +13,8 @@
       repository: openfpga-pokemonmini
     - display_name: SNES for Analogue Pocket
       repository: openfpga-SNES
+    - display_name: Tamagotchi P1
+      repository: fpga-tamagotchi
     - display_name: WonderSwan Color for Analogue Pocket
       repository: openfpga-wonderswan
 
