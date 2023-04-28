@@ -154,6 +154,39 @@
       github:
       - https://github.com/sponsors/agg23
       patreon: https://www.patreon.com/srg320
+  - id: agg23.Tamagotchi_P1
+    display_name: Tamagotchi P1
+    repository:
+      platform: github
+      name: fpga-tamagotchi
+      prerelease: false
+      tag_name: 1.0.0
+    download_url: https://github.com/agg23/fpga-tamagotchi/releases/download/1.0.0/agg23.Tamagotchi_1.0.0_2023-04-27-Pocket.zip
+    platform_id: tamagotchi_p1
+    description: The Tamagotchi that started it all
+    version: 1.0.0
+    date_release: '2023-04-27'
+    platform:
+      category: Handheld
+      name: Tamagotchi
+      manufacturer: Bandai
+      year: 1996
+    assets:
+    - platform: tamagotchi_p1
+      filename: rom.bin
+      extensions:
+      - bin
+    - platform: tamagotchi_p1
+      filename: background.bin
+      extensions:
+      - bin
+    - platform: tamagotchi_p1
+      filename: spritesheet.bin
+      extensions:
+      - bin
+    sponsor:
+      github:
+      - https://github.com/sponsors/agg23
   - id: agg23.WonderSwan
     display_name: WonderSwan Color for Analogue Pocket
     repository:
