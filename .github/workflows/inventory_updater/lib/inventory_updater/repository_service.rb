@@ -41,20 +41,20 @@ class RepositoryService
 
   def get_download_url(repository)
     github_repository = repository.github_repository
-    prefix = repository.prefix
+    filter = repository.filter
 
     if !repository.release?
       # get the download url of the core archive from the path
       path = repository.path
       resources = @github_service.contents(github_repository, path)
-      resource = prefix.nil? ? resources : resources.find { |content| content.name.start_with?(prefix) }
+      resource = filter.nil? ? resources : resources.find { |content| content.name.match?(Regexp.new(filter)) }
       download_url = resource.download_url
     else
       # get the download url of the core archive from the latest release
       prerelease = repository.prerelease
       release = @github_service.latest_release(github_repository, prerelease)
       assets = @github_service.release_assets(release)
-      core_asset = prefix.nil? ? assets.first : assets.find { |asset| asset.name.start_with?(prefix) }
+      core_asset = filter.nil? ? assets.first : assets.find { |asset| asset.name.match?(Regexp.new(filter)) }
       download_url = core_asset.browser_download_url
     end
 

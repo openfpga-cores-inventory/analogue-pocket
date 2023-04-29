@@ -28,9 +28,9 @@ class RepositoryParser
 
     prerelease = core.prerelease
     path = core.path
-    prefix = core.prefix
+    filter = core.filter
 
-    return Repository.new(owner, display_name, name, :prerelease => prerelease, :path => path, :prefix => prefix)
+    return Repository.new(owner, display_name, name, :prerelease => prerelease, :path => path, :filter => filter)
   end
 
   private_class_method def self.parse_yml(path)

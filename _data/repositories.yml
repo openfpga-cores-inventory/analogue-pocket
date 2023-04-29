@@ -15,7 +15,7 @@
       repository: openfpga-SNES
     - display_name: Tamagotchi P1
       repository: fpga-tamagotchi
-      prefix: agg23.Tamagotchi_1.0.0_2023-04-27-Pocket
+      filter: agg23.Tamagotchi_.*-Pocket
     - display_name: WonderSwan Color for Analogue Pocket
       repository: openfpga-wonderswan
 
@@ -213,12 +213,12 @@
       repository: openFPGA-Game-King
     - display_name: Spiritualized GB
       repository: openFPGA-GB-GBC
-      prefix: Spiritualized_GB_
+      filter: Spiritualized_GB_
     - display_name: Spiritualized GBA
       repository: openFPGA-GBA
     - display_name: Spiritualized GBC
       repository: openFPGA-GB-GBC
-      prefix: Spiritualized_GBC_
+      filter: Spiritualized_GBC_
     - display_name: Spiritualized Genesis
       repository: openFPGA-Genesis
     - display_name: Spiritualized Intellivision

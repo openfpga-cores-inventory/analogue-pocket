@@ -1,7 +1,7 @@
 require 'octokit'
 
 class Repository
-  attr_reader :owner, :display_name, :name, :prerelease, :path, :prefix
+  attr_reader :owner, :display_name, :name, :prerelease, :path, :filter
 
   def release?
     return @path.nil?
@@ -13,7 +13,7 @@ class Repository
     @name = name
     @prerelease = options[:prerelease] || false
     @path = options[:path]
-    @prefix = options[:prefix]
+    @filter = options[:filter]
   end
 
   def github_repository
