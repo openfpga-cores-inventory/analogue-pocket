@@ -2,17 +2,9 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ruby
 {
   "name": "Ruby",
-  "image": "mcr.microsoft.com/devcontainers/ruby:0-3-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:0-bullseye",
   // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
-  },
-  // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [
-    "castwide.solargraph",
-    "editorconfig.editorconfig",
-    "rebornix.Ruby"
-  ],
+  // "features": {},
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     // Jekyll server
@@ -25,9 +17,17 @@
     "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}"
   },
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "sudo git config --system --add safe.directory ${containerWorkspaceFolder} && sh .devcontainer/post-create.sh"
+  "postCreateCommand": "sudo git config --system --add safe.directory ${containerWorkspaceFolder} && sh .devcontainer/post-create.sh",
   // Configure tool-specific properties.
-  // "customizations": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "castwide.solargraph",
+        "editorconfig.editorconfig",
+        "rebornix.Ruby"
+      ]
+    }
+  }
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
