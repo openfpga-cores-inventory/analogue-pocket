@@ -1094,8 +1094,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 763d15e
+    date_release: '2023-04-30'
     platform:
       category: Arcade compatible
       name: jttrack
@@ -1124,8 +1124,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
     platform_id: jttrojan
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 763d15e
+    date_release: '2023-04-30'
     platform:
       category: Arcade compatible
       name: jttrojan
@@ -1154,8 +1154,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 763d15e
+    date_release: '2023-04-30'
     platform:
       category: Arcade compatible
       name: jtvigil
@@ -1184,8 +1184,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvulgus.zip
     platform_id: jtvulgus
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 763d15e
+    date_release: '2023-04-30'
     platform:
       category: Arcade compatible
       name: jtvulgus
@@ -1214,8 +1214,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 763d15e
+    date_release: '2023-04-30'
     platform:
       category: Arcade compatible
       name: jtyiear
