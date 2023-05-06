@@ -1,0 +1,54 @@
+name: Create PR on Issue
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  process_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install js-yaml
+      - uses: actions/github-script@v6
+        id: read-issue-modify-yml
+        with:
+          result-encoding: json
+          script: |
+            const script = require('./.github/workflows/auto_core_adder/index.js')
+            const result = script({github, context, core})
+            console.log(result)
+
+      - name: Close Issue if existing core
+        if: fromJSON(steps.read-issue-modify-yml.outputs.close-issue)
+        run: gh issue close ${{ github.event.issue.number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: git status
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.PR_CREATOR_APP_ID }}
+          private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: AUTOMATED PR FOR - ${{ github.event.issue.title }}
+          body: Closes \#${{ github.event.issue.number }}
+          token: ${{ steps.generate-token.outputs.token }}
+      - name: Enable Pull Request Automerge
+        run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Approve the new PR
+        if: fromJSON(steps.read-issue-modify-yml.outputs.known-author)
+        run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
