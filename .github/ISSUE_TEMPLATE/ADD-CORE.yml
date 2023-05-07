@@ -1,0 +1,51 @@
+name: Add Core
+description: Add a new core
+title: "[New Core]: "
+labels: ["new-core"]
+body:
+  - type: input
+    id: author-username
+    attributes:
+      label: Core Author username
+      description: The core author's name on github
+      placeholder: e.g. spiritualized1997
+    validations:
+      required: true
+  - type: textarea
+    id: yml-snippet
+    attributes:
+      label: Core .yml snippet
+      render: yml
+      description: The yml object for the core, see https://github.com/openfpga-cores-inventory/analogue-pocket/blob/main/_data/repositories.yml for examples
+      placeholder: |
+        YAML for the core (see examples below)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        e.g.
+
+        For a core released via the GitHub releases method
+        ```yml
+        display_name: Spiritualized Atari 2600
+        repository: openFPGA-2600
+        ```
+
+        or
+
+        For a core released by having the `.zip` file within the repo
+        ```yml
+        display_name: CPS1
+        repository: jtbin
+        path: pocket/zips/jotego.jtcps1.zip
+        ```
+
+        or
+
+        For a core released via the GitHub releases method, but with multiple `.zips` per release
+        ```yml
+        display_name: Spiritualized GBC
+        repository: openFPGA-GB-GBC
+        filter: Spiritualized_GBC_
+        ```
