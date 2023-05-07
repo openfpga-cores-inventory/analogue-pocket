@@ -193,12 +193,12 @@
       platform: github
       name: openfpga-wonderswan
       prerelease: false
-      tag_name: 1.0.0
-    download_url: https://github.com/agg23/openfpga-wonderswan/releases/download/1.0.0/agg23.WonderSwan_1.0.0_2023-01-15.zip
+      tag_name: 1.0.1
+    download_url: https://github.com/agg23/openfpga-wonderswan/releases/download/1.0.1/agg23.WonderSwan_1.0.1_2023-05-06.zip
     platform_id: wonderswan
     description: WonderSwan and WonderSwan Color by Bandai
-    version: 1.0.0
-    date_release: '2023-01-15'
+    version: 1.0.1
+    date_release: '2023-05-06'
     platform:
       category: Handheld
       name: WonderSwan Color
