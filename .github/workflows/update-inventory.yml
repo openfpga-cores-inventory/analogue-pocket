@@ -19,7 +19,6 @@ on:
 jobs:
   update-inventory:
     runs-on: ubuntu-latest
-    if: ${{ github.actor != 'analogue-pocket-core-adder' }}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -52,6 +51,7 @@ jobs:
           private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
 
       - name: Create Pull Request
+        if: ${{ github.ref == 'refs/heads/main' }}
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
@@ -64,11 +64,13 @@ jobs:
             feed/**/*.md
 
       - name: Enable Pull Request Automerge
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Approve the new PR
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
