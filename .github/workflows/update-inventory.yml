@@ -18,6 +18,7 @@ on:
 
 jobs:
   update-inventory:
+  if: ${{ github.actor == 'analogue-pocket-core-adder' }}
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository code
