@@ -19,7 +19,7 @@ on:
 jobs:
   update-inventory:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'analogue-pocket-core-adder' }}
+    if: ${{ github.actor != 'analogue-pocket-core-adder' }}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
