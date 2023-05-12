@@ -14,7 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - run: npm install js-yaml
+
       - uses: actions/github-script@v6
         id: read-issue-modify-yml
         with:
@@ -31,22 +33,27 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: git status
+
       - uses: tibdex/github-app-token@v1
         id: generate-token
         with:
           app_id: ${{ secrets.PR_CREATOR_APP_ID }}
           private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
+          branch: create-pull-request/patch-${{github.event.issue.number}}
           title: AUTOMATED PR FOR - ${{ github.event.issue.title }}
           body: Closes \#${{ github.event.issue.number }}
           token: ${{ steps.generate-token.outputs.token }}
+
       - name: Enable Pull Request Automerge
         run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Approve the new PR
         if: fromJSON(steps.read-issue-modify-yml.outputs.known-author)
         run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
