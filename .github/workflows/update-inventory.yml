@@ -29,12 +29,18 @@ jobs:
       - name: Install Dependencies
         run: bundle install
 
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.PR_CREATOR_APP_ID }}
+          private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+
       - name: Setup .netrc
         uses: extractions/netrc@v1
         with:
           machine: api.github.com
           username: github-actions[bot]
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ steps.generate-token.outputs.token }}
 
       - name: Update Analogue Pocket Cores Inventory
         run: |
@@ -43,12 +49,6 @@ jobs:
           echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
 
       - run: git status
-
-      - uses: tibdex/github-app-token@v1
-        id: generate-token
-        with:
-          app_id: ${{ secrets.PR_CREATOR_APP_ID }}
-          private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
 
       - name: Create Pull Request
         if: ${{ github.ref == 'refs/heads/main' }}
