@@ -42,9 +42,33 @@ jobs:
         ruby .github/workflows/inventory_updater/lib/inventory_updater.rb
         echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
 
-    - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v4
+    - run: git status
+
+    - uses: tibdex/github-app-token@v1
+      id: generate-token
       with:
-        commit_message: Update Analogue Pocket Cores Inventory
-        file_pattern: '_data/cores.yml assets/images/authors/*.png assets/images/platforms/*.png feed/**/*.md'
-      if: github.event_name != 'pull_request'
+        app_id: ${{ secrets.PR_CREATOR_APP_ID }}
+        private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v5
+      with:
+        title: AUTOMATED PR FOR - Update Analogue Pocket Cores Inventory
+        body: Update Analogue Pocket Cores Inventory
+        token: ${{ steps.generate-token.outputs.token }}
+        add-paths: |
+          _data/cores.yml
+          assets/images/**/*.png
+          feed/**/*.md
+
+    - name: Enable Pull Request Automerge
+      run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Approve the new PR
+      if: fromJSON(steps.read-issue-modify-yml.outputs.known-author)
+      run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
