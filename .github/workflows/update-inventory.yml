@@ -18,50 +18,50 @@ on:
 
 jobs:
   update-inventory:
-  if: ${{ github.actor == 'analogue-pocket-core-adder' }}
     runs-on: ubuntu-latest
+    if: ${{ github.actor == 'analogue-pocket-core-adder' }}
     steps:
-    - name: Check out repository code
-      uses: actions/checkout@v3
+      - name: Check out repository code
+        uses: actions/checkout@v3
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
 
-    - name: Install Dependencies
-      run: bundle install
+      - name: Install Dependencies
+        run: bundle install
 
-    - name: Setup .netrc
-      uses: extractions/netrc@v1
-      with:
-        machine: api.github.com
-        username: github-actions[bot]
-        password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup .netrc
+        uses: extractions/netrc@v1
+        with:
+          machine: api.github.com
+          username: github-actions[bot]
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Update Analogue Pocket Cores Inventory
-      run: |
-        echo "⚙️ Updating Analogue Pocket Cores Inventory..."
-        ruby .github/workflows/inventory_updater/lib/inventory_updater.rb
-        echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
+      - name: Update Analogue Pocket Cores Inventory
+        run: |
+          echo "⚙️ Updating Analogue Pocket Cores Inventory..."
+          ruby .github/workflows/inventory_updater/lib/inventory_updater.rb
+          echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
 
-    - run: git status
+      - run: git status
 
-    - uses: tibdex/github-app-token@v1
-      id: generate-token
-      with:
-        app_id: ${{ secrets.PR_CREATOR_APP_ID }}
-        private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.PR_CREATOR_APP_ID }}
+          private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
 
-    - name: Create Pull Request
-      id: cpr
-      uses: peter-evans/create-pull-request@v5
-      with:
-        title: AUTOMATED PR FOR - Update Analogue Pocket Cores Inventory
-        body: Update Analogue Pocket Cores Inventory
-        token: ${{ steps.generate-token.outputs.token }}
-        add-paths: |
-          _data/cores.yml
-          assets/images/**/*.png
-          feed/**/*.md
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: AUTOMATED PR FOR - Update Analogue Pocket Cores Inventory
+          body: Update Analogue Pocket Cores Inventory
+          token: ${{ steps.generate-token.outputs.token }}
+          add-paths: |
+            _data/cores.yml
+            assets/images/**/*.png
+            feed/**/*.md
 
     - name: Enable Pull Request Automerge
       run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
