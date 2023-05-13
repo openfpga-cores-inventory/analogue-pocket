@@ -64,14 +64,10 @@ jobs:
             assets/images/**/*.png
             feed/**/*.md
 
-      - name: Enable Pull Request Automerge
-        if: ${{ github.ref == 'refs/heads/main' }}
-        run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Approve the new PR
-        if: ${{ github.ref == 'refs/heads/main' }}
-        run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
+      - name: Enable Auto-Merge & Approve PR
+        if: steps.cpr.outputs.pull-request-number
+        run: |
+          gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
+          gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
