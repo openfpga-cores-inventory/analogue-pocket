@@ -131,6 +131,9 @@
     - display_name: JTCOMSC
       repository: jtbin
       path: pocket/zips/jotego.jtcomsc.zip
+    - display_name: JTKIWI
+      repository: jtbin
+      path: pocket/zips/jotego.jtkiwi.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
