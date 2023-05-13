@@ -6,11 +6,13 @@ on:
   pull_request:
     paths:
       - '_data/repositories.yml'
+      - '_data/cores.yml'
   push:
     branches:
       - main
     paths:
       - '_data/repositories.yml'
+      - '_data/cores.yml'
   schedule:
     # Run every 20 minutes
     - cron:  '*/20 * * * *'
