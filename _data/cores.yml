@@ -1235,6 +1235,66 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtcomsc
+    display_name: JTCOMSC
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
+    platform_id: jtcomsc
+    description: Arcade hardware
+    version: 7d1a6ab
+    date_release: '2023-04-14'
+    platform:
+      category: Arcade compatible
+      name: jtcomsc
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtcomsc
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcomsc
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtkiwi
+    display_name: JTKIWI
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
+    platform_id: jtkiwi
+    description: Arcade hardware
+    version: 7d1a6ab
+    date_release: '2023-05-12'
+    platform:
+      category: Arcade compatible
+      name: jtkiwi
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtkiwi
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtkiwi
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
 - username: Mazamars312
   cores:
   - id: Mazamars312.Amiga
