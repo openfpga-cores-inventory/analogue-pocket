@@ -48,8 +48,6 @@ jobs:
           ruby .github/workflows/inventory_updater/lib/inventory_updater.rb
           echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
 
-      - run: git status
-
       - name: Create Pull Request
         if: ${{ github.ref == 'refs/heads/main' }}
         id: cpr
