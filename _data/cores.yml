@@ -1274,8 +1274,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
     platform_id: jtkiwi
     description: Arcade hardware
-    version: 7d1a6ab
-    date_release: '2023-05-12'
+    version: 017b1e6
+    date_release: '2023-05-16'
     platform:
       category: Arcade compatible
       name: jtkiwi
