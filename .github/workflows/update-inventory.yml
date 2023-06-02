@@ -55,7 +55,6 @@ jobs:
         with:
           title: AUTOMATED PR FOR - Update Analogue Pocket Cores Inventory
           body: Update Analogue Pocket Cores Inventory
-          commit-message: "[skip ci] automated change"
           token: ${{ steps.generate-token.outputs.token }}
           add-paths: |
             _data/cores.yml
