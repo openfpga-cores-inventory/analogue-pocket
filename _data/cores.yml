@@ -1303,25 +1303,27 @@
       platform: github
       name: Analogue-Amiga
       prerelease: false
-      tag_name: Mazamars312.Amiga.500.0.0.6-Alpha
-    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.500.0.0.6-Alpha/Mazamars312.Amiga.500.0.0.6-Alpha.zip
+      tag_name: Mazamars312.Amiga.0.1.0
+    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.0/Analogue-Amiga-0.1.0.zip
     platform_id: amiga
-    description: Amiga 500 Core
-    version: 0.0.6
-    date_release: '2022-12-9'
+    description: Amiga Core
+    version: 0.1.0
+    date_release: '2023-06-06'
     platform:
       category: Computer
-      name: Amiga 500
+      name: Amiga
       manufacturer: Commodore International
-      year: 1986
+      year: 1985
     assets:
-    - platform: amiga
-      filename: kickstart.rom
     - platform: amiga
       filename: mpu.bin
       extensions:
       - bin
       core_specific: true
+    - platform: amiga
+      filename: MegaAGS-Kickstart.rom
+      extensions:
+      - rom
   - id: Mazamars312.NeoGeo
     display_name: Neo Geo
     repository:
