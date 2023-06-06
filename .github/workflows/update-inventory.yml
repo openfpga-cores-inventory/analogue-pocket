@@ -4,8 +4,8 @@ run-name: ${{ github.actor }} is updating the Analogue Pocket Cores Inventory ðŸ
 
 on:
   pull_request:
-    paths:
-      - '_data/repositories.yml'
+    branches:
+      - main
   push:
     branches:
       - main
