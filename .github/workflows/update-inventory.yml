@@ -1,4 +1,4 @@
-name: Update Analogue Pocket Cores Inventory
+name: Update Analogue Pocket Cores Inventory test
 
 run-name: ${{ github.actor }} is updating the Analogue Pocket Cores Inventory 🎮
 
