@@ -1704,7 +1704,7 @@
     download_url: https://github.com/opengateware/console-supervision/releases/download/0.1.1/boogermann.supervision_pocket-0.1.1.zip
     platform_id: supervision
     description: Watara Supervision Compatible Gateware IP Core
-    version: 0.1.1
+    version: 0.1.0
     date_release: '2022-10-15'
     platform:
       category: Handheld
