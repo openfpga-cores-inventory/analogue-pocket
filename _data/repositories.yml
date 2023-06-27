@@ -17,6 +17,9 @@
       filter: agg23.Tamagotchi_.*-Pocket
     - display_name: WonderSwan Color for Analogue Pocket
       repository: openfpga-wonderswan
+    - display_name: Game and Watch
+      repository: fpga-gameandwatch
+      filter: agg23.GameAndWatch_.*-Pocket
 - username: antongale
   cores:
     - display_name: Exerion
