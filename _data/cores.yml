@@ -213,6 +213,30 @@
       github:
       - https://github.com/sponsors/agg23
       patreon: https://www.patreon.com/FPGAzumSpass
+  - id: agg23.GameAndWatch
+    display_name: Game and Watch
+    repository:
+      platform: github
+      name: fpga-gameandwatch
+      prerelease: false
+      tag_name: 0.1.0
+    download_url: https://github.com/agg23/fpga-gameandwatch/releases/download/0.1.0/agg23.GameAndWatch_0.1.0_2023-06-26-Pocket.zip
+    platform_id: gameandwatch
+    description: Nintendo's first handheld video games
+    version: 0.1.0
+    date_release: '2023-06-26'
+    platform:
+      category: Handheld
+      name: Game and Watch
+      manufacturer: Nintendo
+      year: 1980
+    assets:
+    - platform: gameandwatch
+      extensions:
+      - gnw
+    sponsor:
+      github:
+      - https://github.com/sponsors/agg23
 - username: antongale
   cores:
   - id: antongale.exerion
