@@ -1319,6 +1319,66 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtcastle
+    display_name: Haunted Castle
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
+    platform_id: jtcastle
+    description: Arcade hardware
+    version: 78fb37a
+    date_release: '2023-06-30'
+    platform:
+      category: Arcade compatible
+      name: jtcastle
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtcastle
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcastle
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtrastan
+    display_name: Rastan
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrastan.zip
+    platform_id: jtrastan
+    description: Arcade hardware
+    version: ab74171
+    date_release: '2023-06-30'
+    platform:
+      category: Arcade compatible
+      name: jtrastan
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtrastan
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtrastan
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
 - username: Mazamars312
   cores:
   - id: Mazamars312.Amiga
