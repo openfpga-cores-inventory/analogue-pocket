@@ -137,6 +137,9 @@
     - display_name: JTKIWI
       repository: jtbin
       path: pocket/zips/jotego.jtkiwi.zip
+    - display_name: Haunted Castle
+      repository: jtbin
+      path: pocket/zips/jotego.jtcastle.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
