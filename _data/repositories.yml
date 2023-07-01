@@ -140,6 +140,9 @@
     - display_name: Haunted Castle
       repository: jtbin
       path: pocket/zips/jotego.jtcastle.zip
+    - display_name: Rastan
+      repository: jtbin
+      path: pocket/zips/jotego.jtrastan.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
