@@ -314,6 +314,31 @@
     - platform: slapfight
       extensions:
       - rom
+  - id: antongale.taitosj
+    display_name: Taito System SJ
+    repository:
+      platform: github
+      name: arcade-taitosj
+      prerelease: false
+      tag_name: 0.1.0
+    download_url: https://github.com/antongale/arcade-taitosj/releases/download/0.1.0/antongale.taitosj_pocket-0.1.0.zip
+    platform_id: taitosj
+    description: Taito System SJ gateware IP Core
+    version: 0.1.0
+    date_release: '2023-06-30'
+    platform:
+      category: Arcade
+      name: Taito System SJ
+      manufacturer: Taito
+      year: 1983
+    assets:
+    - platform: taitosj
+      extensions:
+      - json
+      core_specific: true
+    - platform: taitosj
+      extensions:
+      - rom
 - username: ericlewis
   cores:
   - id: ericlewis.Asteroids
