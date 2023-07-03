@@ -28,6 +28,8 @@
       repository: arcade-performan
     - display_name: Slap Fight
       repository: arcade-slapfight
+    - display_name: Taito System SJ
+      repository: arcade-taitosj
 - username: ericlewis
   cores:
     - display_name: Asteroids for Analogue Pocket
