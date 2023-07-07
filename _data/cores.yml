@@ -2012,16 +2012,16 @@
       platform: github
       name: FlappyBird
       prerelease: false
-      tag_name: v20230707
-    download_url: https://github.com/somhi/FlappyBird/releases/download/v20230707/somhi.FlappyBird_20230707.zip
+      tag_name: v1.0.1
+    download_url: https://github.com/somhi/FlappyBird/releases/download/v1.0.1/somhi.FlappyBird_1.0.1_20230707.zip
     platform_id: flappybird
     description: Flappy Bird is an arcade-style game launched in May 2013 and gained
       popularity in early 2014
-    version: 1.0.0
+    version: 1.0.1
     date_release: '2023-07-05'
     platform:
       category: Others
-      name: flappybird
+      name: Flappy Bird
       manufacturer: somhi
       year: 2023
     assets: []
