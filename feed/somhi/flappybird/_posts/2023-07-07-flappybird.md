@@ -1,9 +1,9 @@
 ---
 layout: post
-title: somhi has released flappybird
-date: 2023-07-07 16:10:37 +0000
+title: flappybird by somhi has been updated to 1.0.1
+date: 2023-07-07 18:44:26 +0000
 categories: [somhi, flappybird]
-tags: [new]
+tags: [update]
 ---
 Flappy Bird
 
