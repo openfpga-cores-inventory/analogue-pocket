@@ -194,6 +194,10 @@
     - display_name: Snow Bros. 2
       repository: pram0d-pocket-dist-public
       path: releases/pram0d.snowbros2_20221019.zip
+- username: somhi
+  cores:
+    - display_name: Flappy Bird
+      repository: FlappyBird
 - username: spacemen3
   cores:
     - display_name: PDP-1
