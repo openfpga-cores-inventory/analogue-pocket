@@ -1293,8 +1293,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
     platform_id: jtcomsc
     description: Arcade hardware
-    version: 7d1a6ab
-    date_release: '2023-04-14'
+    version: f45966c
+    date_release: '2023-07-10'
     platform:
       category: Arcade compatible
       name: jtcomsc
