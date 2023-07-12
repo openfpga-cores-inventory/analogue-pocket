@@ -434,8 +434,8 @@
     platform_id: qbert
     description: Q*Bert arcade core for Analogue Pocket ported from MiSTer - originally
       created by Pierco.
-    version: 1.1.0
-    date_release: '2022-10-17'
+    version: 1.0.1
+    date_release: '2022-10-16'
     platform:
       category: Arcade
       name: Q*Bert
