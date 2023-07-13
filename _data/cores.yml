@@ -1908,6 +1908,30 @@
     - platform: bakraid
       extensions:
       - rom
+  - id: pram0d.kingdmgp
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: pram0d-pocket-dist-public
+      prerelease: false
+    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
+    platform_id: kingdmgp
+    description: Kingdom Grandprix Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Kingdom Grandprix
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: kingdmgp
+      extensions:
+      - json
+      core_specific: true
+    - platform: kingdmgp
+      extensions:
+      - rom
   - id: pram0d.sstriker
     display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
     repository:
@@ -1954,30 +1978,6 @@
       - json
       core_specific: true
     - platform: garegga
-      extensions:
-      - rom
-  - id: pram0d.kingdmgp
-    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
-    repository:
-      platform: github
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
-    platform_id: kingdmgp
-    description: Kingdom Grandprix Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-23'
-    platform:
-      category: Arcade
-      name: Kingdom Grandprix
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: kingdmgp
-      extensions:
-      - json
-      core_specific: true
-    - platform: kingdmgp
       extensions:
       - rom
   - id: pram0d.snowbros2
