@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SpaceRace by ericlewis has been updated to 1.0.0
-date: 2023-08-07 08:09:51 +0000
+title: SpaceRace by ericlewis has been updated to 1.0.1
+date: 2023-08-07 08:29:07 +0000
 categories: [ericlewis, SpaceRace]
 tags: [update]
 ---
