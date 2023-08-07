@@ -474,8 +474,8 @@
     download_url: https://github.com/ericlewis/openfpga-spacerace/releases/download/1.0.1/ericlewis.SpaceRace_1.0.1_2022-10-11.zip
     platform_id: spacerace
     description: Race in space!
-    version: 1.0.1
-    date_release: '2022-10-11'
+    version: 1.0.0
+    date_release: '2022-09-09'
     platform:
       category: Arcade
       name: Space Race
