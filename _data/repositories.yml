@@ -145,6 +145,9 @@
     - display_name: Rastan
       repository: jtbin
       path: pocket/zips/jotego.jtrastan.zip
+    - display_name: Black Tiger
+      repository: jtbin
+      path: pocket/zips/jotego.jtbtiger.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
