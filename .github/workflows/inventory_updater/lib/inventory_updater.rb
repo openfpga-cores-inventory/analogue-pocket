@@ -58,7 +58,7 @@ class InventoryUpdater
         cores.concat(repository_cores)
       end
 
-      owner_cores << { "username" => owner, "cores" => cores }
+      owner_cores << { "username" => owner, "cores" => cores.sort_by { |core| core['id'] } }
     end
 
     # Update the cores.yml file
