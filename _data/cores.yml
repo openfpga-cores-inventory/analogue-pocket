@@ -543,8 +543,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
     platform_id: jtcastle
     description: Arcade hardware
-    version: 78fb37a
-    date_release: '2023-06-30'
+    version: 2bba1b7
+    date_release: '2023-08-25'
     platform:
       category: Arcade compatible
       name: jtcastle
@@ -1113,8 +1113,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
     description: Arcade hardware
-    version: 97672c9
-    date_release: '2023-05-05'
+    version: e31ffab
+    date_release: '2023-08-25'
     platform:
       category: Arcade compatible
       name: jtroadf
@@ -1293,8 +1293,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
     description: Arcade hardware
-    version: 97672c9
-    date_release: '2023-05-05'
+    version: e31ffab
+    date_release: '2023-08-25'
     platform:
       category: Arcade compatible
       name: jttrack
