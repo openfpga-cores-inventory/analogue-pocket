@@ -1,13 +1,14 @@
+require_relative 'provenance'
+
 module Analogue
   class Updater
-    attr_reader :updater
-
-    def previous
-      return @updater.previous
-    end
+    attr_reader :updater, :previous
 
     def initialize(updater)
       @updater = updater
-    end
+
+      @previous = @updater.previous.map do |provenance|
+        Provenance.new(provenance)
+      end
   end
 end

@@ -187,7 +187,7 @@ class InventoryUpdater
           sponsor['custom'] = funding.custom if funding.custom
         end unless funding.nil?
 
-        hash['replaces'] = updater.previous unless updater.nil?
+        hash['replaces'] = updater.previous.map {|provenance| provenance.id} unless updater.nil?
       end
   end
 
