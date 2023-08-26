@@ -25,7 +25,8 @@ layout: none
         "name": {{ core.repository.name | jsonify }}
       },
       "sponsor": {{ core.sponsor | jsonify }},
-      "assets": {{ core.assets | jsonify }}
+      "assets": {{ core.assets | jsonify }},
+      "replaces": {{ core.replaces | jsonify }}
     }
         {%- unless forloop.last %},{% endunless %}
       {%- endfor %}

@@ -17,7 +17,8 @@ layout: none
         "owner": {{ developer.username | jsonify }},
         "name": {{ core.repository.name | jsonify }}
       },
-      "sponsor": {{ core.sponsor | jsonify }},      
+      "sponsor": {{ core.sponsor | jsonify }},
+      "replaces": {{ core.replaces | jsonify }},
       {% if core.repository.prerelease %}"prerelease"{% else %}"release"{% endif %}: {
         "tag_name": {{ core.repository.tag_name | jsonify }},
         "release_date": {{ core.date_release | date: "%Y-%m-%d" | jsonify }},
