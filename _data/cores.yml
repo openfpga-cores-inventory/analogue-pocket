@@ -1442,8 +1442,8 @@
       platform: github
       name: Analogue-Amiga
       prerelease: false
-      tag_name: Mazamars312.Amiga.0.1.0
-    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.0/Analogue-Amiga-0.1.0.zip
+      tag_name: Mazamars312.Amiga.0.1.1
+    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.1/Analogue-Amiga-0.1.1.zip
     platform_id: amiga
     description: Amiga Core
     version: 0.1.0
