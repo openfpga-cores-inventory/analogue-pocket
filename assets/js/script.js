@@ -108,18 +108,20 @@
     const icon = document.getElementById('button-sort')?.querySelector('i');
     const order = icon.classList.contains('bi-sort-down');
 
+    const compare = (a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }) * (order ? -1 : 1);
+
     const byAuthor = function (a, b) {
       const aAuthor = coreAuthor(a);
       const bAuthor = coreAuthor(b);
 
-      return aAuthor.localeCompare(bAuthor, undefined, { sensitivity: 'base' }) * (order ? -1 : 1);
+      return compare(aAuthor, bAuthor);
     };
 
     const byCategory = function (a, b) {
       const aCategory = coreCategory(a);
       const bCategory = coreCategory(b);
 
-      return aCategory.localeCompare(bCategory, undefined, { sensitivity: 'base' }) * (order ? -1 : 1);
+      return compare(aCategory, bCategory);
     };
 
     const byLatestRelease = function (a, b) {
@@ -136,7 +138,7 @@
       const aName = coreName(a);
       const bName = coreName(b);
 
-      return aName.localeCompare(bName, undefined, { sensitivity: 'base' }) * (order ? -1 : 1);
+      return compare(aName, bName);
     };
 
     const field = document.getElementById('dropdown-sort')?.value;
