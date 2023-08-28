@@ -158,7 +158,7 @@
         break;
     }
 
-    cards.sort(method).forEach((card) => grid.appendChild(card.parentNode));
+    cards.sort(method).forEach((card) => grid?.appendChild(card.parentNode));
   };
 
   sort();
