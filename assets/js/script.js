@@ -1,6 +1,6 @@
 (function () {
   // Search Input
-  document.getElementById('input-search')?.addEventListener('change', function (e) {
+  document.getElementById('input-search')?.addEventListener('input', function (e) {
     search();
   });
 
