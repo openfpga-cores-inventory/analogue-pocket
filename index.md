@@ -38,9 +38,9 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
     <fieldset>
       <legend class="visually-hidden">Filter by Category</legend>
     {% for category in categories -%}
-      {% assign input_id = category | slugify | prepend: 'input-' -%}
-      <input id="{{ input_id }}" type="checkbox" class="btn-check" name="filter-platform" autocomplete="off">
-      <label class="btn btn-outline-secondary mb-1" for="{{ input_id }}">{{ category }}</label>
+      {% assign filter_id = category | slugify | prepend: 'filter-' -%}
+      <input id="{{ filter_id }}" type="checkbox" class="btn-check" name="filter-platform" autocomplete="off">
+      <label class="btn btn-outline-secondary mb-1" for="{{ filter_id }}">{{ category }}</label>
     {% endfor -%}
     </fieldset>
   </div>
@@ -50,6 +50,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
   {% for developer in site.data.cores -%}
     {% assign cores = developer.cores -%}
     {% for core in cores -%}
+      {% assign core_id = core.id | slugify -%}
       {% assign author_url = 'https://github.com/' | append: developer.username -%}
       {% assign repository_url = author_url | append: '/' | append: core.repository.name -%}
   <div class="col d-block">
@@ -65,53 +66,50 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
       </div>
       <div class="card-footer text-muted">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-toolbar" role="toolbar">
-            <div class="btn-group me-2">
-              <a href="{{ repository_url }}" class="btn btn-sm btn-dark"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a>
-            </div>
-            {% if core.sponsor -%}
-            <div class="btn-group me-2">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="{{ repository_url }}" class="btn btn-sm btn-dark"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a></li>
+          {% if core.sponsor -%}            
+            {% assign sponsor_id = core_id | prepend: 'sponsor-' -%}
+            <li class="list-inline-item">
               <div class="dropdown">
-                <a class="btn btn-sm btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart-fill" role="img" aria-label="Sponsor"></i></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  {% if core.sponsor.community_bridge -%}
+                <a class="btn btn-sm btn-danger dropdown-toggle" href="#" role="button" id="{{ sponsor_id }}" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart-fill" role="img" aria-label="Sponsor"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="{{ sponsor_id }}">
+            {% if core.sponsor.community_bridge -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.community_bridge }}">LFX Mentorship</a></li>
-                  {% endif -%}
-                  {% for sponsor_url in core.sponsor.github -%}
+            {% endif -%}
+            {% for sponsor_url in core.sponsor.github -%}
                   <li><a class="dropdown-item" href="{{ sponsor_url }}">GitHub Sponsors</a></li>
-                  {% endfor -%}
-                  {% if core.sponsor.issuehunt -%}
+            {% endfor -%}
+            {% if core.sponsor.issuehunt -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.issuehunt }}">IssueHunt</a></li>
-                  {% endif -%}
-                  {% if core.sponsor.ko_fi -%}
+            {% endif -%}
+            {% if core.sponsor.ko_fi -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.ko_fi }}">Ko-fi</a></li>
-                  {% endif -%}
-                  {% if core.sponsor.liberapay -%}
+            {% endif -%}
+            {% if core.sponsor.liberapay -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.liberapay }}">Liberapay</a></li>
-                  {% endif -%}
-                  {% if core.sponsor.open_collective -%}
+            {% endif -%}
+            {% if core.sponsor.open_collective -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.open_collective }}">Open Collective</a></li>
-                  {% endif -%}
-                  {% if core.sponsor.otechie -%}
+            {% endif -%}
+            {% if core.sponsor.otechie -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.otechie }}">Otechie</a></li>
-                  {% endif -%}
-                  {% if core.sponsor.patreon -%}
+            {% endif -%}
+            {% if core.sponsor.patreon -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.patreon }}">Patreon</a></li>
-                  {% endif -%}
-                  {% if core.sponsor.tidelift -%}
+            {% endif -%}
+            {% if core.sponsor.tidelift -%}
                   <li><a class="dropdown-item" href="{{ core.sponsor.tidelift }}">Tidelift</a></li>
-                  {% endif -%}
-                  {% for sponsor_url in core.sponsor.custom -%}
+            {% endif -%}
+            {% for sponsor_url in core.sponsor.custom -%}
                   <li><a class="dropdown-item" href="{{ sponsor_url }}">Sponsor</a></li>
-                  {% endfor -%}
+            {% endfor -%}
                 </ul>
               </div>
-            </div>
-            {% endif -%}
-            <div class="btn-group">
-              <a href="{{ core.download_url }}" class="btn btn-sm btn-secondary"><i class="bi bi-download" role="img" aria-label="Download"></i></a>
-            </div>
-          </div>
+            </li>            
+          {% endif -%}
+            <li class="list-inline-item"><a href="{{ core.download_url }}" class="btn btn-sm btn-secondary"><i class="bi bi-download" role="img" aria-label="Download"></i></a></li>
+          </ul>
           <small>{{ core.version }} • {{ core.date_release | date: "%b %-d, %Y" }}</small>
         </div>
       </div>
