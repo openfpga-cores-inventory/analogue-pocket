@@ -130,32 +130,34 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
   </div>
   </div>
   <div class="tab-pane fade" id="tab-list" role="tabpanel" aria-labelledby="button-list-tab">
-    <table id="list-cores" class="table table-hover">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Platform</th>
-          <th>Category</th>
-          <th>Author</th>
-          <th>Version</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for developer in site.data.cores -%}
-          {% for core in developer.cores -%}
-            <tr class="d-table-row">
-              <td><a href="https://github.com/{{ developer.username }}/{{ core.repository.name }}">{{ core.display_name }}</a></td>
-              <td>{{ core.platform.name }}</td>
-              <td>{{ core.platform.category }}</td>
-              <td><a href="https://github.com/{{ developer.username }}">{{ developer.username }}</a></td>
-              <td><a href="{{core.download_url}}">{{ core.version }}</a></td>
-              <td>{{ core.date_release | date: "%b %-d, %Y" }}</td>
-            </tr>
+    <div class="table-responsive">
+      <table id="list-cores" class="table table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Platform</th>
+            <th>Category</th>
+            <th>Author</th>
+            <th>Version</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for developer in site.data.cores -%}
+            {% for core in developer.cores -%}
+              <tr class="d-table-row">
+                <td><a href="https://github.com/{{ developer.username }}/{{ core.repository.name }}">{{ core.display_name }}</a></td>
+                <td>{{ core.platform.name }}</td>
+                <td>{{ core.platform.category }}</td>
+                <td><a href="https://github.com/{{ developer.username }}">{{ developer.username }}</a></td>
+                <td><a href="{{core.download_url}}">{{ core.version }}</a></td>
+                <td>{{ core.date_release | date: "%b %-d, %Y" }}</td>
+              </tr>
+            {% endfor -%}
           {% endfor -%}
-        {% endfor -%}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
