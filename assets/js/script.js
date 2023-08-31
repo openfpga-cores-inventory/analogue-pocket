@@ -36,28 +36,48 @@
     });
   });
 
-  const GRID_CORES_ID = 'grid-cores';
+  const GALLERY_CORES_ID = 'gallery-cores';
+  const LIST_CORES_ID = 'list-cores';
 
-  const coreName = (card) => card.querySelector('.card-title')?.innerText;
-  const coreAuthor = (card) => card.querySelector('.card-subtitle')?.innerText;
-  const coreDescription = (card) => card.querySelector('.card-text')?.innerText;
-  const coreCategory = (card) => card.querySelector('.card-link')?.innerText;
-  const coreFooter = (card) => card.querySelector('.card-footer')?.innerText;
+  const TAB_GALLERY = 'gallery';
+  const TAB_LIST = 'list';
 
-  const grid = document.getElementById(GRID_CORES_ID);
-  const cards = Array.from(grid?.querySelectorAll('.card'));
-  const visibleCards = () => Array.from(grid?.querySelectorAll('.col.d-block > .card'));
+  const GALLERY_ITEM_SELECTOR = '.col';
+  const GALLERY_NAME_SELECTOR = '.card-title';
+  const GALLERY_AUTHOR_SELECTOR = '.card-subtitle';
+  const GALLERY_DESCRIPTION_SELECTOR = '.card-text';
+  const GALLERY_CATEGORY_SELECTOR = '.card-link';
+  const GALLERY_DATE_SELECTOR = '.card-footer';
+
+  const LIST_ITEM_SELECTOR = 'tbody > tr';
+  const LIST_NAME_SELECTOR = 'td:nth-child(1)';
+  const LIST_AUTHOR_SELECTOR = 'td:nth-child(4)';
+  const LIST_CATEGORY_SELECTOR = 'td:nth-child(3)';
+  const LIST_DATE_SELECTOR = 'td:nth-child(6)';
+
+  const gallery = document.getElementById(GALLERY_CORES_ID);
+  const list = document.getElementById(LIST_CORES_ID);
+
+  const items = (tab) => Array.from(isList(tab) ? list?.querySelectorAll(LIST_ITEM_SELECTOR) : gallery?.querySelectorAll(GALLERY_ITEM_SELECTOR));
+  const visibleItems = (tab) => items(tab).filter(item => item.classList.contains('d-block') || item.classList.contains('d-table-row'));
+
+  const isList = (tab) => tab === TAB_LIST;
+  const itemName = (item, tab) => isList(tab) ? item.querySelector(LIST_NAME_SELECTOR)?.innerText : item.querySelector(GALLERY_NAME_SELECTOR)?.innerText;
+  const itemAuthor = (item, tab) => isList(tab) ? item.querySelector(LIST_AUTHOR_SELECTOR)?.innerText : item.querySelector(GALLERY_AUTHOR_SELECTOR)?.innerText;
+  const itemDescription = (item, tab) => isList(tab) ? null : item.querySelector(GALLERY_DESCRIPTION_SELECTOR)?.innerText;
+  const itemCategory = (item, tab) => isList(tab) ? item.querySelector(LIST_CATEGORY_SELECTOR)?.innerText : item.querySelector(GALLERY_CATEGORY_SELECTOR)?.innerText;
+  const itemDate = (item, tab) => isList(tab) ? item.querySelector(LIST_DATE_SELECTOR)?.innerText : item.querySelector(GALLERY_DATE_SELECTOR)?.innerText;
 
   // Search
   const search = function (call = true) {
-    const match = function (card, query) {
+    const match = function (item, tab, query) {
       if (!query?.length)
         return true;
 
-      const name = coreName(card);
-      const author = coreAuthor(card);
-      const description = coreDescription(card);
-      const category = coreCategory(card);
+      const name = itemName(item, tab);
+      const author = itemAuthor(item, tab);
+      const description = itemDescription(item, tab);
+      const category = itemCategory(item, tab);
 
       const sanitizedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       const regex = new RegExp(sanitizedQuery, 'gi');
@@ -65,16 +85,31 @@
       return regex.test(name) || regex.test(author) || regex.test(description) || regex.test(category);
     };
 
-    const query = document.getElementById('input-search')?.value;
-    cards.forEach(function (card) {
-      const isMatch = match(card, query);
-      const column = card.parentNode;
+    const searchGallery = (query) => {
+      items(TAB_GALLERY).forEach(function (item) {
+        const isMatch = match(item, TAB_GALLERY, query);
 
-      if (isMatch)
-        column.classList.replace('d-none', 'd-block');
-      else
-        column.classList.replace('d-block', 'd-none');
-    });
+        if (isMatch)
+          item.classList.replace('d-none', 'd-block');
+        else
+          item.classList.replace('d-block', 'd-none');
+      });
+    };
+
+    const searchList = (query) => {
+      items(TAB_LIST).forEach(function (item) {
+        const isMatch = match(item, TAB_LIST, query);
+
+        if (isMatch)
+          item.classList.replace('d-none', 'd-table-row');
+        else
+          item.classList.replace('d-table-row', 'd-none');
+      });
+    }
+
+    const query = document.getElementById('input-search')?.value;
+    searchGallery(query);
+    searchList(query);
 
     if (call)
       filter(false);
@@ -85,22 +120,21 @@
     if (call)
       search(false);
 
-    const match = function (card, filters) {
+    const match = function (item, tab, filters) {
       if (!Array.isArray(filters) || !filters.length)
         return true;
 
-      const category = coreCategory(card);
+      const category = itemCategory(item, tab);
       return filters.includes(category);
     };
 
-    const filters = Array.from(document.querySelectorAll('input[name=filter-platform]:checked + label')).map(x => x.innerText);
-    visibleCards().forEach(function (card) {
-      const isMatch = match(card, filters);
-      const column = card.parentNode;
+    const filterItems = (tab, filters) => visibleItems(tab).filter(item => !match(item, tab, filters));
+    const filterGallery = (filters) => filterItems(TAB_GALLERY, filters).forEach(item => item.classList.replace('d-block', 'd-none'));
+    const filterList = (filters) => filterItems(TAB_LIST, filters).forEach(item => item.classList.replace('d-table-row', 'd-none'));
 
-      if (!isMatch)
-        column.classList.replace('d-block', 'd-none');
-    });
+    const filters = Array.from(document.querySelectorAll('input[name=filter-platform]:checked + label')).map(x => x.innerText);
+    filterGallery(filters);
+    filterList(filters);
   };
 
   // Sort
@@ -110,33 +144,33 @@
 
     const compare = (a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }) * (order ? -1 : 1);
 
-    const byAuthor = function (a, b) {
-      const aAuthor = coreAuthor(a);
-      const bAuthor = coreAuthor(b);
+    const byAuthor = (tab) => function (a, b) {
+      const aAuthor = itemAuthor(a, tab);
+      const bAuthor = itemAuthor(b, tab);
 
       return compare(aAuthor, bAuthor);
     };
 
-    const byCategory = function (a, b) {
-      const aCategory = coreCategory(a);
-      const bCategory = coreCategory(b);
+    const byCategory = (tab) => function (a, b) {
+      const aCategory = itemCategory(a, tab);
+      const bCategory = itemCategory(b, tab);
 
       return compare(aCategory, bCategory);
     };
 
-    const byLatestRelease = function (a, b) {
-      const aFooter = coreFooter(a);
-      const bFooter = coreFooter(b);
+    const byLatestRelease = (tab) => function (a, b) {
+      const aFooter = itemDate(a, tab);
+      const bFooter = itemDate(b, tab);
 
-      const aDate = Date.parse(aFooter.split(' • ')[1]);
-      const bDate = Date.parse(bFooter.split(' • ')[1]);
+      const aDate = Date.parse(aFooter.split(' • ').pop());
+      const bDate = Date.parse(bFooter.split(' • ').pop());
 
       return order ? bDate - aDate : aDate - bDate;
     };
 
-    const byName = function (a, b) {
-      const aName = coreName(a);
-      const bName = coreName(b);
+    const byName = (tab) => function (a, b) {
+      const aName = itemName(a, tab);
+      const bName = itemName(b, tab);
 
       return compare(aName, bName);
     };
@@ -160,7 +194,11 @@
         break;
     }
 
-    cards.sort(method).forEach((card) => grid?.appendChild(card.parentNode));
+    const sortGallery = () => items(TAB_GALLERY).sort(method(TAB_GALLERY)).forEach(item => gallery?.appendChild(item));
+    const sortList = () => items(TAB_LIST).sort(method(TAB_LIST)).forEach(item => list?.querySelector('tbody')?.appendChild(item));
+
+    sortGallery();
+    sortList();
   };
 
   sort();
