@@ -412,7 +412,7 @@
     download_url: https://github.com/ericlewis/openfpga-lunarlander/releases/download/0.9.1/ericlewis.LunarLander_0.9.1_2022-09-13.zip
     platform_id: lunarlander
     description: Atari's 1979 Lunar Lander.
-    version: 0.9.0
+    version: 0.9.1
     date_release: '2022-09-12'
     platform:
       category: Arcade
