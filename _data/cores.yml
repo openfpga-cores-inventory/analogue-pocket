@@ -693,8 +693,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
     description: Arcade hardware
-    version: 03de18f
-    date_release: '2023-07-01'
+    version: cd8f7ed
+    date_release: '2023-09-15'
     platform:
       category: Arcade compatible
       name: jtdd
@@ -723,8 +723,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
     description: Arcade hardware
-    version: 03de18f
-    date_release: '2023-07-01'
+    version: cd8f7ed
+    date_release: '2023-09-15'
     platform:
       category: Arcade compatible
       name: jtdd2
