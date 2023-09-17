@@ -89,6 +89,7 @@ class InventoryUpdater
       download_url = nil
       funding = nil
       latest_release = nil
+      sponsor_only = false
 
       # Initialize the service responsible for interacting with the core folder
       pocket_service = Analogue::PocketService.new(root_path)
@@ -112,6 +113,7 @@ class InventoryUpdater
         github_repository = repository.github_repository
         funding ||= @github_service.funding(github_repository)
         latest_release ||= @github_service.latest_release(github_repository, repository.prerelease) if repository.release?
+        sponsor_only = sponsor_check(core)
 
         # Update the author icon
         icon_file = "#{core_id}.png"
@@ -128,7 +130,7 @@ class InventoryUpdater
         post_content = pocket_service.get_info(core_id)
         create_post(core, post_type, post_content)
 
-        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding)
+        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, sponsor_only)
       end
     ensure
       # Delete the temporary directory
@@ -138,7 +140,16 @@ class InventoryUpdater
     return serialized_cores
   end
 
-  def serialize_core(repository, core, platform, download_url, latest_release, funding)
+  def sponsor_check(core)
+    #add custom checks as needed i guess
+    if core.author == "jotego"
+      return core.data.data_slots.any?{|data_slot| data_slot.name == "JTBETA"}
+    end
+
+    return false
+  end
+
+  def serialize_core(repository, core, platform, download_url, latest_release, funding, sponsor_only)
     return {
       'id' => core.id,
       'display_name' => repository.display_name,
@@ -147,6 +158,7 @@ class InventoryUpdater
         'name' => repository.name,
         'prerelease' => repository.prerelease
       },
+      'sponsor_only' => sponsor_only,
       'download_url' => download_url,
       'platform_id' => core.platform_id,
       'description' => core.description,
