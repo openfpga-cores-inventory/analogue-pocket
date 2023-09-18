@@ -1331,6 +1331,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jttmnt
+    display_name: Teenage Mutant Ninja Turtles
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
+    platform_id: jttmnt
+    description: Arcade hardware
+    version: 10cd2a5
+    date_release: '2023-09-15'
+    platform:
+      category: Arcade compatible
+      name: jttmnt
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jttmnt
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttmnt
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jttrack
     display_name: Track & Field
     repository:
