@@ -139,13 +139,12 @@ class InventoryUpdater
     return serialized_cores
   end
 
-  def sponsor_check(core)
-    #add custom checks as needed i guess
-    if core.author == "jotego"
-      return core.data.data_slots.any?{|data_slot| data_slot.name == "JTBETA"}
-    end
+  def license_check(core)
+    LICENSE_SLOT_NAMES = [
+      'JTBETA' # required by jotego beta cores
+    ]
 
-    return false
+    return core.data.data_slots.any? { |data_slot| LICENSE_SLOT_NAMES.include?(data_slot.name) }
   end
 
   def serialize_core(repository, core, platform, download_url, latest_release, funding, sponsor_only)
