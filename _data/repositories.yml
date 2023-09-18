@@ -148,6 +148,9 @@
     - display_name: Black Tiger
       repository: jtbin
       path: pocket/zips/jotego.jtbtiger.zip
+    - display_name: Teenage Mutant Ninja Turtles
+      repository: jtbin
+      path: pocket/zips/jotego.jttmnt.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
