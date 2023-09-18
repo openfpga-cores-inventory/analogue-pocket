@@ -147,7 +147,7 @@ class InventoryUpdater
     return core.data.data_slots.any? { |data_slot| LICENSE_SLOT_NAMES.include?(data_slot.name) }
   end
 
-  def serialize_core(repository, core, platform, download_url, latest_release, funding, sponsor_only)
+  def serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license)
     return {
       'id' => core.id,
       'display_name' => repository.display_name,
