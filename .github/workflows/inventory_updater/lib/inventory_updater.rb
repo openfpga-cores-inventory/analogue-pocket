@@ -33,6 +33,10 @@ class InventoryUpdater
     # ##############################################################################
   TXT
 
+  LICENSE_SLOT_NAMES = [
+    'JTBETA' # required by jotego beta cores
+  ]
+
   attr_reader :github_service, :repository_service, :cache_service, :jekyll_service
 
   def initialize
@@ -116,6 +120,7 @@ class InventoryUpdater
         github_repository = repository.github_repository
         funding ||= @github_service.funding(github_repository)
         latest_release ||= @github_service.latest_release(github_repository, repository.prerelease) if repository.release?
+        requires_license = license_check(core)
 
         # Update the author icon
         icon_file = "#{core_id}.png"
@@ -132,7 +137,7 @@ class InventoryUpdater
         post_content = pocket_service.get_info(core_id)
         create_post(core, post_type, post_content)
 
-        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, updater)
+        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license, updater)
       end
     ensure
       # Delete the temporary directory
@@ -142,7 +147,11 @@ class InventoryUpdater
     return serialized_cores
   end
 
-  def serialize_core(repository, core, platform, download_url, latest_release, funding, updater)
+  def license_check(core)
+    return core.data.data_slots.any? { |data_slot| LICENSE_SLOT_NAMES.include?(data_slot.name) }
+  end
+
+  def serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license, updater)
     return {
       'id' => core.id,
       'display_name' => repository.display_name,
@@ -151,6 +160,7 @@ class InventoryUpdater
         'name' => repository.name,
         'prerelease' => repository.prerelease
       },
+      'requires_license' => requires_license,
       'download_url' => download_url,
       'platform_id' => core.platform_id,
       'description' => core.description,
