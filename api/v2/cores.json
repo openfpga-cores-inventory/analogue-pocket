@@ -18,6 +18,7 @@ layout: none
       "release_date": {{ core.date_release | date: "%Y-%m-%d" | jsonify }},
       "platform": {{ core.platform | jsonify }},
       "assets": {{ core.assets | jsonify }},
+      "requires_license": {{ core.requires_license | jsonify }},
       "sponsor": {{ core.sponsor | jsonify }}
     }
         {%- unless forloop.last %},{% endunless %}
