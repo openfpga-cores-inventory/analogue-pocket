@@ -112,7 +112,7 @@ class InventoryUpdater
         github_repository = repository.github_repository
         funding ||= @github_service.funding(github_repository)
         latest_release ||= @github_service.latest_release(github_repository, repository.prerelease) if repository.release?
-        sponsor_only = sponsor_check(core)
+        requires_license = license_check(core)
 
         # Update the author icon
         icon_file = "#{core_id}.png"
