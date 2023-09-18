@@ -33,6 +33,10 @@ class InventoryUpdater
     # ##############################################################################
   TXT
 
+  LICENSE_SLOT_NAMES = [
+    'JTBETA' # required by jotego beta cores
+  ]
+
   attr_reader :github_service, :repository_service, :cache_service, :jekyll_service
 
   def initialize
@@ -140,10 +144,6 @@ class InventoryUpdater
   end
 
   def license_check(core)
-    LICENSE_SLOT_NAMES = [
-      'JTBETA' # required by jotego beta cores
-    ]
-
     return core.data.data_slots.any? { |data_slot| LICENSE_SLOT_NAMES.include?(data_slot.name) }
   end
 
