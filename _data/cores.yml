@@ -525,6 +525,37 @@
       filename: sbrkout.rom
 - username: jotego
   cores:
+  - id: jotego.jtaliens
+    display_name: Aliens
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
+    platform_id: jtaliens
+    description: Arcade hardware
+    version: 10cd2a5
+    date_release: '2023-09-15'
+    platform:
+      category: Arcade compatible
+      name: jtaliens
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtaliens
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtaliens
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtbtiger
     display_name: Black Tiger
     repository:
@@ -1323,6 +1354,37 @@
       - json
       core_specific: true
     - platform: jtsf
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtsimson
+    display_name: The Simpsons
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
+    platform_id: jtsimson
+    description: Arcade hardware
+    version: 033d75a
+    date_release: '2023-09-02'
+    platform:
+      category: Arcade compatible
+      name: jtsimson
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtsimson
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtsimson
       extensions:
       - rom
     sponsor:
