@@ -157,6 +157,9 @@
     - display_name: The Simpsons
       repository: jtbin
       path: pocket/zips/jotego.jtsimson.zip
+    - display_name: Twin16 System
+      repository: jtbin
+      path: pocket/zips/jotego.jts16b.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
