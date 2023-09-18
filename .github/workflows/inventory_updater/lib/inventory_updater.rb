@@ -89,7 +89,6 @@ class InventoryUpdater
       download_url = nil
       funding = nil
       latest_release = nil
-      sponsor_only = false
 
       # Initialize the service responsible for interacting with the core folder
       pocket_service = Analogue::PocketService.new(root_path)
