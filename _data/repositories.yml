@@ -154,6 +154,9 @@
     - display_name: Aliens
       repository: jtbin
       path: pocket/zips/jotego.jtaliens.zip
+    - display_name: The Simpsons
+      repository: jtbin
+      path: pocket/zips/jotego.jtsimson.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
