@@ -129,7 +129,7 @@ class InventoryUpdater
         post_content = pocket_service.get_info(core_id)
         create_post(core, post_type, post_content)
 
-        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, sponsor_only)
+        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license)
       end
     ensure
       # Delete the temporary directory
