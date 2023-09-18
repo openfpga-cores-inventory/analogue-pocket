@@ -156,7 +156,7 @@ class InventoryUpdater
         'name' => repository.name,
         'prerelease' => repository.prerelease
       },
-      'sponsor_only' => sponsor_only,
+      'requires_license' => requires_license,
       'download_url' => download_url,
       'platform_id' => core.platform_id,
       'description' => core.description,
