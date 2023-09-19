@@ -690,8 +690,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcop.zip
     platform_id: jtcop
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 82755de
+    date_release: '2023-09-19'
     platform:
       category: Arcade compatible
       name: jtcop
@@ -845,8 +845,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: a404810
+    date_release: '2023-09-17'
     platform:
       category: Arcade compatible
       name: jtgng
@@ -907,8 +907,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: e934e10
+    date_release: '2023-09-17'
     platform:
       category: Arcade compatible
       name: jtkarnov
@@ -938,8 +938,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: ff35676
+    date_release: '2023-09-17'
     platform:
       category: Arcade compatible
       name: jtkicker
@@ -1217,8 +1217,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 0e3bfe0
+    date_release: '2023-09-17'
     platform:
       category: Arcade compatible
       name: jtroc
@@ -1238,7 +1238,8 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
-  - id: jotego.jts16b
+  - &1
+    id: jotego.jts16b
     display_name: System 16B
     repository:
       platform: github
@@ -1269,6 +1270,7 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - *1
   - id: jotego.jtsarms
     display_name: Side Arms
     repository:
@@ -1341,8 +1343,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
     platform_id: jtsectnz
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: a565464
+    date_release: '2023-09-19'
     platform:
       category: Arcade compatible
       name: jtsectnz
@@ -1372,8 +1374,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
     platform_id: jtsf
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: a565464
+    date_release: '2023-09-19'
     platform:
       category: Arcade compatible
       name: jtsf
