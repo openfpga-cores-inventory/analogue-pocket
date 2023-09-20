@@ -7,7 +7,7 @@ class BinaryImage
     image = ChunkyPNG::Image.new(width, height)
 
     index = 0
-    x = width
+    x = width - 1
 
     while x >= 0
       y = 0
