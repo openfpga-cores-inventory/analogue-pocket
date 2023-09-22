@@ -164,7 +164,7 @@
       repository: jtbin
       path: pocket/zips/jotego.jttwin16.zip
     - display_name: Super Hang-on
-      repository: jtshanon
+      repository: jtbin
       path: pocket/zips/jotego.jtshanon.zip
 - username: Mazamars312
   cores:
