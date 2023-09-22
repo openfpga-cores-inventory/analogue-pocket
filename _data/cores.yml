@@ -1244,12 +1244,12 @@
       platform: github
       name: jtbin
       prerelease: false
-    requires_license: true
+    requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
     description: Arcade hardware
-    version: 10cd2a5
-    date_release: '2023-09-15'
+    version: 3b0b735
+    date_release: '2023-09-22'
     platform:
       category: Arcade compatible
       name: jts16b
