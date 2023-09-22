@@ -721,8 +721,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
     description: Arcade hardware
-    version: c88e6f8
-    date_release: '2023-04-28'
+    version: 2ac8ce7
+    date_release: '2023-09-22'
     platform:
       category: Arcade compatible
       name: jtcps1
@@ -1062,8 +1062,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: 41710a8
+    date_release: '2023-09-22'
     platform:
       category: Arcade compatible
       name: jtoutrun
@@ -1093,8 +1093,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
     description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    version: f427759
+    date_release: '2023-09-22'
     platform:
       category: Arcade compatible
       name: jtpang
