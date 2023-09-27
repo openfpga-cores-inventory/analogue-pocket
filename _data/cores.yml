@@ -64,14 +64,14 @@
       platform: github
       name: openfpga-NES
       prerelease: false
-      tag_name: 0.3.1
+      tag_name: 1.0.0
     requires_license: false
-    download_url: https://github.com/agg23/openfpga-NES/releases/download/0.3.1/agg23.NES_0.3.1_2022-12-07.zip
+    download_url: https://github.com/agg23/openfpga-NES/releases/download/1.0.0/agg23.NES_1.0.0_2023-09-26.zip
     platform_id: nes
     description: Nintendo Entertainment System and Famicom. Nintendo's first home
       console
-    version: 0.3.1
-    date_release: '2022-12-07'
+    version: 1.0.0
+    date_release: '2023-09-26'
     platform:
       category: Console
       name: NES
