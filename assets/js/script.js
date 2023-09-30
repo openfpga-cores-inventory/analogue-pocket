@@ -36,6 +36,9 @@
     });
   });
 
+  // Tooltips
+  document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new bootstrap.Tooltip(item));
+
   const GALLERY_CORES_ID = 'gallery-cores';
   const LIST_CORES_ID = 'list-cores';
 

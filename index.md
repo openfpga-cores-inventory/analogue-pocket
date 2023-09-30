@@ -67,7 +67,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
       <div class="card bg-light h-100">
         <a href="{{ repository_url }}"><img src="{{ core.platform_id | prepend: '/assets/images/platforms/' | append: '.png' | relative_url }}" class="card-img-top" alt="{{ core.platform.name }}" /></a>
         <div class="card-body">
-          <h5 class="card-title">{{ core.display_name }}</h5>
+          <h5 class="card-title">{{ core.display_name }}{% if core.requires_license -%} <i class="bi bi-lock-fill" data-bs-toggle="tooltip" data-bs-title="License Required"></i>{% endif -%}</h5>
           {% assign icon_path = core.id | prepend: '/assets/images/authors/' | append: '.png' -%}
           {% assign icon_exists = site.static_files | where: 'path', icon_path | first -%}
           <h6 class="card-subtitle mb-2 text-muted">{% if icon_exists -%}<a href="{{ author_url }}" class="me-1"><img src="{{ icon_path | relative_url }}" alt="{{ developer.username }}" class="rounded" /></a>{% endif -%}<a href="{{ author_url }}">{{ developer.username }}</a></h6>
@@ -146,7 +146,12 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
           {% for developer in site.data.cores -%}
             {% for core in developer.cores -%}
               <tr class="d-table-row">
-                <td><a href="https://github.com/{{ developer.username }}/{{ core.repository.name }}">{{ core.display_name }}</a></td>
+                <td>
+                  <a href="https://github.com/{{ developer.username }}/{{ core.repository.name }}">{{ core.display_name }}</a>
+                  {% if core.requires_license -%}
+                    <i class="bi bi-lock-fill" data-bs-toggle="tooltip" data-bs-title="License Required"></i>
+                  {% endif -%}
+                </td>
                 <td>{{ core.platform.name }}</td>
                 <td>{{ core.platform.category }}</td>
                 <td><a href="https://github.com/{{ developer.username }}">{{ developer.username }}</a></td>
@@ -160,5 +165,3 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
     </div>
   </div>
 </div>
-
-<script type="text/javascript" src="{{ '/assets/js/script.js' | relative_url }}"></script>
