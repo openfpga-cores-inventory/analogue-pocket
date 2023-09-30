@@ -721,8 +721,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
     description: Arcade hardware
-    version: 2ac8ce7
-    date_release: '2023-09-22'
+    version: 0c3621d
+    date_release: '2023-09-30'
     platform:
       category: Arcade compatible
       name: jtcps1
