@@ -47,8 +47,8 @@
 
   const GALLERY_ITEM_SELECTOR = '.col';
   const GALLERY_NAME_SELECTOR = '.card-title';
-  const GALLERY_AUTHOR_SELECTOR = '.card-subtitle';
-  const GALLERY_DESCRIPTION_SELECTOR = '.card-text';
+  const GALLERY_AUTHOR_SELECTOR = '.card-text';
+  const GALLERY_DESCRIPTION_SELECTOR = '.card-subtitle';
   const GALLERY_CATEGORY_SELECTOR = '.card-link';
   const GALLERY_DATE_SELECTOR = '.card-footer';
 
