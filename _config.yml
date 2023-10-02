@@ -38,21 +38,22 @@ bootstrap:
 
   # generate social links in footer
   social_links:
-    # - { platform: devto,          user_url: "https://dev.to/jekyll" }
-    # - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
-    # - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-    # - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-    - { platform: github,         user_url: "https://github.com/openfpga-cores-inventory/analogue-pocket" }
-    # - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
-    # - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
-    # - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-    # - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
-    # - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
-    # - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
-    # - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
-    # - { platform: telegram,       user_url: "https://t.me/jekyll" }
-    - { platform: twitter,        user_url: "https://twitter.com/joshcampbell191" }
-    # - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+    # - { platform: devto,          title: "DEV",             user_url: "https://dev.to/jekyll" }
+    # - { platform: dribbble,       title: "Dribbble",        user_url: "https://dribbble.com/jekyll" }
+    # - { platform: facebook,       title: "Facebook",        user_url: "https://www.facebook.com/jekyll" }
+    # - { platform: flickr,         title: "Flickr",          user_url: "https://www.flickr.com/photos/jekyll" }
+    - { platform: github,         title: "GitHub",          user_url: "https://github.com/openfpga-cores-inventory/analogue-pocket" }
+    # - { platform: google_scholar, title: "Google Scholar",  user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+    # - { platform: instagram,      title: "Instagram",       user_url: "https://www.instagram.com/jekyll" }
+    # - { platform: keybase,        title: "Keybase",         user_url: "https://keybase.io/jekyll" }
+    # - { platform: linkedin,       title: "LinkedIn",        user_url: "https://www.linkedin.com/in/jekyll" }
+    # - { platform: microdotblog,   title: "Micro.blog",      user_url: "https://micro.blog/jekyll" }
+    # - { platform: pinterest,      title: "Pinterest",       user_url: "https://www.pinterest.com/jekyll" }
+    # - { platform: rss,            title: "RSS",             user_url: "/feed.xml" }
+    # - { platform: stackoverflow,  title: "Stack Overflow",  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
+    # - { platform: telegram,       title: "Telegram",        user_url: "https://t.me/jekyll" }
+    - { platform: twitter,        title: "Twitter",         user_url: "https://twitter.com/joshcampbell191" }
+    # - { platform: youtube,        title: "YouTube",         user_url: "https://www.youtube.com/jekyll" }
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
