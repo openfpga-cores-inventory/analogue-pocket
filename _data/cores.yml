@@ -1486,6 +1486,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jttora
+    display_name: Tiger Road
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttora.zip
+    platform_id: jttora
+    description: Arcade hardware
+    version: f4fbcf4
+    date_release: '2023-09-19'
+    platform:
+      category: Arcade compatible
+      name: jttora
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jttora
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttora
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jttrack
     display_name: Track & Field
     repository:
