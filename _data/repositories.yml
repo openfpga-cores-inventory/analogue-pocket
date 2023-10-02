@@ -166,6 +166,9 @@
     - display_name: Super Hang-on
       repository: jtbin
       path: pocket/zips/jotego.jtshanon.zip
+    - display_name: Tiger Road
+      repository: jtbin
+      path: pocket/zips/jotego.jttora.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
