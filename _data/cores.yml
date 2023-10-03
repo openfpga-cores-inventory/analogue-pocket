@@ -845,8 +845,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
     description: Arcade hardware
-    version: a404810
-    date_release: '2023-09-17'
+    version: 31bc823
+    date_release: '2023-10-02'
     platform:
       category: Arcade compatible
       name: jtgng
