@@ -1,7 +1,7 @@
 ---
 layout: post
-title: supervision by boogermann has been updated to 0.1.0
-date: 2023-10-04 11:23:43 +0000
+title: supervision by boogermann has been updated to 0.1.1
+date: 2023-10-04 11:43:40 +0000
 categories: [boogermann, supervision]
 tags: [update]
 ---
