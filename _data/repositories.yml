@@ -169,6 +169,9 @@
     - display_name: Tiger Road
       repository: jtbin
       path: pocket/zips/jotego.jttora.zip
+    - display_name: Bad Dudes vs. DragonNinja
+      repository: jtbin
+      path: pocket/zips/jotego.jtninja.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
