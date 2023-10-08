@@ -1052,6 +1052,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtninja
+    display_name: Bad Dudes vs. DragonNinja
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
+    platform_id: jtninja
+    description: Arcade hardware
+    version: c299d37
+    date_release: '2023-10-06'
+    platform:
+      category: Arcade compatible
+      name: jtninja
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtninja
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtninja
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtoutrun
     display_name: Out Run
     repository:
