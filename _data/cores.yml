@@ -2188,8 +2188,8 @@
     platform_id: genesis
     description: Sega Genesis, known as the Mega Drive outside North America, is a
       16-bit fourth-generation home video game console developed and sold by Sega.
-    version: 0.4.1
-    date_release: '2022-10-06'
+    version: 0.4.2
+    date_release: '2022-10-08'
     platform:
       category: Console
       name: Genesis
