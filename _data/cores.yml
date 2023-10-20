@@ -1217,8 +1217,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
     description: Arcade hardware
-    version: e31ffab
-    date_release: '2023-08-25'
+    version: c2a9f1a
+    date_release: '2023-10-20'
     platform:
       category: Arcade compatible
       name: jtroadf
@@ -1558,8 +1558,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
     description: Arcade hardware
-    version: e31ffab
-    date_release: '2023-08-25'
+    version: c2a9f1a
+    date_release: '2023-10-20'
     platform:
       category: Arcade compatible
       name: jttrack
