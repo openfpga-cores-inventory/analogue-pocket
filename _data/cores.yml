@@ -742,6 +742,68 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtcps15
+    display_name: CPS1.5
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
+    platform_id: jtcps15
+    description: Arcade hardware
+    version: 5564ba9
+    date_release: '2023-10-27'
+    platform:
+      category: Arcade compatible
+      name: jtcps15
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtcps15
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcps15
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtcps2
+    display_name: CPS2
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps2.zip
+    platform_id: jtcps2
+    description: Arcade hardware
+    version: ee4a861
+    date_release: '2023-10-27'
+    platform:
+      category: Arcade compatible
+      name: jtcps2
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtcps2
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcps2
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtdd
     display_name: Double Dragon
     repository:
