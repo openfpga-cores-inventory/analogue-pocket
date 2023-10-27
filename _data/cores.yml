@@ -587,6 +587,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtbubl
+    display_name: Bubble Bobble
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
+    platform_id: jtbubl
+    description: Arcade hardware
+    version: b5e4097
+    date_release: '2023-10-22'
+    platform:
+      category: Arcade compatible
+      name: jtbubl
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtbubl
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtbubl
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtcastle
     display_name: Haunted Castle
     repository:
