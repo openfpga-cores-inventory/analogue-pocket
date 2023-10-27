@@ -172,6 +172,9 @@
     - display_name: Bad Dudes vs. DragonNinja
       repository: jtbin
       path: pocket/zips/jotego.jtninja.zip
+    - display_name: CPS2
+      repository: jtbin
+      path: pocket/zips/jotego.jtcps2.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
