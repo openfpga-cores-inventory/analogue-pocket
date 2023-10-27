@@ -177,7 +177,10 @@
       path: pocket/zips/jotego.jtcps2.zip
     - display_name: CPS1.5
       repository: jtbin
-      path: pocket/zips/jotego.jtcps15.zip
+      path: pocket/zips/jotego.jtcps15.zip    
+    - display_name: Bubble Bobble
+      repository: jtbin
+      path: pocket/zips/jotego.jtbubl.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
