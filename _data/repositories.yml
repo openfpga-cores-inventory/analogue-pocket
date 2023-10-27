@@ -175,6 +175,9 @@
     - display_name: CPS2
       repository: jtbin
       path: pocket/zips/jotego.jtcps2.zip
+    - display_name: CPS1.5
+      repository: jtbin
+      path: pocket/zips/jotego.jtcps15.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
