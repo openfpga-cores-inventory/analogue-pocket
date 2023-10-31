@@ -535,8 +535,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade hardware
-    version: 10cd2a5
-    date_release: '2023-09-15'
+    version: b1f9fe2
+    date_release: '2023-10-31'
     platform:
       category: Arcade compatible
       name: jtaliens
@@ -597,8 +597,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
     platform_id: jtbubl
     description: Arcade hardware
-    version: b5e4097
-    date_release: '2023-10-22'
+    version: b1f9fe2
+    date_release: '2023-10-31'
     platform:
       category: Arcade compatible
       name: jtbubl
@@ -783,8 +783,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
     platform_id: jtcps15
     description: Arcade hardware
-    version: 5564ba9
-    date_release: '2023-10-27'
+    version: b1f9fe2
+    date_release: '2023-10-31'
     platform:
       category: Arcade compatible
       name: jtcps15
@@ -920,6 +920,37 @@
       - json
       core_specific: true
     - platform: jtexed
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtfround
+    display_name: The Final Round
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
+    platform_id: jtfround
+    description: Arcade hardware
+    version: b1f9fe2
+    date_release: '2023-10-31'
+    platform:
+      category: Arcade compatible
+      name: jtfround
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtfround
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtfround
       extensions:
       - rom
     sponsor:
@@ -1155,8 +1186,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
     platform_id: jtninja
     description: Arcade hardware
-    version: 973355d
-    date_release: '2023-10-11'
+    version: b1f9fe2
+    date_release: '2023-10-31'
     platform:
       category: Arcade compatible
       name: jtninja
@@ -1558,8 +1589,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade hardware
-    version: 033d75a
-    date_release: '2023-09-02'
+    version: b1f9fe2
+    date_release: '2023-10-31'
     platform:
       category: Arcade compatible
       name: jtsimson
@@ -1589,8 +1620,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
     platform_id: jttmnt
     description: Arcade hardware
-    version: 10cd2a5
-    date_release: '2023-09-15'
+    version: b1f9fe2
+    date_release: '2023-10-31'
     platform:
       category: Arcade compatible
       name: jttmnt
@@ -1695,37 +1726,6 @@
       - json
       core_specific: true
     - platform: jttrojan
-      extensions:
-      - rom
-    sponsor:
-      github:
-      - https://github.com/sponsors/jotego
-      patreon: https://www.patreon.com/jotego
-      custom:
-      - https://www.paypal.me/topapate
-  - id: jotego.jttwin16
-    display_name: Twin16 System
-    repository:
-      platform: github
-      name: jtbin
-      prerelease: false
-    requires_license: true
-    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttwin16.zip
-    platform_id: jttwin16
-    description: Arcade hardware
-    version: c28fc37
-    date_release: '2023-09-01'
-    platform:
-      category: Arcade compatible
-      name: jttwin16
-      manufacturer: JT FPGA
-      year: 2022
-    assets:
-    - platform: jttwin16
-      extensions:
-      - json
-      core_specific: true
-    - platform: jttwin16
       extensions:
       - rom
     sponsor:
