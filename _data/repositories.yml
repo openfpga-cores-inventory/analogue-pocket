@@ -160,9 +160,9 @@
     - display_name: System 16B
       repository: jtbin
       path: pocket/zips/jotego.jts16b.zip
-    - display_name: Twin16 System
+    - display_name: The Final Round
       repository: jtbin
-      path: pocket/zips/jotego.jttwin16.zip
+      path: pocket/zips/jotego.jtfround.zip
     - display_name: Super Hang-on
       repository: jtbin
       path: pocket/zips/jotego.jtshanon.zip
