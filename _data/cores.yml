@@ -1579,6 +1579,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtshouse
+    display_name: Splatterhouse
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
+    platform_id: jtshouse
+    description: Arcade hardware
+    version: b1f9fe2
+    date_release: '2023-10-31'
+    platform:
+      category: Arcade compatible
+      name: jtshouse
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtshouse
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtshouse
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtsimson
     display_name: The Simpsons
     repository:
