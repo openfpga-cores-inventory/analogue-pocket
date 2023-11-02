@@ -1616,11 +1616,11 @@
       platform: github
       name: jtbin
       prerelease: false
-    requires_license: false
+    requires_license: true
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade hardware
-    version: 924e53c
+    version: 8613c98
     date_release: '2023-11-02'
     platform:
       category: Arcade compatible
