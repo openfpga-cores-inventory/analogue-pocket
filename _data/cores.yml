@@ -2966,10 +2966,10 @@
     download_url: https://github.com/spiritualized1997/openFPGA-SG1000/releases/download/v1.2.0/Spiritualized_SG-1000_1.2.0_2022_08_25.zip
     platform_id: sg1000
     description: SG-1000 Core
-    version: 1.2.0
-    date_release: '2022-08-25'
+    version: 1.0.0
+    date_release: '2022-08-05'
     platform:
-      category: Console
+      category: 
       name: SG-1000
       manufacturer: Sega
       year: 1983
