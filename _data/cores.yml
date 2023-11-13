@@ -365,7 +365,7 @@
     download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/1.0.1/ericlewis.Asteroids_1.0.1_2022-10-11.zip
     platform_id: asteroids
     description: Atari's Asteroids released in 1979.
-    version: 1.0.0
+    version: 1.0.1
     date_release: '2022-10-11'
     platform:
       category: Arcade
