@@ -2478,6 +2478,34 @@
     - platform: sstriker
       extensions:
       - rom
+- username: RndMnkIII
+  cores:
+  - id: RndMnkIII.alphamission
+    display_name: ASO/Alpha Mission
+    repository:
+      platform: github
+      name: PocketAlphaMission
+      prerelease: false
+      tag_name: alphamission-pocket-v1.0
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/alphamission-pocket-v1.0/rndmnkiii.alphamission_pocket-v1.0.zip
+    platform_id: alphamission
+    description: SNK Alpha Mission gateware IP Core
+    version: 1.0.0
+    date_release: '2023-11-09'
+    platform:
+      category: Arcade
+      name: ASO - Armored Scrum Object
+      manufacturer: SNK
+      year: 1985
+    assets:
+    - platform: alphamission
+      extensions:
+      - json
+      core_specific: true
+    - platform: alphamission
+      extensions:
+      - rom
 - username: somhi
   cores:
   - id: somhi.flappybird
