@@ -2486,13 +2486,13 @@
       platform: github
       name: PocketAlphaMission
       prerelease: false
-      tag_name: alphamission-pocket-v1.0
+      tag_name: v1.1
     requires_license: false
-    download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/alphamission-pocket-v1.0/rndmnkiii.alphamission_pocket-v1.0.zip
+    download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.1/rndmnkiii.alphamission_pocket-v1.1.zip
     platform_id: alphamission
     description: SNK Alpha Mission gateware IP Core
-    version: 1.0.0
-    date_release: '2023-11-09'
+    version: '1.1'
+    date_release: '2023-11-16'
     platform:
       category: Arcade
       name: ASO - Armored Scrum Object
