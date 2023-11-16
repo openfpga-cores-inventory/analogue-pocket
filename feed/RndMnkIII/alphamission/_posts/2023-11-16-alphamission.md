@@ -1,7 +1,7 @@
 ---
 layout: post
-title: alphamission by RndMnkIII has been updated to 1.1
-date: 2023-11-16 18:42:55 +0000
+title: alphamission by RndMnkIII has been updated to 1.2
+date: 2023-11-16 19:23:34 +0000
 categories: [RndMnkIII, alphamission]
 tags: [update]
 ---
