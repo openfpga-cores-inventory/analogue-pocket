@@ -184,6 +184,9 @@
     - display_name: Splatterhouse
       repository: jtbin
       path: pocket/zips/jotego.jtshouse.zip
+    - display_name: SEGA System 16A
+      repository: jts16
+      path: pocket/zips/jotego.jts16.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
