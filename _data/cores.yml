@@ -1796,37 +1796,6 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
-  - id: jotego.jtvulgus
-    display_name: Vulgus
-    repository:
-      platform: github
-      name: jtbin
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvulgus.zip
-    platform_id: jtvulgus
-    description: Arcade hardware
-    version: 763d15e
-    date_release: '2023-04-30'
-    platform:
-      category: Arcade compatible
-      name: jtvulgus
-      manufacturer: JT FPGA
-      year: 2022
-    assets:
-    - platform: jtvulgus
-      extensions:
-      - json
-      core_specific: true
-    - platform: jtvulgus
-      extensions:
-      - rom
-    sponsor:
-      github:
-      - https://github.com/sponsors/jotego
-      patreon: https://www.patreon.com/jotego
-      custom:
-      - https://www.paypal.me/topapate
   - id: jotego.jtyiear
     display_name: Yie Ar Kung-Fu
     repository:
