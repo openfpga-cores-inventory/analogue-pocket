@@ -127,9 +127,6 @@
     - display_name: Vigilante
       repository: jtbin
       path: pocket/zips/jotego.jtvigil.zip
-    - display_name: Vulgus
-      repository: jtbin
-      path: pocket/zips/jotego.jtvulgus.zip
     - display_name: Yie Ar Kung-Fu
       repository: jtbin
       path: pocket/zips/jotego.jtyiear.zip
