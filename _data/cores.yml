@@ -1403,8 +1403,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16.zip
     platform_id: jts16
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 812a57f
+    date_release: '2023-11-18'
     platform:
       category: Arcade compatible
       name: jts16
@@ -1434,8 +1434,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: dde1849
+    date_release: '2023-11-18'
     platform:
       category: Arcade compatible
       name: jts16b
