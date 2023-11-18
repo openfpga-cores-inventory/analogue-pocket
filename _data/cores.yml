@@ -1062,8 +1062,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 7023e12
+    date_release: '2023-11-18'
     platform:
       category: Arcade compatible
       name: jtkicker
