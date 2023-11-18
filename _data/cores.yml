@@ -1434,7 +1434,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
     description: Arcade hardware
-    version: dde1849
+    version: cf64ebb
     date_release: '2023-11-18'
     platform:
       category: Arcade compatible
