@@ -535,8 +535,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtaliens
@@ -566,8 +566,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbtiger.zip
     platform_id: jtbtiger
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtbtiger
@@ -597,8 +597,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
     platform_id: jtbubl
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtbubl
@@ -628,8 +628,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
     platform_id: jtcastle
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcastle
@@ -659,8 +659,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
     platform_id: jtcomsc
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcomsc
@@ -690,8 +690,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcontra
@@ -721,8 +721,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcop.zip
     platform_id: jtcop
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcop
@@ -752,8 +752,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcps1
@@ -783,8 +783,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
     platform_id: jtcps15
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcps15
@@ -814,8 +814,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps2.zip
     platform_id: jtcps2
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtcps2
@@ -845,8 +845,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtdd
@@ -876,8 +876,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtdd2
@@ -907,8 +907,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtexed.zip
     platform_id: jtexed
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtexed
@@ -938,8 +938,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
     platform_id: jtfround
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtfround
@@ -969,8 +969,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtgng
@@ -1000,8 +1000,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
     platform_id: jtgunsmk
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtgunsmk
@@ -1031,8 +1031,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtkarnov
@@ -1062,8 +1062,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
     description: Arcade hardware
-    version: 7023e12
-    date_release: '2023-11-18'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtkicker
@@ -1093,8 +1093,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
     platform_id: jtkiwi
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtkiwi
@@ -1124,8 +1124,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtkunio
@@ -1155,8 +1155,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtmikie
@@ -1186,8 +1186,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
     platform_id: jtninja
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtninja
@@ -1217,8 +1217,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtoutrun
@@ -1248,8 +1248,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtpang
@@ -1279,8 +1279,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtpinpon
@@ -1310,8 +1310,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrastan.zip
     platform_id: jtrastan
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtrastan
@@ -1341,8 +1341,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtroadf
@@ -1372,8 +1372,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtroc
@@ -1403,8 +1403,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16.zip
     platform_id: jts16
     description: Arcade hardware
-    version: 812a57f
-    date_release: '2023-11-18'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jts16
@@ -1434,8 +1434,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
     description: Arcade hardware
-    version: cf64ebb
-    date_release: '2023-11-18'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jts16b
@@ -1465,8 +1465,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
     platform_id: jtsarms
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtsarms
@@ -1496,8 +1496,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtsbaskt
@@ -1527,8 +1527,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
     platform_id: jtsectnz
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtsectnz
@@ -1558,8 +1558,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
     platform_id: jtsf
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtsf
@@ -1589,8 +1589,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshanon.zip
     platform_id: jtshanon
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtshanon
@@ -1620,8 +1620,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
     platform_id: jtshouse
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtshouse
@@ -1651,8 +1651,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtsimson
@@ -1682,8 +1682,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
     platform_id: jttmnt
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jttmnt
@@ -1713,8 +1713,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttora.zip
     platform_id: jttora
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-17'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jttora
@@ -1744,8 +1744,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jttrack
@@ -1775,8 +1775,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
     platform_id: jttrojan
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jttrojan
@@ -1806,8 +1806,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
     description: Arcade hardware
-    version: 88bae7c
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtvigil
@@ -1837,8 +1837,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
     description: Arcade hardware
-    version: 3141abc
-    date_release: '2023-11-16'
+    version: 1.5.0
+    date_release: '2023-11-24'
     platform:
       category: Arcade compatible
       name: jtyiear
