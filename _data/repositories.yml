@@ -30,6 +30,11 @@
       repository: arcade-slapfight
     - display_name: Taito System SJ
       repository: arcade-taitosj
+- username: Coin-OpCollection
+  cores:
+    - display_name: Whoopee!!
+      repository: Distribution-OpenFPGA
+      filter: atrac17.pipibibs_
 - username: ericlewis
   cores:
     - display_name: Asteroids for Analogue Pocket
