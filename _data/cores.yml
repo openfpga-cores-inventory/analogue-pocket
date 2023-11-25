@@ -352,6 +352,208 @@
     - platform: taitosj
       extensions:
       - rom
+- username: Coin-OpCollection
+  cores:
+  - id: atrac17.pipibibs
+    display_name: Whoopee!!
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.pipibibs_20231123.zip
+    platform_id: pipibibs
+    description: Whoopee!
+    version: 1.0.0
+    date_release: '2023-11-23'
+    platform:
+      category: Arcade
+      name: Whoopee!
+      manufacturer: Toaplan Ltd.
+      year: 1991
+    assets:
+    - platform: pipibibs
+      extensions:
+      - json
+      core_specific: true
+    - platform: pipibibs
+      extensions:
+      - rom
+  - id: atrac17.truxton2
+    display_name: Truxton 2
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.truxton2_20231123.zip
+    platform_id: truxton2
+    description: Truxton II
+    version: 1.0.1
+    date_release: '2023-11-23'
+    platform:
+      category: Arcade
+      name: Truxton 2
+      manufacturer: Toaplan Ltd.
+      year: 1992
+    assets:
+    - platform: truxton2
+      extensions:
+      - json
+      core_specific: true
+    - platform: truxton2
+      extensions:
+      - rom
+  - id: pram0d.bakraid
+    display_name: Battle Bakraid
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.bakraid_20221218.zip
+    platform_id: bakraid
+    description: Battle Bakraid Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Battle Bakraid
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: bakraid
+      extensions:
+      - json
+      core_specific: true
+    - platform: bakraid
+      extensions:
+      - rom
+  - id: pram0d.batrider
+    display_name: Batrider
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.batrider_20221218.zip
+    platform_id: batrider
+    description: Batrider Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Batrider
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: batrider
+      extensions:
+      - json
+      core_specific: true
+    - platform: batrider
+      extensions:
+      - rom
+  - id: pram0d.garegga
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.garegga_20221030.zip
+    platform_id: garegga
+    description: Battle Garegga Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Battle Garegga
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: garegga
+      extensions:
+      - json
+      core_specific: true
+    - platform: garegga
+      extensions:
+      - rom
+  - id: pram0d.kingdmgp
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.garegga_20221030.zip
+    platform_id: kingdmgp
+    description: Kingdom Grandprix Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Kingdom Grandprix
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: kingdmgp
+      extensions:
+      - json
+      core_specific: true
+    - platform: kingdmgp
+      extensions:
+      - rom
+  - id: pram0d.snowbros2
+    display_name: Snow Bros. 2
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.snowbros2_20221019.zip
+    platform_id: snowbros2
+    description: Snow Bros. 2 Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-20'
+    platform:
+      category: Arcade
+      name: Snow Bros. 2
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: snowbros2
+      extensions:
+      - json
+      core_specific: true
+    - platform: snowbros2
+      extensions:
+      - rom
+  - id: pram0d.sstriker
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.garegga_20221030.zip
+    platform_id: sstriker
+    description: Sorcer Striker Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Sorcer Striker
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: sstriker
+      extensions:
+      - json
+      core_specific: true
+    - platform: sstriker
+      extensions:
+      - rom
 - username: ericlewis
   cores:
   - id: ericlewis.Asteroids
