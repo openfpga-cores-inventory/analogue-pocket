@@ -31,7 +31,7 @@
     - display_name: Taito System SJ
       repository: arcade-taitosj
 - username: Coin-OpCollection
-  cores:  cores:
+  cores:
     - display_name: Batrider
       repository: Distribution-OpenFPGA
       path: Releases/pram0d.batrider_20221218.zip
