@@ -30,6 +30,26 @@
       repository: arcade-slapfight
     - display_name: Taito System SJ
       repository: arcade-taitosj
+- username: Coin-OpCollection
+  cores:
+    - display_name: Batrider
+      repository: Distribution-OpenFPGA
+      path: Releases/pram0d.batrider_20221218.zip
+    - display_name: Battle Bakraid
+      repository: Distribution-OpenFPGA
+      path: Releases/pram0d.bakraid_20221218.zip
+    - display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+      repository: Distribution-OpenFPGA
+      path: Releases/pram0d.garegga_20221030.zip
+    - display_name: Snow Bros. 2
+      repository: Distribution-OpenFPGA
+      path: Releases/pram0d.snowbros2_20221019.zip
+    - display_name: Truxton 2
+      repository: Distribution-OpenFPGA
+      path: Releases/atrac17.truxton2_20231123.zip
+    - display_name: Whoopee!!
+      repository: Distribution-OpenFPGA
+      path: Releases/atrac17.pipibibs_20231123.zip
 - username: ericlewis
   cores:
     - display_name: Asteroids for Analogue Pocket
