@@ -799,8 +799,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
     platform_id: jtbubl
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.5
+    date_release: '2023-12-08'
     platform:
       category: Arcade compatible
       name: jtbubl
@@ -1326,8 +1326,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.4
+    date_release: '2023-12-07'
     platform:
       category: Arcade compatible
       name: jtkunio
