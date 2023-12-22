@@ -727,6 +727,37 @@
       filename: sbrkout.rom
 - username: jotego
   cores:
+  - id: jotego.jt1942
+    display_name: 1942
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
+    platform_id: jt1942
+    description: Arcade hardware
+    version: 1.5.7
+    date_release: '2023-12-21'
+    platform:
+      category: Arcade compatible
+      name: jt1942
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jt1942
+      extensions:
+      - json
+      core_specific: true
+    - platform: jt1942
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtaliens
     display_name: Aliens
     repository:
