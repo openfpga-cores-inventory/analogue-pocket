@@ -204,6 +204,9 @@
     - display_name: SEGA System 16A
       repository: jtbin
       path: pocket/zips/jotego.jts16.zip
+    - display_name: 1942
+      repository: jtbin
+      path: pocket/zips/jotego.jt1942.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
