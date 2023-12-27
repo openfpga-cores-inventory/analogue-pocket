@@ -306,3 +306,7 @@
       repository: openFPGA-Super-GB
     - display_name: Spiritualized VideoBrain
       repository: openFPGA-VideoBrain
+- username: AwesomeDolphin
+  cores:
+    - display_name: Space Invaders Arcade
+      repository: openFPGA-SpaceInvaders
