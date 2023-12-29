@@ -2099,13 +2099,13 @@
       platform: github
       name: Analogue-Amiga
       prerelease: false
-      tag_name: Mazamars312.Amiga.0.1.1
+      tag_name: Mazamars312.Amiga.0.1.2
     requires_license: false
-    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.1/Analogue-Amiga-0.1.1.zip
+    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.2/Analogue-Amiga-0.1.2.zip
     platform_id: amiga
     description: Amiga Core
-    version: 0.1.0
-    date_release: '2023-06-06'
+    version: 0.1.2
+    date_release: '2023-12-29'
     platform:
       category: Computer
       name: Amiga
