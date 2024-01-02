@@ -30,6 +30,10 @@
       repository: arcade-slapfight
     - display_name: Taito System SJ
       repository: arcade-taitosj
+- username: AwesomeDolphin
+  cores:
+    - display_name: Space Invaders
+      repository: openFPGA-SpaceInvaders
 - username: Coin-OpCollection
   cores:
     - display_name: Batrider
