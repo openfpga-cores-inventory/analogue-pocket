@@ -310,4 +310,4 @@
   cores:
     - display_name: Space Invaders Arcade
       repository: openFPGA-SpaceInvaders      
-      filter: AwesomeDolphin.SpaceInvaders_.*
+      filter: AwesomeDolphin.SpaceInvaders_
