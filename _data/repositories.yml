@@ -309,4 +309,5 @@
 - username: AwesomeDolphin
   cores:
     - display_name: Space Invaders Arcade
-      repository: openFPGA-SpaceInvaders
+      repository: openFPGA-SpaceInvaders      
+      filter: AwesomeDolphin.SpaceInvaders_.*
