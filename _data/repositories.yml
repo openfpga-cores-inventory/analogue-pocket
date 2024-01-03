@@ -30,6 +30,15 @@
       repository: arcade-slapfight
     - display_name: Taito System SJ
       repository: arcade-taitosj
+- username: AwesomeDolphin
+  cores:
+    - display_name: Space Invaders
+      repository: openFPGA-SpaceInvaders
+      filter: AwesomeDolphin.SpaceInvaders_
+- username: budude2
+  cores:
+    - display_name: budude2 GBC
+      repository: openfgpa-GBC
 - username: Coin-OpCollection
   cores:
     - display_name: Batrider
@@ -205,7 +214,7 @@
       repository: jtbin
       path: pocket/zips/jotego.jts16.zip
     - display_name: 1942
-      repository: jt1942
+      repository: jtbin
       path: pocket/zips/jotego.jt1942.zip
 - username: Mazamars312
   cores:

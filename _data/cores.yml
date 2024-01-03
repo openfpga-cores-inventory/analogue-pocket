@@ -352,6 +352,39 @@
     - platform: taitosj
       extensions:
       - rom
+- username: budude2
+  cores:
+  - id: budude2.GBC
+    display_name: budude2 GBC
+    repository:
+      platform: github
+      name: openfgpa-GBC
+      prerelease: false
+      tag_name: v1.0.0
+    requires_license: false
+    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.0/openfpga-gbc-1.0.0.zip
+    platform_id: gbc
+    description: Game Boy and Game Boy Color
+    version: 1.0.0
+    date_release: '2024-01-02'
+    platform:
+      category: Handheld
+      name: GBC
+      manufacturer: Nintendo
+      year: 1998
+    assets:
+    - platform: gbc
+      extensions:
+      - gbc
+      - gb
+    - platform: gbc
+      filename: gbc_bios.bin
+      extensions:
+      - bin
+    - platform: gbc
+      filename: gb_bios.bin
+      extensions:
+      - bin
 - username: Coin-OpCollection
   cores:
   - id: atrac17.pipibibs
@@ -727,6 +760,37 @@
       filename: sbrkout.rom
 - username: jotego
   cores:
+  - id: jotego.jt1942
+    display_name: 1942
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
+    platform_id: jt1942
+    description: Arcade hardware
+    version: 1.5.7
+    date_release: '2023-12-21'
+    platform:
+      category: Arcade compatible
+      name: jt1942
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jt1942
+      extensions:
+      - json
+      core_specific: true
+    - platform: jt1942
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtaliens
     display_name: Aliens
     repository:
@@ -2068,13 +2132,13 @@
       platform: github
       name: Analogue-Amiga
       prerelease: false
-      tag_name: Mazamars312.Amiga.0.1.1
+      tag_name: Mazamars312.Amiga.0.1.2
     requires_license: false
-    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.1/Analogue-Amiga-0.1.1.zip
+    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.2/Analogue-Amiga-0.1.2.zip
     platform_id: amiga
     description: Amiga Core
-    version: 0.1.0
-    date_release: '2023-06-06'
+    version: 0.1.2
+    date_release: '2023-12-29'
     platform:
       category: Computer
       name: Amiga
