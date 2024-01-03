@@ -30,6 +30,10 @@
       repository: arcade-slapfight
     - display_name: Taito System SJ
       repository: arcade-taitosj
+- username: budude2
+  cores:
+    - display_name: budude2 GBC
+      repository: openfgpa-GBC
 - username: Coin-OpCollection
   cores:
     - display_name: Batrider
