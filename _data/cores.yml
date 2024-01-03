@@ -352,6 +352,49 @@
     - platform: taitosj
       extensions:
       - rom
+- username: AwesomeDolphin
+  cores:
+  - id: AwesomeDolphin.SpaceInvaders
+    display_name: Space Invaders
+    repository:
+      platform: github
+      name: openFPGA-SpaceInvaders
+      prerelease: false
+      tag_name: 1.0.0
+    requires_license: false
+    download_url: https://github.com/AwesomeDolphin/openFPGA-SpaceInvaders/releases/download/1.0.0/AwesomeDolphin.SpaceInvaders_1.0.0_2024-01-02.zip
+    platform_id: spaceinvaders
+    description: Space Invaders arcade machine
+    version: 1.0.0
+    date_release: '2023-12-25'
+    platform:
+      category: Arcade
+      name: Space Invaders
+      manufacturer: Taito
+      year: 1978
+    assets:
+    - platform: spaceinvaders
+      filename: invaders.rom
+    - platform: spaceinvaders
+      filename: 0.raw
+    - platform: spaceinvaders
+      filename: 1.raw
+    - platform: spaceinvaders
+      filename: 2.raw
+    - platform: spaceinvaders
+      filename: 3.raw
+    - platform: spaceinvaders
+      filename: 4.raw
+    - platform: spaceinvaders
+      filename: 5.raw
+    - platform: spaceinvaders
+      filename: 6.raw
+    - platform: spaceinvaders
+      filename: 7.raw
+    - platform: spaceinvaders
+      filename: 8.raw
+    - platform: spaceinvaders
+      filename: 9.raw
 - username: budude2
   cores:
   - id: budude2.GBC
