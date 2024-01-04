@@ -403,13 +403,13 @@
       platform: github
       name: openfgpa-GBC
       prerelease: false
-      tag_name: v1.0.2
+      tag_name: v1.0.3
     requires_license: false
-    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.2/openfpga-gb-1.0.2.zip
+    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.3/openfpga-gb-1.0.3.zip
     platform_id: gb
     description: Game Boy
-    version: 1.0.2
-    date_release: '2024-01-03'
+    version: 1.0.3
+    date_release: '2024-01-04'
     platform:
       category: Handheld
       name: Game Boy
@@ -423,19 +423,21 @@
       filename: gb_bios.bin
       extensions:
       - bin
+    sponsor:
+      ko_fi: https://ko-fi.com/budude2
   - id: budude2.GBC
     display_name: budude2 GBC
     repository:
       platform: github
       name: openfgpa-GBC
       prerelease: false
-      tag_name: v1.0.2
+      tag_name: v1.0.3
     requires_license: false
-    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.2/openfpga-gbc-1.0.2.zip
+    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.3/openfpga-gbc-1.0.3.zip
     platform_id: gbc
     description: Game Boy Color
-    version: 1.0.2
-    date_release: '2024-01-03'
+    version: 1.0.3
+    date_release: '2024-01-04'
     platform:
       category: Handheld
       name: Game Boy Color
@@ -445,10 +447,13 @@
     - platform: gbc
       extensions:
       - gbc
+      - gb
     - platform: gbc
       filename: gbc_bios.bin
       extensions:
       - bin
+    sponsor:
+      ko_fi: https://ko-fi.com/budude2
 - username: Coin-OpCollection
   cores:
   - id: atrac17.pipibibs
