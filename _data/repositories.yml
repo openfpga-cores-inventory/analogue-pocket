@@ -39,6 +39,9 @@
   cores:
     - display_name: budude2 GBC
       repository: openfgpa-GBC
+    - display_name: budude2 GB
+      repository: openfgpa-GBC
+      filter: openfpga-gb-
 - username: Coin-OpCollection
   cores:
     - display_name: Batrider
