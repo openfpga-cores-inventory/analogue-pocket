@@ -839,8 +839,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
     platform_id: jt1942
     description: Arcade hardware
-    version: 1.5.7
-    date_release: '2023-12-21'
+    version: 1.5.10
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jt1942
@@ -870,8 +870,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.10
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jtaliens
@@ -1114,12 +1114,12 @@
       platform: github
       name: jtbin
       prerelease: false
-    requires_license: true
+    requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
     platform_id: jtcps15
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.10
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jtcps15
@@ -1304,8 +1304,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.11
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jtgng
@@ -1505,6 +1505,34 @@
     - platform: jtmikie
       extensions:
       - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtngp
+    display_name: Neo Geo Pocket
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngp.zip
+    platform_id: jtngp
+    description: Arcade hardware
+    version: 1.5.12
+    date_release: '2024-01-05'
+    platform:
+      category: Arcade compatible
+      name: jtngp
+      manufacturer: JT FPGA
+      year: 2022
+    assets:
+    - platform: jtngp
+      extensions:
+      - rom
+      - bin
     sponsor:
       github:
       - https://github.com/sponsors/jotego
@@ -1955,8 +1983,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
     platform_id: jtshouse
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.10
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jtshouse
@@ -1986,8 +2014,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.10
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jtsimson
@@ -2017,8 +2045,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
     platform_id: jttmnt
     description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    version: 1.5.10
+    date_release: '2024-01-03'
     platform:
       category: Arcade compatible
       name: jttmnt
