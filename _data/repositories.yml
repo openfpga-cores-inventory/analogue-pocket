@@ -220,6 +220,9 @@
     - display_name: 1942
       repository: jtbin
       path: pocket/zips/jotego.jt1942.zip
+    - display_name: Neo Geo Pocket
+      repository: jtbin
+      path: pocket/zips/jotego.jtngp.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
