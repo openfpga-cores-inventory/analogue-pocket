@@ -1521,7 +1521,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngp.zip
     platform_id: jtngp
     description: Arcade hardware
-    version: 1.6.0
+    version: 1.6.1
     date_release: '2024-01-07'
     platform:
       category: Arcade compatible
