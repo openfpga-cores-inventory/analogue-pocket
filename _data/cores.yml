@@ -870,8 +870,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade hardware
-    version: 1.5.10
-    date_release: '2024-01-03'
+    version: 1.5.14
+    date_release: '2024-01-07'
     platform:
       category: Arcade compatible
       name: jtaliens
@@ -2014,8 +2014,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade hardware
-    version: 1.5.10
-    date_release: '2024-01-03'
+    version: internal
+    date_release: '2024-01-07'
     platform:
       category: Arcade compatible
       name: jtsimson
@@ -2045,8 +2045,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
     platform_id: jttmnt
     description: Arcade hardware
-    version: 1.5.10
-    date_release: '2024-01-03'
+    version: internal
+    date_release: '2024-01-07'
     platform:
       category: Arcade compatible
       name: jttmnt
