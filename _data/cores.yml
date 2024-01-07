@@ -1983,8 +1983,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
     platform_id: jtshouse
     description: Arcade hardware
-    version: 1.5.10
-    date_release: '2024-01-03'
+    version: 807cce0
+    date_release: '2024-01-07'
     platform:
       category: Arcade compatible
       name: jtshouse
