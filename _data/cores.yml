@@ -870,7 +870,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade hardware
-    version: 1.5.14
+    version: 1.6.0
     date_release: '2024-01-07'
     platform:
       category: Arcade compatible
