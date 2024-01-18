@@ -2234,13 +2234,13 @@
       platform: github
       name: Analogue-Amiga
       prerelease: false
-      tag_name: Mazamars312.Amiga.0.1.2
+      tag_name: Mazamars312.Amiga.0.2.1
     requires_license: false
-    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.2/Analogue-Amiga-0.1.2.zip
+    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.2.1/Analogue-Amiga-0.2.1.zip
     platform_id: amiga
     description: Amiga Core
-    version: 0.1.2
-    date_release: '2023-12-29'
+    version: 0.2.1
+    date_release: '2024-01-18'
     platform:
       category: Computer
       name: Amiga
@@ -2248,7 +2248,7 @@
       year: 1985
     assets:
     - platform: amiga
-      filename: mpu.bin
+      filename: amiga_mpu_bios.bin
       extensions:
       - bin
       core_specific: true
