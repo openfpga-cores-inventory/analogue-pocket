@@ -838,14 +838,14 @@
     requires_license: true
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
     platform_id: jt1942
-    description: Arcade hardware
-    version: 1.5.10
-    date_release: '2024-01-03'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jt1942
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jt1942
       extensions:
@@ -869,14 +869,14 @@
     requires_license: true
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
-    description: Arcade hardware
-    version: 1.6.0
-    date_release: '2024-01-07'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtaliens
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtaliens
       extensions:
@@ -900,14 +900,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbtiger.zip
     platform_id: jtbtiger
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtbtiger
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtbtiger
       extensions:
@@ -931,14 +931,14 @@
     requires_license: true
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
     platform_id: jtbubl
-    description: Arcade hardware
-    version: 1.5.13
-    date_release: '2024-01-06'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtbubl
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtbubl
       extensions:
@@ -962,14 +962,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
     platform_id: jtcastle
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcastle
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcastle
       extensions:
@@ -993,14 +993,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
     platform_id: jtcomsc
-    description: Arcade hardware
-    version: 1.5.2
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcomsc
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcomsc
       extensions:
@@ -1024,14 +1024,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
-    description: Arcade hardware
-    version: 1.5.2
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcontra
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcontra
       extensions:
@@ -1055,14 +1055,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcop.zip
     platform_id: jtcop
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcop
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcop
       extensions:
@@ -1086,14 +1086,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcps1
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcps1
       extensions:
@@ -1117,14 +1117,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
     platform_id: jtcps15
-    description: Arcade hardware
-    version: 1.5.10
-    date_release: '2024-01-03'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcps15
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcps15
       extensions:
@@ -1148,14 +1148,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps2.zip
     platform_id: jtcps2
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcps2
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcps2
       extensions:
@@ -1179,14 +1179,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtdd
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtdd
       extensions:
@@ -1210,14 +1210,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtdd2
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtdd2
       extensions:
@@ -1241,14 +1241,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtexed.zip
     platform_id: jtexed
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtexed
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtexed
       extensions:
@@ -1272,14 +1272,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
     platform_id: jtfround
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtfround
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtfround
       extensions:
@@ -1303,14 +1303,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
-    description: Arcade hardware
-    version: 1.5.11
-    date_release: '2024-01-03'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtgng
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtgng
       extensions:
@@ -1334,14 +1334,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
     platform_id: jtgunsmk
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtgunsmk
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtgunsmk
       extensions:
@@ -1365,14 +1365,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkarnov
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkarnov
       extensions:
@@ -1396,14 +1396,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkicker
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkicker
       extensions:
@@ -1427,14 +1427,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
     platform_id: jtkiwi
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkiwi
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkiwi
       extensions:
@@ -1458,14 +1458,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
-    description: Arcade hardware
-    version: 1.5.4
-    date_release: '2023-12-07'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkunio
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkunio
       extensions:
@@ -1489,14 +1489,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtmikie
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtmikie
       extensions:
@@ -1520,14 +1520,14 @@
     requires_license: true
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngp.zip
     platform_id: jtngp
-    description: Arcade hardware
-    version: 1.6.1
-    date_release: '2024-01-07'
+    description: Handheld
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Handheld
       name: jtngp
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtngp
       extensions:
@@ -1553,14 +1553,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
     platform_id: jtninja
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtninja
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtninja
       extensions:
@@ -1584,14 +1584,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtoutrun
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtoutrun
       extensions:
@@ -1615,14 +1615,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtpang
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtpang
       extensions:
@@ -1646,14 +1646,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtpinpon
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtpinpon
       extensions:
@@ -1677,14 +1677,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrastan.zip
     platform_id: jtrastan
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtrastan
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtrastan
       extensions:
@@ -1708,14 +1708,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtroadf
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtroadf
       extensions:
@@ -1739,14 +1739,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtroc
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtroc
       extensions:
@@ -1770,14 +1770,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16.zip
     platform_id: jts16
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jts16
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jts16
       extensions:
@@ -1801,14 +1801,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jts16b
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jts16b
       extensions:
@@ -1832,14 +1832,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
     platform_id: jtsarms
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsarms
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsarms
       extensions:
@@ -1863,14 +1863,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsbaskt
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsbaskt
       extensions:
@@ -1894,14 +1894,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
     platform_id: jtsectnz
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsectnz
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsectnz
       extensions:
@@ -1925,14 +1925,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
     platform_id: jtsf
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsf
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsf
       extensions:
@@ -1956,14 +1956,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshanon.zip
     platform_id: jtshanon
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtshanon
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtshanon
       extensions:
@@ -1987,14 +1987,14 @@
     requires_license: true
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
     platform_id: jtshouse
-    description: Arcade hardware
-    version: 807cce0
-    date_release: '2024-01-07'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtshouse
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtshouse
       extensions:
@@ -2080,14 +2080,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttora.zip
     platform_id: jttora
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jttora
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jttora
       extensions:
@@ -2111,14 +2111,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jttrack
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jttrack
       extensions:
@@ -2142,14 +2142,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
     platform_id: jttrojan
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jttrojan
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jttrojan
       extensions:
@@ -2173,14 +2173,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtvigil
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtvigil
       extensions:
@@ -2204,14 +2204,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
-    description: Arcade hardware
-    version: 1.5.0
-    date_release: '2023-11-24'
+    description: Arcade
+    version: internal
+    date_release: '2024-01-26'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtyiear
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtyiear
       extensions:
