@@ -64,14 +64,14 @@
       platform: github
       name: openfpga-NES
       prerelease: false
-      tag_name: 0.3.1
+      tag_name: 1.0.0
     requires_license: false
-    download_url: https://github.com/agg23/openfpga-NES/releases/download/0.3.1/agg23.NES_0.3.1_2022-12-07.zip
+    download_url: https://github.com/agg23/openfpga-NES/releases/download/1.0.0/agg23.NES_1.0.0_2023-09-26.zip
     platform_id: nes
     description: Nintendo Entertainment System and Famicom. Nintendo's first home
       console
-    version: 0.3.1
-    date_release: '2022-12-07'
+    version: 1.0.0
+    date_release: '2023-09-26'
     platform:
       category: Console
       name: NES
@@ -352,6 +352,310 @@
     - platform: taitosj
       extensions:
       - rom
+- username: AwesomeDolphin
+  cores:
+  - id: AwesomeDolphin.SpaceInvaders
+    display_name: Space Invaders
+    repository:
+      platform: github
+      name: openFPGA-SpaceInvaders
+      prerelease: false
+      tag_name: 1.0.0
+    requires_license: false
+    download_url: https://github.com/AwesomeDolphin/openFPGA-SpaceInvaders/releases/download/1.0.0/AwesomeDolphin.SpaceInvaders_1.0.0_2024-01-02.zip
+    platform_id: spaceinvaders
+    description: Space Invaders arcade machine
+    version: 1.0.0
+    date_release: '2023-12-25'
+    platform:
+      category: Arcade
+      name: Space Invaders
+      manufacturer: Taito
+      year: 1978
+    assets:
+    - platform: spaceinvaders
+      filename: invaders.rom
+    - platform: spaceinvaders
+      filename: 0.raw
+    - platform: spaceinvaders
+      filename: 1.raw
+    - platform: spaceinvaders
+      filename: 2.raw
+    - platform: spaceinvaders
+      filename: 3.raw
+    - platform: spaceinvaders
+      filename: 4.raw
+    - platform: spaceinvaders
+      filename: 5.raw
+    - platform: spaceinvaders
+      filename: 6.raw
+    - platform: spaceinvaders
+      filename: 7.raw
+    - platform: spaceinvaders
+      filename: 8.raw
+    - platform: spaceinvaders
+      filename: 9.raw
+- username: budude2
+  cores:
+  - id: budude2.GB
+    display_name: budude2 GB
+    repository:
+      platform: github
+      name: openfgpa-GBC
+      prerelease: false
+      tag_name: v1.0.7
+    requires_license: false
+    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.7/openfpga-gb-1.0.7.zip
+    platform_id: gb
+    description: Game Boy
+    version: 1.0.7
+    date_release: '2024-02-11'
+    platform:
+      category: Handheld
+      name: Game Boy
+      manufacturer: Nintendo
+      year: 1989
+    assets:
+    - platform: gb
+      extensions:
+      - gb
+    - platform: gb
+      filename: gb_bios.bin
+      extensions:
+      - bin
+    sponsor:
+      ko_fi: https://ko-fi.com/budude2
+  - id: budude2.GBC
+    display_name: budude2 GBC
+    repository:
+      platform: github
+      name: openfgpa-GBC
+      prerelease: false
+      tag_name: v1.0.7
+    requires_license: false
+    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.7/openfpga-gbc-1.0.7.zip
+    platform_id: gbc
+    description: Game Boy Color
+    version: 1.0.7
+    date_release: '2024-02-11'
+    platform:
+      category: Handheld
+      name: Game Boy Color
+      manufacturer: Nintendo
+      year: 1998
+    assets:
+    - platform: gbc
+      extensions:
+      - gbc
+      - gb
+    - platform: gbc
+      filename: gbc_bios.bin
+      extensions:
+      - bin
+    sponsor:
+      ko_fi: https://ko-fi.com/budude2
+- username: Coin-OpCollection
+  cores:
+  - id: atrac17.pipibibs
+    display_name: Whoopee!!
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.pipibibs_20231123.zip
+    platform_id: pipibibs
+    description: Whoopee!
+    version: 1.0.0
+    date_release: '2023-11-23'
+    platform:
+      category: Arcade
+      name: Whoopee!
+      manufacturer: Toaplan Ltd.
+      year: 1991
+    assets:
+    - platform: pipibibs
+      extensions:
+      - json
+      core_specific: true
+    - platform: pipibibs
+      extensions:
+      - rom
+  - id: atrac17.truxton2
+    display_name: Truxton 2
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.truxton2_20231123.zip
+    platform_id: truxton2
+    description: Truxton II
+    version: 1.0.1
+    date_release: '2023-11-23'
+    platform:
+      category: Arcade
+      name: Truxton 2
+      manufacturer: Toaplan Ltd.
+      year: 1992
+    assets:
+    - platform: truxton2
+      extensions:
+      - json
+      core_specific: true
+    - platform: truxton2
+      extensions:
+      - rom
+  - id: pram0d.bakraid
+    display_name: Battle Bakraid
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.bakraid_20221218.zip
+    platform_id: bakraid
+    description: Battle Bakraid Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Battle Bakraid
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: bakraid
+      extensions:
+      - json
+      core_specific: true
+    - platform: bakraid
+      extensions:
+      - rom
+  - id: pram0d.batrider
+    display_name: Batrider
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.batrider_20221218.zip
+    platform_id: batrider
+    description: Batrider Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Batrider
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: batrider
+      extensions:
+      - json
+      core_specific: true
+    - platform: batrider
+      extensions:
+      - rom
+  - id: pram0d.garegga
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.garegga_20221030.zip
+    platform_id: garegga
+    description: Battle Garegga Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Battle Garegga
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: garegga
+      extensions:
+      - json
+      core_specific: true
+    - platform: garegga
+      extensions:
+      - rom
+  - id: pram0d.kingdmgp
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.garegga_20221030.zip
+    platform_id: kingdmgp
+    description: Kingdom Grandprix Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Kingdom Grandprix
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: kingdmgp
+      extensions:
+      - json
+      core_specific: true
+    - platform: kingdmgp
+      extensions:
+      - rom
+  - id: pram0d.snowbros2
+    display_name: Snow Bros. 2
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.snowbros2_20221019.zip
+    platform_id: snowbros2
+    description: Snow Bros. 2 Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-20'
+    platform:
+      category: Arcade
+      name: Snow Bros. 2
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: snowbros2
+      extensions:
+      - json
+      core_specific: true
+    - platform: snowbros2
+      extensions:
+      - rom
+  - id: pram0d.sstriker
+    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.garegga_20221030.zip
+    platform_id: sstriker
+    description: Sorcer Striker Analogue Pocket Core
+    version: 0.0.1
+    date_release: '2022-09-23'
+    platform:
+      category: Arcade
+      name: Sorcer Striker
+      manufacturer: pram0d
+      year: 2022
+    assets:
+    - platform: sstriker
+      extensions:
+      - json
+      core_specific: true
+    - platform: sstriker
+      extensions:
+      - rom
 - username: ericlewis
   cores:
   - id: ericlewis.Asteroids
@@ -525,6 +829,68 @@
       filename: sbrkout.rom
 - username: jotego
   cores:
+  - id: jotego.jt1942
+    display_name: 1942
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
+    platform_id: jt1942
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jt1942
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jt1942
+      extensions:
+      - json
+      core_specific: true
+    - platform: jt1942
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtaliens
+    display_name: Aliens
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
+    platform_id: jtaliens
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtaliens
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtaliens
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtaliens
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtbtiger
     display_name: Black Tiger
     repository:
@@ -534,20 +900,51 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbtiger.zip
     platform_id: jtbtiger
-    description: Arcade hardware
-    version: '3631162'
-    date_release: '2023-08-11'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtbtiger
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtbtiger
       extensions:
       - json
       core_specific: true
     - platform: jtbtiger
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtbubl
+    display_name: Bubble Bobble
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
+    platform_id: jtbubl
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtbubl
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtbubl
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtbubl
       extensions:
       - rom
     sponsor:
@@ -565,14 +962,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
     platform_id: jtcastle
-    description: Arcade hardware
-    version: 2bba1b7
-    date_release: '2023-08-25'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcastle
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcastle
       extensions:
@@ -588,7 +985,7 @@
       custom:
       - https://www.paypal.me/topapate
   - id: jotego.jtcomsc
-    display_name: JTCOMSC
+    display_name: Combat School
     repository:
       platform: github
       name: jtbin
@@ -596,14 +993,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
     platform_id: jtcomsc
-    description: Arcade hardware
-    version: f45966c
-    date_release: '2023-07-10'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcomsc
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcomsc
       extensions:
@@ -627,14 +1024,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcontra
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcontra
       extensions:
@@ -658,14 +1055,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcop.zip
     platform_id: jtcop
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcop
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcop
       extensions:
@@ -689,20 +1086,82 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
-    description: Arcade hardware
-    version: c88e6f8
-    date_release: '2023-04-28'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtcps1
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtcps1
       extensions:
       - json
       core_specific: true
     - platform: jtcps1
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtcps15
+    display_name: CPS1.5
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
+    platform_id: jtcps15
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtcps15
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtcps15
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcps15
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtcps2
+    display_name: CPS2
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps2.zip
+    platform_id: jtcps2
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtcps2
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtcps2
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcps2
       extensions:
       - rom
     sponsor:
@@ -720,14 +1179,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
-    description: Arcade hardware
-    version: cd8f7ed
-    date_release: '2023-09-15'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtdd
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtdd
       extensions:
@@ -751,14 +1210,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
-    description: Arcade hardware
-    version: cd8f7ed
-    date_release: '2023-09-15'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtdd2
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtdd2
       extensions:
@@ -782,20 +1241,51 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtexed.zip
     platform_id: jtexed
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtexed
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtexed
       extensions:
       - json
       core_specific: true
     - platform: jtexed
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtfround
+    display_name: The Final Round
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
+    platform_id: jtfround
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtfround
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtfround
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtfround
       extensions:
       - rom
     sponsor:
@@ -813,14 +1303,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtgng
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtgng
       extensions:
@@ -844,14 +1334,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
     platform_id: jtgunsmk
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtgunsmk
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtgunsmk
       extensions:
@@ -875,14 +1365,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkarnov
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkarnov
       extensions:
@@ -906,14 +1396,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkicker
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkicker
       extensions:
@@ -929,7 +1419,7 @@
       custom:
       - https://www.paypal.me/topapate
   - id: jotego.jtkiwi
-    display_name: JTKIWI
+    display_name: The NewZealand Story
     repository:
       platform: github
       name: jtbin
@@ -937,14 +1427,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
     platform_id: jtkiwi
-    description: Arcade hardware
-    version: 017b1e6
-    date_release: '2023-05-16'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkiwi
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkiwi
       extensions:
@@ -968,14 +1458,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
-    description: Arcade hardware
-    version: 03de18f
-    date_release: '2023-07-01'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtkunio
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtkunio
       extensions:
@@ -999,20 +1489,84 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
-    description: Arcade hardware
-    version: 603efe8
-    date_release: '2023-07-01'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtmikie
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtmikie
       extensions:
       - json
       core_specific: true
     - platform: jtmikie
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtngp
+    display_name: Neo Geo Pocket
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngp.zip
+    platform_id: jtngp
+    description: Handheld
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Handheld
+      name: jtngp
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtngp
+      extensions:
+      - ngp
+      - ngc
+    - platform: jtngp
+      filename: ngp.rom
+      extensions:
+      - rom
+      - bin
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtninja
+    display_name: Bad Dudes vs. DragonNinja
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
+    platform_id: jtninja
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtninja
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtninja
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtninja
       extensions:
       - rom
     sponsor:
@@ -1030,14 +1584,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtoutrun
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtoutrun
       extensions:
@@ -1061,14 +1615,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtpang
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtpang
       extensions:
@@ -1092,14 +1646,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtpinpon
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtpinpon
       extensions:
@@ -1123,14 +1677,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrastan.zip
     platform_id: jtrastan
-    description: Arcade hardware
-    version: ab74171
-    date_release: '2023-06-30'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtrastan
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtrastan
       extensions:
@@ -1154,14 +1708,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
-    description: Arcade hardware
-    version: e31ffab
-    date_release: '2023-08-25'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtroadf
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtroadf
       extensions:
@@ -1185,20 +1739,82 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtroc
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtroc
       extensions:
       - json
       core_specific: true
     - platform: jtroc
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jts16
+    display_name: SEGA System 16A
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16.zip
+    platform_id: jts16
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jts16
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jts16
+      extensions:
+      - json
+      core_specific: true
+    - platform: jts16
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jts16b
+    display_name: System 16B
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
+    platform_id: jts16b
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jts16b
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jts16b
+      extensions:
+      - json
+      core_specific: true
+    - platform: jts16b
       extensions:
       - rom
     sponsor:
@@ -1216,14 +1832,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
     platform_id: jtsarms
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsarms
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsarms
       extensions:
@@ -1247,14 +1863,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
-    description: Arcade hardware
-    version: 97672c9
-    date_release: '2023-05-05'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsbaskt
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsbaskt
       extensions:
@@ -1278,14 +1894,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
     platform_id: jtsectnz
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsectnz
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsectnz
       extensions:
@@ -1309,20 +1925,175 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
     platform_id: jtsf
-    description: Arcade hardware
-    version: 99d3d23
-    date_release: '2023-04-26'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtsf
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtsf
       extensions:
       - json
       core_specific: true
     - platform: jtsf
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtshanon
+    display_name: Super Hang-on
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshanon.zip
+    platform_id: jtshanon
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtshanon
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtshanon
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtshanon
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtshouse
+    display_name: Splatterhouse
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
+    platform_id: jtshouse
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtshouse
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtshouse
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtshouse
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtsimson
+    display_name: The Simpsons
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
+    platform_id: jtsimson
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jtsimson
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtsimson
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtsimson
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jttmnt
+    display_name: Teenage Mutant Ninja Turtles
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
+    platform_id: jttmnt
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jttmnt
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jttmnt
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttmnt
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jttora
+    display_name: Tiger Road
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttora.zip
+    platform_id: jttora
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
+    platform:
+      category: Arcade
+      name: jttora
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jttora
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttora
       extensions:
       - rom
     sponsor:
@@ -1340,14 +2111,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
-    description: Arcade hardware
-    version: e31ffab
-    date_release: '2023-08-25'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jttrack
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jttrack
       extensions:
@@ -1371,14 +2142,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
     platform_id: jttrojan
-    description: Arcade hardware
-    version: 763d15e
-    date_release: '2023-04-30'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jttrojan
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jttrojan
       extensions:
@@ -1402,51 +2173,20 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
-    description: Arcade hardware
-    version: 763d15e
-    date_release: '2023-04-30'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtvigil
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtvigil
       extensions:
       - json
       core_specific: true
     - platform: jtvigil
-      extensions:
-      - rom
-    sponsor:
-      github:
-      - https://github.com/sponsors/jotego
-      patreon: https://www.patreon.com/jotego
-      custom:
-      - https://www.paypal.me/topapate
-  - id: jotego.jtvulgus
-    display_name: Vulgus
-    repository:
-      platform: github
-      name: jtbin
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvulgus.zip
-    platform_id: jtvulgus
-    description: Arcade hardware
-    version: 763d15e
-    date_release: '2023-04-30'
-    platform:
-      category: Arcade compatible
-      name: jtvulgus
-      manufacturer: JT FPGA
-      year: 2022
-    assets:
-    - platform: jtvulgus
-      extensions:
-      - json
-      core_specific: true
-    - platform: jtvulgus
       extensions:
       - rom
     sponsor:
@@ -1464,14 +2204,14 @@
     requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
-    description: Arcade hardware
-    version: 763d15e
-    date_release: '2023-04-30'
+    description: Arcade
+    version: 5c84ab6
+    date_release: '2024-02-09'
     platform:
-      category: Arcade compatible
+      category: Arcade
       name: jtyiear
       manufacturer: JT FPGA
-      year: 2022
+      year: 2024
     assets:
     - platform: jtyiear
       extensions:
@@ -1494,13 +2234,13 @@
       platform: github
       name: Analogue-Amiga
       prerelease: false
-      tag_name: Mazamars312.Amiga.0.1.1
+      tag_name: Mazamars312.Amiga.0.2.1
     requires_license: false
-    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.1/Analogue-Amiga-0.1.1.zip
+    download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.2.1/Analogue-Amiga-0.2.1.zip
     platform_id: amiga
     description: Amiga Core
-    version: 0.1.0
-    date_release: '2023-06-06'
+    version: 0.2.1
+    date_release: '2024-01-18'
     platform:
       category: Computer
       name: Amiga
@@ -1508,7 +2248,7 @@
       year: 1985
     assets:
     - platform: amiga
-      filename: mpu.bin
+      filename: amiga_mpu_bios.bin
       extensions:
       - bin
       core_specific: true
@@ -1954,156 +2694,32 @@
       - bin
       - gen
       - smd
-- username: psomashekar
+- username: RndMnkIII
   cores:
-  - id: pram0d.bakraid
-    display_name: Battle Bakraid
+  - id: RndMnkIII.alphamission
+    display_name: ASO/Alpha Mission
     repository:
       platform: github
-      name: pram0d-pocket-dist-public
+      name: PocketAlphaMission
       prerelease: false
+      tag_name: v1.2
     requires_license: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.bakraid_20221218.zip
-    platform_id: bakraid
-    description: Battle Bakraid Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-23'
+    download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.2/rndmnkiii.alphamission_pocket-v1.2.zip
+    platform_id: alphamission
+    description: SNK Alpha Mission gateware IP Core
+    version: '1.2'
+    date_release: '2023-11-16'
     platform:
       category: Arcade
-      name: Battle Bakraid
-      manufacturer: pram0d
-      year: 2022
+      name: ASO - Armored Scrum Object
+      manufacturer: SNK
+      year: 1985
     assets:
-    - platform: bakraid
+    - platform: alphamission
       extensions:
       - json
       core_specific: true
-    - platform: bakraid
-      extensions:
-      - rom
-  - id: pram0d.batrider
-    display_name: Batrider
-    repository:
-      platform: github
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.batrider_20221218.zip
-    platform_id: batrider
-    description: Batrider Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-23'
-    platform:
-      category: Arcade
-      name: Batrider
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: batrider
-      extensions:
-      - json
-      core_specific: true
-    - platform: batrider
-      extensions:
-      - rom
-  - id: pram0d.garegga
-    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
-    repository:
-      platform: github
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
-    platform_id: garegga
-    description: Battle Garegga Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-23'
-    platform:
-      category: Arcade
-      name: Battle Garegga
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: garegga
-      extensions:
-      - json
-      core_specific: true
-    - platform: garegga
-      extensions:
-      - rom
-  - id: pram0d.kingdmgp
-    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
-    repository:
-      platform: github
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
-    platform_id: kingdmgp
-    description: Kingdom Grandprix Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-23'
-    platform:
-      category: Arcade
-      name: Kingdom Grandprix
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: kingdmgp
-      extensions:
-      - json
-      core_specific: true
-    - platform: kingdmgp
-      extensions:
-      - rom
-  - id: pram0d.snowbros2
-    display_name: Snow Bros. 2
-    repository:
-      platform: github
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.snowbros2_20221019.zip
-    platform_id: snowbros2
-    description: Snow Bros. 2 Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-20'
-    platform:
-      category: Arcade
-      name: Snow Bros. 2
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: snowbros2
-      extensions:
-      - json
-      core_specific: true
-    - platform: snowbros2
-      extensions:
-      - rom
-  - id: pram0d.sstriker
-    display_name: Battle Garegga / Kingdom Grandprix / Sorcer Striker
-    repository:
-      platform: github
-      name: pram0d-pocket-dist-public
-      prerelease: false
-    requires_license: false
-    download_url: https://raw.githubusercontent.com/psomashekar/pram0d-pocket-dist-public/develop/releases/pram0d.garegga_20221030.zip
-    platform_id: sstriker
-    description: Sorcer Striker Analogue Pocket Core
-    version: 0.0.1
-    date_release: '2022-09-23'
-    platform:
-      category: Arcade
-      name: Sorcer Striker
-      manufacturer: pram0d
-      year: 2022
-    assets:
-    - platform: sstriker
-      extensions:
-      - json
-      core_specific: true
-    - platform: sstriker
+    - platform: alphamission
       extensions:
       - rom
 - username: somhi

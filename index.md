@@ -12,7 +12,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
   <div class="col-md-9 mb-2">
     <div class="input-group">
       <input id="input-search" type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search">
-      <button id="button-search" type="button" class="btn btn-primary"><i class="bi bi-search" role="img" aria-label="Search"></i></button>
+      <button id="button-search" type="button" class="btn btn-secondary"><i class="bi bi-search" role="img" aria-label="Search"></i></button>
     </div>
   </div>
   <div class="col-md-3 mb-2">
@@ -24,7 +24,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
         <option value="latest_release" selected="selected">Latest Release</option>
         <option value="name">Name</option>
       </select>
-      <button id="button-sort" class="btn btn-primary" type="button"><i class="bi bi-sort-down" role="img" aria-label="Descending"></i></button>
+      <button id="button-sort" class="btn btn-secondary" type="button"><i class="bi bi-sort-down" role="img" aria-label="Descending"></i></button>
     </div>
   </div>
 </div>
@@ -64,25 +64,25 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
         {% assign author_url = 'https://github.com/' | append: developer.username -%}
         {% assign repository_url = author_url | append: '/' | append: core.repository.name -%}
     <div class="col d-block">
-      <div class="card bg-light h-100">
+      <div class="card h-100">
         <a href="{{ repository_url }}"><img src="{{ core.platform_id | prepend: '/assets/images/platforms/' | append: '.png' | relative_url }}" class="card-img-top" alt="{{ core.platform.name }}" /></a>
         <div class="card-body">
-          <h5 class="card-title">{{ core.display_name }}</h5>
+          <h5 class="card-title"><span class="me-2">{{ core.display_name }}</span>{% if core.requires_license -%}<i class="bi bi-lock-fill" data-bs-toggle="tooltip" data-bs-title="License Required"></i>{% endif -%}</h5>
           {% assign icon_path = core.id | prepend: '/assets/images/authors/' | append: '.png' -%}
           {% assign icon_exists = site.static_files | where: 'path', icon_path | first -%}
-          <h6 class="card-subtitle mb-2 text-muted">{% if icon_exists -%}<a href="{{ author_url }}" class="me-1"><img src="{{ icon_path | relative_url }}" alt="{{ developer.username }}" class="rounded" /></a>{% endif -%}<a href="{{ author_url }}">{{ developer.username }}</a></h6>
-          <p class="card-text">{{ core.description }}</p>
+          <h6 class="card-subtitle mb-2 text-muted">{{ core.description }}</h6>
+          <p class="card-text">{% if icon_exists -%}<a href="{{ author_url }}" class="me-2"><img src="{{ icon_path | relative_url }}" alt="{{ developer.username }}" class="rounded" /></a>{% endif -%}<a href="{{ author_url }}">{{ developer.username }}</a></p>
           <a href="#" class="card-link"><span class="badge bg-secondary">{{ core.platform.category }}</span></a>
         </div>
         <div class="card-footer text-muted">
           <div class="d-flex justify-content-between align-items-center">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="{{ repository_url }}" class="btn btn-sm btn-dark"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a></li>
+              <li class="list-inline-item"><a href="{{ repository_url }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a></li>
             {% if core.sponsor -%}            
               {% assign sponsor_id = core_id | prepend: 'sponsor-' -%}
               <li class="list-inline-item">
                 <div class="dropdown">
-                  <a class="btn btn-sm btn-danger dropdown-toggle" href="#" role="button" id="{{ sponsor_id }}" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart-fill" role="img" aria-label="Sponsor"></i></a>
+                  <a class="btn btn-sm btn-outline-danger dropdown-toggle" href="#" role="button" id="{{ sponsor_id }}" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart-fill" role="img" aria-label="Sponsor"></i></a>
                   <ul class="dropdown-menu" aria-labelledby="{{ sponsor_id }}">
               {% if core.sponsor.community_bridge -%}
                     <li><a class="dropdown-item" href="{{ core.sponsor.community_bridge }}">LFX Mentorship</a></li>
@@ -118,7 +118,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
                 </div>
               </li>            
             {% endif -%}
-              <li class="list-inline-item"><a href="{{ core.download_url }}" class="btn btn-sm btn-secondary"><i class="bi bi-download" role="img" aria-label="Download"></i></a></li>
+              <li class="list-inline-item"><a href="{{ core.download_url }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-download" role="img" aria-label="Download"></i></a></li>
             </ul>
             <small>{{ core.version }} • {{ core.date_release | date: "%b %-d, %Y" }}</small>
           </div>
@@ -146,7 +146,12 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
           {% for developer in site.data.cores -%}
             {% for core in developer.cores -%}
               <tr class="d-table-row">
-                <td><a href="https://github.com/{{ developer.username }}/{{ core.repository.name }}">{{ core.display_name }}</a></td>
+                <td>
+                  <a href="https://github.com/{{ developer.username }}/{{ core.repository.name }}">{{ core.display_name }}</a>
+                  {% if core.requires_license -%}
+                    <i class="bi bi-lock-fill" data-bs-toggle="tooltip" data-bs-title="License Required"></i>
+                  {% endif -%}
+                </td>
                 <td>{{ core.platform.name }}</td>
                 <td>{{ core.platform.category }}</td>
                 <td><a href="https://github.com/{{ developer.username }}">{{ developer.username }}</a></td>
@@ -160,5 +165,3 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
     </div>
   </div>
 </div>
-
-<script type="text/javascript" src="{{ '/assets/js/script.js' | relative_url }}"></script>
