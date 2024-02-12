@@ -10,6 +10,7 @@ module Analogue
   class CoreService < DefinitionService
     CORE_FILE = 'core.json'
     DATA_FILE = 'data.json'
+    UPDATER_FILE = 'updater.json'
 
     ICON_FILE = 'icon.bin'
     INFO_FILE = 'info.txt'
@@ -29,11 +30,24 @@ module Analogue
 
     def get_info(id)
       info_path = File.join(id, INFO_FILE)
-      begin
-        return parse_file(info_path)
-      rescue Errno::ENOENT
+
+      if !File.exist?(info_path)
         return nil
       end
+
+      info = parse_file(info_path)
+      return info
+    end
+
+    def get_updater(id)
+      updater_path = File.join(id, UPDATER_FILE)
+
+      if !File.exist?(updater_path)
+        return nil
+      end
+
+      updater = parse_json(updater_path)
+      return Updater.new(updater)
     end
 
     def export_icon(id, output_path)
@@ -59,6 +73,17 @@ module Analogue
       data_path = File.join(id, DATA_FILE)
       data = parse_json(data_path)
       return CoreData.new(data)
+    end
+
+    def parse_updater(id)
+      updater_path = File.join(id, UPDATER_FILE)
+
+      if !File.exist?(updater_path)
+        return nil
+      end
+
+      updater = parse_json(updater_path)
+      return CoreUpdater.new(updater)
     end
   end
 end

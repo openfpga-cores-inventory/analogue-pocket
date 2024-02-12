@@ -29,6 +29,10 @@ module Analogue
       return @core_service.get_info(core_id)
     end
 
+    def get_updater(core_id)
+      return @core_service.get_updater(core_id)
+    end
+
     def export_icon(core_id, output_path)
       @core_service.export_icon(core_id, output_path)
     end

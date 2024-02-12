@@ -24,8 +24,10 @@ layout: none
         "owner": {{ developer.username | jsonify }},
         "name": {{ core.repository.name | jsonify }}
       },
-      "sponsor": {{ core.sponsor | jsonify }},
-      "assets": {{ core.assets | jsonify }}
+      "assets": {{ core.assets | jsonify }},
+      "replaces": {{ core.replaces | jsonify }},
+      "requires_license": {{ core.requires_license | jsonify }},
+      "sponsor": {{ core.sponsor | jsonify }}
     }
         {%- unless forloop.last %},{% endunless %}
       {%- endfor %}

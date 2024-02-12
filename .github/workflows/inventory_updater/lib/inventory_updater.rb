@@ -103,9 +103,13 @@ class InventoryUpdater
         core_id = core.id
         cached_version = @cache_service.get_version(core_id)
 
-        if core.version == cached_version
-          serialized_cores << @cache_service.get_core(core_id)
-          next
+        updater = pocket_service.get_updater(core_id)
+
+        if updater.nil?
+          if core.version == cached_version
+            serialized_cores << @cache_service.get_core(core_id)
+            next
+          end
         end
 
         platform_id = core.platform_id
@@ -133,7 +137,7 @@ class InventoryUpdater
         post_content = pocket_service.get_info(core_id)
         create_post(core, post_type, post_content)
 
-        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license)
+        serialized_cores << serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license, updater)
       end
     ensure
       # Delete the temporary directory
@@ -147,7 +151,7 @@ class InventoryUpdater
     return core.data.data_slots.any? { |data_slot| LICENSE_SLOT_NAMES.include?(data_slot.name) }
   end
 
-  def serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license)
+  def serialize_core(repository, core, platform, download_url, latest_release, funding, requires_license, updater)
     return {
       'id' => core.id,
       'display_name' => repository.display_name,
@@ -192,6 +196,8 @@ class InventoryUpdater
           sponsor['tidelift'] = funding.tidelift if funding.tidelift
           sponsor['custom'] = funding.custom if funding.custom
         end unless funding.nil?
+
+        hash['replaces'] = updater.previous.map {|provenance| provenance.id} unless updater.nil?
       end
   end
 
