@@ -243,6 +243,8 @@
       repository: openFPGA-DonkeyKong3
     - display_name: Donkey Kong Junior
       repository: openFPGA-DonkeyKongJunior
+    - display_name: Tower of Druaga
+      repository: openFPGA-Druaga
 - username: opengateware
   cores:
     - display_name: Bank Panic
