@@ -2433,6 +2433,50 @@
       - rom
     sponsor:
       patreon: https://www.patreon.com/nullobject
+- username: obsidian-dot-dev
+  cores:
+  - id: obsidian.DonkeyKong3
+    display_name: Donkey Kong 3
+    repository:
+      platform: github
+      name: openFPGA-DonkeyKong3
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.0/openFPGA-DonkeyKong3.zip
+    platform_id: dkong3
+    description: Donkey Kong 3 released in 1983.
+    version: 0.0.1
+    date_release: '2024-02-05'
+    platform:
+      category: Arcade
+      name: Donkey Kong 3
+      manufacturer: Nintendo
+      year: 1983
+    assets:
+    - platform: dkong3
+      filename: dkong3.rom
+  - id: obsidian.DonkeyKongJr
+    display_name: Donkey Kong Junior
+    repository:
+      platform: github
+      name: openFPGA-DonkeyKongJunior
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKongJunior/releases/download/v0.9.0/openFPGA-DonkeyKongJunior.zip
+    platform_id: dkongjr
+    description: Donkey Kong Jr. released in 1982.
+    version: 0.9.0
+    date_release: '2024-02-12'
+    platform:
+      category: Arcade
+      name: Donkey Kong Jr.
+      manufacturer: Nintendo
+      year: 1982
+    assets:
+    - platform: dkongjr
+      filename: dkongjr.rom
 - username: opengateware
   cores:
   - id: boogermann.bankpanic
