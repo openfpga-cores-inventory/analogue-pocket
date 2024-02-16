@@ -241,6 +241,8 @@
   cores:
     - display_name: Donkey Kong 3
       repository: openFPGA-DonkeyKong3
+    - display_name: Asteroids Deluxe
+      repository: openFPGA-asteroidsdeluxe
 - username: opengateware
   cores:
     - display_name: Bank Panic
