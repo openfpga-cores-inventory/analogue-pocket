@@ -237,6 +237,10 @@
   cores:
     - display_name: Tecmo
       repository: openfpga-tecmo
+- username: obsidian-dot-dev
+  cores:
+    - display_name: Donkey Kong 3
+      repository: openFPGA-DonkeyKong3
 - username: opengateware
   cores:
     - display_name: Bank Panic
