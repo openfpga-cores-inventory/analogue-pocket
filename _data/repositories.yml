@@ -241,6 +241,8 @@
   cores:
     - display_name: Donkey Kong 3
       repository: openFPGA-DonkeyKong3
+    - display_name: Mario Bros
+      repository: openFPGA-MarioBros
 - username: opengateware
   cores:
     - display_name: Bank Panic
