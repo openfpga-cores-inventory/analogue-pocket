@@ -245,6 +245,8 @@
       repository: openFPGA-DonkeyKong3
     - display_name: Donkey Kong Junior
       repository: openFPGA-DonkeyKongJunior
+    - display_name: Mario Bros
+      repository: openFPGA-MarioBros
     - display_name: Tower of Druaga
       repository: openFPGA-Druaga
 - username: opengateware
