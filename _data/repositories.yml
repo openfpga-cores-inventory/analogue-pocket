@@ -237,6 +237,10 @@
   cores:
     - display_name: Tecmo
       repository: openfpga-tecmo
+- username: obsidian-dot-dev
+  cores:
+    - display_name: Tower of Druaga
+      repository: openFPGA-Druaga
 - username: opengateware
   cores:
     - display_name: Bank Panic
