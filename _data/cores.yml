@@ -2435,6 +2435,28 @@
       patreon: https://www.patreon.com/nullobject
 - username: obsidian-dot-dev
   cores:
+  - id: obsidian.AsteroidsDeluxe
+    display_name: Asteroids Deluxe
+    repository:
+      platform: github
+      name: openFPGA-asteroidsdeluxe
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-asteroidsdeluxe/releases/download/v0.9.0/openFPGA-asteroidsdeluxe.zip
+    platform_id: astdelux
+    description: Asteroids Deluxe by Atari.
+    version: 0.9.0
+    date_release: '2024-02-12'
+    platform:
+      category: Arcade
+      name: Asteroids Deluxe
+      manufacturer: Atari Corporation
+      year: 1981
+    assets:
+    - platform: astdelux
+      filename: astdelux.rom
+      core_specific: true
   - id: obsidian.DonkeyKong3
     display_name: Donkey Kong 3
     repository:
@@ -2477,6 +2499,53 @@
     assets:
     - platform: dkongjr
       filename: dkongjr.rom
+  - id: obsidian.Druaga
+    display_name: Tower of Druaga
+    repository:
+      platform: github
+      name: openFPGA-Druaga
+      prerelease: false
+      tag_name: v0.9.2
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.2/openFPGA-Druaga.zip
+    platform_id: druaga
+    description: Tower of Druaga released in 1984
+    version: 0.9.2
+    date_release: '2024-02-15'
+    platform:
+      category: Arcade
+      name: Tower of Druaga
+      manufacturer: Namco
+      year: 1984
+    assets:
+    - platform: druaga
+      extensions:
+      - json
+      core_specific: true
+    - platform: druaga
+      extensions:
+      - rom
+  - id: obsidian.MarioBros
+    display_name: Mario Bros
+    repository:
+      platform: github
+      name: openFPGA-MarioBros
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.0/openFPGA-MarioBros.zip
+    platform_id: mario
+    description: Mario Bros. released in 1983.
+    version: 0.9.0
+    date_release: '2024-02-12'
+    platform:
+      category: Arcade
+      name: Mario Bros
+      manufacturer: Nintendo
+      year: 1983
+    assets:
+    - platform: mario
+      filename: mario.rom
 - username: opengateware
   cores:
   - id: boogermann.bankpanic
