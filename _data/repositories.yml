@@ -249,6 +249,8 @@
       repository: openFPGA-MarioBros
     - display_name: Tower of Druaga
       repository: openFPGA-Druaga
+    - display_name: Vectrex
+      repository: openFPGA-Vectrex
 - username: opengateware
   cores:
     - display_name: Bank Panic
