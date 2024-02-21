@@ -2546,6 +2546,31 @@
     assets:
     - platform: mario
       filename: mario.rom
+  - id: obsidian.Vectrex
+    display_name: Vectrex
+    repository:
+      platform: github
+      name: openFPGA-Vectrex
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.0/openFGPA-Vectrex.zip
+    platform_id: vectrex
+    description: GCE Vectrex
+    version: 0.9.0
+    date_release: '2024-02-18'
+    platform:
+      category: Console
+      name: Vectrex
+      manufacturer: GCE
+      year: 1982
+    assets:
+    - platform: vectrex
+      extensions:
+      - vec
+    - platform: vectrex
+      extensions:
+      - ovr
 - username: opengateware
   cores:
   - id: boogermann.bankpanic
