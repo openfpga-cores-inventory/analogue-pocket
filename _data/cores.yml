@@ -2463,13 +2463,13 @@
       platform: github
       name: openFPGA-DonkeyKong3
       prerelease: false
-      tag_name: v0.9.0
+      tag_name: v0.9.2
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.0/openFPGA-DonkeyKong3.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.2/openFPGA-DonkeyKong3.zip
     platform_id: dkong3
     description: Donkey Kong 3 released in 1983.
-    version: 0.0.1
-    date_release: '2024-02-05'
+    version: 0.9.2
+    date_release: '2024-02-23'
     platform:
       category: Arcade
       name: Donkey Kong 3
@@ -2484,13 +2484,13 @@
       platform: github
       name: openFPGA-DonkeyKongJunior
       prerelease: false
-      tag_name: v0.9.0
+      tag_name: v0.9.2
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKongJunior/releases/download/v0.9.0/openFPGA-DonkeyKongJunior.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKongJunior/releases/download/v0.9.2/openFPGA-DonkeyKongJunior.zip
     platform_id: dkongjr
     description: Donkey Kong Jr. released in 1982.
-    version: 0.9.0
-    date_release: '2024-02-12'
+    version: 0.9.2
+    date_release: '2024-02-23'
     platform:
       category: Arcade
       name: Donkey Kong Jr.
@@ -2505,13 +2505,13 @@
       platform: github
       name: openFPGA-Druaga
       prerelease: false
-      tag_name: v0.9.2
+      tag_name: v0.9.4
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.2/openFPGA-Druaga.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.4/openFPGA-Druaga.zip
     platform_id: druaga
     description: Tower of Druaga released in 1984
-    version: 0.9.2
-    date_release: '2024-02-15'
+    version: 0.9.4
+    date_release: '2024-02-23'
     platform:
       category: Arcade
       name: Tower of Druaga
@@ -2531,13 +2531,13 @@
       platform: github
       name: openFPGA-MarioBros
       prerelease: false
-      tag_name: v0.9.0
+      tag_name: v0.9.2
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.0/openFPGA-MarioBros.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.2/openFPGA-MarioBros.zip
     platform_id: mario
     description: Mario Bros. released in 1983.
-    version: 0.9.0
-    date_release: '2024-02-12'
+    version: 0.9.2
+    date_release: '2024-02-23'
     platform:
       category: Arcade
       name: Mario Bros
