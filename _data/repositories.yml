@@ -276,6 +276,10 @@
   cores:
     - display_name: ASO/Alpha Mission
       repository: PocketAlphaMission
+- username: rolandking
+  cores:
+    - display_name: Jailbreak Konami 1986
+      repository: openFPGA-jailbreak
 - username: somhi
   cores:
     - display_name: Flappy Bird
