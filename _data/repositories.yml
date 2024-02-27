@@ -280,7 +280,6 @@
   cores:
     - display_name: Jailbreak Konami 1986
       repository: openFPGA-jailbreak
-      path: releases/download/v1.1/rolandking-Jailbreak-1.1.zip
 - username: somhi
   cores:
     - display_name: Flappy Bird
