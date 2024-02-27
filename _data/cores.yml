@@ -2860,6 +2860,32 @@
     - platform: alphamission
       extensions:
       - rom
+- username: rolandking
+  cores:
+  - id: rolandking.Jailbreak
+    display_name: Jailbreak Konami 1986
+    repository:
+      platform: github
+      name: openFPGA-jailbreak
+      prerelease: false
+      tag_name: v1.1
+    requires_license: false
+    download_url: https://github.com/rolandking/openFPGA-jailbreak/releases/download/v1.1/rolandking-Jailbreak-1.1.zip
+    platform_id: jailbreak
+    description: Jailbreak Arcade Game 1986
+    version: '1.0'
+    date_release: '2024-02-25'
+    platform:
+      category: Arcade
+      name: Jailbreak
+      manufacturer: Konami
+      year: 1986
+    assets:
+    - platform: jailbreak
+      core_specific: true
+    - platform: jailbreak
+      extensions:
+      - rom
 - username: somhi
   cores:
   - id: somhi.flappybird
