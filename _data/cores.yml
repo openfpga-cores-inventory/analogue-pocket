@@ -401,11 +401,11 @@
     display_name: budude2 GB
     repository:
       platform: github
-      name: openfgpa-GBC
+      name: openfpga-GBC
       prerelease: false
       tag_name: v1.0.8
     requires_license: false
-    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.8/openfpga-gb-1.0.8.zip
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.8/openfpga-gb-1.0.8.zip
     platform_id: gb
     description: Game Boy
     version: 1.0.8
@@ -429,11 +429,11 @@
     display_name: budude2 GBC
     repository:
       platform: github
-      name: openfgpa-GBC
+      name: openfpga-GBC
       prerelease: false
       tag_name: v1.0.8
     requires_license: false
-    download_url: https://github.com/budude2/openfgpa-GBC/releases/download/v1.0.8/openfpga-gbc-1.0.8.zip
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.8/openfpga-gbc-1.0.8.zip
     platform_id: gbc
     description: Game Boy Color
     version: 1.0.8
@@ -2554,7 +2554,7 @@
       prerelease: false
       tag_name: v0.9.0
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.0/openFGPA-Vectrex.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.0/openfpga-Vectrex.zip
     platform_id: vectrex
     description: GCE Vectrex
     version: 0.9.0
