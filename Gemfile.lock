@@ -317,7 +317,7 @@ GEM
     unicode-display_width (2.5.0)
     uri (0.13.0)
     webrick (1.8.1)
-    yard (0.9.34)
+    yard (0.9.35)
 
 PLATFORMS
   x86_64-linux
