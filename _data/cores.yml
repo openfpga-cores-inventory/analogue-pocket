@@ -860,6 +860,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jt1943
+    display_name: 1943
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1943.zip
+    platform_id: jt1943
+    description: Arcade
+    version: c43b66c
+    date_release: '2024-03-02'
+    platform:
+      category: Arcade
+      name: jt1943
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jt1943
+      extensions:
+      - json
+      core_specific: true
+    - platform: jt1943
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtaliens
     display_name: Aliens
     repository:
