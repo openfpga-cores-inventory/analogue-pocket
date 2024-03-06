@@ -2488,6 +2488,32 @@
     - platform: astdelux
       filename: astdelux.rom
       core_specific: true
+  - id: obsidian.Defender
+    display_name: Defender
+    repository:
+      platform: github
+      name: openFPGA-Defender
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Defender/releases/download/v0.9.0/openFPGA-Defender.zip
+    platform_id: defender
+    description: Williams 6809 HW Rev 1a
+    version: 0.9.0
+    date_release: '2024-03-05'
+    platform:
+      category: Arcade
+      name: Defender
+      manufacturer: Williams Electronics
+      year: 1981
+    assets:
+    - platform: defender
+      extensions:
+      - json
+      core_specific: true
+    - platform: defender
+      extensions:
+      - rom
   - id: obsidian.DonkeyKong3
     display_name: Donkey Kong 3
     repository:
