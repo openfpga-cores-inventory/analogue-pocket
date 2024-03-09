@@ -256,6 +256,8 @@
       repository: openFPGA-Vectrex
     - display_name: Defender
       repository: openFPGA-Defender
+    - display_name: Robotron
+      repository: openFPGA-Robotron
 - username: opengateware
   cores:
     - display_name: Bank Panic
