@@ -2603,6 +2603,32 @@
     assets:
     - platform: mario
       filename: mario.rom
+  - id: obsidian.Robotron
+    display_name: Robotron
+    repository:
+      platform: github
+      name: openFPGA-Robotron
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Robotron/releases/download/v0.9.0/openFPGA-Robotron.zip
+    platform_id: robotron
+    description: Williams 6809 HW Rev 1b
+    version: 0.9.0
+    date_release: '2024-03-09'
+    platform:
+      category: Arcade
+      name: Robotron
+      manufacturer: Williams Electronics
+      year: 1982
+    assets:
+    - platform: robotron
+      extensions:
+      - json
+      core_specific: true
+    - platform: robotron
+      extensions:
+      - rom
   - id: obsidian.Vectrex
     display_name: Vectrex
     repository:
