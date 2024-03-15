@@ -226,6 +226,9 @@
     - display_name: 1943
       repository: jtbin
       path: pocket/zips/jotego.jt1943.zip
+    - display_name: MX5000
+      repository: jtbin
+      path: pocket/zips/jotego.jtmx5k.zip
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
