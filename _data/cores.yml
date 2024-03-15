@@ -1542,6 +1542,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtmx5k
+    display_name: MX5000
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmx5k.zip
+    platform_id: jtmx5k
+    description: Arcade
+    version: '9996345'
+    date_release: '2024-03-15'
+    platform:
+      category: Arcade
+      name: jtmx5k
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtmx5k
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtmx5k
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtngp
     display_name: Neo Geo Pocket
     repository:
