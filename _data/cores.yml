@@ -454,6 +454,35 @@
       - bin
     sponsor:
       ko_fi: https://ko-fi.com/budude2
+  - id: budude2.SGB
+    display_name: budude2 SGB
+    repository:
+      platform: github
+      name: openfpga-GBC
+      prerelease: false
+      tag_name: v1.1.0_1
+    requires_license: false
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0_1/openfpga-sgb-1.1.0.zip
+    platform_id: sgb
+    description: Super Game Boy
+    version: 1.1.0
+    date_release: '2024-03-24'
+    platform:
+      category: Console
+      name: Super Game Boy
+      manufacturer: Nintendo
+      year: 1989
+    assets:
+    - platform: sgb
+      extensions:
+      - gb
+      - gbc
+    - platform: sgb
+      filename: sgb_boot.bin
+      extensions:
+      - bin
+    sponsor:
+      ko_fi: https://ko-fi.com/budude2
 - username: Coin-OpCollection
   cores:
   - id: atrac17.pipibibs
