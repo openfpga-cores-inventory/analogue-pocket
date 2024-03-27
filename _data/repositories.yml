@@ -43,9 +43,6 @@
     - display_name: budude2 GB
       repository: openfpga-GBC
       filter: openfpga-gb-
-    - display_name: budude2 SGB
-      repository: openfpga-GBC
-      filter: openfpga-sgb-
 - username: Coin-OpCollection
   cores:
     - display_name: Batrider
