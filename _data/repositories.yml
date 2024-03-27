@@ -286,6 +286,10 @@
   cores:
     - display_name: ASO/Alpha Mission
       repository: PocketAlphaMission
+    - display_name: Neo Geo (Analogizer)
+      repository: Analogizer_Mazamars312_Neogeo_0.8.1
+    - display_name: ASO/Alpha Mission (Analogizer)
+      repository: Analogizer-Pocket-Alpha-Mission
 - username: rolandking
   cores:
     - display_name: Jailbreak Konami 1986
