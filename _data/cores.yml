@@ -403,13 +403,13 @@
       platform: github
       name: openfpga-GBC
       prerelease: false
-      tag_name: v1.1.0
+      tag_name: v1.2.0
     requires_license: false
-    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0/openfpga-gb-1.1.0.zip
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.0/openfpga-gb-1.2.0.zip
     platform_id: gb
     description: Game Boy
-    version: 1.1.0
-    date_release: '2024-03-07'
+    version: 1.2.0
+    date_release: '2024-03-27'
     platform:
       category: Handheld
       name: Game Boy
@@ -419,8 +419,13 @@
     - platform: gb
       extensions:
       - gb
+      - gbc
     - platform: gb
       filename: gb_bios.bin
+      extensions:
+      - bin
+    - platform: gb
+      filename: sgb_boot.bin
       extensions:
       - bin
     sponsor:
@@ -431,13 +436,13 @@
       platform: github
       name: openfpga-GBC
       prerelease: false
-      tag_name: v1.1.0
+      tag_name: v1.2.0
     requires_license: false
-    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0/openfpga-gbc-1.1.0.zip
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.0/openfpga-gbc-1.2.0.zip
     platform_id: gbc
     description: Game Boy Color
-    version: 1.1.0
-    date_release: '2024-03-07'
+    version: 1.2.0
+    date_release: '2024-03-27'
     platform:
       category: Handheld
       name: Game Boy Color
