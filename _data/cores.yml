@@ -1424,7 +1424,7 @@
       custom:
       - https://www.paypal.me/topapate
   - id: jotego.jtkchamp
-    display_name: CPS1
+    display_name: Karate Champ
     repository:
       platform: github
       name: jtbin
