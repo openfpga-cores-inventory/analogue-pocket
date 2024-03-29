@@ -1423,6 +1423,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtkchamp
+    display_name: CPS1
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkchamp.zip
+    platform_id: jtkchamp
+    description: Arcade
+    version: 90fd97e
+    date_release: '2024-03-29'
+    platform:
+      category: Arcade
+      name: jtkchamp
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtkchamp
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtkchamp
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtkicker
     display_name: Kicker
     repository:
