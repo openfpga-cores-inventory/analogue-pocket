@@ -229,7 +229,7 @@
     - display_name: MX5000
       repository: jtbin
       path: pocket/zips/jotego.jtmx5k.zip
-    - display_name: CPS1
+    - display_name: Karate Champ
       repository: jtbin
       path: pocket/zips/jotego.jtkchamp.zip
 - username: Mazamars312
