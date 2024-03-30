@@ -3096,6 +3096,32 @@
     - platform: alphamission
       extensions:
       - rom
+  - id: agg23.NES_Analogizer
+    display_name: NES for Analogue Pocket (Analogizer)
+    repository:
+      platform: github
+      name: openfpga-NES-Analogizer
+      prerelease: false
+      tag_name: 1.0_analogizer
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0_analogizer/agg23.NES_1.0.0_Analogizer.zip
+    platform_id: nes
+    description: ANALOGIZER Nintendo Entertainment System and Famicom. Nintendo's
+      first home console
+    version: 1.0.0
+    date_release: '2023-09-26'
+    platform:
+      category: Console
+      name: NES
+      manufacturer: Nintendo
+      year: 1983
+    assets:
+    - platform: nes
+      extensions:
+      - nes
+    sponsor:
+      github:
+      - https://github.com/sponsors/agg23
 - username: rolandking
   cores:
   - id: rolandking.Jailbreak
