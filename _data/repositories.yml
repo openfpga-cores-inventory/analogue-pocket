@@ -232,6 +232,10 @@
     - display_name: Karate Champ
       repository: jtbin
       path: pocket/zips/jotego.jtkchamp.zip
+- username: markus-zzz
+  cores:
+    - display_name: markus-zzz MyC64
+      repository: myc64-pocket
 - username: Mazamars312
   cores:
     - display_name: Amiga 500
