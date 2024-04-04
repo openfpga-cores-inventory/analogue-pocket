@@ -2324,6 +2324,39 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+- username: markus-zzz
+  cores:
+  - id: markus-zzz.MyC64
+    display_name: markus-zzz MyC64
+    repository:
+      platform: github
+      name: myc64-pocket
+      prerelease: false
+      tag_name: v0.1.0
+    requires_license: false
+    download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.0/MyC64-Pocket.zip
+    platform_id: c64
+    description: My experimental Commodore 64 emulator
+    version: 0.1.0
+    date_release: '2024-04-04'
+    platform:
+      category: Computer
+      name: C64
+      manufacturer: Commodore International
+      year: 1982
+    assets:
+    - platform: c64
+      filename: basic.bin
+      extensions:
+      - bin
+    - platform: c64
+      filename: characters.bin
+      extensions:
+      - bin
+    - platform: c64
+      filename: kernal.bin
+      extensions:
+      - bin
 - username: Mazamars312
   cores:
   - id: Mazamars312.Amiga
