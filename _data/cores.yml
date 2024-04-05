@@ -1020,6 +1020,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtcommnd
+    display_name: Commando
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcommnd.zip
+    platform_id: jtcommnd
+    description: Arcade
+    version: 7e16d43
+    date_release: '2024-04-05'
+    platform:
+      category: Arcade
+      name: jtcommnd
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtcommnd
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcommnd
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtcomsc
     display_name: Combat School
     repository:
