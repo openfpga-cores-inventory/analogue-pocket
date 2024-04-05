@@ -232,6 +232,9 @@
     - display_name: Karate Champ
       repository: jtbin
       path: pocket/zips/jotego.jtkchamp.zip
+    - display_name: Commando
+      repository: jtbin
+      path: pocket/zips/jotego.jtcommnd.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
