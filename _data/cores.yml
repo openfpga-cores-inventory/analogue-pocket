@@ -2685,6 +2685,32 @@
     - platform: druaga
       extensions:
       - rom
+  - id: obsidian.Gaplus
+    display_name: Gaplus
+    repository:
+      platform: github
+      name: openFPGA-Gaplus
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Gaplus/releases/download/v0.9.0/openFPGA-Gaplus.zip
+    platform_id: gaplus
+    description: Gaplus/Galaga3
+    version: 0.9.0
+    date_release: '2024-04-03'
+    platform:
+      category: Arcade
+      name: Gaplus
+      manufacturer: Namco
+      year: 1984
+    assets:
+    - platform: gaplus
+      extensions:
+      - json
+      core_specific: true
+    - platform: gaplus
+      extensions:
+      - rom
   - id: obsidian.MarioBros
     display_name: Mario Bros
     repository:
