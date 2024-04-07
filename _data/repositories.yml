@@ -304,8 +304,8 @@
       repository: Analogizer-Pocket-Alpha-Mission
     - display_name: NES for Analogue Pocket (Analogizer)
       repository: openfpga-NES-Analogizer
-    - display_name: SNES for Analogue Pocket (Analogizer)
-      repository: openfpga-SNES-Analogizer
+#    - display_name: SNES for Analogue Pocket (Analogizer)
+#      repository: openfpga-SNES-Analogizer
 - username: rolandking
   cores:
     - display_name: Jailbreak Konami 1986
