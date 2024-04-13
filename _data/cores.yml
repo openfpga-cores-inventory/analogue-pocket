@@ -2363,13 +2363,13 @@
       platform: github
       name: myc64-pocket
       prerelease: false
-      tag_name: v0.1.0
+      tag_name: v0.1.1
     requires_license: false
-    download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.0/MyC64-Pocket.zip
+    download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.1/MyC64-Pocket.zip
     platform_id: c64
     description: My experimental Commodore 64 emulator
-    version: 0.1.0
-    date_release: '2024-04-04'
+    version: 0.1.1
+    date_release: '2024-04-13'
     platform:
       category: Computer
       name: C64
