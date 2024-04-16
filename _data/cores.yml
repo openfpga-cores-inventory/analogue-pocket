@@ -3887,3 +3887,27 @@
     - platform: videobrain
       extensions:
       - bin
+- username: tsalvo
+  cores:
+  - id: tsalvo.varvara
+    display_name: Varvara
+    repository:
+      platform: github
+      name: openfpga-varvara
+      prerelease: false
+      tag_name: 0.0.1
+    requires_license: false
+    download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.1/tsalvo.varvara_0.0.1_2024-04-06.zip
+    platform_id: varvara
+    description: Computer system running on Uxn
+    version: 0.0.1
+    date_release: '2024-04-06'
+    platform:
+      category: Computer
+      name: Varvara
+      manufacturer: Hundred Rabbits
+      year: 2023
+    assets:
+    - platform: varvara
+      extensions:
+      - rom
