@@ -370,3 +370,7 @@
       repository: openFPGA-Super-GB
     - display_name: Spiritualized VideoBrain
       repository: openFPGA-VideoBrain
+- username: tsalvo
+  cores:
+    - display_name: Varvara
+      repository: openfpga-varvara
