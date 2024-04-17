@@ -3842,6 +3842,16 @@
       - gb
       - gbc
       - bin
+    - platform: sgb
+      filename: sgb_boot.bin
+      extensions:
+      - bin
+      core_specific: true
+    - platform: sgb
+      filename: sgb_snes.smc
+      extensions:
+      - smc
+      core_specific: true
   - id: Spiritualized.Supervision
     display_name: Spiritualized Supervision
     repository:
