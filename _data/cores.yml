@@ -2685,6 +2685,32 @@
     - platform: gaplus
       extensions:
       - rom
+  - id: obsidian.Joust2
+    display_name: Joust 2
+    repository:
+      platform: github
+      name: openFPGA-Joust2
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2/releases/download/v0.9.0/openFPGA-Joust2.zip
+    platform_id: joust2
+    description: Williams 6809 HW Rev 2
+    version: 0.9.0
+    date_release: '2024-04-20'
+    platform:
+      category: Arcade
+      name: Joust 2
+      manufacturer: Williams Electronics
+      year: 1986
+    assets:
+    - platform: joust2
+      extensions:
+      - json
+      core_specific: true
+    - platform: joust2
+      extensions:
+      - rom
   - id: obsidian.MarioBros
     display_name: Mario Bros
     repository:
