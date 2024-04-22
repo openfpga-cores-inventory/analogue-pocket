@@ -3047,6 +3047,34 @@
       - bin
       - gen
       - smd
+  - id: opengateware.irem_m92
+    display_name: Irem M92
+    repository:
+      platform: github
+      name: arcade-irem_m92
+      prerelease: false
+      tag_name: 0.1.0
+    requires_license: false
+    download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/0.1.0/opengateware.irem_m92_0.1.0_20240422-pocket.zip
+    platform_id: irem_m92
+    description: Irem M-92 Arcade Compatible Gateware IP Core
+    version: 0.1.0
+    date_release: '2024-04-22'
+    platform:
+      category: Arcade
+      name: Irem M92
+      manufacturer: Irem
+      year: 1991
+    assets:
+    - platform: irem_m92
+      extensions:
+      - json
+      core_specific: true
+    - platform: irem_m92
+      extensions:
+      - rom
+    sponsor:
+      ko_fi: https://ko-fi.com/boogermann
 - username: RndMnkIII
   cores:
   - id: Mazamars312.NeoGeo_Analogizer
