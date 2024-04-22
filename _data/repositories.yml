@@ -294,6 +294,8 @@
       repository: console-supervision
     - display_name: Xevious
       repository: arcade-xevious
+    - display_name: Irem M92
+      repository: arcade-irem_m92
 - username: RndMnkIII
   cores:
     - display_name: ASO/Alpha Mission
