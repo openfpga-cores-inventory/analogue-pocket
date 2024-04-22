@@ -296,6 +296,7 @@
       repository: arcade-xevious
     - display_name: Irem M92
       repository: arcade-irem_m92
+      filter: opengateware.irem_m92_.*-pocket
 - username: RndMnkIII
   cores:
     - display_name: ASO/Alpha Mission
