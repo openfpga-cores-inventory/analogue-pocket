@@ -313,6 +313,9 @@
   cores:
     - display_name: Jailbreak Konami 1986
       repository: openFPGA-jailbreak
+    - cores: null
+      display_name: Athena SNK 1986
+      repository: openFPGA-Athena
 - username: somhi
   cores:
     - display_name: Flappy Bird
