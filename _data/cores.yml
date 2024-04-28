@@ -3243,6 +3243,30 @@
       patreon: https://www.patreon.com/srg320
 - username: rolandking
   cores:
+  - id: rolandking.Athena
+    display_name: Athena SNK 1986
+    repository:
+      platform: github
+      name: openFPGA-Athena
+      prerelease: false
+      tag_name: v1.1.1
+    requires_license: false
+    download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.1/rolandking-Athena-v1.1.1.zip
+    platform_id: athena
+    description: Athena 1986
+    version: '1.0'
+    date_release: '2024-03-02'
+    platform:
+      category: Arcade
+      name: Athena
+      manufacturer: SNK
+      year: 1986
+    assets:
+    - platform: athena
+      core_specific: true
+    - platform: athena
+      extensions:
+      - rom
   - id: rolandking.Jailbreak
     display_name: Jailbreak Konami 1986
     repository:
