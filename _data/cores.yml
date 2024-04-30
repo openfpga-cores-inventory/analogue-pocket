@@ -3248,13 +3248,13 @@
       platform: github
       name: openFPGA-Athena
       prerelease: false
-      tag_name: v1.1.1
+      tag_name: v1.1.2
     requires_license: false
-    download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.1/rolandking-Athena-v1.1.1.zip
+    download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.2/rolandking-Athena-v1.1.2.zip
     platform_id: athena
     description: Athena 1986
-    version: '1.0'
-    date_release: '2024-03-02'
+    version: 1.1.2
+    date_release: '2024-04-30'
     platform:
       category: Arcade
       name: Athena
