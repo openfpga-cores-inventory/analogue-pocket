@@ -2764,12 +2764,12 @@
       platform: github
       name: openFPGA-Vectrex
       prerelease: false
-      tag_name: v0.9.3
+      tag_name: v0.9.4
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.3/openFPGA-Vectrex.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.4/openFPGA-Vectrex.zip
     platform_id: vectrex
     description: GCE Vectrex
-    version: 0.9.3
+    version: 0.9.4
     date_release: '2024-04-28'
     platform:
       category: Console
@@ -2781,7 +2781,6 @@
       core_specific: true
     - platform: vectrex
       filename: vectrex.bin
-      core_specific: true
     - platform: vectrex
       extensions:
       - vec
