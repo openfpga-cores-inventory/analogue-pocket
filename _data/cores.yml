@@ -3159,7 +3159,8 @@
     - platform: alphamission
       extensions:
       - rom
-  - id: RndMnkIII.alphamission_Analogizer
+  - &1
+    id: RndMnkIII.alphamission_Analogizer
     display_name: ASO/Alpha Mission (Analogizer)
     repository:
       platform: github
@@ -3185,6 +3186,7 @@
     - platform: alphamission
       extensions:
       - rom
+  - *1
   - id: agg23.NES_Analogizer
     display_name: NES for Analogue Pocket (Analogizer)
     repository:
@@ -3208,32 +3210,6 @@
     - platform: nes
       extensions:
       - nes
-    sponsor:
-      github:
-      - https://github.com/sponsors/agg23
-  - id: agg23.PC Engine_Analogizer
-    display_name: PC Engine for Analogue Pocket (Analogizer)
-    repository:
-      platform: github
-      name: Analogizer_openfpga-pcengine
-      prerelease: false
-      tag_name: Analogizer_PCEngine_v1.0
-    requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/Analogizer_PCEngine_v1.0/Analogizer-FPGA.PC.Engine_1.0_24-05-01.zip
-    platform_id: pce
-    description: "[Analogizer] PC Engine (known as TurboGrafx-16 in the US) by NEC"
-    version: '1.0'
-    date_release: '2024-05-01'
-    platform:
-      category: Console
-      name: PC Engine
-      manufacturer: NEC Home Electronics
-      year: 1987
-    assets:
-    - platform: pce
-      extensions:
-      - pce
-      - sgx
     sponsor:
       github:
       - https://github.com/sponsors/agg23
