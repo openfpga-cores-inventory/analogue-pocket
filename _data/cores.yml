@@ -3159,8 +3159,7 @@
     - platform: alphamission
       extensions:
       - rom
-  - &1
-    id: RndMnkIII.alphamission_Analogizer
+  - id: RndMnkIII.alphamission_Analogizer
     display_name: ASO/Alpha Mission (Analogizer)
     repository:
       platform: github
@@ -3186,7 +3185,6 @@
     - platform: alphamission
       extensions:
       - rom
-  - *1
   - id: agg23.NES_Analogizer
     display_name: NES for Analogue Pocket (Analogizer)
     repository:
