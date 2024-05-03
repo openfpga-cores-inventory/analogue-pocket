@@ -235,6 +235,9 @@
     - display_name: Commando
       repository: jtbin
       path: pocket/zips/jotego.jtcommnd.zip
+    - display_name: Toki
+      repository: jttoki
+      path: pocket/zips/jotego.jttoki.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
