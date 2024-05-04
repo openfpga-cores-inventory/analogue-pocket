@@ -2355,6 +2355,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: solal jacob.jttoki
+    display_name: Toki
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttoki.zip
+    platform_id: jttoki
+    description: Arcade
+    version: bff2520
+    date_release: '2024-05-03'
+    platform:
+      category: Arcade
+      name: jttoki
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jttoki
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttoki
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
 - username: markus-zzz
   cores:
   - id: markus-zzz.MyC64
