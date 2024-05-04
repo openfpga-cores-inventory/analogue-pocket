@@ -3083,13 +3083,13 @@
       platform: github
       name: arcade-irem_m92
       prerelease: false
-      tag_name: 0.1.1
+      tag_name: 0.1.2
     requires_license: false
-    download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/0.1.1/opengateware.irem_m92_0.1.1_20240423-pocket.zip
+    download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/0.1.2/opengateware.irem_m92_0.1.2_20240504-pocket.zip
     platform_id: irem_m92
     description: Irem M-92 Arcade Compatible Gateware IP Core
-    version: 0.1.1
-    date_release: '2024-04-23'
+    version: 0.1.2
+    date_release: '2024-05-04'
     platform:
       category: Arcade Multi
       name: Irem M92
