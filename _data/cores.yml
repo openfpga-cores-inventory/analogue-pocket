@@ -3209,7 +3209,7 @@
     download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.0/PocketAlphaMission_Analogizer_build.zip
     platform_id: alphamission
     description: "[ANALOGIZER] SNK Alpha Mission gateware IP Core"
-    version: '1.1'
+    version: 1.0
     date_release: '2024-03-24'
     platform:
       category: Arcade
