@@ -3206,7 +3206,7 @@
       prerelease: false
       tag_name: '1.0'
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.0/PocketAlphaMission_Analogizer_build.zip
+    download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.0/analogizer-alphamission-pocket-v1.0.zip
     platform_id: alphamission
     description: "[ANALOGIZER] SNK Alpha Mission gateware IP Core"
     version: 1.0
