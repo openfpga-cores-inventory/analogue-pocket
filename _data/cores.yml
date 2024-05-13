@@ -3282,14 +3282,14 @@
       platform: github
       name: openfpga-SNES-Analogizer
       prerelease: false
-      tag_name: 1.0_analogizer_SNES
+      tag_name: '1.0'
     requires_license: false
-    download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0_analogizer_SNES/Analogizer_agg23.SNES_0.4.zip
+    download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0/Analogizer_agg23.SNES_1.0_13-05-24.zip
     platform_id: snes
-    description: ANALOGIZER Super Nintendo and Super Famicom. Nintendo's second major
-      home console
-    version: 0.4.3
-    date_release: '2024-03-30'
+    description: ANALOGIZER Super Nintendo and Super Famicom. RGBS, RGsB, YPbPr, Y/C
+      and scandoubler SVGA video output
+    version: '1.0'
+    date_release: '2024-05-13'
     platform:
       category: Console
       name: SNES
