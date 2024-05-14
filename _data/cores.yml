@@ -3256,13 +3256,14 @@
       platform: github
       name: Analogizer_openfpga-pcengine
       prerelease: false
-      tag_name: Analogizer_PCEngine_v1.5
+      tag_name: '1.6'
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/Analogizer_PCEngine_v1.5/Analogizer-FPGA.PC.Engine_1.5_24-05-08.zip
+    download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/1.6/Analogizer-FPGA.PC.Engine_1.6_24-05-14.zip
     platform_id: pce
-    description: "[Analogizer] PC Engine (known as TurboGrafx-16 in the US) by NEC"
-    version: '1.5'
-    date_release: '2024-05-08'
+    description: "[Analogizer] PC Engine with RGBS,RGsB,YPbPr,Y/C,CVBS,SVGA video
+      output"
+    version: '1.6'
+    date_release: '2024-05-14'
     platform:
       category: Console
       name: PC Engine
