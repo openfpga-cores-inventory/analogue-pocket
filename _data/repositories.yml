@@ -314,6 +314,8 @@
       repository: openfpga-SNES-Analogizer
     - display_name: PC Engine for Analogue Pocket (Analogizer)
       repository: Analogizer_openfpga-pcengine
+    - display_name: PC Engine CD (Analogizer)
+      repository: openfpga-pcengine-cd_Analogizer
 - username: rolandking
   cores:
     - display_name: Jailbreak Konami 1986
