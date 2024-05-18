@@ -3172,6 +3172,39 @@
       extensions:
       - vbin
       - vroma0
+  - id: Mazamars312.PC Engine CD_Analogizer
+    display_name: PC Engine CD (Analogizer)
+    repository:
+      platform: github
+      name: openfpga-pcengine-cd_Analogizer
+      prerelease: false
+      tag_name: '1.0'
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/openfpga-pcengine-cd_Analogizer/releases/download/1.0/Analogizer_PCE_CD_1.0.zip
+    platform_id: pcecd
+    description: "[Analogizer] PC Engine CD with Analogizer support"
+    version: '1.0'
+    date_release: '2024-05-17'
+    platform:
+      category: Console
+      name: PC Engine CD
+      manufacturer: NEC Home Electronics
+      year: 1988
+    assets:
+    - platform: pcecd
+      extensions:
+      - json
+      core_specific: true
+    - platform: pcecd
+      filename: bios_3_0_usa.pce
+      extensions:
+      - pce
+      core_specific: true
+    - platform: pcecd
+      filename: mpu.bin
+      extensions:
+      - bin
+      core_specific: true
   - id: RndMnkIII.alphamission
     display_name: ASO/Alpha Mission
     repository:
