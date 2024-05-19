@@ -57,12 +57,15 @@
     - display_name: Snow Bros. 2
       repository: Distribution-OpenFPGA
       path: Releases/pram0d.snowbros2_20221019.zip
+    - display_name: Teki Paki
+      repository: Distribution-OpenFPGA
+      path: Releases/atrac17.tekipaki_20240518.zip
     - display_name: Truxton 2
       repository: Distribution-OpenFPGA
-      path: Releases/atrac17.truxton2_20231123.zip
+      path: Releases/atrac17.truxton2_20240518.zip
     - display_name: Whoopee!!
       repository: Distribution-OpenFPGA
-      path: Releases/atrac17.pipibibs_20231123.zip
+      path: Releases/atrac17.pipibibs_20240518.zip
 - username: ericlewis
   cores:
     - display_name: Asteroids for Analogue Pocket
