@@ -3338,6 +3338,34 @@
       github:
       - https://github.com/sponsors/agg23
       patreon: https://www.patreon.com/srg320
+  - id: opengateware.irem_m92_Analogizer
+    display_name: Irem M92 (Analogizer)
+    repository:
+      platform: github
+      name: arcade-irem_m92_Analogizer
+      prerelease: false
+      tag_name: '1.0'
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0/arcade-irem_m92_Analogizer_1.0.0.zip
+    platform_id: irem_m92
+    description: "[Analogizer] Irem M-92 Arcade Compatible Gateware IP Core"
+    version: 1.0.0
+    date_release: '2024-05-19'
+    platform:
+      category: Arcade Multi
+      name: Irem M92
+      manufacturer: Irem
+      year: 1991
+    assets:
+    - platform: irem_m92
+      extensions:
+      - json
+      core_specific: true
+    - platform: irem_m92
+      extensions:
+      - rom
+    sponsor:
+      ko_fi: https://ko-fi.com/boogermann
 - username: rolandking
   cores:
   - id: rolandking.Athena
