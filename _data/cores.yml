@@ -468,11 +468,11 @@
       name: Distribution-OpenFPGA
       prerelease: false
     requires_license: false
-    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.pipibibs_20231123.zip
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.pipibibs_20240518.zip
     platform_id: pipibibs
     description: Whoopee!
-    version: 1.0.0
-    date_release: '2023-11-23'
+    version: 1.0.1
+    date_release: '2024-05-18'
     platform:
       category: Arcade
       name: Whoopee!
@@ -486,6 +486,31 @@
     - platform: pipibibs
       extensions:
       - rom
+  - id: atrac17.tekipaki
+    display_name: Teki Paki
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.tekipaki_20240518.zip
+    platform_id: tekipaki
+    description: Teki Paki
+    version: 1.0.1
+    date_release: '2024-05-18'
+    platform:
+      category: Arcade
+      name: Teki Paki
+      manufacturer: Toaplan Ltd.
+      year: 1991
+    assets:
+    - platform: tekipaki
+      extensions:
+      - json
+      core_specific: true
+    - platform: tekipaki
+      extensions:
+      - rom
   - id: atrac17.truxton2
     display_name: Truxton 2
     repository:
@@ -493,11 +518,11 @@
       name: Distribution-OpenFPGA
       prerelease: false
     requires_license: false
-    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.truxton2_20231123.zip
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.truxton2_20240518.zip
     platform_id: truxton2
     description: Truxton II
-    version: 1.0.1
-    date_release: '2023-11-23'
+    version: 1.0.2
+    date_release: '2024-05-18'
     platform:
       category: Arcade
       name: Truxton 2
