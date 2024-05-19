@@ -315,7 +315,9 @@
     - display_name: PC Engine for Analogue Pocket (Analogizer)
       repository: Analogizer_openfpga-pcengine
     - display_name: PC Engine CD (Analogizer)
-      repository: openfpga-pcengine-cd_Analogizer
+      repository: openfpga-pcengine-cd_Analogize
+    - display_name: Irem M92 (Analogizer)
+      repository: arcade-irem_m92_Analogizer
 - username: rolandking
   cores:
     - display_name: Jailbreak Konami 1986
