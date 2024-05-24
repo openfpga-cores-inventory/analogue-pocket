@@ -241,6 +241,9 @@
     - display_name: Toki
       repository: jtbin
       path: pocket/zips/jotego.jttoki.zip
+    - display_name: System 18
+      repository: jtbin
+      path: pocket/zips/jotego.jts18.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
