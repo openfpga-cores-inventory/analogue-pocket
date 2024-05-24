@@ -900,7 +900,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1943.zip
     platform_id: jt1943
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1179,7 +1179,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1303,7 +1303,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1365,7 +1365,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
     platform_id: jtfround
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1427,7 +1427,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
     platform_id: jtgunsmk
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1458,7 +1458,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1489,7 +1489,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkchamp.zip
     platform_id: jtkchamp
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1520,7 +1520,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1582,7 +1582,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
@@ -1708,7 +1708,7 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
     platform_id: jtninja
     description: Arcade
-    version: fcfa7df
+    version: 94d0874
     date_release: '2024-05-24'
     platform:
       category: Arcade
