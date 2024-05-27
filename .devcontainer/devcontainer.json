@@ -22,9 +22,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "castwide.solargraph",
         "editorconfig.editorconfig",
-        "rebornix.Ruby"
+        "rubocop.vscode-rubocop",
+        "Shopify.ruby-lsp"
       ]
     }
   }

@@ -1,0 +1,6 @@
+{
+  "$schema": "vscode://schemas/settings/user",
+  "[ruby]": {
+    "editor.defaultFormatter": "rubocop.vscode-rubocop"
+  },
+}
