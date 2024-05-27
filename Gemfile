@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -7,37 +9,39 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-#gem "jekyll", "~> 4.2.2"
+# gem "jekyll", "~> 4.2.2"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", "~> 231", group: :jekyll_plugins
+gem 'github-pages', '~> 231', group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17.0"
-  gem "jekyll-remote-theme", "~> 0.4.3"
+  gem 'jekyll-feed', '~> 0.17.0'
+  gem 'jekyll-paginate', '~> 1.1'
+  gem 'jekyll-remote-theme', '~> 0.4.3'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", "~> 1.2"
-  gem "tzinfo-data"
+  gem 'tzinfo', '~> 1.2'
+  gem 'tzinfo-data'
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem 'wdm', '~> 0.1.1', platforms: %i[mingw x64_mingw mswin]
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+gem 'http_parser.rb', '~> 0.6.0', platforms: [:jruby]
 
-gem "webrick", "~> 1.8"
+gem 'webrick', '~> 1.8'
 
-gem "chunky_png", "~> 1.4.0"
-gem "netrc", "~> 0.11.0"
-gem "octokit", "~> 4.25.1"
-gem "faraday-retry", "~> 2.2.1"
-gem "rubyzip", "~> 2.3.2"
+gem 'chunky_png', '~> 1.4.0'
+gem 'faraday-retry', '~> 2.2.1'
+gem 'netrc', '~> 0.11.0'
+gem 'octokit', '~> 4.25.1'
+gem 'rubyzip', '~> 2.3.2'
 
-gem "ruby-debug-ide", require: false
-gem "solargraph", require: false
+group :test, :development do
+  gem 'rubocop', '~> 1.63'
+end
