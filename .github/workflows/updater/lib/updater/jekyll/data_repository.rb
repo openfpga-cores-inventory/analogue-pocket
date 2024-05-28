@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'yaml'
-
 module Updater
+  # Repository to interact with Jekyll data files
   class DataRepository
     attr_reader :data_path
 
@@ -10,14 +9,14 @@ module Updater
       @data_path = data_path
     end
 
-    def get_data(data)
-      path = File.join(@data_path, "#{data}.yml")
-      YAML.load_file(path)
+    def get_data(name)
+      path = File.join(@data_path, name)
+      File.read(path)
     end
 
-    def write_data(data, content)
-      path = File.join(@data_path, "#{data}.yml")
-      File.write(path, content.to_yaml)
+    def write_data(name, content)
+      path = File.join(@data_path, name)
+      File.write(path, content)
     end
   end
 end

@@ -15,20 +15,19 @@ module Jekyll
 
       data_path = File.join(@site_path, DATA_DIRECTORY)
       @data_repository = DataRepository.new(data_path)
-
       @post_repository = PostRepository.new(@site_path)
     end
 
     def create_post(title, post)
-      post_repository.create_post(title, post)
+      @post_repository.create_post(title, post)
     end
 
-    def get_data(data)
-      data_repository.get_data(data)
+    def get_data(name)
+      @data_repository.get_data(name)
     end
 
-    def write_data(data, content)
-      data_repository.write_data(data, content)
+    def write_data(name, content)
+      @data_repository.write_data(name, content)
     end
   end
 end

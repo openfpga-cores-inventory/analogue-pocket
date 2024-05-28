@@ -3,7 +3,7 @@
 module Jekyll
   # Repository for interacting with Jekyll posts
   class PostRepository
-    POSTS_DIRECOTRY = '_posts'
+    POSTS_DIRECTORY = '_posts'
 
     attr_reader :site_path
 
@@ -14,7 +14,7 @@ module Jekyll
     def create_post(title, post)
       date = post.date.strftime('%Y-%m-%d')
       post_file = "#{date}-#{title}.md"
-      path = File.join(@site_path, post.categories, POSTS_DIRECOTRY, post_file)
+      path = File.join(@site_path, post.categories, POSTS_DIRECTORY, post_file)
       File.open(path, 'w') { |file| file.write(post.to_markdown) }
     end
   end
