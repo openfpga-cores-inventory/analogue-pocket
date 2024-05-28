@@ -3345,13 +3345,13 @@
       platform: github
       name: Analogizer_openfpga-pcengine
       prerelease: false
-      tag_name: 1.6.1
+      tag_name: 1.6.2
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/1.6.1/Analogizer-FPGA.PC.Engine_1.6.1_18-05-24.zip
+    download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/1.6.2/Analogizer-FPGA.PC.Engine_1.6.2_28-05-24.zip
     platform_id: pce
     description: "[Analogizer] PC Engine with RGBS,RGsB,YPbPr,Y/C,SVGA video output"
-    version: 1.6.1
-    date_release: '2024-05-18'
+    version: 1.6.2
+    date_release: '2024-05-28'
     platform:
       category: Console
       name: PC Engine
