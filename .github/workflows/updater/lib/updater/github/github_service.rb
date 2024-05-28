@@ -2,7 +2,6 @@
 
 require 'base64'
 require 'octokit'
-require 'open-uri'
 
 require_relative 'funding'
 
@@ -28,30 +27,24 @@ module GitHub
       nil
     end
 
-    def download_asset(repository, filter, output_path, prerelease: false)
+    def get_asset_url(repository, filter, prerelease: false)
       repo = get_repo(repository)
       release = @client.releases(repo).find { |r| r.prerelease == prerelease }
       assets = @client.release_assets(release.url)
       asset = filter.nil? ? assets.first : assets.find { |asset| asset.name.match?(Regexp.new(filter)) }
-      download_file(asset.browser_download_url, output_path)
+      asset.browser_download_url
     end
 
-    def download_content(repository, path, output_path)
+    def get_content_url(repository, path)
       repo = get_repo(repository)
       content = @client.contents(repo, path: path)
-      download_file(content.download_url, output_path)
+      content.download_url
     end
 
     private
 
     def get_repo(repository)
       Octokit::Repository.new({ owner: repository.owner, name: repository.name })
-    end
-
-    def download_file(url, path)
-      URI.parse(url).open('rb') do |data|
-        File.binwrite(path, data)
-      end
     end
   end
 end
