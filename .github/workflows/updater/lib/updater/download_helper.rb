@@ -9,9 +9,9 @@ module Updater
     def self.download(url, binmode: false)
       uri = URI.parse(url)
 
-      name = File.basename(uri.path, '.*')
+      basename = File.basename(uri.path, '.*')
       extension = File.extname(uri.path)
-      temp_file = Tempfile.new([name, extension], binmode: binmode)
+      temp_file = Tempfile.new([basename, extension], binmode: binmode)
 
       uri.open('rb') do |file|
         temp_file.write(file.read)
