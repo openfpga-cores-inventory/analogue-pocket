@@ -41,6 +41,7 @@ gem 'faraday-retry', '~> 2.2.1'
 gem 'netrc', '~> 0.11.0'
 gem 'octokit', '~> 4.25.1'
 gem 'rubyzip', '~> 2.3.2'
+gem 'thor', '~> 1.3.1'
 
 group :test, :development do
   gem 'rubocop', '~> 1.63'
