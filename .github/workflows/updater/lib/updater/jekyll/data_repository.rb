@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Updater
+module Jekyll
   # Repository to interact with Jekyll data files
   class DataRepository
     attr_reader :data_path
