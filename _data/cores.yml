@@ -869,8 +869,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
     platform_id: jt1942
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jt1942
@@ -900,8 +900,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1943.zip
     platform_id: jt1943
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jt1943
@@ -931,8 +931,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtaliens
@@ -962,8 +962,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbtiger.zip
     platform_id: jtbtiger
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtbtiger
@@ -993,8 +993,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
     platform_id: jtbubl
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtbubl
@@ -1024,8 +1024,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
     platform_id: jtcastle
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcastle
@@ -1055,8 +1055,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcommnd.zip
     platform_id: jtcommnd
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcommnd
@@ -1086,8 +1086,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
     platform_id: jtcomsc
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcomsc
@@ -1117,8 +1117,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcontra
@@ -1148,8 +1148,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcop.zip
     platform_id: jtcop
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcop
@@ -1179,8 +1179,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcps1
@@ -1210,8 +1210,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
     platform_id: jtcps15
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcps15
@@ -1241,8 +1241,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps2.zip
     platform_id: jtcps2
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcps2
@@ -1272,8 +1272,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtdd
@@ -1303,8 +1303,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtdd2
@@ -1334,8 +1334,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtexed.zip
     platform_id: jtexed
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtexed
@@ -1365,8 +1365,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
     platform_id: jtfround
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtfround
@@ -1396,8 +1396,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtgng
@@ -1427,8 +1427,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
     platform_id: jtgunsmk
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtgunsmk
@@ -1458,8 +1458,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkarnov
@@ -1489,8 +1489,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkchamp.zip
     platform_id: jtkchamp
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkchamp
@@ -1520,8 +1520,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkicker
@@ -1551,8 +1551,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
     platform_id: jtkiwi
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkiwi
@@ -1582,8 +1582,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkunio
@@ -1613,8 +1613,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtmikie
@@ -1644,8 +1644,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmx5k.zip
     platform_id: jtmx5k
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtmx5k
@@ -1675,8 +1675,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngp.zip
     platform_id: jtngp
     description: Handheld
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Handheld
       name: jtngp
@@ -1708,8 +1708,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
     platform_id: jtninja
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtninja
@@ -1739,8 +1739,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtoutrun
@@ -1770,8 +1770,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtpang
@@ -1801,8 +1801,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtpinpon
@@ -1832,8 +1832,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrastan.zip
     platform_id: jtrastan
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtrastan
@@ -1863,8 +1863,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtroadf
@@ -1894,8 +1894,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtroc
@@ -1925,8 +1925,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16.zip
     platform_id: jts16
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jts16
@@ -1956,8 +1956,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jts16b
@@ -1987,8 +1987,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts18.zip
     platform_id: jts18
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jts18
@@ -2018,8 +2018,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
     platform_id: jtsarms
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsarms
@@ -2049,8 +2049,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsbaskt
@@ -2080,8 +2080,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
     platform_id: jtsectnz
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsectnz
@@ -2111,8 +2111,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
     platform_id: jtsf
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsf
@@ -2142,8 +2142,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshanon.zip
     platform_id: jtshanon
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtshanon
@@ -2173,8 +2173,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
     platform_id: jtshouse
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtshouse
@@ -2204,8 +2204,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsimson
@@ -2235,8 +2235,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
     platform_id: jttmnt
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttmnt
@@ -2266,8 +2266,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttoki.zip
     platform_id: jttoki
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttoki
@@ -2297,8 +2297,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttora.zip
     platform_id: jttora
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttora
@@ -2328,8 +2328,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttrack
@@ -2359,8 +2359,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
     platform_id: jttrojan
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttrojan
@@ -2390,8 +2390,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtvigil
@@ -2421,8 +2421,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
     description: Arcade
-    version: 22e0205
-    date_release: '2024-05-24'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtyiear
