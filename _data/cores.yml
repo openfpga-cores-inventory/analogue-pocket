@@ -952,6 +952,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtbiocom
+    display_name: Bionic Commando
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbiocom.zip
+    platform_id: jtbiocom
+    description: Arcade
+    version: 261a0ce
+    date_release: '2024-05-31'
+    platform:
+      category: Arcade
+      name: jtbiocom
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtbiocom
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtbiocom
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtbtiger
     display_name: Black Tiger
     repository:
