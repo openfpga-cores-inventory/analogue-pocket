@@ -403,13 +403,13 @@
       platform: github
       name: openfpga-GBC
       prerelease: false
-      tag_name: v1.2.0
+      tag_name: v1.2.1
     requires_license: false
-    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.0/openfpga-gb-1.2.0.zip
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.1/openfpga-gb-1.2.1.zip
     platform_id: gb
     description: Game Boy
-    version: 1.2.0
-    date_release: '2024-03-27'
+    version: 1.2.1
+    date_release: '2024-05-27'
     platform:
       category: Handheld
       name: Game Boy
@@ -436,13 +436,13 @@
       platform: github
       name: openfpga-GBC
       prerelease: false
-      tag_name: v1.2.0
+      tag_name: v1.2.1
     requires_license: false
-    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.0/openfpga-gbc-1.2.0.zip
+    download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.1/openfpga-gbc-1.2.1.zip
     platform_id: gbc
     description: Game Boy Color
-    version: 1.2.0
-    date_release: '2024-03-27'
+    version: 1.2.1
+    date_release: '2024-05-27'
     platform:
       category: Handheld
       name: Game Boy Color
@@ -468,11 +468,11 @@
       name: Distribution-OpenFPGA
       prerelease: false
     requires_license: false
-    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.pipibibs_20231123.zip
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.pipibibs_20240518.zip
     platform_id: pipibibs
     description: Whoopee!
-    version: 1.0.0
-    date_release: '2023-11-23'
+    version: 1.0.1
+    date_release: '2024-05-18'
     platform:
       category: Arcade
       name: Whoopee!
@@ -486,6 +486,31 @@
     - platform: pipibibs
       extensions:
       - rom
+  - id: atrac17.tekipaki
+    display_name: Teki Paki
+    repository:
+      platform: github
+      name: Distribution-OpenFPGA
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.tekipaki_20240518.zip
+    platform_id: tekipaki
+    description: Teki Paki
+    version: 1.0.1
+    date_release: '2024-05-18'
+    platform:
+      category: Arcade
+      name: Teki Paki
+      manufacturer: Toaplan Ltd.
+      year: 1991
+    assets:
+    - platform: tekipaki
+      extensions:
+      - json
+      core_specific: true
+    - platform: tekipaki
+      extensions:
+      - rom
   - id: atrac17.truxton2
     display_name: Truxton 2
     repository:
@@ -493,11 +518,11 @@
       name: Distribution-OpenFPGA
       prerelease: false
     requires_license: false
-    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.truxton2_20231123.zip
+    download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.truxton2_20240518.zip
     platform_id: truxton2
     description: Truxton II
-    version: 1.0.1
-    date_release: '2023-11-23'
+    version: 1.0.2
+    date_release: '2024-05-18'
     platform:
       category: Arcade
       name: Truxton 2
@@ -844,8 +869,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1942.zip
     platform_id: jt1942
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jt1942
@@ -875,8 +900,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jt1943.zip
     platform_id: jt1943
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jt1943
@@ -906,8 +931,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtaliens.zip
     platform_id: jtaliens
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtaliens
@@ -927,6 +952,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtbiocom
+    display_name: Bionic Commando
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbiocom.zip
+    platform_id: jtbiocom
+    description: Arcade
+    version: 261a0ce
+    date_release: '2024-05-31'
+    platform:
+      category: Arcade
+      name: jtbiocom
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtbiocom
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtbiocom
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtbtiger
     display_name: Black Tiger
     repository:
@@ -937,8 +993,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbtiger.zip
     platform_id: jtbtiger
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtbtiger
@@ -968,8 +1024,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtbubl.zip
     platform_id: jtbubl
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtbubl
@@ -999,8 +1055,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcastle.zip
     platform_id: jtcastle
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcastle
@@ -1026,12 +1082,12 @@
       platform: github
       name: jtbin
       prerelease: false
-    requires_license: true
+    requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcommnd.zip
     platform_id: jtcommnd
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcommnd
@@ -1061,8 +1117,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcomsc.zip
     platform_id: jtcomsc
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcomsc
@@ -1092,8 +1148,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcontra.zip
     platform_id: jtcontra
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcontra
@@ -1123,8 +1179,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcop.zip
     platform_id: jtcop
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcop
@@ -1154,8 +1210,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps1.zip
     platform_id: jtcps1
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcps1
@@ -1185,8 +1241,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps15.zip
     platform_id: jtcps15
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcps15
@@ -1216,8 +1272,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcps2.zip
     platform_id: jtcps2
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtcps2
@@ -1247,8 +1303,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd.zip
     platform_id: jtdd
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtdd
@@ -1278,8 +1334,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtdd2.zip
     platform_id: jtdd2
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtdd2
@@ -1309,8 +1365,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtexed.zip
     platform_id: jtexed
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtexed
@@ -1340,8 +1396,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
     platform_id: jtfround
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtfround
@@ -1371,8 +1427,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgng.zip
     platform_id: jtgng
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtgng
@@ -1402,8 +1458,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtgunsmk.zip
     platform_id: jtgunsmk
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtgunsmk
@@ -1433,8 +1489,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkarnov.zip
     platform_id: jtkarnov
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkarnov
@@ -1460,12 +1516,12 @@
       platform: github
       name: jtbin
       prerelease: false
-    requires_license: true
+    requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkchamp.zip
     platform_id: jtkchamp
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkchamp
@@ -1495,8 +1551,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkicker.zip
     platform_id: jtkicker
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkicker
@@ -1526,8 +1582,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkiwi.zip
     platform_id: jtkiwi
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkiwi
@@ -1557,8 +1613,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtkunio.zip
     platform_id: jtkunio
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtkunio
@@ -1588,8 +1644,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmikie.zip
     platform_id: jtmikie
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtmikie
@@ -1619,8 +1675,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtmx5k.zip
     platform_id: jtmx5k
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtmx5k
@@ -1650,8 +1706,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngp.zip
     platform_id: jtngp
     description: Handheld
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Handheld
       name: jtngp
@@ -1683,8 +1739,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtninja.zip
     platform_id: jtninja
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtninja
@@ -1714,8 +1770,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtoutrun.zip
     platform_id: jtoutrun
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtoutrun
@@ -1745,8 +1801,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpang.zip
     platform_id: jtpang
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtpang
@@ -1776,8 +1832,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtpinpon.zip
     platform_id: jtpinpon
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtpinpon
@@ -1807,8 +1863,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrastan.zip
     platform_id: jtrastan
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtrastan
@@ -1838,8 +1894,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroadf.zip
     platform_id: jtroadf
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtroadf
@@ -1869,8 +1925,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtroc.zip
     platform_id: jtroc
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtroc
@@ -1900,8 +1956,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16.zip
     platform_id: jts16
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jts16
@@ -1931,8 +1987,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts16b.zip
     platform_id: jts16b
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jts16b
@@ -1952,6 +2008,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jts18
+    display_name: System 18
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jts18.zip
+    platform_id: jts18
+    description: Arcade
+    version: 261a0ce
+    date_release: '2024-05-31'
+    platform:
+      category: Arcade
+      name: jts18
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jts18
+      extensions:
+      - json
+      core_specific: true
+    - platform: jts18
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtsarms
     display_name: Side Arms
     repository:
@@ -1962,8 +2049,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsarms.zip
     platform_id: jtsarms
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsarms
@@ -1993,8 +2080,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsbaskt.zip
     platform_id: jtsbaskt
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsbaskt
@@ -2024,8 +2111,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsectnz.zip
     platform_id: jtsectnz
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsectnz
@@ -2055,8 +2142,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsf.zip
     platform_id: jtsf
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsf
@@ -2086,8 +2173,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshanon.zip
     platform_id: jtshanon
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtshanon
@@ -2117,8 +2204,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtshouse.zip
     platform_id: jtshouse
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtshouse
@@ -2144,12 +2231,12 @@
       platform: github
       name: jtbin
       prerelease: false
-    requires_license: true
+    requires_license: false
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtsimson.zip
     platform_id: jtsimson
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtsimson
@@ -2179,8 +2266,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttmnt.zip
     platform_id: jttmnt
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttmnt
@@ -2200,6 +2287,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jttoki
+    display_name: Toki
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: false
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttoki.zip
+    platform_id: jttoki
+    description: Arcade
+    version: 261a0ce
+    date_release: '2024-05-31'
+    platform:
+      category: Arcade
+      name: jttoki
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jttoki
+      extensions:
+      - json
+      core_specific: true
+    - platform: jttoki
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jttora
     display_name: Tiger Road
     repository:
@@ -2210,8 +2328,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttora.zip
     platform_id: jttora
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttora
@@ -2241,8 +2359,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrack.zip
     platform_id: jttrack
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttrack
@@ -2272,8 +2390,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jttrojan.zip
     platform_id: jttrojan
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jttrojan
@@ -2303,8 +2421,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtvigil.zip
     platform_id: jtvigil
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtvigil
@@ -2334,8 +2452,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
     description: Arcade
-    version: 42fe4c7
-    date_release: '2024-04-20'
+    version: 261a0ce
+    date_release: '2024-05-31'
     platform:
       category: Arcade
       name: jtyiear
@@ -2363,13 +2481,13 @@
       platform: github
       name: myc64-pocket
       prerelease: false
-      tag_name: v0.1.2
+      tag_name: v0.2.1
     requires_license: false
-    download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.2/MyC64-Pocket.zip
+    download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.1/MyC64-Pocket.zip
     platform_id: c64
     description: My experimental Commodore 64 emulator
-    version: 0.1.2
-    date_release: '2024-04-20'
+    version: 0.2.1
+    date_release: '2024-05-19'
     platform:
       category: Computer
       name: C64
@@ -2386,6 +2504,14 @@
       - bin
     - platform: c64
       filename: kernal.bin
+      extensions:
+      - bin
+    - platform: c64
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - platform: c64
+      filename: 1541-e000.bin
       extensions:
       - bin
 - username: Mazamars312
@@ -2764,13 +2890,13 @@
       platform: github
       name: openFPGA-Vectrex
       prerelease: false
-      tag_name: v0.9.1
+      tag_name: v0.9.4
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.1/openFPGA-Vectrex.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.4/openFPGA-Vectrex.zip
     platform_id: vectrex
     description: GCE Vectrex
-    version: 0.9.1
-    date_release: '2024-02-27'
+    version: 0.9.4
+    date_release: '2024-04-28'
     platform:
       category: Console
       name: Vectrex
@@ -2780,12 +2906,11 @@
     - platform: vectrex
       core_specific: true
     - platform: vectrex
+      filename: vectrex.bin
+    - platform: vectrex
       extensions:
       - vec
       - bin
-    - platform: vectrex
-      extensions:
-      - ovr
 - username: opengateware
   cores:
   - id: boogermann.bankpanic
@@ -3053,13 +3178,13 @@
       platform: github
       name: arcade-irem_m92
       prerelease: false
-      tag_name: 0.1.1
+      tag_name: 0.1.2
     requires_license: false
-    download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/0.1.1/opengateware.irem_m92_0.1.1_20240423-pocket.zip
+    download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/0.1.2/opengateware.irem_m92_0.1.2_20240504-pocket.zip
     platform_id: irem_m92
     description: Irem M-92 Arcade Compatible Gateware IP Core
-    version: 0.1.1
-    date_release: '2024-04-23'
+    version: 0.1.2
+    date_release: '2024-05-04'
     platform:
       category: Arcade Multi
       name: Irem M92
@@ -3083,13 +3208,13 @@
       platform: github
       name: Analogizer_Mazamars312_Neogeo_0.8.1
       prerelease: false
-      tag_name: analogizer-neogeo-0.8.1-pocket
+      tag_name: '1.1'
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/analogizer-neogeo-0.8.1-pocket/analogizer-neogeo-0.8.1-pocket.zip
+    download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1/Analogizer_NeoGeo_Core_Pocket_1.1.zip
     platform_id: ng
     description: "[ANALOGIZER] Neogeo cart based core"
-    version: 0.8.1
-    date_release: '2024-03-24'
+    version: '1.1'
+    date_release: '2024-05-31'
     platform:
       category: Console
       name: Neo Geo
@@ -3134,6 +3259,39 @@
       extensions:
       - vbin
       - vroma0
+  - id: Mazamars312.PC Engine CD_Analogizer
+    display_name: PC Engine CD (Analogizer)
+    repository:
+      platform: github
+      name: openfpga-pcengine-cd_Analogizer
+      prerelease: false
+      tag_name: 1.0.1
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/openfpga-pcengine-cd_Analogizer/releases/download/1.0.1/Analogizer_PCE_CD_1.0.1.zip
+    platform_id: pcecd
+    description: "[Analogizer] PC Engine CD with Analogizer support"
+    version: 1.0.1
+    date_release: '2024-05-30'
+    platform:
+      category: Console
+      name: PC Engine CD
+      manufacturer: NEC Home Electronics
+      year: 1988
+    assets:
+    - platform: pcecd
+      extensions:
+      - json
+      core_specific: true
+    - platform: pcecd
+      filename: bios_3_0_usa.pce
+      extensions:
+      - pce
+      core_specific: true
+    - platform: pcecd
+      filename: mpu.bin
+      extensions:
+      - bin
+      core_specific: true
   - id: RndMnkIII.alphamission
     display_name: ASO/Alpha Mission
     repository:
@@ -3166,9 +3324,9 @@
       platform: github
       name: Analogizer-Pocket-Alpha-Mission
       prerelease: false
-      tag_name: '1.0'
+      tag_name: '1.1'
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.0/PocketAlphaMission_Analogizer_build.zip
+    download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.1/analogizer-alphamission-pocket-v1.1.zip
     platform_id: alphamission
     description: "[ANALOGIZER] SNK Alpha Mission gateware IP Core"
     version: '1.1'
@@ -3212,20 +3370,46 @@
     sponsor:
       github:
       - https://github.com/sponsors/agg23
+  - id: agg23.PC Engine_Analogizer
+    display_name: PC Engine for Analogue Pocket (Analogizer)
+    repository:
+      platform: github
+      name: Analogizer_openfpga-pcengine
+      prerelease: false
+      tag_name: 1.6.2
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/1.6.2/Analogizer-FPGA.PC.Engine_1.6.2_28-05-24.zip
+    platform_id: pce
+    description: "[Analogizer] PC Engine with RGBS,RGsB,YPbPr,Y/C,SVGA video output"
+    version: 1.6.2
+    date_release: '2024-05-28'
+    platform:
+      category: Console
+      name: PC Engine
+      manufacturer: NEC Home Electronics
+      year: 1987
+    assets:
+    - platform: pce
+      extensions:
+      - pce
+      - sgx
+    sponsor:
+      github:
+      - https://github.com/sponsors/agg23
   - id: agg23.SNES_Analogizer
     display_name: SNES for Analogue Pocket (Analogizer)
     repository:
       platform: github
       name: openfpga-SNES-Analogizer
       prerelease: false
-      tag_name: 1.0_analogizer_SNES
+      tag_name: 1.0.1
     requires_license: false
-    download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0_analogizer_SNES/Analogizer_agg23.SNES_0.4.zip
+    download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0.1/Analogizer_agg23.SNES_1.0.1_21-05-24.zip
     platform_id: snes
-    description: ANALOGIZER Super Nintendo and Super Famicom. Nintendo's second major
-      home console
-    version: 0.4.3
-    date_release: '2024-03-30'
+    description: ANALOGIZER Super Nintendo and Super Famicom. RGBS, RGsB, YPbPr, Y/C,
+      CVBS and SVGA
+    version: 1.0.1
+    date_release: '2024-05-21'
     platform:
       category: Console
       name: SNES
@@ -3241,8 +3425,60 @@
       github:
       - https://github.com/sponsors/agg23
       patreon: https://www.patreon.com/srg320
+  - id: opengateware.irem_m92_Analogizer
+    display_name: Irem M92 (Analogizer)
+    repository:
+      platform: github
+      name: arcade-irem_m92_Analogizer
+      prerelease: false
+      tag_name: 1.0.1
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0.1/arcade-irem_m92_Analogizer_1.0.1.zip
+    platform_id: irem_m92
+    description: "[Analogizer] Irem M-92 Arcade Compatible Gateware IP Core"
+    version: 1.0.1
+    date_release: '2024-05-30'
+    platform:
+      category: Arcade Multi
+      name: Irem M92
+      manufacturer: Irem
+      year: 1991
+    assets:
+    - platform: irem_m92
+      extensions:
+      - json
+      core_specific: true
+    - platform: irem_m92
+      extensions:
+      - rom
+    sponsor:
+      ko_fi: https://ko-fi.com/boogermann
 - username: rolandking
   cores:
+  - id: rolandking.Athena
+    display_name: Athena SNK 1986
+    repository:
+      platform: github
+      name: openFPGA-Athena
+      prerelease: false
+      tag_name: v1.1.2
+    requires_license: false
+    download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.2/rolandking-Athena-v1.1.2.zip
+    platform_id: athena
+    description: Athena 1986
+    version: 1.1.2
+    date_release: '2024-04-30'
+    platform:
+      category: Arcade
+      name: Athena
+      manufacturer: SNK
+      year: 1986
+    assets:
+    - platform: athena
+      core_specific: true
+    - platform: athena
+      extensions:
+      - rom
   - id: rolandking.Jailbreak
     display_name: Jailbreak Konami 1986
     repository:

@@ -57,12 +57,15 @@
     - display_name: Snow Bros. 2
       repository: Distribution-OpenFPGA
       path: Releases/pram0d.snowbros2_20221019.zip
+    - display_name: Teki Paki
+      repository: Distribution-OpenFPGA
+      path: Releases/atrac17.tekipaki_20240518.zip
     - display_name: Truxton 2
       repository: Distribution-OpenFPGA
-      path: Releases/atrac17.truxton2_20231123.zip
+      path: Releases/atrac17.truxton2_20240518.zip
     - display_name: Whoopee!!
       repository: Distribution-OpenFPGA
-      path: Releases/atrac17.pipibibs_20231123.zip
+      path: Releases/atrac17.pipibibs_20240518.zip
 - username: ericlewis
   cores:
     - display_name: Asteroids for Analogue Pocket
@@ -235,6 +238,15 @@
     - display_name: Commando
       repository: jtbin
       path: pocket/zips/jotego.jtcommnd.zip
+    - display_name: Toki
+      repository: jtbin
+      path: pocket/zips/jotego.jttoki.zip
+    - display_name: System 18
+      repository: jtbin
+      path: pocket/zips/jotego.jts18.zip
+    - display_name: Bionic Commando
+      repository: jtbin
+      path: pocket/zips/jotego.jtbiocom.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
@@ -309,10 +321,19 @@
       repository: openfpga-NES-Analogizer
     - display_name: SNES for Analogue Pocket (Analogizer)
       repository: openfpga-SNES-Analogizer
+    - display_name: PC Engine for Analogue Pocket (Analogizer)
+      repository: Analogizer_openfpga-pcengine
+    - display_name: PC Engine CD (Analogizer)
+      repository: openfpga-pcengine-cd_Analogizer
+    - display_name: Irem M92 (Analogizer)
+      repository: arcade-irem_m92_Analogizer
 - username: rolandking
   cores:
     - display_name: Jailbreak Konami 1986
       repository: openFPGA-jailbreak
+    - cores: null
+      display_name: Athena SNK 1986
+      repository: openFPGA-Athena
 - username: somhi
   cores:
     - display_name: Flappy Bird
