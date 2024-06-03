@@ -34,7 +34,7 @@
       github:
       - https://github.com/sponsors/agg23
   - id: agg23.GameAndWatch
-    display_name: Game and Watch
+    display_name: Game & Watch
     repository:
       platform: github
       name: fpga-gameandwatch
