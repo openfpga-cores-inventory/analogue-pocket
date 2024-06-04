@@ -3431,13 +3431,13 @@
       platform: github
       name: arcade-irem_m92_Analogizer
       prerelease: false
-      tag_name: 1.0.1
+      tag_name: 1.0.2
     requires_license: false
-    download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0.1/arcade-irem_m92_Analogizer_1.0.1.zip
+    download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0.2/arcade-irem_m92_Analogizer_1.0.2.zip
     platform_id: irem_m92
     description: "[Analogizer] Irem M-92 Arcade Compatible Gateware IP Core"
-    version: 1.0.1
-    date_release: '2024-05-30'
+    version: 1.0.2
+    date_release: '2024-06-04'
     platform:
       category: Arcade Multi
       name: Irem M92
