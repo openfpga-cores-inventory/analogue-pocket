@@ -285,6 +285,8 @@
       repository: openFPGA-Gaplus
     - display_name: Joust 2
       repository: openFPGA-Joust2
+    - display_name: Gauntlet
+      repository: openFPGA-Gauntlet
 - username: opengateware
   cores:
     - display_name: Bank Panic
