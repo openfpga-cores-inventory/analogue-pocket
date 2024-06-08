@@ -2811,6 +2811,32 @@
     - platform: gaplus
       extensions:
       - rom
+  - id: obsidian.Gauntlet
+    display_name: Gauntlet
+    repository:
+      platform: github
+      name: openFPGA-Gauntlet
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Gauntlet/releases/download/v0.9.0/openFPGA-Gauntlet.zip
+    platform_id: gauntlet
+    description: Atari's Gauntlet
+    version: 0.9.0
+    date_release: '2024-06-08'
+    platform:
+      category: Arcade
+      name: Gauntlet
+      manufacturer: Atari Games
+      year: 1984
+    assets:
+    - platform: gauntlet
+      extensions:
+      - json
+      core_specific: true
+    - platform: gauntlet
+      extensions:
+      - rom
   - id: obsidian.Joust2
     display_name: Joust 2
     repository:
