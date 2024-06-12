@@ -3451,6 +3451,32 @@
       github:
       - https://github.com/sponsors/agg23
       patreon: https://www.patreon.com/srg320
+  - id: obsidian.Gauntlet_Analogizer
+    display_name: Gauntlet (Analogizer)
+    repository:
+      platform: github
+      name: Analogizer_openFPGA-Gauntlet
+      prerelease: false
+      tag_name: 1.0.0
+    requires_license: false
+    download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Gauntlet/releases/download/1.0.0/Analogizer_openFPGA-Gauntlet_1.0.0.zip
+    platform_id: gauntlet
+    description: "[Analogizer] Atari's Gauntlet"
+    version: 1.0.0
+    date_release: '2024-06-12'
+    platform:
+      category: Arcade
+      name: Gauntlet
+      manufacturer: Atari Games
+      year: 1984
+    assets:
+    - platform: gauntlet
+      extensions:
+      - json
+      core_specific: true
+    - platform: gauntlet
+      extensions:
+      - rom
   - id: opengateware.irem_m92_Analogizer
     display_name: Irem M92 (Analogizer)
     repository:
