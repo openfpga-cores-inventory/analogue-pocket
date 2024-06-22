@@ -334,8 +334,6 @@
       repository: arcade-irem_m92_Analogizer
     - display_name: Gauntlet (Analogizer)
       repository: Analogizer_openFPGA-Gauntlet
-    - display_name: Gauntlet (Analogizer)
-      repository: Analogizer_openFPGA-Gauntlet    
     - display_name: Genesis for Analogue Pocket (Analogizer)
       repository: Analogizer_openFPGA-Genesis
 - username: rolandking
