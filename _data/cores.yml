@@ -2941,6 +2941,32 @@
     - platform: robotron
       extensions:
       - rom
+  - id: obsidian.System1
+    display_name: Atari System 1
+    repository:
+      platform: github
+      name: openFPGA-AtariSystem1
+      prerelease: false
+      tag_name: v0.9.0
+    requires_license: false
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-AtariSystem1/releases/download/v0.9.0/openFPGA-AtariSystem1.zip
+    platform_id: system1
+    description: Atari System 1
+    version: 0.9.0
+    date_release: '2024-06-30'
+    platform:
+      category: Arcade
+      name: System1
+      manufacturer: Atari Games
+      year: 1984
+    assets:
+    - platform: system1
+      extensions:
+      - json
+      core_specific: true
+    - platform: system1
+      extensions:
+      - rom
   - id: obsidian.Vectrex
     display_name: Vectrex
     repository:
