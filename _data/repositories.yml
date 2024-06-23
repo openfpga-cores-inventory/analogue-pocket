@@ -290,6 +290,8 @@
       repository: openFPGA-Joust2
     - display_name: Gauntlet
       repository: openFPGA-Gauntlet
+    - display_name: Atari System 1
+      repository: openFPGA-AtariSystem1
 - username: opengateware
   cores:
     - display_name: Bank Panic
