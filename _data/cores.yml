@@ -3514,13 +3514,13 @@
       platform: github
       name: Analogizer_openFPGA-Genesis
       prerelease: false
-      tag_name: 1.0.0
+      tag_name: 1.0.1
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.0/Analogizer_Genesis_Core_Pocket_1.0.0.zip
+    download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.1/Analogizer_Genesis_Core_Pocket_1.0.1.zip
     platform_id: genesis
     description: "[Analogizer] Sega Genesis Core"
-    version: 1.0.0
-    date_release: '2024-06-22'
+    version: 1.0.1
+    date_release: '2024-06-24'
     platform:
       category: Console
       name: Genesis
