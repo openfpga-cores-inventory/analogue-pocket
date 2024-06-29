@@ -247,9 +247,9 @@
     - display_name: Bionic Commando
       repository: jtbin
       path: pocket/zips/jotego.jtbiocom.zip
-#    - display_name: Sly Spy
-#      repository: jtbin
-#      path: pocket/zips/jotego.jtslyspy.zip
+    - display_name: Sly Spy
+      repository: jtbin
+      path: pocket/zips/jotego.jtslyspy.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
