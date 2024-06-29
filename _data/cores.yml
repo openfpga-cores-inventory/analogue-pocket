@@ -2451,8 +2451,8 @@
     download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtyiear.zip
     platform_id: jtyiear
     description: Arcade
-    version: e8ad973
-    date_release: '2024-06-28'
+    version: 1134ba60
+    date_release: '2024-06-29'
     platform:
       category: Arcade
       name: jtyiear
