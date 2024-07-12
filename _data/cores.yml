@@ -1386,6 +1386,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtflane
+    display_name: Fast Lane
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtflane.zip
+    platform_id: jtflane
+    description: Arcade
+    version: '8533440'
+    date_release: '2024-07-12'
+    platform:
+      category: Arcade
+      name: jtflane
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtflane
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtflane
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtfround
     display_name: The Final Round
     repository:
