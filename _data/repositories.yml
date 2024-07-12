@@ -250,6 +250,9 @@
     - display_name: Sly Spy
       repository: jtbin
       path: pocket/zips/jotego.jtslyspy.zip
+    - display_name: Fast Lane
+      repository: jtbin
+      path: pocket/zips/jotego.jtflane.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
