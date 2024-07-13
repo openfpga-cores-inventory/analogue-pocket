@@ -3463,14 +3463,14 @@
       platform: github
       name: openfpga-NES-Analogizer
       prerelease: false
-      tag_name: 1.0_analogizer
+      tag_name: 1.0.1
     requires_license: false
-    download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0_analogizer/agg23.NES_1.0.0_Analogizer.zip
+    download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.1/Analogizer_agg23.NES_1.0.1_13-07-24.zip
     platform_id: nes
     description: ANALOGIZER Nintendo Entertainment System and Famicom. Nintendo's
       first home console
-    version: 1.0.0
-    date_release: '2023-09-26'
+    version: 1.0.1
+    date_release: '2023-07-13'
     platform:
       category: Console
       name: NES
