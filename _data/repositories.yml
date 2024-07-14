@@ -190,7 +190,7 @@
     - display_name: The Simpsons
       repository: jtbin
       path: pocket/zips/jotego.jtsimson.zip
-    - display_name: System 16B
+    - display_name: SEGA System 16B
       repository: jtbin
       path: pocket/zips/jotego.jts16b.zip
     - display_name: The Final Round
