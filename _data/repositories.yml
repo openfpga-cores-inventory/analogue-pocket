@@ -253,6 +253,9 @@
     - display_name: Fast Lane
       repository: jtbin
       path: pocket/zips/jotego.jtflane.zip
+    - display_name: System 18
+      repository: jtbin
+      path: pocket/zips/jotego.jts18.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
