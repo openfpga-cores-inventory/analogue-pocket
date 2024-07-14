@@ -2008,7 +2008,7 @@
       custom:
       - https://www.paypal.me/topapate
   - id: jotego.jts16b
-    display_name: System 16B
+    display_name: SEGA System 16B
     repository:
       platform: github
       name: jtbin
@@ -2039,7 +2039,7 @@
       custom:
       - https://www.paypal.me/topapate
   - id: jotego.jts18
-    display_name: System 18
+    display_name: SEGA System 18
     repository:
       platform: github
       name: jtbin
