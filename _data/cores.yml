@@ -3321,13 +3321,13 @@
       platform: github
       name: Analogizer_Mazamars312_Neogeo_0.8.1
       prerelease: false
-      tag_name: '1.1'
+      tag_name: 1.1.1
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1/Analogizer_NeoGeo_Core_Pocket_1.1.zip
+    download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1.1/Analogizer_NeoGeo_Core_Pocket_1.1.1.zip
     platform_id: ng
     description: "[ANALOGIZER] Neogeo cart based core"
-    version: '1.1'
-    date_release: '2024-05-31'
+    version: 1.1.1
+    date_release: '2024-07-18'
     platform:
       category: Console
       name: Neo Geo
