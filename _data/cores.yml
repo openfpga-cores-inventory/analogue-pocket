@@ -3569,13 +3569,13 @@
       platform: github
       name: Analogizer_openFPGA-Gauntlet
       prerelease: false
-      tag_name: 1.0.1
+      tag_name: 1.0.2
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Gauntlet/releases/download/1.0.1/Analogizer_openFPGA-Gauntlet_1.0.1.zip
+    download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Gauntlet/releases/download/1.0.2/Analogizer_openFPGA-Gauntlet_1.0.2.zip
     platform_id: gauntlet
     description: "[Analogizer] Atari's Gauntlet"
-    version: 1.0.1
-    date_release: '2024-06-13'
+    version: 1.0.2
+    date_release: '2024-07-19'
     platform:
       category: Arcade
       name: Gauntlet
