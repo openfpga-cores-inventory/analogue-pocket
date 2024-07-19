@@ -3595,13 +3595,13 @@
       platform: github
       name: Analogizer-openFPGA-AtariSystem1
       prerelease: false
-      tag_name: 1.0.0
+      tag_name: 1.0.1
     requires_license: false
-    download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.0/Analogizer-openFPGA-AtariSystem1_v1.0.0.zip
+    download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.1/Analogizer-openFPGA-AtariSystem1_v1.0.1.zip
     platform_id: system1
     description: Atari System 1
-    version: 1.0.0
-    date_release: '2024-07-12'
+    version: 1.0.1
+    date_release: '2024-07-19'
     platform:
       category: Arcade
       name: System1
