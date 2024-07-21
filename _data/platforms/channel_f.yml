@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Channel F
+manufacturer: Fairchild Camera and Instrument
+year: 1976

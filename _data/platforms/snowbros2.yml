@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Snow Bros. 2
+manufacturer: pram0d
+year: 2022

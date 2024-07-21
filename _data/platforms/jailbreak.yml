@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Jailbreak
+manufacturer: Konami
+year: 1986

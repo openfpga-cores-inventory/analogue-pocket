@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: jtsbaskt
+manufacturer: JT FPGA
+year: 2024

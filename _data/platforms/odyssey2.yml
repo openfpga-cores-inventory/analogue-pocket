@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Odyssey 2
+manufacturer: Magnavox, Philips
+year: 1978

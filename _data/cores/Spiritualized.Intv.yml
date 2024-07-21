@@ -1,0 +1,52 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - intv
+  shortname: Intv
+  description: Intellivision core
+  author: Spiritualized
+  url: ''
+  version: 1.0.2
+  date_release: '2022-10-26'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - intv
+- !ruby/object:Analogue::Core::DataSlot
+  name: INTV EXEC
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: exec.intv
+  extensions:
+  - intv
+- !ruby/object:Analogue::Core::DataSlot
+  name: Speech ROM
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: 012.BIN
+  extensions:
+  - bin
+info: "Spiritualized Intellivision\r\nEnjoy Intellivision games with this core.  The
+  Intellioice is fully supported.\r\n\r\nAll Intellivision files (games and the EXEC)
+  must be in the .intv format. \r\nSeparate .H and .L files, and other formats are
+  not supported.\r\n\r\nTo use this core, you need to place exec.intv into \r\n\r\n/Assets/intv/Spiritualized.Intv/exec.intv\r\n\r\nFor
+  the Intellivoice, you need to place the 2048 byte 012.BIN file into\r\n\r\n/Assets/intv/Spiritualized.Intv/012.BIN\r\n\r\nSee
+  the readme.txt for more information on button mapping and the .intv format.\r\n\r\nEnjoy!"

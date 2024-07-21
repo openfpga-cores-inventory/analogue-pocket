@@ -1,0 +1,46 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - pdp1
+  shortname: PDP1
+  description: Spacewar! v3.1 1962
+  author: Spacemen3
+  url: https://github.com/spacemen3/PDP-1
+  version: v3.1 - Sep. 24, 1962
+  date_release: '2022-08-19'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: true
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: RIM
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: spacewar3.1.bin
+  extensions:
+- !ruby/object:Analogue::Core::DataSlot
+  name: CLUT
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: Default_LUT.clut
+  extensions:
+  - clut
+info: "In 1962, the first digital video game, Spacewar! debuted on an early computer
+  released in 1959 called the PDP-1 at MIT.\r\n\r\nThe beginning of video games.\r\n\r\nSpacewar!
+  set forth and established the fundamental characteristics and philosophical approaches
+  that would define and serve as the earliest guidelines of what a video game is.\r\n\r\nInspired
+  by science fiction literature and cinema. Driven by creatively pushing technology
+  to its limits.\r\n\r\nA new medium and art form was born.\r\n\r\nSpaceWar! was released
+  on a computer produced in 1959 called the PDP-1. Spacewar! is arguably the first
+  digital video game ever created.\r\n\r\nPDP-1 has been painstakingly recreated with
+  the public domain open source code for openFPGA by Spacemen3. So it can be preserved,
+  studied and played forever without compromises.\r\n"

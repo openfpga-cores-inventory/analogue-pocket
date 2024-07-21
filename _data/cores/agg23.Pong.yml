@@ -1,0 +1,22 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - pong
+  shortname: Pong
+  description: Atari Pong arcade machine. 1972
+  author: agg23
+  url: https://github.com/agg23/analogue-pong/
+  version: 1.2.0
+  date_release: '2022-09-08'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots: []
+info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
+  are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
+  Extended paddles\r\n* Training mode"

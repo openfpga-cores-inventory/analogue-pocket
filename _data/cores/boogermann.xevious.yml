@@ -1,0 +1,47 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - xevious
+  shortname: xevious
+  description: Xevious is a shoot 'em up video game franchise published by Bandai
+    Namco Entertainment
+  author: boogermann
+  url: https://github.com/opengateware/arcade-xevious
+  version: 0.1.0
+  date_release: '2022-09-10'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Arcade Game
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: true
+  filename:
+  extensions:
+  - json
+- !ruby/object:Analogue::Core::DataSlot
+  name: ROM
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - rom
+info: 'Xevious (pronounced ''zeevious'') is a vertically-scrolling shoot-em-up in
+  which the player pilots the heavily-armed ''Solvalou'' combat ship and must destroy
+  the evil Xevious forces trying to take over the planet. The Solvalou is equipped
+  with two weapon systems; the forwards-firing "air zapper" for shooting air-based
+  enemies and ''blaster bombs'', for destroying ground-based enemies. To enable accurate
+  targetting of the air-to-ground blaster bombs, a white and blue targeting indicator
+  is situated in front of the Solvalou. This flashes when an enemy is in its sights.
+
+  '

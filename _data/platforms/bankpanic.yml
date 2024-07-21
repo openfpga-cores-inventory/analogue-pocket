@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Bank Panic
+manufacturer: Sanritsu / Sega
+year: 1984

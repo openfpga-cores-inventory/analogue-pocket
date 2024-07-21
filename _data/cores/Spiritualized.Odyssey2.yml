@@ -1,0 +1,69 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - odyssey2
+  shortname: Odyssey2
+  description: Odyssey^2 core
+  author: Spiritualized
+  url: ''
+  version: 1.0.2
+  date_release: '2022-10-30'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Odyssey 2 BIOS
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: o2bios.bin
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Speech ROM 1
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: '019.BIN'
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Speech ROM 2
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: SP128_03.BIN
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Speech ROM 3
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: SP128_04.BIN
+  extensions:
+  - bin
+info: "Spiritualized Odyssey^2\r\n\r\nEnjoy Odyssey^2 games with this core.  The Voice
+  is fully supported.\r\n\r\nTo use it, you must place the 2048 byte Odyssey^2 BIOS
+  named \"o2bios.bin\" here:\r\n\r\n/assets/odsyessey2/Spiritualized.Odyssey2/o2bios.bin\r\n\r\nIf
+  you wish to use The Voice, the two voice 16384 byte files need to be placed here:\r\n\r\n/assets/odsyessey2/Spiritualized.Odyssey2/SP128_03.BIN\r\n/assets/odsyessey2/Spiritualized.Odyssey2/SP128_04.BIN\r\n\r\nThis
+  core really benefits from a keyboard.  see the readme.txt for more info.\r\n\r\nEnjoy!"

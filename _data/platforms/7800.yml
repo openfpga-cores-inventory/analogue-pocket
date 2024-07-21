@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Atari 7800 ProSystem
+manufacturer: Atari, Inc.
+year: 1986

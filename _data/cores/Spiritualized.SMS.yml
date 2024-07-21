@@ -1,0 +1,39 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - sms
+  shortname: SMS
+  description: SMS Core
+  author: Spiritualized
+  url: ''
+  version: 1.2.0
+  date_release: '2022-08-25'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: true
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sms
+- !ruby/object:Analogue::Core::DataSlot
+  name: Save RAM
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sav
+info: "Spiritualized SMS\r\n\r\nAlmost everything should be supported by this core.
+  \ \r\n\r\nThe BIOSes are not used at the moment but support will be added later.\r\n\r\nEnjoy"

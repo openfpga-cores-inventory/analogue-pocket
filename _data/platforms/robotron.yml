@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Robotron
+manufacturer: Williams Electronics
+year: 1982

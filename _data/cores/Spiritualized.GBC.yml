@@ -1,0 +1,54 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - gbc
+  shortname: GBC
+  description: GBC Core
+  author: Spiritualized
+  url: ''
+  version: 1.3.0
+  date_release: '2022-8-25'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: true
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: true
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - gb
+  - gbc
+- !ruby/object:Analogue::Core::DataSlot
+  name: Save RAM
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sav
+- !ruby/object:Analogue::Core::DataSlot
+  name: BIOS
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: gbc_bios.bin
+  extensions:
+  - bin
+info: "Spiritualized GBC\r\n\r\nAlmost everything should be supported by this core.
+  \ \r\n\r\nBe sure the following files are present before using!\r\n* gbc_bios.bin
+  file in /assets/gbc/common/ \r\n* gbc_bios.bin must be exactly 2304 bytes.\r\n\r\nNote
+  that the link port is fully supported but unless a GB or GBC cartridge is plugged
+  in, it will run at 3.3V.\r\n\r\nRumble is supported if you plug in a DS rumble pak!
+  A menu has been added to adjust rumble strength.\r\n* 0 = off\r\n* 1 = weak\r\n*
+  7 = strong\r\n\r\nEnjoy"

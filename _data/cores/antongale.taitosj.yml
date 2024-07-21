@@ -1,0 +1,50 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - taitosj
+  shortname: taitosj
+  description: Taito System SJ gateware IP Core
+  author: antongale
+  url: https://github.com/antongale/arcade-taitosj
+  version: 0.1.0
+  date_release: '2023-06-30'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Arcade Game
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: true
+  filename:
+  extensions:
+  - json
+- !ruby/object:Analogue::Core::DataSlot
+  name: ROM
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - rom
+info: |-
+  Note: You must provide your own roms to use this core.
+
+  Developer(s)
+      Taito.
+  Release
+      1982
+
+  This Implementation of a compatible Taito System SJ arcade hardware in HDL is the work of Anton Gale
+
+  All trademarks, logos, and copyrights are property of their respective owners.
+
+  The authors and contributors or any of its maintainers are in no way associated with or endorsed by Taito.

@@ -1,0 +1,32 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - arcadia
+  shortname: Arcadia
+  description: Arcadia 2001 core
+  author: Spiritualized
+  url: ''
+  version: 1.0.2
+  date_release: '2022-10-20'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - bin
+info: "Spiritualized Arcadia 2001\r\n\r\nKey chords:\r\n\r\nLtrig + up = 0\r\nLtrig
+  + right = 1\r\nLtrig + down = 2\r\nLtrig + left = 3\r\nRtrig + up = 4\r\nRtrig +
+  right = 5\r\nRtrig + down = 6\r\nRtrig + left = 7\r\nLtrig + Rtrig + up = 8\r\nLtrig
+  + Rtrig + right = 9\r\n\r\nY = *\r\nX = #\r\n\r\n\r\nEnjoy!"

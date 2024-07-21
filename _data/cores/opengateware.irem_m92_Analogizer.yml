@@ -1,0 +1,43 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - irem_m92
+  shortname: irem_m92_Analogizer
+  description: "[Analogizer] Irem M-92 Arcade Compatible Gateware IP Core"
+  author: opengateware
+  url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer
+  version: 1.0.2
+  date_release: '2024-06-04'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Arcade Game
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: true
+  filename:
+  extensions:
+  - json
+- !ruby/object:Analogue::Core::DataSlot
+  name: ROM
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - rom
+info: "Launched by Irem in 1991, the M92 was an advanced arcade system that offered
+  robust graphics and sound capabilities.\r\n\r\nThe M92 system was known for its
+  cutting-edge graphical and sound technologies that enhanced the arcade gaming experience,
+  paving the way for future innovations in the industry. The diverse array of games
+  it supported showcased the hardware's capabilities, making it a popular choice for
+  arcade operators and a fond memory for gamers."

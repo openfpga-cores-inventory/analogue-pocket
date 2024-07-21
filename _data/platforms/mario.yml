@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Mario Bros
+manufacturer: Nintendo
+year: 1983

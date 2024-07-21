@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Whoopee!
+manufacturer: Toaplan Ltd.
+year: 1991

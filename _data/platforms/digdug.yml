@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Dig Dug
+manufacturer: Namco
+year: 1982

@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Lunar Lander
+manufacturer: Atari
+year: 1979

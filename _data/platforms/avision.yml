@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Adventure Vision
+manufacturer: Entex Industries
+year: 1982

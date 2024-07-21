@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: SG-1000
+manufacturer: Sega
+year: 1983

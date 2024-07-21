@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Game Gear
+manufacturer: Sega
+year: 1990

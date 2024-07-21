@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: ColecoVision
+manufacturer: Coleco
+year: 1982

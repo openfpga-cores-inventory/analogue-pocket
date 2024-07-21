@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Tower of Druaga
+manufacturer: Namco
+year: 1984

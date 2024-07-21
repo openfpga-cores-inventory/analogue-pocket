@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Master System
+manufacturer: Sega
+year: 1985

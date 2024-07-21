@@ -1,0 +1,46 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - pce
+  shortname: PC Engine_Analogizer
+  description: "[Analogizer] PC Engine with RGBS,RGsB,YPbPr,Y/C,SVGA video output"
+  author: agg23
+  url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/
+  version: 1.6.2
+  date_release: '2024-05-28'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - pce
+  - sgx
+- !ruby/object:Analogue::Core::DataSlot
+  name: Save
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sav
+info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
+  (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was the
+  first 4th generation console to reach the market. Therefore, even though it came
+  out in the late 80s, it has significantly better graphics than 8-bit systems that
+  were being sold at the time, such as the NES.\r\n\r\nCurrently supports standard
+  PC Engine/TurboGrafx and SuperGrafx ROMs. CD support is coming sometime in the future.
+  Please report all issues to agg23, as most likely any issues experienced are issues
+  with the port, not the core."
