@@ -5,6 +5,7 @@ require 'yaml'
 module GitHub
   # Funding information for a GitHub repository
   class Funding
+    BUY_ME_A_COFFEE = 'buy_me_a_coffee'
     COMMUNITY_BRIDGE = 'community_bridge'
     GITHUB = 'github'
     ISSUEHUNT = 'issuehunt'
@@ -13,9 +14,11 @@ module GitHub
     OPEN_COLLECTIVE = 'open_collective'
     OTECHIE = 'otechie'
     PATREON = 'patreon'
+    POLAR = 'polar'
     TIDELIFT = 'tidelift'
     CUSTOM = 'custom'
 
+    BUY_ME_A_COFFEE_URL = 'https://buymeacoffee.com'
     COMMUNITY_BRIDGE_URL = 'https://crowdfunding.lfx.linuxfoundation.org/projects'
     GITHUB_URL = 'https://github.com/sponsors'
     ISSUEHUNT_URL = 'https://issuehunt.io/r'
@@ -24,16 +27,17 @@ module GitHub
     OPEN_COLLECTIVE_URL = 'https://opencollective.com'
     OTECHIE_URL = 'https://otechie.com'
     PATREON_URL = 'https://www.patreon.com'
+    POLAR_URL = 'https://polar.sh'
     TIDELIFT_URL = 'https://tidelift.com/funding/github'
 
-    attr_accessor :github, :patreon, :open_collective, :ko_fi, :tidelift, :community_bridge, :liberapay, :issuehunt,
-                  :otechie, :custom
+    attr_accessor :buy_me_a_coffee, :community_bridge, :github, :issuehunt, :ko_fi, :liberapay, :open_collective,
+                  :otechie, :patreon, :polar, :tidelift, :custom
 
     def initialize(funding)
-      funding.each do |sponsor, value|
+      funding.each do |platform, value|
         next if value.nil?
 
-        parse_sponsor(sponsor, value)
+        parse_platform(platform, value)
       end
     end
 
@@ -44,8 +48,9 @@ module GitHub
 
     private
 
-    def parse_sponsor(sponsor, value)
-      case sponsor
+    def parse_platform(platform, value)
+      case platform
+      when BUY_ME_A_COFFEE then parse_buy_me_a_coffee(value)
       when COMMUNITY_BRIDGE then parse_community_bridge(value)
       when GITHUB then parse_github(value)
       when ISSUEHUNT then parse_issuehunt(value)
@@ -54,9 +59,14 @@ module GitHub
       when OPEN_COLLECTIVE then parse_open_collective(value)
       when OTECHIE then parse_otechie(value)
       when PATREON then parse_patreon(value)
+      when POLAR then parse_polar(value)
       when TIDELIFT then parse_tidelift(value)
       when CUSTOM then parse_custom(value)
       end
+    end
+
+    def parse_buy_me_a_coffee(username)
+      @buy_me_a_coffee = "#{BUY_ME_A_COFFEE_URL}/#{username}"
     end
 
     def parse_community_bridge(project_name)
@@ -92,12 +102,16 @@ module GitHub
       @patreon = "#{PATREON_URL}/#{username}"
     end
 
+    def parse_polar(username)
+      @polar = "#{POLAR_URL}/#{username}"
+    end
+
     def parse_tidelift(platform_package)
       @tidelift = "#{TIDELIFT_URL}/#{platform_package}"
     end
 
     def parse_custom(urls)
-      @custom = value.is_a?(String) ? [urls] : urls
+      @custom = urls.is_a?(String) ? [urls] : urls
     end
   end
 end

@@ -5,14 +5,13 @@ require_relative 'image_helper'
 require_relative 'platform_repository'
 
 module Analogue
-  # Service to interact with OpenFPGA structured data
+  # Service to interact with openFPGA structured data
   class OpenFPGAService
     CORES_DIRECTORY = 'Cores'
     PLATFORMS_DIRECTORY = 'Platforms'
     IMAGES_DIRECTORY = '_images'
 
     ICON_FILE = 'icon.bin'
-    INFO_FILE = 'info.txt'
 
     ICON_WIDTH = 36
     ICON_HEIGHT = 36
@@ -36,21 +35,17 @@ module Analogue
       @core_repository.get_cores
     end
 
-    def get_core(core_id)
-      @core_repository.get_core(core_id)
-    end
-
     def get_platform(platform_id)
       @platform_repository.get_platform(platform_id)
     end
 
     def export_icon(core_id, output_path)
-      icon_path = File.join(@root_path, CORES_DIRECTORY, core_id, ICON_FILE)
+      icon_path = File.join(@openfpga_path, CORES_DIRECTORY, core_id, ICON_FILE)
       ImageHelper.export(icon_path, ICON_WIDTH, ICON_HEIGHT, output_path)
     end
 
     def export_image(platform_id, output_path)
-      image_path = File.join(@root_path, PLATFORMS_DIRECTORY, IMAGES_DIRECTORY, "#{platform_id}.bin")
+      image_path = File.join(@openfpga_path, PLATFORMS_DIRECTORY, IMAGES_DIRECTORY, "#{platform_id}.bin")
       ImageHelper.export(image_path, IMAGE_WIDTH, IMAGE_HEIGHT, output_path)
     end
   end

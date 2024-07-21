@@ -6,17 +6,23 @@ module Analogue
   # Helper class to export binary data to images
   class ImageHelper
     def self.export(binary_path, width, height, output_path, invert: true)
-      bytes = File.open(binary_path, 'rb', &:read).bytes.to_a
-      image = ChunkyPNG::Image.new(width, height)
+      # Read the brightness values from the binary file
+      bytes = File.binread(binary_path)
 
-      (0..width - 1).each do |x|
-        (0..height - 1).each do |y|
-          index = ((x * height) + y) * 2
-          value = bytes[index]
-          brightness = invert ? 255 - value : value
-          image[width - 1 - x, y] = ChunkyPNG::Color.rgb(brightness, brightness, brightness)
-        end
-      end
+      # Unpack the bytes into their brightness values
+      brightness = bytes.unpack('s*')
+
+      # Convert the brightness values to their RGB representation
+      rgb_brightness = brightness.flat_map { |value| [invert ? 255 - value : value] * 3 }
+
+      # Pack the RGB values into a byte stream
+      bytes = rgb_brightness.pack('C*')
+
+      # Create a new image with the specified width and height
+      rotated_image = ChunkyPNG::Image.from_rgb_stream(height, width, bytes)
+
+      # Rotate the image 90 degrees clockwise
+      image = rotated_image.rotate_right
 
       image.save(output_path)
     end

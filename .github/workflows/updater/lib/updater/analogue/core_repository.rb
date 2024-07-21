@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
+require 'json'
+require 'ostruct'
+
 require_relative 'core'
-require_relative 'data'
-require_relative 'definition_helper'
 
 module Analogue
-  # Repository for interacting with OpenFPGA cores
+  # Repository for interacting with openFPGA cores
   class CoreRepository
     CORE_FILE = 'core.json'
     DATA_FILE = 'data.json'
@@ -18,15 +19,13 @@ module Analogue
     end
 
     def get_cores
-      core_ids = get_core_ids
-      core_ids.map { |core_id| get_core(core_id) }
+      get_core_ids.map { |core_id| get_core(core_id) }
     end
 
     def get_core(core_id)
-      core = _get_core(core_id)
-      data = get_data(core_id)
+      core = get_core_definition(core_id)
+      data = get_data_definition(core_id)
       info = get_info(core_id)
-
       Core.new(core, data, info)
     end
 
@@ -36,15 +35,15 @@ module Analogue
       Dir.children(@cores_path)
     end
 
-    def _get_core(core_id)
+    def get_core_definition(core_id)
       path = File.join(@cores_path, core_id, CORE_FILE)
-      definition = DefinitionHelper.parse_json(path)
+      definition = JSON.load_file(path, object_class: OpenStruct)
       definition.core
     end
 
-    def get_data(core_id)
+    def get_data_definition(core_id)
       path = File.join(@cores_path, core_id, DATA_FILE)
-      definition = DefinitionHelper.parse_json(path)
+      definition = JSON.load_file(path, object_class: OpenStruct)
       definition.data
     end
 

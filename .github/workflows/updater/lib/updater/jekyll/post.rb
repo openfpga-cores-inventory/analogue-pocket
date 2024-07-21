@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'slugify'
+
 module Jekyll
   # Post for Jekyll
   class Post
@@ -11,7 +13,8 @@ module Jekyll
       @author = author
       @title = title
       @date = date
-      @categories = categories
+      # TODO: Remove this in Jekyll 4.1 in favor of 'slugified_categories' - https://jekyllrb.com/docs/permalinks/#placeholders
+      @categories = categories.map(&:slugify)
       @tags = tags
       @content = content
     end
@@ -26,7 +29,7 @@ module Jekyll
         categories: [#{@categories.join(', ')}]
         tags: [#{@tags.join(', ')}]
         ---
-        #{post.content}
+        #{@content}
       MARKDOWN
     end
   end

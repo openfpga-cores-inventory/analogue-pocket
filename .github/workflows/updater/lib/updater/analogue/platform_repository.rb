@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
-require_relative 'definition_helper'
+require 'json'
+require 'ostruct'
+
 require_relative 'platform'
 
 module Analogue
-  # Repository for interacting with OpenFPGA platforms
+  # Repository for interacting with openFPGA platforms
   class PlatformRepository
     attr_reader :platforms_path
 
@@ -13,16 +15,9 @@ module Analogue
     end
 
     def get_platform(platform_id)
-      platform = _get_platform(platform_id)
-      Platform.new(platform)
-    end
-
-    private
-
-    def _get_platform(platform_id)
       path = File.join(@platforms_path, "#{platform_id}.json")
-      definition = DefinitionHelper.parse_json(path)
-      definition.platform
+      definition = JSON.load_file(path, object_class: OpenStruct)
+      Platform.new(definition.platform)
     end
   end
 end

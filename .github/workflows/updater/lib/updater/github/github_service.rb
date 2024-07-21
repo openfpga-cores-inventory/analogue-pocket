@@ -3,7 +3,9 @@
 require 'base64'
 require 'octokit'
 
-require_relative 'funding'
+require_relative 'asset'
+require_relative 'content'
+require_relative 'release'
 
 module GitHub
   # Service to interact with GitHub repositories
@@ -18,33 +20,25 @@ module GitHub
     end
 
     def get_funding(repository)
-      repo = get_repo(repository)
       path = File.join(GITHUB_DIRECTORY, FUNDING_FILE)
-      content = @client.contents(repo, path: path)
-      yaml = Base64.decode64(content.content)
-      GitHub::Funding.from_yaml(yaml)
+      get_contents(repository, path)
+    end
+
+    def get_latest_release(repository, prerelease: false)
+      repo = Octokit::Repository.new({ owner: repository.owner, name: repository.name })
+      release = @client.releases(repo).find { |r| r.prerelease == prerelease }
+      assets = release.assets.map do |asset|
+        GitHub::Asset.new(asset.name, asset.browser_download_url)
+      end
+      GitHub::Release.new(assets)
+    end
+
+    def get_contents(repository, path)
+      repo = Octokit::Repository.new({ owner: repository.owner, name: repository.name })
+      contents = @client.contents(repo, path: path)
+      GitHub::Content.new(contents.name, contents.download_url)
     rescue Octokit::NotFound
       nil
-    end
-
-    def get_asset_url(repository, filter, prerelease: false)
-      repo = get_repo(repository)
-      release = @client.releases(repo).find { |r| r.prerelease == prerelease }
-      assets = @client.release_assets(release.url)
-      asset = filter.nil? ? assets.first : assets.find { |asset| asset.name.match?(Regexp.new(filter)) }
-      asset.browser_download_url
-    end
-
-    def get_content_url(repository, path)
-      repo = get_repo(repository)
-      content = @client.contents(repo, path: path)
-      content.download_url
-    end
-
-    private
-
-    def get_repo(repository)
-      Octokit::Repository.new({ owner: repository.owner, name: repository.name })
     end
   end
 end
