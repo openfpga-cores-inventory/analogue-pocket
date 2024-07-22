@@ -1,0 +1,3 @@
+--- !ruby/object:GitHub::Repository
+owner: opengateware
+name: arcade-galaga
