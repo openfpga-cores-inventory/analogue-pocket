@@ -6,6 +6,8 @@ module Analogue
   # Helper class to export binary data to images
   class ImageHelper
     def self.export(binary_path, width, height, output_path, invert: true)
+      return unless File.exist?(binary_path)
+
       # Read the brightness values from the binary file
       bytes = File.binread(binary_path)
 
