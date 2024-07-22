@@ -13,8 +13,10 @@ require_relative 'updater/zip_helper'
 
 # Updater CLI
 class Updater < Thor
+  AUTHORS_DIRECTORY = 'authors'
   CORES_DIRECTORY = 'cores'
   PLATFORMS_DIRECTORY = 'platforms'
+  REPOSITORIES_DIRECTORY = 'repositories'
 
   REPOSITORIES_FILE = 'repositories.yml'
 
@@ -51,9 +53,16 @@ class Updater < Thor
 
         write_core(core.id, core)
 
-        platform_id = core.platform_id
-        platform = openfpga_service.get_platform(platform_id)
-        write_platform(platform_id, platform)
+        platform = openfpga_service.get_platform(core.platform_id)
+        write_platform(core.platform_id, platform)
+
+        write_repository(core.id, repo)
+
+        icon_path = File.join(@jekyll_service.images_path, AUTHORS_DIRECTORY, "#{core.id}.png")
+        openfpga_service.export_icon(core.id, icon_path)
+
+        image_path = File.join(@jekyll_service.images_path, PLATFORMS_DIRECTORY, "#{core.platform_id}.png")
+        openfpga_service.export_image(core.platform_id, image_path)
       end
     end
   end
@@ -89,6 +98,11 @@ class Updater < Thor
   def write_core(core_id, core)
     path = File.join(@jekyll_service.data_path, CORES_DIRECTORY, "#{core_id}.yml")
     File.write(path, core.to_yaml)
+  end
+
+  def write_repository(core_id, repository)
+    path = File.join(@jekyll_service.data_path, REPOSITORIES_DIRECTORY, "#{core_id}.yml")
+    File.write(path, repository.to_yaml)
   end
 
   def get_download_url(repository, options)
