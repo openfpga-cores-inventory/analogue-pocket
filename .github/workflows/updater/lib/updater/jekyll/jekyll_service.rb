@@ -6,6 +6,8 @@ module Jekyll
   # Service to interact with Jekyll
   class JekyllService
     DATA_DIRECTORY = '_data'
+    ASSETS_DIRECTORY = 'assets'
+    IMAGES_DIRECTORY = 'images'
 
     attr_reader :site_path, :post_repository
 
@@ -16,6 +18,10 @@ module Jekyll
 
     def data_path
       File.join(@site_path, DATA_DIRECTORY)
+    end
+
+    def images_path
+      File.join(@site_path, ASSETS_DIRECTORY, IMAGES_DIRECTORY)
     end
 
     def create_post(title, post)
