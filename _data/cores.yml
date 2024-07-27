@@ -1914,6 +1914,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtriders
+    display_name: Sunset Riders
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtriders.zip
+    platform_id: jtriders
+    description: Arcade
+    version: 27e5bb9
+    date_release: '2024-07-27'
+    platform:
+      category: Arcade
+      name: jtriders
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtriders
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtriders
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtroadf
     display_name: Road Fighter
     repository:
