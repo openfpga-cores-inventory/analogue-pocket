@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: NES - 1.0.2
 date: 2022-10-18
-categories: [console, spiritualized-nes]
+categories: [Console, Spiritualized.NES]
 tags: [nes]
 ---
 Spiritualized NES

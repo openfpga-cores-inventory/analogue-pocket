@@ -3,7 +3,7 @@ layout: post
 author: Mazamars312
 title: PC Engine CD_Analogizer - 1.0.1
 date: 2024-05-30
-categories: [console, mazamars312-pc-engine-cd-analogizer]
+categories: [Console, Mazamars312.PC Engine CD_Analogizer]
 tags: [pcecd]
 ---
 Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue Pocket. Core by Gregory Estrade, srg320, and greyrogue

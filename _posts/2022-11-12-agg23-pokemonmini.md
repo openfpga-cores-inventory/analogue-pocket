@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: PokemonMini - 0.2.0
 date: 2022-11-12
-categories: [handheld, agg23-pokemonmini]
+categories: [Handheld, agg23.PokemonMini]
 tags: [poke_mini]
 ---
 Port by agg23. Core by Grieverheart.

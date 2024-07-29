@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: ChannelF - 1.0.0
 date: 2022-10-20
-categories: [console, spiritualized-channelf]
+categories: [Console, Spiritualized.ChannelF]
 tags: [channel_f]
 ---
 Spiritualized Channel F

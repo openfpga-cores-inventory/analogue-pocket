@@ -3,7 +3,7 @@ layout: post
 author: antongale
 title: slapfight - 0.1.3
 date: 2023-01-05
-categories: [arcade, antongale-slapfight]
+categories: [Arcade, antongale.slapfight]
 tags: [slapfight]
 ---
 Note: You must provide your own roms to use this core.

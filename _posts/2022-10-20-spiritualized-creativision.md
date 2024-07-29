@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Creativision - 1.0.2
 date: 2022-10-20
-categories: [console, spiritualized-creativision]
+categories: [Console, Spiritualized.Creativision]
 tags: [creativision]
 ---
 Spiritualized Creativision

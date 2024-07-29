@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: gberet - 0.1.1
 date: 2022-10-03
-categories: [arcade, boogermann-gberet]
+categories: [Arcade, boogermann.gberet]
 tags: [gberet]
 ---
 Green Beret © 1985 Konami.

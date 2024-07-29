@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: SMS - 1.2.0
 date: 2022-08-25
-categories: [console, spiritualized-sms]
+categories: [Console, Spiritualized.SMS]
 tags: [sms]
 ---
 Spiritualized SMS

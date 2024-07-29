@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: bankpanic - 0.1.0
 date: 2022-10-09
-categories: [arcade, boogermann-bankpanic]
+categories: [Arcade, boogermann.bankpanic]
 tags: [bankpanic]
 ---
 Bank Panic © 1984 Sega.

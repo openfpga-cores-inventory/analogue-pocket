@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: 2600 - 1.0.0
 date: 2022-10-18
-categories: [console, spiritualized-2600]
+categories: [Console, Spiritualized.2600]
 tags: [2600]
 ---
 Spiritualized Atari 2600

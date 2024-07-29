@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: digdug - 0.1.0
 date: 2022-09-20
-categories: [arcade, boogermann-digdug]
+categories: [Arcade, boogermann.digdug]
 tags: [digdug]
 ---
 Dig Dug is a maze arcade game developed by Namco. The player controls Dig Dug to defeat all enemies per stage, by either inflating them to bursting or crushing them underneath rocks.

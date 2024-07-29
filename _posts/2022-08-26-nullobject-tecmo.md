@@ -3,7 +3,7 @@ layout: post
 author: nullobject
 title: tecmo - 2.0
 date: 2022-08-26
-categories: [arcade, nullobject-tecmo]
+categories: [Arcade, nullobject.tecmo]
 tags: [tecmo]
 ---
 Made with love by Josh Bassett, 2022.

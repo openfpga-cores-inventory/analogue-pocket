@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Arcadia - 1.0.2
 date: 2022-10-20
-categories: [console, spiritualized-arcadia]
+categories: [Console, Spiritualized.Arcadia]
 tags: [arcadia]
 ---
 Spiritualized Arcadia 2001

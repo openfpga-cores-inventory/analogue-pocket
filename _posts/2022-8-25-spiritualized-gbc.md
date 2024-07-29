@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: GBC - 1.3.0
 date: 2022-8-25
-categories: [handheld, spiritualized-gbc]
+categories: [Handheld, Spiritualized.GBC]
 tags: [gbc]
 ---
 Spiritualized GBC

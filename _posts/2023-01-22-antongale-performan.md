@@ -3,7 +3,7 @@ layout: post
 author: antongale
 title: performan - 0.1.1
 date: 2023-01-22
-categories: [arcade, antongale-performan]
+categories: [Arcade, antongale.performan]
 tags: [performan]
 ---
 Note: You must provide your own roms to use this core.

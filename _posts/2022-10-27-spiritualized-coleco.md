@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Coleco - 1.0.2
 date: 2022-10-27
-categories: [console, spiritualized-coleco]
+categories: [Console, Spiritualized.Coleco]
 tags: [coleco]
 ---
 Spiritualized Colecovision

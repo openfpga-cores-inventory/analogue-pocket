@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: galaga - 0.1.0
 date: 2022-09-03
-categories: [arcade, boogermann-galaga]
+categories: [Arcade, boogermann.galaga]
 tags: [galaga]
 ---
 Galaga is a 1981 fixed shooter arcade video game developed and published by Namco. In North America, it was released by Midway Manufacturing.

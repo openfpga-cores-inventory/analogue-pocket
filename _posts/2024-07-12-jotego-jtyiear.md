@@ -3,7 +3,7 @@ layout: post
 author: jotego
 title: jtyiear - 8533440
 date: 2024-07-12
-categories: [arcade, jotego-jtyiear]
+categories: [Arcade, jotego.jtyiear]
 tags: [jtyiear, jtpatreon]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 author: antongale
 title: taitosj - 0.1.0
 date: 2023-06-30
-categories: [arcade, antongale-taitosj]
+categories: [Arcade, antongale.taitosj]
 tags: [taitosj]
 ---
 Note: You must provide your own roms to use this core.

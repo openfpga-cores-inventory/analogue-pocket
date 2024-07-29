@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: PC Engine - 0.3.0
 date: 2022-11-08
-categories: [console, agg23-pc-engine]
+categories: [Console, agg23.PC Engine]
 tags: [pce]
 ---
 Port by agg23. Core by Gregory Estrade, srg320, and greyrogue

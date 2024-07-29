@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Genesis - 1.0.8
 date: 2022-10-18
-categories: [console, spiritualized-genesis]
+categories: [Console, Spiritualized.Genesis]
 tags: [genesis]
 ---
 Spiritualized Genesis

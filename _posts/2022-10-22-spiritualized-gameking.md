@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Gameking - 1.0.3
 date: 2022-10-22
-categories: [handheld, spiritualized-gameking]
+categories: [Handheld, Spiritualized.Gameking]
 tags: [game_king]
 ---
 Spiritualized Game King

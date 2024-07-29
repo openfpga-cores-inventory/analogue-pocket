@@ -3,7 +3,7 @@ layout: post
 author: RndMnkIII
 title: alphamission_Analogizer - 1.1
 date: 2024-03-24
-categories: [arcade, rndmnkiii-alphamission-analogizer]
+categories: [Arcade, RndMnkIII.alphamission_Analogizer]
 tags: [alphamission]
 ---
 alphamission

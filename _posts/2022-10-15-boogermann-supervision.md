@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: supervision - 0.1.1
 date: 2022-10-15
-categories: [handheld, boogermann-supervision]
+categories: [Handheld, boogermann.supervision]
 tags: [supervision]
 ---
 Supervision © 1992 Watara.

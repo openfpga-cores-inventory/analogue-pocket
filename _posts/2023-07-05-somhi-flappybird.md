@@ -3,7 +3,7 @@ layout: post
 author: somhi
 title: flappybird - 1.0.0
 date: 2023-07-05
-categories: [others, somhi-flappybird]
+categories: [Others, somhi.flappybird]
 tags: [flappybird]
 ---
 Flappy Bird

@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: congo - 0.1.1
 date: 2022-11-16
-categories: [arcade, boogermann-congo]
+categories: [Arcade, boogermann.congo]
 tags: [congo]
 ---
 Congo Bongo is an isometric platform game and is Sega's take on Nintendo's legendary "Donkey Kong".

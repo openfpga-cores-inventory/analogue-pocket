@@ -3,7 +3,7 @@ layout: post
 author: boogermann
 title: pooyan - 0.1.0
 date: 2022-10-06
-categories: [arcade, boogermann-pooyan]
+categories: [Arcade, boogermann.pooyan]
 tags: [pooyan]
 ---
 Pooyan is a fixed shooter arcade game released by Konami in Japan in 1982. It was manufactured in North America by Stern Electronics.

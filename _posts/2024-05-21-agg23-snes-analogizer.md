@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: SNES_Analogizer - 1.0.1
 date: 2024-05-21
-categories: [console, agg23-snes-analogizer]
+categories: [Console, agg23.SNES_Analogizer]
 tags: [snes]
 ---
 Port by agg23. Core by srg320.

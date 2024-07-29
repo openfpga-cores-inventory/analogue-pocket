@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: GG - 1.2.0
 date: 2022-08-25
-categories: [handheld, spiritualized-gg]
+categories: [Handheld, Spiritualized.GG]
 tags: [gg]
 ---
 Spiritualized GG

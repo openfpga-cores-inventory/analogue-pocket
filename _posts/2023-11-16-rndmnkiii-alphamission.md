@@ -3,7 +3,7 @@ layout: post
 author: RndMnkIII
 title: alphamission - 1.2
 date: 2023-11-16
-categories: [arcade, rndmnkiii-alphamission]
+categories: [Arcade, RndMnkIII.alphamission]
 tags: [alphamission]
 ---
 alphamission

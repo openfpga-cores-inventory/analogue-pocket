@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Intv - 1.0.2
 date: 2022-10-26
-categories: [console, spiritualized-intv]
+categories: [Console, Spiritualized.Intv]
 tags: [intv]
 ---
 Spiritualized Intellivision

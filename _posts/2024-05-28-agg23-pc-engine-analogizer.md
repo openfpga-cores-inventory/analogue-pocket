@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: PC Engine_Analogizer - 1.6.2
 date: 2024-05-28
-categories: [console, agg23-pc-engine-analogizer]
+categories: [Console, agg23.PC Engine_Analogizer]
 tags: [pce]
 ---
 Port by agg23. Core by Gregory Estrade, srg320, and greyrogue

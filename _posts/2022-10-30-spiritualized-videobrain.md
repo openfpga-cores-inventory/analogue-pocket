@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: VideoBrain - 1.0.0
 date: 2022-10-30
-categories: [computer, spiritualized-videobrain]
+categories: [Computer, Spiritualized.VideoBrain]
 tags: [videobrain]
 ---
 Spiritualized Video Brain

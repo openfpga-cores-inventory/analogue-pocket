@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Gamate - 1.0.2
 date: 2022-10-22
-categories: [handheld, spiritualized-gamate]
+categories: [Handheld, Spiritualized.Gamate]
 tags: [gamate]
 ---
 Spiritualized Gamate

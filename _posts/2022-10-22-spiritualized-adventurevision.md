@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Adventurevision - 1.0.2
 date: 2022-10-22
-categories: [handheld, spiritualized-adventurevision]
+categories: [Handheld, Spiritualized.Adventurevision]
 tags: [avision]
 ---
 Spiritualized Adventure Vision

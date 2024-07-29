@@ -3,7 +3,7 @@ layout: post
 author: opengateware
 title: irem_m92 - 0.1.2
 date: 2024-05-04
-categories: [arcade-multi, opengateware-irem-m92]
+categories: [Arcade Multi, opengateware.irem_m92]
 tags: [irem_m92]
 ---
 Launched by Irem in 1991, the M92 was an advanced arcade system that offered robust graphics and sound capabilities.

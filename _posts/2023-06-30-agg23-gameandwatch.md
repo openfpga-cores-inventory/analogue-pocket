@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: GameAndWatch - 0.2.0
 date: 2023-06-30
-categories: [handheld, agg23-gameandwatch]
+categories: [Handheld, agg23.GameAndWatch]
 tags: [gameandwatch]
 ---
 Game and Watch

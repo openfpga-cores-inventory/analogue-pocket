@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Megaduck - 1.0.2
 date: 2022-10-20
-categories: [handheld, spiritualized-megaduck]
+categories: [Handheld, Spiritualized.Megaduck]
 tags: [mega_duck]
 ---
 Spiritualized Megaduck

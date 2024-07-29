@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: SuperGB - 1.0.3
 date: 2022-10-28
-categories: [console, spiritualized-supergb]
+categories: [Console, Spiritualized.SuperGB]
 tags: [sgb]
 ---
 Spiritualized Super Gameboy

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'slugify'
-
 module Jekyll
   # Post for Jekyll
   class Post
@@ -14,7 +12,7 @@ module Jekyll
       @title = title
       @date = date
       # TODO: Remove this in Jekyll 4.1 in favor of 'slugified_categories' - https://jekyllrb.com/docs/permalinks/#placeholders
-      @categories = categories.map(&:slugify)
+      @categories = categories
       @tags = tags
       @content = content
     end

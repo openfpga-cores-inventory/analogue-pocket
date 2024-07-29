@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: 7800 - 1.0.2
 date: 2022-10-18
-categories: [console, spiritualized-7800]
+categories: [Console, Spiritualized.7800]
 tags: [7800]
 ---
 Spiritualized Atari 7800

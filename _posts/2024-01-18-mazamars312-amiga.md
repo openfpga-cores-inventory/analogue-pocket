@@ -3,7 +3,7 @@ layout: post
 author: Mazamars312
 title: Amiga - 0.2.1
 date: 2024-01-18
-categories: [computer, mazamars312-amiga]
+categories: [Computer, Mazamars312.Amiga]
 tags: [amiga]
 ---
 The Amiga Core - 0.2.1

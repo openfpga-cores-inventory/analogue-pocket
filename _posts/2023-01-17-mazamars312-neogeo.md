@@ -3,7 +3,7 @@ layout: post
 author: Mazamars312
 title: NeoGeo - 0.8.1
 date: 2023-01-17
-categories: [console, mazamars312-neogeo]
+categories: [Console, Mazamars312.NeoGeo]
 tags: [ng]
 ---
 NeoGeo was introduced in 1990 as both the MVS multi-video system and AES console. This arcade platform was a worldwide success lasting through the mid 2000's spawning several long-running and critically acclaimed game series. 

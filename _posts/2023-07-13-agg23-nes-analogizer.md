@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: NES_Analogizer - 1.0.1
 date: 2023-07-13
-categories: [console, agg23-nes-analogizer]
+categories: [Console, agg23.NES_Analogizer]
 tags: [nes]
 ---
 Modified to support the Analogizer adapter.

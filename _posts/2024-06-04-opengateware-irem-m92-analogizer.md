@@ -3,7 +3,7 @@ layout: post
 author: opengateware
 title: irem_m92_Analogizer - 1.0.2
 date: 2024-06-04
-categories: [arcade-multi, opengateware-irem-m92-analogizer]
+categories: [Arcade Multi, opengateware.irem_m92_Analogizer]
 tags: [irem_m92]
 ---
 Launched by Irem in 1991, the M92 was an advanced arcade system that offered robust graphics and sound capabilities.

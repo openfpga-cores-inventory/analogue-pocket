@@ -3,7 +3,7 @@ layout: post
 author: agg23
 title: WonderSwan - 1.0.1
 date: 2023-05-06
-categories: [handheld, agg23-wonderswan]
+categories: [Handheld, agg23.WonderSwan]
 tags: [wonderswan]
 ---
 Port by agg23. Core by Robert Peip

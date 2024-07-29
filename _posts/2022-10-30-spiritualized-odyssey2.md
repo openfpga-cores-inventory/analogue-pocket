@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: Odyssey2 - 1.0.2
 date: 2022-10-30
-categories: [console, spiritualized-odyssey2]
+categories: [Console, Spiritualized.Odyssey2]
 tags: [odyssey2]
 ---
 Spiritualized Odyssey^2

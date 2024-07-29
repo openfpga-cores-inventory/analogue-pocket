@@ -3,7 +3,7 @@ layout: post
 author: Spacemen3
 title: PDP1 - v3.1 - Sep. 24, 1962
 date: 2022-08-19
-categories: [computer, spacemen3-pdp1]
+categories: [Computer, Spacemen3.PDP1]
 tags: [pdp1]
 ---
 In 1962, the first digital video game, Spacewar! debuted on an early computer released in 1959 called the PDP-1 at MIT.

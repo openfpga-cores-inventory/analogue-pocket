@@ -3,7 +3,7 @@ layout: post
 author: Spiritualized
 title: GBA - 1.2.0
 date: 2022-08-25
-categories: [handheld, spiritualized-gba]
+categories: [Handheld, Spiritualized.GBA]
 tags: [gba]
 ---
 Spiritualized GBA 
