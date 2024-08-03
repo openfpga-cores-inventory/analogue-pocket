@@ -17,7 +17,7 @@
       filter: agg23.Tamagotchi_.*-Pocket
     - display_name: WonderSwan Color for Analogue Pocket
       repository: openfpga-wonderswan
-    - display_name: Game and Watch
+    - display_name: Game & Watch
       repository: fpga-gameandwatch
       filter: agg23.GameAndWatch_.*-Pocket
 - username: antongale
@@ -190,7 +190,7 @@
     - display_name: The Simpsons
       repository: jtbin
       path: pocket/zips/jotego.jtsimson.zip
-    - display_name: System 16B
+    - display_name: SEGA System 16B
       repository: jtbin
       path: pocket/zips/jotego.jts16b.zip
     - display_name: The Final Round
@@ -241,12 +241,21 @@
     - display_name: Toki
       repository: jtbin
       path: pocket/zips/jotego.jttoki.zip
-    - display_name: System 18
+    - display_name: SEGA System 18
       repository: jtbin
       path: pocket/zips/jotego.jts18.zip
     - display_name: Bionic Commando
       repository: jtbin
       path: pocket/zips/jotego.jtbiocom.zip
+    - display_name: Sly Spy
+      repository: jtbin
+      path: pocket/zips/jotego.jtslyspy.zip
+    - display_name: Fast Lane
+      repository: jtbin
+      path: pocket/zips/jotego.jtflane.zip
+    - display_name: Sunset Riders
+      repository: jtbin
+      path: pocket/zips/jotego.jtriders.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
@@ -285,6 +294,10 @@
       repository: openFPGA-Gaplus
     - display_name: Joust 2
       repository: openFPGA-Joust2
+    - display_name: Gauntlet
+      repository: openFPGA-Gauntlet
+    - display_name: Atari System 1
+      repository: openFPGA-AtariSystem1
 - username: opengateware
   cores:
     - display_name: Bank Panic
@@ -327,6 +340,12 @@
       repository: openfpga-pcengine-cd_Analogizer
     - display_name: Irem M92 (Analogizer)
       repository: arcade-irem_m92_Analogizer
+    - display_name: Gauntlet (Analogizer)
+      repository: Analogizer_openFPGA-Gauntlet
+    - display_name: Genesis for Analogue Pocket (Analogizer)
+      repository: Analogizer_openFPGA-Genesis
+    - display_name: Atari System 1 (Analogizer)
+      repository: Analogizer-openFPGA-AtariSystem1
 - username: rolandking
   cores:
     - display_name: Jailbreak Konami 1986

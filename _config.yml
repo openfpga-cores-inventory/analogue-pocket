@@ -49,7 +49,7 @@ bootstrap:
     # - { platform: linkedin,       title: "LinkedIn",        user_url: "https://www.linkedin.com/in/jekyll" }
     # - { platform: microdotblog,   title: "Micro.blog",      user_url: "https://micro.blog/jekyll" }
     # - { platform: pinterest,      title: "Pinterest",       user_url: "https://www.pinterest.com/jekyll" }
-    # - { platform: rss,            title: "RSS",             user_url: "/feed.xml" }
+    - { platform: rss,            title: "RSS",             user_url: "/analogue-pocket/feed.xml" }
     # - { platform: stackoverflow,  title: "Stack Overflow",  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
     # - { platform: telegram,       title: "Telegram",        user_url: "https://t.me/jekyll" }
     - { platform: twitter,        title: "Twitter",         user_url: "https://twitter.com/joshcampbell191" }
