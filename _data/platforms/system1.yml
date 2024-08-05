@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: System1
+manufacturer: Atari Games
+year: 1984

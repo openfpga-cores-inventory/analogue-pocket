@@ -1,9 +1,9 @@
 --- !ruby/object:Analogue::Core
 metadata: !ruby/object:Analogue::Core::Metadata
   platform_ids:
-  - jtbubl
+  - jtslyspy
   - jtpatreon
-  shortname: jtbubl
+  shortname: jtslyspy
   description: Arcade
   author: jotego
   url: https://patreon.com/jotego
@@ -52,6 +52,15 @@ data_slots:
     core_specific_file: false
     instance_json: false
   filename: crtcfg.bin
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: JTBETA
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: beta.bin
   extensions:
   - bin
 info:
