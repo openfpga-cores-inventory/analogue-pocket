@@ -8,7 +8,8 @@ require_relative 'updater/cache_service'
 require_relative 'updater/github'
 require_relative 'updater/jekyll'
 require_relative 'updater/download_helper'
-require_relative 'updater/repository_helper'
+require_relative 'updater/release'
+require_relative 'updater/source_repository'
 require_relative 'updater/zip_helper'
 
 # Updater CLI
@@ -16,11 +17,11 @@ class Updater < Thor
   AUTHORS_DIRECTORY = 'authors'
   CORES_DIRECTORY = 'cores'
   PLATFORMS_DIRECTORY = 'platforms'
-  REPOSITORIES_DIRECTORY = 'repositories'
+  RELEASES_DIRECTORY = 'releases'
 
-  REPOSITORIES_FILE = 'repositories.yml'
+  SOURCES_FILE = 'sources.yml'
 
-  attr_reader :github_service, :jekyll_service, :cache_service, :core_repository
+  attr_reader :github_service, :jekyll_service, :cache_service, :source_repository
 
   class_option :site_path, default: Dir.pwd
 
@@ -30,16 +31,15 @@ class Updater < Thor
     @github_service = GitHub::GitHubService.new
     @jekyll_service = Jekyll::JekyllService.new(options[:site_path])
     @cache_service = CacheService.new(@jekyll_service.data_path)
+    @source_repository = SourceRepository.new(File.join(@jekyll_service.data_path, SOURCES_FILE))
   end
 
   option :force, type: :boolean, default: false
   desc 'update-cores', 'Update openFGPA cores'
   def update_cores
-    repositories_path = File.join(@jekyll_service.data_path, REPOSITORIES_FILE)
-    repositories = RepositoryHelper.from_file(repositories_path)
-    repositories.each do |repository|
-      repo = GitHub::Repository.new(repository.owner, repository.name)
-      download_url = get_download_url(repo, repository.options)
+    sources = @source_repository.get_sources
+    sources.each do |source|
+      download_url = get_download_url(source.repository, source.options)
 
       core_path = DownloadHelper.download(download_url)
       openfpga_path = ZipHelper.extract(core_path)
@@ -56,7 +56,8 @@ class Updater < Thor
         platform = openfpga_service.get_platform(core.platform_id)
         write_platform(core.platform_id, platform)
 
-        write_repository(core.id, repo)
+        release = Release.new(download_url, source.repository)
+        write_release(core.id, release)
 
         icon_path = File.join(@jekyll_service.images_path, AUTHORS_DIRECTORY, "#{core.id}.png")
         openfpga_service.export_icon(core.id, icon_path)
@@ -80,10 +81,10 @@ class Updater < Thor
   def create_post(core, platform)
     post = Jekyll::Post.new(
       core.metadata.author,
-      "#{core.metadata.shortname} - #{core.metadata.version}",
+      "#{core.id} - #{core.metadata.version}",
       core.metadata.date_release,
-      [platform.category, core.id],
-      core.metadata.platform_ids,
+      [platform.category, platform.name],
+      [core.id],
       core.info
     )
 
@@ -100,9 +101,9 @@ class Updater < Thor
     File.write(path, core.to_yaml)
   end
 
-  def write_repository(core_id, repository)
-    path = File.join(@jekyll_service.data_path, REPOSITORIES_DIRECTORY, "#{core_id}.yml")
-    File.write(path, repository.to_yaml)
+  def write_release(core_id, release)
+    path = File.join(@jekyll_service.data_path, RELEASES_DIRECTORY, "#{core_id}.yml")
+    File.write(path, release.to_yaml)
   end
 
   def get_download_url(repository, options)
