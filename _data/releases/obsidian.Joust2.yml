@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2/releases/download/v0.9.1/openFPGA-Joust2.zip
+repository: !ruby/object:GitHub::Repository
+  owner: obsidian-dot-dev
+  name: openFPGA-Joust2

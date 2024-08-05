@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v2.0/pocket-tecmo-2.0.zip
+repository: !ruby/object:GitHub::Repository
+  owner: nullobject
+  name: openfpga-tecmo

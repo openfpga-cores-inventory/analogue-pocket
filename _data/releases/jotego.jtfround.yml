@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtfround.zip
+repository: !ruby/object:GitHub::Repository
+  owner: jotego
+  name: jtbin

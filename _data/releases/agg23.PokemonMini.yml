@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/agg23/openfpga-pokemonmini/releases/download/0.2.0/agg23.PokemonMini_0.2.0_2022-11-12.zip
+repository: !ruby/object:GitHub::Repository
+  owner: agg23
+  name: openfpga-pokemonmini

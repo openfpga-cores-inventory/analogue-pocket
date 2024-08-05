@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0.2/arcade-irem_m92_Analogizer_1.0.2.zip
+repository: !ruby/object:GitHub::Repository
+  owner: RndMnkIII
+  name: arcade-irem_m92_Analogizer

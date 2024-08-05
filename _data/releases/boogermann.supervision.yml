@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/opengateware/console-supervision/releases/download/0.1.1/boogermann.supervision_pocket-0.1.1.zip
+repository: !ruby/object:GitHub::Repository
+  owner: opengateware
+  name: console-supervision

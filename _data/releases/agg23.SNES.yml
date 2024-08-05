@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.3/agg23.SNES_0.4.3_2022-12-14.zip
+repository: !ruby/object:GitHub::Repository
+  owner: agg23
+  name: openfpga-SNES

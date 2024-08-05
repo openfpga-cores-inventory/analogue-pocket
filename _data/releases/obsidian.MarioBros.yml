@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.3/openFPGA-MarioBros.zip
+repository: !ruby/object:GitHub::Repository
+  owner: obsidian-dot-dev
+  name: openFPGA-MarioBros

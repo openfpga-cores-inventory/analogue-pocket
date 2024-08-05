@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/RndMnkIII/Analogizer_openfpga-pcengine/releases/download/1.6.2/Analogizer-FPGA.PC.Engine_1.6.2_28-05-24.zip
+repository: !ruby/object:GitHub::Repository
+  owner: RndMnkIII
+  name: Analogizer_openfpga-pcengine

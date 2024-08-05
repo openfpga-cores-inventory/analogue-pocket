@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/Mazamars312/openfpga-pcengine-cd/releases/download/Mazamars312.PCECD.0.1.7-15/02/2023/Mazamars312.PCECD.0.1.7-15-02-2023.zip
+repository: !ruby/object:GitHub::Repository
+  owner: Mazamars312
+  name: openfpga-pcengine-cd

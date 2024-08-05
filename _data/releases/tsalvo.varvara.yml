@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.3/tsalvo.varvara_0.0.3_2024-06-16.zip
+repository: !ruby/object:GitHub::Repository
+  owner: tsalvo
+  name: openfpga-varvara

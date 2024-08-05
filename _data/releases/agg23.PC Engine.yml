@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.3.0/agg23.PC.Engine_0.3.0_2022-11-08.zip
+repository: !ruby/object:GitHub::Repository
+  owner: agg23
+  name: openfpga-pcengine

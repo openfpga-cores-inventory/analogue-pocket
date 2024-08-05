@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/ericlewis/openfpga-superbreakout/releases/download/0.0.1/ericlewis.SuperBreakout_0.0.1_2022-09-14.zip
+repository: !ruby/object:GitHub::Repository
+  owner: ericlewis
+  name: openfpga-superbreakout

@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/rolandking/openFPGA-jailbreak/releases/download/v1.1/rolandking-Jailbreak-1.1.zip
+repository: !ruby/object:GitHub::Repository
+  owner: rolandking
+  name: openFPGA-jailbreak

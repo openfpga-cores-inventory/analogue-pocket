@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/spacemen3/PDP-1/releases/download/v1.1.0/Spacemen3.PDP1_1.1.0_2022-08-19.zip
+repository: !ruby/object:GitHub::Repository
+  owner: spacemen3
+  name: PDP-1

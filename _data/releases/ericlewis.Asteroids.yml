@@ -1,0 +1,5 @@
+--- !ruby/object:Release
+download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/1.0.1/ericlewis.Asteroids_1.0.1_2022-10-11.zip
+repository: !ruby/object:GitHub::Repository
+  owner: ericlewis
+  name: openfpga-asteroids
