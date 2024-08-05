@@ -14,8 +14,8 @@ module Jekyll
     end
 
     def create_post(title, post)
-      date = post.date || Time.now.strftime('%Y-%m-%d')
-      post_file = "#{date}-#{title.slugify}.md"
+      date = Date.parse(post.date) || Time.now
+      post_file = "#{date.strftime('%Y-%m-%d')}-#{title.slugify}.md"
       path = File.join(@site_path, POSTS_DIRECTORY, post_file)
       FileUtils.mkdir_p(File.dirname(path))
       File.open(path, 'w') { |file| file.write(post.to_markdown) }
