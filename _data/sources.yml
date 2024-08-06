@@ -1,266 +1,266 @@
-- username: agg23
-  cores:
-    - repository: openfpga-arduboy
-    - repository: openfpga-pong
-    - repository: openfpga-NES
-    - repository: openfpga-pcengine
-    - repository: openfpga-pokemonmini
-    - repository: openfpga-SNES
-    - repository: fpga-tamagotchi
+- owner: agg23
+  repositories:
+    - name: openfpga-arduboy
+    - name: openfpga-pong
+    - name: openfpga-NES
+    - name: openfpga-pcengine
+    - name: openfpga-pokemonmini
+    - name: openfpga-SNES
+    - name: fpga-tamagotchi
       filter: agg23.Tamagotchi_.*-Pocket
-    - repository: openfpga-wonderswan
-    - repository: fpga-gameandwatch
+    - name: openfpga-wonderswan
+    - name: fpga-gameandwatch
       filter: agg23.GameAndWatch_.*-Pocket
-- username: antongale
-  cores:
-    - repository: arcade-exerion
-    - repository: arcade-performan
-    - repository: arcade-slapfight
-    - repository: arcade-taitosj
-- username: AwesomeDolphin
-  cores:
-    - repository: openFPGA-SpaceInvaders
+- owner: antongale
+  repositories:
+    - name: arcade-exerion
+    - name: arcade-performan
+    - name: arcade-slapfight
+    - name: arcade-taitosj
+- owner: AwesomeDolphin
+  repositories:
+    - name: openFPGA-SpaceInvaders
       filter: AwesomeDolphin.SpaceInvaders_
-- username: budude2
-  cores:
-    - repository: openfpga-GBC
+- owner: budude2
+  repositories:
+    - name: openfpga-GBC
       filter: openfpga-gbc-
-    - repository: openfpga-GBC
+    - name: openfpga-GBC
       filter: openfpga-gb-
-- username: Coin-OpCollection
-  cores:
-    - repository: Distribution-OpenFPGA
+- owner: Coin-OpCollection
+  repositories:
+    - name: Distribution-OpenFPGA
       path: Releases/pram0d.batrider_20221218.zip
-    - repository: Distribution-OpenFPGA
+    - name: Distribution-OpenFPGA
       path: Releases/pram0d.bakraid_20221218.zip
-    - repository: Distribution-OpenFPGA
+    - name: Distribution-OpenFPGA
       path: Releases/pram0d.garegga_20221030.zip
-    - repository: Distribution-OpenFPGA
+    - name: Distribution-OpenFPGA
       path: Releases/pram0d.snowbros2_20221019.zip
-    - repository: Distribution-OpenFPGA
+    - name: Distribution-OpenFPGA
       path: Releases/atrac17.tekipaki_20240518.zip
-    - repository: Distribution-OpenFPGA
+    - name: Distribution-OpenFPGA
       path: Releases/atrac17.truxton2_20240518.zip
-    - repository: Distribution-OpenFPGA
+    - name: Distribution-OpenFPGA
       path: Releases/atrac17.pipibibs_20240518.zip
-- username: ericlewis
-  cores:
-    - repository: openfpga-asteroids
-    - repository: openfpga-dominos
+- owner: ericlewis
+  repositories:
+    - name: openfpga-asteroids
+    - name: openfpga-dominos
       prerelease: true
-    - repository: openFPGA-DonkeyKong
+    - name: openFPGA-DonkeyKong
       prerelease: true
-    - repository: openfpga-lunarlander
+    - name: openfpga-lunarlander
       prerelease: true
-    - repository: openfpga-qbert
-    - repository: openFPGA-RadarScope
+    - name: openfpga-qbert
+    - name: openFPGA-RadarScope
       prerelease: true
-    - repository: openfpga-spacerace
-    - repository: openfpga-superbreakout
+    - name: openfpga-spacerace
+    - name: openfpga-superbreakout
       prerelease: true
-- username: jotego
-  cores:
-    - repository: jtbin
+- owner: jotego
+  repositories:
+    - name: jtbin
       path: pocket/zips/jotego.jtcontra.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcps1.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtdd.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtdd2.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtexed.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtgng.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtgunsmk.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtkarnov.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtkicker.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtkunio.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtmikie.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtoutrun.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtpang.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtpinpon.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtroadf.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcop.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtroc.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtsectnz.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtsarms.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtsf.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtsbaskt.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jttrack.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jttrojan.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtvigil.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtyiear.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcomsc.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtkiwi.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcastle.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtrastan.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtbtiger.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jttmnt.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtaliens.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtsimson.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jts16b.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtfround.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtshanon.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jttora.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtninja.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcps2.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcps15.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtbubl.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtshouse.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jts16.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jt1942.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtngp.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jt1943.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtmx5k.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtkchamp.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtcommnd.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jttoki.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jts18.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtbiocom.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtslyspy.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtflane.zip
-    - repository: jtbin
+    - name: jtbin
       path: pocket/zips/jotego.jtriders.zip
-- username: markus-zzz
-  cores:
-    - repository: myc64-pocket
-- username: Mazamars312
-  cores:
-    - repository: Analogue-Amiga
-    - repository: Analogue_Pocket_Neogeo
-    - repository: openfpga-pcengine-cd
-- username: nullobject
-  cores:
-    - repository: openfpga-tecmo
-- username: obsidian-dot-dev
-  cores:
-    - repository: openFPGA-asteroidsdeluxe
-    - repository: openFPGA-DonkeyKong3
-    - repository: openFPGA-DonkeyKongJunior
-    - repository: openFPGA-MarioBros
-    - repository: openFPGA-Druaga
-    - repository: openFPGA-Vectrex
-    - repository: openFPGA-Defender
-    - repository: openFPGA-Robotron
-    - repository: openFPGA-Gaplus
-    - repository: openFPGA-Joust2
-    - repository: openFPGA-Gauntlet
-    - repository: openFPGA-AtariSystem1
-- username: opengateware
-  cores:
-    - repository: arcade-bankp
-    - repository: arcade-congo
-    - repository: arcade-digdug
-    - repository: arcade-galaga
-    - repository: openfpga-genesis
+- owner: markus-zzz
+  repositories:
+    - name: myc64-pocket
+- owner: Mazamars312
+  repositories:
+    - name: Analogue-Amiga
+    - name: Analogue_Pocket_Neogeo
+    - name: openfpga-pcengine-cd
+- owner: nullobject
+  repositories:
+    - name: openfpga-tecmo
+- owner: obsidian-dot-dev
+  repositories:
+    - name: openFPGA-asteroidsdeluxe
+    - name: openFPGA-DonkeyKong3
+    - name: openFPGA-DonkeyKongJunior
+    - name: openFPGA-MarioBros
+    - name: openFPGA-Druaga
+    - name: openFPGA-Vectrex
+    - name: openFPGA-Defender
+    - name: openFPGA-Robotron
+    - name: openFPGA-Gaplus
+    - name: openFPGA-Joust2
+    - name: openFPGA-Gauntlet
+    - name: openFPGA-AtariSystem1
+- owner: opengateware
+  repositories:
+    - name: arcade-bankp
+    - name: arcade-congo
+    - name: arcade-digdug
+    - name: arcade-galaga
+    - name: openfpga-genesis
       prerelease: true
-    - repository: arcade-gberet
-    - repository: arcade-pooyan
-    - repository: console-supervision
-    - repository: arcade-xevious
-    - repository: arcade-irem_m92
+    - name: arcade-gberet
+    - name: arcade-pooyan
+    - name: console-supervision
+    - name: arcade-xevious
+    - name: arcade-irem_m92
       filter: opengateware.irem_m92_.*-pocket
-- username: RndMnkIII
-  cores:
-    - repository: PocketAlphaMission
-    - repository: Analogizer_Mazamars312_Neogeo_0.8.1
-    - repository: Analogizer-Pocket-Alpha-Mission
-    - repository: openfpga-NES-Analogizer
-    - repository: openfpga-SNES-Analogizer
-    - repository: Analogizer_openfpga-pcengine
-    - repository: openfpga-pcengine-cd_Analogizer
-    - repository: arcade-irem_m92_Analogizer
-    - repository: Analogizer_openFPGA-Gauntlet
-    - repository: Analogizer_openFPGA-Genesis
-    - repository: Analogizer-openFPGA-AtariSystem1
-- username: rolandking
-  cores:
-    - repository: openFPGA-jailbreak
-    - cores: null
-      repository: openFPGA-Athena
-- username: somhi
-  cores:
-    - repository: FlappyBird
-- username: spacemen3
-  cores:
-    - repository: PDP-1
-- username: spiritualized1997
-  cores:
-    - repository: openFPGA-Adventure-Vision
-    - repository: openFPGA-Arcadia
-    - repository: openFPGA-2600
-    - repository: openFPGA-7800
-    - repository: openFPGA-Channel-F
-    - repository: openFPGA-Coleco
-    - repository: openFPGA-Creativision
-    - repository: openFPGA-Gamate
-    - repository: openFPGA-Game-King
-    - repository: openFPGA-GB-GBC
+- owner: RndMnkIII
+  repositories:
+    - name: PocketAlphaMission
+    - name: Analogizer_Mazamars312_Neogeo_0.8.1
+    - name: Analogizer-Pocket-Alpha-Mission
+    - name: openfpga-NES-Analogizer
+    - name: openfpga-SNES-Analogizer
+    - name: Analogizer_openfpga-pcengine
+    - name: openfpga-pcengine-cd_Analogizer
+    - name: arcade-irem_m92_Analogizer
+    - name: Analogizer_openFPGA-Gauntlet
+    - name: Analogizer_openFPGA-Genesis
+    - name: Analogizer-openFPGA-AtariSystem1
+- owner: rolandking
+  repositories:
+    - name: openFPGA-jailbreak
+    - repositories: null
+      name: openFPGA-Athena
+- owner: somhi
+  repositories:
+    - name: FlappyBird
+- owner: spacemen3
+  repositories:
+    - name: PDP-1
+- owner: spiritualized1997
+  repositories:
+    - name: openFPGA-Adventure-Vision
+    - name: openFPGA-Arcadia
+    - name: openFPGA-2600
+    - name: openFPGA-7800
+    - name: openFPGA-Channel-F
+    - name: openFPGA-Coleco
+    - name: openFPGA-Creativision
+    - name: openFPGA-Gamate
+    - name: openFPGA-Game-King
+    - name: openFPGA-GB-GBC
       filter: Spiritualized_GB_
-    - repository: openFPGA-GBA
-    - repository: openFPGA-GB-GBC
+    - name: openFPGA-GBA
+    - name: openFPGA-GB-GBC
       filter: Spiritualized_GBC_
-    - repository: openFPGA-Genesis
-    - repository: openFPGA-Intellivision
-    - repository: openFPGA-Megaduck
-    - repository: openFPGA-NES
-    - repository: openFPGA-Odyssey-2
-    - repository: openFPGA-GG
-    - repository: openFPGA-SMS
-    - repository: openFPGA-SG1000
-    - repository: openFPGA-Studio-2
-    - repository: openFPGA-Supervision
-    - repository: openFPGA-Super-GB
-    - repository: openFPGA-VideoBrain
-- username: tsalvo
-  cores:
-    - repository: openfpga-varvara
+    - name: openFPGA-Genesis
+    - name: openFPGA-Intellivision
+    - name: openFPGA-Megaduck
+    - name: openFPGA-NES
+    - name: openFPGA-Odyssey-2
+    - name: openFPGA-GG
+    - name: openFPGA-SMS
+    - name: openFPGA-SG1000
+    - name: openFPGA-Studio-2
+    - name: openFPGA-Supervision
+    - name: openFPGA-Super-GB
+    - name: openFPGA-VideoBrain
+- owner: tsalvo
+  repositories:
+    - name: openfpga-varvara

@@ -14,10 +14,10 @@ class SourceRepository
   end
 
   def get_sources
-    sources = YAML.load_file(@sources_path).map do |author|
-      owner = author['username']
-      author['cores'].map do |repository|
-        name = repository['repository']
+    sources = YAML.load_file(@sources_path).map do |source|
+      owner = source['owner']
+      source['repositories'].map do |repository|
+        name = repository['name']
         path = repository['path']
         filter = repository['filter']
         prerelease = repository['prerelease'] || false
