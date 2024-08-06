@@ -7,6 +7,8 @@ layout: default
 {%- assign core = site.data.cores[key] -%}
 {%- assign icon_path = core_id | prepend: '/assets/images/authors/' | append: '.png' -%}
 {%- assign icon_exists = site.static_files | where: 'path', icon_path | first -%}
+{%- include breadcrumb.html -%}
+
 <h1 class="mt-5">{{ page.title | escape }}</h1>
 <div class="d-flex align-items-center mb-4 text-muted">
   <a class="d-flex align-items-center text-muted text-decoration-none" href="{{ core.metadata.url }}" target="_blank"
