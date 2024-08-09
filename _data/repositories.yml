@@ -256,6 +256,9 @@
     - display_name: Sunset Riders
       repository: jtbin
       path: pocket/zips/jotego.jtriders.zip
+    - display_name: Trick Trap
+      repository: jtbin
+      path: pocket/zips/jotego.jtlabrun.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
