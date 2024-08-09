@@ -90,13 +90,13 @@
       platform: github
       name: openfpga-pcengine
       prerelease: false
-      tag_name: 0.3.0
+      tag_name: 1.0.0
     requires_license: false
-    download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.3.0/agg23.PC.Engine_0.3.0_2022-11-08.zip
+    download_url: https://github.com/agg23/openfpga-pcengine/releases/download/1.0.0/agg23.PC.Engine_1.0.0_2024-08-08.zip
     platform_id: pce
     description: PC Engine (known as TurboGrafx-16 in the US) by NEC
-    version: 0.3.0
-    date_release: '2022-11-08'
+    version: 1.0.0
+    date_release: '2024-08-08'
     platform:
       category: Console
       name: PC Engine
