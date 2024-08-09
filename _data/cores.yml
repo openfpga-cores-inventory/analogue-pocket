@@ -1665,6 +1665,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtlabrun
+    display_name: Trick Trap
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtlabrun.zip
+    platform_id: jtlabrun
+    description: Arcade
+    version: 42941f5
+    date_release: '2024-08-09'
+    platform:
+      category: Arcade
+      name: jtlabrun
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtlabrun
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtlabrun
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtmikie
     display_name: Mikie
     repository:
