@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.2/openfpga-gb-1.2.2.zip
+download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.3/openfpga-gb-1.2.3.zip
 repository: !ruby/object:GitHub::Repository
   owner: budude2
   name: openfpga-GBC

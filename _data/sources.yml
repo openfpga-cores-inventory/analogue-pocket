@@ -170,6 +170,8 @@
       path: pocket/zips/jotego.jtflane.zip
     - name: jtbin
       path: pocket/zips/jotego.jtriders.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtlabrun.zip
 - owner: markus-zzz
   repositories:
     - name: myc64-pocket

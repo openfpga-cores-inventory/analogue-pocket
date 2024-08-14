@@ -7,8 +7,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Arcade
   author: jotego
   url: https://patreon.com/jotego
-  version: 27e5bb9
-  date_release: '2024-07-27'
+  version: 42941f5
+  date_release: '2024-08-09'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -52,15 +52,6 @@ data_slots:
     core_specific_file: false
     instance_json: false
   filename: crtcfg.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: JTBETA
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: beta.bin
   extensions:
   - bin
 info:

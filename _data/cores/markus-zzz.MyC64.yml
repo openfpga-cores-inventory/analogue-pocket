@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: My experimental Commodore 64 emulator
   author: markus-zzz
   url: https://github.com/markus-zzz/myc64-pocket
-  version: 0.2.5
-  date_release: '2024-07-31'
+  version: 0.2.6
+  date_release: '2024-08-14'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '2.2'
   sleep_supported: false
