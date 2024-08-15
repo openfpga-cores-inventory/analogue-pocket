@@ -11,8 +11,8 @@ layout: default
 
 <h1 class="mt-5">{{ page.title | escape }}</h1>
 <div class="d-flex align-items-center mb-4 text-muted">
-  <a class="d-flex align-items-center text-muted text-decoration-none" href="{{ core.metadata.url }}" target="_blank"
-    rel="noopener">
+  <a class="d-flex align-items-center text-muted text-decoration-none" href="{{ core.metadata.url | default: '#' }}"
+    target="_blank" rel="noopener">
     {%- if icon_exists -%}<img class="mb-0 me-2 rounded-2" src="{{ icon_path | relative_url }}" />{%- endif -%}
     <span>{{ page.author }}</span>
   </a>
