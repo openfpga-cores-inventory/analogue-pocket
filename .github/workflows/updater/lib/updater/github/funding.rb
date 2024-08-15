@@ -12,9 +12,9 @@ module GitHub
     KO_FI = 'ko_fi'
     LIBERAPAY = 'liberapay'
     OPEN_COLLECTIVE = 'open_collective'
-    OTECHIE = 'otechie'
     PATREON = 'patreon'
     POLAR = 'polar'
+    THANKS_DEV = 'thanks_dev'
     TIDELIFT = 'tidelift'
     CUSTOM = 'custom'
 
@@ -25,13 +25,13 @@ module GitHub
     KO_FI_URL = 'https://ko-fi.com'
     LIBERAPAY_URL = 'https://liberapay.com'
     OPEN_COLLECTIVE_URL = 'https://opencollective.com'
-    OTECHIE_URL = 'https://otechie.com'
     PATREON_URL = 'https://www.patreon.com'
     POLAR_URL = 'https://polar.sh'
+    THANKS_DEV_URL = 'https://thanks.dev'
     TIDELIFT_URL = 'https://tidelift.com/funding/github'
 
     attr_accessor :buy_me_a_coffee, :community_bridge, :github, :issuehunt, :ko_fi, :liberapay, :open_collective,
-                  :otechie, :patreon, :polar, :tidelift, :custom
+                  :patreon, :polar, :tidelift, :custom
 
     def initialize(funding)
       funding.each do |platform, value|
@@ -57,9 +57,9 @@ module GitHub
       when KO_FI then parse_ko_fi(value)
       when LIBERAPAY then parse_liberapay(value)
       when OPEN_COLLECTIVE then parse_open_collective(value)
-      when OTECHIE then parse_otechie(value)
       when PATREON then parse_patreon(value)
       when POLAR then parse_polar(value)
+      when THANKS_DEV then parse_thanks_dev(value)
       when TIDELIFT then parse_tidelift(value)
       when CUSTOM then parse_custom(value)
       end
@@ -94,16 +94,16 @@ module GitHub
       @open_collective = "#{OPEN_COLLECTIVE_URL}/#{username}"
     end
 
-    def parse_otechie(username)
-      @otechie = "#{OTECHIE_URL}/#{username}"
-    end
-
     def parse_patreon(username)
       @patreon = "#{PATREON_URL}/#{username}"
     end
 
     def parse_polar(username)
       @polar = "#{POLAR_URL}/#{username}"
+    end
+
+    def parse_thanks_dev(username)
+      @tidelift = "#{THANKS_DEV_URL}/#{username}"
     end
 
     def parse_tidelift(platform_package)
