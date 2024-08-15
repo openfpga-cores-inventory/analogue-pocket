@@ -3,3 +3,4 @@ download_url: https://github.com/spiritualized1997/openFPGA-SG1000/releases/down
 repository: !ruby/object:GitHub::Repository
   owner: spiritualized1997
   name: openFPGA-SG1000
+funding:

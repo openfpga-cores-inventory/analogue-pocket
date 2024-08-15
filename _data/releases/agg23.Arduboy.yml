@@ -3,3 +3,6 @@ download_url: https://github.com/agg23/openfpga-arduboy/releases/download/0.9.0/
 repository: !ruby/object:GitHub::Repository
   owner: agg23
   name: openfpga-arduboy
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23

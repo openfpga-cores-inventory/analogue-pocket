@@ -3,3 +3,7 @@ download_url: https://github.com/opengateware/console-supervision/releases/downl
 repository: !ruby/object:GitHub::Repository
   owner: opengateware
   name: console-supervision
+funding: !ruby/object:GitHub::Funding
+  patreon: https://www.patreon.com/pierco
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN

@@ -3,3 +3,4 @@ download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Ma
 repository: !ruby/object:GitHub::Repository
   owner: Mazamars312
   name: Analogue-Amiga
+funding:

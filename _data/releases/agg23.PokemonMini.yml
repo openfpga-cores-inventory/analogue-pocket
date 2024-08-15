@@ -3,3 +3,6 @@ download_url: https://github.com/agg23/openfpga-pokemonmini/releases/download/0.
 repository: !ruby/object:GitHub::Repository
   owner: agg23
   name: openfpga-pokemonmini
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23

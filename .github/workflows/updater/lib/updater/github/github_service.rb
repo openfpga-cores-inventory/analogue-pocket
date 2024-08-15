@@ -21,6 +21,8 @@ module GitHub
     def get_funding(repository)
       path = File.join(GITHUB_DIRECTORY, FUNDING_FILE)
       get_contents(repository, path)
+    rescue Octokit::NotFound
+      nil
     end
 
     def get_latest_release(repository, prerelease: false)
@@ -36,8 +38,6 @@ module GitHub
       repo = Octokit::Repository.new({ owner: repository.owner, name: repository.name })
       contents = @client.contents(repo, path: path)
       GitHub::Content.new(contents.name, contents.download_url)
-    rescue Octokit::NotFound
-      nil
     end
   end
 end

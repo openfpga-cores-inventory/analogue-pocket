@@ -3,3 +3,4 @@ download_url: https://github.com/AwesomeDolphin/openFPGA-SpaceInvaders/releases/
 repository: !ruby/object:GitHub::Repository
   owner: AwesomeDolphin
   name: openFPGA-SpaceInvaders
+funding:

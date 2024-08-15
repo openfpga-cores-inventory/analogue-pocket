@@ -3,3 +3,5 @@ download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.3/o
 repository: !ruby/object:GitHub::Repository
   owner: budude2
   name: openfpga-GBC
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/budude2

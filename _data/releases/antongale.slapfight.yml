@@ -3,3 +3,4 @@ download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.
 repository: !ruby/object:GitHub::Repository
   owner: antongale
   name: arcade-slapfight
+funding:

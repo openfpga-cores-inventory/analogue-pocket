@@ -3,3 +3,4 @@ download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/dow
 repository: !ruby/object:GitHub::Repository
   owner: Mazamars312
   name: Analogue_Pocket_Neogeo
+funding:

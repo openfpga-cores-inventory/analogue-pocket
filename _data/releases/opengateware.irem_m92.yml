@@ -3,3 +3,5 @@ download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/
 repository: !ruby/object:GitHub::Repository
   owner: opengateware
   name: arcade-irem_m92
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/boogermann

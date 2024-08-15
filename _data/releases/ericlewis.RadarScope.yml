@@ -3,3 +3,4 @@ download_url: https://github.com/ericlewis/openFPGA-RadarScope/releases/download
 repository: !ruby/object:GitHub::Repository
   owner: ericlewis
   name: openFPGA-RadarScope
+funding:

@@ -56,7 +56,9 @@ class Updater < Thor
         platform = openfpga_service.get_platform(core.platform_id)
         write_platform(core.platform_id, platform)
 
-        release = Release.new(download_url, source.repository)
+        funding = get_funding(source.repository)
+
+        release = Release.new(download_url, source.repository, funding)
         write_release(core.id, release)
 
         icon_path = File.join(@jekyll_service.images_path, AUTHORS_DIRECTORY, "#{core.id}.png")
@@ -113,6 +115,14 @@ class Updater < Thor
     else
       get_content_download_url(repository, options)
     end
+  end
+
+  def get_funding(repository)
+    contents = @github_service.get_funding(repository)
+    return if contents.nil?
+
+    funding_path = DownloadHelper.download(contents.download_url)
+    GitHub::Funding.from_file(funding_path)
   end
 
   def get_asset_download_url(repository, options)

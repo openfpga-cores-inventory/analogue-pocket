@@ -3,3 +3,4 @@ download_url: https://github.com/spiritualized1997/openFPGA-NES/releases/downloa
 repository: !ruby/object:GitHub::Repository
   owner: spiritualized1997
   name: openFPGA-NES
+funding:

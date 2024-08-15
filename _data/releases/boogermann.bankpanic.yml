@@ -3,3 +3,7 @@ download_url: https://github.com/opengateware/arcade-bankp/releases/download/0.1
 repository: !ruby/object:GitHub::Repository
   owner: opengateware
   name: arcade-bankp
+funding: !ruby/object:GitHub::Funding
+  patreon: https://www.patreon.com/pierco
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN

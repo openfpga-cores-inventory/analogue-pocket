@@ -3,3 +3,4 @@ download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-O
 repository: !ruby/object:GitHub::Repository
   owner: Coin-OpCollection
   name: Distribution-OpenFPGA
+funding:

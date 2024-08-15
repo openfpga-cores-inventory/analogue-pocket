@@ -41,8 +41,8 @@ module GitHub
       end
     end
 
-    def self.from_yaml(content)
-      funding = YAML.safe_load(content)
+    def self.from_file(path)
+      funding = YAML.load_file(path)
       Funding.new(funding)
     end
 

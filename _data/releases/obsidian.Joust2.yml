@@ -3,3 +3,4 @@ download_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2/releases/downl
 repository: !ruby/object:GitHub::Repository
   owner: obsidian-dot-dev
   name: openFPGA-Joust2
+funding:

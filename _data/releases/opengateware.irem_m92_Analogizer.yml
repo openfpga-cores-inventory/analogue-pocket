@@ -3,3 +3,5 @@ download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/d
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: arcade-irem_m92_Analogizer
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/boogermann

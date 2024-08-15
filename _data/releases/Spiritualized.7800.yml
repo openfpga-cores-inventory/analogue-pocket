@@ -3,3 +3,4 @@ download_url: https://github.com/spiritualized1997/openFPGA-7800/releases/downlo
 repository: !ruby/object:GitHub::Repository
   owner: spiritualized1997
   name: openFPGA-7800
+funding:

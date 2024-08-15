@@ -3,3 +3,4 @@ download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.
 repository: !ruby/object:GitHub::Repository
   owner: markus-zzz
   name: myc64-pocket
+funding:

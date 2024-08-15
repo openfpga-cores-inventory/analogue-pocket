@@ -3,3 +3,4 @@ download_url: https://github.com/obsidian-dot-dev/openFPGA-AtariSystem1/releases
 repository: !ruby/object:GitHub::Repository
   owner: obsidian-dot-dev
   name: openFPGA-AtariSystem1
+funding:

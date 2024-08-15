@@ -3,3 +3,4 @@ download_url: https://github.com/RndMnkIII/openfpga-pcengine-cd_Analogizer/relea
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: openfpga-pcengine-cd_Analogizer
+funding:

@@ -3,3 +3,4 @@ download_url: https://github.com/Mazamars312/openfpga-pcengine-cd/releases/downl
 repository: !ruby/object:GitHub::Repository
   owner: Mazamars312
   name: openfpga-pcengine-cd
+funding:

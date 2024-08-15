@@ -3,3 +3,4 @@ download_url: https://github.com/spiritualized1997/openFPGA-Adventure-Vision/rel
 repository: !ruby/object:GitHub::Repository
   owner: spiritualized1997
   name: openFPGA-Adventure-Vision
+funding:

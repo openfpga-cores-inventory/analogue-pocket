@@ -3,3 +3,7 @@ download_url: https://github.com/agg23/openfpga-wonderswan/releases/download/1.0
 repository: !ruby/object:GitHub::Repository
   owner: agg23
   name: openfpga-wonderswan
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+  patreon: https://www.patreon.com/FPGAzumSpass

@@ -3,3 +3,6 @@ download_url: https://github.com/opengateware/arcade-congo/releases/download/0.1
 repository: !ruby/object:GitHub::Repository
   owner: opengateware
   name: arcade-congo
+funding: !ruby/object:GitHub::Funding
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN

@@ -3,3 +3,4 @@ download_url: https://github.com/spacemen3/PDP-1/releases/download/v1.1.0/Spacem
 repository: !ruby/object:GitHub::Repository
   owner: spacemen3
   name: PDP-1
+funding:

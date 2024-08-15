@@ -3,3 +3,4 @@ download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.1.
 repository: !ruby/object:GitHub::Repository
   owner: ericlewis
   name: openfpga-qbert
+funding:

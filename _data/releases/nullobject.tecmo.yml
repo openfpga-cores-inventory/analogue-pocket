@@ -3,3 +3,5 @@ download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v2.
 repository: !ruby/object:GitHub::Repository
   owner: nullobject
   name: openfpga-tecmo
+funding: !ruby/object:GitHub::Funding
+  patreon: https://www.patreon.com/nullobject

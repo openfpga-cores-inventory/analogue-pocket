@@ -3,3 +3,4 @@ download_url: https://github.com/spiritualized1997/openFPGA-VideoBrain/releases/
 repository: !ruby/object:GitHub::Repository
   owner: spiritualized1997
   name: openFPGA-VideoBrain
+funding:

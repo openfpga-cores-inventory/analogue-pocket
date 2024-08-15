@@ -3,3 +3,6 @@ download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/down
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: openfpga-NES-Analogizer
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23

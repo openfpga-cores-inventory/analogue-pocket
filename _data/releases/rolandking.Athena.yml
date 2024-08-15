@@ -3,3 +3,4 @@ download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1
 repository: !ruby/object:GitHub::Repository
   owner: rolandking
   name: openFPGA-Athena
+funding:

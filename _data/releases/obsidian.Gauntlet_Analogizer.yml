@@ -3,3 +3,4 @@ download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Gauntlet/releases
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: Analogizer_openFPGA-Gauntlet
+funding:

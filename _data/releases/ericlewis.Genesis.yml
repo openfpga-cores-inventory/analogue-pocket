@@ -3,3 +3,4 @@ download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download
 repository: !ruby/object:GitHub::Repository
   owner: opengateware
   name: openfpga-genesis
+funding:
