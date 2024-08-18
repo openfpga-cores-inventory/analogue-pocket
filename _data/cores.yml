@@ -4381,13 +4381,13 @@
       platform: github
       name: openfpga-varvara
       prerelease: false
-      tag_name: 0.0.3
+      tag_name: 0.0.4
     requires_license: false
-    download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.3/tsalvo.varvara_0.0.3_2024-06-16.zip
+    download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.4/tsalvo.varvara_0.0.4_2024-08-17.zip
     platform_id: varvara
     description: Computer system running on Uxn
-    version: 0.0.3
-    date_release: '2024-06-16'
+    version: 0.0.4
+    date_release: '2024-08-17'
     platform:
       category: Computer
       name: Varvara
