@@ -1850,6 +1850,39 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtngpc
+    display_name: Neo Geo Pocket Color
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtngpc.zip
+    platform_id: jtngpc
+    description: Handheld
+    version: 324111a
+    date_release: '2024-08-30'
+    platform:
+      category: Handheld
+      name: jtngpc
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtngpc
+      extensions:
+      - ngp
+      - ngc
+    - platform: jtngpc
+      filename: ngpc.rom
+      extensions:
+      - rom
+      - bin
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jtninja
     display_name: Bad Dudes vs. DragonNinja
     repository:
