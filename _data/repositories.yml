@@ -261,6 +261,9 @@
     - display_name: Trick Trap
       repository: jtbin
       path: pocket/zips/jotego.jtlabrun.zip
+    - display_name: Circus Charlie
+      repository: jtbin
+      path: pocket/zips/jotego.jtcircus.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
