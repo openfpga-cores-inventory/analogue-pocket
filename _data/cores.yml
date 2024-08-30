@@ -459,6 +459,34 @@
       - bin
     sponsor:
       ko_fi: https://ko-fi.com/budude2
+  - id: budude2.Lynx
+    display_name: Atari Lynx
+    repository:
+      platform: github
+      name: openFPGA-AtariLynx
+      prerelease: false
+      tag_name: v1.0.0
+    requires_license: false
+    download_url: https://github.com/budude2/openfpga-AtariLynx/releases/download/v1.0.0/openFPGA-Lynx-1.0.0.zip
+    platform_id: lynx
+    description: Atari Lynx
+    version: '1.0'
+    date_release: '2024-08-27'
+    platform:
+      category: Handheld
+      name: Lynx
+      manufacturer: Atari
+      year: 1989
+    assets:
+    - platform: lynx
+      extensions:
+      - lnx
+    - platform: lynx
+      filename: lynxboot.img
+      extensions:
+      - bin
+    sponsor:
+      ko_fi: https://ko-fi.com/budude2
 - username: Coin-OpCollection
   cores:
   - id: atrac17.pipibibs
@@ -1068,6 +1096,37 @@
       - json
       core_specific: true
     - platform: jtcastle
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
+  - id: jotego.jtcircus
+    display_name: Circus Charlie
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtcircus.zip
+    platform_id: jtcircus
+    description: Arcade
+    version: 324111a
+    date_release: '2024-08-30'
+    platform:
+      category: Arcade
+      name: jtcircus
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtcircus
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtcircus
       extensions:
       - rom
     sponsor:
