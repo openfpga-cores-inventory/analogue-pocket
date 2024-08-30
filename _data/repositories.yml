@@ -261,6 +261,9 @@
     - display_name: Trick Trap
       repository: jtbin
       path: pocket/zips/jotego.jtlabrun.zip
+    - display_name: Neo Geo Pocket Color
+      repository: jtbin
+      path: pocket/zips/jotego.jtngpc.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
