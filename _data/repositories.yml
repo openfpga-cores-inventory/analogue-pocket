@@ -43,6 +43,8 @@
     - display_name: budude2 GB
       repository: openfpga-GBC
       filter: openfpga-gb-
+    - display_name: Atari Lynx
+      repository: openFPGA-AtariLynx
 - username: Coin-OpCollection
   cores:
     - display_name: Batrider
