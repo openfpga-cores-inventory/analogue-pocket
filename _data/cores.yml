@@ -3012,13 +3012,13 @@
       platform: github
       name: openFPGA-Druaga
       prerelease: false
-      tag_name: v0.9.4
+      tag_name: v0.9.5
     requires_license: false
-    download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.4/openFPGA-Druaga.zip
+    download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.5/openFPGA-Druaga.zip
     platform_id: druaga
     description: Tower of Druaga released in 1984
-    version: 0.9.4
-    date_release: '2024-02-23'
+    version: 0.9.5
+    date_release: '2024-08-28'
     platform:
       category: Arcade
       name: Tower of Druaga
