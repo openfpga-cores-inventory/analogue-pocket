@@ -465,13 +465,13 @@
       platform: github
       name: openFPGA-AtariLynx
       prerelease: false
-      tag_name: v1.0.0
+      tag_name: v1.0.1
     requires_license: false
-    download_url: https://github.com/budude2/openfpga-AtariLynx/releases/download/v1.0.0/openFPGA-Lynx-1.0.0.zip
+    download_url: https://github.com/budude2/openfpga-AtariLynx/releases/download/v1.0.1/openFPGA-Lynx-1.0.1.zip
     platform_id: lynx
     description: Atari Lynx
-    version: '1.0'
-    date_release: '2024-08-27'
+    version: 1.0.1
+    date_release: '2024-09-01'
     platform:
       category: Handheld
       name: Lynx
@@ -481,6 +481,7 @@
     - platform: lynx
       extensions:
       - lnx
+      - lyx
     - platform: lynx
       filename: lynxboot.img
       extensions:
