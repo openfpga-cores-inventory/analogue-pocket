@@ -2163,6 +2163,37 @@
       patreon: https://www.patreon.com/jotego
       custom:
       - https://www.paypal.me/topapate
+  - id: jotego.jtrumble
+    display_name: The Speed Rumbler
+    repository:
+      platform: github
+      name: jtbin
+      prerelease: false
+    requires_license: true
+    download_url: https://raw.githubusercontent.com/jotego/jtbin/master/pocket/zips/jotego.jtrumble.zip
+    platform_id: jtrumble
+    description: Arcade
+    version: 3a2e91f
+    date_release: '2024-09-06'
+    platform:
+      category: Arcade
+      name: jtrumble
+      manufacturer: JT FPGA
+      year: 2024
+    assets:
+    - platform: jtrumble
+      extensions:
+      - json
+      core_specific: true
+    - platform: jtrumble
+      extensions:
+      - rom
+    sponsor:
+      github:
+      - https://github.com/sponsors/jotego
+      patreon: https://www.patreon.com/jotego
+      custom:
+      - https://www.paypal.me/topapate
   - id: jotego.jts16
     display_name: SEGA System 16A
     repository:
