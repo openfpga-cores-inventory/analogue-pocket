@@ -270,6 +270,9 @@
     - display_name: Parodius Da!
       repository: jtbin
       path: pocket/zips/jotego.jtparoda.zip
+    - display_name: The Speed Rumbler
+      repository: jtbin
+      path: pocket/zips/jotego.jtrumble.zip
 - username: markus-zzz
   cores:
     - display_name: markus-zzz MyC64
