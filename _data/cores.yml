@@ -2917,13 +2917,13 @@
       platform: github
       name: openfpga-pcengine-cd
       prerelease: false
-      tag_name: Mazamars312.PCECD.0.1.7-15/02/2023
+      tag_name: Mazamars312.PCECD.0.2.3-BETA
     requires_license: false
-    download_url: https://github.com/Mazamars312/openfpga-pcengine-cd/releases/download/Mazamars312.PCECD.0.1.7-15/02/2023/Mazamars312.PCECD.0.1.7-15-02-2023.zip
+    download_url: https://github.com/Mazamars312/openfpga-pcengine-cd/releases/download/Mazamars312.PCECD.0.2.3-BETA/OPENFPGA-PCECD-0.2.3-BETA.zip
     platform_id: pcecd
     description: PC Engine (known as TurboGrafx-16 in the US) by NEC
-    version: 0.1.7
-    date_release: '2023-02-15'
+    version: 0.2.3
+    date_release: '2024-11-12'
     platform:
       category: Console
       name: PC Engine CD
@@ -2932,15 +2932,13 @@
     assets:
     - platform: pcecd
       extensions:
-      - json
-      core_specific: true
+      - cue
     - platform: pcecd
       filename: bios_3_0_usa.pce
       extensions:
       - pce
-      core_specific: true
     - platform: pcecd
-      filename: mpu.bin
+      filename: pce_mpu_bios.bin
       extensions:
       - bin
       core_specific: true
