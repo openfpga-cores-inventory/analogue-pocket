@@ -27,6 +27,7 @@
       filter: openfpga-gbc-
     - name: openfpga-GBC
       filter: openfpga-gb-
+    - name: openFPGA-AtariLynx
 - owner: Coin-OpCollection
   repositories:
     - name: Distribution-OpenFPGA
@@ -172,6 +173,16 @@
       path: pocket/zips/jotego.jtriders.zip
     - name: jtbin
       path: pocket/zips/jotego.jtlabrun.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcircus.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtngpc.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtparoda.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtwwfss.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtrumble.zip
 - owner: markus-zzz
   repositories:
     - name: myc64-pocket
