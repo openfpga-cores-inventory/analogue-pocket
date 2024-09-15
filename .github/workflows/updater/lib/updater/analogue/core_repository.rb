@@ -32,7 +32,9 @@ module Analogue
     private
 
     def get_core_ids
-      Dir.children(@cores_path)
+      Dir.chdir(@cores_path) do
+        Dir.glob('*').select { |f| File.directory? f }
+      end
     end
 
     def get_core_definition(core_id)
