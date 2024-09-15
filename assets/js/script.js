@@ -1,21 +1,21 @@
 (function () {
   // Search Input
-  document.getElementById('input-search')?.addEventListener('input', function (e) {
+  document.getElementById('search')?.addEventListener('input', function (e) {
     search();
   });
 
   // Search Button
-  document.getElementById('button-search')?.addEventListener('click', function (e) {
+  document.getElementById('btn-search')?.addEventListener('click', function (e) {
     search();
   });
 
   // Sort Dropdown
-  document.getElementById('dropdown-sort')?.addEventListener('change', function (e) {
+  document.getElementById('sort')?.addEventListener('change', function (e) {
     sort();
   });
 
   // Sort Button
-  document.getElementById('button-sort')?.addEventListener('click', function (e) {
+  document.getElementById('btn-sort')?.addEventListener('click', function (e) {
     const icon = this.querySelector('i');
 
     // Toggle sorting icon
@@ -30,7 +30,7 @@
   });
 
   // Category Filter
-  document.querySelectorAll('input[name=filter-platform]').forEach(function (item) {
+  document.querySelectorAll('input[name=category]').forEach(function (item) {
     item.addEventListener('change', function (e) {
       filter();
     });
@@ -46,17 +46,17 @@
   const TAB_LIST = 'list';
 
   const GALLERY_ITEM_SELECTOR = '.col';
-  const GALLERY_NAME_SELECTOR = '.card-title';
+  const GALLERY_PLATFORM_SELECTOR = '.card-title';
   const GALLERY_AUTHOR_SELECTOR = '.card-text';
   const GALLERY_DESCRIPTION_SELECTOR = '.card-subtitle';
   const GALLERY_CATEGORY_SELECTOR = '.card-link';
   const GALLERY_DATE_SELECTOR = '.card-footer';
 
   const LIST_ITEM_SELECTOR = 'tbody > tr';
-  const LIST_NAME_SELECTOR = 'td:nth-child(1)';
-  const LIST_AUTHOR_SELECTOR = 'td:nth-child(4)';
-  const LIST_CATEGORY_SELECTOR = 'td:nth-child(3)';
-  const LIST_DATE_SELECTOR = 'td:nth-child(6)';
+  const LIST_PLATFORM_SELECTOR = 'td:nth-child(1)';
+  const LIST_AUTHOR_SELECTOR = 'td:nth-child(3)';
+  const LIST_CATEGORY_SELECTOR = 'td:nth-child(2)';
+  const LIST_DATE_SELECTOR = 'td:nth-child(5)';
 
   const gallery = document.getElementById(GALLERY_CORES_ID);
   const list = document.getElementById(LIST_CORES_ID);
@@ -65,7 +65,7 @@
   const visibleItems = (tab) => items(tab).filter(item => item.classList.contains('d-block') || item.classList.contains('d-table-row'));
 
   const isList = (tab) => tab === TAB_LIST;
-  const itemName = (item, tab) => isList(tab) ? item.querySelector(LIST_NAME_SELECTOR)?.innerText : item.querySelector(GALLERY_NAME_SELECTOR)?.innerText;
+  const itemPlatform = (item, tab) => isList(tab) ? item.querySelector(LIST_PLATFORM_SELECTOR)?.innerText : item.querySelector(GALLERY_PLATFORM_SELECTOR)?.innerText;
   const itemAuthor = (item, tab) => isList(tab) ? item.querySelector(LIST_AUTHOR_SELECTOR)?.innerText : item.querySelector(GALLERY_AUTHOR_SELECTOR)?.innerText;
   const itemDescription = (item, tab) => isList(tab) ? null : item.querySelector(GALLERY_DESCRIPTION_SELECTOR)?.innerText;
   const itemCategory = (item, tab) => isList(tab) ? item.querySelector(LIST_CATEGORY_SELECTOR)?.innerText : item.querySelector(GALLERY_CATEGORY_SELECTOR)?.innerText;
@@ -77,7 +77,7 @@
       if (!query?.length)
         return true;
 
-      const name = itemName(item, tab);
+      const platform = itemPlatform(item, tab);
       const author = itemAuthor(item, tab);
       const description = itemDescription(item, tab);
       const category = itemCategory(item, tab);
@@ -85,7 +85,7 @@
       const sanitizedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       const regex = new RegExp(sanitizedQuery, 'gi');
 
-      return regex.test(name) || regex.test(author) || regex.test(description) || regex.test(category);
+      return regex.test(platform) || regex.test(author) || regex.test(description) || regex.test(category);
     };
 
     const searchGallery = (query) => {
@@ -110,7 +110,7 @@
       });
     }
 
-    const query = document.getElementById('input-search')?.value;
+    const query = document.getElementById('search')?.value;
     searchGallery(query);
     searchList(query);
 
@@ -135,14 +135,14 @@
     const filterGallery = (filters) => filterItems(TAB_GALLERY, filters).forEach(item => item.classList.replace('d-block', 'd-none'));
     const filterList = (filters) => filterItems(TAB_LIST, filters).forEach(item => item.classList.replace('d-table-row', 'd-none'));
 
-    const filters = Array.from(document.querySelectorAll('input[name=filter-platform]:checked + label')).map(x => x.innerText);
+    const filters = Array.from(document.querySelectorAll('input[name=category]:checked + label')).map(x => x.innerText);
     filterGallery(filters);
     filterList(filters);
   };
 
   // Sort
   const sort = function () {
-    const icon = document.getElementById('button-sort')?.querySelector('i');
+    const icon = document.getElementById('btn-sort')?.querySelector('i');
     const order = icon.classList.contains('bi-sort-down');
 
     const compare = (a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }) * (order ? -1 : 1);
@@ -171,14 +171,14 @@
       return order ? bDate - aDate : aDate - bDate;
     };
 
-    const byName = (tab) => function (a, b) {
-      const aName = itemName(a, tab);
-      const bName = itemName(b, tab);
+    const byPlatform = (tab) => function (a, b) {
+      const aPlatform = itemPlatform(a, tab);
+      const bPlatform = itemPlatform(b, tab);
 
-      return compare(aName, bName);
+      return compare(aPlatform, bPlatform);
     };
 
-    const field = document.getElementById('dropdown-sort')?.value;
+    const field = document.getElementById('sort')?.value;
     let method = byLatestRelease;
 
     switch (field) {
@@ -188,8 +188,8 @@
       case 'category':
         method = byCategory;
         break;
-      case 'name':
-        method = byName;
+      case 'platform':
+        method = byPlatform;
         break;
       case 'latest_release':
       default:
