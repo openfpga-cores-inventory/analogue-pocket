@@ -3,36 +3,35 @@ layout: none
 ---
 {
   "data": [
-    {%- for developer in site.data.cores %}
-      {%- assign cores = developer.cores | where_exp: "core", "core.repository.tag_name" %}
-      {%- if cores.size < 1 %}
-        {%- continue %}
-      {%- endif %}
-      {%- for core in cores %}
-    {
-      "identifier": {{ core.id | jsonify }},
-      "platform": {{ core.platform.name | jsonify }},
-      "repository": {
-        "platform": {{ core.repository.platform | jsonify }},
-        "owner": {{ developer.username | jsonify }},
-        "name": {{ core.repository.name | jsonify }}
-      },
-      "replaces": {{ core.replaces | jsonify }},
-      "requires_license": {{ core.requires_license | jsonify }},
-      "sponsor": {{ core.sponsor | jsonify }},
-      {% if core.repository.prerelease %}"prerelease"{% else %}"release"{% endif %}: {
-        "tag_name": {{ core.repository.tag_name | jsonify }},
-        "release_date": {{ core.date_release | date: "%Y-%m-%d" | jsonify }},
-        "version": {{ core.version | jsonify }},
-        "platform": {{ core.platform | jsonify }},
-        "assets": {{ core.assets | jsonify }}
-      }
-    }
-        {%- unless forloop.last %},{% endunless %}
-      {%- endfor %}
+    {%- for core_hash in site.data.cores -%}
+      {%- assign key = core_hash[0] -%}
+      {%- assign core = core_hash[1] -%}
+      {%- for platform_id in core.metadata.platform_ids -%}
+        {%- assign platform = site.data.platforms[platform_id] -%}
+        {%- unless platform -%}
+          {%- continue -%}
+        {%- endunless -%}
+        {%- assign core_id = core.metadata.author | append: "." | append: core.metadata.shortname -%}
+        {%- assign release = site.data.releases[key] -%}
+        {
+          "identifier": {{ core_id | jsonify }},
+          "platform": {{ platform.name | jsonify }},          
+          "repository": {
+            "platform": "github",
+            "owner": {{ release.repository.owner | jsonify }},
+            "name": {{ release.repository.name | jsonify }}
+          },
+          "requires_license": {{ core.requires_license | jsonify }},          
+          "sponsor": {{ release.funding | jsonify }},
+          "release": {
+            "release_date": {{ core.metadata.date_release | date: "%Y-%m-%d" | jsonify }},
+            "version": {{ core.metadata.version | jsonify }},
+            "platform": {{ platform | jsonify}},
+            "assets": {{ core.data_slots | jsonify }}
+          }
+        }
+      {%- endfor -%}
       {%- unless forloop.last %},{% endunless %}
-    {%- endfor %}
+    {%- endfor -%}
   ]
 }
-
-
