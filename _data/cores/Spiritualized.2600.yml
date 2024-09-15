@@ -66,3 +66,4 @@ info: "Spiritualized Atari 2600\r\n\r\nMost Atari 2600 things should be supporte
   count and centering are automatically controlled and\r\nshould work for just about
   everything.\r\n\r\nFor information on interact menu items and required\r\nfiles
   for certain features, please see the readme.txt\r\n\r\nEnjoy!"
+requires_license: false

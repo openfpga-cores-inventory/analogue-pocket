@@ -19,3 +19,4 @@ framework: !ruby/object:Analogue::Core::Framework
 data_slots: []
 info: Arcade game Space Race (Atari, 1973) based on Rev.F schematics. Ported from
   MiSTer.
+requires_license: false

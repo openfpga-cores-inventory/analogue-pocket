@@ -50,3 +50,4 @@ info: "Spiritualized Intellivision\r\nEnjoy Intellivision games with this core. 
   not supported.\r\n\r\nTo use this core, you need to place exec.intv into \r\n\r\n/Assets/intv/Spiritualized.Intv/exec.intv\r\n\r\nFor
   the Intellivoice, you need to place the 2048 byte 012.BIN file into\r\n\r\n/Assets/intv/Spiritualized.Intv/012.BIN\r\n\r\nSee
   the readme.txt for more information on button mapping and the .intv format.\r\n\r\nEnjoy!"
+requires_license: false

@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Tower of Druaga released in 1984
   author: obsidian
   url: https://github.com/obsidian-dot-dev/openFPGA-Druaga
-  version: 0.9.4
-  date_release: '2024-02-23'
+  version: 0.9.5
+  date_release: '2024-08-28'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -45,3 +45,4 @@ data_slots:
   extensions:
   - sav
 info:
+requires_license: false

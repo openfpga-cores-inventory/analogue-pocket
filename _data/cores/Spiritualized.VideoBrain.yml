@@ -49,3 +49,4 @@ info: "Spiritualized Video Brain\r\n\r\nEnjoy Video Brain games with this core. 
   files are required. \r\n\r\n/assets/videobrain/Spiritualized.Videobrain/uvres1.bin
   \ (2048 bytes)\r\n/assets/videobrain/Spiritualized.Videobrain/uvres2.bin  (2048
   bytes)\r\n\r\nSee readme.txt for keyboard mapping.\r\n\r\nEnjoy!"
+requires_license: false

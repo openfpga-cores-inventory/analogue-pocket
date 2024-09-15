@@ -40,3 +40,4 @@ info: "Spiritualized Channel F\r\n\r\nEnjoy Channel F with this core.\r\n\r\nTo 
   file named \"play bios games.bin\" has been included if you wish to play\r\nthe
   built-in games.  This is just an empty file which will make it think no\r\ncartridge
   is inserted.\r\n\r\nEnjoy!"
+requires_license: false

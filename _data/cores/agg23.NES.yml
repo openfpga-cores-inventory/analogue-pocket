@@ -52,3 +52,4 @@ info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, pau
   4 controllers (when connected to the Dock), cartridge saves, and most mappers. Please
   report all issues to agg23, as most likely any issues experienced are issues with
   the port, not the core."
+requires_license: false

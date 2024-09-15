@@ -313,3 +313,4 @@ info: "Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue
   CD-ROM as a storage media.\r\n\r\nCurrently supports standard PC Engine/TurboGrafx
   CD Roms only. Please report all issues to Mazamars312, as most likely any issues
   experienced are issues with the port, not the core."
+requires_license: false

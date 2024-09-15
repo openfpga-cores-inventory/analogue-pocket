@@ -44,3 +44,4 @@ info: "In 1962, the first digital video game, Spacewar! debuted on an early comp
   digital video game ever created.\r\n\r\nPDP-1 has been painstakingly recreated with
   the public domain open source code for openFPGA by Spacemen3. So it can be preserved,
   studied and played forever without compromises.\r\n"
+requires_license: false

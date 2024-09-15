@@ -40,3 +40,4 @@ info: "Spiritualized Creativision\r\n\r\nTo use this core, you must place the 20
   byte BIOS file \"crbios.bin\" here:\r\n\r\n/assets/creativision/Spiritualized.Creativision/crbios.bin\r\n\r\nNOTE:
   Games need to be reset first to play!  Press both L and R\r\ntrigger simultaneously
   to reset.\r\n\r\nThe keyboard is fully supported via USB.\r\n\r\nEnjoy!"
+requires_license: false

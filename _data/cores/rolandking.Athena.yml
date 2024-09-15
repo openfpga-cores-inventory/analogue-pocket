@@ -46,3 +46,4 @@ data_slots:
 info: "Analogue Pocket port of Athena, also supports Fighting Golf. \n\nThanks to
   RndMnkIII who did the original port to MiSTer and all the people whose work he used
   in that port. \n"
+requires_license: false

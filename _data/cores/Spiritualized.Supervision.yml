@@ -28,3 +28,4 @@ data_slots:
   - bin
   - sv
 info: "Spiritualized supervision\r\n\r\nEnjoy Supervision games with this core. \r\n\r\n\r\nEnjoy!"
+requires_license: false

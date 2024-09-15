@@ -90,3 +90,4 @@ data_slots:
   extensions:
   - bin
 info:
+requires_license: false

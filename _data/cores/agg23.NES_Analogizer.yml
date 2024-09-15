@@ -53,3 +53,4 @@ info: "Modified to support the Analogizer adapter.\r\nPort by agg23. Core by Lud
   is still popular to this day\r\n\r\nCore supports 4 controllers (when connected
   to the Dock), cartridge saves, and most mappers. Please report all issues to agg23,
   as most likely any issues experienced are issues with the port, not the core."
+requires_license: false

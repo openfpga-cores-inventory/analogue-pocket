@@ -135,3 +135,4 @@ data_slots:
   - pbin
   - prom1
 info:
+requires_license: false

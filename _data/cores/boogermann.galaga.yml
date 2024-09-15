@@ -48,3 +48,4 @@ info: "Galaga is a 1981 fixed shooter arcade video game developed and published 
   trademarks, logos, and copyrights are property of their respective owners.\r\n\r\nThe
   authors and contributors or any of its maintainers are in no way associated with
   or endorsed by Bandai Namco Entertainment Inc.\r\n"
+requires_license: false

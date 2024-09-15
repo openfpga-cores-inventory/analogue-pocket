@@ -128,3 +128,4 @@ info: "Spiritualized NES\r\n\r\nNSF playing, FDS games, Vs. Games, and everythin
   nearly instant.\r\n\r\nLoading NSFs can take 2-3 seconds as well.\r\n\r\nFor Vs.
   games, press the left trigger (default) to insert coins.\r\n\r\nPlease see readme.txt
   for more information.\r\n"
+requires_license: false

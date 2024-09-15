@@ -39,3 +39,4 @@ data_slots:
   extensions:
   - sav
 info:
+requires_license: false

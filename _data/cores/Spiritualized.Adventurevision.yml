@@ -48,3 +48,4 @@ info: "Spiritualized Adventure Vision\r\n\r\nEnjoy Adventure Vision games with t
   core. \r\n\r\nTo use it, you must place two files here:\r\n\r\n/assets/avision/Spiritualized.Adventurevision/avbios.bin
   \ (1024 bytes)\r\n/assets/avision/Spiritualized.Adventurevision/avsound.bin  (1024
   bytes)\r\n\r\n\r\nEnjoy!"
+requires_license: false

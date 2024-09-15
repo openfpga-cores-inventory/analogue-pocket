@@ -38,3 +38,4 @@ data_slots:
   - bin
 info: "Spiritualized Gamate\r\n\r\nEnjoy gamate games with this core. \r\n\r\nTo use
   it, you must place the 4096 byte Gamate BIOS named \"gmbios.bin\" here:\r\n\r\n/assets/gamate/Spiritualized.Gamate/gmbios.bin\r\n\r\nEnjoy!"
+requires_license: false

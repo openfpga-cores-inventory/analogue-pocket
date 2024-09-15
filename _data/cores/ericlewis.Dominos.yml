@@ -26,3 +26,4 @@ data_slots:
   filename: dominos.rom
   extensions:
 info: Atari's Arcade 1977 Dominos. Ported from MiSTer.
+requires_license: false

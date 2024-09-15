@@ -41,3 +41,4 @@ info: "Spiritualized Game King\r\n\r\nEnjoy Game King games with this core. \r\n
   file named \"Play BIOS Games.bin\" has been included.  Loading this\r\nwill let
   you play the built in BIOS games.  This file is empty and\r\nis simply used to trigger
   the built in games.\r\n\r\n\r\nEnjoy!"
+requires_license: false

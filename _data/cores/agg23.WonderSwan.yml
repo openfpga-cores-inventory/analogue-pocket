@@ -67,3 +67,4 @@ info: |-
   * Flickerblending
 
   Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
+requires_license: false

@@ -36,3 +36,4 @@ data_slots:
   extensions:
   - rom
 info:
+requires_license: false

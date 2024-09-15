@@ -27,3 +27,4 @@ data_slots:
   filename: qbert.rom
   extensions:
 info:
+requires_license: false

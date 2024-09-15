@@ -44,3 +44,4 @@ data_slots:
   extensions:
   - nvm
 info:
+requires_license: false

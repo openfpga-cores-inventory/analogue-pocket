@@ -53,3 +53,4 @@ data_slots:
   extensions:
   - ovr
 info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
+requires_license: false

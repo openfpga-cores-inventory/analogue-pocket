@@ -20,3 +20,4 @@ data_slots: []
 info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
   are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
   Extended paddles\r\n* Training mode"
+requires_license: false

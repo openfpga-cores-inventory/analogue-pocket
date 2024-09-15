@@ -43,3 +43,4 @@ info: "Spiritualized Genesis\r\n\r\nEverything should be supported by this core.
   up to 4\r\nplayers can play games that use J-carts such as Micromachines which had
   two\r\nports on the cartridge.\r\n\r\nEEPROM saves should be fully supported as
   well.\r\n\r\nHave fun!"
+requires_license: false

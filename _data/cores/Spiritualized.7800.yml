@@ -39,3 +39,4 @@ info: "Spiritualized Atari 7800\r\n\r\nMost Atari 7800 mappings and POKEY audio 
   supported by this core.\r\n\r\nTo use it, you must place \"7800bios.bin\" into the
   /assets/7800/common/\r\nfolder.\r\n\r\nFiles should be in *.A78 format.\r\n\r\nThe
   \"Pause\" button is mapped to left trigger.\r\n\r\nEnjoy!"
+requires_license: false

@@ -27,3 +27,4 @@ info: "Flappy Bird\r\n\r\nThis core is written entirely in discrete logic, appar
   and ends if the bird falls to the ground or hits a pipe. Points are rewarded each
   time the player crosses a pipe.\r\n\r\nInstructions\r\n* Press Flap\r\n* When you
   die, press reset.\r\n"
+requires_license: false

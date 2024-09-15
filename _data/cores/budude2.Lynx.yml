@@ -1,0 +1,41 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - lynx
+  shortname: Lynx
+  description: Atari Lynx
+  author: budude2
+  url: https://github.com/budude2/openfpga-AtariLynx
+  version: 1.0.1
+  date_release: '2024-09-01'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - lnx
+  - lyx
+- !ruby/object:Analogue::Core::DataSlot
+  name: BIOS
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: lynxboot.img
+  extensions:
+  - bin
+info: Port by budude2, original core created by mister community. As this is a work
+  in progress please let me know of any issues.
+requires_license: false

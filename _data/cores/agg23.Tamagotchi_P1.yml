@@ -62,3 +62,4 @@ info: |
   * Configurable automatic disabling of turbo when events occur
   * LCD configuration
   * User-replaceable backgrounds and icons
+requires_license: false

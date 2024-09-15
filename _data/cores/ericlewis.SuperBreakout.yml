@@ -26,3 +26,4 @@ data_slots:
   filename: sbrkout.rom
   extensions:
 info:
+requires_license: false

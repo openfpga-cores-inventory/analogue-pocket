@@ -32,3 +32,4 @@ info: "Port by agg23. MiSTer port by uXeBoy. Atmega core by Iulian Gheorghiu.\r\
   a very small and simple formfactor.\r\n\r\nCore may exibit strange audio behavior
   on a few games. The cause of this issue is unknown at this time. Settings are provided
   to tweak the audio output to make it more agreeable."
+requires_license: false

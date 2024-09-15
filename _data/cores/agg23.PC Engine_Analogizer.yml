@@ -44,3 +44,4 @@ info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC E
   PC Engine/TurboGrafx and SuperGrafx ROMs. CD support is coming sometime in the future.
   Please report all issues to agg23, as most likely any issues experienced are issues
   with the port, not the core."
+requires_license: false

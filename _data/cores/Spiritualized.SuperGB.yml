@@ -62,3 +62,4 @@ info: "Spiritualized Super Gameboy\r\n\r\nEverything Super GB Should be supporte
   - the 256K or 512K BIOS for the SNES \r\n\r\nYou can use either SGB or SGB2 files.
   \ \r\n\r\nTo run real cartridges, select \"run_cartridge.gb\" for the game,\r\nwhich
   is included in this package.\r\n\r\nUp to 4 players are supported using the dock.\r\n\r\nEnjoy!"
+requires_license: false

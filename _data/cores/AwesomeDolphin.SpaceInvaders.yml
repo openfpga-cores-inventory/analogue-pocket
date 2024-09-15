@@ -106,3 +106,4 @@ data_slots:
   filename: 9.raw
   extensions:
 info:
+requires_license: false

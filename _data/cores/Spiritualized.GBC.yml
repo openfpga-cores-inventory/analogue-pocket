@@ -52,3 +52,4 @@ info: "Spiritualized GBC\r\n\r\nAlmost everything should be supported by this co
   in, it will run at 3.3V.\r\n\r\nRumble is supported if you plug in a DS rumble pak!
   A menu has been added to adjust rumble strength.\r\n* 0 = off\r\n* 1 = weak\r\n*
   7 = strong\r\n\r\nEnjoy"
+requires_license: false

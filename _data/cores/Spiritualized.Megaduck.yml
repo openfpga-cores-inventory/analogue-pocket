@@ -31,3 +31,4 @@ data_slots:
 info: "Spiritualized Megaduck\r\n\r\nEnjoy Megaduck games with this core.\r\n\r\nBoth
   kinds of bankswitching are supported.  The file extention will determine\r\nwhich
   is used:\r\n\r\n.md1 is for 32K banks\r\n.md2 is for 16K banks\r\n\r\n\r\nEnjoy!"
+requires_license: false

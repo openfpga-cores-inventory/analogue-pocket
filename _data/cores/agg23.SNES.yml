@@ -45,3 +45,4 @@ info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
   (when connected to the Dock), and the SA-1, Super FX (GSU), DSP, CX4, S-DD1, SPC7110,
   and BSX expansion chips. Please report all issues to agg23, as most likely any issues
   experienced are issues with the port, not the core."
+requires_license: false

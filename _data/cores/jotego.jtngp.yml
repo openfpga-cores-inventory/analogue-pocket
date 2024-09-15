@@ -7,8 +7,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Handheld
   author: jotego
   url: https://patreon.com/jotego
-  version: 42941f5
-  date_release: '2024-08-09'
+  version: '0645124'
+  date_release: '2024-09-08'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -57,3 +57,4 @@ data_slots:
   extensions:
   - bin
 info:
+requires_license: false

@@ -50,3 +50,4 @@ info: "Spiritualized Colecovision\r\n\r\nRegular, Super Game Module, EEPROM, and
   the correct extention to work:\r\n\r\nBlack Onyx should have the .CE0 file extention,\r\nBoxxle
   needs the .CE1 extension, \r\nand Penguin Adventure and Gradius need a .CF0 extension.\r\n\r\nSee
   readme.txt for information on button mapping.\r\n\r\n\r\nEnjoy!"
+requires_license: false

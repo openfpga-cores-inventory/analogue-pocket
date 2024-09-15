@@ -67,3 +67,4 @@ info: "Spiritualized Odyssey^2\r\n\r\nEnjoy Odyssey^2 games with this core.  The
   named \"o2bios.bin\" here:\r\n\r\n/assets/odsyessey2/Spiritualized.Odyssey2/o2bios.bin\r\n\r\nIf
   you wish to use The Voice, the two voice 16384 byte files need to be placed here:\r\n\r\n/assets/odsyessey2/Spiritualized.Odyssey2/SP128_03.BIN\r\n/assets/odsyessey2/Spiritualized.Odyssey2/SP128_04.BIN\r\n\r\nThis
   core really benefits from a keyboard.  see the readme.txt for more info.\r\n\r\nEnjoy!"
+requires_license: false

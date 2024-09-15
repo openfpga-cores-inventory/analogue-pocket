@@ -38,3 +38,4 @@ data_slots:
 info: "Spiritualized Studio 2\r\n\r\n\r\nTo use it, you must place the 1024 byte Studio
   2 BIOS named \"rca2bios.bin\" here:\r\n\r\n/assets/studio2/Spiritualized.Studio2/rca2bios.bin\r\n\r\nSee
   readme.txt for button mapping.\r\n\r\nEnjoy!"
+requires_license: false
