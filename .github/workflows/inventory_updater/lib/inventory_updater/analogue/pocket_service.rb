@@ -49,7 +49,9 @@ module Analogue
 
     def get_core_ids
       cores_path = File.join(@root_path, CORES_DIRECTORY)
-      return Dir.children(cores_path)
+      Dir.chdir(cores_path) do
+        return Dir.glob('*').select { |f| File.directory? f }
+      end
     end
 
     def get_core(directory)
