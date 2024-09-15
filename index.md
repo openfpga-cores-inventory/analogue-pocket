@@ -7,17 +7,54 @@ title: Analogue Pocket
 ---
 The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-system portable handheld designed and built by [Analogue](https://www.analogue.co).
 
-<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a href="#" class="nav-link active" id="gallery-tab" data-bs-toggle="pill" data-bs-target="#gallery" role="tab" aria-controls="gallery" aria-selected="true"><i class="bi bi-grid-fill"></i> Gallery</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a href="#" class="nav-link" id="list-tab" data-bs-toggle="pill" data-bs-target="#list" role="tab" aria-controls="list" aria-selected="false"><i class="bi bi-list"></i> List</a>
-  </li>
-</ul>
+<div class="row g-3 mb-3">
+  <div class="col-md-9">
+    <div class="input-group">
+      <input id="search" type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="btn-search">
+      <button id="btn-search" type="button" class="btn btn-secondary"><i class="bi bi-search" role="img" aria-label="Search"></i></button>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label class="visually-hidden" for="sort">Sort by</label>
+    <div class="input-group">
+      <select id="sort" class="form-select">
+        <option value="author">Author</option>
+        <option value="category">Category</option>
+        <option value="latest_release" selected="selected">Latest Release</option>
+        <option value="platform">Platform</option>
+      </select>
+      <button id="btn-sort" class="btn btn-secondary" type="button"><i class="bi bi-sort-down" role="img" aria-label="Descending"></i></button>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <fieldset>
+      <legend class="visually-hidden">Filter by Category</legend>
+      <input id="category-arcade" type="checkbox" class="btn-check" name="category" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="category-arcade">Arcade</label>
+      <input id="category-arcade-multi" type="checkbox" class="btn-check" name="category" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="category-arcade-multi">Arcade Multi</label>
+      <input id="category-computer" type="checkbox" class="btn-check" name="category" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="category-computer">Computer</label>
+      <input id="category-console" type="checkbox" class="btn-check" name="category" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="category-console">Console</label>
+      <input id="category-handheld" type="checkbox" class="btn-check" name="category" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="category-handheld">Handheld</label>
+      <input id="category-others" type="checkbox" class="btn-check" name="category" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="category-others">Others</label>
+    </fieldset>
+  </div>
+  <div class="col-md-2">
+    <div class="btn-group float-md-end" role="tablist">
+      <input type="radio" class="btn-check active" name="display" id="display-gallery" data-bs-toggle="tab" data-bs-target="#tab-gallery" role="tab" aria-controls="tab-gallery" aria-selected="true" autocomplete="off" checked>
+      <label class="btn btn-outline-secondary" for="display-gallery"><i class="bi bi-grid-fill"></i> Gallery</label>
+      <input type="radio" class="btn-check" name="display" id="display-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab" aria-controls="tab-list" aria-selected="false" autocomplete="off">
+      <label class="btn btn-outline-secondary" for="display-list"><i class="bi bi-list"></i> List</label>
+    </div>
+  </div>
+</div>
 <div class="tab-content">
-  <div class="tab-pane fade show active" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="tab-pane fade show active" id="tab-gallery" role="tabpanel" aria-labelledby="gallery-tab">
+    <div id="gallery-cores" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     {%- assign date_format = site.bootstrap.date_format | default: '%b %-d, %Y' -%}
     {%- for core_hash in site.data.cores -%}
       {%- assign key = core_hash[0] -%}
@@ -34,11 +71,11 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
         {%- assign repository_url = 'https://github.com/' | append: release.repository.owner | append: '/' | append: release.repository.name -%}
         {%- assign icon_path = core_id | prepend: '/assets/images/authors/' | append: '.png' -%}
         {%- assign icon_exists = site.static_files | where: 'path', icon_path | first -%}
-        <div class="col">
+        <div class="col d-block">
           <div class="card h-100">
             <a href="{{ repository_url }}"><img src="{{ platform_id | prepend: '/assets/images/platforms/' | append: '.png' | relative_url }}" class="card-img-top" alt="{{ platform.name }}" /></a>
             <div class="card-body">
-              <h5 class="card-title">{{ platform.name }}</h5>
+              <h5 class="card-title"><span class="me-2">{{ platform.name }}</span>{%- if core.requires_license -%}<i class="bi bi-lock-fill" data-bs-toggle="tooltip" data-bs-title="License Required"></i>{%- endif -%}</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">
                 {{ core.metadata.description }}
               </h6>        
@@ -109,9 +146,9 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
     {%- endfor -%}
     </div>
   </div>
-  <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+  <div class="tab-pane fade" id="tab-list" role="tabpanel" aria-labelledby="list-tab">
     <div class="table-responsive">
-      <table class="table table-striped table-hover">
+      <table id="list-cores" class="table table-striped table-hover">
         <thead>
           <tr>
             <th>Platform</th>
@@ -132,7 +169,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
             {%- endunless -%}
             {%- assign release = site.data.releases[key] -%}
             {%- assign repository_url = 'https://github.com/' | append: release.repository.owner | append: '/' | append: release.repository.name -%}
-            <tr>
+            <tr class="d-table-row">
               <td><a href="{{ repository_url }}">{{ platform.name }}</a></td>
               <td>{{ platform.category }}</td>
               <td>{{ core.metadata.author }}</td>
