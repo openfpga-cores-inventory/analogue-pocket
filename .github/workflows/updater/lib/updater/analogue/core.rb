@@ -2,7 +2,9 @@
 
 module Analogue
   class Core
-    attr_reader :metadata, :framework, :data_slots, :info
+    LICENSE_NAME = 'JTBETA'
+
+    attr_reader :metadata, :framework, :data_slots, :info, :requires_license
 
     def initialize(core, data, info)
       @metadata = Metadata.new(core.metadata)
@@ -11,6 +13,7 @@ module Analogue
         DataSlot.new(data_slot)
       end
       @info = info
+      @requires_license = requires_license?
     end
 
     def id
@@ -19,6 +22,12 @@ module Analogue
 
     def platform_id
       @metadata.platform_ids.first
+    end
+
+    private
+
+    def requires_license?
+      @data_slots.any? { |data_slot| data_slot.name == LICENSE_NAME }
     end
 
     # Describes the core in general terms
