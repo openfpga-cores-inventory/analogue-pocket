@@ -27,7 +27,18 @@ layout: none
             "release_date": {{ core.metadata.date_release | date: "%Y-%m-%d" | jsonify }},
             "version": {{ core.metadata.version | jsonify }},
             "platform": {{ platform | jsonify}},
-            "assets": {{ core.data_slots | jsonify }}
+            "assets": [
+              {%- assign data_slots = core.data_slots | where: "required", "true" -%}
+              {%- for data_slot in data_slots -%}
+                {
+                  "platform": {{ platform_id | jsonify }}
+                  {%- if data_slot.filename -%}, "filename": {{ data_slot.filename | jsonify }}{%- endif -%}
+                  {%- if data_slot.extensions -%}, "extensions": {{ data_slot.extensions | jsonify }}{%- endif -%}
+                  {%- if data_slot.parameters.core_specific_file -%}, "core_specific": {{ data_slot.parameters.core_specific_file | jsonify }}{%- endif -%}
+                }
+              {%- unless forloop.last %},{% endunless %}
+              {%- endfor -%}
+            ],
           }
         }
       {%- endfor -%}
