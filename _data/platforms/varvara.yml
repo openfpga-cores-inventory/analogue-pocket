@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Varvara
+manufacturer: Hundred Rabbits
+year: 2023

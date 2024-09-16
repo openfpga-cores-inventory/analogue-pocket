@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/spiritualized1997/openFPGA-GB-GBC/releases/download/v1.3.0/Spiritualized_GBC_1.3.0_2022_08_25.zip
+repository: !ruby/object:GitHub::Repository
+  owner: spiritualized1997
+  name: openFPGA-GB-GBC
+funding:

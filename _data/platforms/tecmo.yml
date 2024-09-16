@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Tecmo
+manufacturer: Tecmo
+year: 1986

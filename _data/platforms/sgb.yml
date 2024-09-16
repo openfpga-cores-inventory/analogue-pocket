@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Super Gameboy
+manufacturer: Nintendo
+year: 1994

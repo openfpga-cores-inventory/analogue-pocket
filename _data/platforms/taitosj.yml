@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Taito System SJ
+manufacturer: Taito
+year: 1983

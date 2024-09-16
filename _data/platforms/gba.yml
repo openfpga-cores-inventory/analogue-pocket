@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Game Boy Advance
+manufacturer: Nintendo
+year: 2001

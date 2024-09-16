@@ -1,0 +1,58 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - jts16
+  - jtpatreon
+  shortname: jts16
+  description: Arcade
+  author: jotego
+  url: https://patreon.com/jotego
+  version: '0645124'
+  date_release: '2024-09-08'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Arcade Game
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: true
+  filename:
+  extensions:
+  - json
+- !ruby/object:Analogue::Core::DataSlot
+  name: ROM
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - rom
+- !ruby/object:Analogue::Core::DataSlot
+  name: NVRAM
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sav
+- !ruby/object:Analogue::Core::DataSlot
+  name: CRT config
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: crtcfg.bin
+  extensions:
+  - bin
+info:
+requires_license: false

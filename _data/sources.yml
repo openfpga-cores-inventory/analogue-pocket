@@ -1,0 +1,279 @@
+- owner: agg23
+  repositories:
+    - name: openfpga-arduboy
+    - name: openfpga-pong
+    - name: openfpga-NES
+    - name: openfpga-pcengine
+    - name: openfpga-pokemonmini
+    - name: openfpga-SNES
+    - name: fpga-tamagotchi
+      filter: agg23.Tamagotchi_.*-Pocket
+    - name: openfpga-wonderswan
+    - name: fpga-gameandwatch
+      filter: agg23.GameAndWatch_.*-Pocket
+- owner: antongale
+  repositories:
+    - name: arcade-exerion
+    - name: arcade-performan
+    - name: arcade-slapfight
+    - name: arcade-taitosj
+- owner: AwesomeDolphin
+  repositories:
+    - name: openFPGA-SpaceInvaders
+      filter: AwesomeDolphin.SpaceInvaders_
+- owner: budude2
+  repositories:
+    - name: openfpga-GBC
+      filter: openfpga-gbc-
+    - name: openfpga-GBC
+      filter: openfpga-gb-
+    - name: openFPGA-AtariLynx
+- owner: Coin-OpCollection
+  repositories:
+    - name: Distribution-OpenFPGA
+      path: Releases/pram0d.batrider_20221218.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/pram0d.bakraid_20221218.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/pram0d.garegga_20221030.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/pram0d.snowbros2_20221019.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/atrac17.tekipaki_20240518.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/atrac17.truxton2_20240518.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/atrac17.pipibibs_20240518.zip
+- owner: ericlewis
+  repositories:
+    - name: openfpga-asteroids
+    - name: openfpga-dominos
+      prerelease: true
+    - name: openFPGA-DonkeyKong
+      prerelease: true
+    - name: openfpga-lunarlander
+      prerelease: true
+    - name: openfpga-qbert
+    - name: openFPGA-RadarScope
+      prerelease: true
+    - name: openfpga-spacerace
+    - name: openfpga-superbreakout
+      prerelease: true
+- owner: jotego
+  repositories:
+    - name: jtbin
+      path: pocket/zips/jotego.jtcontra.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcps1.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtdd.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtdd2.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtexed.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtgng.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtgunsmk.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtkarnov.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtkicker.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtkunio.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtmikie.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtoutrun.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtpang.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtpinpon.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtroadf.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcop.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtroc.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtsectnz.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtsarms.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtsf.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtsbaskt.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jttrack.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jttrojan.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtvigil.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtyiear.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcomsc.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtkiwi.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcastle.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtrastan.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtbtiger.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jttmnt.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtaliens.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtsimson.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jts16b.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtfround.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtshanon.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jttora.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtninja.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcps2.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcps15.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtbubl.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtshouse.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jts16.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jt1942.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtngp.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jt1943.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtmx5k.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtkchamp.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcommnd.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jttoki.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jts18.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtbiocom.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtslyspy.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtflane.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtriders.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtlabrun.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtcircus.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtngpc.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtparoda.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtwwfss.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtrumble.zip
+- owner: markus-zzz
+  repositories:
+    - name: myc64-pocket
+- owner: Mazamars312
+  repositories:
+    - name: Analogue-Amiga
+    - name: Analogue_Pocket_Neogeo
+    - name: openfpga-pcengine-cd
+- owner: nullobject
+  repositories:
+    - name: openfpga-tecmo
+- owner: obsidian-dot-dev
+  repositories:
+    - name: openFPGA-asteroidsdeluxe
+    - name: openFPGA-DonkeyKong3
+    - name: openFPGA-DonkeyKongJunior
+    - name: openFPGA-MarioBros
+    - name: openFPGA-Druaga
+    - name: openFPGA-Vectrex
+    - name: openFPGA-Defender
+    - name: openFPGA-Robotron
+    - name: openFPGA-Gaplus
+    - name: openFPGA-Joust2
+    - name: openFPGA-Gauntlet
+    - name: openFPGA-AtariSystem1
+- owner: opengateware
+  repositories:
+    - name: arcade-bankp
+    - name: arcade-congo
+    - name: arcade-digdug
+    - name: arcade-galaga
+    - name: openfpga-genesis
+      prerelease: true
+    - name: arcade-gberet
+    - name: arcade-pooyan
+    - name: console-supervision
+    - name: arcade-xevious
+    - name: arcade-irem_m92
+      filter: opengateware.irem_m92_.*-pocket
+- owner: RndMnkIII
+  repositories:
+    - name: PocketAlphaMission
+    - name: Analogizer_Mazamars312_Neogeo_0.8.1
+    - name: Analogizer-Pocket-Alpha-Mission
+    - name: openfpga-NES-Analogizer
+    - name: openfpga-SNES-Analogizer
+    - name: Analogizer_openfpga-pcengine
+    - name: openfpga-pcengine-cd_Analogizer
+    - name: arcade-irem_m92_Analogizer
+    - name: Analogizer_openFPGA-Gauntlet
+    - name: Analogizer_openFPGA-Genesis
+    - name: Analogizer-openFPGA-AtariSystem1
+- owner: rolandking
+  repositories:
+    - name: openFPGA-jailbreak
+    - repositories: null
+      name: openFPGA-Athena
+- owner: somhi
+  repositories:
+    - name: FlappyBird
+- owner: spacemen3
+  repositories:
+    - name: PDP-1
+- owner: spiritualized1997
+  repositories:
+    - name: openFPGA-Adventure-Vision
+    - name: openFPGA-Arcadia
+    - name: openFPGA-2600
+    - name: openFPGA-7800
+    - name: openFPGA-Channel-F
+    - name: openFPGA-Coleco
+    - name: openFPGA-Creativision
+    - name: openFPGA-Gamate
+    - name: openFPGA-Game-King
+    - name: openFPGA-GB-GBC
+      filter: Spiritualized_GB_
+    - name: openFPGA-GBA
+    - name: openFPGA-GB-GBC
+      filter: Spiritualized_GBC_
+    - name: openFPGA-Genesis
+    - name: openFPGA-Intellivision
+    - name: openFPGA-Megaduck
+    - name: openFPGA-NES
+    - name: openFPGA-Odyssey-2
+    - name: openFPGA-GG
+    - name: openFPGA-SMS
+    - name: openFPGA-SG1000
+    - name: openFPGA-Studio-2
+    - name: openFPGA-Supervision
+    - name: openFPGA-Super-GB
+    - name: openFPGA-VideoBrain
+- owner: tsalvo
+  repositories:
+    - name: openfpga-varvara

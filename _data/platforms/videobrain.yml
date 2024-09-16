@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: VideoBrain Family Computer
+manufacturer: Umtech
+year: 1977

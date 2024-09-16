@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Arcadia 2001
+manufacturer: Emerson Radio
+year: 1982

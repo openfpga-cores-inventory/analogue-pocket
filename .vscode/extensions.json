@@ -1,8 +1,7 @@
 {
   "recommendations": [
-    "castwide.solargraph",
     "editorconfig.editorconfig",
     "ms-vscode-remote.remote-containers",
-    "rebornix.Ruby"
+    "Shopify.ruby-lsp"
   ]
 }

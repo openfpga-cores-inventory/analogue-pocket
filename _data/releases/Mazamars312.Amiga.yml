@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.2.1/Analogue-Amiga-0.2.1.zip
+repository: !ruby/object:GitHub::Repository
+  owner: Mazamars312
+  name: Analogue-Amiga
+funding:

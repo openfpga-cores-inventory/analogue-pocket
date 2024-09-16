@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Pong
+manufacturer: Atari
+year: 1972

@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ruby
 {
   "name": "Ruby",
-  "image": "mcr.microsoft.com/devcontainers/jekyll:0-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2",
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -22,9 +22,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "castwide.solargraph",
         "editorconfig.editorconfig",
-        "rebornix.Ruby"
+        "rubocop.vscode-rubocop",
+        "Shopify.ruby-lsp"
       ]
     }
   }

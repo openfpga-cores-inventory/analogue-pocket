@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Gauntlet
+manufacturer: Atari Games
+year: 1984

@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/antongale/arcade-performan/releases/download/0.1.1/antongale.performan_pocket-0.1.1.zip
+repository: !ruby/object:GitHub::Repository
+  owner: antongale
+  name: arcade-performan
+funding:

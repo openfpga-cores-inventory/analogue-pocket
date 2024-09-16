@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: PC Engine
+manufacturer: NEC Home Electronics
+year: 1987

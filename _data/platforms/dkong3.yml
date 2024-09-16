@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Donkey Kong 3
+manufacturer: Nintendo
+year: 1983

@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: C64
+manufacturer: Commodore International
+year: 1982

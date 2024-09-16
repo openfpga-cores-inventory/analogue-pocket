@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: jtngp
+manufacturer: JT FPGA
+year: 2024

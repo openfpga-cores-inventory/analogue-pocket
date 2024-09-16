@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Game and Watch
+manufacturer: Nintendo
+year: 1980

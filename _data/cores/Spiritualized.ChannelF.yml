@@ -1,0 +1,43 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - channel_f
+  shortname: ChannelF
+  description: Channel F core
+  author: Spiritualized
+  url: ''
+  version: 1.0.0
+  date_release: '2022-10-20'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Channel F BIOS
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: cfbios.bin
+  extensions:
+  - bin
+info: "Spiritualized Channel F\r\n\r\nEnjoy Channel F with this core.\r\n\r\nTo use
+  it, you must place the 2048 byte Channel F BIOS named \"cfbios.bin\" here:\r\n\r\n/assets/channel_f/common/cfbios.bin\r\n\r\nA
+  file named \"play bios games.bin\" has been included if you wish to play\r\nthe
+  built-in games.  This is just an empty file which will make it think no\r\ncartridge
+  is inserted.\r\n\r\nEnjoy!"
+requires_license: false

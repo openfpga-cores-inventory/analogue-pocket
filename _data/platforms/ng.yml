@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Neo Geo
+manufacturer: SNK
+year: 1990

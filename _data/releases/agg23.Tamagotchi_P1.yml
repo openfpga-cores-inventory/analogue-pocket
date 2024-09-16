@@ -1,0 +1,8 @@
+--- !ruby/object:Release
+download_url: https://github.com/agg23/fpga-tamagotchi/releases/download/1.0.0/agg23.Tamagotchi_1.0.0_2023-04-27-Pocket.zip
+repository: !ruby/object:GitHub::Repository
+  owner: agg23
+  name: fpga-tamagotchi
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23

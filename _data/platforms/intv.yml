@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Intellivision
+manufacturer: Mattel Electronics
+year: 1979

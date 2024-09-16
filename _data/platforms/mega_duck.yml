@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Mega Duck
+manufacturer: Welback Holdings
+year: 1993

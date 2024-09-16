@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: jtyiear
+manufacturer: JT FPGA
+year: 2024

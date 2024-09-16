@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/AwesomeDolphin/openFPGA-SpaceInvaders/releases/download/1.0.0/AwesomeDolphin.SpaceInvaders_1.0.0_2024-01-02.zip
+repository: !ruby/object:GitHub::Repository
+  owner: AwesomeDolphin
+  name: openFPGA-SpaceInvaders
+funding:

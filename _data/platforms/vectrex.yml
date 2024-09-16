@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Vectrex
+manufacturer: GCE
+year: 1982

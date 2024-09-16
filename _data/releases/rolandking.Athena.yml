@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.2/rolandking-Athena-v1.1.2.zip
+repository: !ruby/object:GitHub::Repository
+  owner: rolandking
+  name: openFPGA-Athena
+funding:

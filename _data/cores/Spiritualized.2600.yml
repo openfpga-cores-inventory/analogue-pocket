@@ -1,0 +1,69 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - '2600'
+  shortname: '2600'
+  description: Atari 2600 core
+  author: Spiritualized
+  url: ''
+  version: 1.0.0
+  date_release: '2022-10-18'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions: []
+- !ruby/object:Analogue::Core::DataSlot
+  name: Supercharger Loader
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: sc_load.bin
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Supercharger BIOS
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: scbios.bin
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Avox Program
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: avoxrom.bin
+  extensions:
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Avox EEPROM
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: true
+    instance_json: false
+  filename: avoxee.bin
+  extensions:
+  - bin
+info: "Spiritualized Atari 2600\r\n\r\nMost Atari 2600 things should be supported
+  by this core.\r\n\r\nPretty much every mapper, RAM, and the Supercharger.\r\n\r\nLine
+  count and centering are automatically controlled and\r\nshould work for just about
+  everything.\r\n\r\nFor information on interact menu items and required\r\nfiles
+  for certain features, please see the readme.txt\r\n\r\nEnjoy!"
+requires_license: false

@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.1.3/antongale.slapfight_pocket-0.1.3.zip
+repository: !ruby/object:GitHub::Repository
+  owner: antongale
+  name: arcade-slapfight
+funding:

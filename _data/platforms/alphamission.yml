@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: ASO - Armored Scrum Object
+manufacturer: SNK
+year: 1985

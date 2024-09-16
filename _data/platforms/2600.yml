@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Atari VCS (2600)
+manufacturer: Atari, Inc.
+year: 1977

@@ -1,0 +1,46 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - genesis
+  shortname: Genesis
+  description: Genesis core
+  author: Spiritualized
+  url: ''
+  version: 1.0.8
+  date_release: '2022-10-18'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - md
+  - bin
+- !ruby/object:Analogue::Core::DataSlot
+  name: Save RAM
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sav
+info: "Spiritualized Genesis\r\n\r\nEverything should be supported by this core.\r\n\r\nFull
+  automatic region selection is implemented.  Select your desired region\r\nin the
+  menu.  If the game does not support your region, it will automatically\r\nselect
+  the next best one.\r\n\r\n3 and 6 buttons are supported for controllers, and theoretically
+  up to 4\r\nplayers can play games that use J-carts such as Micromachines which had
+  two\r\nports on the cartridge.\r\n\r\nEEPROM saves should be fully supported as
+  well.\r\n\r\nHave fun!"
+requires_license: false

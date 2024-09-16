@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.1.0/ericlewis.QBert_1.1.0_2022-10-17.zip
+repository: !ruby/object:GitHub::Repository
+  owner: ericlewis
+  name: openfpga-qbert
+funding:

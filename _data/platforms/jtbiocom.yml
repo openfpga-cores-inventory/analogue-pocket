@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: jtbiocom
+manufacturer: JT FPGA
+year: 2024

@@ -1,0 +1,31 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - supervision
+  shortname: Supervision
+  description: Supervision core
+  author: Spiritualized
+  url: ''
+  version: 1.0.0
+  date_release: '2022-10-22'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - bin
+  - sv
+info: "Spiritualized supervision\r\n\r\nEnjoy Supervision games with this core. \r\n\r\n\r\nEnjoy!"
+requires_license: false

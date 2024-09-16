@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Teki Paki
+manufacturer: Toaplan Ltd.
+year: 1991

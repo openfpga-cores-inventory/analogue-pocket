@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Truxton 2
+manufacturer: Toaplan Ltd.
+year: 1992

@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.4.2/ericlewis.Genesis_0.4.2_2022-10-08.zip
+repository: !ruby/object:GitHub::Repository
+  owner: opengateware
+  name: openfpga-genesis
+funding:

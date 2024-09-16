@@ -1,0 +1,29 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - superbreakout
+  shortname: SuperBreakout
+  description: Atari's Super Breakout released in 1978.
+  author: ericlewis
+  url: https://github.com/ericlewis/openfpga-superbreakout
+  version: 0.0.1
+  date_release: '2022-09-14'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: ROM
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: sbrkout.rom
+  extensions:
+info:
+requires_license: false

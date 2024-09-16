@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/ericlewis/openfpga-spacerace/releases/download/1.0.1/ericlewis.SpaceRace_1.0.1_2022-10-11.zip
+repository: !ruby/object:GitHub::Repository
+  owner: ericlewis
+  name: openfpga-spacerace
+funding:

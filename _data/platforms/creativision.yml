@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: CreatiVision
+manufacturer: VTech
+year: 1982

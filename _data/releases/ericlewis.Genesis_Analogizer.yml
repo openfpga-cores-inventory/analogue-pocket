@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.1/Analogizer_Genesis_Core_Pocket_1.0.1.zip
+repository: !ruby/object:GitHub::Repository
+  owner: RndMnkIII
+  name: Analogizer_openFPGA-Genesis
+funding:

@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/spiritualized1997/openFPGA-SMS/releases/download/v1.2.0/Spiritualized_SMS_1.2.0_2022_08_25.zip
+repository: !ruby/object:GitHub::Repository
+  owner: spiritualized1997
+  name: openFPGA-SMS
+funding:

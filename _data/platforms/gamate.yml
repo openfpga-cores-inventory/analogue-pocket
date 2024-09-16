@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Gamate
+manufacturer: Bit Corporation, UMC
+year: 1990

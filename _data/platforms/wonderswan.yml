@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: WonderSwan Color
+manufacturer: Bandai
+year: 2000

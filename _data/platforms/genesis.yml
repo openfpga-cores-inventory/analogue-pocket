@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Genesis
+manufacturer: Sega
+year: 1988

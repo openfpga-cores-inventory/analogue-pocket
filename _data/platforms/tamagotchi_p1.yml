@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Tamagotchi
+manufacturer: Bandai
+year: 1996

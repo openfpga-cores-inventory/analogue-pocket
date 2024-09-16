@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Mazamars312.Neogeo.0.8.1-17/01/2023/Mazamars312.Neogeo_0.8.1_2023_1_17.FinalRelease.zip
+repository: !ruby/object:GitHub::Repository
+  owner: Mazamars312
+  name: Analogue_Pocket_Neogeo
+funding:

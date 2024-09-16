@@ -1,0 +1,70 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - wonderswan
+  shortname: WonderSwan
+  description: WonderSwan and WonderSwan Color by Bandai
+  author: agg23
+  url: https://github.com/agg23/openfpga-wonderswan
+  version: 1.0.1
+  date_release: '2023-05-06'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: true
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Cartridge
+  required: true
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - ws
+  - wsc
+- !ruby/object:Analogue::Core::DataSlot
+  name: B&W BIOS
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: bw.rom
+  extensions:
+  - rom
+- !ruby/object:Analogue::Core::DataSlot
+  name: Color BIOS
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: color.rom
+  extensions:
+  - rom
+- !ruby/object:Analogue::Core::DataSlot
+  name: Save
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - sav
+info: |-
+  Port by agg23. Core by Robert Peip
+
+  WonderSwan, a handheld console by Bandai, had notably better specs than it's competitor, the Game Boy Color. With a 16-bit processor, 8 shades of grey color (later 241 colors), and long battery life, it stands out as a strong contender to Nintendo's dominance.
+
+  Supports:
+  * Memories
+  * Fast forward - Runs game at 2.5x speed
+  * CPU turbo
+  * Automatic screen orientation
+  * Flickerblending
+
+  Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
+requires_license: false
