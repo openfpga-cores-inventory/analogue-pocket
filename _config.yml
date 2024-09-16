@@ -29,6 +29,7 @@ domain: openfpga-cores-inventory.github.io
 baseurl: "/analogue-pocket" # the subpath of your site, e.g. /blog
 url: https://openfpga-cores-inventory.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
+future: true # set to true to publish future-dated posts immediately
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Bootstrap date format
