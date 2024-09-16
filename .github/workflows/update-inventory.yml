@@ -6,11 +6,8 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - main
     paths:
-      - '_data/repositories.yml'
+      - '_data/sources.yml'
   schedule:
     # Run every 20 minutes
     - cron:  '*/20 * * * *'
@@ -21,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -29,37 +26,45 @@ jobs:
       - name: Install Dependencies
         run: bundle install
 
-      - uses: tibdex/github-app-token@v1
+      - uses: tibdex/github-app-token@v2
         id: generate-token
         with:
           app_id: ${{ secrets.PR_CREATOR_APP_ID }}
           private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
 
       - name: Setup .netrc
-        uses: extractions/netrc@v1
+        uses: extractions/netrc@v2
         with:
           machine: api.github.com
           username: github-actions[bot]
           password: ${{ steps.generate-token.outputs.token }}
 
-      - name: Update Analogue Pocket Cores Inventory
+      - name: Updater - Update Cores
         run: |
           echo "⚙️ Updating Analogue Pocket Cores Inventory..."
-          ruby .github/workflows/inventory_updater/lib/inventory_updater.rb
+          ruby .github/workflows/updater/lib/updater.rb update-cores
           echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
+
+      - name: Updater - Generate Posts
+        run: |
+          echo "⚙️ Generating Jekyll Blog Posts..."
+          ruby .github/workflows/updater/lib/updater.rb generate-posts
+          echo "🎉 Successfully generated Blog Posts!"
 
       - name: Create Pull Request
         if: ${{ github.ref == 'refs/heads/main' }}
         id: cpr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           title: AUTOMATED PR FOR - Update Analogue Pocket Cores Inventory
           body: Update Analogue Pocket Cores Inventory
           token: ${{ steps.generate-token.outputs.token }}
           add-paths: |
-            _data/cores.yml
+            _data/cores/*.yml
+            _data/platforms/*.yml
+            _data/releases/*.yml
+            _posts/*.md
             assets/images/**/*.png
-            feed/**/*.md
 
       - name: Enable Auto-Merge & Approve PR
         if: steps.cpr.outputs.pull-request-number
