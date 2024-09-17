@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://github.com/agg23/openfpga-NES/releases/download/1.0.0/agg23.NES_1.0.0_2023-09-26.zip
+download_url: https://github.com/agg23/openfpga-NES/releases/download/1.0.1/agg23.NES_1.0.1_2024-09-16.zip
 repository: !ruby/object:GitHub::Repository
   owner: agg23
   name: openfpga-NES
