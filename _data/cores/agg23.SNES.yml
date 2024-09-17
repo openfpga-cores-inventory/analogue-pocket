@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Super Nintendo and Super Famicom. Nintendo's second major home console
   author: agg23
   url: https://github.com/agg23/openfpga-snes
-  version: 0.4.3
-  date_release: '2022-12-14'
+  version: 0.4.4
+  date_release: '2024-09-16'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - smc
   - sfc
@@ -34,7 +34,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - sav
   - srm

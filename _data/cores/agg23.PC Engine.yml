@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: PC Engine (known as TurboGrafx-16 in the US) by NEC
   author: agg23
   url: https://github.com/agg23/openfpga-pcengine/
-  version: 1.0.0
-  date_release: '2024-08-08'
+  version: 1.0.1
+  date_release: '2024-09-16'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - pce
   - sgx
@@ -33,7 +33,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - sav
 info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
