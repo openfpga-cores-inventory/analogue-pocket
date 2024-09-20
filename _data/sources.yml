@@ -183,6 +183,8 @@
       path: pocket/zips/jotego.jtwwfss.zip
     - name: jtbin
       path: pocket/zips/jotego.jtrumble.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtmidres.zip
 - owner: markus-zzz
   repositories:
     - name: myc64-pocket
