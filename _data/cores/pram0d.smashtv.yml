@@ -55,4 +55,4 @@ data_slots:
   extensions:
   - key
 info: 
-requires_license: false
+requires_license: true
