@@ -48,6 +48,10 @@
       path: Releases/pram0d.doubledragoniii_20240920.zip
     - name: Distribution-OpenFPGA
       path: Releases/pram0d.wrestlefest_20240920.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/pramod.yunit_20240921.zip
+    - name: Distribution-OpenFPGA
+      path: Releases/pramod.zunit_20240921.zip
 - owner: ericlewis
   repositories:
     - name: openfpga-asteroids
