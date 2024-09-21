@@ -2,7 +2,7 @@
 
 module Analogue
   class Core
-    LICENSE_NAME = 'JTBETA'
+    LICENSE_DATA_SLOTS = %w[JTBETA License].freeze
 
     attr_reader :metadata, :framework, :data_slots, :info, :requires_license
 
@@ -27,7 +27,7 @@ module Analogue
     private
 
     def requires_license?
-      @data_slots.any? { |data_slot| data_slot.name == LICENSE_NAME }
+      @data_slots.any? { |data_slot| LICENSE_DATA_SLOTS.include?(data_slot.name) }
     end
 
     # Describes the core in general terms
