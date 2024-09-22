@@ -21,7 +21,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### GitHub Release Options
+        #### GitHub Release Options
 
         > ℹ️ **Note**
         > If the openFPGA core is distributed via GitHub releases (excluding pre-release) as a *single* asset, no further options are required.
@@ -41,7 +41,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Repository File Options
+        #### Repository File Options
   - type: input
     id: options-path
     attributes:
