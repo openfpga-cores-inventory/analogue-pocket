@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.bakraid_20221218.zip
+download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pram0d.bakraid.zip
 repository: !ruby/object:GitHub::Repository
   owner: Coin-OpCollection
   name: Distribution-OpenFPGA
