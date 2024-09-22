@@ -49,9 +49,9 @@
     - name: Distribution-OpenFPGA
       path: Releases/pram0d.wrestlefest.zip
     - name: Distribution-OpenFPGA
-      path: Releases/pramod.yunit.zip
+      path: Releases/pram0d.yunit.zip
     - name: Distribution-OpenFPGA
-      path: Releases/pramod.zunit.zip
+      path: Releases/pram0d.zunit.zip
 - owner: ericlewis
   repositories:
     - name: openfpga-asteroids
