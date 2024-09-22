@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pramod.zunit_20240921.zip
+download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/pramod.zunit_20240922.zip
 repository: !ruby/object:GitHub::Repository
   owner: Coin-OpCollection
   name: Distribution-OpenFPGA
