@@ -23,7 +23,7 @@ body:
       value: |
         ### GitHub Release Options
 
-        > [NOTE!]
+        > ℹ️ **Note**
         > If the openFPGA core is distributed via GitHub releases (excluding pre-release) as a *single* asset, no further options are required.
   - type: checkboxes
     id: options-prerelease
