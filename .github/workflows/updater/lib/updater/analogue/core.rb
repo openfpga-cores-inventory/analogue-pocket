@@ -2,7 +2,7 @@
 
 module Analogue
   class Core
-    LICENSE_DATA_SLOTS = %w[JTBETA License].freeze
+    LICENSE_DATA_SLOTS = %w[COINOPKEY JTBETA License].freeze
 
     attr_reader :metadata, :framework, :data_slots, :info, :requires_license
 
