@@ -1,118 +1,102 @@
-const USERNAME_REGEX = /### Core Author username\n+(.+)/;
-const SNIPPET_REGEX =
-  /### Core \.yml snippet\s+(?:```yml\n)?([\s\S]*?)(?:\s*```)?\s*$/;
+const OWNER_PATTERN = /### GitHub Username\s+@?(?<owner>[\w-]{1,39})/;
+const REPOSITORY_PATTERN = /### Repository Name\s+(?<repository>[\w\.-]+)/;
+const PRERELEASE_PATTERN = /### Pre-release\s+-\s+\[(?<prerelease>[\sxX])\]/;
+const FILTER_PATTERN = /### Asset Filter\s+(?<filter>.+)/;
+const PATH_PATTERN = /### Path\s+(?<path>.+)/;
+
+const NO_RESPONSE = '_No response_';
+const SOURCES_PATH = '_data/sources.yml';
 
 module.exports = ({ github, context, core }) => {
   const yaml = require("js-yaml");
   const fs = require("fs");
   const body = context.payload.issue.body;
 
-  const usernameMatch = body.match(USERNAME_REGEX);
-  const snippetMatch = body.match(SNIPPET_REGEX);
+  const ownerMatch = OWNER_PATTERN.exec(body);
+  const repositoryMatch = REPOSITORY_PATTERN.exec(body);
 
-  if (usernameMatch && snippetMatch) {
-    const username = usernameMatch[1].trim().replace("@", "");
+  if (!ownerMatch || !repositoryMatch) {
+    console.error(`Failed to match owner or repository: ${body}`);
 
-    core.setOutput("username", username);
-
-    const snippet = snippetMatch[1]
-      .replace("```yml", "")
-      .replace("```", "")
-      .trim()
-      .split("\n")
-      .map((l) => l.trim())
-      .join("\n");
-
-    let yamlSnippet = null;
-
-    try {
-      yamlSnippet = yaml.load(snippet);
-    } catch (err) {
-      github.rest.issues.createComment({
-        issue_number: context.issue.number,
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        body: `Error processing the yaml snippet, sorry`,
-      });
-
-      console.log(err);
-
-      core.setOutput("close-issue", false);
-      return {};
-    }
-
-    const reposFile = yaml.load(
-      fs.readFileSync("_data/repositories.yml", "utf8")
-    );
-
-    const knownAuthor = reposFile
-      .map(({ username }) => username)
-      .includes(username);
-
-    core.setOutput("known-author", knownAuthor);
-
-    if (!knownAuthor) {
-      github.rest.issues.createComment({
-        issue_number: context.issue.number,
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        body: `Thanks for the submission!
-        Looks like \`${username}\` doesn't have any cores in the inventory yet.
-        So the PR'll require manual approval`,
-      });
-    }
-
-    const currentCores = knownAuthor
-      ? reposFile.find(({ username: u }) => u === username).cores
-      : [];
-
-    const existsAlready = Boolean(
-      currentCores.find(
-        // Can probably improve this comparison
-        (c) => JSON.stringify(c) === JSON.stringify(yamlSnippet)
-      )
-    );
-
-    core.setOutput("exists-already", existsAlready);
-
-    if (existsAlready) {
-      github.rest.issues.createComment({
-        issue_number: context.issue.number,
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        body: `Thanks for the submission!
-        Looks like that core is in the inventory already`,
-      });
-
-      core.setOutput("close-issue", true);
-
-      return { username, knownAuthor, existsAlready };
-    }
-
-    const newReposFile = [
-      ...reposFile.filter(({ username: u }) => u !== username),
-      { username, cores: [...currentCores, yamlSnippet] },
-    ];
-
-    newReposFile.sort((a, b) => a.username.localeCompare(b.username));
-
-    fs.writeFileSync(
-      "_data/repositories.yml",
-      yaml.dump(newReposFile, { noRefs: true })
-    );
-    core.setOutput("close-issue", false);
-    return { username, knownAuthor, existsAlready };
+    return {};
   }
 
-  console.log("\n---\n");
+  const prereleaseMatch = PRERELEASE_PATTERN.exec(body);
+  const filterMatch = FILTER_PATTERN.exec(body);
+  const pathMatch = PATH_PATTERN.exec(body);
 
-  console.error(body);
+  const { owner } = ownerMatch.groups;
+  const { repository } = repositoryMatch.groups;
+  const { prerelease } = prereleaseMatch.groups;
+  const { filter } = filterMatch.groups;
+  const { path } = pathMatch.groups;
 
-  console.log("\n---\n");
+  core.setOutput("username", owner);
 
-  console.error(
-    `Username Regex: ${usernameMatch}, Snippet Regex: ${snippetMatch}`
+  const sources = yaml.load(
+    fs.readFileSync(SOURCES_PATH, "utf8")
   );
 
-  return {};
+  const ownerSources = sources.find(
+    (source) => source.owner === owner
+  );
+
+  const ownerExists = !!ownerSources;
+  core.setOutput("known-author", ownerExists);
+
+  if (!ownerExists) {
+    github.rest.issues.createComment({
+      issue_number: context.issue.number,
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      body: `Thanks for the submission!
+      Looks like \`${owner}\` doesn't have any cores in the inventory yet.
+      So the PR'll require manual approval`,
+    });
+  }
+
+  const ownerRepositories = ownerSources.repositories.filter(
+    (ownerRepository) => ownerRepository.name === repository
+  );
+
+  const existingSource = ownerRepositories.find(
+    (ownerRepository) =>
+      (!!ownerRepository.prerelease === (/[xX]/.test(prerelease)) && (filter !== NO_RESPONSE && ownerRepository.filter === filter)) ||
+      (path !== NO_RESPONSE && ownerRepository.path === path)
+  );
+
+  const sourceExists = !!existingSource;
+  core.setOutput("exists-already", sourceExists);
+
+  if (sourceExists) {
+    github.rest.issues.createComment({
+      issue_number: context.issue.number,
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      body: `Thanks for the submission!
+      Looks like that core is in the inventory already`,
+    });
+
+    core.setOutput("close-issue", true);
+
+    return { owner, ownerExists, sourceExists };
+  }
+
+  const source = {
+    name: repository
+  };
+
+  if (/[xX]/.test(prerelease)) source.prerelease = true;
+  if (filter !== NO_RESPONSE) source.filter = filter;
+  if (path !== NO_RESPONSE) source.path = path;
+
+  ownerRepositories.push(source);
+
+  fs.writeFileSync(SOURCES_PATH,
+    yaml.dump(sources, { noRefs: true })
+  );
+
+  core.setOutput("close-issue", false);
+
+  return { owner, ownerExists, sourceExists };
 };
