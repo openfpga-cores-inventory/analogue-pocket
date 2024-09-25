@@ -61,8 +61,8 @@ module.exports = ({ github, context, core }) => {
 
   const existingSource = ownerRepositories.find(
     (ownerRepository) =>
-      (!!ownerRepository.prerelease === (/[xX]/.test(prerelease)) && (filter !== NO_RESPONSE && ownerRepository.filter === filter)) ||
-      (path !== NO_RESPONSE && ownerRepository.path === path)
+      (!!ownerRepository.prerelease === (/[xX]/.test(prerelease)) && (filter === NO_RESPONSE || ownerRepository.filter === filter)) ||
+      (path === NO_RESPONSE || ownerRepository.path === path)
   );
 
   const sourceExists = !!existingSource;
