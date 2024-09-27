@@ -90,7 +90,7 @@ module.exports = ({ github, context, core }) => {
   if (filter !== NO_RESPONSE) source.filter = filter;
   if (path !== NO_RESPONSE) source.path = path;
 
-  ownerRepositories.push(source);
+  ownerSources.repositories.push(source);
 
   fs.writeFileSync(SOURCES_PATH,
     yaml.dump(sources, { noRefs: true })
