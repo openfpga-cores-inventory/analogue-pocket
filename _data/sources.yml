@@ -31,9 +31,11 @@
 - owner: Coin-OpCollection
   repositories:
     - name: Distribution-OpenFPGA
+      path: Releases/pram0d.bakraid.zip
+    - name: Distribution-OpenFPGA
       path: Releases/pram0d.batrider.zip
     - name: Distribution-OpenFPGA
-      path: Releases/pram0d.bakraid.zip
+      path: Releases/atrac17.combatribes.zip
     - name: Distribution-OpenFPGA
       path: Releases/pram0d.garegga.zip
     - name: Distribution-OpenFPGA
