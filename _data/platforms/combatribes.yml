@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: The Combatribes
+manufacturer: atrac17
+year: 2024
