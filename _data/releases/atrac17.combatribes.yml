@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/develop/Releases/atrac17.combatribes.zip
+repository: !ruby/object:GitHub::Repository
+  owner: Coin-OpCollection
+  name: Distribution-OpenFPGA
+funding: 
