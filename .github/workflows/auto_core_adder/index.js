@@ -56,14 +56,17 @@ module.exports = ({ github, context, core }) => {
   }
 
   const ownerRepositories = ownerSources.repositories.filter(
-    (ownerRepository) => ownerRepository.name === repository
+    (ownerRepository) =>
+      ownerRepository.name === repository &&
+      !!ownerRepository.prerelease === (/[xX]/.test(prerelease))
   );
 
   const existingSource = ownerRepositories.find(
     (ownerRepository) =>
-      (path === NO_RESPONSE || ownerRepository.path === path) ||
-      (!!ownerRepository.prerelease === (/[xX]/.test(prerelease)) && (filter === NO_RESPONSE || ownerRepository.filter === filter))      
-  );
+      (filter !== NO_RESPONSE && ownerRepository.filter === filter) ||
+      (path !== NO_RESPONSE && ownerRepository.path === path) ||
+      (!ownerRepository.filter && !ownerRepository.path)
+  )
 
   const sourceExists = !!existingSource;
   core.setOutput("exists-already", sourceExists);
