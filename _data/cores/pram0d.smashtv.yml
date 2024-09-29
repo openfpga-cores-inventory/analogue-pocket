@@ -7,8 +7,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Smash TV Analogue Pocket Core
   author: pram0d
   url: https://pram0d.com
-  version: 0.0.4
-  date_release: '2024-09-28'
+  version: 0.0.5
+  date_release: '2024-09-29'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
