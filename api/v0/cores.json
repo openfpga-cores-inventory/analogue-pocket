@@ -39,7 +39,8 @@ layout: none
             {%- endfor -%}
           ],
           "requires_license": {{ core.requires_license | jsonify }},
-          "sponsor": {{ release.funding | jsonify }}
+          "sponsor": {{ release.funding | jsonify }},          
+          "updaters": {{ core.updaters | jsonify }}
         }
       {%- endfor -%}
       {%- unless forloop.last %},{% endunless %}

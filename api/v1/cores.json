@@ -23,6 +23,7 @@ layout: none
           },
           "requires_license": {{ core.requires_license | jsonify }},          
           "sponsor": {{ release.funding | jsonify }},
+          "updaters": {{ core.updaters | jsonify }}
           "release": {
             "release_date": {{ core.metadata.date_release | date: "%Y-%m-%d" | jsonify }},
             "version": {{ core.metadata.version | jsonify }},
