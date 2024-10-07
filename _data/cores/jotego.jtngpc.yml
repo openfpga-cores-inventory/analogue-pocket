@@ -24,7 +24,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - ngp
   - ngc
@@ -44,7 +44,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - sav
 - !ruby/object:Analogue::Core::DataSlot
@@ -65,5 +65,8 @@ data_slots:
   filename: beta.bin
   extensions:
   - bin
-info: 
+updaters: !ruby/object:Analogue::Core::Updaters
+  license: !ruby/object:Analogue::Core::Updaters::License
+    filename: beta.bin
+info:
 requires_license: true

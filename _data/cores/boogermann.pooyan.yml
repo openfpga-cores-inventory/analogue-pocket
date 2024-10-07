@@ -36,6 +36,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: |
   Pooyan is a fixed shooter arcade game released by Konami in Japan in 1982. It was manufactured in North America by Stern Electronics.
 

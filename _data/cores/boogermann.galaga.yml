@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: "Galaga is a 1981 fixed shooter arcade video game developed and published by
   Namco. In North America, it was released by Midway Manufacturing.\r\nIt is the sequel
   to Galaxian (1979), Namco's first major video game hit in arcades.\r\n\r\nNote:

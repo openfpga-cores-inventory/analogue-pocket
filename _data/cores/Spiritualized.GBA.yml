@@ -45,6 +45,7 @@ data_slots:
   filename: gba_bios.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized GBA \r\n\r\nAlmost everything should be supported by this core.
   \ \r\n\r\nBe sure your gba_bios.bin file is in /assets/gba/common/ before using!\r\n\r\nNote
   that the link port is fully supported, and rumble is supported too if you plug in

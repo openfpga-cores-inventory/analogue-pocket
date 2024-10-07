@@ -36,6 +36,7 @@ data_slots:
   filename: crbios.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Creativision\r\n\r\nTo use this core, you must place the 2048
   byte BIOS file \"crbios.bin\" here:\r\n\r\n/assets/creativision/Spiritualized.Creativision/crbios.bin\r\n\r\nNOTE:
   Games need to be reset first to play!  Press both L and R\r\ntrigger simultaneously

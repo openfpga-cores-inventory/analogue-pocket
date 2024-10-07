@@ -62,6 +62,7 @@ data_slots:
   filename: SP128_04.BIN
   extensions:
   - bin
+updaters:
 info: "Spiritualized Odyssey^2\r\n\r\nEnjoy Odyssey^2 games with this core.  The Voice
   is fully supported.\r\n\r\nTo use it, you must place the 2048 byte Odyssey^2 BIOS
   named \"o2bios.bin\" here:\r\n\r\n/assets/odsyessey2/Spiritualized.Odyssey2/o2bios.bin\r\n\r\nIf

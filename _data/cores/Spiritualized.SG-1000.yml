@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - sav
+updaters:
 info: "Spiritualized SG-1000\r\n\r\nAlmost everything should be supported by this
   core.  \r\n\r\nThe BIOSes are not used at the moment but support will be added later.\r\n\r\nEnjoy"
 requires_license: false

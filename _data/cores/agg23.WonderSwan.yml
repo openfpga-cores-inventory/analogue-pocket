@@ -54,6 +54,7 @@ data_slots:
   filename:
   extensions:
   - sav
+updaters:
 info: |-
   Port by agg23. Core by Robert Peip
 

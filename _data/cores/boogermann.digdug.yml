@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: |
   Dig Dug is a maze arcade game developed by Namco. The player controls Dig Dug to defeat all enemies per stage, by either inflating them to bursting or crushing them underneath rocks.
 

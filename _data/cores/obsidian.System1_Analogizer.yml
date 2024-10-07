@@ -35,5 +35,6 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info:
 requires_license: false

@@ -36,6 +36,7 @@ data_slots:
   filename:
   extensions:
   - sav
+updaters:
 info: "Spiritualized Genesis\r\n\r\nEverything should be supported by this core.\r\n\r\nFull
   automatic region selection is implemented.  Select your desired region\r\nin the
   menu.  If the game does not support your region, it will automatically\r\nselect

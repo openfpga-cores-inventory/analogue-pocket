@@ -33,5 +33,6 @@ data_slots:
     instance_json: false
   filename: background.bin
   extensions:
+updaters:
 info: Atari's Asteroids Deluxe released in 1981. Ported from MiSTer.
 requires_license: false

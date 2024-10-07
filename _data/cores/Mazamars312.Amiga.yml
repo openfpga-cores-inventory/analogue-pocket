@@ -89,6 +89,7 @@ data_slots:
   filename:
   extensions:
   - adf
+updaters:
 info: "The Amiga Core - 0.2.1\r\n\r\nThe Amiga core is a general implementation of
   the Amiga family of computers.\r\nLBA48 support\r\nAnalogue OS Firmware 2.1 required\r\n\r\nTo
   Be Done:\r\n* Clock\r\n\r\nSpecial Thanks\r\n* VexRISCV - For the bases of the MPU

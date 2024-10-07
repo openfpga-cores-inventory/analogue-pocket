@@ -25,5 +25,6 @@ data_slots:
     instance_json: false
   filename: asteroid.rom
   extensions:
+updaters:
 info: Atari's Asteroids released in 1979. Ported from MiSTer.
 requires_license: false

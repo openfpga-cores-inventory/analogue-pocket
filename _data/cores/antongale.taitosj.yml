@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: |-
   Note: You must provide your own roms to use this core.
 

@@ -105,5 +105,6 @@ data_slots:
     instance_json: false
   filename: 9.raw
   extensions:
+updaters:
 info:
 requires_license: false

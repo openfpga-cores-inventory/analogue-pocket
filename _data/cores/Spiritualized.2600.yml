@@ -61,6 +61,7 @@ data_slots:
   filename: avoxee.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Atari 2600\r\n\r\nMost Atari 2600 things should be supported
   by this core.\r\n\r\nPretty much every mapper, RAM, and the Supercharger.\r\n\r\nLine
   count and centering are automatically controlled and\r\nshould work for just about

@@ -39,5 +39,6 @@ data_slots:
   filename:
   extensions:
   - sav
+updaters:
 info:
 requires_license: false

@@ -134,5 +134,6 @@ data_slots:
   - bin
   - pbin
   - prom1
+updaters:
 info:
 requires_license: false

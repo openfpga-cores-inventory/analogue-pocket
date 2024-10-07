@@ -134,6 +134,7 @@ data_slots:
   - bin
   - pbin
   - prom1
+updaters:
 info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES console.
   This arcade platform was a worldwide success lasting through the mid 2000's spawning
   several long-running and critically acclaimed game series. \r\nPowered with both
