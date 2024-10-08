@@ -4,14 +4,15 @@ module Analogue
   class Core
     LICENSE_DATA_SLOTS = %w[COINOPKEY JTBETA License].freeze
 
-    attr_reader :metadata, :framework, :data_slots, :info, :requires_license
+    attr_reader :metadata, :framework, :data_slots, :updaters, :info, :requires_license
 
-    def initialize(core, data, info)
+    def initialize(core, data, updaters, info)
       @metadata = Metadata.new(core.metadata)
       @framework = Framework.new(core.framework)
       @data_slots = data.data_slots.map do |data_slot|
         DataSlot.new(data_slot)
       end
+      @updaters = updaters
       @info = info
       @requires_license = requires_license?
     end
@@ -27,6 +28,9 @@ module Analogue
     private
 
     def requires_license?
+      return !@updaters.license.nil? unless @updaters.nil?
+
+      # Fallback to checking with the data slots
       @data_slots.any? { |data_slot| LICENSE_DATA_SLOTS.include?(data_slot.name) }
     end
 
@@ -101,6 +105,24 @@ module Analogue
 
           @core_specific_file = parameters & CORE_SPECIFIC_FILE_MASK != 0
           @instance_json = parameters & INSTANCE_JSON_MASK != 0
+        end
+      end
+    end
+
+    # Updaters class
+    class Updaters
+      attr_reader :license
+
+      def initialize(updaters)
+        @license = License.new(updaters.license)
+      end
+
+      # Describes a single license.
+      class License
+        attr_reader :filename
+
+        def initialize(license)
+          @filename = license.filename
         end
       end
     end

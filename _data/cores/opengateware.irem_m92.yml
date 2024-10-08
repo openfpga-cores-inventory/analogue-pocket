@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: |-
   Launched by Irem in 1991, the M92 was an advanced arcade system that offered robust graphics and sound capabilities.
 

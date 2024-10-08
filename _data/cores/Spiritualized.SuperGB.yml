@@ -55,6 +55,7 @@ data_slots:
   filename: sgb_boot.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Super Gameboy\r\n\r\nEverything Super GB Should be supported
   by this core, including\r\nplaying real cartridges through the cartridge slot!\r\n\r\nTo
   use this core, two files need to be placed into the\r\n/assets/sgb/Spiritualized.SuperGB/

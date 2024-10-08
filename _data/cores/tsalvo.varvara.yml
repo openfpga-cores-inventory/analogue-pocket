@@ -26,6 +26,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: "OpenFPGA - Varvara\r\n\r\nEarly work-in-progress PipelineC FPGA implementation
   of Varvara / Uxn by Hundred Rabbits"
 requires_license: false

@@ -305,6 +305,7 @@ data_slots:
   filename:
   extensions:
   - bin
+updaters:
 info: "Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue Pocket.
   Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nThe CD-ROM² is an add-on attachment
   for the PC Engine that was released in Japan on December 4, 1988. The add-on allows

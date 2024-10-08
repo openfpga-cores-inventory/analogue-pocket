@@ -44,6 +44,7 @@ data_slots:
   filename: uvres2.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Video Brain\r\n\r\nEnjoy Video Brain games with this core. \r\n\r\nThis
   core really needs a keyboard via the dock to be useful.\r\n\r\nAlso, the following
   files are required. \r\n\r\n/assets/videobrain/Spiritualized.Videobrain/uvres1.bin

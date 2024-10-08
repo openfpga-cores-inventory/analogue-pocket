@@ -25,5 +25,6 @@ data_slots:
     instance_json: false
   filename: sbrkout.rom
   extensions:
+updaters:
 info:
 requires_license: false

@@ -43,6 +43,7 @@ data_slots:
   filename: coleco.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Colecovision\r\n\r\nRegular, Super Game Module, EEPROM, and flash
   games are supported by this core.\r\n\r\nYou must place the Colecovision BIOS, named
   \"coleco.bin\" into the \r\n\r\n/assets/coleco/Spiritualized.Coleco/ folder!  It

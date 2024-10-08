@@ -25,5 +25,6 @@ data_slots:
     instance_json: false
   filename: dominos.rom
   extensions:
+updaters:
 info: Atari's Arcade 1977 Dominos. Ported from MiSTer.
 requires_license: false

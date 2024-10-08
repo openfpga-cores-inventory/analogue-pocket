@@ -44,6 +44,7 @@ data_slots:
   filename: 012.BIN
   extensions:
   - bin
+updaters:
 info: "Spiritualized Intellivision\r\nEnjoy Intellivision games with this core.  The
   Intellioice is fully supported.\r\n\r\nAll Intellivision files (games and the EXEC)
   must be in the .intv format. \r\nSeparate .H and .L files, and other formats are

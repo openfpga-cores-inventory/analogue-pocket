@@ -35,6 +35,7 @@ data_slots:
   filename: cfbios.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Channel F\r\n\r\nEnjoy Channel F with this core.\r\n\r\nTo use
   it, you must place the 2048 byte Channel F BIOS named \"cfbios.bin\" here:\r\n\r\n/assets/channel_f/common/cfbios.bin\r\n\r\nA
   file named \"play bios games.bin\" has been included if you wish to play\r\nthe

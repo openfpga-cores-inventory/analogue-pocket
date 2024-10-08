@@ -25,6 +25,7 @@ data_slots:
     instance_json: false
   filename: llander.rom
   extensions:
+updaters:
 info: 'Atari''s Lunar Lander released in 1979. Ported from MiSTer.
 
   '

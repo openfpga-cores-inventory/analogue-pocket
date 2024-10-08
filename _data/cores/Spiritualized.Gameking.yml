@@ -36,6 +36,7 @@ data_slots:
   filename: gkbios.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized Game King\r\n\r\nEnjoy Game King games with this core. \r\n\r\nTo
   use it, you must place the 522488 byte \"gkbios.bin\" file here:\r\n\r\n/assets/game_king/Spiritualized.Gameking/gkbios.bin\r\n\r\nA
   file named \"Play BIOS Games.bin\" has been included.  Loading this\r\nwill let

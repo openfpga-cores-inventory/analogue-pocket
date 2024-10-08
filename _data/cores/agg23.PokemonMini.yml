@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - sav
+updaters:
 info: "Port by agg23. Core by Grieverheart.\r\n\r\nA small handheld console released
   by Nintendo, similar to Tamagotchi, but with cartridge-based games. While it possesses
   a limited official library, it has various homebrew offerings as well that makes

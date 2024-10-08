@@ -18,6 +18,7 @@ framework: !ruby/object:Analogue::Core::Framework
   hardware: !ruby/object:Analogue::Core::Framework::Hardware
     link_port: false
 data_slots: []
+updaters:
 info: "Flappy Bird\r\n\r\nThis core is written entirely in discrete logic, apparently.
   Not recommended as a reference example.\r\n\r\nHistory\r\nFlappy Bird is an arcade-style
   game launched in May 2013 and gained popularity in early 2014. The user controls

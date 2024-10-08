@@ -44,6 +44,7 @@ data_slots:
   filename: dmg_bios.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized GB \r\n\r\nAlmost everything should be supported by this core.
   \ \r\n\r\nBe sure the following files are present before using!\r\n* dmg_bios.bin
   file in /assets/gb/common/\r\n* dmg_bios.bin must be exactly 256 bytes.\r\n\r\nNote

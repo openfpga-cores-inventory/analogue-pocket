@@ -27,6 +27,7 @@ data_slots:
   extensions:
   - sv
   - bin
+updaters:
 info: |
   Supervision © 1992 Watara.
 

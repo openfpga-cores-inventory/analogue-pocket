@@ -26,5 +26,6 @@ data_slots:
     instance_json: false
   filename: qbert.rom
   extensions:
+updaters:
 info:
 requires_license: false

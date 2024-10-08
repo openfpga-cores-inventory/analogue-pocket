@@ -119,6 +119,7 @@ data_slots:
   filename: P2C04_4.PAL
   extensions:
   - pal
+updaters:
 info: "Spiritualized NES\r\n\r\nNSF playing, FDS games, Vs. Games, and everything
   else should be supported by this core.\r\n\r\nIf you wish to play FDS games, make
   sure the file \"fds.bios\" is present in your\r\n/nes/common/ folder!  If not, you

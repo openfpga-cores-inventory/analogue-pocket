@@ -35,6 +35,7 @@ data_slots:
   filename:
   extensions:
   - rom
+updaters:
 info: |-
   Congo Bongo is an isometric platform game and is Sega's take on Nintendo's legendary "Donkey Kong".
   The player takes on the role of a red-nosed safari explorer by the name of Safari Sam, who tries to catch a gorilla named Bongo.

@@ -45,6 +45,7 @@ data_slots:
   filename: gbc_bios.bin
   extensions:
   - bin
+updaters:
 info: "Spiritualized GBC\r\n\r\nAlmost everything should be supported by this core.
   \ \r\n\r\nBe sure the following files are present before using!\r\n* gbc_bios.bin
   file in /assets/gbc/common/ \r\n* gbc_bios.bin must be exactly 2304 bytes.\r\n\r\nNote

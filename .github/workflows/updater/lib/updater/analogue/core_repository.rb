@@ -10,6 +10,7 @@ module Analogue
   class CoreRepository
     CORE_FILE = 'core.json'
     DATA_FILE = 'data.json'
+    UPDATERS_FILE = 'updaters.json'
     INFO_FILE = 'info.txt'
 
     attr_reader :cores_path
@@ -23,10 +24,11 @@ module Analogue
     end
 
     def get_core(core_id)
-      core = get_core_definition(core_id)
-      data = get_data_definition(core_id)
+      core = get_definition(core_id)
+      data = get_data(core_id)
+      updaters = get_updaters(core_id)
       info = get_info(core_id)
-      Core.new(core, data, info)
+      Core.new(core, data, updaters, info)
     end
 
     private
@@ -37,16 +39,24 @@ module Analogue
       end
     end
 
-    def get_core_definition(core_id)
+    def get_definition(core_id)
       path = File.join(@cores_path, core_id, CORE_FILE)
       definition = JSON.load_file(path, object_class: OpenStruct)
       definition.core
     end
 
-    def get_data_definition(core_id)
+    def get_data(core_id)
       path = File.join(@cores_path, core_id, DATA_FILE)
       definition = JSON.load_file(path, object_class: OpenStruct)
       definition.data
+    end
+
+    def get_updaters(core_id)
+      path = File.join(@cores_path, core_id, UPDATERS_FILE)
+      return nil unless File.exist?(path)
+
+      json = JSON.load_file(path, object_class: OpenStruct)
+      Core::Updaters.new(json)
     end
 
     def get_info(core_id)

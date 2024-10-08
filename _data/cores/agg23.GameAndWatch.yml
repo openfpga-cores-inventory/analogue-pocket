@@ -26,6 +26,7 @@ data_slots:
   filename:
   extensions:
   - gnw
+updaters:
 info: |-
   Game and Watch
 

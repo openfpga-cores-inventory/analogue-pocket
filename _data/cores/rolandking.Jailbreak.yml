@@ -43,5 +43,6 @@ data_slots:
   filename:
   extensions:
   - nvm
+updaters:
 info:
 requires_license: false

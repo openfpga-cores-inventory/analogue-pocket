@@ -34,6 +34,7 @@ data_slots:
   filename: Default_LUT.clut
   extensions:
   - clut
+updaters:
 info: "In 1962, the first digital video game, Spacewar! debuted on an early computer
   released in 1959 called the PDP-1 at MIT.\r\n\r\nThe beginning of video games.\r\n\r\nSpacewar!
   set forth and established the fundamental characteristics and philosophical approaches
