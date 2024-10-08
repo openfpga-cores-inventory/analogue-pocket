@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Mortal Kombat
+manufacturer: pram0d
+year: 2024
