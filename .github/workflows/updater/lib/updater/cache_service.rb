@@ -26,7 +26,7 @@ class CacheService
       Analogue::Core::Metadata,
       Analogue::Core::Framework, Analogue::Core::Framework::Dock, Analogue::Core::Framework::Hardware,
       Analogue::Core::DataSlot, Analogue::Core::DataSlot::Parameters,
-      Analogue::Core::Updaters
+      Analogue::Core::Updaters, Analogue::Core::Updaters::License
     ]
 
     YAML.safe_load_file(path, permitted_classes: permitted_classes)
