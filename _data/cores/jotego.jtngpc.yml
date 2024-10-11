@@ -7,8 +7,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Handheld
   author: jotego
   url: https://patreon.com/jotego
-  version: d2f3856
-  date_release: '2024-10-04'
+  version: '5807525'
+  date_release: '2024-10-11'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -24,7 +24,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - ngp
   - ngc
@@ -44,7 +44,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - sav
 - !ruby/object:Analogue::Core::DataSlot
@@ -68,5 +68,5 @@ data_slots:
 updaters: !ruby/object:Analogue::Core::Updaters
   license: !ruby/object:Analogue::Core::Updaters::License
     filename: beta.bin
-info:
+info: 
 requires_license: true
