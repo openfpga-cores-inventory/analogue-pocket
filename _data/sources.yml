@@ -192,9 +192,11 @@
     - name: jtbin
       path: pocket/zips/jotego.jtvigil.zip
     - name: jtbin
-      path: pocket/zips/jotego.jtwwfss.zip      
+      path: pocket/zips/jotego.jtwwfss.zip
     - name: jtbin
       path: pocket/zips/jotego.jtyiear.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jtxmen.zip
 - owner: markus-zzz
   repositories:
     - name: myc64-pocket
