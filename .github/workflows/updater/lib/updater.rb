@@ -39,6 +39,7 @@ class Updater < Thor
   def update_cores
     sources = @source_repository.get_sources
     sources.each do |source|
+      puts "Fetching #{source.repository}"
       download_url = get_download_url(source.repository, source.options)
 
       core_path = DownloadHelper.download(download_url)
