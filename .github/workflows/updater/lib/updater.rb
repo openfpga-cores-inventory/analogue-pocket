@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'logger'
 require 'thor'
 require 'yaml'
 
@@ -21,12 +22,23 @@ class Updater < Thor
 
   SOURCES_FILE = 'sources.yml'
 
-  attr_reader :github_service, :jekyll_service, :cache_service, :source_repository
+  attr_reader :logger, :github_service, :jekyll_service, :cache_service, :source_repository
 
   class_option :site_path, default: Dir.pwd
 
   def initialize(args, opts, config)
     super(args, opts, config)
+
+    @logger = Logger.new($stdout)
+    @logger.formatter = proc { |severity, _, _, msg|
+      case severity
+      when 'DEBUG' then "::debug::#{msg}\n"
+      when 'INFO' then "::notice::#{msg}\n"
+      when 'WARN' then "::warning::#{msg}\n"
+      when 'ERROR', 'FATAL' then "::error::#{msg}\n"
+      else "#{msg}\n"
+      end
+    }
 
     @github_service = GitHub::GitHubService.new
     @jekyll_service = Jekyll::JekyllService.new(options[:site_path])
@@ -39,7 +51,7 @@ class Updater < Thor
   def update_cores
     sources = @source_repository.get_sources
     sources.each do |source|
-      puts "Fetching #{source.repository}"
+      @logger.info("Updating #{source.repository.owner}/#{source.repository.name}")
       download_url = get_download_url(source.repository, source.options)
 
       core_path = DownloadHelper.download(download_url)
@@ -68,6 +80,9 @@ class Updater < Thor
         image_path = File.join(@jekyll_service.images_path, PLATFORMS_DIRECTORY, "#{core.platform_id}.png")
         openfpga_service.export_image(core.platform_id, image_path)
       end
+    rescue StandardError => e
+      @logger.error("Failed to update #{source.repository.owner}/#{source.repository.name}")
+      @logger.error(e)
     end
   end
 
@@ -129,7 +144,7 @@ class Updater < Thor
   def get_asset_download_url(repository, options)
     prerelease = options[:prerelease]
     filter = options[:filter]
-    release = @github_service.get_latest_release(repository, prerelease: prerelease)
+    release = @github_service.get_latest_release(repository, prerelease:)
     if filter.nil?
       release.assets.first.browser_download_url
     else
