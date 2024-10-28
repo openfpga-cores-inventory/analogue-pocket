@@ -83,6 +83,7 @@ class Updater < Thor
     rescue StandardError => e
       @logger.error("Failed to update #{source.repository.owner}/#{source.repository.name}")
       @logger.error(e)
+      raise
     end
   end
 
