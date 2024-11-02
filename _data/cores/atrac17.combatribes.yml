@@ -7,8 +7,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: The Combatribes Analogue Pocket Core
   author: atrac17
   url: https://github.com/Coin-OpCollection
-  version: 1.0.0
-  date_release: '2024-09-27'
+  version: 1.0.1
+  date_release: '2024-11-02'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -24,7 +24,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: true
     instance_json: true
-  filename:
+  filename: 
   extensions:
   - json
 - !ruby/object:Analogue::Core::DataSlot
@@ -33,7 +33,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - rom
 - !ruby/object:Analogue::Core::DataSlot
@@ -45,8 +45,6 @@ data_slots:
   filename: coinop.key
   extensions:
   - key
-updaters: !ruby/object:Analogue::Core::Updaters
-  license: !ruby/object:Analogue::Core::Updaters::License
-    filename: coinop.key
-info:
+updaters: 
+info: 
 requires_license: true
