@@ -4,11 +4,11 @@ metadata: !ruby/object:Analogue::Core::Metadata
   - smashtv
   - coinopkey
   shortname: smashtv
-  description: Smash TV Analogue Pocket Core
+  description: Midway Y-Unit Analogue Pocket Core
   author: pram0d
   url: https://pram0d.com
-  version: 0.0.6
-  date_release: '2024-09-29'
+  version: 1.0.2
+  date_release: '2024-09-22'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -24,7 +24,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: true
     instance_json: true
-  filename:
+  filename: 
   extensions:
   - json
 - !ruby/object:Analogue::Core::DataSlot
@@ -33,7 +33,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - rom
 - !ruby/object:Analogue::Core::DataSlot
@@ -42,7 +42,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - sav
 - !ruby/object:Analogue::Core::DataSlot
@@ -57,5 +57,5 @@ data_slots:
 updaters: !ruby/object:Analogue::Core::Updaters
   license: !ruby/object:Analogue::Core::Updaters::License
     filename: coinop.key
-info:
+info: 
 requires_license: true
