@@ -34,7 +34,7 @@ gem 'wdm', '~> 0.1.1', platforms: %i[mingw x64_mingw mswin]
 # do not have a Java counterpart.
 gem 'http_parser.rb', '~> 0.6.0', platforms: [:jruby]
 
-gem 'webrick', '~> 1.8'
+gem 'webrick', '~> 1.9'
 
 gem 'chunky_png', '~> 1.4.0'
 gem 'faraday-retry', '~> 2.2.1'
