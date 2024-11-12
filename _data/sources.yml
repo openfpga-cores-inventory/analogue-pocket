@@ -251,6 +251,7 @@
     - name: Analogizer_Mazamars312_Neogeo_0.8.1
     - name: Analogizer-Pocket-Alpha-Mission
     - name: PocketAlphaMission
+    - name: Analogizer_arcade-slapfight
 - owner: rolandking
   repositories:
     - name: openFPGA-jailbreak
