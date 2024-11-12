@@ -1,0 +1,64 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - msx
+  shortname: msx
+  description: MSX is a standardized home computer architecture, announced by ASCII
+    Corporation on June 16, 1983.
+  author: boogermann
+  url: https://github.com/opengateware/computer-msx
+  version: 0.9.1
+  date_release: '2024-11-12'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '1.1'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots:
+- !ruby/object:Analogue::Core::DataSlot
+  name: Slot A
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: 
+  extensions:
+  - rom
+- !ruby/object:Analogue::Core::DataSlot
+  name: Slot B
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: 
+  extensions:
+  - rom
+- !ruby/object:Analogue::Core::DataSlot
+  name: BIOS
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: 
+  extensions:
+  - rom
+- !ruby/object:Analogue::Core::DataSlot
+  name: FW BIOS
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename: 
+  extensions:
+  - rom
+updaters: 
+info: |-
+  MSX is a standardized home computer architecture, announced by ASCII Corporation on June 16, 1983.
+  It was initially conceived by Microsoft as a product for the Eastern sector, and jointly marketed by Kazuhiko Nishi, the director at ASCII Corporation.
+  Microsoft and Nishi conceived the project as an attempt to create unified standards among various home computing system manufacturers of the period,
+  in the same fashion as the VHS standard for home video tape machines.
+  The first MSX computer sold to the public was a Mitsubishi ML-8000, released on October 21, 1983, thus marking its official release date
+requires_license: false

@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: MSX
+manufacturer: Microsoft
+year: 1983

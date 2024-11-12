@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/RndMnkIII/Analogizer_arcade-slapfight/releases/download/1.0.0/Analogizer_arcade-slapfight_1.0.0.zip
+repository: !ruby/object:GitHub::Repository
+  owner: RndMnkIII
+  name: Analogizer_arcade-slapfight
+funding: 
