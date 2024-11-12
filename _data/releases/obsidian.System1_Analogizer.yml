@@ -1,6 +1,6 @@
 --- !ruby/object:Release
-download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.1/Analogizer-openFPGA-AtariSystem1_v1.0.1.zip
+download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.2/Analogizer-openFPGA-AtariSystem1_v1.0.2.zip
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: Analogizer-openFPGA-AtariSystem1
-funding:
+funding: 

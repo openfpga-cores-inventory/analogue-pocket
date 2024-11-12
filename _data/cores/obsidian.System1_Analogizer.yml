@@ -3,11 +3,11 @@ metadata: !ruby/object:Analogue::Core::Metadata
   platform_ids:
   - system1
   shortname: System1_Analogizer
-  description: Atari System 1
+  description: "[Analogizer] Atari System 1"
   author: obsidian
   url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1
-  version: 1.0.1
-  date_release: '2024-07-19'
+  version: 1.0.2
+  date_release: '2024-11-12'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: true
     instance_json: true
-  filename:
+  filename: 
   extensions:
   - json
 - !ruby/object:Analogue::Core::DataSlot
@@ -32,9 +32,9 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - rom
-updaters:
-info:
+updaters: 
+info: 
 requires_license: false
