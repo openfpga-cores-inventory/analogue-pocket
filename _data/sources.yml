@@ -238,6 +238,7 @@
     - name: arcade-pooyan
     - name: console-supervision
     - name: arcade-xevious
+    - name: computer-msx
 - owner: RndMnkIII
   repositories:
     - name: arcade-irem_m92_Analogizer
