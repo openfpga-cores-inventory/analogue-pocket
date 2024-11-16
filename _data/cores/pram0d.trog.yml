@@ -1,14 +1,14 @@
 --- !ruby/object:Analogue::Core
 metadata: !ruby/object:Analogue::Core::Metadata
   platform_ids:
-  - mortalkombat
+  - trog
   - coinopkey
-  shortname: mortalkombat
+  shortname: trog
   description: Midway Y-Unit Analogue Pocket Core
   author: pram0d
   url: https://pram0d.com
   version: 1.0.4
-  date_release: '2024-10-08'
+  date_release: '2024-11-16'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
