@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Game Boy Color
   author: budude2
   url: https://github.com/budude2/openfpga-GBC
-  version: 1.3.1
-  date_release: '2024-08-21'
+  version: 1.3.2
+  date_release: '2024-11-25'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: true
@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - gbc
   - gb
@@ -33,7 +33,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename:
+  filename: 
   extensions:
   - sav
   - srm
@@ -46,7 +46,7 @@ data_slots:
   filename: gbc_bios.bin
   extensions:
   - bin
-updaters:
+updaters: 
 info: Port by budude2, original core created by mister community. As this is a work
   in progress please let me know of any issues.
 requires_license: false
