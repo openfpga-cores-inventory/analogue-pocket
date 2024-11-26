@@ -1,14 +1,14 @@
 --- !ruby/object:Analogue::Core
 metadata: !ruby/object:Analogue::Core::Metadata
   platform_ids:
-  - trog
+  - hiimpact
   - coinopkey
-  shortname: trog
-  description: Midway Y-Unit Analogue Pocket Core
+  shortname: hiimpact
+  description: High Impact Analogue Pocket Core
   author: pram0d
   url: https://pram0d.com
   version: 1.0.5
-  date_release: '2024-11-16'
+  date_release: '2024-11-25'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
