@@ -255,6 +255,8 @@
     - name: Analogizer_arcade-slapfight
     - name: Analogizer_openfpga-GBC
       filter: analogizer-openfpga-gb-
+    - name: Analogizer_openfpga-GBC
+      filter: analogizer-openfpga-gbc-
 - owner: rolandking
   repositories:
     - name: openFPGA-jailbreak
