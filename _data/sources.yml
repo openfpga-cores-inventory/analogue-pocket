@@ -253,6 +253,8 @@
     - name: Analogizer-Pocket-Alpha-Mission
     - name: PocketAlphaMission
     - name: Analogizer_arcade-slapfight
+    - name: Analogizer_openfpga-GBC
+      filter: analogizer-openfpga-gb-
 - owner: rolandking
   repositories:
     - name: openFPGA-jailbreak
