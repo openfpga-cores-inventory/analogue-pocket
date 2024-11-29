@@ -257,6 +257,7 @@
       filter: analogizer-openfpga-gb-
     - name: Analogizer_openfpga-GBC
       filter: analogizer-openfpga-gbc-
+    - name: Analogizer-openfpga-AtariLynx
 - owner: rolandking
   repositories:
     - name: openFPGA-jailbreak
