@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: "[Analogizer] Game Boy Color"
   author: budude2
   url: https://github.com/budude2/openfpga-GBC
-  version: 1.0.0
-  date_release: '2024-11-26'
+  version: 1.0.1
+  date_release: '2024-11-29'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: true
