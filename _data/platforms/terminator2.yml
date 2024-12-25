@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Terminator 2
+manufacturer: pram0d
+year: 2024
