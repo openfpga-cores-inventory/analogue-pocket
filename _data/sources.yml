@@ -201,6 +201,8 @@
       path: pocket/zips/jotego.jtwc.zip
     - name: jtbin
       path: pocket/zips/jotego.jtflstory.zip
+    - name: jtbin
+      path: pocket/zips/jotego.jttwin16.zip
 - owner: markus-zzz
   repositories:
     - name: myc64-pocket
