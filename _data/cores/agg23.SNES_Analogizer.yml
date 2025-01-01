@@ -7,8 +7,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
     CVBS and SVGA
   author: agg23
   url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer
-  version: 1.0.1
-  date_release: '2024-05-21'
+  version: 1.0.2
+  date_release: '2025-01-01'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
