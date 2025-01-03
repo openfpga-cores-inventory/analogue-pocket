@@ -3,4 +3,4 @@ download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/rele
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: Analogizer-openFPGA-AtariSystem1
-funding: 
+funding:
