@@ -3,13 +3,13 @@ metadata: !ruby/object:Analogue::Core::Metadata
   platform_ids:
   - pcecd
   shortname: PC Engine CD_Analogizer
-  description: "[Analogizer] PC Engine CD with Analogizer support"
+  description: "[ANALOGIZER] PC Engine (known as TurboGrafx-16 in the US) by NEC"
   author: Mazamars312
-  url: https://github.com/RndMnkIII/openfpga-pcengine-cd_Analogizer/
-  version: 1.0.1
-  date_release: '2024-05-30'
+  url: https://github.com/Mazamars312/openfpga-pcengine-cd/
+  version: 1.0.2
+  date_release: '2025-01-03'
 framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
+  version_required: '2.3'
   sleep_supported: false
   dock: !ruby/object:Analogue::Core::Framework::Dock
     supported: true
@@ -18,20 +18,29 @@ framework: !ruby/object:Analogue::Core::Framework
     link_port: false
 data_slots:
 - !ruby/object:Analogue::Core::DataSlot
-  name: CD Rom ISO
+  name: CDRom Cue File
   required: true
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
+    core_specific_file: false
+    instance_json: false
   filename:
   extensions:
-  - json
+  - cue
 - !ruby/object:Analogue::Core::DataSlot
-  name: CDROM II Bios
+  name: CDRom Bin File
+  required: false
+  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
+    core_specific_file: false
+    instance_json: false
+  filename:
+  extensions:
+  - cue
+- !ruby/object:Analogue::Core::DataSlot
+  name: PCE Boot Rom
   required: true
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
+    core_specific_file: false
+    instance_json: false
   filename: bios_3_0_usa.pce
   extensions:
   - pce
@@ -50,268 +59,17 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: true
     instance_json: false
-  filename: mpu.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile0
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - cue
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile1
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile2
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile3
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile4
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile5
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile6
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile7
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile8
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile9
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile10
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile11
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile12
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile13
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile14
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile15
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile16
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile17
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile18
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile19
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile20
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile21
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile22
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile23
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile24
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile25
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile26
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: cdfile27
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
+  filename: pce_mpu_bios.bin
   extensions:
   - bin
 updaters:
-info: "Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue Pocket.
-  Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nThe CD-ROM² is an add-on attachment
-  for the PC Engine that was released in Japan on December 4, 1988. The add-on allows
-  the core versions of the console to play PC Engine games in CD-ROM format in addition
-  to standard HuCards. This made the PC Engine the first video game console to use
-  CD-ROM as a storage media.\r\n\r\nCurrently supports standard PC Engine/TurboGrafx
-  CD Roms only. Please report all issues to Mazamars312, as most likely any issues
-  experienced are issues with the port, not the core."
+info: "Adapted for Analogizer by RndMnkIII\r\nOrginal Port by agg23, PCECD core parts
+  added by Mazamars312 for Analogue Pocket. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\n\r\nThe
+  CD-ROM² is an add-on attachment for the PC Engine that was released in Japan on
+  December 4, 1988. The add-on allows the core versions of the console to play PC
+  Engine games in CD-ROM format in addition to standard HuCards. This made the PC
+  Engine the first video game console to use CD-ROM as a storage media.\r\n\r\nCurrently
+  supports standard PC Engine/TurboGrafx CD Roms only. Please report all issues to
+  Mazamars312, as most likely any issues experienced are issues with the port, not
+  the core."
 requires_license: false
