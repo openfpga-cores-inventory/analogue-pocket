@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: true
     instance_json: true
-  filename: 
+  filename:
   extensions:
   - json
 - !ruby/object:Analogue::Core::DataSlot
@@ -32,10 +32,10 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - rom
-updaters: 
+updaters:
 info: "Note: You must provide your own roms to use this core.\r\n\r\nDeveloper(s)\r\n
   \   Toaplan/Taito.\r\nRelease\r\n    1985\r\n\r\nThis Implementation of a compatible
   Slap Fight/Tiger Heli arcade hardware in HDL is the work of Anton Gale\r\n\r\nAll

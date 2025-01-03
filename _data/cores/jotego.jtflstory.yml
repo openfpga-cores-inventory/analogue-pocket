@@ -8,7 +8,7 @@ metadata: !ruby/object:Analogue::Core::Metadata
   author: jotego
   url: https://patreon.com/jotego
   version: ''
-  date_release: '2024-12-31'
+  date_release: '2025-01-03'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false

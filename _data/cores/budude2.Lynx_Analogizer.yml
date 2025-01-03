@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - lnx
   - lyx
@@ -36,7 +36,7 @@ data_slots:
   filename: lynxboot.img
   extensions:
   - bin
-updaters: 
+updaters:
 info: Port by budude2, original core created by mister community. As this is a work
   in progress please let me know of any issues.
 requires_license: false

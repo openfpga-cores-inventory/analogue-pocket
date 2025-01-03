@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - gb
   - gbc
@@ -33,7 +33,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - sav
   - srm
@@ -43,7 +43,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - sgb
 - !ruby/object:Analogue::Core::DataSlot
@@ -52,7 +52,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - gbp
 - !ruby/object:Analogue::Core::DataSlot
@@ -73,7 +73,7 @@ data_slots:
   filename: sgb_boot.bin
   extensions:
   - bin
-updaters: 
+updaters:
 info: Port by budude2, original core created by mister community. As this is a work
   in progress please let me know of any issues.
 requires_license: false
