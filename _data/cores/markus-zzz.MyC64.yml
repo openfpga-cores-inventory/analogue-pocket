@@ -89,6 +89,6 @@ data_slots:
   filename: 1541-e000.bin
   extensions:
   - bin
-updaters: 
-info: 
+updaters:
+info:
 requires_license: false

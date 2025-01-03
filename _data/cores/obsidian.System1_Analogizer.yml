@@ -23,7 +23,7 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: true
     instance_json: true
-  filename: 
+  filename:
   extensions:
   - json
 - !ruby/object:Analogue::Core::DataSlot
@@ -32,9 +32,9 @@ data_slots:
   parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
     core_specific_file: false
     instance_json: false
-  filename: 
+  filename:
   extensions:
   - rom
-updaters: 
-info: 
+updaters:
+info:
 requires_license: false
