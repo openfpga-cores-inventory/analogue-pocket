@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: "[ANALOGIZER] PC Engine (known as TurboGrafx-16 in the US) by NEC"
   author: Mazamars312
   url: https://github.com/Mazamars312/openfpga-pcengine-cd/
-  version: 1.0.2
-  date_release: '2025-01-03'
+  version: 1.0.3
+  date_release: '2025-01-04'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '2.3'
   sleep_supported: false
