@@ -40,7 +40,7 @@ gem 'chunky_png', '~> 1.4.0'
 gem 'faraday-retry', '~> 2.2.1'
 gem 'netrc', '~> 0.11.0'
 gem 'octokit', '~> 4.25.1'
-gem 'rubyzip', '~> 2.3.2'
+gem 'rubyzip', '~> 2.4.1'
 gem 'slugify', '~> 1.0.7'
 gem 'thor', '~> 1.3.1'
 
