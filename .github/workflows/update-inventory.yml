@@ -42,7 +42,7 @@ jobs:
       - name: Updater - Update Cores
         run: |
           echo "⚙️ Updating Analogue Pocket Cores Inventory..."
-          ruby .github/workflows/updater/lib/updater.rb update-cores --force
+          ruby .github/workflows/updater/lib/updater.rb update-cores
           echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
 
       - name: Updater - Generate Posts
