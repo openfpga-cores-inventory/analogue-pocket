@@ -54,6 +54,9 @@
       path: Releases/pram0d.yunit.zip
     - name: Distribution-OpenFPGA
       path: Releases/pram0d.zunit.zip
+- owner: dave18
+  repositories:
+    - name: OpenFPGA_ZX-Spectrum
 - owner: ericlewis
   repositories:
     - name: openfpga-asteroids
