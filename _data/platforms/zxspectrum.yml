@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: ZX Spectrum
+manufacturer: Sinclair Research Ltd
+year: 1982
