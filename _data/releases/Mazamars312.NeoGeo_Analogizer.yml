@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1.2/Analogizer_NeoGeo_Core_Pocket_1.1.2.zip
+download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1.3/Analogizer_NeoGeo_Core_Pocket_1.1.3.zip
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: Analogizer_Mazamars312_Neogeo_0.8.1
