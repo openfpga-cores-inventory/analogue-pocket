@@ -57,7 +57,7 @@
 - owner: dave18
   repositories:
     - name: OpenFPGA_ZX-Spectrum
-    - name: MemTest_Pocket
+    # - name: MemTest_Pocket
 - owner: ericlewis
   repositories:
     - name: openfpga-asteroids
