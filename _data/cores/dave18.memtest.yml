@@ -1,0 +1,22 @@
+--- !ruby/object:Analogue::Core
+metadata: !ruby/object:Analogue::Core::Metadata
+  platform_ids:
+  - memtest
+  shortname: memtest
+  description: Port of MiSTer SDRAM Memory Tester
+  author: dave18
+  url: ''
+  version: 1.0.0
+  date_release: '2025-02-05'
+framework: !ruby/object:Analogue::Core::Framework
+  version_required: '2.2'
+  sleep_supported: false
+  dock: !ruby/object:Analogue::Core::Framework::Dock
+    supported: true
+    analog_output: false
+  hardware: !ruby/object:Analogue::Core::Framework::Hardware
+    link_port: false
+data_slots: []
+updaters:
+info:
+requires_license: false
