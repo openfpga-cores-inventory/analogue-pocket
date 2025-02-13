@@ -269,6 +269,7 @@
       filter: analogizer-openfpga-gbc-
     - name: Analogizer-openfpga-AtariLynx
     - name: Analogizer-Amiga
+    - name: Analogizer_openfpga-tecmo
 - owner: rolandking
   repositories:
     - name: openFPGA-jailbreak
