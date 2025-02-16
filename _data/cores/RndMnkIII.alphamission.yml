@@ -6,7 +6,7 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: SNK Alpha Mission gateware IP Core
   author: RndMnkIII
   url: https://github.com/RndMnkIII/PocketAlphaMission
-  version: '1.1'
+  version: '1.2'
   date_release: '2023-11-16'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
