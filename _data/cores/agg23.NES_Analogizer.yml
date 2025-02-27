@@ -8,8 +8,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
     first home console"
   author: agg23
   url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
-  version: 1.0.2
-  date_release: '2025-02-11'
+  version: 1.0.3
+  date_release: '2025-02-27'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: true
