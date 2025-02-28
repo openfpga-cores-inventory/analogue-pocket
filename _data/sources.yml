@@ -234,6 +234,7 @@
     - name: openFPGA-MarioBros
     - name: openFPGA-Robotron
     - name: openFPGA-Vectrex
+    - name: openFPGA-Gyruss
 - owner: opengateware
   repositories:
     - name: arcade-bankp
