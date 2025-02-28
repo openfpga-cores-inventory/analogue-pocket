@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Bagman
+manufacturer: Valadon
+year: 1982
