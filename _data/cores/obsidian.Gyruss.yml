@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Konami's Gyruss released in 1983.
   author: obsidian
   url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss
-  version: 0.9.0
-  date_release: '2024-02-28'
+  version: 0.9.1
+  date_release: '2025-02-28'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '1.1'
   sleep_supported: false
