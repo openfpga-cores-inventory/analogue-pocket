@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss/releases/download/v0.9.0/openFPGA-Gyruss.zip
+repository: !ruby/object:GitHub::Repository
+  owner: obsidian-dot-dev
+  name: openFPGA-Gyruss
+funding:
