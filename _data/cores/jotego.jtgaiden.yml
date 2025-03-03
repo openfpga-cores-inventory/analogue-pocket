@@ -42,7 +42,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -52,7 +52,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -62,7 +62,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -88,7 +88,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/55e46c35115316b4bb7dd63d3807ebf6cb0ff634/pocket/zips/jotego.jtgaiden.zip
@@ -120,7 +120,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -130,7 +130,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -140,7 +140,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -166,7 +166,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/744f6af95eb7433f092b5f14aa3dd30d7c75e620/pocket/zips/jotego.jtgaiden.zip
@@ -198,7 +198,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -208,7 +208,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -218,7 +218,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -244,7 +244,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/b959c96aa3b4ffce82908503fe33c87c55ace928/pocket/zips/jotego.jtgaiden.zip
@@ -276,7 +276,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -286,7 +286,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -296,7 +296,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -322,7 +322,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/ffbbc188f8271adcd6f0bc45eca3122e5e174ceb/pocket/zips/jotego.jtgaiden.zip
@@ -354,7 +354,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -364,7 +364,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -374,7 +374,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -400,7 +400,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/66f0ec2baa1a4c87cd7cb2a885e98cc92df9c971/pocket/zips/jotego.jtgaiden.zip
@@ -432,7 +432,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -442,7 +442,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -452,7 +452,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -478,7 +478,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/7f1d60496bc7c3c0865506e3955815fed604266f/pocket/zips/jotego.jtgaiden.zip
@@ -510,7 +510,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -520,7 +520,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -530,7 +530,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -556,7 +556,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/74f6f30b99cabeca556b83dd9b9859d5318994b8/pocket/zips/jotego.jtgaiden.zip
@@ -588,7 +588,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -598,7 +598,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -608,7 +608,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -634,5 +634,5 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
-  info: 
+  info:
   requires_license: true

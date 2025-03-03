@@ -1,0 +1,6 @@
+--- !ruby/object:Release
+download_url: https://github.com/dave18/MemTest_Pocket/releases/download/v1.0.0/memtest.zip
+repository: !ruby/object:GitHub::Repository
+  owner: dave18
+  name: MemTest_Pocket
+funding:
