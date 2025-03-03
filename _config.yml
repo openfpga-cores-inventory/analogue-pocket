@@ -64,7 +64,15 @@ header_pages:
 # Build settings
 remote_theme: joshcampbell191/jekyll-theme-bootstrap
 
+# Minifier settings
+jekyll-minifier:
+  exclude:
+    - 'assets/js/script.js'
+  uglifier_args:
+    harmony: true
+
 plugins:
  - jekyll-feed
+ - jekyll-minifier
  - jekyll-paginate
  - jekyll-seo-tag
