@@ -1,6 +1,7 @@
 {
-  "$schema": "vscode://schemas/settings/user",
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": false,
   "[ruby]": {
     "editor.defaultFormatter": "rubocop.vscode-rubocop"
-  },
+  }
 }
