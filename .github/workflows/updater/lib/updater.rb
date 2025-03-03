@@ -1,162 +1,146 @@
 # frozen_string_literal: true
 
-require 'logger'
 require 'thor'
-require 'yaml'
 
-require_relative 'updater/analogue'
-require_relative 'updater/cache_service'
-require_relative 'updater/github'
-require_relative 'updater/jekyll'
-require_relative 'updater/download_helper'
-require_relative 'updater/release'
-require_relative 'updater/source_repository'
-require_relative 'updater/zip_helper'
+require_relative 'analogue/openfpga_service'
+require_relative 'download_helper'
+require_relative 'github/funding'
+require_relative 'github/github_service'
+require_relative 'github/workflow_logger'
+require_relative 'inventory/core'
+require_relative 'inventory/release'
+require_relative 'inventory/source'
+require_relative 'inventory/inventory_service'
+require_relative 'jekyll/jekyll_service'
+require_relative 'jekyll/post'
+require_relative 'zip_helper'
 
-# Updater CLI
+# Service for updating the openFPGA inventory
 class Updater < Thor
   AUTHORS_DIRECTORY = 'authors'
-  CORES_DIRECTORY = 'cores'
   PLATFORMS_DIRECTORY = 'platforms'
-  RELEASES_DIRECTORY = 'releases'
 
-  SOURCES_FILE = 'sources.yml'
+  attr_reader :logger, :github_service, :inventory_service, :jekyll_service
 
-  attr_reader :logger, :github_service, :jekyll_service, :cache_service, :source_repository
-
-  class_option :site_path, default: Dir.pwd
+  class_option :site_path, type: :string, default: Dir.pwd
 
   def initialize(args, opts, config)
     super(args, opts, config)
 
-    @logger = Logger.new($stdout)
-    @logger.formatter = proc { |severity, _, _, msg|
-      case severity
-      when 'DEBUG' then "::debug::#{msg}\n"
-      when 'INFO' then "::notice::#{msg}\n"
-      when 'WARN' then "::warning::#{msg}\n"
-      when 'ERROR', 'FATAL' then "::error::#{msg}\n"
-      else "#{msg}\n"
-      end
-    }
-
+    @logger = GitHub::WorkflowLogger.new($stdout)
     @github_service = GitHub::GitHubService.new
     @jekyll_service = Jekyll::JekyllService.new(options[:site_path])
-    @cache_service = CacheService.new(@jekyll_service.data_path)
-    @source_repository = SourceRepository.new(File.join(@jekyll_service.data_path, SOURCES_FILE))
+    @inventory_service = Inventory::InventoryService.new(@jekyll_service.data_path)
   end
 
-  option :force, type: :boolean, default: false
-  desc 'update-cores', 'Update openFGPA cores'
-  def update_cores
-    sources = @source_repository.get_sources
+  desc 'update-inventory', 'Update openFPGA cores inventory'
+  def update_inventory
+    sources = @inventory_service.sources
     sources.each do |source|
-      @logger.info("Updating #{source.repository.owner}/#{source.repository.name}")
-      download_url = get_download_url(source.repository, source.options)
+      @logger.info("Fetching #{source.repository}")
 
-      core_path = DownloadHelper.download(download_url)
-      openfpga_path = ZipHelper.extract(core_path)
+      repository = @github_service.repository(source.repository)
+      funding = funding(source.repository)
 
-      openfpga_service = Analogue::OpenFPGAService.new(openfpga_path)
-      openfpga_service.get_cores.each do |core|
-        unless options[:force]
-          cache = @cache_service.get_core(core.id)
-          next if !cache.nil? && cache.metadata.version == core.metadata.version
+      source.contents.each do |path|
+        @github_service.commits(source.repository, { path: path }).each do |commit|
+          content = @github_service.contents(source.repository, { path: path, ref: commit.sha })
+          next if content.nil?
+
+          break if update_source(repository, funding, content.download_url)
         end
-
-        write_core(core.id, core)
-
-        platform = openfpga_service.get_platform(core.platform_id)
-        write_platform(core.platform_id, platform)
-
-        funding = get_funding(source.repository)
-
-        release = Release.new(download_url, source.repository, funding)
-        write_release(core.id, release)
-
-        icon_path = File.join(@jekyll_service.images_path, AUTHORS_DIRECTORY, "#{core.id}.png")
-        openfpga_service.export_icon(core.id, icon_path)
-
-        image_path = File.join(@jekyll_service.images_path, PLATFORMS_DIRECTORY, "#{core.platform_id}.png")
-        openfpga_service.export_image(core.platform_id, image_path)
       end
-    rescue StandardError => e
-      @logger.error("Failed to update #{source.repository.owner}/#{source.repository.name}")
-      @logger.error(e)
-      raise
+
+      next unless source.assets.any?
+
+      exists = true
+      @github_service.releases(source.repository).each do |release|
+        source.assets.each do |pattern|
+          asset = release.assets.find { |a| a.name.match?(pattern) }
+          next if asset.nil?
+
+          exists &= update_source(repository, funding, asset.browser_download_url)
+        end
+        break if exists
+      end
     end
   end
 
   desc 'generate-posts', 'Generate Jekyll posts from openFPGA cores'
   def generate_posts
-    @cache_service.get_cores.each do |core|
-      platform = @cache_service.get_platform(core.platform_id)
-      create_post(core, platform)
+    @inventory_service.cores.each do |core|
+      core.releases.each do |release|
+        platform_id = release.core.metadata.platform_ids.first
+        platform = @inventory_service.platform(platform_id)
+
+        post = Jekyll::Post.new(
+          release.core.metadata.author, # author
+          "#{core.id} - #{release.core.metadata.version}", # title
+          release.core.metadata.date_release, # date
+          [platform.category, platform.name], # categories
+          [core.id], # tags
+          release.info # content
+        )
+
+        @jekyll_service.create_post(core.id, post)
+      end
     end
   end
 
   private
 
-  def create_post(core, platform)
-    post = Jekyll::Post.new(
-      core.metadata.author,
-      "#{core.id} - #{core.metadata.version}",
-      core.metadata.date_release,
-      [platform.category, platform.name],
-      [core.id],
-      core.info
-    )
-
-    @jekyll_service.create_post(core.id, post)
+  def download_archive(url)
+    archive_path = DownloadHelper.download(url)
+    ZipHelper.extract(archive_path)
   end
 
-  def write_platform(platform_id, platform)
-    path = File.join(@jekyll_service.data_path, PLATFORMS_DIRECTORY, "#{platform_id}.yml")
-    File.write(path, platform.to_yaml)
-  end
+  def funding(repository)
+    content = @github_service.funding(repository)
+    return if content.nil?
 
-  def write_core(core_id, core)
-    path = File.join(@jekyll_service.data_path, CORES_DIRECTORY, "#{core_id}.yml")
-    File.write(path, core.to_yaml)
-  end
-
-  def write_release(core_id, release)
-    path = File.join(@jekyll_service.data_path, RELEASES_DIRECTORY, "#{core_id}.yml")
-    File.write(path, release.to_yaml)
-  end
-
-  def get_download_url(repository, options)
-    path = options[:path]
-    if path.nil?
-      get_asset_download_url(repository, options)
-    else
-      get_content_download_url(repository, options)
-    end
-  end
-
-  def get_funding(repository)
-    contents = @github_service.get_funding(repository)
-    return if contents.nil?
-
-    funding_path = DownloadHelper.download(contents.download_url)
+    funding_path = DownloadHelper.download(content.download_url)
     GitHub::Funding.from_file(funding_path)
   end
 
-  def get_asset_download_url(repository, options)
-    prerelease = options[:prerelease]
-    filter = options[:filter]
-    release = @github_service.get_latest_release(repository, prerelease:)
-    if filter.nil?
-      release.assets.first.browser_download_url
-    else
-      release.assets.find { |asset| asset.name.match(filter) }.browser_download_url
-    end
-  end
+  def update_source(repository, funding, download_url)
+    openfpga_path = download_archive(download_url)
+    openfpga_service = Analogue::OpenFPGAService.new(openfpga_path)
+    openfpga_service.cores.each do |core|
+      cache = @inventory_service.core(core.id)
+      return true if !cache.nil? && cache.release_exists?(download_url)
 
-  def get_content_download_url(repository, options)
-    path = options[:path]
-    contents = @github_service.get_contents(repository, path)
-    contents.download_url
+      data = openfpga_service.data(core.id)
+      updaters = openfpga_service.updaters(core.id)
+      info = openfpga_service.info(core.id)
+
+      inventory_core = cache || Inventory::Core.new(core.id, repository, funding)
+
+      release = Inventory::Release.new(download_url, core, data, updaters, info)
+      inventory_core.add_release(release)
+
+      @inventory_service.write_core(inventory_core)
+
+      # Only update platforms and assets if it's the latest release
+      latest_release = release == inventory_core.releases.last
+      next unless latest_release
+
+      icon_path = File.join(@jekyll_service.images_path, AUTHORS_DIRECTORY, "#{core.id}.png")
+      openfpga_service.export_icon(core.id, icon_path)
+
+      core.metadata.platform_ids.each do |platform_id|
+        platform = openfpga_service.platform(platform_id)
+        next if platform.nil?
+
+        @inventory_service.write_platform(platform_id, platform) if latest_release
+
+        image_path = File.join(@jekyll_service.images_path, PLATFORMS_DIRECTORY, "#{platform_id}.png")
+        openfpga_service.export_image(platform_id, image_path)
+      end
+    end
+    false
+  rescue StandardError => e
+    @logger.error("Failed to update source: #{repository.slug} - #{download_url}")
+    @logger.error(e)
   end
 end
 

@@ -6,10 +6,10 @@ module Analogue
     attr_reader :category, :name, :manufacturer, :year
 
     def initialize(platform)
-      @category = platform.category
-      @name = platform.name
-      @manufacturer = platform.manufacturer
-      @year = platform.year
+      @category = platform.platform.category
+      @name = platform.platform.name
+      @manufacturer = platform.platform.manufacturer
+      @year = platform.platform.year
     end
   end
 end

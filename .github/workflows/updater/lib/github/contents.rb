@@ -2,12 +2,12 @@
 
 module GitHub
   # Represents a GitHub content
-  class Content
+  class Contents
     attr_reader :name, :download_url
 
-    def initialize(name, download_url)
-      @name = name
-      @download_url = download_url
+    def initialize(contents)
+      @name = contents.name
+      @download_url = contents.download_url
     end
   end
 end
