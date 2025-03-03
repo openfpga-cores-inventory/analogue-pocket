@@ -37,6 +37,8 @@
     - Releases/pram0d.wrestlefest.zip
     - Releases/pram0d.yunit.zip
     - Releases/pram0d.zunit.zip
+- repository: dave18/memtest_pocket
+- repository: dave18/openfpga_zx-spectrum
 - repository: ericlewis/openfpga-asteroids
 - repository: ericlewis/openfpga-dominos
 - repository: ericlewis/openfpga-donkeykong
@@ -147,11 +149,13 @@
 - repository: opengateware/console-supervision
 - repository: opengateware/openfpga-genesis
 - repository: rndmnkiii/arcade-irem_m92_analogizer
+- repository: rndmnkiii/analogizer-amiga
 - repository: rndmnkiii/analogizer-openfpga-atarilynx
 - repository: rndmnkiii/analogizer-openfpga-atarisystem1
 - repository: rndmnkiii/analogizer-pocket-alpha-mission
 - repository: rndmnkiii/analogizer_arcade-slapfight
 - repository: rndmnkiii/analogizer_mazamars312_neogeo_0.8.1
+- repository: rndmnkiii/analogizer_openfpga-tecmo
 - repository: rndmnkiii/analogizer_openfpga-gbc
   assets:
     - analogizer-openfpga-gb-
