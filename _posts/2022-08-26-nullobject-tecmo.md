@@ -1,7 +1,7 @@
 ---
 layout: post
 author: nullobject
-title: nullobject.tecmo - 2.0
+title: nullobject.tecmo - 1.0
 date: 2022-08-26
 categories: [Arcade, Tecmo]
 tags: [nullobject.tecmo]

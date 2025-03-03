@@ -1,7 +1,7 @@
 ---
 layout: post
 author: RndMnkIII
-title: RndMnkIII.alphamission - 1.2
+title: RndMnkIII.alphamission - 1.1
 date: 2023-11-16
 categories: [Arcade, ASO - Armored Scrum Object]
 tags: [RndMnkIII.alphamission]
