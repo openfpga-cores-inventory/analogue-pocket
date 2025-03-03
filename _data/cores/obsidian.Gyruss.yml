@@ -1,24 +1,24 @@
 --- !ruby/object:Inventory::Core
-id: obsidian.Joust2
+id: obsidian.Gyruss
 repository: !ruby/object:GitHub::Repository
-  name: openFPGA-Joust2
+  name: openFPGA-Gyruss
   owner: !ruby/object:GitHub::Repository::Owner
     login: obsidian-dot-dev
-  html_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2
+  html_url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2/releases/download/v0.9.1/openFPGA-Joust2.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss/releases/download/v0.9.0/openFPGA-Gyruss.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
-      - joust2
-      shortname: Joust2
-      description: Williams 6809 HW Rev 2
+      - gyruss
+      shortname: Gyruss
+      description: Konami's Gyruss released in 1983.
       author: obsidian
-      url: https://github.com/obsidian-dot-dev/openFPGA-Joust2
+      url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss
       version: 0.9.0
-      date_release: '2024-04-20'
+      date_release: '2024-02-28'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
       sleep_supported: false
@@ -30,40 +30,29 @@ releases:
   data: !ruby/object:Analogue::Data
     data_slots:
     - !ruby/object:Analogue::Data::DataSlot
-      name: Arcade Game
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
       name: ROM
       required: true
       parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
+        core_specific_file: true
         instance_json: false
         platform_index: 0
-      filename: 
-      extensions:
-      - rom
+      filename: gyruss.rom
+      extensions: 
   updaters: 
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2/releases/download/v0.9.0/openFPGA-Joust2.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss/releases/download/v0.9.1/openFPGA-Gyruss.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
-      - joust2
-      shortname: Joust2
-      description: Williams 6809 HW Rev 2
+      - gyruss
+      shortname: Gyruss
+      description: Konami's Gyruss released in 1983.
       author: obsidian
-      url: https://github.com/obsidian-dot-dev/openFPGA-Joust2
-      version: 0.9.0
-      date_release: '2024-04-20'
+      url: https://github.com/obsidian-dot-dev/openFPGA-Gyruss
+      version: 0.9.1
+      date_release: '2025-02-28'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
       sleep_supported: false
@@ -75,25 +64,14 @@ releases:
   data: !ruby/object:Analogue::Data
     data_slots:
     - !ruby/object:Analogue::Data::DataSlot
-      name: Arcade Game
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
       name: ROM
       required: true
       parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
+        core_specific_file: true
         instance_json: false
         platform_index: 0
-      filename: 
-      extensions:
-      - rom
+      filename: gyruss.rom
+      extensions: 
   updaters: 
   info: 
   requires_license: false

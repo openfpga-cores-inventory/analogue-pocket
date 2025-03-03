@@ -1,52 +1,67 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - avision
-  shortname: Adventurevision
-  description: Adventurevision core
-  author: Spiritualized
-  url: ''
-  version: 1.0.2
-  date_release: '2022-10-22'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: AV BIOS
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: avbios.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: AV sound BIOS
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: avsound.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Adventure Vision\r\n\r\nEnjoy Adventure Vision games with this
-  core. \r\n\r\nTo use it, you must place two files here:\r\n\r\n/assets/avision/Spiritualized.Adventurevision/avbios.bin
-  \ (1024 bytes)\r\n/assets/avision/Spiritualized.Adventurevision/avsound.bin  (1024
-  bytes)\r\n\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.Adventurevision
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Adventure-Vision
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-Adventure-Vision
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-Adventure-Vision/releases/download/1.0.2/Spiritualized_Adventurevision_1.0.2_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - avision
+      shortname: Adventurevision
+      description: Adventurevision core
+      author: Spiritualized
+      url: ''
+      version: 1.0.2
+      date_release: '2022-10-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: AV BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: avbios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: AV sound BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: avsound.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Adventure Vision\r\n\r\nEnjoy Adventure Vision games with this
+    core. \r\n\r\nTo use it, you must place two files here:\r\n\r\n/assets/avision/Spiritualized.Adventurevision/avbios.bin
+    \ (1024 bytes)\r\n/assets/avision/Spiritualized.Adventurevision/avsound.bin  (1024
+    bytes)\r\n\r\n\r\nEnjoy!"
+  requires_license: false

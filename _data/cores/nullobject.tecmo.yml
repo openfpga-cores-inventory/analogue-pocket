@@ -1,46 +1,283 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - tecmo
-  shortname: tecmo
-  description: Tecmo arcade core.
-  author: nullobject
-  url: https://github.com/nullobject/pocket-tecmo
-  version: '2.0'
-  date_release: '2022-08-26'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Game JSON Setup
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: |
-  Made with love by Josh Bassett, 2022.
-  https://patreon.com/nullobject
+--- !ruby/object:Inventory::Core
+id: nullobject.tecmo
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-tecmo
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: nullobject
+  html_url: https://github.com/nullobject/openfpga-tecmo
+funding: !ruby/object:GitHub::Funding
+  patreon: https://www.patreon.com/nullobject
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v2.0/pocket-tecmo-2.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - tecmo
+      shortname: tecmo
+      description: Tecmo arcade core.
+      author: nullobject
+      url: https://github.com/nullobject/pocket-tecmo
+      version: '2.0'
+      date_release: '2022-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: |
+    Made with love by Josh Bassett, 2022.
+    https://patreon.com/nullobject
 
-  Huge thanks to all my Patreon supporters. If you like this core, then please consider supporting the project.
+    Huge thanks to all my Patreon supporters. If you like this core, then please consider supporting the project.
 
-  Enjoy!
-requires_license: false
+    Enjoy!
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v1.0/pocket-tecmo-1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - tecmo
+      shortname: tecmo
+      description: Tecmo arcade core.
+      author: nullobject
+      url: https://github.com/nullobject/pocket-tecmo
+      version: '1.0'
+      date_release: '2022-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Main ROM 0
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - 5p
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Main ROM 1
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Bank ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Foreground ROM 0
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Foreground ROM 1
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Foreground ROM 2
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Foreground ROM 3
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Background ROM 0
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Background ROM 1
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Background ROM 2
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Background ROM 3
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sprite ROM 0
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sprite ROM 1
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sprite ROM 2
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sprite ROM 3
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PCM ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+  updaters: 
+  info: |
+    Made with love by Josh Bassett, 2022.
+    https://patreon.com/nullobject
+
+    Huge thanks to all my Patreon supporters. If you like this core, then please consider supporting the project.
+
+    Enjoy!
+  requires_license: false

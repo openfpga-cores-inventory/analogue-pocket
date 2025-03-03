@@ -1,54 +1,70 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - coleco
-  shortname: Coleco
-  description: Coleco Core
-  author: Spiritualized
-  url: ''
-  version: 1.0.2
-  date_release: '2022-10-27'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions: []
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save RAM
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-- !ruby/object:Analogue::Core::DataSlot
-  name: Coleco BIOS
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: coleco.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Colecovision\r\n\r\nRegular, Super Game Module, EEPROM, and flash
-  games are supported by this core.\r\n\r\nYou must place the Colecovision BIOS, named
-  \"coleco.bin\" into the \r\n\r\n/assets/coleco/Spiritualized.Coleco/ folder!  It
-  should be 8192 bytes in size.\r\n\r\nThese games utilize save memory and must have
-  the correct extention to work:\r\n\r\nBlack Onyx should have the .CE0 file extention,\r\nBoxxle
-  needs the .CE1 extension, \r\nand Penguin Adventure and Gradius need a .CF0 extension.\r\n\r\nSee
-  readme.txt for information on button mapping.\r\n\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.Coleco
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Coleco
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-Coleco
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-Coleco/releases/download/1.0.2/Spiritualized_Coleco_1.0.2_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - coleco
+      shortname: Coleco
+      description: Coleco Core
+      author: Spiritualized
+      url: ''
+      version: 1.0.2
+      date_release: '2022-10-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions: []
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Coleco BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: coleco.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Colecovision\r\n\r\nRegular, Super Game Module, EEPROM, and
+    flash games are supported by this core.\r\n\r\nYou must place the Colecovision
+    BIOS, named \"coleco.bin\" into the \r\n\r\n/assets/coleco/Spiritualized.Coleco/
+    folder!  It should be 8192 bytes in size.\r\n\r\nThese games utilize save memory
+    and must have the correct extention to work:\r\n\r\nBlack Onyx should have the
+    .CE0 file extention,\r\nBoxxle needs the .CE1 extension, \r\nand Penguin Adventure
+    and Gradius need a .CF0 extension.\r\n\r\nSee readme.txt for information on button
+    mapping.\r\n\r\n\r\nEnjoy!"
+  requires_license: false

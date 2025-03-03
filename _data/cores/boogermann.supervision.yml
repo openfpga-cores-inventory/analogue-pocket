@@ -1,47 +1,125 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - supervision
-  shortname: supervision
-  description: Watara Supervision Compatible Gateware IP Core
-  author: boogermann
-  url: https://github.com/opengateware/console-supervision
-  version: 0.1.1
-  date_release: '2022-10-15'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sv
-  - bin
-updaters:
-info: |
-  Supervision © 1992 Watara.
+--- !ruby/object:Inventory::Core
+id: boogermann.supervision
+repository: !ruby/object:GitHub::Repository
+  name: console-supervision
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: opengateware
+  html_url: https://github.com/opengateware/console-supervision
+funding: !ruby/object:GitHub::Funding
+  patreon: https://www.patreon.com/pierco
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/opengateware/console-supervision/releases/download/0.1.1/boogermann.supervision_pocket-0.1.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - supervision
+      shortname: supervision
+      description: Watara Supervision Compatible Gateware IP Core
+      author: boogermann
+      url: https://github.com/opengateware/console-supervision
+      version: 0.1.1
+      date_release: '2022-10-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sv
+      - bin
+  updaters: 
+  info: |
+    Supervision © 1992 Watara.
 
-  The Watara Supervision, also known as the QuickShot Supervision in the UK, is a monochrome handheld game console, originating from Asia, and introduced in 1992 as a cut-price competitor for Nintendo's Game Boy.
-  It came packaged with a game called Crystball, which is similar to Breakout.
-  One unique feature of the Supervision was that it could be linked up to a television via a link cable.
-  Games played in this way would display in four colors, much like Nintendo's Super Game Boy add-on for the SNES.
-  A full color TV link was also in the works, but because of the Supervision's failure to make a major impression among gamers it was cancelled, along with the games which were in development for it.
+    The Watara Supervision, also known as the QuickShot Supervision in the UK, is a monochrome handheld game console, originating from Asia, and introduced in 1992 as a cut-price competitor for Nintendo's Game Boy.
+    It came packaged with a game called Crystball, which is similar to Breakout.
+    One unique feature of the Supervision was that it could be linked up to a television via a link cable.
+    Games played in this way would display in four colors, much like Nintendo's Super Game Boy add-on for the SNES.
+    A full color TV link was also in the works, but because of the Supervision's failure to make a major impression among gamers it was cancelled, along with the games which were in development for it.
 
-  This Implementation of a compatible Watara Supervision hardware in HDL is the work of Pierre Cornier and Jamie Blanks.
+    This Implementation of a compatible Watara Supervision hardware in HDL is the work of Pierre Cornier and Jamie Blanks.
 
-  Analogue Pocket port by Marcus Andrade (Boogermann)
+    Analogue Pocket port by Marcus Andrade (Boogermann)
 
-  All trademarks, logos, and copyrights are property of their respective owners.
+    All trademarks, logos, and copyrights are property of their respective owners.
 
-  The authors and contributors or any of its maintainers are in no way associated with or endorsed by Watara.
-requires_license: false
+    The authors and contributors or any of its maintainers are in no way associated with or endorsed by Watara.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/opengateware/console-supervision/releases/download/0.1.0/boogermann.supervision_pocket-0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - supervision
+      shortname: supervision
+      description: Watara Supervision Compatible Gateware IP Core
+      author: boogermann
+      url: https://github.com/opengateware/console-supervision
+      version: 0.1.0
+      date_release: '2022-10-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sv
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gbp
+      - sgb
+  updaters: 
+  info: |
+    Supervision © 1992 Watara.
+
+    The Watara Supervision, also known as the QuickShot Supervision in the UK, is a monochrome handheld game console, originating from Asia, and introduced in 1992 as a cut-price competitor for Nintendo's Game Boy.
+    It came packaged with a game called Crystball, which is similar to Breakout.
+    One unique feature of the Supervision was that it could be linked up to a television via a link cable.
+    Games played in this way would display in four colors, much like Nintendo's Super Game Boy add-on for the SNES.
+    A full color TV link was also in the works, but because of the Supervision's failure to make a major impression among gamers it was cancelled, along with the games which were in development for it.
+
+    This Implementation of a compatible Watara Supervision hardware in HDL is the work of Pierre Cornier and Jamie Blanks.
+
+    Analogue Pocket port by Marcus Andrade (Boogermann)
+
+    All trademarks, logos, and copyrights are property of their respective owners.
+
+    The authors and contributors or any of its maintainers are in no way associated with or endorsed by Watara.
+  requires_license: false

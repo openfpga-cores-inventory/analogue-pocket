@@ -1,57 +1,237 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - vectrex
-  shortname: Vectrex
-  description: GCE Vectrex
-  author: obsidian
-  url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
-  version: 0.9.4
-  date_release: '2024-04-28'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Game JSON Data
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: BIOS
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: vectrex.bin
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Game
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - vec
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Overlay
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - ovr
-updaters:
-info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: obsidian.Vectrex
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Vectrex
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: obsidian-dot-dev
+  html_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.0/openFGPA-Vectrex.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vectrex
+      shortname: Vectrex
+      description: GCE Vectrex
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
+      version: 0.9.0
+      date_release: '2024-02-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vec
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Overlay
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - ovr
+  updaters: 
+  info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.1/openFPGA-Vectrex.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vectrex
+      shortname: Vectrex
+      description: GCE Vectrex
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
+      version: 0.9.1
+      date_release: '2024-02-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vec
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Overlay
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - ovr
+  updaters: 
+  info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.4/openFPGA-Vectrex.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vectrex
+      shortname: Vectrex
+      description: GCE Vectrex
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
+      version: 0.9.4
+      date_release: '2024-04-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: vectrex.bin
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vec
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Overlay
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - ovr
+  updaters: 
+  info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.3/openFPGA-Vectrex.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vectrex
+      shortname: Vectrex
+      description: GCE Vectrex
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
+      version: 0.9.3
+      date_release: '2024-04-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: vectrex.bin
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vec
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Overlay
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - ovr
+  updaters: 
+  info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
+  requires_license: false

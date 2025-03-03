@@ -1,24 +1,24 @@
 --- !ruby/object:Inventory::Core
-id: obsidian.Gaplus
+id: obsidian.Bagman
 repository: !ruby/object:GitHub::Repository
-  name: openFPGA-Gaplus
+  name: openFPGA-Bagman
   owner: !ruby/object:GitHub::Repository::Owner
     login: obsidian-dot-dev
-  html_url: https://github.com/obsidian-dot-dev/openFPGA-Gaplus
+  html_url: https://github.com/obsidian-dot-dev/openFPGA-Bagman
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Gaplus/releases/download/v0.9.0/openFPGA-Gaplus.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Bagman/releases/download/v0.9.0/openFPGA-Bagman.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
-      - gaplus
-      shortname: Gaplus
-      description: Gaplus/Galaga3
+      - bagman
+      shortname: Bagman
+      description: Valadon Automation's Bagman.
       author: obsidian
-      url: https://github.com/obsidian-dot-dev/openFPGA-Gaplus
+      url: https://github.com/obsidian-dot-dev/openFPGA-Bagman
       version: 0.9.0
-      date_release: '2024-04-03'
+      date_release: '2025-02-28'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
       sleep_supported: false
@@ -49,16 +49,6 @@ releases:
       filename: 
       extensions:
       - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: HISCORE
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
   updaters: 
   info: 
   requires_license: false

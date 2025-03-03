@@ -1,66 +1,84 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - tamagotchi_p1
-  shortname: Tamagotchi_P1
-  description: The Tamagotchi that started it all
-  author: agg23
-  url: https://github.com/agg23/fpga-tamagotchi
-  version: 1.0.0
-  date_release: '2023-04-27'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: true
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: rom.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Background
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: background.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Spritesheet
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: spritesheet.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Restore State Save
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: savestate.ss
-  extensions:
-  - ss
-updaters:
-info: |
-  Tamagotchi P1, the very first Tamagotchi from a line of virtual pet devices. The core gameplay loop revolves around taking care of your pet and watching it grow into new "forms" through feeding, play, cleaning, and discipline. These original models were so popular that as of 2017, they started to be reproduced.
+--- !ruby/object:Inventory::Core
+id: agg23.Tamagotchi_P1
+repository: !ruby/object:GitHub::Repository
+  name: fpga-tamagotchi
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: agg23
+  html_url: https://github.com/agg23/fpga-tamagotchi
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/fpga-tamagotchi/releases/download/1.0.0/agg23.Tamagotchi_1.0.0_2023-04-27-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - tamagotchi_p1
+      shortname: Tamagotchi_P1
+      description: The Tamagotchi that started it all
+      author: agg23
+      url: https://github.com/agg23/fpga-tamagotchi
+      version: 1.0.0
+      date_release: '2023-04-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: rom.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Background
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: background.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Spritesheet
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: spritesheet.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Restore State Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: savestate.ss
+      extensions:
+      - ss
+  updaters: 
+  info: |
+    Tamagotchi P1, the very first Tamagotchi from a line of virtual pet devices. The core gameplay loop revolves around taking care of your pet and watching it grow into new "forms" through feeding, play, cleaning, and discipline. These original models were so popular that as of 2017, they started to be reproduced.
 
-  Supports:
-  * Memories/Savestates/Automatic restore of state when launching the core
-  * Turbo - Runs at up to 1,800x speed
-  * Configurable automatic disabling of turbo when events occur
-  * LCD configuration
-  * User-replaceable backgrounds and icons
-requires_license: false
+    Supports:
+    * Memories/Savestates/Automatic restore of state when launching the core
+    * Turbo - Runs at up to 1,800x speed
+    * Configurable automatic disabling of turbo when events occur
+    * LCD configuration
+    * User-replaceable backgrounds and icons
+  requires_license: false

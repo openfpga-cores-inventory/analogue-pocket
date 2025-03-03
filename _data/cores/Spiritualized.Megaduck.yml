@@ -1,35 +1,48 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - mega_duck
-  shortname: Megaduck
-  description: Megaduck core
-  author: Spiritualized
-  url: ''
-  version: 1.0.2
-  date_release: '2022-10-20'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-  - md1
-  - md2
-updaters:
-info: "Spiritualized Megaduck\r\n\r\nEnjoy Megaduck games with this core.\r\n\r\nBoth
-  kinds of bankswitching are supported.  The file extention will determine\r\nwhich
-  is used:\r\n\r\n.md1 is for 32K banks\r\n.md2 is for 16K banks\r\n\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.Megaduck
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Megaduck
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-Megaduck
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-Megaduck/releases/download/1.0.2/Spiritualized_Megaduck_1.0.2_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mega_duck
+      shortname: Megaduck
+      description: Megaduck core
+      author: Spiritualized
+      url: ''
+      version: 1.0.2
+      date_release: '2022-10-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - md1
+      - md2
+  updaters: 
+  info: "Spiritualized Megaduck\r\n\r\nEnjoy Megaduck games with this core.\r\n\r\nBoth
+    kinds of bankswitching are supported.  The file extention will determine\r\nwhich
+    is used:\r\n\r\n.md1 is for 32K banks\r\n.md2 is for 16K banks\r\n\r\n\r\nEnjoy!"
+  requires_license: false

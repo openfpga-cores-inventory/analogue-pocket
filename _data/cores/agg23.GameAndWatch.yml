@@ -1,39 +1,97 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - gameandwatch
-  shortname: GameAndWatch
-  description: Nintendo's first handheld video games
-  author: agg23
-  url: https://github.com/agg23/fpga-gameandwatch
-  version: 0.2.0
-  date_release: '2023-06-30'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Game
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - gnw
-updaters:
-info: |-
-  Game and Watch
+--- !ruby/object:Inventory::Core
+id: agg23.GameAndWatch
+repository: !ruby/object:GitHub::Repository
+  name: fpga-gameandwatch
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: agg23
+  html_url: https://github.com/agg23/fpga-gameandwatch
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/fpga-gameandwatch/releases/download/0.1.0/agg23.GameAndWatch_0.1.0_2023-06-26-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gameandwatch
+      shortname: GameAndWatch
+      description: Nintendo's first handheld video games
+      author: agg23
+      url: https://github.com/agg23/fpga-gameandwatch
+      version: 0.1.0
+      date_release: '2023-06-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gnw
+  updaters: 
+  info: |-
+    Game and Watch
 
-  The first electronic handheld devices by Nintendo, spawning some characters that still persist today, and putting handheld gaming on the map, Game and Watch devices were wildly popular. Featuring full color artwork around a monochrome black LCD, these games look amazing even today.
+    The first electronic handheld devices by Nintendo, spawning some characters that still persist today, and putting handheld gaming on the map, Game and Watch devices were wildly popular. Featuring full color artwork around a monochrome black LCD, these games look amazing even today.
 
-  CPUs supported:
+    CPUs supported:
 
-  * SM510 - Donkey Kong
-  * SM5a - Octopus
-requires_license: false
+    * SM510 - Donkey Kong
+    * SM5a - Octopus
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/fpga-gameandwatch/releases/download/0.2.0/agg23.GameAndWatch_0.2.0_2023-06-30-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gameandwatch
+      shortname: GameAndWatch
+      description: Nintendo's first handheld video games
+      author: agg23
+      url: https://github.com/agg23/fpga-gameandwatch
+      version: 0.2.0
+      date_release: '2023-06-30'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gnw
+  updaters: 
+  info: |-
+    Game and Watch
+
+    The first electronic handheld devices by Nintendo, spawning some characters that still persist today, and putting handheld gaming on the map, Game and Watch devices were wildly popular. Featuring full color artwork around a monochrome black LCD, these games look amazing even today.
+
+    CPUs supported:
+
+    * SM510 - Donkey Kong
+    * SM5a - Octopus
+  requires_license: false

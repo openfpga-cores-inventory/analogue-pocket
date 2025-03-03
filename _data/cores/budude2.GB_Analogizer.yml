@@ -1,79 +1,186 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - gb
-  shortname: GB_Analogizer
-  description: "[Analogizer] Game Boy"
-  author: budude2
-  url: https://github.com/budude2/openfpga-GBC
-  version: 1.0.1
-  date_release: '2024-11-29'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: true
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: true
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - gb
-  - gbc
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-  - srm
-- !ruby/object:Analogue::Core::DataSlot
-  name: SGB Border
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sgb
-- !ruby/object:Analogue::Core::DataSlot
-  name: Palette
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - gbp
-- !ruby/object:Analogue::Core::DataSlot
-  name: DMG BIOS
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: gb_bios.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: SGB BIOS
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: sgb_boot.bin
-  extensions:
-  - bin
-updaters:
-info: Port by budude2, original core created by mister community. As this is a work
-  in progress please let me know of any issues.
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: budude2.GB_Analogizer
+repository: !ruby/object:GitHub::Repository
+  name: Analogizer_openfpga-GBC
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/Analogizer_openfpga-GBC
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/budude2
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/RndMnkIII/Analogizer_openfpga-GBC/releases/download/1.0.0/analogizer-openfpga-gb-1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gb
+      shortname: GB_Analogizer
+      description: "[Analogizer] Game Boy"
+      author: budude2
+      url: https://github.com/budude2/openfpga-GBC
+      version: 1.0.0
+      date_release: '2024-11-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SGB Border
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sgb
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gbp
+    - !ruby/object:Analogue::Data::DataSlot
+      name: DMG BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gb_bios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SGB BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sgb_boot.bin
+      extensions:
+      - bin
+  updaters: 
+  info: Port by budude2, original core created by mister community. As this is a work
+    in progress please let me know of any issues.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/RndMnkIII/Analogizer_openfpga-GBC/releases/download/1.0.1/analogizer-openfpga-gb-1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gb
+      shortname: GB_Analogizer
+      description: "[Analogizer] Game Boy"
+      author: budude2
+      url: https://github.com/budude2/openfpga-GBC
+      version: 1.0.1
+      date_release: '2024-11-29'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SGB Border
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sgb
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gbp
+    - !ruby/object:Analogue::Data::DataSlot
+      name: DMG BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gb_bios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SGB BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sgb_boot.bin
+      extensions:
+      - bin
+  updaters: 
+  info: Port by budude2, original core created by mister community. As this is a work
+    in progress please let me know of any issues.
+  requires_license: false

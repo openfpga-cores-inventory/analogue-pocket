@@ -1,45 +1,59 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - game_king
-  shortname: Gameking
-  description: Game King core
-  author: Spiritualized
-  url: ''
-  version: 1.0.3
-  date_release: '2022-10-22'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-  - gk
-- !ruby/object:Analogue::Core::DataSlot
-  name: Game King BIOS
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: gkbios.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Game King\r\n\r\nEnjoy Game King games with this core. \r\n\r\nTo
-  use it, you must place the 522488 byte \"gkbios.bin\" file here:\r\n\r\n/assets/game_king/Spiritualized.Gameking/gkbios.bin\r\n\r\nA
-  file named \"Play BIOS Games.bin\" has been included.  Loading this\r\nwill let
-  you play the built in BIOS games.  This file is empty and\r\nis simply used to trigger
-  the built in games.\r\n\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.Gameking
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Game-King
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-Game-King
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-Game-King/releases/download/1.0.3/Spiritualized_GameKing_1.0.3_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - game_king
+      shortname: Gameking
+      description: Game King core
+      author: Spiritualized
+      url: ''
+      version: 1.0.3
+      date_release: '2022-10-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - gk
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game King BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: gkbios.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Game King\r\n\r\nEnjoy Game King games with this core. \r\n\r\nTo
+    use it, you must place the 522488 byte \"gkbios.bin\" file here:\r\n\r\n/assets/game_king/Spiritualized.Gameking/gkbios.bin\r\n\r\nA
+    file named \"Play BIOS Games.bin\" has been included.  Loading this\r\nwill let
+    you play the built in BIOS games.  This file is empty and\r\nis simply used to
+    trigger the built in games.\r\n\r\n\r\nEnjoy!"
+  requires_license: false

@@ -1,52 +1,68 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - galaga
-  shortname: galaga
-  description: Namco Galaga Compatible Gateware IP Core for FPGA
-  author: boogermann
-  url: https://github.com/opengateware/arcade-galaga
-  version: 0.1.0
-  date_release: '2022-09-03'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Load Game Definition File
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: "Galaga is a 1981 fixed shooter arcade video game developed and published by
-  Namco. In North America, it was released by Midway Manufacturing.\r\nIt is the sequel
-  to Galaxian (1979), Namco's first major video game hit in arcades.\r\n\r\nNote:
-  You must provide your own roms to use this core.\r\n\r\nDeveloper(s):\r\n    Namco\r\nPublisher(s):\r\n
-  \   JP/EU: Namco\r\n    NA: Midway\r\nDirector(s):\r\n    Shigeru Yokoyama\r\nProgrammer(s)\r\n
-  \   Tetsu Ogawa\r\nArtist(s)\r\n    Hiroshi Ono\r\nComposer(s)\r\n    Nobuyuki Ohnogi\r\nRelease:\r\n
-  \   JP: September, 1981\r\n    EU: 1981\r\n    NA: October, 1981\r\n\r\nCompatible
-  gateware of Namco's Galaga arcade hardware based on the work by Dar.\r\n\r\nAnalogue
-  Pocket Port by Marcus Andrade (Boogermann)\r\n\r\nGalaga © 1981 NAMCO LTD. All rights
-  reserved. GALAGA is a trademark of BANDAI NAMCO ENTERTAINMENT INC.\r\nAll other
-  trademarks, logos, and copyrights are property of their respective owners.\r\n\r\nThe
-  authors and contributors or any of its maintainers are in no way associated with
-  or endorsed by Bandai Namco Entertainment Inc.\r\n"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: boogermann.galaga
+repository: !ruby/object:GitHub::Repository
+  name: arcade-galaga
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: opengateware
+  html_url: https://github.com/opengateware/arcade-galaga
+funding: !ruby/object:GitHub::Funding
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/opengateware/arcade-galaga/releases/download/v0.1.0/arcade-galaga-pocket-v0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - galaga
+      shortname: galaga
+      description: Namco Galaga Compatible Gateware IP Core for FPGA
+      author: boogermann
+      url: https://github.com/opengateware/arcade-galaga
+      version: 0.1.0
+      date_release: '2022-09-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Load Game Definition File
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "Galaga is a 1981 fixed shooter arcade video game developed and published
+    by Namco. In North America, it was released by Midway Manufacturing.\r\nIt is
+    the sequel to Galaxian (1979), Namco's first major video game hit in arcades.\r\n\r\nNote:
+    You must provide your own roms to use this core.\r\n\r\nDeveloper(s):\r\n    Namco\r\nPublisher(s):\r\n
+    \   JP/EU: Namco\r\n    NA: Midway\r\nDirector(s):\r\n    Shigeru Yokoyama\r\nProgrammer(s)\r\n
+    \   Tetsu Ogawa\r\nArtist(s)\r\n    Hiroshi Ono\r\nComposer(s)\r\n    Nobuyuki
+    Ohnogi\r\nRelease:\r\n    JP: September, 1981\r\n    EU: 1981\r\n    NA: October,
+    1981\r\n\r\nCompatible gateware of Namco's Galaga arcade hardware based on the
+    work by Dar.\r\n\r\nAnalogue Pocket Port by Marcus Andrade (Boogermann)\r\n\r\nGalaga
+    © 1981 NAMCO LTD. All rights reserved. GALAGA is a trademark of BANDAI NAMCO ENTERTAINMENT
+    INC.\r\nAll other trademarks, logos, and copyrights are property of their respective
+    owners.\r\n\r\nThe authors and contributors or any of its maintainers are in no
+    way associated with or endorsed by Bandai Namco Entertainment Inc.\r\n"
+  requires_license: false

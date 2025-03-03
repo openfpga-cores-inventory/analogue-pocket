@@ -1,36 +1,51 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - arduboy
-  shortname: Arduboy
-  description: A small, portable Arduino console.
-  author: agg23
-  url: https://github.com/agg23/analogue-arduboy/
-  version: 0.9.0
-  date_release: '2022-09-03'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: HEX
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - hex
-updaters:
-info: "Port by agg23. MiSTer port by uXeBoy. Atmega core by Iulian Gheorghiu.\r\n\r\nArduboy
-  is an open source video game console around the size of a credit card. Based on
-  an Arduino core and a 128x64 OLED display, the system packs impressive games into
-  a very small and simple formfactor.\r\n\r\nCore may exibit strange audio behavior
-  on a few games. The cause of this issue is unknown at this time. Settings are provided
-  to tweak the audio output to make it more agreeable."
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: agg23.Arduboy
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-arduboy
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: agg23
+  html_url: https://github.com/agg23/openfpga-arduboy
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-arduboy/releases/download/0.9.0/agg23.Arduboy.0.9.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - arduboy
+      shortname: Arduboy
+      description: A small, portable Arduino console.
+      author: agg23
+      url: https://github.com/agg23/analogue-arduboy/
+      version: 0.9.0
+      date_release: '2022-09-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: HEX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - hex
+  updaters: 
+  info: "Port by agg23. MiSTer port by uXeBoy. Atmega core by Iulian Gheorghiu.\r\n\r\nArduboy
+    is an open source video game console around the size of a credit card. Based on
+    an Arduino core and a 128x64 OLED display, the system packs impressive games into
+    a very small and simple formfactor.\r\n\r\nCore may exibit strange audio behavior
+    on a few games. The cause of this issue is unknown at this time. Settings are
+    provided to tweak the audio output to make it more agreeable."
+  requires_license: false

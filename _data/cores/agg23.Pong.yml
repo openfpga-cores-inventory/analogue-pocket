@@ -1,24 +1,90 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - pong
-  shortname: Pong
-  description: Atari Pong arcade machine. 1972
-  author: agg23
-  url: https://github.com/agg23/analogue-pong/
-  version: 1.2.0
-  date_release: '2022-09-08'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots: []
-updaters:
-info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
-  are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
-  Extended paddles\r\n* Training mode"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: agg23.Pong
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-pong
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: agg23
+  html_url: https://github.com/agg23/openfpga-pong
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-pong/releases/download/1.0/Pong.1.0b.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pong
+      shortname: Pong
+      description: Atari Pong arcade. 1972
+      author: agg23
+      url: https://github.com/agg23/analogue-pong/
+      version: 1.0b
+      date_release: '2022-08-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-pong/releases/download/1.1.0/Pong.1.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pong
+      shortname: Pong
+      description: Atari Pong arcade machine. 1972
+      author: agg23
+      url: https://github.com/agg23/analogue-pong/
+      version: 1.1.0
+      date_release: '2022-08-23'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
+    are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
+    Extended paddles\r\n* Training mode"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-pong/releases/download/1.2.0/agg23.Pong_1.2.0_2022-09-08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pong
+      shortname: Pong
+      description: Atari Pong arcade machine. 1972
+      author: agg23
+      url: https://github.com/agg23/analogue-pong/
+      version: 1.2.0
+      date_release: '2022-09-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
+    are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
+    Extended paddles\r\n* Training mode"
+  requires_license: false

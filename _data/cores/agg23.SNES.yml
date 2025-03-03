@@ -1,49 +1,556 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - snes
-  shortname: SNES
-  description: Super Nintendo and Super Famicom. Nintendo's second major home console
-  author: agg23
-  url: https://github.com/agg23/openfpga-snes
-  version: 0.4.4
-  date_release: '2024-09-16'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - smc
-  - sfc
-  - bs
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-  - srm
-updaters:
-info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System (SNES),
-  referred to as the Super Famicom (SFC) in Japan was the second home console produced
-  by Nintendo. A 16-bit console that remains hugely popular to this day due to its
-  expansive library and impressive enhancement chips.\r\n\r\nCore supports 4 controllers
-  (when connected to the Dock), and the SA-1, Super FX (GSU), DSP, CX4, S-DD1, SPC7110,
-  and BSX expansion chips. Please report all issues to agg23, as most likely any issues
-  experienced are issues with the port, not the core."
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: agg23.SNES
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-SNES
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: agg23
+  html_url: https://github.com/agg23/openfpga-SNES
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+  patreon: https://www.patreon.com/srg320
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.1.0/agg23.SNES_0.1.0_2022-09-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.1.0
+      date_release: '2022-09-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SMC
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore should
+    support 2 controllers (when connected to the Dock), and the SA1, Super FX (GSU),
+    CX4, and SDD1 expansion chips (more coming later). Please report all issues to
+    agg23, as most likely any issues experienced are issues with the port, not the
+    core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.2.0/agg23.SNES_0.2.0_2022-09-19.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.2.0
+      date_release: '2022-09-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SMC
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    and CX4 expansion chips (more coming later). Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.1/agg23.SNES_0.3.1_2022-09-28.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.3.1
+      date_release: '2022-09-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SMC
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    and CX4 expansion chips (more coming later). Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.0/agg23.SNES_0.3.0_2022-09-28.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.3.0
+      date_release: '2022-09-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SMC
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    and CX4 expansion chips (more coming later). Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.2/agg23.SNES_0.3.2_2022-10-10.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.3.2
+      date_release: '2022-10-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SMC
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    and CX4 expansion chips (more coming later). Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.0/agg23.SNES_0.4.0_2022-11-10.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.4.0
+      date_release: '2022-11-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    CX4, S-DD1, SPC7110, and BSX expansion chips. Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.2/agg23.SNES_0.4.2_2022-12-10.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.4.2
+      date_release: '2022-12-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    CX4, S-DD1, SPC7110, and BSX expansion chips. Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.1/agg23.SNES_0.4.1_2022-12-10.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.4.1
+      date_release: '2022-12-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    CX4, S-DD1, SPC7110, and BSX expansion chips. Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.3/agg23.SNES_0.4.3_2022-12-14.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.4.3
+      date_release: '2022-12-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    CX4, S-DD1, SPC7110, and BSX expansion chips. Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.4/agg23.SNES_0.4.4_2024-09-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: SNES
+      description: Super Nintendo and Super Famicom. Nintendo's second major home
+        console
+      author: agg23
+      url: https://github.com/agg23/openfpga-snes
+      version: 0.4.4
+      date_release: '2024-09-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+  updaters: 
+  info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
+    (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
+    produced by Nintendo. A 16-bit console that remains hugely popular to this day
+    due to its expansive library and impressive enhancement chips.\r\n\r\nCore supports
+    4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP,
+    CX4, S-DD1, SPC7110, and BSX expansion chips. Please report all issues to agg23,
+    as most likely any issues experienced are issues with the port, not the core."
+  requires_license: false

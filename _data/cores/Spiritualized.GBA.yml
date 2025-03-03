@@ -1,57 +1,128 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - gba
-  shortname: GBA
-  description: GBA Core
-  author: Spiritualized
-  url: ''
-  version: 1.2.0
-  date_release: '2022-08-25'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: true
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: true
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - gba
-  - rom
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save RAM
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-- !ruby/object:Analogue::Core::DataSlot
-  name: BIOS
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: gba_bios.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized GBA \r\n\r\nAlmost everything should be supported by this core.
-  \ \r\n\r\nBe sure your gba_bios.bin file is in /assets/gba/common/ before using!\r\n\r\nNote
-  that the link port is fully supported, and rumble is supported too if you plug in
-  a DS rumble pak!\r\n\r\nCurrently Drilldozer is fully supported this way.  Warioware
-  Twisted would be if there was a usable accelerometer...\r\n\r\nInteractive menus
-  have been added:\r\n* High quality audio on/off\r\n* Rumble strength (0 = off, 1
-  = weak, 7 = strong)\r\n* Layer disable - this disables the various video layers
-  for fun\r\n\r\nEnjoy"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.GBA
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-GBA
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-GBA
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-GBA/releases/download/v1.0.0/Spiritualized.GBA_1.0.0_2022_07_29.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gba
+      shortname: GBA
+      description: GBA Core
+      author: Spiritualized
+      url: ''
+      version: 1.0.0
+      date_release: '2022-07-29'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gba
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gba_bios.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-GBA/releases/download/v1.2.0/Spiritualized_GBA_1.2.0_2022_08_25.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gba
+      shortname: GBA
+      description: GBA Core
+      author: Spiritualized
+      url: ''
+      version: 1.2.0
+      date_release: '2022-08-25'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gba
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gba_bios.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized GBA \r\n\r\nAlmost everything should be supported by this core.
+    \ \r\n\r\nBe sure your gba_bios.bin file is in /assets/gba/common/ before using!\r\n\r\nNote
+    that the link port is fully supported, and rumble is supported too if you plug
+    in a DS rumble pak!\r\n\r\nCurrently Drilldozer is fully supported this way.  Warioware
+    Twisted would be if there was a usable accelerometer...\r\n\r\nInteractive menus
+    have been added:\r\n* High quality audio on/off\r\n* Rumble strength (0 = off,
+    1 = weak, 7 = strong)\r\n* Layer disable - this disables the various video layers
+    for fun\r\n\r\nEnjoy"
+  requires_license: false

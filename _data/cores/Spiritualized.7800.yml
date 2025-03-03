@@ -1,43 +1,57 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - '7800'
-  shortname: '7800'
-  description: Atari 7800 core
-  author: Spiritualized
-  url: ''
-  version: 1.0.2
-  date_release: '2022-10-18'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - a78
-- !ruby/object:Analogue::Core::DataSlot
-  name: Atari 7800 BIOS
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 7800bios.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Atari 7800\r\n\r\nMost Atari 7800 mappings and POKEY audio is
-  supported by this core.\r\n\r\nTo use it, you must place \"7800bios.bin\" into the
-  /assets/7800/common/\r\nfolder.\r\n\r\nFiles should be in *.A78 format.\r\n\r\nThe
-  \"Pause\" button is mapped to left trigger.\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.7800
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-7800
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-7800
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-7800/releases/download/1.0.2/Spiritualized_7800_1.0.2_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - '7800'
+      shortname: '7800'
+      description: Atari 7800 core
+      author: Spiritualized
+      url: ''
+      version: 1.0.2
+      date_release: '2022-10-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - a78
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Atari 7800 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 7800bios.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Atari 7800\r\n\r\nMost Atari 7800 mappings and POKEY audio
+    is supported by this core.\r\n\r\nTo use it, you must place \"7800bios.bin\" into
+    the /assets/7800/common/\r\nfolder.\r\n\r\nFiles should be in *.A78 format.\r\n\r\nThe
+    \"Pause\" button is mapped to left trigger.\r\n\r\nEnjoy!"
+  requires_license: false

@@ -1,53 +1,68 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - videobrain
-  shortname: VideoBrain
-  description: Video Brain core
-  author: Spiritualized
-  url: ''
-  version: 1.0.0
-  date_release: '2022-10-30'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: UVRES1 BIOS
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: uvres1.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: UVRES2 BIOS
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: uvres2.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Video Brain\r\n\r\nEnjoy Video Brain games with this core. \r\n\r\nThis
-  core really needs a keyboard via the dock to be useful.\r\n\r\nAlso, the following
-  files are required. \r\n\r\n/assets/videobrain/Spiritualized.Videobrain/uvres1.bin
-  \ (2048 bytes)\r\n/assets/videobrain/Spiritualized.Videobrain/uvres2.bin  (2048
-  bytes)\r\n\r\nSee readme.txt for keyboard mapping.\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.VideoBrain
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-VideoBrain
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-VideoBrain
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/spiritualized1997/openFPGA-VideoBrain/releases/download/1.0.0/Spiritualized_VideoBrain_1.0.0_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - videobrain
+      shortname: VideoBrain
+      description: Video Brain core
+      author: Spiritualized
+      url: ''
+      version: 1.0.0
+      date_release: '2022-10-30'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: UVRES1 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: uvres1.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: UVRES2 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: uvres2.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Video Brain\r\n\r\nEnjoy Video Brain games with this core.
+    \r\n\r\nThis core really needs a keyboard via the dock to be useful.\r\n\r\nAlso,
+    the following files are required. \r\n\r\n/assets/videobrain/Spiritualized.Videobrain/uvres1.bin
+    \ (2048 bytes)\r\n/assets/videobrain/Spiritualized.Videobrain/uvres2.bin  (2048
+    bytes)\r\n\r\nSee readme.txt for keyboard mapping.\r\n\r\nEnjoy!"
+  requires_license: false

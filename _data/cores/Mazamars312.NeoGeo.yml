@@ -1,146 +1,738 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - ng
-  shortname: NeoGeo
-  description: Neogeo cart based core
-  author: Mazamars312
-  url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
-  version: 0.8.1
-  date_release: '2023-01-17'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Game JSON Setup
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: Memory Card
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-- !ruby/object:Analogue::Core::DataSlot
-  name: Backup Ram
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: backup.bak
-  extensions:
-  - bak
-- !ruby/object:Analogue::Core::DataSlot
-  name: BIOS
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: uni-bios_4_0.rom
-  extensions:
-  - rom
-  - sp1
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: LO
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 000-lo.lo
-  extensions:
-  - lo
-- !ruby/object:Analogue::Core::DataSlot
-  name: SFIX
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: sfix.sfix
-  extensions:
-  - sfix
-- !ruby/object:Analogue::Core::DataSlot
-  name: SROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - srom
-- !ruby/object:Analogue::Core::DataSlot
-  name: PROG
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-  - pbin
-  - prom
-- !ruby/object:Analogue::Core::DataSlot
-  name: CROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - cbin
-  - crom0
-- !ruby/object:Analogue::Core::DataSlot
-  name: MROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - mbin
-  - m1rom
-- !ruby/object:Analogue::Core::DataSlot
-  name: VROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - vbin
-  - vroma0
-- !ruby/object:Analogue::Core::DataSlot
-  name: PROG1
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-  - pbin
-  - prom1
-updaters:
-info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES console.
-  This arcade platform was a worldwide success lasting through the mid 2000's spawning
-  several long-running and critically acclaimed game series. \r\nPowered with both
-  a Motorola 68000 and Z80, NeoGeo's prowess came from a colorful video system able
-  to scale sprites on the fly in nearly limitless amounts simultaneously on screen.\r\nThis
-  core was ported from the core made by Furrtek on MiSTer\r\nCredits:\r\n* Furrtek\r\n*
-  Sorg\r\n* Jotego\r\n* Jorge Cwik\r\n* Many other MiSTer devs as well\r\nPort Credits:\r\n*
-  Mazamars312\r\n* Alexcom\r\n* terminator2k2\r\n* ElectronAsh"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Mazamars312.NeoGeo
+repository: !ruby/object:GitHub::Repository
+  name: Analogue_Pocket_Neogeo
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Mazamars312
+  html_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Alpha_0.5.0_2022-01-08/Mazamars312.Neogeo_Alpha_0.5.0_2022_01_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ng
+      shortname: NeoGeo
+      description: Neogeo cart based core
+      author: Mazamars312
+      url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
+      version: Alpha 0.5.0
+      date_release: '2022-08-01'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: uni-bios_1_0.rom
+      extensions:
+      - rom
+      - sp1
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 000-lo.lo
+      extensions:
+      - lo
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SFIX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sbin
+      - srom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - cbin
+      - crom0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - mbin
+      - m1rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: VROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vbin
+      - vroma0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: FPGA Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mgs.fpga
+      extensions:
+      - fpga
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Alpha_0.6.0_2022-15-08/Alpha_0.6.0_2022-15-08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ng
+      shortname: NeoGeo
+      description: Neogeo cart based core
+      author: Mazamars312
+      url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
+      version: Alpha 0.6.0
+      date_release: '2022-08-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup Ram
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: backup.bak
+      extensions:
+      - bak
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: uni-bios_1_0.rom
+      extensions:
+      - rom
+      - sp1
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 000-lo.lo
+      extensions:
+      - lo
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SFIX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sbin
+      - srom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - cbin
+      - crom0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - mbin
+      - m1rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: VROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vbin
+      - vroma0
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Alpha_0.7.5_2022-19-09/Mazamars312.Neogeo_Alpha_0.7.5_2022_19_09.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ng
+      shortname: NeoGeo
+      description: Neogeo cart based core
+      author: Mazamars312
+      url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
+      version: Alpha 0.7.5
+      date_release: '2022-09-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup Ram
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: backup.bak
+      extensions:
+      - bak
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: uni-bios_1_0.rom
+      extensions:
+      - rom
+      - sp1
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 000-lo.lo
+      extensions:
+      - lo
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SFIX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sfix.sfix
+      extensions:
+      - sfix
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - srom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - cbin
+      - crom0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - mbin
+      - m1rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: VROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vbin
+      - vroma0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom1
+  updaters: 
+  info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES
+    console. This arcade platform was a worldwide success lasting through the mid
+    2000's spawning several long-running and critically acclaimed game series. \r\nPowered
+    with both a Motorola 68000 and Z80, NeoGeo's prowess came from a colorful video
+    system able to scale sprites on the fly in nearly limitless amounts simultaneously
+    on screen.\r\nThis core was ported from the core made by Furrtek on MiSTer\r\nCredits:\r\n*
+    Furrtek\r\n* Sorg\r\n* Jotego\r\n* Jorge Cwik\r\n* Many other MiSTer devs as well\r\nPort
+    Credits:\r\n* Mazamars312\r\n* Alexcom\r\n* terminator2k2\r\n* ElectronAsh"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Mazamars312.Neogeo.0.8.0-14/01/2023/Mazamars312.Neogeo_0.8.0_2023_1_14.FinalRelease.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ng
+      shortname: NeoGeo
+      description: Neogeo cart based core
+      author: Mazamars312
+      url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
+      version: Alpha 0.8.0
+      date_release: '2023-01-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup Ram
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: backup.bak
+      extensions:
+      - bak
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: uni-bios_4_0.rom
+      extensions:
+      - rom
+      - sp1
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 000-lo.lo
+      extensions:
+      - lo
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SFIX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sfix.sfix
+      extensions:
+      - sfix
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - srom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - cbin
+      - crom0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - mbin
+      - m1rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: VROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vbin
+      - vroma0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom1
+  updaters: 
+  info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES
+    console. This arcade platform was a worldwide success lasting through the mid
+    2000's spawning several long-running and critically acclaimed game series. \r\nPowered
+    with both a Motorola 68000 and Z80, NeoGeo's prowess came from a colorful video
+    system able to scale sprites on the fly in nearly limitless amounts simultaneously
+    on screen.\r\nThis core was ported from the core made by Furrtek on MiSTer\r\nCredits:\r\n*
+    Furrtek\r\n* Sorg\r\n* Jotego\r\n* Jorge Cwik\r\n* Many other MiSTer devs as well\r\nPort
+    Credits:\r\n* Mazamars312\r\n* Alexcom\r\n* terminator2k2\r\n* ElectronAsh"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo/releases/download/Mazamars312.Neogeo.0.8.1-17/01/2023/Mazamars312.Neogeo_0.8.1_2023_1_17.FinalRelease.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ng
+      shortname: NeoGeo
+      description: Neogeo cart based core
+      author: Mazamars312
+      url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
+      version: 0.8.1
+      date_release: '2023-01-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup Ram
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: backup.bak
+      extensions:
+      - bak
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: uni-bios_4_0.rom
+      extensions:
+      - rom
+      - sp1
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 000-lo.lo
+      extensions:
+      - lo
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SFIX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sfix.sfix
+      extensions:
+      - sfix
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - srom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - cbin
+      - crom0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - mbin
+      - m1rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: VROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - vbin
+      - vroma0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+      - pbin
+      - prom1
+  updaters: 
+  info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES
+    console. This arcade platform was a worldwide success lasting through the mid
+    2000's spawning several long-running and critically acclaimed game series. \r\nPowered
+    with both a Motorola 68000 and Z80, NeoGeo's prowess came from a colorful video
+    system able to scale sprites on the fly in nearly limitless amounts simultaneously
+    on screen.\r\nThis core was ported from the core made by Furrtek on MiSTer\r\nCredits:\r\n*
+    Furrtek\r\n* Sorg\r\n* Jotego\r\n* Jorge Cwik\r\n* Many other MiSTer devs as well\r\nPort
+    Credits:\r\n* Mazamars312\r\n* Alexcom\r\n* terminator2k2\r\n* ElectronAsh"
+  requires_license: false
