@@ -1,0 +1,139 @@
+--- !ruby/object:Inventory::Core
+id: Mazamars312.Amiga_Analogizer
+repository: !ruby/object:GitHub::Repository
+  name: Analogizer-Amiga
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/Analogizer-Amiga
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/RndMnkIII/Analogizer-Amiga/releases/download/0.3.2/Analogizer_Amiga_Pocket_0.3.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - amiga
+      - analogizer
+      shortname: Amiga_Analogizer
+      description: "[Analogizer] Amiga Core"
+      author: Mazamars312
+      url: https://github.com/RndMnkIII/Analogizer-Amiga
+      version: 0.3.2
+      date_release: '2025-02-01'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MPU Bios
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: amiga_mpu_bios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: MegaAGS-Kickstart.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: MegaAGS.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: MegaAGS-Saves.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: HDD-3.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: HDD-4.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy drive 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - adf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy drive 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - adf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters: 
+  info: |
+    The Amiga Core - 0.2.1
+
+    The Amiga core is a general implementation of the Amiga family of computers.
+    LBA48 support
+    Analogue OS Firmware 2.1 required
+
+    To Be Done:
+    * Clock
+
+    Special Thanks
+    * VexRISCV - For the bases of the MPU for this core
+    * Boogerman for some coding questions - You still owe me on the use of my jtag tho LOL
+    * MIST, Mister, DeMistiFy and minimig communities
+    * And Amiga Vision As well for the Images
+  requires_license: false

@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Tools
+name: Mem Tester
+manufacturer: MiSTer
+year: 2018
