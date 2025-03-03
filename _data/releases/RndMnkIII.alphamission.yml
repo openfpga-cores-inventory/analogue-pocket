@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.2/rndmnkiii.alphamission_pocket-v1.2.zip
-repository: !ruby/object:GitHub::Repository
-  owner: RndMnkIII
-  name: PocketAlphaMission
-funding:

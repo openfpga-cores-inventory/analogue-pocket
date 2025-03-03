@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/Mazamars312/openfpga-pcengine-cd/releases/download/Mazamars312.PCECD.0.2.3-BETA/OPENFPGA-PCECD-0.2.3-BETA.zip
-repository: !ruby/object:GitHub::Repository
-  owner: Mazamars312
-  name: openfpga-pcengine-cd
-funding:

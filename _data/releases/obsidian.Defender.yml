@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/obsidian-dot-dev/openFPGA-Defender/releases/download/v0.9.2/openFPGA-Defender.zip
-repository: !ruby/object:GitHub::Repository
-  owner: obsidian-dot-dev
-  name: openFPGA-Defender
-funding:

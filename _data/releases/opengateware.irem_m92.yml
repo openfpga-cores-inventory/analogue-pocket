@@ -1,7 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/opengateware/arcade-irem_m92/releases/download/0.1.2/opengateware.irem_m92_0.1.2_20240504-pocket.zip
-repository: !ruby/object:GitHub::Repository
-  owner: opengateware
-  name: arcade-irem_m92
-funding: !ruby/object:GitHub::Funding
-  ko_fi: https://ko-fi.com/boogermann

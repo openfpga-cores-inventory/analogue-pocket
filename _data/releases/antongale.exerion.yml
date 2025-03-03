@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/antongale/arcade-exerion/releases/download/0.1.5/antongale.exerion_pocket-0.1.5.zip
-repository: !ruby/object:GitHub::Repository
-  owner: antongale
-  name: arcade-exerion
-funding:

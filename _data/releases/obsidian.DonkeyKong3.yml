@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.2/openFPGA-DonkeyKong3.zip
-repository: !ruby/object:GitHub::Repository
-  owner: obsidian-dot-dev
-  name: openFPGA-DonkeyKong3
-funding:
