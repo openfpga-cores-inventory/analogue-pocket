@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jotego
-title: jotego.jtsf - 73a563b
+title: jotego.jtsf - 5732478
 date: 2025-01-17
 categories: [Arcade, jtsf]
 tags: [jotego.jtsf]

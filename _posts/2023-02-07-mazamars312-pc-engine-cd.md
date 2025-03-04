@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Mazamars312
-title: Mazamars312.PC Engine CD - 0.1.5
+title: Mazamars312.PC Engine CD - 0.1.6
 date: 2023-02-07
 categories: [Console, PC Engine CD]
 tags: [Mazamars312.PC Engine CD]

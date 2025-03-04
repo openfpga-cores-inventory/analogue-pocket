@@ -1,7 +1,7 @@
 ---
 layout: post
 author: boogermann
-title: boogermann.supervision - 0.1.0
+title: boogermann.supervision - 0.1.1
 date: 2022-10-15
 categories: [Handheld, Supervision]
 tags: [boogermann.supervision]

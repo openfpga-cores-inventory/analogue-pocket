@@ -1,7 +1,7 @@
 ---
 layout: post
 author: antongale
-title: antongale.slapfight - 0.1.1
+title: antongale.slapfight - 0.1.2
 date: 2023-01-02
 categories: [Arcade, Slap Fight]
 tags: [antongale.slapfight]

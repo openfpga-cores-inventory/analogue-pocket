@@ -1,7 +1,7 @@
 ---
 layout: post
 author: ericlewis
-title: ericlewis.SpaceRace - 0.0.1
+title: ericlewis.SpaceRace - 1.0.0
 date: 2022-09-09
 categories: [Arcade, Space Race]
 tags: [ericlewis.SpaceRace]

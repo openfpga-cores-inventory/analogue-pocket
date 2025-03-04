@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jotego
-title: jotego.jtbubl - dee657c
+title: jotego.jtbubl - e8ad973
 date: 2024-06-28
 categories: [Arcade, jtbubl]
 tags: [jotego.jtbubl]

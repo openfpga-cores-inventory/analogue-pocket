@@ -1,7 +1,7 @@
 ---
 layout: post
 author: agg23
-title: agg23.PC Engine - 0.2.0
+title: agg23.PC Engine - 0.2.1
 date: 2022-10-27
 categories: [Console, PC Engine]
 tags: [agg23.PC Engine]

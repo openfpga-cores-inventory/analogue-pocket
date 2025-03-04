@@ -1,9 +1,9 @@
 ---
 layout: post
 author: somhi
-title: somhi.flappybird - 1.0.1
+title: somhi.flappybird - 1.0.0
 date: 2023-07-05
-categories: [Others, Flappy Bird]
+categories: [Others, flappybird]
 tags: [somhi.flappybird]
 ---
 Flappy Bird

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: ericlewis
-title: ericlewis.Asteroids - 0.0.1
+title: ericlewis.Asteroids - 0.9.1
 date: 2022-09-09
 categories: [Arcade, Asteroids]
 tags: [ericlewis.Asteroids]
