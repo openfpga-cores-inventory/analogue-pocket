@@ -1,5 +1,5 @@
 --- !ruby/object:Analogue::Platform
 category: Others
-name: Flappy Bird
+name: flappybird
 manufacturer: somhi
 year: 2023

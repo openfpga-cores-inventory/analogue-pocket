@@ -78,63 +78,6 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.2/openfpga-gbc-1.0.2.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - gbc
-      shortname: GBC
-      description: Game Boy Color
-      author: budude2
-      url: https://github.com/budude2/openfgpa-GBC
-      version: 1.0.2
-      date_release: '2024-01-03'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Cartridge
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - gbc
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Save
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-      - srm
-    - !ruby/object:Analogue::Data::DataSlot
-      name: GBC BIOS
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: gbc_bios.bin
-      extensions:
-      - bin
-  updaters: 
-  info: Port by budude2, original core created by mister community. As this is a work
-    in progress please let me know of any issues.
-  requires_license: false
-- !ruby/object:Inventory::Release
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.1/openfpga-gbc-1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -167,6 +110,63 @@ releases:
       extensions:
       - gbc
       - gb
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GBC BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gbc_bios.bin
+      extensions:
+      - bin
+  updaters: 
+  info: Port by budude2, original core created by mister community. As this is a work
+    in progress please let me know of any issues.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.2/openfpga-gbc-1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gbc
+      shortname: GBC
+      description: Game Boy Color
+      author: budude2
+      url: https://github.com/budude2/openfgpa-GBC
+      version: 1.0.2
+      date_release: '2024-01-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gbc
     - !ruby/object:Analogue::Data::DataSlot
       name: Save
       required: false
@@ -541,7 +541,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0_1/openfpga-gbc-1.1.0.zip
+  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0/openfpga-gbc-1.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -599,7 +599,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0/openfpga-gbc-1.1.0.zip
+  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0_1/openfpga-gbc-1.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:

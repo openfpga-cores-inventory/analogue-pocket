@@ -8,7 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.1/analogizer-alphamission-pocket-v1.1.zip
+  download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.0/analogizer-alphamission-pocket-v1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -56,7 +56,7 @@ releases:
     the Gateware framework developed by Marcus Andrade (@marcusjordan).\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.0/analogizer-alphamission-pocket-v1.0.zip
+  download_url: https://github.com/RndMnkIII/Analogizer-Pocket-Alpha-Mission/releases/download/1.1/analogizer-alphamission-pocket-v1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:

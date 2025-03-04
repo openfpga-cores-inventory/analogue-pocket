@@ -8,7 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/0.9.1/ericlewis.Asteroids_0.9.1_2022-09-14.zip
+  download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/0.0.1/ericlewis.Asteroids_0.0.1_2022-09-11.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -17,7 +17,7 @@ releases:
       description: Atari's Asteroids released in 1979.
       author: ericlewis
       url: https://github.com/ericlewis/openfpga-asteroids
-      version: 0.9.1
+      version: 0.0.1
       date_release: '2022-09-09'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -76,7 +76,7 @@ releases:
   info: Atari's Asteroids released in 1979. Ported from MiSTer.
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/0.0.1/ericlewis.Asteroids_0.0.1_2022-09-11.zip
+  download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/0.9.1/ericlewis.Asteroids_0.9.1_2022-09-14.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -85,42 +85,8 @@ releases:
       description: Atari's Asteroids released in 1979.
       author: ericlewis
       url: https://github.com/ericlewis/openfpga-asteroids
-      version: 0.0.1
+      version: 0.9.1
       date_release: '2022-09-09'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: ROM
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: false
-        platform_index: 0
-      filename: asteroid.rom
-      extensions: 
-  updaters: 
-  info: Atari's Asteroids released in 1979. Ported from MiSTer.
-  requires_license: false
-- !ruby/object:Inventory::Release
-  download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/1.0.1/ericlewis.Asteroids_1.0.1_2022-10-11.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - asteroids
-      shortname: Asteroids
-      description: Atari's Asteroids released in 1979.
-      author: ericlewis
-      url: https://github.com/ericlewis/openfpga-asteroids
-      version: 1.0.1
-      date_release: '2022-10-11'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
       sleep_supported: false
@@ -154,6 +120,40 @@ releases:
       author: ericlewis
       url: https://github.com/ericlewis/openfpga-asteroids
       version: 1.0.0
+      date_release: '2022-10-11'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: asteroid.rom
+      extensions: 
+  updaters: 
+  info: Atari's Asteroids released in 1979. Ported from MiSTer.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/ericlewis/openfpga-asteroids/releases/download/1.0.1/ericlewis.Asteroids_1.0.1_2022-10-11.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - asteroids
+      shortname: Asteroids
+      description: Atari's Asteroids released in 1979.
+      author: ericlewis
+      url: https://github.com/ericlewis/openfpga-asteroids
+      version: 1.0.1
       date_release: '2022-10-11'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

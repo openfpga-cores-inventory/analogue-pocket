@@ -137,6 +137,118 @@ releases:
     LOL\r\n* MIST, Mister, DeMistiFy and minimig communities\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
+  download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.0/Analogue-Amiga-0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - amiga
+      shortname: Amiga
+      description: Amiga Core
+      author: Mazamars312
+      url: https://github.com/Mazamars312/Analogue-Amiga
+      version: 0.1.0
+      date_release: '2023-06-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MPU Bios
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: mpu.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: MegaAGS-Kickstart.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: MegaAGS-Pocket.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: MegaAGS-Saves.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: HDD-3.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: harddrive - IDE 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: HDD-4.hdf
+      extensions:
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy drive 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - adf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy drive 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - adf
+  updaters: 
+  info: "The Amiga Core - Alpha core 0.1.0\r\n\r\nThe Amiga core is a general implementation
+    of the Amiga family of computers.\r\n\r\nTo Be Done:\r\n* Clock\r\n* USB Mouse
+    support on the dock\r\n* Fix up the video output on the dock, Will look into this
+    more after Analogue confirms some things.\r\n* and code tidy up - So much to do!!!\r\n\r\nSpecial
+    Thanks\r\n* VexRISCV - For the bases of the MPU for this core\r\n* Boogerman for
+    some coding questions - You still owe me on the use of my jtag tho LOL\r\n* MIST,
+    Mister, DeMistiFy and minimig communities\r\n* And Amiga Vision As well for the
+    Images\r\n"
+  requires_license: false
+- !ruby/object:Inventory::Release
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.1/Analogue-Amiga-0.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -255,118 +367,6 @@ releases:
     * Boogerman for some coding questions - You still owe me on the use of my jtag tho LOL
     * MIST, Mister, DeMistiFy and minimig communities
     * And Amiga Vision As well for the Images
-  requires_license: false
-- !ruby/object:Inventory::Release
-  download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.0/Analogue-Amiga-0.1.0.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - amiga
-      shortname: Amiga
-      description: Amiga Core
-      author: Mazamars312
-      url: https://github.com/Mazamars312/Analogue-Amiga
-      version: 0.1.0
-      date_release: '2023-06-06'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: MPU Bios
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: false
-        platform_index: 0
-      filename: mpu.bin
-      extensions:
-      - bin
-    - !ruby/object:Analogue::Data::DataSlot
-      name: BIOS
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: MegaAGS-Kickstart.rom
-      extensions:
-      - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: harddrive - IDE 0
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: MegaAGS-Pocket.hdf
-      extensions:
-      - hdf
-    - !ruby/object:Analogue::Data::DataSlot
-      name: harddrive - IDE 1
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: MegaAGS-Saves.hdf
-      extensions:
-      - hdf
-    - !ruby/object:Analogue::Data::DataSlot
-      name: harddrive - IDE 2
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: HDD-3.hdf
-      extensions:
-      - hdf
-    - !ruby/object:Analogue::Data::DataSlot
-      name: harddrive - IDE 3
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: HDD-4.hdf
-      extensions:
-      - hdf
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Floppy drive 0
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - adf
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Floppy drive 1
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - adf
-  updaters: 
-  info: "The Amiga Core - Alpha core 0.1.0\r\n\r\nThe Amiga core is a general implementation
-    of the Amiga family of computers.\r\n\r\nTo Be Done:\r\n* Clock\r\n* USB Mouse
-    support on the dock\r\n* Fix up the video output on the dock, Will look into this
-    more after Analogue confirms some things.\r\n* and code tidy up - So much to do!!!\r\n\r\nSpecial
-    Thanks\r\n* VexRISCV - For the bases of the MPU for this core\r\n* Boogerman for
-    some coding questions - You still owe me on the use of my jtag tho LOL\r\n* MIST,
-    Mister, DeMistiFy and minimig communities\r\n* And Amiga Vision As well for the
-    Images\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.2/Analogue-Amiga-0.1.2.zip

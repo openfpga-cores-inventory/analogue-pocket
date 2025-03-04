@@ -56,7 +56,7 @@ releases:
     framework developed by Marcus Andrade (@marcusjordan).\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.2/rndmnkiii.alphamission_pocket-v1.2.zip
+  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.1/rndmnkiii.alphamission_pocket-v1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -65,7 +65,7 @@ releases:
       description: SNK Alpha Mission gateware IP Core
       author: RndMnkIII
       url: https://github.com/RndMnkIII/PocketAlphaMission
-      version: '1.2'
+      version: '1.1'
       date_release: '2023-11-16'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -104,7 +104,7 @@ releases:
     framework developed by Marcus Andrade (@marcusjordan).\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.1/rndmnkiii.alphamission_pocket-v1.1.zip
+  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.2/rndmnkiii.alphamission_pocket-v1.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -113,7 +113,7 @@ releases:
       description: SNK Alpha Mission gateware IP Core
       author: RndMnkIII
       url: https://github.com/RndMnkIII/PocketAlphaMission
-      version: '1.1'
+      version: '1.2'
       date_release: '2023-11-16'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

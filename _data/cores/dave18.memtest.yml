@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: dave18
   html_url: https://github.com/dave18/MemTest_Pocket
-funding:
+funding: 
 releases:
 - !ruby/object:Inventory::Release
   download_url: https://github.com/dave18/MemTest_Pocket/releases/download/v1.0.0/memtest.zip
@@ -29,6 +29,6 @@ releases:
         link_port: false
   data: !ruby/object:Analogue::Data
     data_slots: []
-  updaters:
-  info:
+  updaters: 
+  info: 
   requires_license: false

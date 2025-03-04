@@ -76,7 +76,7 @@ releases:
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/33e0dc5f8d70b4f75b3fcdf62c5131f4b71d66e0/Releases/pram0d.zunit.zip
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/49b4091fb8d71116eb5920a88aae72b910322fa4/Releases/pram0d.zunit.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -144,7 +144,7 @@ releases:
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/49b4091fb8d71116eb5920a88aae72b910322fa4/Releases/pram0d.zunit.zip
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/33e0dc5f8d70b4f75b3fcdf62c5131f4b71d66e0/Releases/pram0d.zunit.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:

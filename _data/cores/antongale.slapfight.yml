@@ -8,7 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.1.2/antongale.slapfight_pocket-0.1.2.zip
+  download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.1.1/antongale.slapfight_pocket-0.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -17,7 +17,7 @@ releases:
       description: Toaplan Slap Fight gateware IP Core
       author: antongale
       url: https://github.com/antongale/arcade-slapfight
-      version: 0.1.2
+      version: 0.1.1
       date_release: '2023-01-02'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -65,7 +65,7 @@ releases:
     The authors and contributors or any of its maintainers are in no way associated with or endorsed by Taito/Toaplan.
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.1.1/antongale.slapfight_pocket-0.1.1.zip
+  download_url: https://github.com/antongale/arcade-slapfight/releases/download/0.1.2/antongale.slapfight_pocket-0.1.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -74,7 +74,7 @@ releases:
       description: Toaplan Slap Fight gateware IP Core
       author: antongale
       url: https://github.com/antongale/arcade-slapfight
-      version: 0.1.1
+      version: 0.1.2
       date_release: '2023-01-02'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

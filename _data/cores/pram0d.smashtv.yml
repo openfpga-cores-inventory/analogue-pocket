@@ -8,347 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/4ffe049ed5fff218254febe3d3feba0a2dcd3b37/Releases/pram0d.yunit.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - smashtv
-      - coinopkey
-      shortname: smashtv
-      description: Midway Y-Unit Analogue Pocket Core
-      author: pram0d
-      url: https://pram0d.com
-      version: 1.0.6
-      date_release: '2024-09-22'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Game JSON Setup
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
-      name: ROM
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: NVRAM
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-    - !ruby/object:Analogue::Data::DataSlot
-      name: COINOPKEY
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 1
-      filename: coinop.key
-      extensions:
-      - key
-  updaters: !ruby/object:Analogue::Updaters
-    license: !ruby/object:Analogue::Updaters::License
-      filename: coinop.key
-  info: 
-  requires_license: true
-- !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/0c5d82a2b6ddb2da9327218fcc51542d3680fe32/Releases/pram0d.yunit.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - smashtv
-      - coinopkey
-      shortname: smashtv
-      description: Midway Y-Unit Analogue Pocket Core
-      author: pram0d
-      url: https://pram0d.com
-      version: 1.0.6
-      date_release: '2024-09-22'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Game JSON Setup
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
-      name: ROM
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: NVRAM
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-    - !ruby/object:Analogue::Data::DataSlot
-      name: COINOPKEY
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 1
-      filename: coinop.key
-      extensions:
-      - key
-  updaters: !ruby/object:Analogue::Updaters
-    license: !ruby/object:Analogue::Updaters::License
-      filename: coinop.key
-  info: 
-  requires_license: true
-- !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/33e0dc5f8d70b4f75b3fcdf62c5131f4b71d66e0/Releases/pram0d.yunit.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - smashtv
-      - coinopkey
-      shortname: smashtv
-      description: Midway Y-Unit Analogue Pocket Core
-      author: pram0d
-      url: https://pram0d.com
-      version: 1.0.5
-      date_release: '2024-09-22'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Game JSON Setup
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
-      name: ROM
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: NVRAM
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-    - !ruby/object:Analogue::Data::DataSlot
-      name: COINOPKEY
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 1
-      filename: coinop.key
-      extensions:
-      - key
-  updaters: !ruby/object:Analogue::Updaters
-    license: !ruby/object:Analogue::Updaters::License
-      filename: coinop.key
-  info: 
-  requires_license: true
-- !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/2a3f9987c2ba10cbfed77774b10955f2e9d38f5d/Releases/pram0d.yunit.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - smashtv
-      - coinopkey
-      shortname: smashtv
-      description: Midway Y-Unit Analogue Pocket Core
-      author: pram0d
-      url: https://pram0d.com
-      version: 1.0.4
-      date_release: '2024-09-22'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Game JSON Setup
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
-      name: ROM
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: NVRAM
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-    - !ruby/object:Analogue::Data::DataSlot
-      name: COINOPKEY
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 1
-      filename: coinop.key
-      extensions:
-      - key
-  updaters: !ruby/object:Analogue::Updaters
-    license: !ruby/object:Analogue::Updaters::License
-      filename: coinop.key
-  info: 
-  requires_license: true
-- !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/b51862a05f1f2baa2df893932a1e9c70e3d493f6/Releases/pram0d.yunit.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - smashtv
-      - coinopkey
-      shortname: smashtv
-      description: Midway Y-Unit Analogue Pocket Core
-      author: pram0d
-      url: https://pram0d.com
-      version: 1.0.4
-      date_release: '2024-09-22'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Game JSON Setup
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: true
-        instance_json: true
-        platform_index: 0
-      filename: 
-      extensions:
-      - json
-    - !ruby/object:Analogue::Data::DataSlot
-      name: ROM
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - rom
-    - !ruby/object:Analogue::Data::DataSlot
-      name: NVRAM
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-    - !ruby/object:Analogue::Data::DataSlot
-      name: COINOPKEY
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 1
-      filename: coinop.key
-      extensions:
-      - key
-  updaters: !ruby/object:Analogue::Updaters
-    license: !ruby/object:Analogue::Updaters::License
-      filename: coinop.key
-  info: 
-  requires_license: true
-- !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/cac048519203d369bb3d877e44c8f4c4399c36f1/Releases/pram0d.yunit.zip
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/49b4091fb8d71116eb5920a88aae72b910322fa4/Releases/pram0d.yunit.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -484,7 +144,7 @@ releases:
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/49b4091fb8d71116eb5920a88aae72b910322fa4/Releases/pram0d.yunit.zip
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/cac048519203d369bb3d877e44c8f4c4399c36f1/Releases/pram0d.yunit.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -495,6 +155,346 @@ releases:
       author: pram0d
       url: https://pram0d.com
       version: 1.0.3
+      date_release: '2024-09-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: COINOPKEY
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: coinop.key
+      extensions:
+      - key
+  updaters: !ruby/object:Analogue::Updaters
+    license: !ruby/object:Analogue::Updaters::License
+      filename: coinop.key
+  info: 
+  requires_license: true
+- !ruby/object:Inventory::Release
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/b51862a05f1f2baa2df893932a1e9c70e3d493f6/Releases/pram0d.yunit.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - smashtv
+      - coinopkey
+      shortname: smashtv
+      description: Midway Y-Unit Analogue Pocket Core
+      author: pram0d
+      url: https://pram0d.com
+      version: 1.0.4
+      date_release: '2024-09-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: COINOPKEY
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: coinop.key
+      extensions:
+      - key
+  updaters: !ruby/object:Analogue::Updaters
+    license: !ruby/object:Analogue::Updaters::License
+      filename: coinop.key
+  info: 
+  requires_license: true
+- !ruby/object:Inventory::Release
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/2a3f9987c2ba10cbfed77774b10955f2e9d38f5d/Releases/pram0d.yunit.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - smashtv
+      - coinopkey
+      shortname: smashtv
+      description: Midway Y-Unit Analogue Pocket Core
+      author: pram0d
+      url: https://pram0d.com
+      version: 1.0.4
+      date_release: '2024-09-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: COINOPKEY
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: coinop.key
+      extensions:
+      - key
+  updaters: !ruby/object:Analogue::Updaters
+    license: !ruby/object:Analogue::Updaters::License
+      filename: coinop.key
+  info: 
+  requires_license: true
+- !ruby/object:Inventory::Release
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/33e0dc5f8d70b4f75b3fcdf62c5131f4b71d66e0/Releases/pram0d.yunit.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - smashtv
+      - coinopkey
+      shortname: smashtv
+      description: Midway Y-Unit Analogue Pocket Core
+      author: pram0d
+      url: https://pram0d.com
+      version: 1.0.5
+      date_release: '2024-09-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: COINOPKEY
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: coinop.key
+      extensions:
+      - key
+  updaters: !ruby/object:Analogue::Updaters
+    license: !ruby/object:Analogue::Updaters::License
+      filename: coinop.key
+  info: 
+  requires_license: true
+- !ruby/object:Inventory::Release
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/0c5d82a2b6ddb2da9327218fcc51542d3680fe32/Releases/pram0d.yunit.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - smashtv
+      - coinopkey
+      shortname: smashtv
+      description: Midway Y-Unit Analogue Pocket Core
+      author: pram0d
+      url: https://pram0d.com
+      version: 1.0.6
+      date_release: '2024-09-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: COINOPKEY
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: coinop.key
+      extensions:
+      - key
+  updaters: !ruby/object:Analogue::Updaters
+    license: !ruby/object:Analogue::Updaters::License
+      filename: coinop.key
+  info: 
+  requires_license: true
+- !ruby/object:Inventory::Release
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/4ffe049ed5fff218254febe3d3feba0a2dcd3b37/Releases/pram0d.yunit.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - smashtv
+      - coinopkey
+      shortname: smashtv
+      description: Midway Y-Unit Analogue Pocket Core
+      author: pram0d
+      url: https://pram0d.com
+      version: 1.0.6
       date_release: '2024-09-22'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

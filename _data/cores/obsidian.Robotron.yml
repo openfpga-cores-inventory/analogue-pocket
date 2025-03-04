@@ -8,7 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Robotron/releases/download/v0.9.1/openFPGA-Robotron.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Robotron/releases/download/v0.9.0/openFPGA-Robotron.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -17,7 +17,7 @@ releases:
       description: Williams 6809 HW Rev 1b
       author: obsidian
       url: https://github.com/obsidian-dot-dev/openFPGA-Robotron
-      version: 0.9.1
+      version: 0.9.0
       date_release: '2024-03-09'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -63,7 +63,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Robotron/releases/download/v0.9.0/openFPGA-Robotron.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Robotron/releases/download/v0.9.1/openFPGA-Robotron.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -72,7 +72,7 @@ releases:
       description: Williams 6809 HW Rev 1b
       author: obsidian
       url: https://github.com/obsidian-dot-dev/openFPGA-Robotron
-      version: 0.9.0
+      version: 0.9.1
       date_release: '2024-03-09'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

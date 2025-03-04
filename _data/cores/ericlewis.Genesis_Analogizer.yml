@@ -104,7 +104,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.3/Analogizer_Genesis_Core_Pocket_1.0.3.zip
+  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.2/Analogizer_Genesis_Core_Pocket_1.0.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -113,7 +113,7 @@ releases:
       description: "[Analogizer] Sega Genesis Core"
       author: ericlewis
       url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
-      version: 1.0.3
+      version: 1.0.2
       date_release: '2025-01-19'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -152,7 +152,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.2/Analogizer_Genesis_Core_Pocket_1.0.2.zip
+  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.3/Analogizer_Genesis_Core_Pocket_1.0.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -161,7 +161,7 @@ releases:
       description: "[Analogizer] Sega Genesis Core"
       author: ericlewis
       url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
-      version: 1.0.2
+      version: 1.0.3
       date_release: '2025-01-19'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

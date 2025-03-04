@@ -118,7 +118,7 @@ releases:
     as most likely any issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.1/agg23.SNES_0.3.1_2022-09-28.zip
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.0/agg23.SNES_0.3.0_2022-09-28.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -128,7 +128,7 @@ releases:
         console
       author: agg23
       url: https://github.com/agg23/openfpga-snes
-      version: 0.3.1
+      version: 0.3.0
       date_release: '2022-09-28'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -172,7 +172,7 @@ releases:
     as most likely any issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.0/agg23.SNES_0.3.0_2022-09-28.zip
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.3.1/agg23.SNES_0.3.1_2022-09-28.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -182,7 +182,7 @@ releases:
         console
       author: agg23
       url: https://github.com/agg23/openfpga-snes
-      version: 0.3.0
+      version: 0.3.1
       date_release: '2022-09-28'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -335,7 +335,7 @@ releases:
     as most likely any issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.2/agg23.SNES_0.4.2_2022-12-10.zip
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.1/agg23.SNES_0.4.1_2022-12-10.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -345,7 +345,7 @@ releases:
         console
       author: agg23
       url: https://github.com/agg23/openfpga-snes
-      version: 0.4.2
+      version: 0.4.1
       date_release: '2022-12-10'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
@@ -390,7 +390,7 @@ releases:
     as most likely any issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.1/agg23.SNES_0.4.1_2022-12-10.zip
+  download_url: https://github.com/agg23/openfpga-SNES/releases/download/0.4.2/agg23.SNES_0.4.2_2022-12-10.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -400,7 +400,7 @@ releases:
         console
       author: agg23
       url: https://github.com/agg23/openfpga-snes
-      version: 0.4.1
+      version: 0.4.2
       date_release: '2022-12-10'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

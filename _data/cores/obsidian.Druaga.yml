@@ -8,7 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.3/openFPGA-Druaga.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.2/openFPGA-Druaga.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -63,7 +63,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.2/openFPGA-Druaga.zip
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-Druaga/releases/download/v0.9.3/openFPGA-Druaga.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:

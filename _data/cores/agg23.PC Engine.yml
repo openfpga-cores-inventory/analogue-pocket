@@ -10,56 +10,6 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.1.1/agg23.PC.Engine_0.1.1_2022-10-19.zip
-  core: !ruby/object:Analogue::Core
-    metadata: !ruby/object:Analogue::Core::Metadata
-      platform_ids:
-      - pce
-      shortname: PC Engine
-      description: PC Engine (known as TurboGrafx-16 in the US) by NEC
-      author: agg23
-      url: https://github.com/agg23/openfpga-pcengine/
-      version: 0.1.1
-      date_release: '2022-10-19'
-    framework: !ruby/object:Analogue::Core::Framework
-      version_required: '1.1'
-      sleep_supported: false
-      dock: !ruby/object:Analogue::Core::Framework::Dock
-        supported: true
-        analog_output: false
-      hardware: !ruby/object:Analogue::Core::Framework::Hardware
-        link_port: false
-  data: !ruby/object:Analogue::Data
-    data_slots:
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Cartridge
-      required: true
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - pce
-    - !ruby/object:Analogue::Data::DataSlot
-      name: Save
-      required: false
-      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
-        core_specific_file: false
-        instance_json: false
-        platform_index: 0
-      filename: 
-      extensions:
-      - sav
-  updaters: 
-  info: |-
-    Port by agg23. Core by Gregory Estrade, srg320, and greyrogue
-
-    PC Engine (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was the first 4th generation console to reach the market. Therefore, even though it came out in the late 80s, it has significantly better graphics than 8-bit systems that were being sold at the time, such as the NES.
-
-    Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
-  requires_license: false
-- !ruby/object:Inventory::Release
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.1.0/agg23.PC.Engine_0.1.0_2022-10-19.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -110,7 +60,7 @@ releases:
     Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
-  download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.2.1/agg23.PC.Engine_0.2.1_2022-10-27.zip
+  download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.1.1/agg23.PC.Engine_0.1.1_2022-10-19.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -119,8 +69,8 @@ releases:
       description: PC Engine (known as TurboGrafx-16 in the US) by NEC
       author: agg23
       url: https://github.com/agg23/openfpga-pcengine/
-      version: 0.2.1
-      date_release: '2022-10-27'
+      version: 0.1.1
+      date_release: '2022-10-19'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
       sleep_supported: false
@@ -170,6 +120,56 @@ releases:
       author: agg23
       url: https://github.com/agg23/openfpga-pcengine/
       version: 0.2.0
+      date_release: '2022-10-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - pce
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: |-
+    Port by agg23. Core by Gregory Estrade, srg320, and greyrogue
+
+    PC Engine (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was the first 4th generation console to reach the market. Therefore, even though it came out in the late 80s, it has significantly better graphics than 8-bit systems that were being sold at the time, such as the NES.
+
+    Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.2.1/agg23.PC.Engine_0.2.1_2022-10-27.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pce
+      shortname: PC Engine
+      description: PC Engine (known as TurboGrafx-16 in the US) by NEC
+      author: agg23
+      url: https://github.com/agg23/openfpga-pcengine/
+      version: 0.2.1
       date_release: '2022-10-27'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'

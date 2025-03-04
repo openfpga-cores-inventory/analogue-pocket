@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: RndMnkIII
   html_url: https://github.com/RndMnkIII/Analogizer_openfpga-tecmo
-funding:
+funding: 
 releases:
 - !ruby/object:Inventory::Release
   download_url: https://github.com/RndMnkIII/Analogizer_openfpga-tecmo/releases/download/2.1/Analogizer_openFPGA_Tecmo_2.1.zip
@@ -37,7 +37,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -47,7 +47,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -60,7 +60,7 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
   info: |
     Made with love by Josh Bassett, 2022. Adapted to Analogizer by RndMnkIII, 2025.
     https://patreon.com/nullobject
