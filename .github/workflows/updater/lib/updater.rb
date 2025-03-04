@@ -43,25 +43,23 @@ class Updater < Thor
       funding = funding(source.repository)
 
       source.contents.each do |path|
-        @github_service.commits(source.repository, { path: path }).each do |commit|
+        @github_service.commits(source.repository, { path: path }).reverse.each do |commit|
           content = @github_service.contents(source.repository, { path: path, ref: commit.sha })
           next if content.nil?
 
-          break if update_source(repository, funding, content.download_url)
+          update_source(repository, funding, content.download_url)
         end
       end
 
       next unless source.assets.any?
 
-      exists = true
-      @github_service.releases(source.repository).each do |release|
+      @github_service.releases(source.repository).reverse.each do |release|
         source.assets.each do |pattern|
           asset = release.assets.find { |a| a.name.match?(pattern) }
           next if asset.nil?
 
-          exists &= update_source(repository, funding, asset.browser_download_url)
+          update_source(repository, funding, asset.browser_download_url)
         end
-        break if exists
       end
     end
   end
@@ -107,7 +105,7 @@ class Updater < Thor
     openfpga_service = Analogue::OpenFPGAService.new(openfpga_path)
     openfpga_service.cores.each do |core|
       cache = @inventory_service.core(core.id)
-      return true if !cache.nil? && cache.release_exists?(download_url)
+      next if !cache.nil? && cache.release_exists?(download_url)
 
       data = openfpga_service.data(core.id)
       updaters = openfpga_service.updaters(core.id)
@@ -137,7 +135,6 @@ class Updater < Thor
         openfpga_service.export_image(platform_id, image_path)
       end
     end
-    false
   rescue StandardError => e
     @logger.error("Failed to update source: #{repository.slug} - #{download_url}")
     @logger.error(e)

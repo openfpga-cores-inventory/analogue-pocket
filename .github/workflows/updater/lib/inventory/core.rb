@@ -16,7 +16,6 @@ module Inventory
       return if release_exists?(release.download_url)
 
       @releases.push(release)
-      @releases.sort_by! { |r| r.core.metadata.date_release }
     end
 
     def release_exists?(download_url)
