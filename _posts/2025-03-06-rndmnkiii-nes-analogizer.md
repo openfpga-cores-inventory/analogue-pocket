@@ -1,7 +1,7 @@
 ---
 layout: post
 author: RndMnkIII
-title: RndMnkIII.NES_Analogizer - 1.0.5
+title: RndMnkIII.NES_Analogizer - 1.0.6
 date: 2025-03-06
 categories: [Console, NES]
 tags: [RndMnkIII.NES_Analogizer]
