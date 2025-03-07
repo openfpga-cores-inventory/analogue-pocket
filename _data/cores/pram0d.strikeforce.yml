@@ -73,6 +73,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: coinop.key
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -141,5 +142,6 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: coinop.key
+    previous: []
   info: 
   requires_license: true

@@ -498,6 +498,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -578,6 +579,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -658,6 +660,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -738,6 +741,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -818,6 +822,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -898,6 +903,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -978,6 +984,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1058,6 +1065,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1138,6 +1146,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1218,6 +1227,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1298,6 +1308,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1378,6 +1389,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1458,6 +1470,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1538,6 +1551,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1618,6 +1632,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1698,6 +1713,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1778,6 +1794,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1858,6 +1875,7 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
 - !ruby/object:Inventory::Release
@@ -1938,5 +1956,6 @@ releases:
   updaters: !ruby/object:Analogue::Updaters
     license: !ruby/object:Analogue::Updaters::License
       filename: beta.bin
+    previous: []
   info: 
   requires_license: true
