@@ -42,7 +42,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -52,7 +52,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -62,7 +62,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -75,8 +75,8 @@ releases:
       filename: beta.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/34d904f1c12f043f067b7a74c78d9f597b037cc7/pocket/zips/jotego.jtbiocom.zip
@@ -108,7 +108,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -118,7 +118,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -128,7 +128,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -141,8 +141,8 @@ releases:
       filename: beta.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/3bf2bcae2a6d0fe050648e35a698766a02cfdf94/pocket/zips/jotego.jtbiocom.zip
@@ -174,7 +174,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -184,7 +184,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -194,7 +194,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -207,8 +207,8 @@ releases:
       filename: beta.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/9b119ebf71ffc797ad018788511a89e371fe97f2/pocket/zips/jotego.jtbiocom.zip
@@ -240,7 +240,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -250,7 +250,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -260,7 +260,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -273,8 +273,8 @@ releases:
       filename: beta.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/5a9a7bbbbb3d827005c85fd972045b9b88535333/pocket/zips/jotego.jtbiocom.zip
@@ -306,7 +306,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -316,7 +316,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -326,11 +326,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/2c7f46640a36b5c0bc98d1b007129cd9e16fefd5/pocket/zips/jotego.jtbiocom.zip
@@ -362,7 +362,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -372,7 +372,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -382,7 +382,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -395,8 +395,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/f6b21788832ec6a9e1a7747ed70d394fd0f783ba/pocket/zips/jotego.jtbiocom.zip
@@ -428,7 +428,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -438,7 +438,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -448,7 +448,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -461,8 +461,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/282d59b927421c5483d3572d1b54e4832f004e96/pocket/zips/jotego.jtbiocom.zip
@@ -494,7 +494,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -504,7 +504,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -514,7 +514,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -527,8 +527,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/cd4e15b90c258fb19fd4605dee650fa62c2e2d42/pocket/zips/jotego.jtbiocom.zip
@@ -560,7 +560,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -570,7 +570,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -580,7 +580,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -593,8 +593,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/01fd9d4f9cd2d69a7aafef51c10a8a5cdc6d6545/pocket/zips/jotego.jtbiocom.zip
@@ -626,7 +626,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -636,7 +636,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -646,7 +646,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -659,8 +659,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/e095f21aa8ac1a16e5a007c43bfe2a7b13c53c10/pocket/zips/jotego.jtbiocom.zip
@@ -692,7 +692,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -702,7 +702,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -712,7 +712,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -725,8 +725,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/5d0c2979b2113428c8de8693c0871d15d1dfc2f5/pocket/zips/jotego.jtbiocom.zip
@@ -758,7 +758,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -768,7 +768,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -778,7 +778,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -791,8 +791,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/9504f53a1ca444e5b4b786a0c3fc73fd84a15824/pocket/zips/jotego.jtbiocom.zip
@@ -824,7 +824,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -834,7 +834,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -844,7 +844,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -857,8 +857,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/c448128b6c4cc1e5d612afbbe26bc656fb237c95/pocket/zips/jotego.jtbiocom.zip
@@ -890,7 +890,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -900,7 +900,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -910,7 +910,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -923,8 +923,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/22d044b022db6bb91c36b8a4c77443588d66a7ec/pocket/zips/jotego.jtbiocom.zip
@@ -956,7 +956,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -966,7 +966,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -976,7 +976,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -989,8 +989,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/ecec17d52385bbdb41a84c1f5121e4dbdc8c3bed/pocket/zips/jotego.jtbiocom.zip
@@ -1022,7 +1022,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1032,7 +1032,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1042,7 +1042,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1055,8 +1055,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/7e9bd8fdc7ce6b398f36df21e63b3c7758721536/pocket/zips/jotego.jtbiocom.zip
@@ -1088,7 +1088,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1098,7 +1098,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1108,7 +1108,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1121,8 +1121,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/6a519e16c57a6c321031c0e043f8d57e31a0c2e7/pocket/zips/jotego.jtbiocom.zip
@@ -1154,7 +1154,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1164,7 +1164,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1174,7 +1174,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1187,8 +1187,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/0d90a0fab2356ff019780ae26596402c1bc44579/pocket/zips/jotego.jtbiocom.zip
@@ -1220,7 +1220,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1230,7 +1230,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1240,7 +1240,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1253,8 +1253,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/7e8a452524633f2daaf3e18243fc5a52bacd0d96/pocket/zips/jotego.jtbiocom.zip
@@ -1286,7 +1286,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1296,7 +1296,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1306,7 +1306,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1319,8 +1319,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/d346c89970f78854cd2dfedcd6d9a1f97e5d735a/pocket/zips/jotego.jtbiocom.zip
@@ -1352,7 +1352,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1362,7 +1362,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1372,7 +1372,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1385,8 +1385,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/fde9f4e86bd285c3cca7d616b34fe760b5c03dc3/pocket/zips/jotego.jtbiocom.zip
@@ -1418,7 +1418,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1428,7 +1428,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1438,7 +1438,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1451,8 +1451,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/d0aaf8f9b088af09d2a492fb181d4da1651f9ccd/pocket/zips/jotego.jtbiocom.zip
@@ -1484,7 +1484,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1494,7 +1494,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1504,7 +1504,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1517,8 +1517,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/b959c96aa3b4ffce82908503fe33c87c55ace928/pocket/zips/jotego.jtbiocom.zip
@@ -1550,7 +1550,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1560,7 +1560,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1570,7 +1570,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1583,8 +1583,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/744f6af95eb7433f092b5f14aa3dd30d7c75e620/pocket/zips/jotego.jtbiocom.zip
@@ -1616,7 +1616,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1626,7 +1626,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1636,7 +1636,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1649,8 +1649,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/ffbbc188f8271adcd6f0bc45eca3122e5e174ceb/pocket/zips/jotego.jtbiocom.zip
@@ -1682,7 +1682,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1692,7 +1692,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1702,7 +1702,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1715,8 +1715,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/55e46c35115316b4bb7dd63d3807ebf6cb0ff634/pocket/zips/jotego.jtbiocom.zip
@@ -1748,7 +1748,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1758,7 +1758,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1768,7 +1768,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1781,8 +1781,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/66f0ec2baa1a4c87cd7cb2a885e98cc92df9c971/pocket/zips/jotego.jtbiocom.zip
@@ -1814,7 +1814,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1824,7 +1824,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1834,7 +1834,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1847,8 +1847,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/7f1d60496bc7c3c0865506e3955815fed604266f/pocket/zips/jotego.jtbiocom.zip
@@ -1880,7 +1880,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1890,7 +1890,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1900,7 +1900,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1913,8 +1913,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/74f6f30b99cabeca556b83dd9b9859d5318994b8/pocket/zips/jotego.jtbiocom.zip
@@ -1946,7 +1946,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1956,7 +1956,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1966,7 +1966,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1979,6 +1979,6 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
