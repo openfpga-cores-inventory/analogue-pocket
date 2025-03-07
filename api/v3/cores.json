@@ -10,7 +10,8 @@ layout: none
       "repository": {
         "platform": "github",
         "owner": {{ core.repository.owner.login | jsonify }},
-        "name": {{ core.repository.name | jsonify }}
+        "name": {{ core.repository.name | jsonify }},
+        "funding": {{ core.funding | jsonify }}
       },
       "releases": [
       {%- assign releases = core.releases | reverse -%}
@@ -57,7 +58,8 @@ layout: none
               {%- unless forloop.last %},{% endunless -%}
               {%- endfor %}
             ]
-          }
+          },
+          "updaters": {{ release.updaters | jsonify }}
         }
       {%- unless forloop.last %},{% endunless %}
       {%- endfor %}
