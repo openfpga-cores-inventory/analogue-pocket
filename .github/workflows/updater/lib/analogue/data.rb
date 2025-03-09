@@ -4,6 +4,58 @@ module Analogue
   # Describes up to 32 possible data slots. Each slot can be loaded with an asset, loaded and saved to a nonvolatile
   # save file, and contains a number of options.
   class Data
+    SCHEMA = {
+      'type' => 'object',
+      'required' => %w[data],
+      'properties' => {
+        'data' => {
+          'type' => 'object',
+          'required' => %w[data_slots],
+          'properties' => {
+            'data_slots' => {
+              'type' => 'array',
+              'items' => {
+                'type' => 'object',
+                'required' => %w[name required parameters],
+                'properties' => {
+                  'name' => {
+                    'type' => 'string'
+                  },
+                  'required' => {
+                    'type' => 'boolean'
+                  },
+                  'parameters' => {
+                    'type' => %w[integer string]
+                  }
+                },
+                "anyOf": [
+                  {
+                    "required": ['filename'],
+                    "properties": {
+                      "filename": {
+                        "type": 'string'
+                      }
+                    }
+                  },
+                  {
+                    "required": ['extensions'],
+                    "properties": {
+                      'extensions' => {
+                        'type' => 'array',
+                        'items' => {
+                          'type' => 'string'
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }.freeze
+
     attr_reader :data_slots
 
     def initialize(data)

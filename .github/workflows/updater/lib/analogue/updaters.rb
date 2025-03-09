@@ -3,6 +3,39 @@
 module Analogue
   # Describes updaters configuration.
   class Updaters
+    SCHEMA = {
+      'type' => 'object',
+      'properties' => {
+        'license' => {
+          'type' => 'object',
+          'required' => %w[filename],
+          'properties' => {
+            'filename' => {
+              'type' => 'string'
+            }
+          }
+        },
+        'previous' => {
+          'type' => 'array',
+          'items' => {
+            'type' => 'object',
+            'required' => %w[shortname author platform_id],
+            'properties' => {
+              'shortname' => {
+                'type' => 'string'
+              },
+              'author' => {
+                'type' => 'string'
+              },
+              'platform_id' => {
+                'type' => 'string'
+              }
+            }
+          }
+        }
+      }
+    }.freeze
+
     attr_reader :license, :previous
 
     def initialize(updaters)

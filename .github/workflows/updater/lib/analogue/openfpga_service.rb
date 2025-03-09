@@ -2,6 +2,7 @@
 
 require 'chunky_png'
 require 'json'
+require 'json-schema'
 require 'ostruct'
 
 require_relative 'core'
@@ -42,6 +43,7 @@ module Analogue
 
     def data(core_id)
       data_path = File.join(@cores_path, core_id, DATA_FILE)
+      JSON::Validator.validate!(Data::SCHEMA, JSON.load_file(data_path))
       data = JSON.load_file(data_path, object_class: OpenStruct)
       Analogue::Data.new(data)
     end
@@ -67,6 +69,7 @@ module Analogue
       updaters_path = File.join(@cores_path, core_id, UPDATERS_FILE)
       return unless File.exist?(updaters_path)
 
+      JSON::Validator.validate!(Updaters::SCHEMA, JSON.load_file(updaters_path))
       updaters = JSON.load_file(updaters_path, object_class: OpenStruct)
       Analogue::Updaters.new(updaters)
     end
@@ -75,6 +78,7 @@ module Analogue
       platform_path = File.join(@platforms_path, "#{platform_id}.json")
       return unless File.exist?(platform_path)
 
+      JSON::Validator.validate!(Platform::SCHEMA, JSON.load_file(platform_path))
       platform = JSON.load_file(platform_path, object_class: OpenStruct)
       Analogue::Platform.new(platform)
     end
@@ -89,6 +93,7 @@ module Analogue
 
     def core(core_id)
       core_path = File.join(@cores_path, core_id, CORE_FILE)
+      JSON::Validator.validate!(Core::SCHEMA, JSON.load_file(core_path))
       core = JSON.load_file(core_path, object_class: OpenStruct)
       Analogue::Core.new(core)
     end

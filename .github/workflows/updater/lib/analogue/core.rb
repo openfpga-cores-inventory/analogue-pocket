@@ -3,6 +3,84 @@
 module Analogue
   # Describes the core in general terms, framework requirements, and a list of bitstreams.
   class Core
+    SCHEMA = {
+      'type' => 'object',
+      'required' => %w[core],
+      'properties' => {
+        'core' => {
+          'type' => 'object',
+          'required' => %w[metadata framework],
+          'properties' => {
+            'metadata' => {
+              'type' => 'object',
+              'required' => %w[platform_ids shortname description author url version date_release],
+              'properties' => {
+                'platform_ids' => {
+                  'type' => 'array',
+                  'items' => {
+                    'type' => 'string'
+                  }
+                },
+                'shortname' => {
+                  'type' => 'string'
+                },
+                'description' => {
+                  'type' => 'string'
+                },
+                'author' => {
+                  'type' => 'string'
+                },
+                'url' => {
+                  'type' => 'string',
+                  'format' => 'uri'
+                },
+                'version' => {
+                  'type' => 'string'
+                },
+                'date_release' => {
+                  'type' => 'string',
+                  'format' => 'date'
+                }
+              }
+            },
+            'framework' => {
+              'type' => 'object',
+              'required' => %w[version_required sleep_supported dock hardware],
+              'properties' => {
+                'version_required' => {
+                  'type' => 'string'
+                },
+                'sleep_supported' => {
+                  'type' => 'boolean'
+                },
+                'dock' => {
+                  'type' => 'object',
+                  'required' => %w[supported analog_output],
+                  'properties' => {
+                    'supported' => {
+                      'type' => 'boolean'
+                    },
+                    'analog_output' => {
+                      'type' => 'boolean'
+                    }
+                  }
+                },
+                'hardware' => {
+                  'type' => 'object',
+                  'required' => %w[link_port],
+                  'properties' => {
+                    'link_port' => {
+                      'type' => 'boolean'
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }.freeze
+
     attr_reader :metadata, :framework
 
     def initialize(core)
