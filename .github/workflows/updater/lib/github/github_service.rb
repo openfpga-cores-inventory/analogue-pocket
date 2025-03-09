@@ -12,11 +12,12 @@ module GitHub
   class GitHubService
     GITHUB_DIRECTORY = '.github'
     FUNDING_FILE = 'FUNDING.yml'
+    PER_PAGE = 100
 
     attr_reader :client
 
     def initialize
-      @client = Octokit::Client.new(netrc: true)
+      @client = Octokit::Client.new(netrc: true, per_page: PER_PAGE)
     end
 
     def commits(repository, options = {})
