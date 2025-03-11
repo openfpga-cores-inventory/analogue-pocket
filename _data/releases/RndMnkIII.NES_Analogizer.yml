@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.7/openfpga-NES-Analogizer_1.0.7.zip
+download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.8/openfpga-NES-Analogizer_1.0.8.zip
 repository: !ruby/object:GitHub::Repository
   owner: RndMnkIII
   name: openfpga-NES-Analogizer
