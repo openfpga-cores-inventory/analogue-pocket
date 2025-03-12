@@ -26,29 +26,17 @@ module Analogue
                   },
                   'parameters' => {
                     'type' => %w[integer string]
-                  }
-                },
-                "anyOf": [
-                  {
-                    "required": ['filename'],
-                    "properties": {
-                      "filename": {
-                        "type": 'string'
-                      }
-                    }
                   },
-                  {
-                    "required": ['extensions'],
-                    "properties": {
-                      'extensions' => {
-                        'type' => 'array',
-                        'items' => {
-                          'type' => 'string'
-                        }
-                      }
+                  'filename' => {
+                    "type": 'string'
+                  },
+                  'extensions' => {
+                    'type' => 'array',
+                    'items' => {
+                      'type' => 'string'
                     }
                   }
-                ]
+                }
               }
             }
           }
