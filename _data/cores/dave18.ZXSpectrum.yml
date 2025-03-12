@@ -6,8 +6,8 @@ metadata: !ruby/object:Analogue::Core::Metadata
   description: Port of MiSTer ZX Spectrum Core
   author: dave18
   url: ''
-  version: 0.6.0-beta
-  date_release: '2025-02-14'
+  version: 0.7.0-beta
+  date_release: '2025-03-12'
 framework: !ruby/object:Analogue::Core::Framework
   version_required: '2.2'
   sleep_supported: false
