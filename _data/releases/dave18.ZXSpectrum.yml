@@ -1,5 +1,5 @@
 --- !ruby/object:Release
-download_url: https://github.com/dave18/OpenFPGA_ZX-Spectrum/releases/download/v0.6.0-beta/ZX-Spectrum.zip
+download_url: https://github.com/dave18/OpenFPGA_ZX-Spectrum/releases/download/v0.7.0-beta/ZX-Spectrum.zip
 repository: !ruby/object:GitHub::Repository
   owner: dave18
   name: OpenFPGA_ZX-Spectrum
