@@ -13,6 +13,72 @@ funding: !ruby/object:GitHub::Funding
   - https://www.paypal.me/topapate
 releases:
 - !ruby/object:Inventory::Release
+  download_url: https://raw.githubusercontent.com/jotego/jtbin/7b3ef9e557a401e52dfaa3c54fd1ec2eee4b0e73/pocket/zips/jotego.jtbiocom.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - jtbiocom
+      - jtpatreon
+      shortname: jtbiocom
+      description: Arcade
+      author: jotego
+      url: https://patreon.com/jotego
+      version: 261a0ce
+      date_release: '2024-05-31'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: JTBETA
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: beta.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: true
+- !ruby/object:Inventory::Release
   download_url: https://raw.githubusercontent.com/jotego/jtbin/971f94ddc1063017749a7e48dc4b18f9fbbbf7e0/pocket/zips/jotego.jtbiocom.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
