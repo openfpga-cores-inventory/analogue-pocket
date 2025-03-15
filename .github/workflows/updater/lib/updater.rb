@@ -43,22 +43,22 @@ class Updater < Thor
       funding = funding(source.repository)
 
       source.contents.each do |path|
-        @github_service.commits(source.repository, { path: path }).reverse.each do |commit|
+        @github_service.commits(source.repository, { path: path }).each do |commit|
           content = @github_service.contents(source.repository, { path: path, ref: commit.sha })
           next if content.nil?
 
-          update_source(repository, funding, content.download_url)
+          update_source(repository, funding, commit.commit.author.date, content.download_url)
         end
       end
 
       next unless source.assets.any?
 
-      @github_service.releases(source.repository).reverse.each do |release|
+      @github_service.releases(source.repository).each do |release|
         source.assets.each do |pattern|
           asset = release.assets.find { |a| a.name.match?(pattern) }
           next if asset.nil?
 
-          update_source(repository, funding, asset.browser_download_url)
+          update_source(repository, funding, asset.created_at, asset.browser_download_url)
         end
       end
     end
@@ -100,7 +100,7 @@ class Updater < Thor
     GitHub::Funding.from_file(funding_path)
   end
 
-  def update_source(repository, funding, download_url)
+  def update_source(repository, funding, date, download_url)
     openfpga_path = download_archive(download_url)
     openfpga_service = Analogue::OpenFPGAService.new(openfpga_path)
     openfpga_service.cores.each do |core|
@@ -113,7 +113,7 @@ class Updater < Thor
 
       inventory_core = cache || Inventory::Core.new(core.id, repository, funding)
 
-      release = Inventory::Release.new(download_url, core, data, updaters, info)
+      release = Inventory::Release.new(date, download_url, core, data, updaters, info)
       inventory_core.add_release(release)
 
       @inventory_service.write_core(inventory_core)
@@ -129,7 +129,7 @@ class Updater < Thor
         platform = openfpga_service.platform(platform_id)
         next if platform.nil?
 
-        @inventory_service.write_platform(platform_id, platform) if latest_release
+        @inventory_service.write_platform(platform_id, platform)
 
         image_path = File.join(@jekyll_service.images_path, PLATFORMS_DIRECTORY, "#{platform_id}.png")
         openfpga_service.export_image(platform_id, image_path)

@@ -30,6 +30,7 @@ module Inventory
       return nil unless File.exist?(path)
 
       permitted_classes = [
+        Time,
         Inventory::Core, Inventory::Release,
         GitHub::Repository, GitHub::Repository::Owner, GitHub::Funding,
         Analogue::Core, Analogue::Core::Metadata, Analogue::Core::Framework, Analogue::Core::Framework::Dock, Analogue::Core::Framework::Hardware,

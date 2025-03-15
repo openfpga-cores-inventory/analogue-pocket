@@ -15,11 +15,12 @@ module GitHub
 
     # Represents a GitHub release asset
     class Asset
-      attr_reader :name, :browser_download_url
+      attr_reader :name, :browser_download_url, :created_at
 
       def initialize(asset)
         @name = asset.name
         @browser_download_url = asset.browser_download_url
+        @created_at = asset.created_at
       end
     end
   end

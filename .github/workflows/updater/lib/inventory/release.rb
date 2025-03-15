@@ -5,9 +5,10 @@ module Inventory
   class Release
     LICENSE_DATA_SLOTS = %w[COINOPKEY JTBETA License].freeze
 
-    attr_reader :download_url, :core, :data, :updaters, :info, :requires_license
+    attr_reader :date, :download_url, :core, :data, :updaters, :info, :requires_license
 
-    def initialize(download_url, core, data, updaters, info)
+    def initialize(date, download_url, core, data, updaters, info)
+      @date = date
       @download_url = download_url
       @core = core
       @data = data

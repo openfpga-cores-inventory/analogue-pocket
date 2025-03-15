@@ -16,6 +16,7 @@ module Inventory
       return if release_exists?(release.download_url)
 
       @releases.push(release)
+      @releases.sort_by!(&:date)
     end
 
     def release_exists?(download_url)
