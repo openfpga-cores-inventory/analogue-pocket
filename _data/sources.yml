@@ -187,7 +187,6 @@
   assets:
     - Spiritualized_GB_
     - Spiritualized_GBC_
-    - Spiritualized.GB_GBC_
 - repository: spiritualized1997/openfpga-gba
 - repository: spiritualized1997/openfpga-gg
 - repository: spiritualized1997/openfpga-intellivision
