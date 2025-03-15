@@ -9,6 +9,7 @@ funding: !ruby/object:GitHub::Funding
   ko_fi: https://ko-fi.com/boogermann
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-05-19 07:53:57.000000000 Z
   download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0/arcade-irem_m92_Analogizer_1.0.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -59,6 +60,7 @@ releases:
     popular choice for arcade operators and a fond memory for gamers."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-05-30 09:24:13.000000000 Z
   download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0.1/arcade-irem_m92_Analogizer_1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -109,6 +111,7 @@ releases:
     popular choice for arcade operators and a fond memory for gamers."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-06-04 08:52:47.000000000 Z
   download_url: https://github.com/RndMnkIII/arcade-irem_m92_Analogizer/releases/download/1.0.2/arcade-irem_m92_Analogizer_1.0.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

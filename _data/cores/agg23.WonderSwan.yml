@@ -11,6 +11,7 @@ funding: !ruby/object:GitHub::Funding
   patreon: https://www.patreon.com/FPGAzumSpass
 releases:
 - !ruby/object:Inventory::Release
+  date: 2023-01-15 19:23:04.000000000 Z
   download_url: https://github.com/agg23/openfpga-wonderswan/releases/download/1.0.0/agg23.WonderSwan_1.0.0_2023-01-15.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -89,6 +90,7 @@ releases:
     Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2023-05-07 03:05:49.000000000 Z
   download_url: https://github.com/agg23/openfpga-wonderswan/releases/download/1.0.1/agg23.WonderSwan_1.0.1_2023-05-06.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

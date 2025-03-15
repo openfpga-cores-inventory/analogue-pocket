@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-10-12 20:44:12.000000000 Z
   download_url: https://github.com/ericlewis/openFPGA-DonkeyKong/releases/download/0.0.1/ericlewis.DonkeyKong_0.0.1_2022-10-12.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

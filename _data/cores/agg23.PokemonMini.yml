@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-11-05 21:18:07.000000000 Z
   download_url: https://github.com/agg23/openfpga-pokemonmini/releases/download/0.1.1/agg23.PokemonMini_0.1.1_2022-11-05.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -61,6 +62,7 @@ releases:
     issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-11-12 18:19:53.000000000 Z
   download_url: https://github.com/agg23/openfpga-pokemonmini/releases/download/0.2.0/agg23.PokemonMini_0.2.0_2022-11-12.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

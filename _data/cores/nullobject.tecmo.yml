@@ -9,6 +9,7 @@ funding: !ruby/object:GitHub::Funding
   patreon: https://www.patreon.com/nullobject
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-08-26 02:59:21.000000000 Z
   download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v1.0/pocket-tecmo-1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -231,6 +232,7 @@ releases:
     Enjoy!
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-09-11 02:05:32.000000000 Z
   download_url: https://github.com/nullobject/openfpga-tecmo/releases/download/v2.0/pocket-tecmo-2.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-11-08 09:03:00.000000000 Z
   download_url: https://github.com/spiritualized1997/openFPGA-VideoBrain/releases/download/1.0.0/Spiritualized_VideoBrain_1.0.0_2022_11_08.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2025-02-13 09:29:09.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openfpga-tecmo/releases/download/2.1/Analogizer_openFPGA_Tecmo_2.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-11-02 19:42:50.000000000 Z
   download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/49b4091fb8d71116eb5920a88aae72b910322fa4/Releases/pram0d.batrider.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

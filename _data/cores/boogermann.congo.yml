@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-11-15 22:35:24.000000000 Z
   download_url: https://github.com/opengateware/arcade-congo/releases/download/0.1.0/boogermann.congo_pocket-0.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -76,6 +77,7 @@ releases:
     The authors and contributors or any of its maintainers are in no way associated with or endorsed by Sega.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-11-16 00:00:54.000000000 Z
   download_url: https://github.com/opengateware/arcade-congo/releases/download/0.1.1/boogermann.congo_pocket-0.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

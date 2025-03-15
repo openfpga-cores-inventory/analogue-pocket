@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-02-21 03:01:14.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.0/openFGPA-Vectrex.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -53,6 +54,7 @@ releases:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-02-28 02:42:32.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.1/openFPGA-Vectrex.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -108,6 +110,7 @@ releases:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-04-30 02:11:59.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.3/openFPGA-Vectrex.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -172,6 +175,7 @@ releases:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-04-30 02:41:39.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex/releases/download/v0.9.4/openFPGA-Vectrex.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

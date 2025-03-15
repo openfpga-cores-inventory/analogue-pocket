@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-10-16 13:04:34.000000000 Z
   download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.0.0/ericlewis.QBert_1.0.0_2022-10-16.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -43,6 +44,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-16 16:46:12.000000000 Z
   download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.0.1/ericlewis.QBert_1.0.1_2022-10-16.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -78,6 +80,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-17 15:47:03.000000000 Z
   download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.1.0/ericlewis.QBert_1.1.0_2022-10-17.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

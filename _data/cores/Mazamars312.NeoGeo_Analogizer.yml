@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-03-24 18:56:07.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/analogizer-neogeo-0.8.1-pocket/analogizer-neogeo-0.8.1-pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -162,6 +163,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-05-31 20:45:01.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1/Analogizer_NeoGeo_Core_Pocket_1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -316,6 +318,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-07-18 17:53:55.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1.1/Analogizer_NeoGeo_Core_Pocket_1.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -470,6 +473,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-12-30 21:32:13.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1.2/Analogizer_NeoGeo_Core_Pocket_1.1.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -624,6 +628,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-02-04 18:41:06.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_Mazamars312_Neogeo_0.8.1/releases/download/1.1.3/Analogizer_NeoGeo_Core_Pocket_1.1.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

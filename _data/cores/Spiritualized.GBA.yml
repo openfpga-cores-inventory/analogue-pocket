@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-07-29 18:23:14.000000000 Z
   download_url: https://github.com/spiritualized1997/openFPGA-GBA/releases/download/v1.0.0/Spiritualized.GBA_1.0.0_2022_07_29.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -64,6 +65,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-08-27 02:56:08.000000000 Z
   download_url: https://github.com/spiritualized1997/openFPGA-GBA/releases/download/v1.2.0/Spiritualized_GBA_1.2.0_2022_08_25.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

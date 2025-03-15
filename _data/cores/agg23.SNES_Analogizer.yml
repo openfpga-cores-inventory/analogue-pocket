@@ -11,6 +11,7 @@ funding: !ruby/object:GitHub::Funding
   patreon: https://www.patreon.com/srg320
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-05-13 21:45:07.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0/Analogizer_agg23.SNES_1.0_13-05-24.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -66,6 +67,7 @@ releases:
     as most likely any issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-05-21 15:37:26.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0.1/Analogizer_agg23.SNES_1.0.1_21-05-24.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -121,6 +123,7 @@ releases:
     as most likely any issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-01-01 12:49:11.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0.2/Analogizer_agg23.SNES_1.0.2_01-01-25.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

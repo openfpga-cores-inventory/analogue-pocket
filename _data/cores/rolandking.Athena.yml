@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-04-27 05:51:37.000000000 Z
   download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1/rolandking-Athena-v1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -64,6 +65,7 @@ releases:
     used in that port. \n"
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-04-28 00:23:51.000000000 Z
   download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.1/rolandking-Athena-v1.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -120,6 +122,7 @@ releases:
     used in that port. \n"
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-04-30 12:52:21.000000000 Z
   download_url: https://github.com/rolandking/openFPGA-Athena/releases/download/v1.1.2/rolandking-Athena-v1.1.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

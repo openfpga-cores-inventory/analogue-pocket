@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-11-08 08:26:31.000000000 Z
   download_url: https://github.com/spiritualized1997/openFPGA-Genesis/releases/download/1.0.8/Spiritualized_Genesis_1.0.8_2022_11_08.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

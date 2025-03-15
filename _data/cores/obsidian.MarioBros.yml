@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-02-16 04:14:20.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.0/openFPGA-MarioBros.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -52,6 +53,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-02-23 01:55:32.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.1/openFPGA-MarioBros.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -96,6 +98,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-02-24 03:49:25.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.2/openFPGA-MarioBros.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -140,6 +143,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-03-03 02:11:45.000000000 Z
   download_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros/releases/download/v0.9.3/openFPGA-MarioBros.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

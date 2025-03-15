@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-04-04 17:55:41.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.0/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -73,6 +74,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-04-13 16:56:23.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.1/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -138,6 +140,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-04-20 19:12:53.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.2/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -203,6 +206,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-05-07 17:14:45.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.0/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -298,6 +302,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-05-19 17:24:41.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.1/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -393,6 +398,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-06-08 12:06:07.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.2/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -498,6 +504,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-06-14 17:39:43.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.3/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -603,6 +610,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-08-01 07:23:44.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.5/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -708,6 +716,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-08-14 09:53:44.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.6/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -813,6 +822,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-11-29 16:34:21.000000000 Z
   download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.7/MyC64-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

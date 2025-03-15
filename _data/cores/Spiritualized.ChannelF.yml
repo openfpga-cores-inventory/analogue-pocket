@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-11-08 08:13:40.000000000 Z
   download_url: https://github.com/spiritualized1997/openFPGA-Channel-F/releases/download/1.0.0/Spiritualized_ChannelF_1.0.0_2022_11_08.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

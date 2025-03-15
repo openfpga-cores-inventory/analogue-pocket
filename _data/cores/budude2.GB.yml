@@ -9,6 +9,7 @@ funding: !ruby/object:GitHub::Funding
   ko_fi: https://ko-fi.com/budude2
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-01-04 00:57:06.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.1/openfpga-gb-1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -66,6 +67,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-01-04 02:56:45.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.2/openfpga-gb-1.0.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -123,6 +125,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-01-04 18:29:25.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.3/openfpga-gb-1.0.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -180,6 +183,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-01-05 21:19:28.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.4/openfpga-gb-1.0.4.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -237,6 +241,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-01-08 02:19:24.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.5/openfpga-gb-1.0.5.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -294,6 +299,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-01-17 05:06:31.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.6/openfpga-gb-1.0.6.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -351,6 +357,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-02-11 21:15:33.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.7/openfpga-gb-1.0.7.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -408,6 +415,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-02-27 02:56:40.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.0.8/openfpga-gb-1.0.8.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -465,6 +473,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-03-07 16:27:01.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0/openfpga-gb-1.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -522,6 +531,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-03-24 15:56:08.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.1.0_1/openfpga-gb-1.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -579,6 +589,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-03-27 12:48:53.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.0/openfpga-gb-1.2.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -667,6 +678,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-05-27 16:11:37.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.1/openfpga-gb-1.2.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -755,6 +767,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-06-18 03:18:41.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.2/openfpga-gb-1.2.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -843,6 +856,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-08-14 02:36:53.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.2.3/openfpga-gb-1.2.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -931,6 +945,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-08-20 21:29:40.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.3.0/openfpga-gb-1.3.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -1019,6 +1034,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-08-21 22:03:00.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.3.1/openfpga-gb-1.3.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -1107,6 +1123,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-11-25 22:45:40.000000000 Z
   download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.3.2/openfpga-gb-1.3.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

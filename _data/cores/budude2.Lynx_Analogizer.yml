@@ -9,6 +9,7 @@ funding: !ruby/object:GitHub::Funding
   ko_fi: https://ko-fi.com/budude2
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-11-30 06:02:03.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer-openfpga-AtariLynx/releases/download/1.0.0/Analogizer_openFPGA-Lynx-1.0.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -56,6 +57,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-12-01 19:26:42.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer-openfpga-AtariLynx/releases/download/1.0.1/Analogizer_openFPGA-Lynx-1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

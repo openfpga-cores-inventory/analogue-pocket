@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-04-01 15:40:01.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0_analogizer/agg23.NES_1.0.0_Analogizer.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -74,6 +75,7 @@ releases:
     the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-07-13 17:21:33.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.1/Analogizer_agg23.NES_1.0.1_13-07-24.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -138,6 +140,7 @@ releases:
     the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-02-12 12:38:48.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.2/openfpga-NES-Analogizer_1.0.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -213,6 +216,7 @@ releases:
     the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-02-27 22:54:08.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.3/openfpga-NES-Analogizer_1.0.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2023-03-19 02:41:58.000000000 Z
   download_url: https://github.com/antongale/arcade-exerion/releases/download/0.1.5/antongale.exerion_pocket-0.1.5.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

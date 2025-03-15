@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
+  date: 2023-04-27 21:34:03.000000000 Z
   download_url: https://github.com/agg23/fpga-tamagotchi/releases/download/1.0.0/agg23.Tamagotchi_1.0.0_2023-04-27-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

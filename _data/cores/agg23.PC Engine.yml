@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-10-19 15:32:28.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.1.0/agg23.PC.Engine_0.1.0_2022-10-19.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -60,6 +61,7 @@ releases:
     Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-19 23:43:34.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.1.1/agg23.PC.Engine_0.1.1_2022-10-19.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -110,6 +112,7 @@ releases:
     Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-27 14:27:28.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.2.0/agg23.PC.Engine_0.2.0_2022-10-27.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -160,6 +163,7 @@ releases:
     Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-27 15:47:30.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.2.1/agg23.PC.Engine_0.2.1_2022-10-27.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -210,6 +214,7 @@ releases:
     Currently supports standard PC Engine/TurboGrafx ROMs only. SuperGrafx support coming soon, and CD support coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-11-08 21:00:49.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/0.3.0/agg23.PC.Engine_0.3.0_2022-11-08.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -261,6 +266,7 @@ releases:
     Currently supports standard PC Engine/TurboGrafx and SuperGrafx ROMs. CD support is coming sometime in the future. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-08-09 01:44:36.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/1.0.0/agg23.PC.Engine_1.0.0_2024-08-08.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -314,6 +320,7 @@ releases:
     are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-09-17 01:34:56.000000000 Z
   download_url: https://github.com/agg23/openfpga-pcengine/releases/download/1.0.1/agg23.PC.Engine_1.0.1_2024-09-16.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

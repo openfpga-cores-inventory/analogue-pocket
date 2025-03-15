@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-10-06 21:34:40.000000000 Z
   download_url: https://github.com/opengateware/arcade-pooyan/releases/download/0.1.0/boogermann.pooyan_pocket-0.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

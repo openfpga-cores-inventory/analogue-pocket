@@ -9,6 +9,7 @@ funding: !ruby/object:GitHub::Funding
   ko_fi: https://ko-fi.com/budude2
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-11-26 18:47:17.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openfpga-GBC/releases/download/1.0.0/analogizer-openfpga-gb-1.0.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -97,6 +98,7 @@ releases:
     in progress please let me know of any issues.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-11-29 11:14:14.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openfpga-GBC/releases/download/1.0.1/analogizer-openfpga-gb-1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

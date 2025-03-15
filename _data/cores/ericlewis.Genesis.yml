@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-09-23 15:05:41.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.0.1/ericlewis.Genesis_0.0.1_2022-09-23.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -47,6 +48,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-09-26 02:39:04.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.0.2/ericlewis.Genesis_0.0.2_2022-09-25.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -86,6 +88,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-09-26 03:08:34.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.0.3/ericlewis.Genesis_0.0.3_2022-09-25.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -125,6 +128,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-09-26 22:45:00.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.0.4/ericlewis.Genesis_0.0.4_2022-09-26.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -164,6 +168,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-09-27 04:18:57.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.0.5/ericlewis.Genesis_0.0.5_2022-09-26.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -203,6 +208,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-01 10:10:14.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.0.6/ericlewis.Genesis_0.0.6_10-01-2022.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -252,6 +258,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-03 15:18:00.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.1.0/ericlewis.Genesis_0.1.0_2022-10-03.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -301,6 +308,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-04 16:41:05.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.2.0/ericlewis.Genesis_0.2.0_2022-10-04.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -350,6 +358,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-04 20:51:11.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.2.1/ericlewis.Genesis_0.2.1_2022-10-04.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -399,6 +408,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-04 22:45:08.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.2.2/ericlewis.Genesis_0.2.2_2022-10-04.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -448,6 +458,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-04 23:24:06.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.3.0/ericlewis.Genesis_0.3.0_2022-10-04.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -497,6 +508,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-04 23:39:32.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.3.1/ericlewis.Genesis_0.3.1_2022-10-04.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -546,6 +558,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-06 04:21:49.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.3.2/ericlewis.Genesis_0.3.2_2022-10-06.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -595,6 +608,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-06 14:06:52.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.4.0/ericlewis.Genesis_0.4.0_2022-10-06.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -644,6 +658,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-06 15:43:07.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.4.1/ericlewis.Genesis_0.4.1_2022-10-06.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -693,6 +708,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2022-10-09 02:41:24.000000000 Z
   download_url: https://github.com/opengateware/openFPGA-Genesis/releases/download/0.4.2/ericlewis.Genesis_0.4.2_2022-10-08.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

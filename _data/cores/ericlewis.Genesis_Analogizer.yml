@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-06-22 11:56:27.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.0/Analogizer_Genesis_Core_Pocket_1.0.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -56,6 +57,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-06-24 12:12:03.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.1/Analogizer_Genesis_Core_Pocket_1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -104,6 +106,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-01-18 19:27:01.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.2/Analogizer_Genesis_Core_Pocket_1.0.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -152,6 +155,7 @@ releases:
   info: 
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-01-19 17:16:54.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.3/Analogizer_Genesis_Core_Pocket_1.0.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

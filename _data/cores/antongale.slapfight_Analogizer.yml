@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-11-12 19:05:45.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_arcade-slapfight/releases/download/1.0.0/Analogizer_arcade-slapfight_1.0.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -58,6 +59,7 @@ releases:
     or endorsed by Taito/Toaplan."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-11-27 18:45:53.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer_arcade-slapfight/releases/download/1.0.1/Analogizer_arcade-slapfight_1.0.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2025-01-03 19:18:07.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-pcengine-cd_Analogizer/releases/download/1.0.2/Analogizer_openfpga-pcengine_1.0.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -91,6 +92,7 @@ releases:
     are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-01-04 10:54:35.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-pcengine-cd_Analogizer/releases/download/1.0.3/Analogizer_openfpga-pcengine_1.0.3.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

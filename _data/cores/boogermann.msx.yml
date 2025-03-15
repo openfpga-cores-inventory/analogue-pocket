@@ -9,6 +9,7 @@ funding: !ruby/object:GitHub::Funding
   ko_fi: https://ko-fi.com/boogermann
 releases:
 - !ruby/object:Inventory::Release
+  date: 2024-11-12 19:16:25.000000000 Z
   download_url: https://github.com/opengateware/computer-msx/releases/download/0.9.1/boogermann.msx_0.9.1_20241112-pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

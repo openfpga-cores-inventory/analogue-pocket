@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
+  date: 2025-03-05 11:13:05.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.4/openfpga-NES-Analogizer_1.0.4.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -86,6 +87,7 @@ releases:
     issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-03-06 18:54:45.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.5/openfpga-NES-Analogizer_1.0.5.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -162,6 +164,7 @@ releases:
     issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-03-06 22:38:17.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.6/openfpga-NES-Analogizer_1.0.6.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -238,6 +241,7 @@ releases:
     issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-03-07 13:31:25.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.7/openfpga-NES-Analogizer_1.0.7.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -314,6 +318,7 @@ releases:
     issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-03-11 10:51:13.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.8/openfpga-NES-Analogizer_1.0.8.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -390,6 +395,7 @@ releases:
     issues experienced are issues with the port, not the core."
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2025-03-11 17:18:01.000000000 Z
   download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.9/openfpga-NES-Analogizer_1.0.9.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

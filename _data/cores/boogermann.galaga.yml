@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-09-15 22:04:02.000000000 Z
   download_url: https://github.com/opengateware/arcade-galaga/releases/download/v0.1.0/arcade-galaga-pocket-v0.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

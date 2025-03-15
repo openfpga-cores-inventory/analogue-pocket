@@ -10,6 +10,7 @@ funding: !ruby/object:GitHub::Funding
   - https://github.com/sponsors/agg23
 releases:
 - !ruby/object:Inventory::Release
+  date: 2023-06-26 22:49:10.000000000 Z
   download_url: https://github.com/agg23/fpga-gameandwatch/releases/download/0.1.0/agg23.GameAndWatch_0.1.0_2023-06-26-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -53,6 +54,7 @@ releases:
     * SM5a - Octopus
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2023-06-30 18:07:00.000000000 Z
   download_url: https://github.com/agg23/fpga-gameandwatch/releases/download/0.2.0/agg23.GameAndWatch_0.2.0_2023-06-30-Pocket.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

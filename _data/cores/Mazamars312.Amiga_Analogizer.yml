@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2025-02-01 10:36:13.000000000 Z
   download_url: https://github.com/RndMnkIII/Analogizer-Amiga/releases/download/0.3.2/Analogizer_Amiga_Pocket_0.3.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-12-10 20:28:46.000000000 Z
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.500.0.0.6-Alpha/Mazamars312.Amiga.500.0.0.6-Alpha.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -137,6 +138,7 @@ releases:
     LOL\r\n* MIST, Mister, DeMistiFy and minimig communities\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2023-06-05 21:59:15.000000000 Z
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.0/Analogue-Amiga-0.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -249,6 +251,7 @@ releases:
     Images\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2023-06-08 22:33:46.000000000 Z
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.1/Analogue-Amiga-0.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -369,6 +372,7 @@ releases:
     * And Amiga Vision As well for the Images
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2023-12-29 12:50:45.000000000 Z
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.1.2/Analogue-Amiga-0.1.2.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -481,6 +485,7 @@ releases:
     Images\r\n"
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2024-01-18 07:34:09.000000000 Z
   download_url: https://github.com/Mazamars312/Analogue-Amiga/releases/download/Mazamars312.Amiga.0.2.1/Analogue-Amiga-0.2.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata

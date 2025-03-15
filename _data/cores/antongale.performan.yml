@@ -8,6 +8,7 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2023-01-22 14:58:10.000000000 Z
   download_url: https://github.com/antongale/arcade-performan/releases/download/0.1.0/antongale.performan_pocket-0.1.0.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
@@ -65,6 +66,7 @@ releases:
     The authors and contributors or any of its maintainers are in no way associated with or endorsed by Taito/Toaplan.
   requires_license: false
 - !ruby/object:Inventory::Release
+  date: 2023-01-22 19:34:55.000000000 Z
   download_url: https://github.com/antongale/arcade-performan/releases/download/0.1.1/antongale.performan_pocket-0.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
