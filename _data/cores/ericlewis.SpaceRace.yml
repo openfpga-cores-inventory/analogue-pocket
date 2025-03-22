@@ -8,6 +8,60 @@ repository: !ruby/object:GitHub::Repository
 funding: 
 releases:
 - !ruby/object:Inventory::Release
+  date: 2022-09-09 20:52:05.000000000 Z
+  download_url: https://github.com/ericlewis/openfpga-spacerace/releases/download/0.0.1/ericlewis.SpaceRace_0.0.1_2022-09-09.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - spacerace
+      shortname: SpaceRace
+      description: Race in space!
+      author: ericlewis
+      url: https://github.com/ericlewis/openfpga-spacerace
+      version: 0.0.1
+      date_release: '2022-09-09'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: Arcade game Space Race (Atari, 1973) based on Rev.F schematics. Ported from
+    MiSTer.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2022-09-09 21:51:10.000000000 Z
+  download_url: https://github.com/ericlewis/openfpga-spacerace/releases/download/0.0.2/ericlewis.SpaceRace_0.0.2_2022-09-09.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - spacerace
+      shortname: SpaceRace
+      description: Race in space!
+      author: ericlewis
+      url: https://github.com/ericlewis/openfpga-spacerace
+      version: 0.0.2
+      date_release: '2022-09-09'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: Arcade game Space Race (Atari, 1973) based on Rev.F schematics. Ported from
+    MiSTer.
+  requires_license: false
+- !ruby/object:Inventory::Release
   date: 2022-09-10 09:27:53.000000000 Z
   download_url: https://github.com/ericlewis/openfpga-spacerace/releases/download/0.9.0/ericlewis.SpaceRace_0.9.0_2022-09-09.zip
   core: !ruby/object:Analogue::Core

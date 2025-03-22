@@ -41,7 +41,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -51,7 +51,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - sav
       - srm
@@ -75,7 +75,7 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
   info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
     configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
     generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
@@ -118,7 +118,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -128,7 +128,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - sav
       - srm
@@ -152,7 +152,7 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
   info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
     configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
     generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
@@ -195,7 +195,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -205,7 +205,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - sav
       - srm
@@ -229,7 +229,7 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
   info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
     configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
     generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
@@ -272,7 +272,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -282,7 +282,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - sav
       - srm
@@ -306,7 +306,7 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
   info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
     configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
     generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
@@ -349,7 +349,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -359,7 +359,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - sav
       - srm
@@ -383,7 +383,7 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
   info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
     configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
     generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
@@ -426,7 +426,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -436,7 +436,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename:
+      filename: 
       extensions:
       - sav
       - srm
@@ -460,7 +460,84 @@ releases:
       filename: analogizer.bin
       extensions:
       - bin
-  updaters:
+  updaters: 
+  info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
+    configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
+    generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
+    greyrogue, Kitrinx, paulb-nl, and many others.\r\n\r\nNintendo Entertainment System
+    (NES), referred to as the Famicom in Japan was the first major home console produced
+    by Nintendo. This console made gaming a household name, and is still popular to
+    this day\r\n\r\nCore supports 4 controllers (when connected to the Dock), cartridge
+    saves, and most mappers. Please report all issues to agg23, as most likely any
+    issues experienced are issues with the port, not the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-03-22 12:13:58.000000000 Z
+  download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.1.0/openfpga-NES-Analogizer_1.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nes
+      - analogizer
+      shortname: NES_Analogizer
+      description: "[Analogizer] Nintendo Entertainment System and Famicom. Nintendo's
+        first home console"
+      author: RndMnkIII
+      url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
+      version: 1.1.0
+      date_release: '2025-03-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Custom Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: palettes/custom.pal
+      extensions:
+      - pal
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters: 
   info: "Modified to support the Analogizer adapter by RndMnkIII: uses analogizer.bin
     configuration file from /Assets/analogizer/common. Use Pupdate or AnalogizerConfigurator\r\nto
     generate the config file.\r\n\r\nPort by agg23. Core by Ludvig Strigeus, sorgelig,
