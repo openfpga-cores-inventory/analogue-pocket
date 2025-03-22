@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/somhi/FlappyBird/releases/download/v20230707/somhi.FlappyBird_20230707.zip
-repository: !ruby/object:GitHub::Repository
-  owner: somhi
-  name: FlappyBird
-funding:

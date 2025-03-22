@@ -1,110 +1,134 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - spaceinvaders
-  shortname: SpaceInvaders
-  description: Space Invaders arcade machine
-  author: AwesomeDolphin
-  url: https://github.com/open-fpga/core-template
-  version: 1.0.0
-  date_release: '2023-12-25'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Rom
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: invaders.rom
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: SoundUFO
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 0.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: PlayerShoot
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 1.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: PlayerDie
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 2.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: InvaderDie
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 3.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: FleetMove1
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 4.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: FleetMove2
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 5.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: FleetMove3
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 6.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: FleetMove4
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 7.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: UFOHit
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 8.raw
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: ExtendedPlay
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 9.raw
-  extensions:
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: AwesomeDolphin.SpaceInvaders
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-SpaceInvaders
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: AwesomeDolphin
+  html_url: https://github.com/AwesomeDolphin/openFPGA-SpaceInvaders
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-01-03 02:40:09.000000000 Z
+  download_url: https://github.com/AwesomeDolphin/openFPGA-SpaceInvaders/releases/download/1.0.0/AwesomeDolphin.SpaceInvaders_1.0.0_2024-01-02.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - spaceinvaders
+      shortname: SpaceInvaders
+      description: Space Invaders arcade machine
+      author: AwesomeDolphin
+      url: https://github.com/open-fpga/core-template
+      version: 1.0.0
+      date_release: '2023-12-25'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Rom
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: invaders.rom
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SoundUFO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 0.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PlayerShoot
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PlayerDie
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 2.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: InvaderDie
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 3.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: FleetMove1
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 4.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: FleetMove2
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 5.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: FleetMove3
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 6.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: FleetMove4
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 7.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: UFOHit
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 8.raw
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ExtendedPlay
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 9.raw
+      extensions: 
+  updaters: 
+  info: 
+  requires_license: false

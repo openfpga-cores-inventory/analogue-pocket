@@ -1,43 +1,58 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - exerion
-  shortname: exerion
-  description: Exerion Compatible Gateware IP Core
-  author: antongale
-  url: https://github.com/opengateware/arcade-exerion
-  version: 0.1.0
-  date_release: '2022-11-17'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Arcade Game
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: |
-  exerion
+--- !ruby/object:Inventory::Core
+id: antongale.exerion
+repository: !ruby/object:GitHub::Repository
+  name: arcade-exerion
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: antongale
+  html_url: https://github.com/antongale/arcade-exerion
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2023-03-19 02:41:58.000000000 Z
+  download_url: https://github.com/antongale/arcade-exerion/releases/download/0.1.5/antongale.exerion_pocket-0.1.5.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - exerion
+      shortname: exerion
+      description: Exerion Compatible Gateware IP Core
+      author: antongale
+      url: https://github.com/opengateware/arcade-exerion
+      version: 0.1.0
+      date_release: '2022-11-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: |
+    exerion
 
-  Add information about your core here.
-requires_license: false
+    Add information about your core here.
+  requires_license: false

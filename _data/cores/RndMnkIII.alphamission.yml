@@ -1,43 +1,156 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - alphamission
-  shortname: alphamission
-  description: SNK Alpha Mission gateware IP Core
-  author: RndMnkIII
-  url: https://github.com/RndMnkIII/PocketAlphaMission
-  version: '1.2'
-  date_release: '2023-11-16'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Arcade Game
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: "alphamission\r\nThis core was originally developed to run on the MiSTer FPGA
-  the ASO - Armored Scrum Object SNK's arcade game a his derivatives based on the
-  \"Triple Z80\" hardware. It has been ported to Analogue Pocket using the Gateware
-  framework developed by Marcus Andrade (@marcusjordan).\r\n"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: RndMnkIII.alphamission
+repository: !ruby/object:GitHub::Repository
+  name: PocketAlphaMission
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/PocketAlphaMission
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2023-11-14 15:55:08.000000000 Z
+  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/alphamission-pocket-v1.0/rndmnkiii.alphamission_pocket-v1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - alphamission
+      shortname: alphamission
+      description: SNK Alpha Mission gateware IP Core
+      author: RndMnkIII
+      url: https://github.com/RndMnkIII/PocketAlphaMission
+      version: 1.0.0
+      date_release: '2023-11-09'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "alphamission\r\nThis core was originally developed to run on the MiSTer FPGA
+    the ASO - Armored Scrum Object SNK's arcade game a his derivatives based on the
+    \"Triple Z80\" hardware. It has been ported to Analogue Pocket using the Gateware
+    framework developed by Marcus Andrade (@marcusjordan).\r\n"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2023-11-16 18:31:46.000000000 Z
+  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.1/rndmnkiii.alphamission_pocket-v1.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - alphamission
+      shortname: alphamission
+      description: SNK Alpha Mission gateware IP Core
+      author: RndMnkIII
+      url: https://github.com/RndMnkIII/PocketAlphaMission
+      version: '1.1'
+      date_release: '2023-11-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "alphamission\r\nThis core was originally developed to run on the MiSTer FPGA
+    the ASO - Armored Scrum Object SNK's arcade game a his derivatives based on the
+    \"Triple Z80\" hardware. It has been ported to Analogue Pocket using the Gateware
+    framework developed by Marcus Andrade (@marcusjordan).\r\n"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2023-11-16 19:22:18.000000000 Z
+  download_url: https://github.com/RndMnkIII/PocketAlphaMission/releases/download/v1.2/rndmnkiii.alphamission_pocket-v1.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - alphamission
+      shortname: alphamission
+      description: SNK Alpha Mission gateware IP Core
+      author: RndMnkIII
+      url: https://github.com/RndMnkIII/PocketAlphaMission
+      version: '1.2'
+      date_release: '2023-11-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "alphamission\r\nThis core was originally developed to run on the MiSTer FPGA
+    the ASO - Armored Scrum Object SNK's arcade game a his derivatives based on the
+    \"Triple Z80\" hardware. It has been ported to Analogue Pocket using the Gateware
+    framework developed by Marcus Andrade (@marcusjordan).\r\n"
+  requires_license: false

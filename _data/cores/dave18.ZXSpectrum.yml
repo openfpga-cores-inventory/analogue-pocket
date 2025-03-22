@@ -1,82 +1,193 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - zxspectrum
-  shortname: ZXSpectrum
-  description: Port of MiSTer ZX Spectrum Core
-  author: dave18
-  url: ''
-  version: 0.7.0-beta
-  date_release: '2025-03-12'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '2.2'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: " Disk"
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - trd
-  - img
-  - dsk
-  - mgt
-- !ruby/object:Analogue::Core::DataSlot
-  name: " Tape"
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - tap
-  - csw
-  - tzx
-- !ruby/object:Analogue::Core::DataSlot
-  name: " Snapshot"
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - z80
-  - sna
-- !ruby/object:Analogue::Core::DataSlot
-  name: " DivMMC"
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - vhd
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: boot.rom
-  extensions:
-  - rom
-- !ruby/object:Analogue::Core::DataSlot
-  name: CFG
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: ''
-  extensions:
-  - cfg
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: dave18.ZXSpectrum
+repository: !ruby/object:GitHub::Repository
+  name: OpenFPGA_ZX-Spectrum
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: dave18
+  html_url: https://github.com/dave18/OpenFPGA_ZX-Spectrum
+funding:
+releases:
+- !ruby/object:Inventory::Release
+  date: 2025-02-14 10:44:41.000000000 Z
+  download_url: https://github.com/dave18/OpenFPGA_ZX-Spectrum/releases/download/v0.6.0-beta/ZX-Spectrum.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - zxspectrum
+      shortname: ZXSpectrum
+      description: Port of MiSTer ZX Spectrum Core
+      author: dave18
+      url: ''
+      version: 0.6.0-beta
+      date_release: '2025-02-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " Disk"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - trd
+      - img
+      - dsk
+      - mgt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " Tape"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - tap
+      - csw
+      - tzx
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " Snapshot"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - z80
+      - sna
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " DivMMC"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - vhd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CFG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - cfg
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-03-12 20:04:30.000000000 Z
+  download_url: https://github.com/dave18/OpenFPGA_ZX-Spectrum/releases/download/v0.7.0-beta/ZX-Spectrum.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - zxspectrum
+      shortname: ZXSpectrum
+      description: Port of MiSTer ZX Spectrum Core
+      author: dave18
+      url: ''
+      version: 0.7.0-beta
+      date_release: '2025-03-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " Disk"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - trd
+      - img
+      - dsk
+      - mgt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " Tape"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - tap
+      - csw
+      - tzx
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " Snapshot"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - z80
+      - sna
+    - !ruby/object:Analogue::Data::DataSlot
+      name: " DivMMC"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - vhd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CFG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - cfg
+  updaters:
+  info:
+  requires_license: false

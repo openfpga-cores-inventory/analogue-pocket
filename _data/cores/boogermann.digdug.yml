@@ -1,72 +1,89 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - digdug
-  shortname: digdug
-  description: Namco Dig Dug Compatible Gateware IP Core for FPGA
-  author: boogermann
-  url: https://github.com/opengateware/arcade-digdug
-  version: 0.1.0
-  date_release: '2022-09-20'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Load Game Definition File
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: |
-  Dig Dug is a maze arcade game developed by Namco. The player controls Dig Dug to defeat all enemies per stage, by either inflating them to bursting or crushing them underneath rocks.
+--- !ruby/object:Inventory::Core
+id: boogermann.digdug
+repository: !ruby/object:GitHub::Repository
+  name: arcade-digdug
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: opengateware
+  html_url: https://github.com/opengateware/arcade-digdug
+funding: !ruby/object:GitHub::Funding
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
+releases:
+- !ruby/object:Inventory::Release
+  date: 2022-09-20 06:04:49.000000000 Z
+  download_url: https://github.com/opengateware/arcade-digdug/releases/download/0.1.0/boogermann.digdug_pocket-0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - digdug
+      shortname: digdug
+      description: Namco Dig Dug Compatible Gateware IP Core for FPGA
+      author: boogermann
+      url: https://github.com/opengateware/arcade-digdug
+      version: 0.1.0
+      date_release: '2022-09-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Load Game Definition File
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: |
+    Dig Dug is a maze arcade game developed by Namco. The player controls Dig Dug to defeat all enemies per stage, by either inflating them to bursting or crushing them underneath rocks.
 
-  Note: You must provide your own roms to use this core.
+    Note: You must provide your own roms to use this core.
 
-  Developer(s)
-      Namco
-  Publisher(s)
-      JP/EU: Namco
-      NA: Atari, Inc.
-  Designer(s)
-      Masahisa Ikegami
-      Shigeru Yokoyama
-  Programmer(s)
-      Shouichi Fukatani
-      Toshio Sakai
-  Artist(s)
-      Hiroshi Ono[6]
-  Composer(s)
-      Yuriko Keino
-  Release
-      JP: February 20, 1982
-      NA: April 1982
-      EU: April 19, 1982
+    Developer(s)
+        Namco
+    Publisher(s)
+        JP/EU: Namco
+        NA: Atari, Inc.
+    Designer(s)
+        Masahisa Ikegami
+        Shigeru Yokoyama
+    Programmer(s)
+        Shouichi Fukatani
+        Toshio Sakai
+    Artist(s)
+        Hiroshi Ono[6]
+    Composer(s)
+        Yuriko Keino
+    Release
+        JP: February 20, 1982
+        NA: April 1982
+        EU: April 19, 1982
 
-  This Implementation of a compatible Dig Dug arcade hardware in HDL is the work of MiSTer-X
+    This Implementation of a compatible Dig Dug arcade hardware in HDL is the work of MiSTer-X
 
-  Analogue Pocket port by Marcus Andrade (Boogermann)
+    Analogue Pocket port by Marcus Andrade (Boogermann)
 
-  Dig Dug © 1982 NAMCO LTD. All rights reserved. Dig Dug is a trademark of BANDAI NAMCO ENTERTAINMENT INC.
-  All other trademarks, logos, and copyrights are property of their respective owners.
+    Dig Dug © 1982 NAMCO LTD. All rights reserved. Dig Dug is a trademark of BANDAI NAMCO ENTERTAINMENT INC.
+    All other trademarks, logos, and copyrights are property of their respective owners.
 
-  The authors and contributors or any of its maintainers are in no way associated with or endorsed by Bandai Namco Entertainment Inc.
-requires_license: false
+    The authors and contributors or any of its maintainers are in no way associated with or endorsed by Bandai Namco Entertainment Inc.
+  requires_license: false

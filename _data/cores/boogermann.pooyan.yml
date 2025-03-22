@@ -1,67 +1,84 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - pooyan
-  shortname: pooyan
-  description: Pooyan is a fixed shooter arcade game released by Konami in Japan in
-    1982.
-  author: boogermann
-  url: https://github.com/opengateware/arcade-pooyan
-  version: 0.1.0
-  date_release: '2022-10-06'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Arcade Game
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: |
-  Pooyan is a fixed shooter arcade game released by Konami in Japan in 1982. It was manufactured in North America by Stern Electronics.
+--- !ruby/object:Inventory::Core
+id: boogermann.pooyan
+repository: !ruby/object:GitHub::Repository
+  name: arcade-pooyan
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: opengateware
+  html_url: https://github.com/opengateware/arcade-pooyan
+funding: !ruby/object:GitHub::Funding
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN
+releases:
+- !ruby/object:Inventory::Release
+  date: 2022-10-06 21:34:40.000000000 Z
+  download_url: https://github.com/opengateware/arcade-pooyan/releases/download/0.1.0/boogermann.pooyan_pocket-0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pooyan
+      shortname: pooyan
+      description: Pooyan is a fixed shooter arcade game released by Konami in Japan
+        in 1982.
+      author: boogermann
+      url: https://github.com/opengateware/arcade-pooyan
+      version: 0.1.0
+      date_release: '2022-10-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: |
+    Pooyan is a fixed shooter arcade game released by Konami in Japan in 1982. It was manufactured in North America by Stern Electronics.
 
-  The player controls "Mama", a pig whose babies have been kidnapped by a group of wolves.
-  Armed with a bow and arrows and slabs of meat, mama pig must defend/save her piglets from the wolves ballooning up or down the cliff.
-  Move up and down, shoot the balloons, watch the wolves plummet and splat. There are various bonus rounds.
+    The player controls "Mama", a pig whose babies have been kidnapped by a group of wolves.
+    Armed with a bow and arrows and slabs of meat, mama pig must defend/save her piglets from the wolves ballooning up or down the cliff.
+    Move up and down, shoot the balloons, watch the wolves plummet and splat. There are various bonus rounds.
 
-  Note: You must provide your own roms to use this core.
+    Note: You must provide your own roms to use this core.
 
-  Developer(s)
-      Konami
-  Publisher(s)
-      JP/EU: Konami
-      NA: Stern
-  Designer(s)
-      Tokuro Fujiwara
-  Release
-      1982
+    Developer(s)
+        Konami
+    Publisher(s)
+        JP/EU: Konami
+        NA: Stern
+    Designer(s)
+        Tokuro Fujiwara
+    Release
+        1982
 
-  This Implementation of a compatible Pooyan arcade hardware in HDL is the work of Dar
+    This Implementation of a compatible Pooyan arcade hardware in HDL is the work of Dar
 
-  Analogue Pocket port by Marcus Andrade (Boogermann)
+    Analogue Pocket port by Marcus Andrade (Boogermann)
 
-  Pooyan © 1982 Konami Industry Company, Limited.
-  All trademarks, logos, and copyrights are property of their respective owners.
+    Pooyan © 1982 Konami Industry Company, Limited.
+    All trademarks, logos, and copyrights are property of their respective owners.
 
-  The authors and contributors or any of its maintainers are in no way associated with or endorsed by Konami.
-requires_license: false
+    The authors and contributors or any of its maintainers are in no way associated with or endorsed by Konami.
+  requires_license: false

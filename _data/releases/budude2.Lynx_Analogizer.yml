@@ -1,7 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/RndMnkIII/Analogizer-openfpga-AtariLynx/releases/download/1.0.1/Analogizer_openFPGA-Lynx-1.0.1.zip
-repository: !ruby/object:GitHub::Repository
-  owner: RndMnkIII
-  name: Analogizer-openfpga-AtariLynx
-funding: !ruby/object:GitHub::Funding
-  ko_fi: https://ko-fi.com/budude2

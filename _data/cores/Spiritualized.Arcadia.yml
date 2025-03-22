@@ -1,34 +1,48 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - arcadia
-  shortname: Arcadia
-  description: Arcadia 2001 core
-  author: Spiritualized
-  url: ''
-  version: 1.0.2
-  date_release: '2022-10-20'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Arcadia 2001\r\n\r\nKey chords:\r\n\r\nLtrig + up = 0\r\nLtrig
-  + right = 1\r\nLtrig + down = 2\r\nLtrig + left = 3\r\nRtrig + up = 4\r\nRtrig +
-  right = 5\r\nRtrig + down = 6\r\nRtrig + left = 7\r\nLtrig + Rtrig + up = 8\r\nLtrig
-  + Rtrig + right = 9\r\n\r\nY = *\r\nX = #\r\n\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.Arcadia
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Arcadia
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-Arcadia
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2022-11-08 08:09:02.000000000 Z
+  download_url: https://github.com/spiritualized1997/openFPGA-Arcadia/releases/download/1.0.2/Spiritualized_Arcadia_1.0.2_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - arcadia
+      shortname: Arcadia
+      description: Arcadia 2001 core
+      author: Spiritualized
+      url: ''
+      version: 1.0.2
+      date_release: '2022-10-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Arcadia 2001\r\n\r\nKey chords:\r\n\r\nLtrig + up = 0\r\nLtrig
+    + right = 1\r\nLtrig + down = 2\r\nLtrig + left = 3\r\nRtrig + up = 4\r\nRtrig
+    + right = 5\r\nRtrig + down = 6\r\nRtrig + left = 7\r\nLtrig + Rtrig + up = 8\r\nLtrig
+    + Rtrig + right = 9\r\n\r\nY = *\r\nX = #\r\n\r\n\r\nEnjoy!"
+  requires_license: false

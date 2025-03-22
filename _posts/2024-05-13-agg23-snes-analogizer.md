@@ -1,0 +1,13 @@
+---
+layout: post
+author: agg23
+title: agg23.SNES_Analogizer - 1.0
+date: 2024-05-13
+categories: [Console, SNES]
+tags: [agg23.SNES_Analogizer]
+---
+Port by agg23. Core by srg320.
+
+Super Nintendo Entertainment System (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console produced by Nintendo. A 16-bit console that remains hugely popular to this day due to its expansive library and impressive enhancement chips.
+
+Core supports 4 controllers (when connected to the Dock), and the SA-1, Super FX (GSU), DSP, CX4, S-DD1, SPC7110, and BSX expansion chips. Please report all issues to agg23, as most likely any issues experienced are issues with the port, not the core.

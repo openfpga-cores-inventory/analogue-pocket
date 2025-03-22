@@ -1,9 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/RndMnkIII/openfpga-SNES-Analogizer/releases/download/1.0.2/Analogizer_agg23.SNES_1.0.2_01-01-25.zip
-repository: !ruby/object:GitHub::Repository
-  owner: RndMnkIII
-  name: openfpga-SNES-Analogizer
-funding: !ruby/object:GitHub::Funding
-  github:
-  - https://github.com/sponsors/agg23
-  patreon: https://www.patreon.com/srg320

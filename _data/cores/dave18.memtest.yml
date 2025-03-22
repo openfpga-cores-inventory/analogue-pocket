@@ -1,22 +1,35 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - memtest
-  shortname: memtest
-  description: Port of MiSTer SDRAM Memory Tester
-  author: dave18
-  url: ''
-  version: 1.0.0
-  date_release: '2025-02-05'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '2.2'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots: []
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: dave18.memtest
+repository: !ruby/object:GitHub::Repository
+  name: MemTest_Pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: dave18
+  html_url: https://github.com/dave18/MemTest_Pocket
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2025-02-07 08:40:43.000000000 Z
+  download_url: https://github.com/dave18/MemTest_Pocket/releases/download/v1.0.0/memtest.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - memtest
+      shortname: memtest
+      description: Port of MiSTer SDRAM Memory Tester
+      author: dave18
+      url: ''
+      version: 1.0.0
+      date_release: '2025-02-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: 
+  requires_license: false

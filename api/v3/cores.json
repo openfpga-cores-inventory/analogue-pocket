@@ -1,0 +1,71 @@
+---
+layout: none
+---
+{
+  "data": [
+    {%- for core_hash in site.data.cores %}
+      {%- assign core = core_hash[1] %}
+    {
+      "id": {{ core.id | jsonify }},
+      "repository": {
+        "platform": "github",
+        "owner": {{ core.repository.owner.login | jsonify }},
+        "name": {{ core.repository.name | jsonify }},
+        "funding": {{ core.funding | jsonify }}
+      },
+      "releases": [
+      {%- assign releases = core.releases | reverse -%}
+      {%- for release in releases %}
+        {
+          "download_url": {{ release.download_url | jsonify }},
+          "requires_license": {{ release.requires_license | jsonify }},
+          "core": {
+            "metadata": {
+              "platform_ids": {{ release.core.metadata.platform_ids | jsonify }},
+              "version": {{ release.core.metadata.version | jsonify }},
+              "date_release": {{ release.core.metadata.date_release | date: "%Y-%m-%d" | jsonify }}
+            },
+            "framework": {
+              "version_required": {{ release.core.framework.version_required | jsonify }},
+              "sleep_supported": {{ release.core.framework.sleep_supported | jsonify }},
+              "dock": {
+                "supported": {{ release.core.framework.dock.supported | jsonify }},
+                "analog_output": {{ release.core.framework.dock.analog_output | jsonify }}
+              },
+              "hardware": {
+                "link_port": {{ release.core.framework.hardware.link_port | jsonify }}
+              }
+            }
+          },
+          "data": {
+            "data_slots": [
+              {%- assign data_slots = release.data.data_slots | where: "required", "true" -%}
+              {%- for data_slot in data_slots %}
+              {
+                "name": {{ data_slot.name | jsonify }},
+                "parameters": {
+                  "core_specific_file": {{ data_slot.parameters.core_specific_file | jsonify }},
+                  "instance_json": {{ data_slot.parameters.instance_json | jsonify }},
+                  "platform_index": {{ data_slot.parameters.platform_index | jsonify }}
+                }
+                {%- if data_slot.filename %},
+                "filename": {{ data_slot.filename | jsonify }}
+                {%- endif -%}
+                {%- if data_slot.extensions %},
+                "extensions": {{ data_slot.extensions | jsonify }}
+                {%- endif %}
+              }
+              {%- unless forloop.last %},{% endunless -%}
+              {%- endfor %}
+            ]
+          },
+          "updaters": {{ release.updaters | jsonify }}
+        }
+      {%- unless forloop.last %},{% endunless %}
+      {%- endfor %}
+      ]
+    }
+    {%- unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}

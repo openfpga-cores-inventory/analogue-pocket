@@ -1,31 +1,79 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - flappybird
-  shortname: flappybird
-  description: Flappy Bird is an arcade-style game launched in May 2013 and gained
-    popularity in early 2014
-  author: somhi
-  url: https://github.com/somhi/FlappyBird
-  version: 1.0.0
-  date_release: '2023-07-05'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots: []
-updaters:
-info: "Flappy Bird\r\n\r\nThis core is written entirely in discrete logic, apparently.
-  Not recommended as a reference example.\r\n\r\nHistory\r\nFlappy Bird is an arcade-style
-  game launched in May 2013 and gained popularity in early 2014. The user controls
-  the bird constantly moving to the right and the objective is to navigate the bird
-  through pair of pipes that have gaps placed at random heights. The bird will ascend
-  for a short distance if the player touches the screen (a button configured on FPGA)
-  and ends if the bird falls to the ground or hits a pipe. Points are rewarded each
-  time the player crosses a pipe.\r\n\r\nInstructions\r\n* Press Flap\r\n* When you
-  die, press reset.\r\n"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: somhi.flappybird
+repository: !ruby/object:GitHub::Repository
+  name: FlappyBird
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: somhi
+  html_url: https://github.com/somhi/FlappyBird
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2023-07-07 15:42:40.000000000 Z
+  download_url: https://github.com/somhi/FlappyBird/releases/download/v20230707/somhi.FlappyBird_20230707.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - flappybird
+      shortname: flappybird
+      description: Flappy Bird is an arcade-style game launched in May 2013 and gained
+        popularity in early 2014
+      author: somhi
+      url: https://github.com/somhi/FlappyBird
+      version: 1.0.0
+      date_release: '2023-07-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: "Flappy Bird\r\n\r\nThis core is written entirely in discrete logic, apparently.
+    Not recommended as a reference example.\r\n\r\nHistory\r\nFlappy Bird is an arcade-style
+    game launched in May 2013 and gained popularity in early 2014. The user controls
+    the bird constantly moving to the right and the objective is to navigate the bird
+    through pair of pipes that have gaps placed at random heights. The bird will ascend
+    for a short distance if the player touches the screen (a button configured on
+    FPGA) and ends if the bird falls to the ground or hits a pipe. Points are rewarded
+    each time the player crosses a pipe.\r\n\r\nInstructions\r\n* Press Flap\r\n*
+    When you die, press reset.\r\n"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2023-07-07 18:41:12.000000000 Z
+  download_url: https://github.com/somhi/FlappyBird/releases/download/v1.0.1/somhi.FlappyBird_1.0.1_20230707.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - flappybird
+      shortname: flappybird
+      description: Flappy Bird is an arcade-style game launched in May 2013 and gained
+        popularity in early 2014
+      author: somhi
+      url: https://github.com/somhi/FlappyBird
+      version: 1.0.1
+      date_release: '2023-07-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots: []
+  updaters: 
+  info: "Flappy Bird\r\n\r\nThis core is written entirely in discrete logic, apparently.
+    Not recommended as a reference example.\r\n\r\nHistory\r\nFlappy Bird is an arcade-style
+    game launched in May 2013 and gained popularity in early 2014. The user controls
+    the bird constantly moving to the right and the objective is to navigate the bird
+    through pair of pipes that have gaps placed at random heights. The bird will ascend
+    for a short distance if the player touches the screen (a button configured on
+    FPGA) and ends if the bird falls to the ground or hits a pipe. Points are rewarded
+    each time the player crosses a pipe.\r\n\r\nInstructions\r\n* Press Flap\r\n*
+    When you die, press reset.\r\n"
+  requires_license: false

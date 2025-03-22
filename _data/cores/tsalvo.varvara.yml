@@ -1,32 +1,157 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - varvara
-  shortname: varvara
-  description: Computer system running on Uxn
-  author: tsalvo
-  url: https://github.com/tsalvo/openfpga-varvara
-  version: 0.0.4
-  date_release: '2024-08-17'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info: "OpenFPGA - Varvara\r\n\r\nEarly work-in-progress PipelineC FPGA implementation
-  of Varvara / Uxn by Hundred Rabbits"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: tsalvo.varvara
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-varvara
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: tsalvo
+  html_url: https://github.com/tsalvo/openfpga-varvara
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-04-06 16:15:37.000000000 Z
+  download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.1/tsalvo.varvara_0.0.1_2024-04-06.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - varvara
+      shortname: varvara
+      description: Computer system running on Uxn
+      author: tsalvo
+      url: https://github.com/tsalvo/openfpga-varvara
+      version: 0.0.1
+      date_release: '2024-04-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "OpenFPGA - Varvara\r\n\r\nEarly work-in-progress PipelineC FPGA implementation
+    of Varvara / Uxn by Hundred Rabbits"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-06-01 17:37:19.000000000 Z
+  download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.2/tsalvo.varvara_0.0.2_2024-06-01.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - varvara
+      shortname: varvara
+      description: Computer system running on Uxn
+      author: tsalvo
+      url: https://github.com/tsalvo/openfpga-varvara
+      version: 0.0.2
+      date_release: '2024-04-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "OpenFPGA - Varvara\r\n\r\nEarly work-in-progress PipelineC FPGA implementation
+    of Varvara / Uxn by Hundred Rabbits"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-06-16 23:06:36.000000000 Z
+  download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.3/tsalvo.varvara_0.0.3_2024-06-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - varvara
+      shortname: varvara
+      description: Computer system running on Uxn
+      author: tsalvo
+      url: https://github.com/tsalvo/openfpga-varvara
+      version: 0.0.3
+      date_release: '2024-06-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "OpenFPGA - Varvara\r\n\r\nEarly work-in-progress PipelineC FPGA implementation
+    of Varvara / Uxn by Hundred Rabbits"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-08-17 21:33:10.000000000 Z
+  download_url: https://github.com/tsalvo/openfpga-varvara/releases/download/0.0.4/tsalvo.varvara_0.0.4_2024-08-17.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - varvara
+      shortname: varvara
+      description: Computer system running on Uxn
+      author: tsalvo
+      url: https://github.com/tsalvo/openfpga-varvara
+      version: 0.0.4
+      date_release: '2024-08-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: "OpenFPGA - Varvara\r\n\r\nEarly work-in-progress PipelineC FPGA implementation
+    of Varvara / Uxn by Hundred Rabbits"
+  requires_license: false

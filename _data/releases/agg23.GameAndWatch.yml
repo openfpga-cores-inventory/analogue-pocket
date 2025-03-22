@@ -1,8 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/agg23/fpga-gameandwatch/releases/download/0.2.0/agg23.GameAndWatch_0.2.0_2023-06-30-Pocket.zip
-repository: !ruby/object:GitHub::Repository
-  owner: agg23
-  name: fpga-gameandwatch
-funding: !ruby/object:GitHub::Funding
-  github:
-  - https://github.com/sponsors/agg23

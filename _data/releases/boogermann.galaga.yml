@@ -1,8 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/opengateware/arcade-galaga/releases/download/v0.1.0/arcade-galaga-pocket-v0.1.0.zip
-repository: !ruby/object:GitHub::Repository
-  owner: opengateware
-  name: arcade-galaga
-funding: !ruby/object:GitHub::Funding
-  custom:
-  - https://www.paypal.com/donate/?hosted_button_id=N7HXKEL8VJ9CN

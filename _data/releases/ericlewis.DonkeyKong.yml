@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/ericlewis/openFPGA-DonkeyKong/releases/download/0.0.1/ericlewis.DonkeyKong_0.0.1_2022-10-12.zip
-repository: !ruby/object:GitHub::Repository
-  owner: ericlewis
-  name: openFPGA-DonkeyKong
-funding:

@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/ericlewis/openfpga-dominos/releases/download/0.0.1/ericlewis.Dominos_0.0.1_2022-09-17.zip
-repository: !ruby/object:GitHub::Repository
-  owner: ericlewis
-  name: openfpga-dominos
-funding:

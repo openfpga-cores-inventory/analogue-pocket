@@ -1,6 +1,4 @@
-const OWNER_PATTERN = /### GitHub Username\s+@?(?<owner>[\w-]{1,39})/;
-const REPOSITORY_PATTERN = /### Repository Name\s+(?<repository>[\w\.-]+)/;
-const PRERELEASE_PATTERN = /### Pre-release\s+-\s+\[(?<prerelease>[\sxX])\]/;
+const REPOSITORY_PATTERN = /### GitHub Repository\s+(?<repository>[\w-]{1,39}\/[\w\.-]+)/;
 const FILTER_PATTERN = /### Asset Filter\s+(?<filter>.+)/;
 const PATH_PATTERN = /### Path\s+(?<path>.+)/;
 
@@ -12,94 +10,68 @@ module.exports = ({ github, context, core }) => {
   const fs = require("fs");
   const body = context.payload.issue.body;
 
-  const ownerMatch = OWNER_PATTERN.exec(body);
-  const repositoryMatch = REPOSITORY_PATTERN.exec(body);
-
-  if (!ownerMatch || !repositoryMatch) {
-    console.error(`Failed to match owner or repository: ${body}`);
-
+  if (!REPOSITORY_PATTERN.test(body)) {
+    console.error(`Failed to match repository: ${body}`);
     return {};
   }
 
-  const prereleaseMatch = PRERELEASE_PATTERN.exec(body);
-  const filterMatch = FILTER_PATTERN.exec(body);
-  const pathMatch = PATH_PATTERN.exec(body);
-
-  const { owner } = ownerMatch.groups;
-  const { repository } = repositoryMatch.groups;
-  const { prerelease } = prereleaseMatch.groups;
-  const { filter } = filterMatch.groups;
-  const { path } = pathMatch.groups;
-
-  core.setOutput("username", owner);
+  const { repository } = REPOSITORY_PATTERN.exec(body).groups;
 
   const sources = yaml.load(
     fs.readFileSync(SOURCES_PATH, "utf8")
   );
 
-  const ownerSources = sources.find(
-    (source) => source.owner === owner
+  const source = sources.find(
+    (source) => source.repository === repository.toLowerCase()
   );
 
-  const ownerExists = !!ownerSources;
-  core.setOutput("known-author", ownerExists);
+  // Add the source if it doesn't exist
+  if (!source) {
+    const source = {
+      repository: repository.toLowerCase()
+    };
 
-  if (!ownerExists) {
-    github.rest.issues.createComment({
-      issue_number: context.issue.number,
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      body: `Thanks for the submission!
-      Looks like \`${owner}\` doesn't have any cores in the inventory yet.
-      So the PR'll require manual approval`,
-    });
+    if (filter !== NO_RESPONSE) source.assets = [filter];
+    if (path !== NO_RESPONSE) source.contents = [path];
+
+    sources.push(source);
+
+    fs.writeFileSync(SOURCES_PATH,
+      yaml.dump(sources, { noRefs: true })
+    );
+
+    core.setOutput("close-issue", false);
+    return { exists: false };
   }
 
-  const ownerRepositories = ownerSources.repositories.filter(
-    (ownerRepository) =>
-      ownerRepository.name === repository &&
-      !!ownerRepository.prerelease === (/[xX]/.test(prerelease))
+  const { filter } = FILTER_PATTERN.exec(body).groups;
+  const { path } = PATH_PATTERN.exec(body).groups;
+
+  const exists = (
+    (filter !== NO_RESPONSE && source.assets?.includes(filter)) ||
+    (path !== NO_RESPONSE && source.contents?.includes(path)) ||
+    !source.assets && !source.contents
   );
 
-  const existingSource = ownerRepositories.find(
-    (ownerRepository) =>
-      (filter !== NO_RESPONSE && ownerRepository.filter === filter) ||
-      (path !== NO_RESPONSE && ownerRepository.path === path) ||
-      (!ownerRepository.filter && !ownerRepository.path)
-  )
-
-  const sourceExists = !!existingSource;
-  core.setOutput("exists-already", sourceExists);
-
-  if (sourceExists) {
+  if (exists) {
     github.rest.issues.createComment({
       issue_number: context.issue.number,
       owner: context.repo.owner,
       repo: context.repo.repo,
-      body: `Thanks for the submission!
-      Looks like that core is in the inventory already`,
+      body: "Thank you for your submission! Looks like the core is already being tracked."
     });
 
     core.setOutput("close-issue", true);
-
-    return { owner, ownerExists, sourceExists };
+    return { exists: true };
   }
 
-  const source = {
-    name: repository
-  };
-
-  if (/[xX]/.test(prerelease)) source.prerelease = true;
-  if (filter !== NO_RESPONSE) source.filter = filter;
-  if (path !== NO_RESPONSE) source.path = path;
-
-  ownerSources.repositories.push(source);
+  if (filter !== NO_RESPONSE) (source.assets ||= []).push(filter);
+  if (path !== NO_RESPONSE) (source.contents ||= []).push(path);
 
   fs.writeFileSync(SOURCES_PATH,
     yaml.dump(sources, { noRefs: true })
   );
 
   core.setOutput("close-issue", false);
-
-  return { owner, ownerExists, sourceExists };
+  return { exists: false };
 };

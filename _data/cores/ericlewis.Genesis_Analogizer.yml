@@ -1,43 +1,205 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - genesis
-  shortname: Genesis_Analogizer
-  description: "[Analogizer] Sega Genesis Core"
-  author: ericlewis
-  url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
-  version: 1.0.3
-  date_release: '2025-01-19'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - md
-  - bin
-  - gen
-  - smd
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: ericlewis.Genesis_Analogizer
+repository: !ruby/object:GitHub::Repository
+  name: Analogizer_openFPGA-Genesis
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-06-22 11:56:27.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.0/Analogizer_Genesis_Core_Pocket_1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - genesis
+      shortname: Genesis_Analogizer
+      description: "[Analogizer] Sega Genesis Core"
+      author: ericlewis
+      url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
+      version: 1.0.0
+      date_release: '2024-06-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - md
+      - bin
+      - gen
+      - smd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-06-24 12:12:03.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.1/Analogizer_Genesis_Core_Pocket_1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - genesis
+      shortname: Genesis_Analogizer
+      description: "[Analogizer] Sega Genesis Core"
+      author: ericlewis
+      url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
+      version: 1.0.1
+      date_release: '2024-06-24'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - md
+      - bin
+      - gen
+      - smd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-01-18 19:27:01.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.2/Analogizer_Genesis_Core_Pocket_1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - genesis
+      shortname: Genesis_Analogizer
+      description: "[Analogizer] Sega Genesis Core"
+      author: ericlewis
+      url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
+      version: 1.0.2
+      date_release: '2025-01-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - md
+      - bin
+      - gen
+      - smd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-01-19 17:16:54.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis/releases/download/1.0.3/Analogizer_Genesis_Core_Pocket_1.0.3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - genesis
+      shortname: Genesis_Analogizer
+      description: "[Analogizer] Sega Genesis Core"
+      author: ericlewis
+      url: https://github.com/RndMnkIII/Analogizer_openFPGA-Genesis
+      version: 1.0.3
+      date_release: '2025-01-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - md
+      - bin
+      - gen
+      - smd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false

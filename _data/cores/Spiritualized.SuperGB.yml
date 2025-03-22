@@ -1,66 +1,83 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - sgb
-  shortname: SuperGB
-  description: Super Gameboy core
-  author: Spiritualized
-  url: ''
-  version: 1.0.3
-  date_release: '2022-10-28'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: true
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - gb
-  - gbc
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save RAM
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-- !ruby/object:Analogue::Core::DataSlot
-  name: SGB BIOS SNES
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: sgb_snes.smc
-  extensions:
-  - smc
-- !ruby/object:Analogue::Core::DataSlot
-  name: SGB BIOS GB
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: sgb_boot.bin
-  extensions:
-  - bin
-updaters:
-info: "Spiritualized Super Gameboy\r\n\r\nEverything Super GB Should be supported
-  by this core, including\r\nplaying real cartridges through the cartridge slot!\r\n\r\nTo
-  use this core, two files need to be placed into the\r\n/assets/sgb/Spiritualized.SuperGB/
-  folder:\r\n\r\nsgb_boot.bin - the 256 byte boot ROM for the GB CPU\r\nsgb_snes.smc
-  - the 256K or 512K BIOS for the SNES \r\n\r\nYou can use either SGB or SGB2 files.
-  \ \r\n\r\nTo run real cartridges, select \"run_cartridge.gb\" for the game,\r\nwhich
-  is included in this package.\r\n\r\nUp to 4 players are supported using the dock.\r\n\r\nEnjoy!"
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: Spiritualized.SuperGB
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Super-GB
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spiritualized1997
+  html_url: https://github.com/spiritualized1997/openFPGA-Super-GB
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2022-11-08 08:55:44.000000000 Z
+  download_url: https://github.com/spiritualized1997/openFPGA-Super-GB/releases/download/1.0.3/Spiritualized_SuperGB_1.0.3_2022_11_08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - sgb
+      shortname: SuperGB
+      description: Super Gameboy core
+      author: Spiritualized
+      url: ''
+      version: 1.0.3
+      date_release: '2022-10-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - gb
+      - gbc
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SGB BIOS SNES
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: sgb_snes.smc
+      extensions:
+      - smc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SGB BIOS GB
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: sgb_boot.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Spiritualized Super Gameboy\r\n\r\nEverything Super GB Should be supported
+    by this core, including\r\nplaying real cartridges through the cartridge slot!\r\n\r\nTo
+    use this core, two files need to be placed into the\r\n/assets/sgb/Spiritualized.SuperGB/
+    folder:\r\n\r\nsgb_boot.bin - the 256 byte boot ROM for the GB CPU\r\nsgb_snes.smc
+    - the 256K or 512K BIOS for the SNES \r\n\r\nYou can use either SGB or SGB2 files.
+    \ \r\n\r\nTo run real cartridges, select \"run_cartridge.gb\" for the game,\r\nwhich
+    is included in this package.\r\n\r\nUp to 4 players are supported using the dock.\r\n\r\nEnjoy!"
+  requires_license: false

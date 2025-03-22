@@ -1,40 +1,147 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - system1
-  shortname: System1_Analogizer
-  description: "[Analogizer] Atari System 1"
-  author: obsidian
-  url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1
-  version: 1.0.2
-  date_release: '2024-11-12'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Arcade Game
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: true
-  filename:
-  extensions:
-  - json
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - rom
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: obsidian.System1_Analogizer
+repository: !ruby/object:GitHub::Repository
+  name: Analogizer-openFPGA-AtariSystem1
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-07-13 10:15:59.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.0/Analogizer-openFPGA-AtariSystem1_v1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - system1
+      shortname: System1_Analogizer
+      description: Atari System 1
+      author: obsidian
+      url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1
+      version: 1.0.0
+      date_release: '2024-07-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-11-11 21:12:51.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.1/Analogizer-openFPGA-AtariSystem1_v1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - system1
+      shortname: System1_Analogizer
+      description: "[Analogizer] Atari System 1"
+      author: obsidian
+      url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1
+      version: 1.0.1
+      date_release: '2024-07-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-11-12 20:20:51.000000000 Z
+  download_url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1/releases/download/1.0.2/Analogizer-openFPGA-AtariSystem1_v1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - system1
+      shortname: System1_Analogizer
+      description: "[Analogizer] Atari System 1"
+      author: obsidian
+      url: https://github.com/RndMnkIII/Analogizer-openFPGA-AtariSystem1
+      version: 1.0.2
+      date_release: '2024-11-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: 
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - rom
+  updaters: 
+  info: 
+  requires_license: false

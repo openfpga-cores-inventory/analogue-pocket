@@ -1,94 +1,929 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - c64
-  shortname: MyC64
-  description: My experimental Commodore 64 emulator
-  author: markus-zzz
-  url: https://github.com/markus-zzz/myc64-pocket
-  version: 0.2.7
-  date_release: '2024-11-29'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '2.2'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: "& Start CRT"
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - crt
-- !ruby/object:Analogue::Core::DataSlot
-  name: "& Start PRG"
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - prg
-- !ruby/object:Analogue::Core::DataSlot
-  name: G64 Slot
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: ''
-  extensions:
-  - g64
-- !ruby/object:Analogue::Core::DataSlot
-  name: Basic ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: basic.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Character ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: characters.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: Kernal ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: kernal.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: 1540-c000 ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 1540-c000.bin
-  extensions:
-  - bin
-- !ruby/object:Analogue::Core::DataSlot
-  name: 1541-e000 ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: 1541-e000.bin
-  extensions:
-  - bin
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: markus-zzz.MyC64
+repository: !ruby/object:GitHub::Repository
+  name: myc64-pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: markus-zzz
+  html_url: https://github.com/markus-zzz/myc64-pocket
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-04-04 17:55:41.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.0/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.1.0
+      date_release: '2024-04-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 'PRG Slot #0'
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-04-13 16:56:23.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.1/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.1.1
+      date_release: '2024-04-13'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 'PRG Slot #0'
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-04-20 19:12:53.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.1.2/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.1.2
+      date_release: '2024-04-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 'PRG Slot #0'
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-05-07 17:14:45.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.0/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.0
+      date_release: '2024-05-07'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 'PRG Slot #0'
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 'G64 Slot #0'
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-05-19 17:24:41.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.1/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.1
+      date_release: '2024-05-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start PRG"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: G64 Slot
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-06-08 12:06:07.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.2/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.2
+      date_release: '2024-06-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start CRT"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start PRG"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: G64 Slot
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-06-14 17:39:43.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.3/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.3
+      date_release: '2024-06-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start CRT"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start PRG"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: G64 Slot
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-08-01 07:23:44.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.5/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.5
+      date_release: '2024-07-31'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start CRT"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start PRG"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: G64 Slot
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-08-14 09:53:44.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.6/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.6
+      date_release: '2024-08-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start CRT"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start PRG"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: G64 Slot
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-11-29 16:34:21.000000000 Z
+  download_url: https://github.com/markus-zzz/myc64-pocket/releases/download/v0.2.7/MyC64-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: MyC64
+      description: My experimental Commodore 64 emulator
+      author: markus-zzz
+      url: https://github.com/markus-zzz/myc64-pocket
+      version: 0.2.7
+      date_release: '2024-11-29'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start CRT"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: "& Start PRG"
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: G64 Slot
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Basic ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Kernal ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1540-c000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1540-c000.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541-e000 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541-e000.bin
+      extensions:
+      - bin
+  updaters: 
+  info: 
+  requires_license: false

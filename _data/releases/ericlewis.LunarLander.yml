@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/ericlewis/openfpga-lunarlander/releases/download/0.9.1/ericlewis.LunarLander_0.9.1_2022-09-13.zip
-repository: !ruby/object:GitHub::Repository
-  owner: ericlewis
-  name: openfpga-lunarlander
-funding:

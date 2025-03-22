@@ -1,6 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/spiritualized1997/openFPGA-Supervision/releases/download/1.0.0/Spiritualized_Supervision_1.0.0_2022_11_08.zip
-repository: !ruby/object:GitHub::Repository
-  owner: spiritualized1997
-  name: openFPGA-Supervision
-funding:

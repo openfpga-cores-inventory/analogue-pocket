@@ -1,31 +1,117 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - qbert
-  shortname: QBert
-  description: Q*Bert arcade core for Analogue Pocket ported from MiSTer - originally
-    created by Pierco.
-  author: ericlewis
-  url: https://github.com/ericlewis/openFPGA-QBert
-  version: 1.1.0
-  date_release: '2022-10-17'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: qbert.rom
-  extensions:
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: ericlewis.QBert
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-qbert
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: ericlewis
+  html_url: https://github.com/ericlewis/openfpga-qbert
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2022-10-16 13:04:34.000000000 Z
+  download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.0.0/ericlewis.QBert_1.0.0_2022-10-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - qbert
+      shortname: QBert
+      description: Q*Bert arcade core for Analogue Pocket ported from MiSTer - originally
+        created by Pierco.
+      author: ericlewis
+      url: https://github.com/ericlewis/openFPGA-QBert
+      version: 1.0.0
+      date_release: '2022-10-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: qbert.rom
+      extensions: 
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2022-10-16 16:46:12.000000000 Z
+  download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.0.1/ericlewis.QBert_1.0.1_2022-10-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - qbert
+      shortname: QBert
+      description: Q*Bert arcade core for Analogue Pocket ported from MiSTer - originally
+        created by Pierco.
+      author: ericlewis
+      url: https://github.com/ericlewis/openFPGA-QBert
+      version: 1.0.1
+      date_release: '2022-10-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: qbert.rom
+      extensions: 
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2022-10-17 15:47:03.000000000 Z
+  download_url: https://github.com/ericlewis/openfpga-qbert/releases/download/1.1.0/ericlewis.QBert_1.1.0_2022-10-17.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - qbert
+      shortname: QBert
+      description: Q*Bert arcade core for Analogue Pocket ported from MiSTer - originally
+        created by Pierco.
+      author: ericlewis
+      url: https://github.com/ericlewis/openFPGA-QBert
+      version: 1.1.0
+      date_release: '2022-10-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: qbert.rom
+      extensions: 
+  updaters: 
+  info: 
+  requires_license: false

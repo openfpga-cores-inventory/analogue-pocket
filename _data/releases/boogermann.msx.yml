@@ -1,7 +1,0 @@
---- !ruby/object:Release
-download_url: https://github.com/opengateware/computer-msx/releases/download/0.9.1/boogermann.msx_0.9.1_20241112-pocket.zip
-repository: !ruby/object:GitHub::Repository
-  owner: opengateware
-  name: computer-msx
-funding: !ruby/object:GitHub::Funding
-  ko_fi: https://ko-fi.com/boogermann

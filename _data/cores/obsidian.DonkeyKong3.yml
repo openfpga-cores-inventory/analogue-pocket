@@ -1,39 +1,144 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - dkong3
-  shortname: DonkeyKong3
-  description: Donkey Kong 3 released in 1983.
-  author: obsidian
-  url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3
-  version: 0.9.2
-  date_release: '2024-02-23'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: false
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: ROM
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: dkong3.rom
-  extensions:
-- !ruby/object:Analogue::Core::DataSlot
-  name: HISCORE
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-updaters:
-info:
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: obsidian.DonkeyKong3
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-DonkeyKong3
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: obsidian-dot-dev
+  html_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3
+funding: 
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-02-16 04:12:37.000000000 Z
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.0/openFPGA-DonkeyKong3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - dkong3
+      shortname: DonkeyKong3
+      description: Donkey Kong 3 released in 1983.
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3
+      version: 0.0.1
+      date_release: '2024-02-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: dkong3.rom
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: HISCORE
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-02-23 01:36:40.000000000 Z
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.1/openFPGA-DonkeyKong3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - dkong3
+      shortname: DonkeyKong3
+      description: Donkey Kong 3 released in 1983.
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3
+      version: 0.0.1
+      date_release: '2024-02-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: dkong3.rom
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: HISCORE
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-02-24 03:48:50.000000000 Z
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3/releases/download/v0.9.2/openFPGA-DonkeyKong3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - dkong3
+      shortname: DonkeyKong3
+      description: Donkey Kong 3 released in 1983.
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-DonkeyKong3
+      version: 0.9.2
+      date_release: '2024-02-23'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: dkong3.rom
+      extensions: 
+    - !ruby/object:Analogue::Data::DataSlot
+      name: HISCORE
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+  updaters: 
+  info: 
+  requires_license: false

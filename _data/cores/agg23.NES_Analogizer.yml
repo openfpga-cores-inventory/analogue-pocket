@@ -1,67 +1,293 @@
---- !ruby/object:Analogue::Core
-metadata: !ruby/object:Analogue::Core::Metadata
-  platform_ids:
-  - nes
-  - analogizer
-  shortname: NES_Analogizer
-  description: "[Analogizer] Nintendo Entertainment System and Famicom. Nintendo's
-    first home console"
-  author: agg23
-  url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
-  version: 1.0.3
-  date_release: '2025-02-27'
-framework: !ruby/object:Analogue::Core::Framework
-  version_required: '1.1'
-  sleep_supported: true
-  dock: !ruby/object:Analogue::Core::Framework::Dock
-    supported: true
-    analog_output: false
-  hardware: !ruby/object:Analogue::Core::Framework::Hardware
-    link_port: false
-data_slots:
-- !ruby/object:Analogue::Core::DataSlot
-  name: Cartridge
-  required: true
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - nes
-- !ruby/object:Analogue::Core::DataSlot
-  name: Save
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename:
-  extensions:
-  - sav
-  - srm
-- !ruby/object:Analogue::Core::DataSlot
-  name: Custom Palette
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: true
-    instance_json: false
-  filename: palettes/custom.pal
-  extensions:
-  - pal
-- !ruby/object:Analogue::Core::DataSlot
-  name: Analogizer config
-  required: false
-  parameters: !ruby/object:Analogue::Core::DataSlot::Parameters
-    core_specific_file: false
-    instance_json: false
-  filename: analogizer.bin
-  extensions:
-  - bin
-updaters:
-info: "Modified to support the Analogizer adapter.\r\nPort by agg23. Core by Ludvig
-  Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl, and many others.\r\n\r\nNintendo
-  Entertainment System (NES), referred to as the Famicom in Japan was the first major
-  home console produced by Nintendo. This console made gaming a household name, and
-  is still popular to this day\r\n\r\nCore supports 4 controllers (when connected
-  to the Dock), cartridge saves, and most mappers. Please report all issues to agg23,
-  as most likely any issues experienced are issues with the port, not the core."
-requires_license: false
+--- !ruby/object:Inventory::Core
+id: agg23.NES_Analogizer
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-NES-Analogizer
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/agg23
+releases:
+- !ruby/object:Inventory::Release
+  date: 2024-04-01 15:40:01.000000000 Z
+  download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0_analogizer/agg23.NES_1.0.0_Analogizer.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nes
+      shortname: NES_Analogizer
+      description: ANALOGIZER Nintendo Entertainment System and Famicom. Nintendo's
+        first home console
+      author: agg23
+      url: https://github.com/agg23/openFPGA-NES
+      version: 1.0.0
+      date_release: '2023-09-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Custom Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: palettes/custom.pal
+      extensions:
+      - pal
+  updaters: 
+  info: "Modified to support the Analogizer adapter.\r\nPort by agg23. Core by Ludvig
+    Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl, and many others.\r\n\r\nNintendo
+    Entertainment System (NES), referred to as the Famicom in Japan was the first
+    major home console produced by Nintendo. This console made gaming a household
+    name, and is still popular to this day\r\n\r\nCore supports 4 controllers (when
+    connected to the Dock), cartridge saves, and most mappers. Please report all issues
+    to agg23, as most likely any issues experienced are issues with the port, not
+    the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2024-07-13 17:21:33.000000000 Z
+  download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.1/Analogizer_agg23.NES_1.0.1_13-07-24.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nes
+      shortname: NES_Analogizer
+      description: ANALOGIZER Nintendo Entertainment System and Famicom. Nintendo's
+        first home console
+      author: agg23
+      url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
+      version: 1.0.1
+      date_release: '2023-07-13'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Custom Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: palettes/custom.pal
+      extensions:
+      - pal
+  updaters: 
+  info: "Modified to support the Analogizer adapter.\r\nPort by agg23. Core by Ludvig
+    Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl, and many others.\r\n\r\nNintendo
+    Entertainment System (NES), referred to as the Famicom in Japan was the first
+    major home console produced by Nintendo. This console made gaming a household
+    name, and is still popular to this day\r\n\r\nCore supports 4 controllers (when
+    connected to the Dock), cartridge saves, and most mappers. Please report all issues
+    to agg23, as most likely any issues experienced are issues with the port, not
+    the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-02-12 12:38:48.000000000 Z
+  download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.2/openfpga-NES-Analogizer_1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nes
+      - analogizer
+      shortname: NES_Analogizer
+      description: "[Analogizer] Nintendo Entertainment System and Famicom. Nintendo's
+        first home console"
+      author: agg23
+      url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
+      version: 1.0.2
+      date_release: '2025-02-11'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Custom Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: palettes/custom.pal
+      extensions:
+      - pal
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Modified to support the Analogizer adapter.\r\nPort by agg23. Core by Ludvig
+    Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl, and many others.\r\n\r\nNintendo
+    Entertainment System (NES), referred to as the Famicom in Japan was the first
+    major home console produced by Nintendo. This console made gaming a household
+    name, and is still popular to this day\r\n\r\nCore supports 4 controllers (when
+    connected to the Dock), cartridge saves, and most mappers. Please report all issues
+    to agg23, as most likely any issues experienced are issues with the port, not
+    the core."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-02-27 22:54:08.000000000 Z
+  download_url: https://github.com/RndMnkIII/openfpga-NES-Analogizer/releases/download/1.0.3/openfpga-NES-Analogizer_1.0.3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nes
+      - analogizer
+      shortname: NES_Analogizer
+      description: "[Analogizer] Nintendo Entertainment System and Famicom. Nintendo's
+        first home console"
+      author: agg23
+      url: https://github.com/RndMnkIII/openfpga-NES-Analogizer
+      version: 1.0.3
+      date_release: '2025-02-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Custom Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: palettes/custom.pal
+      extensions:
+      - pal
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters: 
+  info: "Modified to support the Analogizer adapter.\r\nPort by agg23. Core by Ludvig
+    Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl, and many others.\r\n\r\nNintendo
+    Entertainment System (NES), referred to as the Famicom in Japan was the first
+    major home console produced by Nintendo. This console made gaming a household
+    name, and is still popular to this day\r\n\r\nCore supports 4 controllers (when
+    connected to the Dock), cartridge saves, and most mappers. Please report all issues
+    to agg23, as most likely any issues experienced are issues with the port, not
+    the core."
+  requires_license: false

@@ -3,19 +3,11 @@ description: Add a new core
 title: "[New Core]: "
 body:
   - type: input
-    id: github-username
-    attributes:
-      label: GitHub Username
-      description: The owner of the GitHub repository where the openFPGA core is hosted.
-      placeholder: e.g. spiritualized1997
-    validations:
-      required: true
-  - type: input
     id: repostiory-name
     attributes:
-      label: Repository Name
-      description: The name of the GitHub repository where the openFPGA core is hosted.
-      placeholder: e.g. openFPGA-GB-GBC
+      label: GitHub Repository
+      description: The GitHub repository where the openFPGA core is hosted.
+      placeholder: e.g. spiritualized1997/openFPGA-GB-GBC
     validations:
       required: true
   - type: markdown
@@ -25,14 +17,7 @@ body:
         ---
 
         > [!NOTE]
-        > If the openFPGA core is distributed via GitHub releases (excluding pre-release) as a *single* asset, no further options are required.
-  - type: checkboxes
-    id: options-prerelease
-    attributes:
-      label: Pre-release
-      description: Select this option if the GitHub release containing the openFPGA core has been labeled as a pre-release.
-      options:
-        - label: The GitHib release which contains the openFPGA core is labeled as a pre-release.
+        > If the openFPGA core is distributed via GitHub releases as a *single* asset, no further options are required.
   - type: input
     id: options-filter
     attributes:

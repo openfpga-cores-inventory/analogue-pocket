@@ -1,0 +1,19 @@
+---
+layout: none
+---
+{
+  "data": [
+    {%- for platform_hash in site.data.platforms -%}
+      {%- assign key = platform_hash[0] -%}
+      {%- assign platform = platform_hash[1] %}
+    {
+      "id": {{ key | jsonify }},
+      "category": {{ platform.category | jsonify }},
+      "name": {{ platform.name | jsonify }},
+      "manufacturer": {{ platform.manufacturer | jsonify }},
+      "year": {{ platform.year | jsonify }}
+    }
+    {%- unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
