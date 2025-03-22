@@ -1,0 +1,254 @@
+openapi: 3.0.3
+info:
+  title: openFPGA Cores Inventory - Analogue Pocket - OpenAPI 3.0
+  description: |-
+    Welcome to the openFPGA Cores Inventory API service for the [Analogue Pocket](https://www.analogue.co/pocket). This service provides programmatic access to the list of openFPGA cores and platforms supported by the Analogue Pocket that have been developed by the community.
+  termsOfService: http://swagger.io/terms/
+  contact:
+    name: openFPGA Cores Inventory
+    url: https://openfpga-cores-inventory.github.io
+  license:
+    name: MIT License
+    url: https://github.com/openfpga-cores-inventory/analogue-pocket/blob/main/LICENSE.txt
+  version: 3.0.0
+servers:
+  - url: https://openfpga-cores-inventory.github.io/analogue-pocket/api/v3
+tags:
+  - name: cores
+    description: openFPGA Cores
+  - name: platforms
+    description: Platforms
+paths:
+  /cores.json:
+    get:
+      tags:
+        - cores
+      summary: Get openFPGA cores
+      description: Returns a list of openFPGA cores
+      operationId: cores
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CoresResponseWrapper'
+  /platforms.json:
+    get:
+      tags:
+        - platforms
+      summary: Get platforms
+      description: Returns a list of platforms
+      operationId: platforms
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlatformsResponseWrapper'
+components:
+  schemas:
+    CoresResponseWrapper:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/InventoryCore'
+    PlatformsResponseWrapper:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Platform'
+    InventoryCore:
+      type: object
+      properties:
+        id:
+          type: string
+          example: agg23.Arduboy
+        repository:
+          $ref: '#/components/schemas/Repository'
+        releases:
+          type: array
+          items:
+            $ref: '#/components/schemas/Release'
+    Repository:
+      type: object
+      properties:
+        platform:
+          type: string
+          example: github
+        owner:
+          type: string
+          example: agg23
+        name:
+          type: string
+          example: openfpga-arduboy
+        funding:
+          $ref: '#/components/schemas/Funding'
+    Funding:
+      type: object
+      properties:
+        github:
+          type: array
+          items:
+            type: string
+            example: https://github.com/sponsors/agg23
+        patreon:
+          type: string
+          example: https://www.patreon.com/agg23
+        custom:
+          type: array
+          items:
+            type: string
+            example: https://github.com/sponsors/agg23
+    Release:
+      type: object
+      properties:
+        download_url:
+          type: string
+          example: https://github.com/agg23/openfpga-arduboy/releases/download/0.9.0/agg23.Arduboy.0.9.0.zip
+        requires_license:
+          type: boolean
+          example: false
+        core:
+          $ref: '#/components/schemas/AnalogueCore'
+        data:
+          $ref: '#/components/schemas/AnalogueData'
+        updaters:
+          $ref: '#/components/schemas/Updaters'
+    AnalogueCore:
+      type: object
+      properties:
+        metadata:
+          $ref: '#/components/schemas/Metadata'
+        framework:
+          $ref: '#/components/schemas/Framework'
+    Metadata:
+      type: object
+      properties:
+        platform_ids:
+          type: array
+          items:
+            type: string
+            example: arduboy
+        version:
+          type: string
+          example: 0.9.0
+        date_release:
+          type: string
+          format: date
+          example: 2022-09-03
+    Framework:
+      type: object
+      properties:
+        version_required:
+          type: string
+          example: 1.1
+        sleep_supported:
+          type: boolean
+          example: false
+        dock:
+          $ref: '#/components/schemas/Dock'
+        hardware:
+          $ref: '#/components/schemas/Hardware'
+    Dock:
+      type: object
+      properties:
+        supported:
+          type: boolean
+          example: true
+        analog_output:
+          type: boolean
+          example: false
+    Hardware:
+      type: object
+      properties:
+        link_port:
+          type: boolean
+          example: false
+    AnalogueData:
+      type: object
+      properties:
+        data_slots:
+          type: array
+          items:
+            $ref: '#/components/schemas/DataSlot'
+    DataSlot:
+      type: object
+      properties:
+        name:
+          type: string
+          example: HEX
+        parameters:
+          $ref: '#/components/schemas/Parameters'
+        filename:
+          type: string
+          example: rom.bin
+        extensions:
+          type: array
+          items:
+            type: string
+            example: hex
+    Parameters:
+      type: object
+      properties:
+        core_specific_file:
+          type: boolean
+          example: false
+        instance_json:
+          type: boolean
+          example: false
+        platform_index:
+          type: integer
+          format: int32
+          example: 0
+    Updaters:
+      type: object
+      properties:
+        license:
+          $ref: '#/components/schemas/License'
+        previous:
+          type: array
+          items:
+            $ref: '#/components/schemas/Previous'
+    License:
+      type: object
+      properties:
+        filename:
+          type: string
+          example: beta.bin
+    Platform:
+      type: object
+      properties:
+        id:
+          type: string
+          example: arduboy
+        category:
+          type: string
+          example: Handheld
+        name:
+          type: string
+          example: Arduboy
+        manufacturer:
+          type: string
+          example: Arduboy
+        year:
+          type: integer
+          format: int32
+          example: 2016
+    Previous:
+      type: object
+      properties:
+        shortname:
+          type: string
+          example: Arduboy
+        author:
+          type: string
+          example: agg23
+        platform_id:
+          type: string
+          example: arduboy

@@ -68,6 +68,7 @@ remote_theme: joshcampbell191/jekyll-theme-bootstrap
 jekyll-minifier:
   exclude:
     - 'assets/js/script.js'
+    - 'api/swagger/*'
   uglifier_args:
     harmony: true
 

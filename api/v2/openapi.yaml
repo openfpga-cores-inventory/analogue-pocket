@@ -1,0 +1,164 @@
+openapi: 3.0.3
+info:
+  title: openFPGA Cores Inventory - Analogue Pocket - OpenAPI 3.0
+  description: |-
+    Welcome to the openFPGA Cores Inventory API service for the [Analogue Pocket](https://www.analogue.co/pocket). This service provides programmatic access to the list of openFPGA cores supported by the Analogue Pocket that have been developed by the community.
+  termsOfService: http://swagger.io/terms/
+  contact:
+    name: openFPGA Cores Inventory
+    url: https://openfpga-cores-inventory.github.io
+  license:
+    name: MIT License
+    url: https://github.com/openfpga-cores-inventory/analogue-pocket/blob/main/LICENSE.txt
+  version: 2.0.0
+servers:
+  - url: https://openfpga-cores-inventory.github.io/analogue-pocket/api/v2
+tags:
+  - name: cores
+    description: openFPGA Cores
+paths:
+  /cores.json:
+    get:
+      tags:
+        - cores
+      summary: Get openFPGA cores
+      description: Returns a list of openFPGA cores
+      operationId: cores
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CoresResponseWrapper'
+components:
+  schemas:
+    CoresResponseWrapper:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Core'
+    Core:
+      type: object
+      properties:
+        identifier:
+          type: string
+          example: agg23.Arduboy
+        repository:
+          $ref: '#/components/schemas/Repository'
+        download_url:
+          type: string
+          example: https://github.com/agg23/openfpga-arduboy/releases/download/0.9.0/agg23.Arduboy.0.9.0.zip
+        platform_id:
+          type: string
+          example: arduboy
+        version:
+          type: string
+          example: 0.9.0
+        release_date:
+          type: string
+          format: date
+          example: 2022-09-03
+        platform:
+          $ref: '#/components/schemas/Platform'
+        assets:
+          type: array
+          items:
+            $ref: '#/components/schemas/Asset'
+        requires_license:
+          type: boolean
+          example: false
+        sponsor:
+          $ref: '#/components/schemas/Sponsor'
+        updaters:
+          $ref: '#/components/schemas/Updaters'
+    Repository:
+      type: object
+      properties:
+        platform:
+          type: string
+          example: github
+        owner:
+          type: string
+          example: agg23
+        name:
+          type: string
+          example: openfpga-arduboy
+    Sponsor:
+      type: object
+      properties:
+        github:
+          type: array
+          items:
+            type: string
+            example: https://github.com/sponsors/agg23
+        patreon:
+          type: string
+          example: https://www.patreon.com/agg23
+        custom:
+          type: array
+          items:
+            type: string
+            example: https://github.com/sponsors/agg23
+    Asset:
+      type: object
+      properties:
+        platform:
+          type: string
+          example: arduboy
+        filename:
+          type: string
+          example: rom.bin
+        extensions:
+          type: array
+          items:
+            type: string
+            example: hex
+        core_specific:
+          type: boolean
+          example: false
+    Updaters:
+      type: object
+      properties:
+        license:
+          $ref: '#/components/schemas/License'
+        previous:
+          type: array
+          items:
+            $ref: '#/components/schemas/Previous'
+    License:
+      type: object
+      properties:
+        filename:
+          type: string
+          example: beta.bin
+    Platform:
+      type: object
+      properties:
+        category:
+          type: string
+          example: Handheld
+        name:
+          type: string
+          example: Arduboy
+        manufacturer:
+          type: string
+          example: Arduboy
+        year:
+          type: integer
+          format: int32
+          example: 2016
+    Previous:
+      type: object
+      properties:
+        shortname:
+          type: string
+          example: Arduboy
+        author:
+          type: string
+          example: agg23
+        platform_id:
+          type: string
+          example: arduboy
