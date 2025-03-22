@@ -62,7 +62,6 @@ jobs:
           add-paths: |
             _data/cores/*.yml
             _data/platforms/*.yml
-            _data/releases/*.yml
             _posts/*.md
             assets/images/**/*.png
 
