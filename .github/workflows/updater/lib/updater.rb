@@ -33,6 +33,10 @@ class Updater < Thor
     @inventory_service = Inventory::InventoryService.new(@jekyll_service.data_path)
   end
 
+  def self.exit_on_failure?
+    true
+  end
+
   desc 'update-inventory', 'Update openFPGA cores inventory'
   def update_inventory
     sources = @inventory_service.sources
