@@ -84,7 +84,7 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
           <div class="card-footer">
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a href="{{ repository_url }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a>
+                <a href="{{ core.repository.html_url }}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a>
                 {%- if core.funding -%}
                 {%- assign sponsor_id = core_slug | prepend: 'sponsor-' -%}
                 <div class="btn-group">
