@@ -57,7 +57,7 @@ class Updater < Thor
         end
       end
 
-      unless sources.assets.any?
+      unless source.assets.any?
         @logger.end_group
         next
       end
