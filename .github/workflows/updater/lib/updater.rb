@@ -37,16 +37,17 @@ class Updater < Thor
     true
   end
 
-  desc 'update-inventory', 'Update openFPGA cores inventory'
+  desc 'update-inventory', 'Update openFPGA Cores Inventory'
   def update_inventory
     sources = @inventory_service.sources
     sources.each do |source|
-      @logger.info("Fetching #{source.repository}")
+      @logger.start_group("Processing Source: #{source.repository}")
 
       repository = @github_service.repository(source.repository)
       funding = funding(source.repository)
 
       source.contents.each do |path|
+        @logger.info("Processing path: #{path}")
         @github_service.commits(source.repository, { path: path }).each do |commit|
           content = @github_service.contents(source.repository, { path: path, ref: commit.sha })
           next if content.nil?
@@ -56,7 +57,10 @@ class Updater < Thor
         end
       end
 
-      next unless source.assets.any?
+      unless sources.assets.any?
+        @logger.end_group
+        next
+      end
 
       @github_service.releases(source.repository).each do |release|
         new_release = false
@@ -64,11 +68,14 @@ class Updater < Thor
           asset = release.assets.find { |a| a.name.match?(pattern) }
           next if asset.nil?
 
+          @logger.info("Processing asset: #{asset.name}")
           new_release ||= update_source(repository, funding, asset.created_at, asset.browser_download_url)
         end
 
         break unless new_release
       end
+
+      @logger.end_group
     end
   end
 
@@ -96,6 +103,7 @@ class Updater < Thor
   private
 
   def download_archive(url)
+    @logger.info("Downloading archive: #{url}")
     archive_path = DownloadHelper.download(url)
     ZipHelper.extract(archive_path)
   end
