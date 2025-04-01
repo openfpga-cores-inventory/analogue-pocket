@@ -38,7 +38,7 @@ gem 'http_parser.rb', '~> 0.6.0', platforms: [:jruby]
 gem 'webrick', '~> 1.9'
 
 gem 'chunky_png', '~> 1.4.0'
-gem 'faraday-retry', '~> 2.2.1'
+gem 'faraday-retry', '~> 2.3.0'
 gem 'json-schema', '~> 5.1.1'
 gem 'netrc', '~> 0.11.0'
 gem 'octokit', '~> 4.25.1'
