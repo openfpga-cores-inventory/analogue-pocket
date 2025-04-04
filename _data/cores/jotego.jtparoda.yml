@@ -43,7 +43,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -53,7 +53,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -63,7 +63,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -76,8 +76,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-09-06 19:44:23.000000000 Z
@@ -110,7 +110,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -120,7 +120,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -130,7 +130,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -143,8 +143,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-09-08 07:54:18.000000000 Z
@@ -177,7 +177,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -187,7 +187,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -197,7 +197,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -210,8 +210,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-09-20 13:49:55.000000000 Z
@@ -244,7 +244,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -254,7 +254,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -264,7 +264,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -277,8 +277,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-10-04 13:19:33.000000000 Z
@@ -311,7 +311,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -321,7 +321,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -331,7 +331,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -344,8 +344,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-10-11 19:15:26.000000000 Z
@@ -378,7 +378,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -388,7 +388,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -398,7 +398,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -411,8 +411,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-10-25 08:34:49.000000000 Z
@@ -445,7 +445,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -455,7 +455,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -465,7 +465,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -478,8 +478,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-11-08 15:52:16.000000000 Z
@@ -512,7 +512,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -522,7 +522,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -532,7 +532,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -545,8 +545,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-11-09 10:31:03.000000000 Z
@@ -579,7 +579,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -589,7 +589,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -599,7 +599,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -612,8 +612,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-11-29 12:08:35.000000000 Z
@@ -646,7 +646,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -656,7 +656,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -666,7 +666,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -679,8 +679,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-12-14 11:59:48.000000000 Z
@@ -713,7 +713,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -723,7 +723,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -733,7 +733,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -746,8 +746,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-12-21 08:13:25.000000000 Z
@@ -780,7 +780,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -790,7 +790,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -800,7 +800,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -813,8 +813,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-12-31 13:43:06.000000000 Z
@@ -847,7 +847,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -857,7 +857,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -867,7 +867,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -880,8 +880,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-01-01 12:35:55.000000000 Z
@@ -914,7 +914,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -924,7 +924,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -934,7 +934,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -947,8 +947,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-01-03 17:11:47.000000000 Z
@@ -981,7 +981,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -991,7 +991,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1001,7 +1001,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1014,8 +1014,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-01-17 10:05:08.000000000 Z
@@ -1048,7 +1048,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1058,7 +1058,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1068,7 +1068,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1081,8 +1081,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-01-17 20:21:24.000000000 Z
@@ -1115,7 +1115,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1125,7 +1125,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1135,7 +1135,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1148,8 +1148,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-01-24 14:53:13.000000000 Z
@@ -1182,7 +1182,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1192,7 +1192,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1202,7 +1202,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1215,8 +1215,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-01-25 10:25:16.000000000 Z
@@ -1249,7 +1249,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1259,7 +1259,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1269,7 +1269,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1282,8 +1282,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-02-07 20:00:59.000000000 Z
@@ -1316,7 +1316,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1326,7 +1326,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1336,7 +1336,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1349,8 +1349,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-02-21 18:31:54.000000000 Z
@@ -1383,7 +1383,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1393,7 +1393,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1403,7 +1403,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1416,8 +1416,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-03-01 09:26:56.000000000 Z
@@ -1450,7 +1450,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1460,7 +1460,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1470,7 +1470,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1483,8 +1483,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-03-07 12:09:40.000000000 Z
@@ -1517,7 +1517,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1527,7 +1527,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1537,7 +1537,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1550,8 +1550,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-03-14 16:51:30.000000000 Z
@@ -1584,7 +1584,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1594,7 +1594,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1604,7 +1604,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1617,8 +1617,8 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2025-03-21 17:19:35.000000000 Z
@@ -1651,7 +1651,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -1661,7 +1661,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -1671,7 +1671,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -1684,6 +1684,73 @@ releases:
       filename: crtcfg.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-04-04 15:44:51.000000000 Z
+  download_url: https://raw.githubusercontent.com/jotego/jtbin/77e517dbce2e88b503825326fb5811215a0d756d/pocket/zips/jotego.jtparoda.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - jtparoda
+      - jtpatreon
+      shortname: jtparoda
+      description: Arcade
+      author: jotego
+      url: https://patreon.com/jotego
+      version: 408f831
+      date_release: '2025-04-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CRT config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: crtcfg.bin
+      extensions:
+      - bin
+  updaters:
+  info:
   requires_license: false
