@@ -16,6 +16,8 @@ module.exports = ({ github, context, core }) => {
   }
 
   const { repository } = REPOSITORY_PATTERN.exec(body).groups;
+  const { filter } = FILTER_PATTERN.exec(body).groups;
+  const { path } = PATH_PATTERN.exec(body).groups;
 
   const sources = yaml.load(
     fs.readFileSync(SOURCES_PATH, "utf8")
@@ -43,9 +45,6 @@ module.exports = ({ github, context, core }) => {
     core.setOutput("close-issue", false);
     return { exists: false };
   }
-
-  const { filter } = FILTER_PATTERN.exec(body).groups;
-  const { path } = PATH_PATTERN.exec(body).groups;
 
   const exists = (
     (filter !== NO_RESPONSE && source.assets?.includes(filter)) ||
