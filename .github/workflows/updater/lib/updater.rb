@@ -122,7 +122,7 @@ class Updater < Thor
 
     new_release = openfpga_service.cores.all? do |core|
       cache = @inventory_service.core(core.id)
-      !cache.nil? && !cache.release_exists?(download_url)
+      cache.nil? || !cache.release_exists?(download_url)
     end
 
     return false unless new_release
