@@ -18,7 +18,7 @@ $ bundle exec jekyll serve
 Then navigate to `http://localhost:4000/`
 
 ## Cores API
-openFPGA Cores Inventory provides a read-only API for developers. More information can be found in the [documentation](_docs/v2.md).
+openFPGA Cores Inventory provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-cores-inventory.github.io/analogue-pocket/api/swagger/).
 
 ## Adding a new core
 To add a new core, you will need to edit the `_data/repos.yml` file. You must add the following fields:
