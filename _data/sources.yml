@@ -200,3 +200,6 @@
 - repository: spiritualized1997/openfpga-sms
 - repository: spiritualized1997/openfpga-videobrain
 - repository: tsalvo/openfpga-varvara
+- repository: opengateware/arcade-irem_m72
+  assets:
+    - boogermann.irem_m72_.*-pocket
