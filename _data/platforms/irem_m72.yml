@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Irem M72
+manufacturer: Irem
+year: 1987
