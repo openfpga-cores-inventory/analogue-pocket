@@ -1,0 +1,56 @@
+--- !ruby/object:Inventory::Core
+id: boogermann.irem_m72
+repository: !ruby/object:GitHub::Repository
+  name: arcade-irem_m72
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: opengateware
+  html_url: https://github.com/opengateware/arcade-irem_m72
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/boogermann
+releases:
+- !ruby/object:Inventory::Release
+  date: 2025-04-13 09:51:25.000000000 Z
+  download_url: https://github.com/opengateware/arcade-irem_m72/releases/download/0.1.0/boogermann.irem_m72_0.1.0_20250413-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - irem_m72
+      shortname: irem_m72
+      description: Irem M72 Compatible Gateware IP Core
+      author: boogermann
+      url: https://github.com/opengateware/arcade-irem_m72
+      version: 0.1.0
+      date_release: '2025-04-13'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info: Irem M-72 is an arcade system board introduced in 1987 by Irem.
+  requires_license: false
