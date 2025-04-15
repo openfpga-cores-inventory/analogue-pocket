@@ -203,3 +203,4 @@
 - repository: opengateware/arcade-irem_m72
   assets:
     - boogermann.irem_m72_.*-pocket
+    - '-pocket.zip'
