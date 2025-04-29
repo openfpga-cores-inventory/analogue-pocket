@@ -9,8 +9,8 @@ on:
     paths:
       - '_data/sources.yml'
   schedule:
-    # Run every 20 minutes
-    - cron:  '*/20 * * * *'
+    # Run every 30 minutes
+    - cron:  '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
