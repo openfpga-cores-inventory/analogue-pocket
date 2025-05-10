@@ -66,3 +66,61 @@ releases:
   updaters:
   info: Irem M-72 is an arcade system board introduced in 1987 by Irem.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-05-10 12:05:01.000000000 Z
+  download_url: https://github.com/RndMnkIII/arcade-irem_m72_Analogizer/releases/download/1.0.4/arcade-irem_m72_Analogizer_0.1.4.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - irem_m72
+      - analogizer
+      shortname: irem_m72_Analogizer
+      description: "[Analogizer] Irem M72 Compatible Gateware IP Core with Analogizer
+        support."
+      author: RndMnkIII
+      url: https://github.com/RndMnkIII/arcade-irem_m72_Analogizer
+      version: 0.1.4
+      date_release: '2024-05-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters:
+  info: Irem M-72 is an arcade system board introduced in 1987 by Irem.
+  requires_license: false
