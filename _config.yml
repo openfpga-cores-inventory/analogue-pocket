@@ -67,6 +67,7 @@ remote_theme: joshcampbell191/jekyll-theme-bootstrap
 # Minifier settings
 jekyll-minifier:
   exclude:
+    - 'assets/css/bootstrap-theme.css'
     - 'assets/js/script.js'
     - 'api/swagger/*'
   uglifier_args:
