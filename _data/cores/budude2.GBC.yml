@@ -39,7 +39,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -50,7 +50,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -74,7 +74,7 @@ releases:
       filename: gb_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -108,7 +108,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -119,7 +119,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -133,7 +133,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -167,7 +167,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
     - !ruby/object:Analogue::Data::DataSlot
@@ -177,7 +177,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -191,7 +191,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -225,7 +225,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -236,7 +236,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -250,7 +250,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -284,7 +284,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -295,7 +295,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -309,7 +309,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -343,7 +343,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -354,7 +354,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -368,7 +368,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -402,7 +402,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -413,7 +413,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -427,7 +427,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -461,7 +461,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -472,7 +472,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -486,7 +486,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -520,7 +520,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -531,7 +531,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -545,7 +545,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -579,7 +579,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -590,7 +590,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -604,7 +604,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -638,7 +638,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -649,7 +649,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -663,7 +663,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -697,7 +697,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -708,7 +708,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -722,7 +722,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -756,7 +756,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -767,7 +767,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -781,7 +781,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -815,7 +815,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -826,7 +826,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -840,7 +840,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -874,7 +874,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -885,7 +885,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -899,7 +899,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -933,7 +933,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -944,7 +944,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -958,7 +958,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -992,7 +992,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -1003,7 +1003,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -1017,7 +1017,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
@@ -1051,7 +1051,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gbc
       - gb
@@ -1062,7 +1062,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -1076,7 +1076,66 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
+  info: Port by budude2, original core created by mister community. As this is a work
+    in progress please let me know of any issues.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-06-10 03:25:45.000000000 Z
+  download_url: https://github.com/budude2/openfpga-GBC/releases/download/v1.3.3/openfpga-gbc-1.3.3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gbc
+      shortname: GBC
+      description: Game Boy Color
+      author: budude2
+      url: https://github.com/budude2/openfpga-GBC
+      version: 1.3.3
+      date_release: '2025-06-09'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gbc
+      - gb
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GBC BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gbc_bios.bin
+      extensions:
+      - bin
+  updaters:
   info: Port by budude2, original core created by mister community. As this is a work
     in progress please let me know of any issues.
   requires_license: false
