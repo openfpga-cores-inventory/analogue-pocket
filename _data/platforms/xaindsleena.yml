@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Xain'd Sleena
+manufacturer: Technos
+year: 1986
