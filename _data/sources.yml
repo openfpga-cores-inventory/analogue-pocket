@@ -206,3 +206,4 @@
   assets:
     - boogermann.irem_m72_.*-pocket
 - repository: rndmnkiii/arcade-irem_m72_analogizer
+- repository: rndmnkiii/analogizer_openfpga-xaindsleena
