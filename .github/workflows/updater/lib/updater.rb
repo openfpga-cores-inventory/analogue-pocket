@@ -129,13 +129,17 @@ class Updater < Thor
 
     openfpga_service.cores.each do |core|
       cache = @inventory_service.core(core.id)
-      next if !cache.nil? && cache.release_exists?(download_url)
+      inventory_core = cache || Inventory::Core.new(core.id, repository)
+
+      # Update Funding information
+      inventory_core.funding = funding
+      @inventory_service.write_core(inventory_core)
+
+      next if inventory_core.release_exists?(download_url)
 
       data = openfpga_service.data(core.id)
       updaters = openfpga_service.updaters(core.id)
       info = openfpga_service.info(core.id)
-
-      inventory_core = cache || Inventory::Core.new(core.id, repository, funding)
 
       release = Inventory::Release.new(date, download_url, core, data, updaters, info)
       inventory_core.add_release(release)
