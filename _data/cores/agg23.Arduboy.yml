@@ -39,10 +39,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - hex
-  updaters: 
+  updaters:
   info: "Port by agg23. MiSTer port by uXeBoy. Atmega core by Iulian Gheorghiu.\r\n\r\nArduboy
     is an open source video game console around the size of a credit card. Based on
     an Arduino core and a 128x64 OLED display, the system packs impressive games into

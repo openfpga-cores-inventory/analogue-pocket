@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: obsidian-dot-dev
   html_url: https://github.com/obsidian-dot-dev/openFPGA-Joust2
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2024-04-20 20:30:47.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -47,11 +47,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-07-01 17:18:15.000000000 Z
@@ -83,7 +83,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -93,9 +93,9 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false

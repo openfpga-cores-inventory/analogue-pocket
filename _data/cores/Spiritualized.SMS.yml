@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-SMS
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-08-08 21:07:40.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sms
       - sg
@@ -48,11 +48,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2022-08-27 02:58:13.000000000 Z
@@ -84,7 +84,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sms
     - !ruby/object:Analogue::Data::DataSlot
@@ -94,10 +94,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Spiritualized SMS\r\n\r\nAlmost everything should be supported by this core.
     \ \r\n\r\nThe BIOSes are not used at the moment but support will be added later.\r\n\r\nEnjoy"
   requires_license: false

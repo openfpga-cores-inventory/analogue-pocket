@@ -38,7 +38,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -48,10 +48,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: "Launched by Irem in 1991, the M92 was an advanced arcade system that offered
     robust graphics and sound capabilities.\r\n\r\nThe M92 system was known for its
     cutting-edge graphical and sound technologies that enhanced the arcade gaming
@@ -89,7 +89,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -99,10 +99,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: "Launched by Irem in 1991, the M92 was an advanced arcade system that offered
     robust graphics and sound capabilities.\r\n\r\nThe M92 system was known for its
     cutting-edge graphical and sound technologies that enhanced the arcade gaming
@@ -140,7 +140,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -150,10 +150,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: "Launched by Irem in 1991, the M92 was an advanced arcade system that offered
     robust graphics and sound capabilities.\r\n\r\nThe M92 system was known for its
     cutting-edge graphical and sound technologies that enhanced the arcade gaming

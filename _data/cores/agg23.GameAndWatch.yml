@@ -39,10 +39,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gnw
-  updaters: 
+  updaters:
   info: |-
     Game and Watch
 
@@ -83,10 +83,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gnw
-  updaters: 
+  updaters:
   info: |-
     Game and Watch
 

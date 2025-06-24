@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: antongale
   html_url: https://github.com/antongale/arcade-slapfight
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2023-01-02 00:24:33.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -47,10 +47,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: |-
     Note: You must provide your own roms to use this core.
 
@@ -95,7 +95,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -105,10 +105,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: |-
     Note: You must provide your own roms to use this core.
 
@@ -153,7 +153,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -163,10 +163,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: |-
     Note: You must provide your own roms to use this core.
 

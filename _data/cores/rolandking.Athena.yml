@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: rolandking
   html_url: https://github.com/rolandking/openFPGA-Athena
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2024-04-27 05:51:37.000000000 Z
@@ -37,8 +37,8 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
-      extensions: 
+      filename:
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: ROM
       required: true
@@ -46,7 +46,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -56,10 +56,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nvm
-  updaters: 
+  updaters:
   info: "Analogue Pocket port of Athena, also supports Fighting Golf. \n\nThanks to
     RndMnkIII who did the original port to MiSTer and all the people whose work he
     used in that port. \n"
@@ -94,8 +94,8 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
-      extensions: 
+      filename:
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: ROM
       required: true
@@ -103,7 +103,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -113,10 +113,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nvm
-  updaters: 
+  updaters:
   info: "Analogue Pocket port of Athena, also supports Fighting Golf. \n\nThanks to
     RndMnkIII who did the original port to MiSTer and all the people whose work he
     used in that port. \n"
@@ -151,8 +151,8 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
-      extensions: 
+      filename:
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: ROM
       required: true
@@ -160,7 +160,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -170,10 +170,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nvm
-  updaters: 
+  updaters:
   info: "Analogue Pocket port of Athena, also supports Fighting Golf. \n\nThanks to
     RndMnkIII who did the original port to MiSTer and all the people whose work he
     used in that port. \n"

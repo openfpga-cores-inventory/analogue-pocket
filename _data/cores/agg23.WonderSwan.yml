@@ -40,7 +40,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - ws
       - wsc
@@ -71,10 +71,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: |-
     Port by agg23. Core by Robert Peip
 
@@ -119,7 +119,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - ws
       - wsc
@@ -150,10 +150,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: |-
     Port by agg23. Core by Robert Peip
 

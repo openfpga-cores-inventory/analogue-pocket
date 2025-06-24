@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-Genesis
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-11-08 08:26:31.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - md
       - bin
@@ -48,10 +48,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Spiritualized Genesis\r\n\r\nEverything should be supported by this core.\r\n\r\nFull
     automatic region selection is implemented.  Select your desired region\r\nin the
     menu.  If the game does not support your region, it will automatically\r\nselect

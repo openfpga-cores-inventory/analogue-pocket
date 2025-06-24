@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-NES
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-10-10 15:32:18.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
       - nsf
@@ -49,7 +49,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -143,7 +143,7 @@ releases:
       filename: P2C04_4.PAL
       extensions:
       - pal
-  updaters: 
+  updaters:
   info: "Spiritualized NES\r\n\r\nNSF playing, FDS games, Vs. Games, and everything
     else should be supported by this core.\r\n\r\nIf you wish to play FDS games, make
     sure the file \"fds.bios\" is present in your\r\n/nes/common/ folder!  If not,
@@ -184,7 +184,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
       - nsf
@@ -196,7 +196,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -290,7 +290,7 @@ releases:
       filename: P2C04_4.PAL
       extensions:
       - pal
-  updaters: 
+  updaters:
   info: "Spiritualized NES\r\n\r\nNSF playing, FDS games, Vs. Games, and everything
     else should be supported by this core.\r\n\r\nIf you wish to play FDS games, make
     sure the file \"fds.bios\" is present in your\r\n/nes/common/ folder!  If not,

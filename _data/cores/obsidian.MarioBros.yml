@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: obsidian-dot-dev
   html_url: https://github.com/obsidian-dot-dev/openFPGA-MarioBros
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2024-02-16 04:14:20.000000000 Z
@@ -38,7 +38,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: mario.rom
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: HISCORE
       required: false
@@ -46,11 +46,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-02-23 01:55:32.000000000 Z
@@ -83,7 +83,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: mario.rom
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: HISCORE
       required: false
@@ -91,11 +91,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-02-24 03:49:25.000000000 Z
@@ -128,7 +128,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: mario.rom
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: HISCORE
       required: false
@@ -136,11 +136,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-03-03 02:11:45.000000000 Z
@@ -173,7 +173,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: mario.rom
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: HISCORE
       required: false
@@ -181,9 +181,9 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false

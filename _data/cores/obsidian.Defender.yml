@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: obsidian-dot-dev
   html_url: https://github.com/obsidian-dot-dev/openFPGA-Defender
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2024-03-06 02:40:23.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -47,7 +47,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -57,11 +57,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-03-09 15:19:57.000000000 Z
@@ -93,7 +93,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -103,7 +103,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -113,11 +113,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2024-03-09 15:27:48.000000000 Z
@@ -149,7 +149,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -159,7 +159,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -169,9 +169,9 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false

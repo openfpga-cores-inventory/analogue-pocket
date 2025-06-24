@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-2600
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-11-08 07:48:44.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions: []
     - !ruby/object:Analogue::Data::DataSlot
       name: Supercharger Loader
@@ -79,7 +79,7 @@ releases:
       filename: avoxee.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: "Spiritualized Atari 2600\r\n\r\nMost Atari 2600 things should be supported
     by this core.\r\n\r\nPretty much every mapper, RAM, and the Supercharger.\r\n\r\nLine
     count and centering are automatically controlled and\r\nshould work for just about

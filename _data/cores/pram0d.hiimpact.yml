@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: Coin-OpCollection
   html_url: https://github.com/Coin-OpCollection/Distribution-OpenFPGA
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2024-11-26 00:35:55.000000000 Z
@@ -38,7 +38,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -48,7 +48,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -58,7 +58,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -75,7 +75,7 @@ releases:
     license: !ruby/object:Analogue::Updaters::License
       filename: coinop.key
     previous: []
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   date: 2024-11-28 20:30:27.000000000 Z
@@ -108,7 +108,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -118,7 +118,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -128,7 +128,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -145,7 +145,7 @@ releases:
     license: !ruby/object:Analogue::Updaters::License
       filename: coinop.key
     previous: []
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   date: 2024-12-25 16:05:50.000000000 Z
@@ -178,7 +178,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -188,7 +188,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -198,7 +198,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -215,7 +215,7 @@ releases:
     license: !ruby/object:Analogue::Updaters::License
       filename: coinop.key
     previous: []
-  info: 
+  info:
   requires_license: true
 - !ruby/object:Inventory::Release
   date: 2025-01-03 20:13:54.000000000 Z
@@ -248,7 +248,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -258,7 +258,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
     - !ruby/object:Analogue::Data::DataSlot
@@ -268,7 +268,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -285,5 +285,5 @@ releases:
     license: !ruby/object:Analogue::Updaters::License
       filename: coinop.key
     previous: []
-  info: 
+  info:
   requires_license: true
