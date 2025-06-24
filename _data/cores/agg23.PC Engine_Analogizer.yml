@@ -39,7 +39,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -50,10 +50,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -93,7 +93,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -104,10 +104,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -147,7 +147,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -158,10 +158,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -201,7 +201,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -212,10 +212,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -255,7 +255,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -266,10 +266,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -309,7 +309,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -320,10 +320,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -364,7 +364,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -375,10 +375,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -418,7 +418,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -429,10 +429,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -472,7 +472,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -483,10 +483,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nPC Engine
     (PCE), known as TurboGrafx-16 in the United States, was created by NEC and was
     the first 4th generation console to reach the market. Therefore, even though it
@@ -526,7 +526,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - pce
       - sgx
@@ -537,10 +537,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: |-
     Port by agg23. Core by Gregory Estrade, srg320, and greyrogue
 

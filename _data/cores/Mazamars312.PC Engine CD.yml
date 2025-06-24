@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: Mazamars312
   html_url: https://github.com/Mazamars312/openfpga-pcengine-cd
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2023-02-07 00:59:54.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -57,7 +57,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -77,7 +77,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cue
     - !ruby/object:Analogue::Data::DataSlot
@@ -87,7 +87,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -97,7 +97,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -107,7 +107,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -117,7 +117,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -127,7 +127,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -137,7 +137,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -147,7 +147,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -157,7 +157,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -167,7 +167,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -177,7 +177,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -187,7 +187,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -197,7 +197,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -207,7 +207,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -217,7 +217,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -227,7 +227,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -237,7 +237,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -247,7 +247,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -257,7 +257,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -267,7 +267,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -277,7 +277,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -287,7 +287,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -297,7 +297,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -307,7 +307,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -317,7 +317,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -327,7 +327,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -337,7 +337,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -347,10 +347,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: "Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue
     Pocket. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nThe CD-ROM² is an
     add-on attachment for the PC Engine that was released in Japan on December 4,
@@ -390,7 +390,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -410,7 +410,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -430,7 +430,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cue
     - !ruby/object:Analogue::Data::DataSlot
@@ -440,7 +440,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -450,7 +450,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -460,7 +460,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -470,7 +470,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -480,7 +480,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -490,7 +490,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -500,7 +500,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -510,7 +510,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -520,7 +520,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -530,7 +530,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -540,7 +540,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -550,7 +550,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -560,7 +560,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -570,7 +570,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -580,7 +580,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -590,7 +590,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -600,7 +600,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -610,7 +610,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -620,7 +620,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -630,7 +630,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -640,7 +640,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -650,7 +650,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -660,7 +660,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -670,7 +670,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -680,7 +680,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -690,7 +690,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -700,10 +700,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: "Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue
     Pocket. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nThe CD-ROM² is an
     add-on attachment for the PC Engine that was released in Japan on December 4,
@@ -743,7 +743,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cue
     - !ruby/object:Analogue::Data::DataSlot
@@ -753,7 +753,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cue
     - !ruby/object:Analogue::Data::DataSlot
@@ -773,7 +773,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -786,7 +786,7 @@ releases:
       filename: pce_mpu_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: "Orginal Port by agg23, PCECD core parts added by Mazamars312 for Analogue
     Pocket. Core by Gregory Estrade, srg320, and greyrogue\r\n\r\nThe CD-ROM² is an
     add-on attachment for the PC Engine that was released in Japan on December 4,

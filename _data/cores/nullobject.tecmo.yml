@@ -38,7 +38,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -48,7 +48,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - 5p
       - bin
@@ -59,7 +59,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -69,7 +69,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -79,7 +79,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -89,7 +89,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -99,7 +99,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -109,7 +109,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -119,7 +119,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -129,7 +129,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -139,7 +139,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -149,7 +149,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -159,7 +159,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -169,7 +169,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -179,7 +179,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -189,7 +189,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -199,7 +199,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -209,7 +209,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -219,10 +219,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: |
     Made with love by Josh Bassett, 2022.
     https://patreon.com/nullobject
@@ -261,7 +261,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -271,10 +271,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: |
     Made with love by Josh Bassett, 2022.
     https://patreon.com/nullobject

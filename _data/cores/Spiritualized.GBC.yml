@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-GB-GBC
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-07-29 18:24:49.000000000 Z
@@ -38,7 +38,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gb
       - gbc
@@ -49,7 +49,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -62,8 +62,8 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2022-08-27 02:54:21.000000000 Z
@@ -95,7 +95,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - gb
       - gbc
@@ -106,7 +106,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -119,7 +119,7 @@ releases:
       filename: gbc_bios.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: "Spiritualized GBC\r\n\r\nAlmost everything should be supported by this core.
     \ \r\n\r\nBe sure the following files are present before using!\r\n* gbc_bios.bin
     file in /assets/gbc/common/ \r\n* gbc_bios.bin must be exactly 2304 bytes.\r\n\r\nNote

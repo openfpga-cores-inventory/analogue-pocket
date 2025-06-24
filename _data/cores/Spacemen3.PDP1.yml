@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spacemen3
   html_url: https://github.com/spacemen3/PDP-1
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-07-29 12:31:17.000000000 Z
@@ -38,7 +38,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: spacewar3.1.bin
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: CLUT
       required: true
@@ -47,7 +47,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: Colour_LUT.clut
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: Config
       required: true
@@ -56,9 +56,9 @@ releases:
         instance_json: false
         platform_index: 0
       filename: config.cfg
-      extensions: 
-  updaters: 
-  info: 
+      extensions:
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2022-08-23 15:15:38.000000000 Z
@@ -91,7 +91,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: spacewar3.1.bin
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: CLUT
       required: true
@@ -102,7 +102,7 @@ releases:
       filename: Default_LUT.clut
       extensions:
       - clut
-  updaters: 
+  updaters:
   info: "In 1962, the first digital video game, Spacewar! debuted on an early computer
     released in 1959 called the PDP-1 at MIT.\r\n\r\nThe beginning of video games.\r\n\r\nSpacewar!
     set forth and established the fundamental characteristics and philosophical approaches

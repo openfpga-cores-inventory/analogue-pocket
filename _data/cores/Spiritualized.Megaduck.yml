@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-Megaduck
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-11-08 08:34:45.000000000 Z
@@ -37,12 +37,12 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - md1
       - md2
-  updaters: 
+  updaters:
   info: "Spiritualized Megaduck\r\n\r\nEnjoy Megaduck games with this core.\r\n\r\nBoth
     kinds of bankswitching are supported.  The file extention will determine\r\nwhich
     is used:\r\n\r\n.md1 is for 32K banks\r\n.md2 is for 16K banks\r\n\r\n\r\nEnjoy!"

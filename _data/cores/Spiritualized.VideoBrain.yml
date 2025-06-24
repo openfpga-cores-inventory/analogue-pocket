@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: spiritualized1997
   html_url: https://github.com/spiritualized1997/openFPGA-VideoBrain
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-11-08 09:03:00.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
     - !ruby/object:Analogue::Data::DataSlot
@@ -60,7 +60,7 @@ releases:
       filename: uvres2.bin
       extensions:
       - bin
-  updaters: 
+  updaters:
   info: "Spiritualized Video Brain\r\n\r\nEnjoy Video Brain games with this core.
     \r\n\r\nThis core really needs a keyboard via the dock to be useful.\r\n\r\nAlso,
     the following files are required. \r\n\r\n/assets/videobrain/Spiritualized.Videobrain/uvres1.bin

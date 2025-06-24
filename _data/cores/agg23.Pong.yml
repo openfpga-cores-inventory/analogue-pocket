@@ -32,8 +32,8 @@ releases:
         link_port: false
   data: !ruby/object:Analogue::Data
     data_slots: []
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2022-08-23 22:30:40.000000000 Z
@@ -58,7 +58,7 @@ releases:
         link_port: false
   data: !ruby/object:Analogue::Data
     data_slots: []
-  updaters: 
+  updaters:
   info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
     are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
     Extended paddles\r\n* Training mode"
@@ -86,7 +86,7 @@ releases:
         link_port: false
   data: !ruby/object:Analogue::Data
     data_slots: []
-  updaters: 
+  updaters:
   info: "The arcade game classic, Pong, in its original form. Video, sound, and bugs
     are reproduced from the original schematic.\r\n\r\nFeatures additional \"cheats\":\r\n*
     Extended paddles\r\n* Training mode"

@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: obsidian-dot-dev
   html_url: https://github.com/obsidian-dot-dev/openFPGA-Vectrex
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2024-02-21 03:01:14.000000000 Z
@@ -37,7 +37,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vec
     - !ruby/object:Analogue::Data::DataSlot
@@ -47,10 +47,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - ovr
-  updaters: 
+  updaters:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false
 - !ruby/object:Inventory::Release
@@ -83,8 +83,8 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
-      extensions: 
+      filename:
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: Game
       required: true
@@ -92,7 +92,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vec
       - bin
@@ -103,10 +103,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - ovr
-  updaters: 
+  updaters:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false
 - !ruby/object:Inventory::Release
@@ -139,8 +139,8 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
-      extensions: 
+      filename:
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: BIOS
       required: true
@@ -149,7 +149,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: vectrex.bin
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: Game
       required: true
@@ -157,7 +157,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vec
       - bin
@@ -168,10 +168,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - ovr
-  updaters: 
+  updaters:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false
 - !ruby/object:Inventory::Release
@@ -204,8 +204,8 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
-      extensions: 
+      filename:
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: BIOS
       required: true
@@ -214,7 +214,7 @@ releases:
         instance_json: false
         platform_index: 0
       filename: vectrex.bin
-      extensions: 
+      extensions:
     - !ruby/object:Analogue::Data::DataSlot
       name: Game
       required: true
@@ -222,7 +222,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vec
       - bin
@@ -233,9 +233,9 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - ovr
-  updaters: 
+  updaters:
   info: "GCE Vectrex released in 1982.\r\nPort of the original core by Dar."
   requires_license: false

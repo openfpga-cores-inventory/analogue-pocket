@@ -39,7 +39,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - min
     - !ruby/object:Analogue::Data::DataSlot
@@ -49,10 +49,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Grieverheart.\r\n\r\nA small handheld console released
     by Nintendo, similar to Tamagotchi, but with cartridge-based games. While it possesses
     a limited official library, it has various homebrew offerings as well that makes
@@ -91,7 +91,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - min
     - !ruby/object:Analogue::Data::DataSlot
@@ -101,10 +101,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Grieverheart.\r\n\r\nA small handheld console released
     by Nintendo, similar to Tamagotchi, but with cartridge-based games. While it possesses
     a limited official library, it has various homebrew offerings as well that makes

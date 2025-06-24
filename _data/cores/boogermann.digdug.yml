@@ -39,7 +39,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -49,10 +49,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: |
     Dig Dug is a maze arcade game developed by Namco. The player controls Dig Dug to defeat all enemies per stage, by either inflating them to bursting or crushing them underneath rocks.
 

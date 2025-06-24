@@ -5,7 +5,7 @@ repository: !ruby/object:GitHub::Repository
   owner: !ruby/object:GitHub::Repository::Owner
     login: Mazamars312
   html_url: https://github.com/Mazamars312/Analogue_Pocket_Neogeo
-funding: 
+funding:
 releases:
 - !ruby/object:Inventory::Release
   date: 2022-08-01 07:23:31.000000000 Z
@@ -59,7 +59,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sbin
       - srom
@@ -70,7 +70,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
@@ -82,7 +82,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cbin
       - crom0
@@ -93,7 +93,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - mbin
       - m1rom
@@ -104,7 +104,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vbin
       - vroma0
@@ -118,8 +118,8 @@ releases:
       filename: mgs.fpga
       extensions:
       - fpga
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2022-08-14 22:55:11.000000000 Z
@@ -151,7 +151,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -161,7 +161,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -203,7 +203,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sbin
       - srom
@@ -214,7 +214,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
@@ -226,7 +226,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cbin
       - crom0
@@ -237,7 +237,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - mbin
       - m1rom
@@ -248,12 +248,12 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vbin
       - vroma0
-  updaters: 
-  info: 
+  updaters:
+  info:
   requires_license: false
 - !ruby/object:Inventory::Release
   date: 2022-09-18 23:22:32.000000000 Z
@@ -285,7 +285,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -295,7 +295,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -347,7 +347,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - srom
     - !ruby/object:Analogue::Data::DataSlot
@@ -357,7 +357,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
@@ -369,7 +369,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cbin
       - crom0
@@ -380,7 +380,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - mbin
       - m1rom
@@ -391,7 +391,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vbin
       - vroma0
@@ -402,12 +402,12 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
       - prom1
-  updaters: 
+  updaters:
   info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES
     console. This arcade platform was a worldwide success lasting through the mid
     2000's spawning several long-running and critically acclaimed game series. \r\nPowered
@@ -447,7 +447,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -457,7 +457,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -509,7 +509,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - srom
     - !ruby/object:Analogue::Data::DataSlot
@@ -519,7 +519,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
@@ -531,7 +531,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cbin
       - crom0
@@ -542,7 +542,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - mbin
       - m1rom
@@ -553,7 +553,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vbin
       - vroma0
@@ -564,12 +564,12 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
       - prom1
-  updaters: 
+  updaters:
   info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES
     console. This arcade platform was a worldwide success lasting through the mid
     2000's spawning several long-running and critically acclaimed game series. \r\nPowered
@@ -609,7 +609,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -619,7 +619,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
     - !ruby/object:Analogue::Data::DataSlot
@@ -671,7 +671,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - srom
     - !ruby/object:Analogue::Data::DataSlot
@@ -681,7 +681,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
@@ -693,7 +693,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - cbin
       - crom0
@@ -704,7 +704,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - mbin
       - m1rom
@@ -715,7 +715,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - vbin
       - vroma0
@@ -726,12 +726,12 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - bin
       - pbin
       - prom1
-  updaters: 
+  updaters:
   info: "NeoGeo was introduced in 1990 as both the MVS multi-video system and AES
     console. This arcade platform was a worldwide success lasting through the mid
     2000's spawning several long-running and critically acclaimed game series. \r\nPowered

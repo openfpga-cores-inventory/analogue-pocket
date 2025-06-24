@@ -40,7 +40,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -50,11 +50,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl,
     and many others.\r\n\r\nNintendo Entertainment System (NES), referred to as the
     Famicom in Japan was the first major home console produced by Nintendo. This console
@@ -94,7 +94,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -104,11 +104,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl,
     and many others.\r\n\r\nNintendo Entertainment System (NES), referred to as the
     Famicom in Japan was the first major home console produced by Nintendo. This console
@@ -148,7 +148,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -158,11 +158,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl,
     and many others.\r\n\r\nNintendo Entertainment System (NES), referred to as the
     Famicom in Japan was the first major home console produced by Nintendo. This console
@@ -202,7 +202,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -212,7 +212,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -226,7 +226,7 @@ releases:
       filename: palettes/custom.pal
       extensions:
       - pal
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl,
     and many others.\r\n\r\nNintendo Entertainment System (NES), referred to as the
     Famicom in Japan was the first major home console produced by Nintendo. This console
@@ -266,7 +266,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -276,7 +276,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -290,7 +290,7 @@ releases:
       filename: palettes/custom.pal
       extensions:
       - pal
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl,
     and many others.\r\n\r\nNintendo Entertainment System (NES), referred to as the
     Famicom in Japan was the first major home console produced by Nintendo. This console
@@ -330,7 +330,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - nes
     - !ruby/object:Analogue::Data::DataSlot
@@ -340,7 +340,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
@@ -354,7 +354,7 @@ releases:
       filename: palettes/custom.pal
       extensions:
       - pal
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl,
     and many others.\r\n\r\nNintendo Entertainment System (NES), referred to as the
     Famicom in Japan was the first major home console produced by Nintendo. This console

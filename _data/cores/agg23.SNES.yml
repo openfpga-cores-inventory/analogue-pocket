@@ -41,7 +41,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -52,10 +52,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -96,7 +96,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -107,10 +107,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -150,7 +150,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -161,11 +161,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -205,7 +205,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -216,11 +216,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -260,7 +260,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -271,11 +271,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -315,7 +315,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -327,11 +327,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -371,7 +371,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -383,11 +383,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -427,7 +427,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -439,11 +439,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -483,7 +483,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -495,11 +495,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day
@@ -539,7 +539,7 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - smc
       - sfc
@@ -551,11 +551,11 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - sav
       - srm
-  updaters: 
+  updaters:
   info: "Port by agg23. Core by srg320.\r\n\r\nSuper Nintendo Entertainment System
     (SNES), referred to as the Super Famicom (SFC) in Japan was the second home console
     produced by Nintendo. A 16-bit console that remains hugely popular to this day

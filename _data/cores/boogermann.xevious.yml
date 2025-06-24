@@ -40,7 +40,7 @@ releases:
         core_specific_file: true
         instance_json: true
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - json
     - !ruby/object:Analogue::Data::DataSlot
@@ -50,10 +50,10 @@ releases:
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: 
+      filename:
       extensions:
       - rom
-  updaters: 
+  updaters:
   info: 'Xevious (pronounced ''zeevious'') is a vertically-scrolling shoot-em-up in
     which the player pilots the heavily-armed ''Solvalou'' combat ship and must destroy
     the evil Xevious forces trying to take over the planet. The Solvalou is equipped

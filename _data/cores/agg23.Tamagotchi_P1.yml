@@ -72,7 +72,7 @@ releases:
       filename: savestate.ss
       extensions:
       - ss
-  updaters: 
+  updaters:
   info: |
     Tamagotchi P1, the very first Tamagotchi from a line of virtual pet devices. The core gameplay loop revolves around taking care of your pet and watching it grow into new "forms" through feeding, play, cleaning, and discipline. These original models were so popular that as of 2017, they started to be reproduced.
 
