@@ -120,23 +120,17 @@ class Updater < Thor
     openfpga_path = download_archive(download_url)
     openfpga_service = Analogue::OpenFPGAService.new(openfpga_path)
 
-    new_release = openfpga_service.cores.all? do |core|
-      cache = @inventory_service.core(core.id)
-      cache.nil? || !cache.release_exists?(download_url)
-    end
-
-    return false unless new_release
-
+    new_release = false
     openfpga_service.cores.each do |core|
-      cache = @inventory_service.core(core.id)
-      inventory_core = cache || Inventory::Core.new(core.id, repository)
+      inventory_core = @inventory_service.core(core.id)
+      inventory_core ||= Inventory::Core.new(core.id, repository)
 
-      # Update Funding information
-      inventory_core.funding = funding
-      @inventory_service.write_core(inventory_core)
+      # Update Funding
+      update_funding(inventory_core, funding)
 
       next if inventory_core.release_exists?(download_url)
 
+      new_release = true
       data = openfpga_service.data(core.id)
       updaters = openfpga_service.updaters(core.id)
       info = openfpga_service.info(core.id)
@@ -164,12 +158,17 @@ class Updater < Thor
       end
     end
 
-    true
+    new_release
   rescue StandardError => e
     @logger.error("Failed to update source: #{repository.slug} - #{download_url}")
     @logger.error(e)
     true
   end
+end
+
+def update_funding(inventory_core, funding)
+  inventory_core.funding = funding
+  @inventory_service.write_core(inventory_core)
 end
 
 Updater.start(ARGV)

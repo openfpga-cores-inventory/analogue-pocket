@@ -4,7 +4,7 @@ module Inventory
   # Represents a core and its releases
   class Core
     attr_reader :id, :repository, :releases
-    attr_writer :funding
+    attr_accessor :funding
 
     def initialize(id, repository)
       @id = id
