@@ -6,7 +6,10 @@ repository: !ruby/object:GitHub::Repository
     login: RndMnkIII
   html_url: https://github.com/RndMnkIII/arcade-irem_m72_Analogizer
 funding: !ruby/object:GitHub::Funding
-  ko_fi: https://ko-fi.com/boogermann
+  patreon: https://www.patreon.com/RndMnkIII
+  custom:
+  - https://analogizer-fpga.com
+  - https://paypal.me/analogizer
 releases:
 - !ruby/object:Inventory::Release
   date: 2025-05-06 22:31:45.000000000 Z
