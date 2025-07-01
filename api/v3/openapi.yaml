@@ -6,13 +6,13 @@ info:
   termsOfService: http://swagger.io/terms/
   contact:
     name: openFPGA Cores Inventory
-    url: https://openfpga-cores-inventory.github.io
+    url: https://openfpga-library.github.io
   license:
     name: MIT License
-    url: https://github.com/openfpga-cores-inventory/analogue-pocket/blob/main/LICENSE.txt
+    url: https://github.com/openfpga-library/analogue-pocket/blob/main/LICENSE.txt
   version: 3.0.0
 servers:
-  - url: https://openfpga-cores-inventory.github.io/analogue-pocket/api/v3
+  - url: https://openfpga-library.github.io/analogue-pocket/api/v3
 tags:
   - name: cores
     description: openFPGA Cores

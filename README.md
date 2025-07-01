@@ -18,7 +18,7 @@ $ bundle exec jekyll serve
 Then navigate to `http://localhost:4000/`
 
 ## Cores API
-openFPGA Cores Inventory provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-cores-inventory.github.io/analogue-pocket/api/swagger/).
+openFPGA Cores Inventory provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-library.github.io/analogue-pocket/api/swagger/).
 
 ## Adding a new core
 To add a new core, you will need to edit the `_data/repos.yml` file. You must add the following fields:
@@ -31,7 +31,7 @@ To add a new core, you will need to edit the `_data/repos.yml` file. You must ad
 ```
 
 - `username` is the core author's GitHub username. It can be found after the first `/` in the core's URL (e.g. `https://github.com/ericlewis/openfpga-asteroids` -> `ericlewis`).
-- `display_name` is used in the `Name` column of the [cores table](https://openfpga-cores-inventory.github.io/analogue-pocket/). A good value for this is usually the name used at the top of the core's `README.md` file.
+- `display_name` is used in the `Name` column of the [cores table](https://openfpga-library.github.io/analogue-pocket/). A good value for this is usually the name used at the top of the core's `README.md` file.
 - `repository` is the core's GitHub repository name. It can be found after the last `/` in the core's URL (e.g. `https://github.com/ericlewis/openfpga-asteroids` -> `openfpga-asteroids`).
 
 ## Contributing

@@ -25,7 +25,7 @@ author:
 description: > # this means to ignore newlines until "show_excerpts:"
   This site was created to document openFPGA cores and their related devices.
 
-domain: openfpga-cores-inventory.github.io
+domain: openfpga-library.github.io
 baseurl: "/analogue-pocket" # the subpath of your site, e.g. /blog
 url: https://openfpga-library.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
