@@ -43,7 +43,7 @@ bootstrap:
     # - { platform: dribbble,       title: "Dribbble",        user_url: "https://dribbble.com/jekyll" }
     # - { platform: facebook,       title: "Facebook",        user_url: "https://www.facebook.com/jekyll" }
     # - { platform: flickr,         title: "Flickr",          user_url: "https://www.flickr.com/photos/jekyll" }
-    - { platform: github,         title: "GitHub",          user_url: "https://github.com/openfpga-cores-inventory/analogue-pocket" }
+    - { platform: github,         title: "GitHub",          user_url: "https://github.com/openfpga-library/analogue-pocket" }
     # - { platform: google_scholar, title: "Google Scholar",  user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
     # - { platform: instagram,      title: "Instagram",       user_url: "https://www.instagram.com/jekyll" }
     # - { platform: keybase,        title: "Keybase",         user_url: "https://keybase.io/jekyll" }
