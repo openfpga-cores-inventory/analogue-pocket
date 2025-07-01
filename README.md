@@ -1,4 +1,4 @@
-# openFPGA Cores Inventory
+# openFPGA Library
 openFPGA Cores Inventory is the premier destination for keeping track of cores built with [openFPGA](https://www.analogue.co/developer).
 
 ## Installation
